@@ -1,0 +1,4 @@
+{
+	"keys":{"meth":["meth buy","meth sell"],"coke":["coke mumbai","coke delhi"],"speed":["speed something"]},
+	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"}
+}

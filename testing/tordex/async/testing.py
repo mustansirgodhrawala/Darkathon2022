@@ -1,0 +1,148 @@
+import asyncio
+import os
+import sys
+import time
+from random import choice
+from urllib.parse import parse_qs
+from urllib.parse import quote
+from urllib.parse import unquote
+
+import aiohttp
+from aiohttp_socks import ChainProxyConnector
+from aiohttp_socks import ProxyConnector
+from aiohttp_socks import ProxyType
+from bs4 import BeautifulSoup
+from kafka import KafkaProducer
+
+
+def clear(toclear):
+    str = toclear.replace("\n", " ")
+    str = " ".join(str.split())
+    return str
+
+
+proxies = {
+    "http": "socks5h://localhost:9050",
+    "https": "socks5h://localhost:9050",
+}
+
+# agents used for requests module
+desktop_agents = [
+    "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0",
+    "Mozilla/5.0 (Android 10; Mobile; rv:91.0) Gecko/91.0 Firefox/91.0",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) "
+    "AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0",
+]
+
+tor_address = "http://tordexu73joywapk2txdr54jed4imqledpcvcuf75qsas2gwdgksvnyd.onion"
+
+
+def random_headers():
+    return {
+        "User-Agent": choice(desktop_agents),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    }
+
+
+keywords = [
+    "meth buy",
+    "meth sell",
+    "meth use",
+    "meth mumbai",
+    "meth india",
+    "meth delhi",
+    "meth chandigarh",
+    "meth kota",
+    "meth make india",
+    "indian meth" "meth gujrat",
+    "metamphetamines in vadodara",
+    "meth buy mumbai",
+    "meth ship mumbai",
+    "meth buy karnataka",
+    "ship meth to india",
+    "sell meth in india",
+    "metamphetamines from india",
+    "indian drugs",
+    "buy drugs in india",
+]
+
+
+async def main():
+    connector = connector = ProxyConnector(
+        proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
+    )
+    async with aiohttp.ClientSession(connector=connector) as session:
+        tasks = []
+        producer = KafkaProducer(bootstrap_servers="localhost:9092")
+        for keyword in keywords:
+            task = asyncio.ensure_future(get_video_data(session, keyword, producer))
+            tasks.append(task)
+
+        links = await asyncio.gather(*tasks)
+
+        # print(f"Total links received { len(links) }")
+
+
+async def get_video_data(session, keyword, producer):
+    tor_address = (
+        "http://tordexu73joywapk2txdr54jed4imqledpcvcuf75qsas2gwdgksvnyd.onion"
+    )
+    tordex_url = tor_address + "/search?query={keyword}&page={page}"
+    max_nb_page = 100
+    # try:
+    async with session.get(
+        tordex_url.format(page=1, keyword=keyword), headers=random_headers()
+    ) as response:
+        response = await response.read()
+        soup = BeautifulSoup(response, "html5lib")
+
+        page_number = 1
+        pages = soup.find_all("li", attrs={"class": "page-item"})
+        if pages is not None:
+            for i in pages:
+                if i.get_text() != "...":
+                    page_number = int(i.get_text())
+            if page_number > max_nb_page:
+                page_number = max_nb_page
+
+        # try:
+        for r in soup.select(".container h5 a"):
+            name = clear(r.get_text())
+            link = clear(r["href"])
+            if ".onion" in link:
+                producer.send("ahmia", bytes(link, "utf-8"))
+
+        for n in range(2, page_number + 1):
+            async with session.get(tordex_url.format(keyword=keyword, page=n)) as resp:
+                resp = await resp.read()
+                soup = BeautifulSoup(resp, "html5lib")
+                for r in soup.select(".container h5 a"):
+                    name = clear(r.get_text())
+                    link = clear(r["href"])
+                    if ".onion" in link:
+                        producer.send("ahmia", bytes(link, "utf-8"))
+        # except:
+        # print("Failure")
+
+        # return len(link)
+    # except Exception as e:
+    #     print(f"Timeout caused. {e}")
+
+
+time_taken = []
+
+start = time.perf_counter()
+asyncio.run(main())
+print(time.perf_counter() - start)

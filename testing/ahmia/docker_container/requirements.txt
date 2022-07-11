@@ -1,0 +1,17 @@
+beautifulsoup4==4.11.1
+bs4==0.0.1
+certifi==2022.5.18.1
+charset-normalizer==2.0.12
+html5==0.0.9
+html5lib
+idna==3.3
+kafka-python==2.0.2
+lxml==4.9.0
+PySocks==1.7.1
+requests==2.28.0
+six==1.16.0
+soupsieve==2.3.2.post1
+urllib3==1.26.9
+webencodings==0.5.1
+argparse
+typing
