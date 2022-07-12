@@ -3,6 +3,7 @@ from narco_crawler import logging
 
 logging.info("program started")
 
+
 # Grab version from python packaging files
 import pkg_resources
 
@@ -84,6 +85,11 @@ def main(argv: Optional[Sequence[str]] = None):
         action="store_true",
         help="Set the -q flag to not print banner",
     )
+    parser.add_argument(
+        "--skip-tests",
+        action="store_true",
+        help="Set the -q flag to not print banner",
+    )
 
     # Processing args
     try:
@@ -120,26 +126,29 @@ def main(argv: Optional[Sequence[str]] = None):
     )
 
     if initializer(args.build):
-        # Waiting for tor proxy and load balancer to handshake
+        # Waiting for tor proxy and load balancer to loophandshake
         rprint("\t\t[green]Backend has been initialized.[/green]\n")
 
-        rprint("\t\t[green]Waiting for backend to setup.")
-        time.sleep(10)
-
-        # Verying if docker is up and running.
-        if backend_tester():
-            rprint("\t\t[green]Backend infrastructure is functional[/green]")
-        else:
-            rprint(
-                "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
-            )
+        if args.skip_tests:
+            # Verying if docker is up and running.
+            if backend_tester():
+                rprint("\t\t[green]Backend infrastructure is functional[/green]")
+            else:
+                rprint(
+                    "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
+                )
     else:
         rprint("\t\t[red]Initialization has failed, check logs for more details.")
 
     if args.crawl:
 
         # Initiating Crawler procedures
-        from narco_crawler.web_crawler.main import start_crawler, de_init_crawler
+        from narco_crawler.web_crawler.main import (
+            start_crawler,
+            de_init_crawler,
+            run_crawler,
+        )
+        from narco_crawler.narco_ingress.main import ingress_main
 
         if not start_crawler():
             rprint(
@@ -149,6 +158,36 @@ def main(argv: Optional[Sequence[str]] = None):
             rprint("\t\t[green]Successfully initialized crawler.")
 
         # Crawling Area
+        rprint("[green]\t\tAttempting to run crawler with config files.[/green]")
+        if not run_crawler():
+            try:
+                rprint(
+                    "\t\t[red]Failed to successfully capture all links, inspect 'engines.log' for detailed info.[/red]"
+                )
+            except KeyboardInterrupt:
+                rprint("Crawler manually interrupted, terminating.")
+                logging.warning(
+                    "Crawler manually terminated, taking down infrastructure."
+                )
+        else:
+            rprint("\t\t[green]Successfully ran crawler.[/green]")
+
+        # Ingress Crawl
+        rprint(
+            "[green]\t\tAttempting to ingress crawler results with config files.[/green]"
+        )
+        if not ingress_main():
+            try:
+                rprint(
+                    "\t\t[red]Failed to successfully ingress all links, inspect 'ingress.log' for detailed info.[/red]"
+                )
+            except KeyboardInterrupt:
+                rprint("Ingress manually interrupted, terminating.")
+                logging.warning(
+                    "Ingress manually terminated, taking down infrastructure."
+                )
+        else:
+            rprint("\t\t[green]Successfully ran ingress.[/green]")
 
         if not de_init_crawler():
             rprint(

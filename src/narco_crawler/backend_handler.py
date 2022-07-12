@@ -1,7 +1,10 @@
 import datetime
+import time
 
+import docker
 import kafka
 import requests
+from alive_progress import alive_bar
 from kafka import KafkaProducer
 from rich import print as rprint
 
@@ -56,17 +59,28 @@ def infra_init(build):
     def torone():
         status = True
 
+        try:
+            data = client.containers.get("torone")
+        except (requests.exceptions.HTTPError, docker.errors.NotFound):
+            data = None
+
         # TORDEX Proxy Container
         try:
-            logging.info("Starting torone docker containers")
-            client.containers.run(
-                "tor_proxy",
-                detach=True,
-                name="torone",
-                network="narco_crawler",
-                remove=True,
-            )
-            logging.info("Started torone docker containers")
+            if not data:
+                logging.info("Starting torone docker containers")
+                client.containers.run(
+                    "tor_proxy",
+                    detach=True,
+                    name="torone",
+                    network="narco_crawler",
+                    remove=True,
+                )
+                logging.info("Started torone docker containers")
+            else:
+                logging.warning(
+                    "Existing torone container exists, please don't force stop application"
+                )
+                return "pre-existing"
         except Exception as e:
             logging.critical("Failed starting torone docker containers")
             logging.exception(e, exc_info=True)
@@ -77,18 +91,29 @@ def infra_init(build):
     def load_balancer():
         status = True
 
+        try:
+            data = client.containers.get("balancer_container")
+        except (requests.exceptions.HTTPError, docker.errors.NotFound):
+            data = None
+
         # TORDEX Load Balancer
         try:
-            logging.info("Starting Load Balancer Docker Containers")
-            client.containers.run(
-                "load_balancer",
-                detach=True,
-                name="balancer_container",
-                network="narco_crawler",
-                remove=True,
-                ports={"9050/tcp/udp": 9050},
-            )
-            logging.info("Started Load Balancer Docker Containers")
+            if not data:
+                logging.info("Starting Load Balancer Docker Containers")
+                client.containers.run(
+                    "load_balancer",
+                    detach=True,
+                    name="balancer_container",
+                    network="narco_crawler",
+                    remove=True,
+                    ports={"9050/tcp/udp": 9050},
+                )
+                logging.info("Started Load Balancer Docker Containers")
+            else:
+                logging.warning(
+                    "Existing Load Balancer container exists, please don't force stop application"
+                )
+                return "pre-existing"
         except Exception as e:
             logging.critical("Failed Load Balancer Docker Containers")
             logging.exception(e, exc_info=True)
@@ -105,8 +130,19 @@ def infra_init(build):
         logging.info("Not building docker images(user input).")
 
     # Start containers
-    if not torone() or not load_balancer():
-        status = False
+    status_torone = torone()
+    status_load_balancer = load_balancer()
+    if status_torone == "pre-existing" and status_load_balancer == "pre-existing":
+        pass
+    elif not status_torone or not status_load_balancer:
+        return False
+    elif status_torone and status_load_balancer:
+        rprint("\t\t[green]Waiting for backend to setup.")
+        with alive_bar(10) as bar:
+            bar.title = "\t\tBackend starting...."
+            for _ in range(10):
+                time.sleep(1)
+                bar()
 
     return status
 

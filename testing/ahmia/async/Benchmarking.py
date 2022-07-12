@@ -83,7 +83,8 @@ async def main():
 
         links = await asyncio.gather(*tasks)
 
-        print(f"Total links received { len(links) }")
+        # print(f"Total links received  { len(links) }")
+        print(len(links))
 
 
 async def get_video_data(session, keyword, producer):
@@ -104,7 +105,7 @@ async def get_video_data(session, keyword, producer):
                 producer.send("ahmia", bytes(link, "utf-8"))
                 results.append(link)
 
-            return len(link)
+            return results
     except Exception as e:
         print(f"Something caused: {e}")
 

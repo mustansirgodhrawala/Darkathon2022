@@ -1,9 +1,13 @@
+import asyncio
+
 import kafka
 from kafka.admin import KafkaAdminClient
 from kafka.admin import NewTopic
 
 from narco_crawler import logging
 from narco_crawler.config import config
+from narco_crawler.engines.ahmia.ahmia import ahmia_main
+from narco_crawler.engines.tordex.tordex import tordex_main
 
 
 def create_topics(topics):
@@ -82,3 +86,17 @@ def de_init_crawler():
     status = delete_topics(topics)
 
     return status
+
+
+def run_crawler():
+    logging.info("Crawler run starting.")
+
+    topics = list(config["keys"].keys())
+
+    for topic in topics:
+        asyncio.run(ahmia_main(topic, config["keys"][topic]))
+        asyncio.run(tordex_main(topic, config["keys"][topic]))
+
+    logging.info("Crawler finished.")
+
+    return True
