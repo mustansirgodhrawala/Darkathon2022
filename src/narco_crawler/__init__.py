@@ -1,11 +1,21 @@
-import logging as logging
+import logging
+from logging import FileHandler
+from logging import Formatter
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename="logs/main.log",
-    filemode="w",
-    format="%(asctime)s - %(levelname)s - %(message)s",
-)
+LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
+LOG_LEVEL = logging.INFO
+
+# messaging logger
+MAIN_LOG_FILE = "logs/main.log"
+
+
+logging = logging.getLogger("config")
+logging.setLevel(LOG_LEVEL)
+logging_file_handler = FileHandler(MAIN_LOG_FILE)
+logging_file_handler.setLevel(LOG_LEVEL)
+logging_file_handler.setFormatter(Formatter(LOG_FORMAT))
+logging.addHandler(logging_file_handler)
+
 
 try:
     import docker

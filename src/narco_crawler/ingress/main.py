@@ -3,13 +3,13 @@ import time
 from kafka import KafkaConsumer
 from rich import print as rprint
 
-from narco_crawler.config import config
-from narco_crawler.narco_ingress import ingress_logger
+from narco_crawler.config.config import config
+from narco_crawler.ingress import ingress_logger as logging
 
 
 def ingressor(topic):
     total = 0
-    ingress_logger.info(f"Ingressor Initiated for topic {topic}")
+    logging.info(f"Ingressor Initiated for topic {topic}")
     rprint(f"\t\t[green]Ingressing {topic}.[/green]")
     time.sleep(5)
     consumer = KafkaConsumer(

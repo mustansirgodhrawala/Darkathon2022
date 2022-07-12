@@ -6,17 +6,100 @@ import kafka
 import requests
 from alive_progress import alive_bar
 from kafka import KafkaProducer
+from kafka.admin import KafkaAdminClient
+from kafka.admin import NewTopic
 from rich import print as rprint
 
 from narco_crawler import client
-from narco_crawler import logging
-from narco_crawler.db import database
-from narco_crawler.db import UpdateDBTime
+from narco_crawler.infrahandler import infra_logger as logging
+
+logging.info("Logger for InfraHandler Created.")
+from narco_crawler.config.db import database
+from narco_crawler.config.db import UpdateDBTime
+from narco_crawler.config.config import config
+
+
+def docker_infra_restart():
+    def restart_torone():
+        logging.info("Restarting torone docker containers")
+        client.containers.get("torone").restart()
+        logging.info("Restarting torone docker containers")
+
+    def load_balancer():
+        logging.info("Restarting Load Balancer containers")
+        client.containers.get("balancer_container").restart()
+        logging.info("Restarting Load Balancer containers")
+
+    rprint("\t\t[green]Waiting for backend to restart.")
+    with alive_bar(20) as bar:
+        bar.title = "\t\tBackend restarting...."
+        for _ in range(20):
+            time.sleep(1)
+            bar()
+    return True
 
 
 class Docker_Images:
     Load_Balancer = "./src/narco_crawler/narco_infra/loadbalancer"
     Tor_Proxy = "./src/narco_crawler/narco_infra/tor"
+
+
+def create_topics_kafka(topics):
+    logging.info("Creating kafka topics")
+    try:
+        admin_client = KafkaAdminClient(
+            bootstrap_servers="localhost:9092", client_id="test"
+        )
+        logging.info("Created kafka admin_client")
+    except Exception as e:
+        logging.critical(
+            "Error when trying to create admin client object, kafka topic creation."
+        )
+        logging.exception(e, exc_info=True)
+        return False
+
+    # Make topics list
+    topic_list = []
+    for topic in topics:
+        topic_list.append(NewTopic(name=topic, num_partitions=1, replication_factor=1))
+
+    # Actually creating topics
+    try:
+        admin_client.create_topics(new_topics=topic_list, validate_only=False)
+    except kafka.errors.TopicAlreadyExistsError:
+        pass
+    except Exception as e:
+        logging.critical("Exception when creating kafka topics.")
+        logging.exception(e, exc_info=True)
+        return False
+    finally:
+        logging.info("Successfully created kafka topics.")
+        return True
+
+
+def delete_topics_kafka(topics):
+    logging.info("Deleting kafka topics")
+    try:
+        admin_client = KafkaAdminClient(
+            bootstrap_servers="localhost:9092", client_id="test"
+        )
+        logging.info("Created kafka admin_client")
+    except Exception as e:
+        logging.critical(
+            "Error when trying to create admin client object, kafka topic creation."
+        )
+        logging.exception(e, exc_info=True)
+        return False
+
+    try:
+        admin_client.delete_topics(topics)
+    except Exception as e:
+        logging.critical("Exception when deleting kafka topics.")
+        logging.exception(e, exc_info=True)
+        return False
+    finally:
+        logging.info("Successfully deleted kafka topics.")
+        return True
 
 
 def db_init():
@@ -27,7 +110,7 @@ def db_init():
         lastused = cursor.fetchall()
         diff = datetime.datetime.now() - datetime.datetime.fromisoformat(lastused[0][0])
         rprint(
-            f"\n\t\t[green]Script Last Runtime: { int(diff.seconds/60) }minutes ago.[/green]"
+            f"\t\t[green]Script Last Runtime: { int(diff.seconds/60) }minutes ago.[/green]"
         )
         logging.info("Successfully loaded previous runtime from database.")
     except Exception as e:
@@ -43,7 +126,7 @@ def db_init():
     return status
 
 
-def infra_init(build):
+def infra_init(build, rebuild=False):
     def build_images():
         try:
             logging.info("Starting build of docker images.")
@@ -161,8 +244,8 @@ def kafka_init():
         return False
 
 
-def initializer(build=False):
-
+def initializer(build=False, skip_test=False):
+    logging.info("Starting infrastructure.")
     status = True
 
     status = db_init()
@@ -172,19 +255,55 @@ def initializer(build=False):
     if not kafka_init():
         status = False
 
+    if not create_topics_kafka(list(config["keys"].keys())):
+        status = False
+
+    if skip_test is False:
+        if backend_tester():
+            rprint("\t\t[green]Backend infrastructure is functional[/green]")
+            logging.info("Backend Test Successfull")
+        else:
+            rprint(
+                "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
+            )
+            logging.warning("Backend Test Failed, check logs for more info")
+
     return status
 
 
-def de_initializer():
+def infra_de_init():
     try:
         logging.info("Stopping running docker containers.")
+
         # Getting containers by their name and stopping them, using docker sdk.
         client.containers.get("torone").stop()
         client.containers.get("balancer_container").stop()
         logging.info("Stopped running docker containers.")
         return True
     except Exception as e:
-        logging.warning("Failed to stop running docker containers.")
+        logging.info("Failed to stop running docker containers.")
+        logging.exception(e, exc_info=True)
+        return False
+
+
+def de_initializer():
+    try:
+        logging.info("Stopping infrastructure.")
+        status = True
+
+        if not infra_de_init():
+            status = False
+
+        if not delete_topics_kafka(list(config["keys"].keys())):
+            status = False
+
+        if status is True:
+            logging.info("Successfully stopped infrastructure.")
+
+        return status
+
+    except Exception as e:
+        logging.warning("Failed to stop infrastructure, exception occured.")
         logging.exception(e, exc_info=True)
         return False
 
@@ -195,6 +314,7 @@ def backend_tester():
         "http": "socks5h://127.0.0.1:9050",
         "https": "socks5h://127.0.0.1:9050",
     }
+
     try:
         requests.get(
             "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/",
@@ -213,7 +333,22 @@ def backend_tester():
             )
             logging.info("Backend infrastructure is working.")
             return True
-        except Exception as e:
-            logging.critical("Backend has failed Test 2.")
-            logging.exception(e, exc_info=True)
-            return False
+        except Exception:
+            logging.warning("Backend has failed Test 2.")
+            logging.warning("Restarting docker infrastructure")
+            if docker_infra_restart():
+                logging.info("Restarted Backend Docker Infrastructure.")
+                try:
+                    requests.get(
+                        "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/",
+                        proxies=proxies,
+                        timeout=30,
+                    )
+                    logging.info("Backend infrastructure is working.")
+                    return True
+                except Exception as e:
+                    logging.warning("Backend has failed Test 3.")
+                    logging.critical("Exception occured when trying test 3.")
+                    logging.exception(e, exc_info=True)
+            else:
+                logging.critical("Failed to restart backend docker infrastructure.")

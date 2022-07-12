@@ -1,4 +1,4 @@
 {
-	"keys":{"meth":["meth buy","meth sell"],"coke":["coke mumbai","coke delhi"],"speed":["buy speed","sell speed mumbai","best drugs mumbai","best drugs new delhi"]},
+	"keys":{"meth":["meth buy","meth sell"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"}
 }

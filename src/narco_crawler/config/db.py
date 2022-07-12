@@ -3,8 +3,8 @@ import datetime
 import mysql.connector
 from rich import print as rprint
 
-from narco_crawler import logging
-from narco_crawler.config import config
+from narco_crawler.config import config_logger as logging
+from narco_crawler.config.config import config
 
 
 def DatabaseInit(config):

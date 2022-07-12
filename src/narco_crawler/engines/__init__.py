@@ -9,7 +9,7 @@ LOG_LEVEL = logging.INFO
 ENGINES_LOG_FILE = "logs/engines.log"
 
 
-engines_logger = logging.getLogger("narco_crawler.engines")
+engines_logger = logging.getLogger("engines")
 engines_logger.setLevel(LOG_LEVEL)
 engines_logger_file_handler = FileHandler(ENGINES_LOG_FILE)
 engines_logger_file_handler.setLevel(LOG_LEVEL)

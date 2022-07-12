@@ -1,8 +1,13 @@
 # Logging Application Start
 from narco_crawler import logging
 
-logging.info("program started")
+logging.info("NarcoCrawler started")
 
+# Importing Resources to start backend
+from narco_crawler.infrahandler.main import (
+    initializer,
+    de_initializer,
+)
 
 # Grab version from python packaging files
 import pkg_resources
@@ -27,6 +32,10 @@ def arg_conf(args):
         rprint("\t\t[yellow]Input: build images at runtime.[/yellow]")
     if args.crawl:
         rprint("\t\t[yellow]Input: crawl.[/yellow]")
+    if args.skip_down:
+        rprint(
+            "\t\t[yellow]Input: Cancel infrastructure takedown, not recommended.[/yellow]"
+        )
 
     rprint(
         "\t\t[yellow]If any of these inputs are wrong, you can pause execution now.[/yellow]"
@@ -36,7 +45,7 @@ def arg_conf(args):
         time.sleep(2)
     except KeyboardInterrupt:
         logging.warning("Argument Confirmer manually interrupted, application exiting.")
-        rprint(f"Exiting now, thank you for using NarcoCrawler(ver:{version}).")
+        rprint(f"\t\tExiting now, thank you for using NarcoCrawler(ver:{version}).")
         exit()
     except Exception as e:
         logging.exception(
@@ -88,7 +97,12 @@ def main(argv: Optional[Sequence[str]] = None):
     parser.add_argument(
         "--skip-tests",
         action="store_true",
-        help="Set the -q flag to not print banner",
+        help="Set the --skip-tests flag to not print banner",
+    )
+    parser.add_argument(
+        "--skip-down",
+        action="store_true",
+        help="Set the --skip-down flag to not print banner",
     )
 
     # Processing args
@@ -100,62 +114,45 @@ def main(argv: Optional[Sequence[str]] = None):
     if not args.quiet:
         rprint(
             r"""[white]
-		  _____             _     __          __  _       _   _                        _____                    _
-		 |  __ \           | |    \ \        / / | |     | \ | |                      / ____|                  | |
-		 | |  | | __ _ _ __| | __  \ \  /\  / /__| |__   |  \| | __ _ _ __ ___ ___   | |     _ __ __ ___      _| | ___ _ __
-		 | |  | |/ _` | '__| |/ /   \ \/  \/ / _ \ '_ \  | . ` |/ _` | '__/ __/ _ \  | |    | '__/ _` \ \ /\ / / |/ _ \ '__|
-		 | |__| | (_| | |  |   <     \  /\  /  __/ |_) | | |\  | (_| | | | (_| (_) | | |____| | | (_| |\ V  V /| |  __/ |
-		 |_____/ \__,_|_|  |_|\_\     \/  \/ \___|_.__/  |_| \_|\__,_|_|  \___\___/   \_____|_|  \__,_| \_/\_/ |_|\___|_|
+          _____             _     __          __  _       _   _                        _____                    _
+         |  __ \           | |    \ \        / / | |     | \ | |                      / ____|                  | |
+         | |  | | __ _ _ __| | __  \ \  /\  / /__| |__   |  \| | __ _ _ __ ___ ___   | |     _ __ __ ___      _| | ___ _ __
+         | |  | |/ _` | '__| |/ /   \ \/  \/ / _ \ '_ \  | . ` |/ _` | '__/ __/ _ \  | |    | '__/ _` \ \ /\ / / |/ _ \ '__|
+         | |__| | (_| | |  |   <     \  /\  /  __/ |_) | | |\  | (_| | | | (_| (_) | | |____| | | (_| |\ V  V /| |  __/ |
+         |_____/ \__,_|_|  |_|\_\     \/  \/ \___|_.__/  |_| \_|\__,_|_|  \___\___/   \_____|_|  \__,_| \_/\_/ |_|\___|_|
 
 
-		[/white]"""
+        [/white]"""
         )
 
     if args.version:
         rprint(f"\t\t[white]Version: {version}[/white]")
 
     # Wait if wrong input supplied.
-    if args.inspect or args.build or args.crawl:
+    if args.inspect or args.build or args.crawl or args.skip_down:
         arg_conf(args)
 
-    # Importing Resources to start backend
-    from narco_crawler.backend_handler import (
-        initializer,
-        de_initializer,
-        backend_tester,
-    )
-
-    if initializer(args.build):
+    rprint("\n\t[white]Initialization[/white]")
+    logging.info("Starting Infra")
+    if initializer(args.build, args.skip_tests):
         # Waiting for tor proxy and load balancer to loophandshake
         rprint("\t\t[green]Backend has been initialized.[/green]\n")
-
-        if args.skip_tests:
-            # Verying if docker is up and running.
-            if backend_tester():
-                rprint("\t\t[green]Backend infrastructure is functional[/green]")
-            else:
-                rprint(
-                    "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
-                )
+        logging.info("Successfully started Infra")
     else:
-        rprint("\t\t[red]Initialization has failed, check logs for more details.")
+        rprint(
+            "\t\t[red]Initialization of infra has failed, check logs/infra.log for more details."
+        )
+        logging.critical("Failed to start info, check logs/infra.log for more details.")
 
     if args.crawl:
+        rprint("\n\t[white]Crawler[/white]")
+        logging.info("Crawler started")
 
         # Initiating Crawler procedures
-        from narco_crawler.web_crawler.main import (
-            start_crawler,
-            de_init_crawler,
+        from narco_crawler.crawler.main import (
             run_crawler,
         )
-        from narco_crawler.narco_ingress.main import ingress_main
-
-        if not start_crawler():
-            rprint(
-                "\t\t[red]Failed to initialize crawler, check logs for more info.[/red]"
-            )
-        else:
-            rprint("\t\t[green]Successfully initialized crawler.")
+        from narco_crawler.ingress.main import ingress_main
 
         # Crawling Area
         rprint("[green]\t\tAttempting to run crawler with config files.[/green]")
@@ -173,6 +170,7 @@ def main(argv: Optional[Sequence[str]] = None):
             rprint("\t\t[green]Successfully ran crawler.[/green]")
 
         # Ingress Crawl
+        rprint("[white]\n\tIngress[/white]")
         rprint(
             "[green]\t\tAttempting to ingress crawler results with config files.[/green]"
         )
@@ -189,22 +187,26 @@ def main(argv: Optional[Sequence[str]] = None):
         else:
             rprint("\t\t[green]Successfully ran ingress.[/green]")
 
-        if not de_init_crawler():
-            rprint(
-                "\t\t[red]Failed to initialize crawler, check logs for more info.[/red]"
-            )
-        else:
-            rprint("\t\t[green]Successfully de-initialized crawler.")
-
     # Taking down backend infra
-    rprint("\n\t\t[green]Taking down backend.[/green]")
-    if de_initializer():
-        rprint("\t\t[green]Backend is taken down.[/green]")
+    rprint("\n\t[white]De-Initialization[/white]")
+    if not args.skip_down:
+        logging.info("Stopping Infra")
+        rprint("\t\t[green]Taking down backend.[/green]")
+        if de_initializer():
+            rprint("\t\t[green]Backend is taken down.[/green]")
+            logging.info("Successfully stopped infra")
+        else:
+            rprint(
+                "\t\t[red]De-Initialization of infra has failed, check logs/infra.log for more details."
+            )
+            logging.critical(
+                "Failed to takedown infrastructure, check logs/infra.log for more."
+            )
     else:
         rprint(
-            "\t\t[red]Failed to takedown backend infra, check logs for more details.[/red]"
+            "[red]\t\tLeaving Backend Infrastructure running(user input), not recommended.[/red]"
         )
 
     # Closing Down Messages
-    logging.info("Stopping Program Narco_Crawler.")
-    rprint("[yellow]\n\t\tThank you for using Narco_Crawler.[/yellow]")
+    logging.info("NarcoCrawler stopped")
+    rprint("[yellow]\n\tThank you for using Narco_Crawler.[/yellow]")

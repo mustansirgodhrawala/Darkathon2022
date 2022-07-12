@@ -9,7 +9,7 @@ LOG_LEVEL = logging.INFO
 INGRESS_LOG_FILE = "logs/ingress.log"
 
 
-ingress_logger = logging.getLogger("narco_crawler.engines")
+ingress_logger = logging.getLogger("ingress")
 ingress_logger.setLevel(LOG_LEVEL)
 ingress_logger_file_handler = FileHandler(INGRESS_LOG_FILE)
 ingress_logger_file_handler.setLevel(LOG_LEVEL)

@@ -3,7 +3,7 @@ import os
 
 from rich import print as rprint
 
-from narco_crawler import logging
+from narco_crawler.config import config_logger as logging
 
 
 def ImportConfig(config_file):
