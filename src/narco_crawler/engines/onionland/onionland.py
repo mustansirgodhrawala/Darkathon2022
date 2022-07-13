@@ -11,8 +11,7 @@ from aiohttp_socks import ProxyType
 from bs4 import BeautifulSoup
 from kafka import KafkaProducer
 
-from narco_crawler import logging as mainlog
-from narco_crawler.engines import engines_logger
+from narco_crawler.engines import engines_logger as logging
 from narco_crawler.engines.random_headers import random_headers
 
 
@@ -31,8 +30,7 @@ async def onionland_main(topic, keywords):
     connector = connector = ProxyConnector(
         proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
     )
-    mainlog.info(f"Starting onionland crawler for {topic}.")
-    engines_logger.info(f"Starting onionland crawler for {topic}.")
+    logging.info(f"Starting onionland crawler for {topic}.")
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
@@ -41,8 +39,7 @@ async def onionland_main(topic, keywords):
             tasks.append(task)
 
         await asyncio.gather(*tasks)
-        mainlog.info(f"Returning onionland crawler for {topic}.")
-        engines_logger.info(f"Returning onionland crawler for {topic}.")
+        logging.info(f"Returning onionland crawler for {topic}.")
 
 
 async def scrape(session, keyword, producer, topic):
@@ -59,7 +56,7 @@ async def scrape(session, keyword, producer, topic):
             headers=random_headers(),
             timeout=180,
         ) as response:
-            engines_logger.info(f"Onionland engine for {keyword} called")
+            logging.info(f"Onionland engine for {keyword} called")
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")
 
@@ -84,7 +81,7 @@ async def scrape(session, keyword, producer, topic):
             for n in range(2, page_number + 1):
                 try:
                     async with session.get(
-                        onionland_url.format(keyword=keyword, page=n), timeout=120
+                        onionland_url.format(keyword=keyword, page=n), timeout=30
                     ) as resp:
                         resp = await resp.read()
                         soup = BeautifulSoup(resp, "html5lib")
@@ -99,13 +96,12 @@ async def scrape(session, keyword, producer, topic):
                             break
 
                 except asyncio.exceptions.TimeoutError:
-                    engines_logger.warning(f"Onionland Timeout on {keyword}, handled.")
+                    logging.warning(f"Onionland Timeout on {keyword}, handled.")
                 except Exception as e:
-                    engines_logger.critical("Onionland engine timeout")
-                    engines_logger.exception(e, exc_info=True)
+                    logging.critical("Onionland engine timeout")
+                    logging.exception(e, exc_info=True)
     except Exception as e:
-        engines_logger.critical("Onionland engine timeout")
-        engines_logger.exception(e, exc_info=True)
+        logging.critical("Onionland engine timeout")
+        logging.exception(e, exc_info=True)
 
-    engines_logger.info(f"Onionland engine for {keyword} returned")
     return total

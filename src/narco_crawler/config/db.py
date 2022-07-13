@@ -20,7 +20,7 @@ def DatabaseInit(config):
         return mydb
     except mysql.connector.Error as e:
         if e.errno == 1044:
-            logging.critical("Wrong Permissions set on database.")
+            logging.warning("Wrong Permissions set on database.")
             rprint("\t\tFailed to connect to database, check logs for more info.")
         else:
             logging.critical("Unknown Exception in database connection.")

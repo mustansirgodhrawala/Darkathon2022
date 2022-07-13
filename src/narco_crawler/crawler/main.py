@@ -1,4 +1,5 @@
 import asyncio
+import multiprocessing
 
 from narco_crawler.config.config import config
 from narco_crawler.crawler import crawler_logger as logging
@@ -21,15 +22,38 @@ def de_init_crawler():
     return status
 
 
+def ahmia(topic, keywords):
+    asyncio.run(ahmia_main(topic, config["keys"][topic]))
+
+
+def tordex(topic, keywords):
+    asyncio.run(tordex_main(topic, config["keys"][topic]))
+
+
+def onionland(topic, keywords):
+    asyncio.run(onionland_main(topic, config["keys"][topic]))
+
+
 def run_crawler():
     logging.info("Crawler run starting.")
 
     topics = list(config["keys"].keys())
 
+    processes = []
+
     for topic in topics:
-        asyncio.run(ahmia_main(topic, config["keys"][topic]))
-        asyncio.run(tordex_main(topic, config["keys"][topic]))
-        asyncio.run(onionland_main(topic, config["keys"][topic]))
+        p = multiprocessing.Process(target=ahmia, args=(topic, config["keys"][topic]))
+        processes.append(p)
+        # p = multiprocessing.Process(target=tordex, args=(topic, config["keys"][topic]))
+        # processes.append(p)
+        # p = multiprocessing.Process(target=onionland, args=(topic, config["keys"][topic]))
+        # processes.append(p)
+
+    for process in processes:
+        process.start()
+
+    for process in processes:
+        process.join()
 
     logging.info("Crawler finished.")
 

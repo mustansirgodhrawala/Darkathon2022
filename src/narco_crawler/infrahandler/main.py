@@ -11,12 +11,70 @@ from kafka.admin import NewTopic
 from rich import print as rprint
 
 from narco_crawler import client
+from narco_crawler import logging as mainlog
 from narco_crawler.infrahandler import infra_logger as logging
 
 logging.info("Logger for InfraHandler Created.")
 from narco_crawler.config.db import database
 from narco_crawler.config.db import UpdateDBTime
 from narco_crawler.config.config import config
+import mysql.connector
+
+
+def add_schema(config):
+    logging.info("Creating database schema.")
+
+    mycursor = database.cursor()
+    topics = list(config["keys"].keys())
+    for topic in topics:
+        try:
+            mycursor.execute(f"CREATE TABLE {topic}_ingress (links TEXT)")
+        except mysql.connector.Error as e:
+            if e.errno == 1050:
+                mycursor.execute(f"TRUNCATE TABLE {topic}_ingress")
+                logging.info("Just needed to truncate, table already existed.")
+                logging.warning(
+                    "This means application was halted during execution and infra was not de-initialized."
+                )
+            else:
+                logging.critical(
+                    f"Failed to create database schema for {topic}, it's a mysql error"
+                )
+                logging.exception(e, exc_info=True)
+                return False
+        except Exception as e:
+            logging.critical(f"Failed to create database schema for {topic}.")
+            logging.exception(e, exc_info=True)
+            return False
+        finally:
+            database.commit()
+
+    logging.info("Created database schema.")
+    return True
+
+
+def delete_schema(config):
+    logging.info("Deleted database schema.")
+    mycursor = database.cursor()
+    topics = list(config["keys"].keys())
+    for topic in topics:
+        try:
+            mycursor.execute(f"DROP TABLE {topic}_ingress")
+        except mysql.connector.Error as e:
+            if e.errno == 1051:
+                logging.critical(
+                    "Table does not exist, this is abnormal. Please report."
+                )
+            else:
+                logging.critical("MYSQL Error exists.")
+                logging.exception(e, exc_info=True)
+        except Exception as e:
+            logging.warning("Failed to delete database tables.")
+            logging.exception(e, exc_info=True)
+            return False
+    database.commit()
+    logging.info("Deleted database schema.")
+    return True
 
 
 def docker_infra_restart():
@@ -40,8 +98,8 @@ def docker_infra_restart():
 
 
 class Docker_Images:
-    Load_Balancer = "./src/narco_crawler/narco_infra/loadbalancer"
-    Tor_Proxy = "./src/narco_crawler/narco_infra/tor"
+    Load_Balancer = "./src/narco_crawler/backend/loadbalancer"
+    Tor_Proxy = "./src/narco_crawler/backend/tor"
 
 
 def create_topics_kafka(topics):
@@ -134,6 +192,13 @@ def infra_init(build, rebuild=False):
             client.images.build(path=Docker_Images.Load_Balancer, tag="load_balancer")
             logging.info("Finished build of docker images.")
             return True
+        except TypeError:
+            logging.critical(
+                "Directory supplied to backend infra is invalid, please fix inside configuration files."
+            )
+            mainlog.critical(
+                "Directory supplied to backend infra is invalid(building failed), please fix inside configuration files."
+            )
         except Exception as e:
             logging.critical("Failed build of docker images.")
             logging.exception(e, exc_info=True)
@@ -157,6 +222,7 @@ def infra_init(build, rebuild=False):
                     name="torone",
                     network="narco_crawler",
                     remove=True,
+                    environment=["TOR_INSTANCES=30"],
                 )
                 logging.info("Started torone docker containers")
             else:
@@ -244,7 +310,7 @@ def kafka_init():
         return False
 
 
-def initializer(build=False, skip_test=False):
+def initializer(build, skip_test=False):
     logging.info("Starting infrastructure.")
     status = True
 
@@ -253,6 +319,9 @@ def initializer(build=False, skip_test=False):
         status = False
 
     if not kafka_init():
+        status = False
+
+    if not add_schema(config):
         status = False
 
     if not create_topics_kafka(list(config["keys"].keys())):
@@ -297,6 +366,9 @@ def de_initializer():
         if not delete_topics_kafka(list(config["keys"].keys())):
             status = False
 
+        if not delete_schema(config):
+            status = False
+
         if status is True:
             logging.info("Successfully stopped infrastructure.")
 
@@ -317,7 +389,7 @@ def backend_tester():
 
     try:
         requests.get(
-            "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/",
+            "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
             proxies=proxies,
             timeout=10,
         )
@@ -327,7 +399,7 @@ def backend_tester():
         try:
             logging.warning("Backend has failed Test 1.")
             requests.get(
-                "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/",
+                "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                 proxies=proxies,
                 timeout=30,
             )
@@ -340,9 +412,9 @@ def backend_tester():
                 logging.info("Restarted Backend Docker Infrastructure.")
                 try:
                     requests.get(
-                        "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/",
+                        "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                         proxies=proxies,
-                        timeout=30,
+                        timeout=60,
                     )
                     logging.info("Backend infrastructure is working.")
                     return True
