@@ -1,4 +1,5 @@
 import time
+from collections import OrderedDict
 
 from kafka import KafkaConsumer
 from rich import print as rprint
@@ -16,6 +17,13 @@ def processor(topic, links):
     database.commit()
     cursor.close()
     logging.info(f"Processor finished for {topic}, added { len(links) }.")
+
+
+def remove_duplicates(topic, links):
+    logging.info(f"Removing duplicates for topic {topic}, initial count { len(links) }")
+    links = list(OrderedDict.fromkeys(links))
+    logging.info(f"Removed duplicates for topic {topic}, final count { len(links) }")
+    return links
 
 
 def ingressor(topic):
@@ -39,6 +47,7 @@ def ingressor(topic):
         else:
             pass
 
+    links = remove_duplicates(topic, links)
     processor(topic, links)
     logging.info(f"Ingressor finished for topic {topic}")
 

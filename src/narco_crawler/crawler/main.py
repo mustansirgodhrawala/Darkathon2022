@@ -44,10 +44,12 @@ def run_crawler():
     for topic in topics:
         p = multiprocessing.Process(target=ahmia, args=(topic, config["keys"][topic]))
         processes.append(p)
-        # p = multiprocessing.Process(target=tordex, args=(topic, config["keys"][topic]))
-        # processes.append(p)
-        # p = multiprocessing.Process(target=onionland, args=(topic, config["keys"][topic]))
-        # processes.append(p)
+        p = multiprocessing.Process(target=tordex, args=(topic, config["keys"][topic]))
+        processes.append(p)
+        p = multiprocessing.Process(
+            target=onionland, args=(topic, config["keys"][topic])
+        )
+        processes.append(p)
 
     for process in processes:
         process.start()
