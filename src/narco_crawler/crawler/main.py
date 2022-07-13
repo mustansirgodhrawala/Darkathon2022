@@ -3,8 +3,8 @@ import asyncio
 from narco_crawler.config.config import config
 from narco_crawler.crawler import crawler_logger as logging
 from narco_crawler.engines.ahmia.ahmia import ahmia_main
-
-# from narco_crawler.engines.tordex.tordex import tordex_main
+from narco_crawler.engines.onionland.onionland import onionland_main
+from narco_crawler.engines.tordex.tordex import tordex_main
 
 
 def start_crawler():
@@ -28,7 +28,8 @@ def run_crawler():
 
     for topic in topics:
         asyncio.run(ahmia_main(topic, config["keys"][topic]))
-        # asyncio.run(tordex_main(topic, config["keys"][topic]))
+        asyncio.run(tordex_main(topic, config["keys"][topic]))
+        asyncio.run(onionland_main(topic, config["keys"][topic]))
 
     logging.info("Crawler finished.")
 
