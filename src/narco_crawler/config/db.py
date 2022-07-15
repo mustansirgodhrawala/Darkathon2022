@@ -46,10 +46,21 @@ def UpdateDBTime(mydb):
         mydb.commit()
         logging.info("Successfully updated current access time in db table.")
         return True
-    except Exception as e:
-        logging.warning("Failed to update current time in database.")
-        logging.exception(e, exc_info=True)
-        return e
+    except Exception:
+        try:
+            logging.info("I couldn't find the table, making it")
+            cursor = mydb.cursor()
+            cursor.execute("CREATE TABLE operation(LastUsed varchar(255),Id)")
+            cursor.execute(
+                f'insert into operation(LastUsed,Id) VALUES ({str(datetime.datetime.isoformat(datetime.datetime.now())) }",0'
+            )
+            mydb.commit()
+            logging.info("Successfully updated current access time in db table.")
+            return True
+        except Exception as e:
+            logging.warning("Failed to update current time in database.")
+            logging.exception(e, exc_info=True)
+            return e
 
 
 # Initializing Database Connection
