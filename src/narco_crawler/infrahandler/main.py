@@ -26,6 +26,7 @@ def add_schema(config):
 
     mycursor = database.cursor()
     topics = list(config["keys"].keys())
+    topics.append("markets")
     for topic in topics:
         try:
             mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")
@@ -104,6 +105,7 @@ class Docker_Images:
 
 
 def create_topics_kafka(topics):
+    topics.append("markets")
     logging.info("Creating kafka topics")
     try:
         admin_client = KafkaAdminClient(
@@ -142,6 +144,7 @@ def create_topics_kafka(topics):
 
 
 def delete_topics_kafka(topics):
+    topics.append("markets")
     logging.info("Deleting kafka topics")
     try:
         admin_client = KafkaAdminClient(

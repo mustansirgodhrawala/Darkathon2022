@@ -49,7 +49,7 @@ async def scrape(session, producer):
                     continue
 
             for link in soup.find_all("p")[(no_of_header * 2)].find_all("a"):
-                producer.send("markets", bytes(str(link.get_text), "utf-8"))
+                producer.send("markets", bytes(str(link["href"]), "utf-8"))
                 total += 1
 
     except asyncio.exceptions.TimeoutError:

@@ -71,6 +71,11 @@ def main(argv: Optional[Sequence[str]] = None):
         action="store_true",
     )
     parser.add_argument(
+        "--process",
+        help="Run with a --process to get process no.",
+        action="store_true",
+    )
+    parser.add_argument(
         "-c",
         "--crawl",
         help="Run with a -c flag to crawl the dark web based on config file.",
@@ -125,6 +130,10 @@ def main(argv: Optional[Sequence[str]] = None):
         """
         )
 
+    if args.process:
+        rprint(f"[green]\tProcess Number: { os.getpid() }[/green]")
+        os.system(f"echo { os.getpid() } | xclip -sel clip")
+
     if args.version:
         rprint(f"\t\t[white]Version: {version}[/white]")
 
@@ -134,16 +143,21 @@ def main(argv: Optional[Sequence[str]] = None):
 
     rprint("\n\t[white]Initialization[/white]")
     logging.info("Starting Infra")
-    if initializer(args.build, args.skip_tests):
-        # Waiting for tor proxy and load balancer to loophandshake
-        rprint("\t\t[green]Backend has been initialized.[/green]")
-        logging.info("Successfully started Infra")
-    else:
-        rprint(
-            "\t\t[red]Initialization of infra has failed, check logs/infra.log for more details."
-        )
-        logging.critical("Failed to start info, check logs/infra.log for more details.")
-
+    try:
+        if initializer(args.build, args.skip_tests):
+            # Waiting for tor proxy and load balancer to loophandshake
+            rprint("\t\t[green]Backend has been initialized.[/green]")
+            logging.info("Successfully started Infra")
+        else:
+            rprint(
+                "\t\t[red]Initialization of infra has failed, check logs/infra.log for more details."
+            )
+            logging.critical(
+                "Failed to start info, check logs/infra.log for more details."
+            )
+    except KeyboardInterrupt:
+        rprint("Ingress manually interrupted, terminating.")
+        logging.warning("Ingress manually terminated, taking down infrastructure.")
     if args.crawl:
         rprint("[white]\n\tCrawler[/white]")
         logging.info("Crawler started")
@@ -171,9 +185,7 @@ def main(argv: Optional[Sequence[str]] = None):
 
         # Ingress Crawl
         rprint("[white]\n\tIngress[/white]")
-        rprint(
-            "[green]\t\tAttempting to ingress crawler results with config files.[/green]"
-        )
+        rprint("[green]\t\tIngressing[/green]")
         if not ingress_main():
             try:
                 rprint(

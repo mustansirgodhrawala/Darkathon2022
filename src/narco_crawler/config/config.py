@@ -44,3 +44,14 @@ except Exception as e:
     rprint("\t\t[red]Exception when loading config. Check logs for more details.[/red]")
     logging.exception(e, exc_info=True)
     exit()
+
+
+def maxcores():
+    try:
+        max = config["max_process_count"][0]
+        if max:
+            logging.info(f"Returning max count as { max }")
+            return int(max)
+    except Exception:
+        logging.info(f"Max count not found in config providing: { os.cpu_count() - 1 }")
+        return os.cpu_count() - 1
