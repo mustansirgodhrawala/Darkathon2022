@@ -5,8 +5,8 @@ import time
 from rich import print as rprint
 
 from narco_crawler.config.config import config
+from narco_crawler.config.config import maxcores
 from narco_crawler.crawler import crawler_logger as logging
-from narco_crawler.crawler import maxcores
 from narco_crawler.engines.ahmia.ahmia import ahmia_main
 from narco_crawler.engines.haystak.haystak import haystak_main
 from narco_crawler.engines.hiddenwiki.hiddenwiki import hiddenwiki_main

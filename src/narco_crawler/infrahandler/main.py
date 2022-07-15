@@ -328,6 +328,20 @@ def kafka_init():
         return False
 
 
+def backend_test_starter(skip_test):
+    if skip_test is False:
+        if backend_tester():
+            rprint("\t\t[green]Backend infrastructure is functional[/green]")
+            logging.info("Backend Test Successfull")
+            return True
+        else:
+            rprint(
+                "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
+            )
+            logging.warning("Backend Test Failed, check logs for more info")
+            return False
+
+
 def initializer(build, skip_test=False):
     logging.info("Starting infrastructure.")
     status = True
@@ -335,6 +349,9 @@ def initializer(build, skip_test=False):
     status = db_init()
     if not infra_init(build):
         status = False
+
+    if not backend_test_starter(skip_test):
+        return False
 
     if not kafka_init():
         status = False
@@ -344,16 +361,6 @@ def initializer(build, skip_test=False):
 
     if not create_topics_kafka(list(config["keys"].keys())):
         status = False
-
-    if skip_test is False:
-        if backend_tester():
-            rprint("\t\t[green]Backend infrastructure is functional[/green]")
-            logging.info("Backend Test Successfull")
-        else:
-            rprint(
-                "\t\t[red]Backend infrastructure has failed testing, check logs for more details.[/red]"
-            )
-            logging.warning("Backend Test Failed, check logs for more info")
 
     return status
 
@@ -417,6 +424,7 @@ def backend_tester():
     except Exception:
         try:
             logging.warning("Backend has failed Test 1.")
+            time.sleep(5)
             requests.get(
                 "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                 proxies=proxies,

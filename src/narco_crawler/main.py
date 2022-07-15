@@ -1,5 +1,6 @@
 # Logging Application Start
 from narco_crawler import logging
+from narco_crawler.config.config import maxcores
 
 logging.info("NarcoCrawler started")
 
@@ -26,6 +27,7 @@ def arg_conf(args):
     logging.info("Argument Confirmer Called")
 
     # Wait if wrong input supplied.
+    rprint("\n\t[white]Confirm Arguments[/white]")
     if args.inspect:
         rprint("\t\t[yellow]Input: inspect existing links in the db.[/yellow]")
     if args.build:
@@ -71,7 +73,7 @@ def main(argv: Optional[Sequence[str]] = None):
         action="store_true",
     )
     parser.add_argument(
-        "--process",
+        "--info",
         help="Run with a --process to get process no.",
         action="store_true",
     )
@@ -130,8 +132,9 @@ def main(argv: Optional[Sequence[str]] = None):
         """
         )
 
-    if args.process:
+    if args.info:
         rprint(f"[green]\tProcess Number: { os.getpid() }[/green]")
+        rprint(f"[green]\tMaximum Cores: { maxcores() }[/green]")
         os.system(f"echo { os.getpid() } | xclip -sel clip")
 
     if args.version:
