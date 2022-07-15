@@ -12,10 +12,12 @@ from narco_crawler.ingress import ingress_logger as logging
 def processor(topic, links):
     logging.info(f"Processor called {topic}")
     cursor = database.cursor()
+    # print(links)
     for link in links:
-        cursor.execute(f'INSERT INTO {topic}_ingress(links) VALUES ("{link}")')
+        cursor.execute(f"INSERT INTO {topic}_ingress(links) VALUES ('{link}')")
     database.commit()
     cursor.close()
+    database.close()
     logging.info(f"Processor finished for {topic}, added { len(links) }.")
 
 

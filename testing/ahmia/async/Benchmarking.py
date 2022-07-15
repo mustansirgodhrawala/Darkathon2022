@@ -84,7 +84,7 @@ async def main():
         links = await asyncio.gather(*tasks)
 
         # print(f"Total links received  { len(links) }")
-        print(len(links))
+        print(links)
 
 
 async def get_video_data(session, keyword, producer):

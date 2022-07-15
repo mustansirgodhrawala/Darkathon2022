@@ -3,7 +3,6 @@ import math
 import re
 import urllib.parse as urlparse
 from urllib.parse import parse_qs
-from urllib.parse import unquote
 
 import aiohttp
 from aiohttp_socks import ProxyConnector
@@ -38,8 +37,8 @@ async def onionland_main(topic, keywords):
             task = asyncio.ensure_future(scrape(session, keyword, producer, topic))
             tasks.append(task)
 
-        await asyncio.gather(*tasks)
-        logging.info(f"Returning onionland crawler for {topic}.")
+        results = await asyncio.gather(*tasks)
+        logging.info(f"Returning onionland crawler for {topic}, result is {results}")
 
 
 async def scrape(session, keyword, producer, topic):
@@ -48,7 +47,7 @@ async def scrape(session, keyword, producer, topic):
     )
     onionland_url = tor_address + "/search?q={keyword}&page={page}"
     max_nb_page = 100
-    total = []
+    result = 0
 
     try:
         async with session.get(
@@ -58,9 +57,22 @@ async def scrape(session, keyword, producer, topic):
         ) as response:
             logging.info(f"Onionland engine for {keyword} called")
             response = await response.read()
+            response = response.decode("utf-8")
             soup = BeautifulSoup(response, "html5lib")
 
             page_number = 1
+
+            for r in soup.select(".result-block .link"):
+                try:
+                    if r.text.startswith("\nhttp://"):
+                        link = r.text.removeprefix("\n")
+                        link = link.removesuffix("\n")
+                        if link:
+                            result += 1
+                            producer.send(topic, bytes(link, "utf-8"))
+                except Exception:
+                    pass
+
             for i in soup.find_all("div", attrs={"class": "search-status"}):
                 approx_re = re.match(
                     r"About ([,0-9]+) result(.*)",
@@ -73,11 +85,6 @@ async def scrape(session, keyword, producer, topic):
                     if page_number > max_nb_page:
                         page_number = max_nb_page
 
-            for r in soup.select(".result-block .title a"):
-                if not r["href"].startswith("/ads/"):
-                    link = unquote(unquote(get_parameter(r["href"], "l")))
-                    producer.send(topic, bytes(link, "utf-8"))
-
             for n in range(2, page_number + 1):
                 try:
                     async with session.get(
@@ -86,11 +93,13 @@ async def scrape(session, keyword, producer, topic):
                         resp = await resp.read()
                         soup = BeautifulSoup(resp, "html5lib")
                         total = 0
-                        for r in soup.select(".result-block .title a"):
-                            if not r["href"].startswith("/ads/"):
-                                link = unquote(unquote(get_parameter(r["href"], "l")))
+                        for r in soup.select(".result-block .link"):
+                            if r.text.startswith("\nhttp://"):
+                                link = r.text.removeprefix("\n")
+                                link = link.removesuffix("\n")
                                 if link:
                                     total += 1
+                                    result += 1
                                     producer.send(topic, bytes(link, "utf-8"))
                         if total == 0:
                             break
@@ -103,5 +112,4 @@ async def scrape(session, keyword, producer, topic):
     except Exception as e:
         logging.critical("Onionland engine timeout")
         logging.exception(e, exc_info=True)
-
-    return total
+    return result

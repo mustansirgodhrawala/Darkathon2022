@@ -22,8 +22,10 @@ async def ahmia_main(topic, keywords):
             task = asyncio.ensure_future(scraper(session, keyword, producer, topic))
             tasks.append(task)
 
-        await asyncio.gather(*tasks)
-        logging.info(f"Returning ahmia crawler for {topic}.")
+        results = await asyncio.gather(*tasks)
+        logging.info(
+            f"Returning ahmia crawler for {topic}, links are {len(results)} and are {results}."
+        )
 
 
 async def scraper(session, keyword, producer, topic):
@@ -34,7 +36,7 @@ async def scraper(session, keyword, producer, topic):
     try:
         logging.info(f"Ahmia engine for {keyword} called")
         async with session.get(
-            ahmia_url, headers=random_headers(), timeout=20
+            ahmia_url, headers=random_headers(), timeout=120
         ) as response:
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")
@@ -42,8 +44,9 @@ async def scraper(session, keyword, producer, topic):
 
             for r in soup.select("li.result h4"):
                 link = r.find("a")["href"].split("redirect_url=")[1]
-                producer.send(topic, bytes(str(link), "utf-8"))
-                results += 1
+                if ".onion" in link:
+                    producer.send(topic, bytes(link, "utf-8"))
+                    results += 1
 
             return results
     except asyncio.TimeoutError:

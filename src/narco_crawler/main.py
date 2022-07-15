@@ -112,8 +112,8 @@ def main(argv: Optional[Sequence[str]] = None):
         logging.exception(e, exc_info=True)
 
     if not args.quiet:
-        rprint(
-            r"""[white]
+        print(
+            r"""
           _____             _     __          __  _       _   _                        _____                    _
          |  __ \           | |    \ \        / / | |     | \ | |                      / ____|                  | |
          | |  | | __ _ _ __| | __  \ \  /\  / /__| |__   |  \| | __ _ _ __ ___ ___   | |     _ __ __ ___      _| | ___ _ __
@@ -122,7 +122,7 @@ def main(argv: Optional[Sequence[str]] = None):
          |_____/ \__,_|_|  |_|\_\     \/  \/ \___|_.__/  |_| \_|\__,_|_|  \___\___/   \_____|_|  \__,_| \_/\_/ |_|\___|_|
 
 
-        [/white]"""
+        """
         )
 
     if args.version:
@@ -136,7 +136,7 @@ def main(argv: Optional[Sequence[str]] = None):
     logging.info("Starting Infra")
     if initializer(args.build, args.skip_tests):
         # Waiting for tor proxy and load balancer to loophandshake
-        rprint("\t\t[green]Backend has been initialized.[/green]\n")
+        rprint("\t\t[green]Backend has been initialized.[/green]")
         logging.info("Successfully started Infra")
     else:
         rprint(
@@ -145,7 +145,7 @@ def main(argv: Optional[Sequence[str]] = None):
         logging.critical("Failed to start info, check logs/infra.log for more details.")
 
     if args.crawl:
-        rprint("\n\t[white]Crawler[/white]")
+        rprint("[white]\n\tCrawler[/white]")
         logging.info("Crawler started")
 
         # Initiating Crawler procedures

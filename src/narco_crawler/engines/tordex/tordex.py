@@ -62,9 +62,9 @@ async def scrape(session, keyword, producer, topic):
             # try:
             for r in soup.select(".container h5 a"):
                 link = clear(r["href"])
-                if ".onion" in link:
-                    producer.send(topic, bytes(link, "utf-8"))
-                    total.append(link)
+                # if ".onion" in link:
+                producer.send(topic, bytes(link, "utf-8"))
+                total.append(link)
 
             for n in range(2, page_number + 1):
                 async with session.get(
@@ -74,9 +74,9 @@ async def scrape(session, keyword, producer, topic):
                     soup = BeautifulSoup(resp, "html5lib")
                     for r in soup.select(".container h5 a"):
                         link = clear(r["href"])
-                        if ".onion" in link:
-                            total.append(link)
-                            producer.send(topic, bytes(link, "utf-8"))
+                        # if ".onion" in link:
+                        total.append(link)
+                        producer.send(topic, bytes(link, "utf-8"))
     except asyncio.exceptions.TimeoutError:
         logging.warning(f"Tordex Timeout on {keyword}, handled.")
     except Exception as e:

@@ -28,7 +28,7 @@ def add_schema(config):
     topics = list(config["keys"].keys())
     for topic in topics:
         try:
-            mycursor.execute(f"CREATE TABLE {topic}_ingress (links TEXT)")
+            mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")
         except mysql.connector.Error as e:
             if e.errno == 1050:
                 mycursor.execute(f"TRUNCATE TABLE {topic}_ingress")
@@ -81,6 +81,7 @@ def docker_infra_restart():
     def restart_torone():
         logging.info("Restarting torone docker containers")
         client.containers.get("torone").restart()
+        client.containers.get("tortwo").restart()
         logging.info("Restarting torone docker containers")
 
     def load_balancer():
@@ -115,6 +116,11 @@ def create_topics_kafka(topics):
         )
         logging.exception(e, exc_info=True)
         return False
+
+    try:
+        admin_client.delete_topics(topics)
+    except Exception:
+        pass
 
     # Make topics list
     topic_list = []
@@ -209,6 +215,7 @@ def infra_init(build, rebuild=False):
 
         try:
             data = client.containers.get("torone")
+            data = client.containers.get("tortwo")
         except (requests.exceptions.HTTPError, docker.errors.NotFound):
             data = None
 
@@ -220,6 +227,14 @@ def infra_init(build, rebuild=False):
                     "tor_proxy",
                     detach=True,
                     name="torone",
+                    network="narco_crawler",
+                    remove=True,
+                    environment=["TOR_INSTANCES=30"],
+                )
+                client.containers.run(
+                    "tor_proxy",
+                    detach=True,
+                    name="tortwo",
                     network="narco_crawler",
                     remove=True,
                     environment=["TOR_INSTANCES=30"],
@@ -255,7 +270,7 @@ def infra_init(build, rebuild=False):
                     name="balancer_container",
                     network="narco_crawler",
                     remove=True,
-                    ports={"9050/tcp/udp": 9050},
+                    ports={"9050/tcp": 9050, "9050/udp": 9050},
                 )
                 logging.info("Started Load Balancer Docker Containers")
             else:
@@ -287,9 +302,9 @@ def infra_init(build, rebuild=False):
         return False
     elif status_torone and status_load_balancer:
         rprint("\t\t[green]Waiting for backend to setup.")
-        with alive_bar(10) as bar:
+        with alive_bar(15) as bar:
             bar.title = "\t\tBackend starting...."
-            for _ in range(10):
+            for _ in range(15):
                 time.sleep(1)
                 bar()
 
@@ -346,6 +361,7 @@ def infra_de_init():
 
         # Getting containers by their name and stopping them, using docker sdk.
         client.containers.get("torone").stop()
+        client.containers.get("tortwo").stop()
         client.containers.get("balancer_container").stop()
         logging.info("Stopped running docker containers.")
         return True
@@ -389,9 +405,9 @@ def backend_tester():
 
     try:
         requests.get(
-            "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
+            "facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion",
             proxies=proxies,
-            timeout=10,
+            timeout=30,
         )
         logging.info("Backend infrastructure is working.")
         return True
@@ -401,7 +417,7 @@ def backend_tester():
             requests.get(
                 "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                 proxies=proxies,
-                timeout=30,
+                timeout=45,
             )
             logging.info("Backend infrastructure is working.")
             return True
