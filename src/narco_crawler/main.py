@@ -111,6 +111,11 @@ def main(argv: Optional[Sequence[str]] = None):
         action="store_true",
         help="Set the --skip-down flag to not print banner",
     )
+    parser.add_argument(
+        "--spider",
+        action="store_true",
+        help="Run with spider markets flag to scan all active markets and spider on a deeper level",
+    )
 
     # Processing args
     try:
@@ -159,19 +164,23 @@ def main(argv: Optional[Sequence[str]] = None):
                 "Failed to start info, check logs/infra.log for more details."
             )
     except KeyboardInterrupt:
-        rprint("Ingress manually interrupted, terminating.")
-        logging.warning("Ingress manually terminated, taking down infrastructure.")
+        rprint("\t      [red]Initialization manually interrupted, terminating.[/red]")
+        logging.warning(
+            "Initialization manually terminated, taking down infrastructure."
+        )
+        args.spider = False
+        args.crawl = False
+        args.skip_down = False
+
     if args.crawl:
         rprint("[white]\n\tCrawler[/white]")
         logging.info("Crawler started")
-
         # Initiating Crawler procedures
         from narco_crawler.crawler.main import (
             run_crawler,
         )
         from narco_crawler.ingress.main import ingress_main
 
-        # Crawling Area
         rprint("[green]\t\tAttempting to run crawler with config files.[/green]")
         if not run_crawler():
             try:
@@ -201,6 +210,37 @@ def main(argv: Optional[Sequence[str]] = None):
                 )
         else:
             rprint("\t\t[green]Successfully ran ingress.[/green]")
+
+    rprint("\n\t[white]Sorting[/white]")
+    logging.info("Starting sorter, for dormant and drug relevant links.")
+    from narco_crawler.sorter.main import sorter_base
+
+    if sorter_base():
+        rprint("\t\t[green]Sorter finished, run successful[/green]")
+        logging.info("Finished sorter base run.")
+    else:
+        rprint("\t\t[red]Sorter failed, check logs/sorter.log for more details[/red]")
+        logging.warning("Finished sorter base run, unsuccessful")
+
+    if args.spider:
+        rprint("[white]\n\tSpider[/white]")
+        logging.info("Spider started")
+
+        from narco_crawler.spider.main import spider
+
+        rprint("[green]\t\tSpidering all links[/green]")
+        if not spider(["meth_ingress"]):
+            try:
+                rprint(
+                    "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"
+                )
+            except KeyboardInterrupt:
+                rprint("Spider manually interrupted, terminating.")
+                logging.warning(
+                    "Spider manually terminated, taking down infrastructure."
+                )
+        else:
+            rprint("\t\t[green]Successfully ran Spider.[/green]")
 
     # Taking down backend infra
     rprint("\n\t[white]De-Initialization[/white]")

@@ -1,5 +1,4 @@
 import multiprocessing
-import time
 from collections import OrderedDict
 
 from kafka import KafkaConsumer
@@ -15,7 +14,7 @@ def processor(topic, links):
     cursor = database.cursor()
     # print(links)
     for link in links:
-        cursor.execute(f"INSERT INTO {topic}_ingress(links) VALUES ('{link}')")
+        cursor.execute(f'INSERT INTO {topic}_ingress(links) VALUES ("{link}")')
     database.commit()
     if len(links) > 0:
         rprint(f"[green]\t\tIngress finished for {topic}, with { len(links) }[/green]")
@@ -35,7 +34,6 @@ def topic_ingressor(topic):
     links = []
     logging.info(f"Topics Ingressor for topic {topic}")
     rprint(f"\t\t[green]Ingressing {topic}.[/green]")
-    time.sleep(5)
     consumer = KafkaConsumer(
         bootstrap_servers=["localhost:9092"],
         auto_offset_reset="earliest",
@@ -60,7 +58,6 @@ def market_ingress():
     links = []
     logging.info("Markets Ingress")
     rprint("\t\t[green]Ingressing markets.[/green]")
-    time.sleep(5)
     consumer = KafkaConsumer(
         bootstrap_servers=["localhost:9092"],
         auto_offset_reset="earliest",

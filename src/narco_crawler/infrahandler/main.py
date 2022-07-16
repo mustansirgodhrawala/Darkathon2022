@@ -12,6 +12,7 @@ from rich import print as rprint
 
 from narco_crawler import client
 from narco_crawler import logging as mainlog
+from narco_crawler.engines.random_headers import random_headers
 from narco_crawler.infrahandler import infra_logger as logging
 
 logging.info("Logger for InfraHandler Created.")
@@ -31,12 +32,14 @@ def add_schema(config):
         try:
             mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")
         except mysql.connector.Error as e:
-            if e.errno == 1050:
+            if e.errno == 1050 and config["truncate"] == "True":
                 mycursor.execute(f"TRUNCATE TABLE {topic}_ingress")
                 logging.info("Just needed to truncate, table already existed.")
                 logging.warning(
                     "This means application was halted during execution and infra was not de-initialized."
                 )
+            elif config["truncate"] == "False":
+                logging.warning("No cleaning database, this is only for test purposes.")
             else:
                 logging.critical(
                     f"Failed to create database schema for {topic}, it's a mysql error"
@@ -217,37 +220,53 @@ def infra_init(build, rebuild=False):
         status = True
 
         try:
-            data = client.containers.get("torone")
-            data = client.containers.get("tortwo")
+            data1 = client.containers.get("torone")
         except (requests.exceptions.HTTPError, docker.errors.NotFound):
-            data = None
+            data1 = None
+
+        try:
+            data2 = client.containers.get("tortwo")
+        except (requests.exceptions.HTTPError, docker.errors.NotFound):
+            data2 = None
+
+        if (not data1 and data2) or (data1 and not data2):
+            logging.info("One is up and one isn't, taking both down.")
+            try:
+                data1 = client.containers.get("torone").remove(force=True)
+            except Exception:
+                data1 = None
+
+            try:
+                data2 = client.containers.get("tortwo").remove(force=True)
+            except Exception:
+                data2 = None
+
+        elif data1 is not None and data2 is not None:
+            logging.warning(
+                "Existing torone container exists, please don't force stop application"
+            )
+            return "pre-existing"
 
         # TORDEX Proxy Container
         try:
-            if not data:
-                logging.info("Starting torone docker containers")
-                client.containers.run(
-                    "tor_proxy",
-                    detach=True,
-                    name="torone",
-                    network="narco_crawler",
-                    remove=True,
-                    environment=["TOR_INSTANCES=30"],
-                )
-                client.containers.run(
-                    "tor_proxy",
-                    detach=True,
-                    name="tortwo",
-                    network="narco_crawler",
-                    remove=True,
-                    environment=["TOR_INSTANCES=30"],
-                )
-                logging.info("Started torone docker containers")
-            else:
-                logging.warning(
-                    "Existing torone container exists, please don't force stop application"
-                )
-                return "pre-existing"
+            logging.info("Starting torone docker containers")
+            client.containers.run(
+                "tor_proxy",
+                detach=True,
+                name="torone",
+                network="narco_crawler",
+                remove=True,
+                environment=["TOR_INSTANCES=30"],
+            )
+            client.containers.run(
+                "tor_proxy",
+                detach=True,
+                name="tortwo",
+                network="narco_crawler",
+                remove=True,
+                environment=["TOR_INSTANCES=30"],
+            )
+            logging.info("Started torone docker containers")
         except Exception as e:
             logging.critical("Failed starting torone docker containers")
             logging.exception(e, exc_info=True)
@@ -305,9 +324,9 @@ def infra_init(build, rebuild=False):
         return False
     elif status_torone and status_load_balancer:
         rprint("\t\t[green]Waiting for backend to setup.")
-        with alive_bar(15) as bar:
+        with alive_bar(20) as bar:
             bar.title = "\t\tBackend starting...."
-            for _ in range(15):
+            for _ in range(20):
                 time.sleep(1)
                 bar()
 
@@ -340,6 +359,8 @@ def backend_test_starter(skip_test):
             )
             logging.warning("Backend Test Failed, check logs for more info")
             return False
+    else:
+        return True
 
 
 def initializer(build, skip_test=False):
@@ -347,19 +368,20 @@ def initializer(build, skip_test=False):
     status = True
 
     status = db_init()
-    if not infra_init(build):
-        status = False
-
-    if not backend_test_starter(skip_test):
-        return False
-
-    if not kafka_init():
-        status = False
 
     if not add_schema(config):
         status = False
 
     if not create_topics_kafka(list(config["keys"].keys())):
+        status = False
+
+    if not infra_init(build):
+        status = False
+
+    if not backend_test_starter(skip_test):
+        status = False
+
+    if not kafka_init():
         status = False
 
     return status
@@ -418,6 +440,7 @@ def backend_tester():
             "facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion",
             proxies=proxies,
             timeout=30,
+            headers=random_headers(),
         )
         logging.info("Backend infrastructure is working.")
         return True
@@ -429,6 +452,7 @@ def backend_tester():
                 "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                 proxies=proxies,
                 timeout=45,
+                headers=random_headers(),
             )
             logging.info("Backend infrastructure is working.")
             return True
@@ -441,6 +465,7 @@ def backend_tester():
                     requests.get(
                         "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",
                         proxies=proxies,
+                        headers=random_headers(),
                         timeout=60,
                     )
                     logging.info("Backend infrastructure is working.")

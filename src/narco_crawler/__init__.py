@@ -9,7 +9,7 @@ LOG_LEVEL = logging.INFO
 MAIN_LOG_FILE = "logs/main.log"
 
 
-logging = logging.getLogger("config")
+logging = logging.getLogger("main")
 logging.setLevel(LOG_LEVEL)
 logging_file_handler = FileHandler(MAIN_LOG_FILE)
 logging_file_handler.setLevel(LOG_LEVEL)
