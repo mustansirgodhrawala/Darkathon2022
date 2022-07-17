@@ -1,0 +1,630 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Quick links
+
+
+
+
+
+
+
+
+									Unanswered topics
+
+
+
+
+									Active topics
+
+
+
+
+
+									Search
+
+
+
+
+
+
+
+
+
+
+
+				FAQ
+
+
+
+
+
+				Login
+
+
+
+
+					Register
+
+
+
+
+
+
+
+
+
+
+
+				cryptostorm's community forum
+				there is madness to our methods
+				Skip to content
+
+
+
+
+
+
+
+						Search
+
+
+						Advanced search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							cryptostorm.ch
+										cryptostorm forum
+
+
+
+
+
+
+					Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Some questions about port forwarding
+
+Looking for assistance with a cryptostorm connection issue? Post here & we'll help out. Also: if you're not sure where to post, do so here & we'll move things around as needed. Also: for quickest support, email our oddly calm & easygoing support reps at support@cryptostorm.is
+
+
+
+
+
+							Post Reply
+
+
+
+
+
+
+
+
+
+
+
+
+						Email topic
+
+
+
+
+						Print view
+
+
+
+
+
+
+
+
+
+
+
+					Search
+
+
+					Advanced search
+
+
+
+
+
+
+
+
+
+
+			4 posts
+							• Page 1 of 1
+
+
+
+
+
+
+
+
+
+
+
+
+								gotaquestion
+
+
+
+
+
+
+
+
+
+
+
+						Some questions about port forwarding
+
+
+
+
+								Report
+
+
+
+
+								Quote
+
+
+
+
+
+
+						Post
+
+								by gotaquestion » Mon Jun 06, 2022 8:35 am
+
+
+
+
+			I'm currently looking for a VPN provider that has good support for torrents (so must have port forwarding.)
+The thing is though, I don't understand most of the technical details so I don't know what's right for me.
+My use case is to torrent through apps like qBittorent, Soulseek, emule etc.
+Will CS fully support them apps with a good connection? Once I buy an account on CS, do I only have to go to the port forward config site and put in the port I need, then nothing else?
+
+And one more thing, emule uses port 4664 (I think), but if I understand things right CS only lets you use port forwarding for ports above 30000 - does that mean I can't use emule, or more precisely, does that mean emule wont get port forwarded? Will it be stuck as "Yellow"? I really want to have a "Green" connection so I can contribute and give back to the network.
+
+Thank you and I hope my questions were clear enough to understand
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Some questions about port forwarding
+
+
+
+
+								Report
+
+
+
+
+								Quote
+
+
+
+
+
+
+						Post
+
+								by parityboy » Wed Jun 08, 2022 9:27 pm
+
+
+
+
+			@OP
+
+OK, I'll try to address your questions step by step.
+
+1. BitTorrent
+I can attest to BitTorrent working perfectly with both private and public trackers. I use port forwarding with CS and it works as expected and yes, once connected you simply go to the port forwarding config site and enter the port number you want; if it hasn't already been taken by someone else, it will be assigned to you.
+
+2. eMule
+Same principle as BitTorrent however, CS only supports one forwarded port per user VPN connection. In other words, if you have BitTorrent and eMule running on the same machine, only one of those apps will be able to use port forwarding.  Of course there are ways around this (second machine, virtual machine etc.) but be aware of this limitation.
+
+As for the eMule port itself, can it not be changed in the client?
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								gotaquestion
+
+
+
+
+
+
+
+
+
+
+
+						Re: Some questions about port forwarding
+
+
+
+
+								Report
+
+
+
+
+								Quote
+
+
+
+
+
+
+						Post
+
+								by gotaquestion » Thu Jun 09, 2022 9:44 am
+
+
+
+
+			I see, I was worried that port forwarding needed some advanced configuration on your router or something like that, I'm glad it's this easy. After checking, eMule does allow you to change the port it uses and has no issues with that, it also lets you use a single port if you configure it that way. The client I'm using, aMule, doesn't let you change all the port settings in the GUI, but it works when you edit the config file.
+
+Thank you for answering, just wanted to make sure I understood everything before actually doing it
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								nongging
+
+
+		Posts: 1		Joined: Mon Jul 04, 2022 9:00 am
+
+
+
+
+
+
+
+
+						Re: Some questions about port forwarding
+
+
+
+
+								Report
+
+
+
+
+								Quote
+
+
+
+
+
+
+						Post
+
+								by nongging » Mon Jul 04, 2022 9:02 am
+
+
+
+
+			Osmanthus fragrans tea is a kind of precious flower tea made from exquisite tea billet and fresh
+ top business directory
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+							Post Reply
+
+
+
+
+
+
+
+
+
+
+
+
+						Email topic
+
+
+
+
+						Print view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Display: All posts1 day7 days2 weeks1 month3 months6 months1 year
+								Sort by: AuthorPost timeSubject
+				Direction: AscendingDescending
+
+
+
+
+
+
+
+
+
+
+
+			4 posts
+							• Page 1 of 1
+
+
+
+
+
+
+
+			Return to “member support & tech assistance”
+
+
+
+
+
+				Jump to
+
+
+
+
+
+																				  join cryptostorm ~ network access tokens available here
+																  cryptofree: no-cost cryptostorm network access
+																  independent cryptostorm token resellers, & tokens 101
+																  member support & tech assistance
+																 ↳   guides, HOWTOs & tutorials
+																  general chat, suggestions, industry news
+																 ↳   crypto, VPN & security news
+																  cryptostorm in-depth: announcements, how it works, what it is
+																  cryptostorm reborn: voodoo networking, stormtokens, PostVPN exotic netsecurity
+																  DeepDNS - cryptostorm's no-compromise DNS resolver framework
+																  #cleanVPN  ∴ encouraging transparency & clean code in network privacy service
+																  miscl.
+																 ↳   Dumping_Ground
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				All times are UTC+05:00
+
+
+					Delete cookies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
+
+
+
+
+
+
+		 

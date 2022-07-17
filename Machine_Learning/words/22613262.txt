@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+Profile directory
+About
+Mobile apps
+
+
+
+Log in
+Sign up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zed
+
+
+@zed@p3dm56xwesyzqo7twt5v33t6qdm7aiapylfp7y5ioknkvarnfsovt2ad.onion
+
+
+
+
+Follow
+
+Mastodon Best Practice for profile setup:Make sure to compress your images, especially if TOR is used. It will speed up your mastodons a lot.if GIMP is not available, check out https://tinyjpg.com/ #tools #mastodon
+
+
+
+
+
+
+
+9363bc55120ba13b.png
+
+
+
+
+
+
+Apr 19, 2021, 14:00
+·
+
+
+
+·
+
+0
+·
+0
+·
+0
+
+
+
+
+
+
+Sign in to participate in the conversation
+
+
+
+
+
+
+
+
+
+
+This is my private mastodon server. Do not sign up here if not invited, check out https://joinmastodon.org/ how to get connected.
+
+
+
+
+
+
+
+
+
+
+Resources
+
+Terms of service
+Privacy policy
+
+
+
+Developers
+
+Documentation
+API
+
+
+
+What is Mastodon?
+
+
+
+p3dm56xwesyzqo7twt5v33t6qdm7aiapylfp7y5ioknkvarnfsovt2ad.onion
+
+About
+v3.3.0
+
+
+
+More…
+
+Source code
+Mobile apps

@@ -1,0 +1,264 @@
+
+
+
+
+
+
+
+
+
+         Administration
+
+
+
+
+        Toggle navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            	 Re-Start
+
+
+
+         
+
+
+
+
+
+
+
+
+            	 Shutdown
+
+
+
+         
+
+
+
+
+                 Forum
+
+
+
+         
+
+
+
+
+
+                 Help
+
+
+
+
+          About This Page
+          JavaScript information
+
+          external   YaCy Tutorials
+          external   Download YaCy
+          external   Community (Web Forums)
+          external   Git Repository
+
+
+         
+
+
+
+
+
+                 Sponsor
+
+
+
+
+          YaCy is free software, so we need the help of many to support the development.You can help by joining a sponsoring plan:
+          external   become a Github Sponsor
+          external   become a YaCy Patreon
+          Please help! We need financial help to move on with the development!
+
+
+         
+
+
+
+
+
+            	 Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      First Steps
+      Use Case & Account
+      Load Web Pages, Crawler
+      RAM/Disk Usage & Updates
+
+
+
+
+      Monitoring
+      System Status
+      Peer-to-Peer Network
+      Index Browser
+      Network Access
+      Crawler Monitor
+
+
+
+
+
+
+      Production
+      Advanced Crawler
+      Index Export/Import
+      Content Semantic
+      Target Analysis
+
+
+      Administration
+      Index Administration
+      System Administration
+      Filter & Blacklists
+      Process Scheduler
+
+
+      Search Portal Integration
+      Portal Configuration
+      Portal Design
+      Ranking and Heuristics
+
+
+
+
+
+
+
+  Load Web Pages
+
+    Site Crawling
+    Parser Configuration
+
+
+
+
+    Site Crawling
+
+
+    Site Crawler: 
+    Download all web pages from a given domain or base URL.
+
+
+
+      Site Crawl Start
+
+
+        Site
+
+
+            Start URL (must start withhttp:// https:// ftp:// smb:// file://)
+
+
+
+
+
+
+
+
+
+            Link-List of URL
+
+
+
+
+
+
+
+            Sitemap URL
+
+
+
+
+
+        Path
+
+            load all files in domain
+			load only files in a sub-path of given url
+
+
+
+
+        Limitation
+
+           not more than
+
+          documents
+
+
+        Collection
+
+
+
+        Start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Hints
+
+    Crawl Speed Limitation No more that four pages are loaded from the same host in one second (not more that 120 document per minute) to limit the load on the target server.
+    Target Balancer A second crawl for a different host increases the throughput to a maximum of 240 documents per minute since the crawler balances the load over all hosts.
+    High Speed Crawling A 'shallow crawl' which is not limited to a single host (or site)
+    can extend the pages per minute (ppm) rate to unlimited documents per minute when the number of target hosts is high.
+    This can be done using the Expert Crawl Start servlet.
+    Scheduler Steering The scheduler on crawls can be changed or removed using the API Steering.

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <title>
+   Cryptostamps: Buy Postage with Monero, Bitcoin
+  </title>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="OUE3Vrr961oJH1wqgYueh6Kl0IG3bN+qnsjhYUQ+Tr09ZZfNgEwKZ5zzWzHATxrDiQnxJnpEPSlh5t1LqKhzuQ==" name="csrf-token"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/assets/application-86140899f7a37becba684b6c68f8d9e18ddeafe8215e852ee2059b1f8ce5403c.css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="bg-light">
+  <div class="container">
+   <div class="py-5 text-center">
+    <i class="fa fa-envelope-square fa-4" style="font-size: 8em;">
+    </i>
+    <h2 class="mt-2 mb-3">
+     <a class="link-unstyled" href="/">
+      Cryptostamps
+     </a>
+     <small>
+      BETA
+     </small>
+    </h2>
+   </div>
+   <h3 class="mb-3">
+    CSV Bulk Postage Order
+   </h3>
+   <p>
+    Cryptostamps makes it easy to order bulk postage by importing a spreadsheet in CSV format.
+    <!--
+  The simplest way to learn how this works is to create a cart of shipments and click "Export CSV". Then modify the exported spreadsheet.
+  -->
+   </p>
+   <p>
+    When editing in LibreOffice or Excel remember to save it as CSV. We do not support any other format.
+  Our support team is available 24/7 to assist. support@cryptostamps.biz
+   </p>
+   <p>
+    <a href="/downloads/cryptostamps_csv_example.csv">
+     Download example CSV file
+    </a>
+   </p>
+   <form action="/csv" enctype="multipart/form-data" method="post">
+    <h5 class="mt-5">
+     Upload CSV Bulk Postage Order
+    </h5>
+    <p class="m-4">
+     <input accept=".csv" name="csv" type="file"/>
+    </p>
+    <p>
+     Maximum rows: 75 per upload.
+    </p>
+    <p>
+     <button class="btn btn-primary" type="submit">
+      Upload CSV and Add to Cart
+     </button>
+    </p>
+   </form>
+   <a href="/cart/ca99d569-22cd-4b13-a85c-0cde9c20d8df">
+    <button class="btn btn-secondary mt-5">
+     View Cart (0 shipments)
+    </button>
+   </a>
+   <h5 class="mt-5">
+    Valid Values
+   </h5>
+   <p>
+    These are the valid values for the "package_type" and "service" columns in the CSV file.
+   </p>
+   <p>
+    All values are case sensitive.
+   </p>
+   <ul>
+    <li>
+     USPS: Services
+    </li>
+    <ul>
+     <li>
+      First
+     </li>
+     <li>
+      Priority
+     </li>
+     <li>
+      Express
+     </li>
+     <li>
+      ParcelSelect
+     </li>
+     <li>
+      LibraryMail
+     </li>
+     <li>
+      MediaMail
+     </li>
+     <li>
+      FirstClassMailInternational
+     </li>
+     <li>
+      FirstClassPackageInternationalService
+     </li>
+     <li>
+      PriorityMailInternational
+     </li>
+     <li>
+      ExpressMailInternational
+     </li>
+    </ul>
+    <li>
+     USPS: Package Types
+    </li>
+    <ul>
+     <li>
+      Parcel
+     </li>
+     <li>
+      Letter
+     </li>
+     <li>
+      Flat
+     </li>
+     <li>
+      FlatRateEnvelope
+     </li>
+     <li>
+      SmallFlatRateEnvelope
+     </li>
+     <li>
+      FlatRatePaddedEnvelope
+     </li>
+     <li>
+      FlatRateLegalEnvelope
+     </li>
+     <li>
+      SmallFlatRateBox
+     </li>
+     <li>
+      MediumFlatRateBox
+     </li>
+     <li>
+      LargeFlatRateBox
+     </li>
+    </ul>
+   </ul>
+  </div>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+   <ul class="list-inline">
+    <li class="list-inline-item">
+     24/7 Support Email: support@cryptostamps.biz (ProtonMail Plus)
+    </li>
+   </ul>
+   <p class="mb-1">
+    © 2022 Cryptostamps -
+    <a href="/pgp.txt">
+     PGP Key
+    </a>
+    -
+    <a href="https://cryptostamps.biz">
+     Clearnet Mirror
+    </a>
+    -
+    <a href="https://dark.fail/cryptostamps" rel="noreferrer">
+     dark.fail/cryptostamps
+    </a>
+    -
+    <a href="https://darknetlive.com/onions/cryptostamps/" rel="noreferrer">
+     DarknetLive
+    </a>
+   </p>
+  </footer>
+ </body>
+</html>

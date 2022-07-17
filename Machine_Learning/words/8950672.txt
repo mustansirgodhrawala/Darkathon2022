@@ -1,0 +1,281 @@
+
+
+
+
+            Neboard X
+
+            search,
+            feed
+            Settings
+
+
+
+
+
+
+
+
+
+
+
+
+
+    << Previous page <<
+
+
+
+
+
+    >> Next page >>
+
+
+
+
+
+
+                    #{{ id }}
+                    {{ title }}
+                    {{ pubTime }}
+
+                    {{#if admin}}
+                    ⬤
+                    {{/if}}
+
+                    {{#if tripcode}}
+                        {{ tripcodeColor }}
+                    {{/if}}
+
+                    {{#if threadUrl}}
+                    in >>{{ threadId }} {{threadTitle}}
+                    {{/if}}
+
+
+                    {{#if active}}
+                    {{#if replyButton}}
+                        Reply
+                    {{/if}}
+                    {{/if}}
+                    {{#if opening}}
+                    {{#if openButton}}
+                        Open
+                    {{/if}}
+                    {{/if}}
+
+
+                {{#each attachments}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+
+                {{{ text }}}
+
+                {{#if opening}}
+
+                    {{{ metadata }}}
+
+                {{/if}}
+
+                {{#if replies }}
+                Replies:  {{{ refmap }}}
+                {{/if}}
+
+
+
+
+
+
+                    {{ name }}
+
+
+
+
+
+
+                {{#with openingPost}}
+                    {{#render ../options}}{{/render}}
+                {{/with}}
+                {{#if skippedReplies }}
+
+                    Skipped posts: {{ skippedReplies }}
+
+                {{/if}}
+                {{#if lastPosts }}
+
+                    {{#each lastPosts}}
+                    {{#render ../options}}{{/render}}
+                    {{/each}}
+
+                {{/if}}
+
+
+
+
+
+                {{ title }}
+                Rollover thread
+
+
+
+                Thread /
+                Gallery
+
+
+            Quote
+
+
+
+
+
+
+                {{#each posts}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+
+
+
+
+
+
+                    /{{ name }}/
+
+
+                        {{#if favorite }}
+                            👍 Remove from favorites
+                        {{else}}
+                            👍 Add to favorites
+                        {{/if}}
+                        {{#if hidden }}
+                            👎 Remove from hidden
+                        {{else}}
+                            👎 Hide
+                        {{/if}}
+
+
+
+
+
+
+            {{#if models}}
+
+                Active today
+
+                    {{#each models}}
+                        >>{{id}} {{title}}
+                    {{/each}}
+
+
+            {{/if}}
+
+
+
+
+
+
+
+                    {{#if formTitle}}
+                    {{{formTitle}}}
+                    {{/if}}
+
+
+                            Title
+                            {{#unless edit}}
+                            Tripcode
+                            {{/unless}}
+                            Text
+
+                                    >qspoilerib// cscodehintcolor
+                                    {{text}}
+
+
+                            {{#unless edit}}
+                            Attachments
+
+
+
+                            {{/unless}}
+
+                            {{#if tagsEnabled}}
+                            Tags
+                            {{/if}}
+
+                                Submit
+                                Add file(s)
+                                Preview
+                                {{#unless edit}}
+                                Reset form
+                                {{/unless}}
+
+
+
+
+
+
+
+                        Maximum number of attachments: 5
+                        Maximum total files size: 19 MB
+                        Paste images anywhere
+
+
+
+
+
+
+            Loading...
+
+
+
+
+                {{key}}: {{value}}
+
+
+
+
+
+
+
+
+                            Search query
+
+
+
+
+
+
+
+
+            {{#if admin}}
+                {{#if query}}
+
+
+                        Mass delete
+
+
+                {{/if}}
+            {{/if}}
+
+
+
+
+                Thread /
+                Gallery
+
+
+
+                {{#each attachments}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+
+
+
+
+            {{{content}}}
+
+
+
+            7.1.0 Demon Heart
+
+
+
+            Speed: 9.71
+            [Health Report]
+
+            Up

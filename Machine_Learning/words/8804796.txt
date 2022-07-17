@@ -1,0 +1,1143 @@
+Jump to content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 Not connected, Your IP: Tor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Online: 14243 users - 89472 Mbit/s total BWYour IP: TorGuest access
+
+				Existing user? Sign In  
+
+
+
+
+
+
+
+
+
+
+
+
+	Sign In
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Remember me
+				Not recommended on shared computers
+
+
+
+
+
+
+
+
+
+					Sign in anonymously
+
+
+
+
+
+			Sign In
+
+
+
+
+
+
+					Forgot your password?
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Sign Up
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Contact Us
+
+
+
+
+
+
+						Search In
+
+
+
+
+
+								Everywhere
+
+
+
+
+
+
+
+								More options...
+
+
+
+
+						Find results that contain...
+
+
+
+
+
+
+									Any of my search term words
+
+
+
+
+
+
+									All of my search term words
+
+
+
+
+
+						Find results in...
+
+
+
+
+
+								Content titles and body
+
+
+
+
+
+								Content titles only
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Overview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Mission
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Specs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					FAQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Terms Of Service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Privacy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					About us
+
+
+
+
+
+
+
+
+						More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Buy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Download
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Servers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Community
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Forums
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					All Activity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Leaderboard
+
+
+
+
+
+
+
+
+						More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Client Area
+
+
+
+
+
+
+
+
+					More
+
+
+							More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 All Activity
+
+
+
+
+
+
+
+				 Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                An OpenVPN and WireGuard based VPN operated by activists in defense of net neutrality, privacy and against censorship.
+
+
+                This impenetrable  tunnel prevents criminal organizations, your ISP or even your  government from spying on your communications. About VPN, read more here.
+
+
+            Get AirVPN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Mission
+                Specs
+
+
+
+
+
+
+
+
+
+
+
+                    Surf Anonymously
+
+
+                    Protection against snoopers, data miners and privacy intrusive entities
+
+
+
+
+                        Hide your IP - Get a new IP address, so that nobody can discover your identity through it
+
+
+
+                        No monitoring nor logging of your online activities
+
+
+
+                        Perfect Forward Secrecy - Through Diffie-Hellman key exchange DHE. After the initial key negotiation, re-keying is performed every 60 minutes (this value can be lowered unilaterally by the client)
+
+
+
+                        Additional connection types, supported by every Air VPN server, for ISPs or countries disrupting OpenVPN, are OpenVPN over SSH, SSL or Tor
+
+
+
+						Stay protected with the security offered by very strong encryption, 4096 bit DH and RSA keys size, AES-256-GCM or CHACHA20-POLY1305 encryption cipher.
+
+
+
+                        Make it impossible to identify the type of traffic or protocol you are using, even for your ISP.
+
+
+
+                        Connect to any wireless network without risking data eavesdropping between your computer and the WiFi hotspot.
+
+
+
+
+
+
+                    Defeat restrictions
+
+
+                    Circumvent censorship, georestriction and traffic shaping.
+                     All protocols welcome. Net Neutrality respected.
+
+
+
+
+                        All protocols allowed - No discrimination toward any service, protocol or application.
+
+
+
+                        Internal VPN DNS based on root servers  anti-ICE/ICANN censorship
+
+
+
+                        Port Forwarding / DDNS - Without port forwarding, the performance of some applications, for example BitTorrent and eMule clients, would
+                            be severely impaired and the services on your computer would not be reachable from the Internet
+
+
+
+
+
+
+
+
+
+                    Why us
+
+
+
+
+                        No traffic limit. No time limit. Access to all of our exit-nodes.
+
+
+
+                        Five simultaneous connections per account.
+
+
+
+                        Unlimited and free server switches.
+
+
+
+                        High performance physical servers in many countries
+
+
+
+                        Optional block lists protecting you from ads, adware, trackers and malicious sources.
+
+
+
+                        No maximum speed limit, it depends only on the server load (see here). Minimum allocated granted bandwidth: 4 Mbit/s download + 4 Mbit/s upload
+
+
+
+                        Every protocol is welcome, including p2p. Forwarded ports and DDNS to optimize your software.
+
+
+
+                        No personal information required. When you open an account, you are not forced to enter any personal data, not even a real e-mail address.
+
+
+
+                        Transparent policies on bandwidth allocation in order to give you an exact evaluation of the performance you can achieve: no overbooking, no overselling.
+
+
+
+                        We use OpenVPN and WireGuard to establish the connection between your computer and our servers. OpenVPN is the most reliable and secure solution for encrypted tunnels, offering a higher than military degree of security. Forget
+                            PPTP or other insecure protocols.
+
+
+
+                        We offer OpenVPN on ports 80 TCP / UDP, 443 TCP / UDP and 53 TCP / UDP. Additionally, every Air server supports directly OpenVPN over SSH, OpenVPN over SSL and OpenVPN over Tor.
+                            This means that even the most brutal techniques of monitoring, censorship, throttling and traffic shaping will fail against AirVPN, because your ISP and your government will see only TCP or UDP traffic on a unique port.
+
+
+
+                        Fully compliant with the European Union legal framework protecting your privacy: Directive on Data Protection (95/46/EC), Directive concerning the processing of personal data and the protection of privacy (2002/58/EC) and General
+                            Data Protection Regulation (EU Regulation 2016/579)
+
+
+
+                        API - Application Programming Interface
+
+
+
+                        Help us cover our mission
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Realtime exchange rates based onEuropean Central Bank
+                    Realtime exchange rates based onEuropean Central Bank and Blockchain.info
+
+
+
+                    See plans & payment options
+
+
+
+                PayPalCredit CardsAmazon PayBitcoinEthereumLitecoinBitcoin CashDashDogeMonero
+
+
+
+
+                    Works everywhere
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    AirVPN Client - Eddie
+
+
+
+
+
+
+
+
+
+
+                        Windows, macOS, Linux, Android
+
+
+
+
+
+
+                    Opensource
+
+
+
+
+
+
+
+                    All of our software is released under GPLv3
+                     Source code available on
+
+
+                        GitHub 
+
+
+
+                     and
+
+                        GitLab 
+
+
+
+
+
+
+                    Based on  
+
+
+
+
+
+
+
+                    available
+
+
+
+
+
+
+
+
+
+
+
+                WE ENDORSE • View all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        For promotional and sharing purposes, comments and articles, you can use our Referrals program.  You can find links, banners and HTML code to use for Referrals in your Referrals area.
+         More promotional images with higher resolution for press, bloggers etc are available here.
+
+
+
+
+
+        -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			AirVPN Announcements
+
+			AirVPN Forums
+
+
+
+
+
+
+
+
+			 All Activity
+
+
+
+
+
+
+
+				 Home
+
+
+
+
+
+
+
+
+
+		Terms of ServicePrivacy NoticeAbout us Tor: airvpn… .onionAirVPN | VAT ID IT03297800546 | REA PG - 279011 | CMS by IPS
+
+
+
+	×
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Existing user? Sign In
+
+
+
+
+									Sign Up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								Home
+
+Back
+
+										Home
+
+
+
+
+
+
+
+
+
+
+					Overview
+
+
+
+
+
+
+
+
+
+					Mission
+
+
+
+
+
+
+
+
+
+					Specs
+
+
+
+
+
+
+
+
+
+					FAQ
+
+
+
+
+
+
+
+
+
+					Terms Of Service
+
+
+
+
+
+
+
+
+
+					Privacy
+
+
+
+
+
+
+
+
+
+					About us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Buy
+
+
+
+
+
+
+							Download
+
+
+
+
+
+
+							Servers
+
+
+
+
+
+
+
+								Community
+
+Back
+
+										Community
+
+
+
+
+
+
+
+
+
+
+					Forums
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					All Activity
+
+
+
+
+
+
+
+
+
+
+
+					Leaderboard
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Client Area
+
+
+
+
+
+
+
+
+
+	×
+
+
+
+Create New...

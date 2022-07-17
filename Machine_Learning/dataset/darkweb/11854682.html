@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Tunir, a simple CI with less pain
+  </title>
+  <meta content="" name="description"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <link href="/assets/css/screen.css?v=6a5884b966" rel="stylesheet" type="text/css"/>
+  <link href="/assets/css/Merriweather.css" rel="stylesheet" type="text/css"/>
+  <link href="/assets/css/prism.css" rel="stylesheet"/>
+  <link href="https://kushaldas.in/posts/tunir-a-simple-ci-with-less-pain.html" rel="canonical"/>
+  <meta content="Kushal Das" property="og:site_name"/>
+  <meta content="article" property="og:type"/>
+  <meta content="Tunir, a simple CI with less pain" property="og:title"/>
+  <meta content="https://kushaldas.in/posts/tunir-a-simple-ci-with-less-pain.html" property="og:url"/>
+  <meta content="Fedora" property="article:tag"/>
+  <meta content="Python" property="article:tag"/>
+  <meta content="Tunir" property="article:tag"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Tunir, a simple CI with less pain" name="twitter:title"/>
+  <meta content="https://kushaldas.in/posts/tunir-a-simple-ci-with-less-pain.html" name="twitter:url"/>
+  <meta content="Written by" name="twitter:label1"/>
+  <meta content="Kushal Das" name="twitter:data1"/>
+  <meta content="@kushaldas" name="twitter:creator"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Kushal Das",
+        "logo": "https://kushaldas.in/kushal.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Kushal Das",
+        "image": "https://kushaldas.in/kushal.jpg",
+        "url": "https://kushaldas.in/about.html",
+        "sameAs": [
+            "https://twitter.com/kushaldas"
+        ],
+        "description": "Learning to talk to a computer."
+    },
+    "headline": "Tunir, a simple CI with less pain",
+    "url": "https://kushaldas.in/posts/tunir-a-simple-ci-with-less-pain.html",
+    "datePublished": "2015-03-24T12:16:10+05:30Z",
+    "dateModified": "2015-03-24T12:16:10+05:30Z",
+    "keywords": "",
+    "description": ""
+}
+  </script>
+  <meta content="Shonku" name="generator"/>
+  <link href="https://kushaldas.in/rss.xml" rel="alternate" title="Kushal Das" type="application/rss+xml"/>
+ </head>
+ <body class="post-template">
+  <script src="/assets/js/prism.js">
+  </script>
+  <div class="nav">
+   <h3 class="nav-title">
+    Menu
+   </h3>
+   <a class="nav-close" href="#">
+    <span class="hidden">
+     Close
+    </span>
+   </a>
+   <ul>
+    <li class="nav-home" role="presentation">
+     <a href="https://kushaldas.in/">
+      Home
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="https://news.kushaldas.in">
+      Newsletter
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="/about.html">
+      About
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="/archive.html">
+      Archives
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="/categories/">
+      Tags
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="https://kushaldas.photography">
+      Photography
+     </a>
+    </li>
+    <li class="nav-home nav-current" role="presentation">
+     <a href="https://search.kushaldas.in">
+      Search
+     </a>
+    </li>
+   </ul>
+  </div>
+  <span class="nav-cover">
+  </span>
+  <div class="site-wrapper">
+   <header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+     <a class="menu-button icon-menu" href="#">
+      <span class="word">
+       Menu
+      </span>
+     </a>
+    </nav>
+    <div class="vertical">
+     <div class="main-header-content inner">
+      <h1 class="page-title">
+       <a href="/" style="text-decoration: none;">
+        Kushal Das
+       </a>
+      </h1>
+      <h2 class="page-description">
+       FOSS and life. Kushal Das talks here.
+      </h2>
+      <h2 class="page-description">
+       kushal76uaid62oup5774umh654scnu5dwzh4u2534qxhcbi4wbab3ad.onion
+      </h2>
+     </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" data-offset="-45" href="#content">
+     <span class="hidden">
+      Scroll
+                    Down
+     </span>
+    </a>
+   </header>
+   <main class="content" role="main">
+    <article class="post">
+     <header class="post-header">
+      <h1 class="post-title">
+       Tunir, a simple CI with less pain
+      </h1>
+      <section class="post-meta">
+       <time class="post-date" datetime="2015-03-24T12:16:10+05:30">
+        2015-03-24T12:16:10+05:30
+       </time>
+       on
+       <a href="../categories/fedora.html">
+        Fedora
+       </a>
+       <a href="../categories/python.html">
+        Python
+       </a>
+       <a href="../categories/tunir.html">
+        Tunir
+       </a>
+      </section>
+     </header>
+     <section class="post-content">
+      <!--
+.. title: Tunir, a simple CI with less pain
+.. slug: tunir-a-simple-ci-with-less-pain
+.. date: 2015-03-24T12:16:10+05:30
+.. tags: Tunir, Python, Fedora
+.. link:
+.. description:
+.. type: text
+-->
+      <p>
+       One of my job requirement is to keep testing the latest Fedora cloud images. We
+have a
+       <a href="https://fedoraproject.org/wiki/Test_Results:Fedora_22_Beta_TC4_Cloud?rd=Test_Results:Current_Cloud_Test">
+        list of tests
+       </a>
+       from Fedora QA team. But the biggest problem is that I
+don't like doing these manually. I was looking for a way to run these
+automatically. We can do this by the normal CI systems, but there are two
+problems in that.
+      </p>
+      <ul>
+       <li>
+        Most CI systems cannot handle cloud images, unless there is a real cloud running somewhere.
+       </li>
+       <li>
+        Maintaining the CI system &amp; the cloud is a pain in my standard.
+       </li>
+      </ul>
+      <p>
+       <a href="http://tunir.rtfd.org">
+        Tunir
+       </a>
+       came out as a solution to these problems. It is a simple system, which
+can run predefined set of commands in a fresh cloud instance, or in a remote
+system. Btw, did I mention that you don't need a cloud to run these cloud
+instances in your local system? This is possible thanks to the code from Mike
+Ruckman.
+      </p>
+      <p>
+       Each job in Tunir requires two files, jobname.json and jobname.txt. The json
+file contains the details of the Cloud image (if any), or the remote system
+details, ram required for the vm etc. The .txt file contains the shell commands
+to run in the system. For now it has two unique commands for Tunir. You can
+write @@ in front of any command to mark that this command will return non zero
+exit code. We also have a
+       <em>
+        SLEEP NUMBER_OF_SECONDS
+       </em>
+       option, we use it when we
+reboot the system, and want Tunir to wait before executing the next command.
+      </p>
+      <p>
+       Tunir has a stateless mode, I use that all the time :) In stateless mode, it will not
+save the results in any database. It will directly print the result in the terminal.
+      </p>
+      <pre><code>$ tunir --job fedora --stateless
+</code></pre>
+      <p>
+       Tunir uses redis to store some configuration information, like available ports.
+Remember to execute createports.py to fill the configuration with available ports.
+      </p>
+      <p>
+       You can install Tunir using pip, a review request is also up for Fedora. If you
+are on Fedora 21, you can just test with my
+       <a href="https://kushal.fedorapeople.org/packages/tunir-0.5-1.fc21.noarch.rpm">
+        package
+       </a>
+       .
+      </p>
+      <p>
+       I am currently using unittest for the Cloud testcases, they are available at my
+       <a href="https://github.com/kushaldas/tunirtests">
+        github
+       </a>
+       . You can use fedora.json and
+fedora.txt from the same repo to execute the tests. Example of tests running inside
+Tunir is below (I am using this in the Fedora Cloud tests).
+      </p>
+      <pre><code>curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+tar -xzvf tunirtests.tar.gz
+python -m unittest tunirtests.cloudtests
+sudo systemctl stop crond.service
+@@ sudo systemctl disable crond.service
+@@ sudo reboot
+SLEEP 30
+sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+@@ sudo reboot
+SLEEP 30
+sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+</code></pre>
+      <p>
+       UPDATE: Adding the output from Tunir for test mentioned above.
+      </p>
+      <pre><code>sudo ./tunir --job fedora --stateless
+[sudo] password for kdas:
+Got port: 2229
+cleaning and creating dirs...
+Creating meta-data...
+downloading new image...
+Local downloads will be stored in /tmp/tmpZrnJsA.
+Downloading file:///home/Fedora-Cloud-Base-20141203-21.x86_64.qcow2 (158443520 bytes)
+Succeeded at downloading Fedora-Cloud-Base-20141203-21.x86_64.qcow2
+download: /boot/vmlinuz-3.17.4-301.fc21.x86_64 -&gt; ./vmlinuz-3.17.4-301.fc21.x86_64
+download: /boot/initramfs-3.17.4-301.fc21.x86_64.img -&gt; ./initramfs-3.17.4-301.fc21.x86_64.img
+/usr/bin/qemu-kvm -m 2048 -drive file=/tmp/tmpZrnJsA/Fedora-Cloud-Base-20141203-21.x86_64.qcow2,if=virtio -drive file=/tmp/tmpZrnJsA/seed.img,if=virtio -redir tcp:2229::22 -kernel /tmp/tmpZrnJsA/vmlinuz-3.17.4-301.fc21.x86_64 -initrd /tmp/tmpZrnJsA/initramfs-3.17.4-301.fc21.x86_64.img -append root=/dev/vda1 ro ds=nocloud-net -nographic
+Successfully booted your local cloud image!
+PID: 11880
+Starting a stateless job.
+Executing command: curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+Executing command: tar -xzvf tunirtests.tar.gz
+Executing command: python -m unittest tunirtests.cloudtests
+Executing command: sudo systemctl stop crond.service
+Executing command: @@ sudo systemctl disable crond.service
+Executing command: @@ sudo reboot
+Sleeping for 30.
+Executing command: sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+Executing command: @@ sudo reboot
+Sleeping for 30.
+Executing command: sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+
+
+Job status: True
+
+
+command: curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+status: True
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8019  100  8019    0     0   4222      0  0:00:01  0:00:01 --:--:--  4224
+
+
+
+command: tar -xzvf tunirtests.tar.gz
+status: True
+
+tunirtests/
+tunirtests/cloudservice.py
+tunirtests/LICENSE
+tunirtests/testutils.py
+tunirtests/__init__.py
+tunirtests/cloudtests.py
+
+
+
+command: python -m unittest tunirtests.cloudtests
+status: True
+
+.suu
+----------------------------------------------------------------------
+Ran 4 tests in 0.036s
+
+OK (skipped=1, unexpected successes=2)
+
+
+
+command: sudo systemctl stop crond.service
+status: True
+
+
+
+
+command: @@ sudo systemctl disable crond.service
+status: True
+
+Removed symlink /etc/systemd/system/multi-user.target.wants/crond.service.
+
+
+
+command: @@ sudo reboot
+status: True
+
+
+
+
+command: sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+status: True
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.282s
+
+OK
+
+
+
+command: sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+status: True
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.070s
+
+OK
+</code></pre>
+     </section>
+     <footer class="post-footer">
+      <figure class="author-image">
+       <a class="img" href="/about.html" style="background-image: url(/kushal.jpg)">
+        <span class="hidden">
+         Kushal Das's Picture
+        </span>
+       </a>
+      </figure>
+      <section class="author">
+       <h4>
+        <a href="/about.html">
+         Kushal Das
+        </a>
+       </h4>
+       <p>
+        Learning to talk to a computer.
+       </p>
+       <div class="author-meta">
+        <span class="author-location icon-location">
+         India
+        </span>
+       </div>
+      </section>
+     </footer>
+    </article>
+   </main>
+  </div>
+  <footer class="site-footer clearfix">
+   <section class="copyright">
+    <a href="https://kushaldas.in">
+     Kushal Das
+    </a>
+    © 2004 - 2020
+   </section>
+   <section class="poweredby">
+    Proudly published with
+    <a href="https://github.com/kushaldas/khata">
+     Khata
+    </a>
+   </section>
+  </footer>
+  <script src="/assets/js/jquery-1.12.0.min.js" type="text/javascript">
+  </script>
+  <script src="/assets/js/jquery.fitvids.js?v=6a5884b966" type="text/javascript">
+  </script>
+  <script src="/assets/js/index.js?v=6a5884b966" type="text/javascript">
+  </script>
+ </body>
+</html>

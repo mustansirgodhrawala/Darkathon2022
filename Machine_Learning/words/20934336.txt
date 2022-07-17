@@ -1,0 +1,152 @@
+
+
+
+
+
+
+
+
+
+
+
+Getting connection speed metrics from curl
+
+
+
+
+    Home
+    BASH
+    PHP
+    Python
+    JS
+    Misc
+
+
+
+
+
+
+
+               	This site should work without Javascript enabled.
+                If you find something doesn't, please Contact Me.
+
+
+
+
+
+
+	Published:  2017-07-19 11:45:21 +0000Categories: BASH,
+
+
+
+
+Language
+
+
+
+BASH
+
+
+
+Description
+
+
+The command gets curl to request a page and then write out a CSV delimited line giving details of the time it took to complete various stages of the request, including how many redirects were followed etc.
+
+
+Snippet
+
+curl -o /dev/null -w "%{http_code},\"$URL\",\"%{url_effective}\",%{time_total},%{time_namelookup},%{time_connect},%{time_redirect},%{time_starttransfer},%{size_download},%{size_request}\n" $URL
+
+
+Usage Example
+
+URL="https://www.google.com"
+curl -o /dev/null -w "%{http_code},\"$URL\",\"%{url_effective}\",%{time_total},%{time_namelookup},%{time_connect},%{time_redirect},%{time_starttransfer},%{size_download},%{size_request}\n" $URL
+
+
+
+Video Example
+
+
+
+
+
+
+
+
+
+
+
+
+
+Keywordscurl, speed, page, request, ttfb, metrics,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Latest Posts
+
+
+			Reducing overhead of large S3 file syncs with s3cmd (Misc)
+
+
+			Re-using SSH connections with controlmaster (Misc)
+
+
+			Check Which Region and Service an AWS IP is used for (Misc)
+
+
+			Get monthly power use and cost (Flux)
+
+
+			Rewrite all target _blank links to use rel noopener (Javascript)
+
+
+			Run javascript on document ready (Javascript)
+
+
+			Detect Tor2Web client side (Javascript)
+
+
+			Divide field value by n (Flux)
+
+
+			Listing current switch interface status with Flux (Flux)
+
+
+			Running ps inside a Debian Docker Container (Misc)
+
+
+
+
+
+
+
+
+Copyright © 2022 Ben Tasker | Sitemap | Privacy Policy
+
+
+Available at snippets.bentasker.co.uk, http://phecoopwm6x7azx26ctuqcp6673bbqkrqfeoiz2wwk36sady5tqbdpqd.onion and http://snippets.bentasker.i2p

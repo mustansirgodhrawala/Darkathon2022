@@ -1,0 +1,4428 @@
+<html class="client-nojs" dir="ltr" lang="en">
+ <head>
+  <style>
+   @media print {
+ .noprint,
+ .catlinks,
+ .magnify,
+ .mw-cite-backlink,
+ .mw-editsection,
+ .mw-editsection-like,
+ .mw-hidden-catlinks,
+ .mw-indicators,
+ .mw-redirectedfrom,
+ .patrollink,
+ .usermessage,
+ #column-one,
+ #footer-places,
+ #mw-navigation,
+ #siteNotice,
+ #f-poweredbyico,
+ #f-copyrightico,
+ li#about,
+ li#disclaimer,
+ li#mobileview,
+ li#privacy {
+  display:none
+ }
+ body {
+  background:#fff;
+  color:#000;
+  margin:0;
+  padding:0
+ }
+ a {
+  background:none !important;
+  padding:0 !important
+ }
+ a,
+ a.external,
+ a.new,
+ a.stub {
+  color:#000 !important;
+  text-decoration:none !important;
+  color:inherit !important;
+  text-decoration:inherit !important
+ }
+ .mw-parser-output a.external.text:after,
+ .mw-parser-output a.external.autonumber:after {
+  content:' (' attr(href) ')';
+  word-break:break-all;
+  word-wrap:break-word
+ }
+ .mw-parser-output a.external.text[href^='//']:after,
+ .mw-parser-output a.external.autonumber[href^='//']:after {
+  content:' (https:' attr(href) ')'
+ }
+ dt {
+  font-weight:bold
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  font-weight:bold;
+  page-break-after:avoid;
+  page-break-before:avoid
+ }
+ p {
+  margin:1em 0;
+  line-height:1.2;
+  orphans:3;
+  widows:3
+ }
+ img,
+ figure,
+ .wikitable,
+ .thumb {
+  page-break-inside:avoid
+ }
+ img {
+  border:0;
+  vertical-align:middle
+ }
+ pre,
+ .mw-code {
+  background:#fff;
+  color:#000;
+  border:1pt dashed #000;
+  padding:1em 0;
+  font-size:8pt;
+  white-space:pre-wrap;
+  word-wrap:break-word
+ }
+ sup,
+ sub {
+  line-height:1
+ }
+ ul {
+  list-style-type:square
+ }
+ #globalWrapper {
+  width:100% !important;
+  min-width:0 !important
+ }
+ .mw-body {
+  background:#fff;
+  color:#000;
+  border:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  direction:ltr
+ }
+ #column-content {
+  margin:0 !important
+ }
+ #column-content .mw-body {
+  padding:1em;
+  margin:0 !important
+ }
+ .toc {
+  background-color:#f9f9f9;
+  border:1pt solid #aaa;
+  padding:5px;
+  display:table
+ }
+ .tocnumber,
+ .toctext {
+  display:table-cell
+ }
+ .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-ltr .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-rtl .tocnumber {
+  padding-left:0.5em;
+  padding-right:0
+ }
+ table.floatright,
+ div.floatright,
+ div.tright {
+  float:right;
+  clear:right;
+  position:relative
+ }
+ table.floatleft,
+ div.floatleft,
+ div.tleft {
+  float:left;
+  clear:left;
+  position:relative
+ }
+ div.tleft {
+  margin:0.5em 1.4em 1.3em 0
+ }
+ div.tright {
+  margin:0.5em 0 1.3em 1.4em
+ }
+ table.floatright,
+ div.floatright {
+  margin:0 0 0.5em 0.5em;
+  border:0
+ }
+ table.floatleft,
+ div.floatleft {
+  margin:0 0.5em 0.5em 0;
+  border:0
+ }
+ .center {
+  text-align:center
+ }
+ div.thumb {
+  background-color:transparent;
+  width:auto
+ }
+ div.thumb a {
+  border-bottom:0
+ }
+ div.thumbinner {
+  background-color:#fff;
+  border:0;
+  border-radius:2px;
+  padding:5px;
+  font-size:10pt;
+  color:#666;
+  text-align:center;
+  overflow:hidden;
+  min-width:100px
+ }
+ html .thumbcaption {
+  text-align:left;
+  line-height:1.4;
+  padding:3px
+ }
+ img.thumbborder {
+  border:1pt solid #ddd
+ }
+ table.wikitable,
+ .mw_metadata {
+  background:#fff;
+  margin:1em 0;
+  border:1pt solid #aaa;
+  border-collapse:collapse;
+  font-size:10pt
+ }
+ table.wikitable > caption,
+ .mw_metadata caption {
+  padding:5px;
+  font-size:10pt
+ }
+ table.wikitable > tr > th,
+ table.wikitable > tr > td,
+ table.wikitable > * > tr > th,
+ table.wikitable > * > tr > td,
+ .mw_metadata th,
+ .mw_metadata td {
+  background:#fff !important;
+  color:#000 !important;
+  border:1pt solid #aaa;
+  padding:0.4em 0.6em
+ }
+ table.wikitable > tr > th,
+ table.wikitable > * > tr > th,
+ .mw_metadata th {
+  text-align:center
+ }
+ table.listing,
+ table.listing td {
+  border:1pt solid #000;
+  border-collapse:collapse
+ }
+ .catlinks ul {
+  display:inline;
+  padding:0;
+  list-style:none none
+ }
+ .catlinks li {
+  display:inline-block;
+  line-height:1.15;
+  margin:0.1em 0;
+  border-left:1pt solid #aaa;
+  padding:0 0.4em
+ }
+ .catlinks li:first-child {
+  border-left:0;
+  padding-left:0.2em
+ }
+ .printfooter {
+  padding:1em 0
+ }
+ #footer {
+  background:#fff;
+  color:#000;
+  margin-top:1em;
+  border-top:1pt solid #aaa;
+  padding-top:5px;
+  direction:ltr
+ }
+}
+@media screen {
+ .mw-content-ltr {
+  direction:ltr
+ }
+ .mw-content-rtl {
+  direction:rtl
+ }
+ .sitedir-ltr textarea,
+ .sitedir-ltr input {
+  direction:ltr
+ }
+ .sitedir-rtl textarea,
+ .sitedir-rtl input {
+  direction:rtl
+ }
+ .mw-userlink {
+  unicode-bidi:embed
+ }
+ mark {
+  background-color:#ff0;
+  color:#000
+ }
+ wbr {
+  display:inline-block
+ }
+ input[type='submit'],
+ input[type='button'],
+ input[type='reset'],
+ input[type='file'] {
+  direction:ltr
+ }
+ textarea[dir='ltr'],
+ input[dir='ltr'] {
+  direction:ltr
+ }
+ textarea[dir='rtl'],
+ input[dir='rtl'] {
+  direction:rtl
+ }
+ abbr[title],
+ .explain[title] {
+  border-bottom:1px dotted;
+  cursor:help
+ }
+ @supports (text-decoration:underline dotted) {
+  abbr[title],
+  .explain[title] {
+   border-bottom:0;
+   text-decoration:underline dotted
+  }
+ }
+ span.comment {
+  font-style:italic;
+  unicode-bidi:-moz-isolate;
+  unicode-bidi:isolate
+ }
+ #editform,
+ #toolbar,
+ #wpTextbox1 {
+  clear:both
+ }
+ #toolbar {
+  height:22px
+ }
+ .mw-underline-always a {
+  text-decoration:underline
+ }
+ .mw-underline-never a {
+  text-decoration:none
+ }
+ li span.deleted,
+ span.history-deleted {
+  text-decoration:line-through;
+  color:#72777d;
+  font-style:italic
+ }
+ .not-patrolled {
+  background-color:#ffa
+ }
+ .unpatrolled {
+  font-weight:bold;
+  color:#d33
+ }
+ div.patrollink {
+  font-size:75%;
+  text-align:right
+ }
+ td.mw-label {
+  text-align:right;
+  vertical-align:middle
+ }
+ td.mw-input {
+  text-align:left
+ }
+ td.mw-submit {
+  text-align:left;
+  white-space:nowrap
+ }
+ .mw-input-with-label {
+  white-space:nowrap;
+  display:inline-block
+ }
+ .mw-content-ltr .thumbcaption {
+  text-align:left
+ }
+ .mw-content-ltr .magnify {
+  float:right
+ }
+ .mw-content-rtl .thumbcaption {
+  text-align:right
+ }
+ .mw-content-rtl .magnify {
+  float:left
+ }
+ #catlinks {
+  text-align:left
+ }
+ .catlinks ul {
+  display:inline;
+  margin:0;
+  padding:0;
+  list-style:none none;
+  vertical-align:middle !ie
+ }
+ .catlinks li {
+  display:inline-block;
+  line-height:1.25em;
+  border-left:1px solid #a2a9b1;
+  margin:0.125em 0;
+  padding:0 0.5em;
+  zoom:1;
+  display:inline !ie
+ }
+ .catlinks li:first-child {
+  padding-left:0.25em;
+  border-left:0
+ }
+ .catlinks li a.mw-redirect {
+  font-style:italic
+ }
+ .mw-hidden-cats-hidden {
+  display:none
+ }
+ .catlinks-allhidden {
+  display:none
+ }
+ p.mw-protect-editreasons,
+ p.mw-filedelete-editreasons,
+ p.mw-delete-editreasons {
+  font-size:90%;
+  text-align:right
+ }
+ .autocomment {
+  color:#72777d
+ }
+ .newpage,
+ .minoredit,
+ .botedit {
+  font-weight:bold
+ }
+ div.mw-warning-with-logexcerpt {
+  padding:3px;
+  margin-bottom:3px;
+  border:2px solid #2a4b8d;
+  clear:both
+ }
+ div.mw-warning-with-logexcerpt ul li {
+  font-size:90%
+ }
+ span.mw-revdelundel-link,
+ strong.mw-revdelundel-link {
+  font-size:90%
+ }
+ span.mw-revdelundel-hidden,
+ input.mw-revdelundel-hidden {
+  visibility:hidden
+ }
+ td.mw-revdel-checkbox,
+ th.mw-revdel-checkbox {
+  padding-right:10px;
+  text-align:center
+ }
+ a.new {
+  color:#ba0000
+ }
+ .plainlinks a.external {
+  background:none !important;
+  padding:0 !important
+ }
+ .rtl a.external.free,
+ .rtl a.external.autonumber {
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ table.wikitable {
+  background-color:#f8f9fa;
+  color:#222;
+  margin:1em 0;
+  border:1px solid #a2a9b1;
+  border-collapse:collapse
+ }
+ table.wikitable > tr > th,
+ table.wikitable > tr > td,
+ table.wikitable > * > tr > th,
+ table.wikitable > * > tr > td {
+  border:1px solid #a2a9b1;
+  padding:0.2em 0.4em
+ }
+ table.wikitable > tr > th,
+ table.wikitable > * > tr > th {
+  background-color:#eaecf0;
+  text-align:center
+ }
+ table.wikitable > caption {
+  font-weight:bold
+ }
+ .error,
+ .warning,
+ .success {
+  font-size:larger
+ }
+ .error {
+  color:#d33
+ }
+ .warning {
+  color:#705000
+ }
+ .success {
+  color:#009000
+ }
+ .errorbox,
+ .warningbox,
+ .successbox {
+  border:1px solid;
+  padding:0.5em 1em;
+  margin-bottom:1em;
+  display:inline-block;
+  zoom:1;
+  *display:inline
+ }
+ .errorbox h2,
+ .warningbox h2,
+ .successbox h2 {
+  font-size:1em;
+  color:inherit;
+  font-weight:bold;
+  display:inline;
+  margin:0 0.5em 0 0;
+  border:0
+ }
+ .errorbox {
+  color:#d33;
+  border-color:#fac5c5;
+  background-color:#fae3e3
+ }
+ .warningbox {
+  color:#705000;
+  border-color:#fde29b;
+  background-color:#fdf1d1
+ }
+ .successbox {
+  color:#008000;
+  border-color:#b7fdb5;
+  background-color:#e1fddf
+ }
+ .mw-infobox {
+  border:2px solid #ff7f00;
+  margin:0.5em;
+  clear:left;
+  overflow:hidden
+ }
+ .mw-infobox-left {
+  margin:7px;
+  float:left;
+  width:35px
+ }
+ .mw-infobox-right {
+  margin:0.5em 0.5em 0.5em 49px
+ }
+ .previewnote {
+  color:#d33;
+  margin-bottom:1em
+ }
+ .previewnote p {
+  text-indent:3em;
+  margin:0.8em 0
+ }
+ .visualClear {
+  clear:both
+ }
+ .mw-datatable {
+  border-collapse:collapse
+ }
+ .mw-datatable,
+ .mw-datatable td,
+ .mw-datatable th {
+  border:1px solid #a2a9b1;
+  padding:0 0.15em 0 0.15em
+ }
+ .mw-datatable th {
+  background-color:#ddf
+ }
+ .mw-datatable td {
+  background-color:#fff
+ }
+ .mw-datatable tr:hover td {
+  background-color:#eaf3ff
+ }
+ .mw-content-ltr ul,
+ .mw-content-rtl .mw-content-ltr ul {
+  margin:0.3em 0 0 1.6em;
+  padding:0
+ }
+ .mw-content-rtl ul,
+ .mw-content-ltr .mw-content-rtl ul {
+  margin:0.3em 1.6em 0 0;
+  padding:0
+ }
+ .mw-content-ltr ol,
+ .mw-content-rtl .mw-content-ltr ol {
+  margin:0.3em 0 0 3.2em;
+  padding:0
+ }
+ .mw-content-rtl ol,
+ .mw-content-ltr .mw-content-rtl ol {
+  margin:0.3em 3.2em 0 0;
+  padding:0
+ }
+ .mw-content-ltr dd,
+ .mw-content-rtl .mw-content-ltr dd {
+  margin-left:1.6em;
+  margin-right:0
+ }
+ .mw-content-rtl dd,
+ .mw-content-ltr .mw-content-rtl dd {
+  margin-right:1.6em;
+  margin-left:0
+ }
+ .mw-ajax-loader {
+  background-image:url(/wiki/resources/src/mediawiki.legacy/images/ajax-loader.gif?57f34);
+  background-position:center center;
+  background-repeat:no-repeat;
+  padding:16px;
+  position:relative;
+  top:-16px
+ }
+ .mw-small-spinner {
+  padding:10px !important;
+  margin-right:0.6em;
+  background-image:url(/wiki/resources/src/mediawiki.legacy/images/spinner.gif?ca65b);
+  background-position:center center;
+  background-repeat:no-repeat
+ }
+ h1:lang(anp),
+ h1:lang(as),
+ h1:lang(bh),
+ h1:lang(bho),
+ h1:lang(bn),
+ h1:lang(gu),
+ h1:lang(hi),
+ h1:lang(kn),
+ h1:lang(ks),
+ h1:lang(ml),
+ h1:lang(mr),
+ h1:lang(my),
+ h1:lang(mai),
+ h1:lang(ne),
+ h1:lang(new),
+ h1:lang(or),
+ h1:lang(pa),
+ h1:lang(pi),
+ h1:lang(sa),
+ h1:lang(ta),
+ h1:lang(te) {
+  line-height:1.6em !important
+ }
+ h2:lang(anp),
+ h3:lang(anp),
+ h4:lang(anp),
+ h5:lang(anp),
+ h6:lang(anp),
+ h2:lang(as),
+ h3:lang(as),
+ h4:lang(as),
+ h5:lang(as),
+ h6:lang(as),
+ h2:lang(bho),
+ h3:lang(bho),
+ h4:lang(bho),
+ h5:lang(bho),
+ h6:lang(bho),
+ h2:lang(bh),
+ h3:lang(bh),
+ h4:lang(bh),
+ h5:lang(bh),
+ h6:lang(bh),
+ h2:lang(bn),
+ h3:lang(bn),
+ h4:lang(bn),
+ h5:lang(bn),
+ h6:lang(bn),
+ h2:lang(gu),
+ h3:lang(gu),
+ h4:lang(gu),
+ h5:lang(gu),
+ h6:lang(gu),
+ h2:lang(hi),
+ h3:lang(hi),
+ h4:lang(hi),
+ h5:lang(hi),
+ h6:lang(hi),
+ h2:lang(kn),
+ h3:lang(kn),
+ h4:lang(kn),
+ h5:lang(kn),
+ h6:lang(kn),
+ h2:lang(ks),
+ h3:lang(ks),
+ h4:lang(ks),
+ h5:lang(ks),
+ h6:lang(ks),
+ h2:lang(ml),
+ h3:lang(ml),
+ h4:lang(ml),
+ h5:lang(ml),
+ h6:lang(ml),
+ h2:lang(mr),
+ h3:lang(mr),
+ h4:lang(mr),
+ h5:lang(mr),
+ h6:lang(mr),
+ h2:lang(my),
+ h3:lang(my),
+ h4:lang(my),
+ h5:lang(my),
+ h6:lang(my),
+ h2:lang(mai),
+ h3:lang(mai),
+ h4:lang(mai),
+ h5:lang(mai),
+ h6:lang(mai),
+ h2:lang(ne),
+ h3:lang(ne),
+ h4:lang(ne),
+ h5:lang(ne),
+ h6:lang(ne),
+ h2:lang(new),
+ h3:lang(new),
+ h4:lang(new),
+ h5:lang(new),
+ h6:lang(new),
+ h2:lang(or),
+ h3:lang(or),
+ h4:lang(or),
+ h5:lang(or),
+ h6:lang(or),
+ h2:lang(pa),
+ h3:lang(pa),
+ h4:lang(pa),
+ h5:lang(pa),
+ h6:lang(pa),
+ h2:lang(pi),
+ h3:lang(pi),
+ h4:lang(pi),
+ h5:lang(pi),
+ h6:lang(pi),
+ h2:lang(sa),
+ h3:lang(sa),
+ h4:lang(sa),
+ h5:lang(sa),
+ h6:lang(sa),
+ h2:lang(ta),
+ h3:lang(ta),
+ h4:lang(ta),
+ h5:lang(ta),
+ h6:lang(ta),
+ h2:lang(te),
+ h3:lang(te),
+ h4:lang(te),
+ h5:lang(te),
+ h6:lang(te) {
+  line-height:1.2em
+ }
+ ol:lang(azb) li,
+ ol:lang(bcc) li,
+ ol:lang(bgn) li,
+ ol:lang(bqi) li,
+ ol:lang(fa) li,
+ ol:lang(glk) li,
+ ol:lang(kk-arab) li,
+ ol:lang(lrc) li,
+ ol:lang(luz) li,
+ ol:lang(mzn) li {
+  list-style-type:-moz-persian;
+  list-style-type:persian
+ }
+ ol:lang(ckb) li,
+ ol:lang(sdh) li {
+  list-style-type:-moz-arabic-indic;
+  list-style-type:arabic-indic
+ }
+ ol:lang(hi) li,
+ ol:lang(mai) li,
+ ol:lang(mr) li,
+ ol:lang(ne) li {
+  list-style-type:-moz-devanagari;
+  list-style-type:devanagari
+ }
+ ol:lang(as) li,
+ ol:lang(bn) li {
+  list-style-type:-moz-bengali;
+  list-style-type:bengali
+ }
+ ol:lang(or) li {
+  list-style-type:-moz-oriya;
+  list-style-type:oriya
+ }
+ .toc ul {
+  margin:0.3em 0
+ }
+ .mw-content-ltr .toc ul,
+ .mw-content-rtl .mw-content-ltr .toc ul {
+  text-align:left
+ }
+ .mw-content-rtl .toc ul,
+ .mw-content-ltr .mw-content-rtl .toc ul {
+  text-align:right
+ }
+ .mw-content-ltr .toc ul ul,
+ .mw-content-rtl .mw-content-ltr .toc ul ul {
+  margin:0 0 0 2em
+ }
+ .mw-content-rtl .toc ul ul,
+ .mw-content-ltr .mw-content-rtl .toc ul ul {
+  margin:0 2em 0 0
+ }
+ .toc .toctitle {
+  direction:ltr
+ }
+ #mw-clearyourcache,
+ #mw-sitecsspreview,
+ #mw-sitejspreview,
+ #mw-usercsspreview,
+ #mw-userjspreview {
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ #mw-revision-info,
+ #mw-revision-info-current,
+ #mw-revision-nav {
+  direction:ltr
+ }
+ div.tright,
+ div.floatright,
+ table.floatright {
+  clear:right;
+  float:right
+ }
+ div.tleft,
+ div.floatleft,
+ table.floatleft {
+  float:left;
+  clear:left
+ }
+ div.floatright,
+ table.floatright,
+ div.floatleft,
+ table.floatleft {
+  position:relative
+ }
+ #mw-credits a {
+  unicode-bidi:embed
+ }
+ .printfooter {
+  display:none
+ }
+ .xdebug-error {
+  position:absolute;
+  z-index:99
+ }
+ .mw-editsection {
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+ }
+ .mw-editsection,
+ .mw-editsection-like {
+  font-size:small;
+  font-weight:normal;
+  margin-left:1em;
+  vertical-align:baseline;
+  line-height:1em
+ }
+ .mw-content-ltr .mw-editsection,
+ .mw-content-rtl .mw-content-ltr .mw-editsection {
+  margin-left:1em
+ }
+ .mw-content-rtl .mw-editsection,
+ .mw-content-ltr .mw-content-rtl .mw-editsection {
+  margin-right:1em
+ }
+ sup,
+ sub {
+  line-height:1
+ }
+}
+@media screen {
+ .mw-parser-output a.external,
+ .link-https {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAs0lEQVR4AWP4//8/yRiroHH6njrjtN1/sGGYJpwajdJ2bXNI2M8BE8PQhMXUv0B8yThtMxeGJgyBmf9ZDRO3iRqn775rmL5NCyQG0giyEacm0WWvVstNvnNXt+hYNogP0giyEeRUnJpkVj3mBGqcC8SvNGrOVIJsBDkV5EecmmBYZOnrbqmZD1+CnAqTA2nEq4lh/38W0aWv9gGxF4YcpiYEFlz1jh+kGa8m3BhTE1GYYk0A08+9f1lXOBcAAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/external-ltr.png?bbaf6)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='mailto:'],
+ .link-mailto {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAdElEQVR4AWP4//8/yZjOmozTdv8nFqNoEl36ajYQfxNf+sIf2VQQHyQOksfQBKJFlr7uBkr+AdJpUH4alN8N4mPVBMJARVVADLJ5J5SuAonj1ATDYktfZgIV/wbRID4BTQgssfy5AogmqAkdE9RELKZvigAAGXrTaOmS5A4AAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/mail.png?e8eba)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='ftp://'],
+ .link-ftp {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAkklEQVR4AWP4//8/yZh8TSZpu+6apO76A8E795mm7rInqAmkGCYA0gDSCBJDxiCDsWrCgTHUgAnj9N1/xJa8uAvEf3BhqTmP/qNo0i0+8hekCZ9NQHlUm9Qaz/8VX/piHkmaFPpv/hNd8jyeJE3iC56+R3a/VsXJfyCM7i+8kQsLZoIpAjlOjFN3/QVhZDGKkxEAJnHYmBjMi10AAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/ftp-ltr.png?b23f8)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='irc://'],
+ .mw-parser-output a.external[href^='ircs://'],
+ .link-irc {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAa0lEQVR4AWP4//8/yZh8Tcapu84Yp+3+QwiD1ME1gQQImA5XN0w1YYaeSdqug+Ype8SN0/aswhd6cGyStvu0UdruRcZpu86bpO/2Jxi52ln7eYCmfQPaMNE6aSMvUSnCNGmPkknGXjOaJSMAP/vVKEltp2IAAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/chat-ltr.png?c1f6b)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogg'],
+ .mw-parser-output a.external[href$='.OGG'],
+ .mw-parser-output a.external[href$='.mid'],
+ .mw-parser-output a.external[href$='.MID'],
+ .mw-parser-output a.external[href$='.midi'],
+ .mw-parser-output a.external[href$='.MIDI'],
+ .mw-parser-output a.external[href$='.mp3'],
+ .mw-parser-output a.external[href$='.MP3'],
+ .mw-parser-output a.external[href$='.wav'],
+ .mw-parser-output a.external[href$='.WAV'],
+ .mw-parser-output a.external[href$='.wma'],
+ .mw-parser-output a.external[href$='.WMA'],
+ .link-audio {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAzElEQVR4AWP4//8/yRinhHH6njpccjg1GKft/gPjiyx5WSey9PUiGB+7hvTdd0GaRJe/shVd+qJGZPlrB9Glr/6ILXtrCdcEUgDDIA0GGdsVgGygopcBIMV8qx4LAenbYktflqBoQrcRbNOqVzxiS1//FF76xkx02aupQI1rCGriX/pQEKjwt8iK10ZAep7YkpfLCDpPZOnLaJAmoSVv+USXvn4MZOcRDAigIgORZa9TRJe8CgGyQQFjSHSQAwMgU3Tpm2ZqRy4CU1UTAPkTw90uS0O9AAAAAElFTkSuQmCC);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/audio-ltr.png?d3074)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogm'],
+ .mw-parser-output a.external[href$='.OGM'],
+ .mw-parser-output a.external[href$='.avi'],
+ .mw-parser-output a.external[href$='.AVI'],
+ .mw-parser-output a.external[href$='.mpeg'],
+ .mw-parser-output a.external[href$='.MPEG'],
+ .mw-parser-output a.external[href$='.mpg'],
+ .mw-parser-output a.external[href$='.MPG'],
+ .link-video {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAiElEQVR4AWP4//8/yRjOME7b/Qe7Ikx5uKBR2u6/oktezQVK/kPHIHGj9N1/sdokOv+VBNREDHHcNi191WqUtusvuiaIOA6bxJe/MDdOB2pe9moBDIOcBxLHahPIBpGlr9OM0/b8Ayq+DMMgPkgcJI9HE6af0DWhSCI5A0Oc7CCnOHKJxhRpAgAit8mhJyKLBQAAAABJRU5ErkJggg==);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/video.png?4b736)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.pdf'],
+ .mw-parser-output a.external[href$='.PDF'],
+ .mw-parser-output a.external[href*='.pdf#'],
+ .mw-parser-output a.external[href*='.PDF#'],
+ .mw-parser-output a.external[href*='.pdf?'],
+ .mw-parser-output a.external[href*='.PDF?'],
+ .link-document {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAYElEQVR4AWP4//8/yRiFY5y2+w86Nszc90w3c4sgXk3IfJFlr+u0y4+fAorvdGjYz0K0JrFFLxuNU3cdMUrbPZloTaJLX/2RmP/sj3H67r/EaMKQG1GacGF0TURjijQBAIHu2xsEOapJAAAAAElFTkSuQmCC);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/document-ltr.png?de931)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.extiw,
+ .mw-parser-output a.extiw:active {
+  color:#36b
+ }
+ .mw-parser-output a.external {
+  color:#36b
+ }
+}
+@media screen {
+ a {
+  text-decoration:none;
+  color:#0645ad;
+  background:none
+ }
+ a:not([href]) {
+  cursor:pointer
+ }
+ a:visited {
+  color:#0b0080
+ }
+ a:active {
+  color:#faa700
+ }
+ a:hover,
+ a:focus {
+  text-decoration:underline
+ }
+ a:lang(ar),
+ a:lang(kk-arab),
+ a:lang(mzn),
+ a:lang(ps),
+ a:lang(ur) {
+  text-decoration:none
+ }
+ a.stub {
+  color:#723
+ }
+ a.new,
+ #p-personal a.new {
+  color:#ba0000
+ }
+ a.mw-selflink {
+  color:inherit;
+  font-weight:bold;
+  text-decoration:inherit
+ }
+ a.mw-selflink:hover {
+  cursor:inherit;
+  text-decoration:inherit
+ }
+ a.mw-selflink:active,
+ a.mw-selflink:visited {
+  color:inherit
+ }
+ a.new:visited,
+ #p-personal a.new:visited {
+  color:#a55858
+ }
+ .mw-parser-output a.extiw,
+ .mw-parser-output a.extiw:active {
+  color:#36b
+ }
+ .mw-parser-output a.extiw:visited {
+  color:#636
+ }
+ .mw-parser-output a.extiw:active {
+  color:#b63
+ }
+ .mw-parser-output a.external {
+  color:#36b
+ }
+ .mw-parser-output a.external:visited {
+  color:#636
+ }
+ .mw-parser-output a.external:active {
+  color:#b63
+ }
+ .mw-parser-output a.external.free {
+  word-wrap:break-word
+ }
+ img {
+  border:0;
+  vertical-align:middle
+ }
+ hr {
+  height:1px;
+  color:#a2a9b1;
+  background-color:#a2a9b1;
+  border:0;
+  margin:0.2em 0
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  color:#000;
+  background:none;
+  font-weight:normal;
+  margin:0;
+  overflow:hidden;
+  padding-top:0.5em;
+  padding-bottom:0.17em;
+  border-bottom:1px solid #a2a9b1
+ }
+ h1 {
+  font-size:188%
+ }
+ h2 {
+  font-size:150%
+ }
+ h3,
+ h4,
+ h5,
+ h6 {
+  border-bottom:0;
+  font-weight:bold
+ }
+ h3 {
+  font-size:128%
+ }
+ h4 {
+  font-size:116%
+ }
+ h5 {
+  font-size:108%
+ }
+ h6 {
+  font-size:100%
+ }
+ h1,
+ h2 {
+  margin-bottom:0.6em
+ }
+ h3,
+ h4,
+ h5 {
+  margin-bottom:0.3em
+ }
+ p {
+  margin:0.4em 0 0.5em 0
+ }
+ p img {
+  margin:0
+ }
+ ul {
+  list-style-type:square;
+  margin:0.3em 0 0 1.6em;
+  padding:0
+ }
+ ol {
+  margin:0.3em 0 0 3.2em;
+  padding:0;
+  list-style-image:none
+ }
+ li {
+  margin-bottom:0.1em
+ }
+ dt {
+  font-weight:bold;
+  margin-bottom:0.1em
+ }
+ dl {
+  margin-top:0.2em;
+  margin-bottom:0.5em
+ }
+ dd {
+  margin-left:1.6em;
+  margin-bottom:0.1em
+ }
+ pre,
+ code,
+ tt,
+ kbd,
+ samp,
+ .mw-code {
+  font-family:monospace,monospace
+ }
+ code {
+  color:#000;
+  background-color:#f8f9fa;
+  border:1px solid #eaecf0;
+  border-radius:2px;
+  padding:1px 4px
+ }
+ pre,
+ .mw-code {
+  color:#000;
+  background-color:#f8f9fa;
+  border:1px solid #eaecf0;
+  padding:1em;
+  white-space:pre-wrap
+ }
+ table {
+  font-size:100%
+ }
+ fieldset {
+  border:1px solid #2a4b8d;
+  margin:1em 0 1em 0;
+  padding:0 1em 1em
+ }
+ fieldset.nested {
+  margin:0 0 0.5em 0;
+  padding:0 0.5em 0.5em
+ }
+ legend {
+  padding:0.5em;
+  font-size:95%
+ }
+ form {
+  border:0;
+  margin:0
+ }
+ textarea {
+  width:100%;
+  padding:0.1em;
+  display:block;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+ }
+ .center {
+  width:100%;
+  text-align:center
+ }
+ *.center * {
+  margin-left:auto;
+  margin-right:auto
+ }
+ .small {
+  font-size:94%
+ }
+ table.small {
+  font-size:100%
+ }
+ .toc,
+ .mw-warning,
+ .toccolours {
+  border:1px solid #a2a9b1;
+  background-color:#f8f9fa;
+  padding:5px;
+  font-size:95%
+ }
+ .toc {
+  display:inline-block;
+  display:table;
+  zoom:1;
+  *display:inline;
+  padding:7px
+ }
+ table.toc {
+  border-collapse:collapse
+ }
+ table.toc td {
+  padding:0
+ }
+ .toc h2 {
+  display:inline;
+  border:0;
+  padding:0;
+  font-size:100%;
+  font-weight:bold
+ }
+ .toc .toctitle {
+  text-align:center
+ }
+ .toc ul {
+  list-style-type:none;
+  list-style-image:none;
+  margin-left:0;
+  padding:0;
+  text-align:left
+ }
+ .toc ul ul {
+  margin:0 0 0 2em
+ }
+ .tocnumber,
+ .toctext {
+  display:table-cell;
+  text-decoration:inherit
+ }
+ .tocnumber {
+  padding-left:0;
+  padding-right:0.5em;
+  color:#222
+ }
+ .mw-content-ltr .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-rtl .tocnumber {
+  padding-left:0.5em;
+  padding-right:0
+ }
+ .mw-warning {
+  margin-left:50px;
+  margin-right:50px;
+  text-align:center
+ }
+ div.floatright,
+ table.floatright {
+  margin:0 0 0.5em 0.5em
+ }
+ div.floatleft,
+ table.floatleft {
+  margin:0 0.5em 0.5em 0
+ }
+ div.thumb {
+  margin-bottom:0.5em;
+  width:auto;
+  background-color:transparent
+ }
+ div.thumbinner {
+  border:1px solid #c8ccd1;
+  padding:3px;
+  background-color:#f8f9fa;
+  font-size:94%;
+  text-align:center;
+  overflow:hidden
+ }
+ html .thumbimage {
+  background-color:#fff;
+  border:1px solid #c8ccd1
+ }
+ html .thumbcaption {
+  border:0;
+  line-height:1.4em;
+  padding:3px;
+  font-size:94%;
+  text-align:left
+ }
+ div.magnify {
+  float:right;
+  margin-left:3px
+ }
+ div.magnify a {
+  display:block;
+  text-indent:15px;
+  white-space:nowrap;
+  overflow:hidden;
+  width:15px;
+  height:11px;
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919h-10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E');
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+ }
+ img.thumbborder {
+  border:1px solid #eaecf0
+ }
+ .mw-content-ltr .thumbcaption {
+  text-align:left
+ }
+ .mw-content-ltr .magnify {
+  float:right;
+  margin-left:3px;
+  margin-right:0
+ }
+ .mw-content-ltr div.magnify a {
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919h-10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E')
+ }
+ .mw-content-rtl .thumbcaption {
+  text-align:right
+ }
+ .mw-content-rtl .magnify {
+  float:left;
+  margin-left:0;
+  margin-right:3px
+ }
+ .mw-content-rtl div.magnify a {
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-rtl.png?a9fb3);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M9.491 1.865h-10.99v7.919h10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M12.499 6.868h-5.943v4.904h5.943z%22/%3E %3C/g%3E %3C/svg%3E')
+ }
+ div.tright {
+  margin:0.5em 0 1.3em 1.4em
+ }
+ div.tleft {
+  margin:0.5em 1.4em 1.3em 0
+ }
+ body.mw-hide-empty-elt .mw-empty-elt {
+  display:none
+ }
+ .catlinks {
+  border:1px solid #a2a9b1;
+  background-color:#f8f9fa;
+  padding:5px;
+  margin-top:1em;
+  clear:both
+ }
+ textarea {
+  border:1px solid #c8ccd1
+ }
+ .editOptions {
+  background-color:#eaecf0;
+  color:#222;
+  border:1px solid #c8ccd1;
+  border-top:0;
+  padding:1em 1em 1.5em 1em;
+  margin-bottom:2em
+ }
+ .usermessage {
+  background-color:#ffce7b;
+  border:1px solid #ffa500;
+  color:#000;
+  font-weight:bold;
+  margin:2em 0 1em;
+  padding:0.5em 1em;
+  vertical-align:middle
+ }
+ #siteNotice {
+  position:relative;
+  text-align:center;
+  margin:0
+ }
+ #localNotice {
+  margin-bottom:0.9em
+ }
+ .firstHeading {
+  margin-bottom:0.1em;
+  line-height:1.2em;
+  padding-bottom:0
+ }
+ #siteSub {
+  display:none
+ }
+ #contentSub,
+ #contentSub2 {
+  font-size:84%;
+  line-height:1.2em;
+  margin:0 0 1.4em 1em;
+  color:#54595d;
+  width:auto
+ }
+ span.subpages {
+  display:block
+ }
+}
+.mw-wiki-logo {
+ background-image:url(/wiki/resources/wiki.png?e0777)
+}
+.toctogglecheckbox:checked ~ ul {
+ display:none
+}
+@media screen {
+ :not(:checked) > .toctogglecheckbox {
+  display:inline !important;
+  position:absolute;
+  opacity:0
+ }
+ .toctogglespan {
+  font-size:94%
+ }
+ :not(:checked) > .toctogglespan:before {
+  content:' ['
+ }
+ :not(:checked) > .toctogglespan:after {
+  content:']'
+ }
+ .toctogglelabel {
+  cursor:pointer;
+  color:#0645ad
+ }
+ .toctogglelabel:hover {
+  text-decoration:underline
+ }
+ .toctogglecheckbox:focus + .toctitle .toctogglelabel {
+  text-decoration:underline;
+  outline:dotted 1px;
+  outline:auto -webkit-focus-ring-color
+ }
+ .toctogglecheckbox:checked + .toctitle .toctogglelabel:after {
+  content:'show'
+ }
+ .toctogglecheckbox:not(:checked) + .toctitle .toctogglelabel:after {
+  content:'hide'
+ }
+ .toctogglespan ~ .toctoggle {
+  display:none
+ }
+}
+@media print {
+ .toctogglecheckbox:checked + .toctitle {
+  display:none
+ }
+}
+@media screen {
+ div#column-content {
+  width:100%;
+  margin:0;
+  padding:0
+ }
+ .mw-body {
+  padding:1em;
+  position:relative;
+  z-index:2;
+  background:#ffffff;
+  color:#000000;
+  border:1px solid #aaaaaa;
+  line-height:1.5em
+ }
+ #column-one h2 {
+  position:absolute;
+  top:-9999px;
+  left:0
+ }
+ body {
+  font:x-small sans-serif;
+  background-color:#f9f9f9;
+  background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%225%22 height=%22220%22 viewBox=%220 0 1.323 58.208%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22 x1=%22262.803%22 x2=%22263.049%22 y1=%2229.234%22 y2=%22.97%22 gradientTransform=%22translate%28-492.003 238.792%29 scale%281.875%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9f9f9%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f3f3f3%22/%3E %3C/linearGradient%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 d=%22M0 238.792h1.323V297H0z%22 transform=%22translate%280 -238.792%29%22/%3E %3C/svg%3E');
+  background-position:0 0;
+  background-repeat:repeat-x;
+  color:#000000;
+  margin:0;
+  padding:0;
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ div#globalWrapper {
+  font-size:127%;
+  background-image:url(/wiki/skins/MonoBook/resources/images/headbg.jpg?13df6);
+  background-position:0 0;
+  background-repeat:no-repeat;
+  width:100%;
+  margin:0;
+  padding:0;
+  position:relative;
+  z-index:0
+ }
+ a {
+  color:#002bb8
+ }
+ a:visited {
+  color:#5a3696
+ }
+ a.new,
+ #p-personal a.new {
+  color:#cc2200
+ }
+ ul {
+  list-style-type:square;
+  list-style-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22 viewBox=%220 0 1.323 3.44%22%3E %3Cpath fill=%22%23638c9c%22 d=%22M0 1.852v1.323h1.323V1.852z%22/%3E %3C/svg%3E');
+  list-style-image:url(data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs=) \9;
+  list-style-image:url(/wiki/skins/MonoBook/resources/images/bullet.gif?11907) \9!ie
+ }
+ pre,
+ .mw-code {
+  line-height:1.1em
+ }
+ #firstHeading {
+  padding-top:0;
+  overflow:visible
+ }
+ .mw-indicators {
+  float:right;
+  line-height:1.5em;
+  font-size:95%
+ }
+ .mw-indicator {
+  display:-moz-inline-block;
+  display:inline-block;
+  zoom:1;
+  *display:inline
+ }
+ .mw-jump-link:not(:focus) {
+  display:block;
+  position:absolute !important;
+  clip:rect(1px,1px,1px,1px);
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:0;
+  padding:0;
+  overflow:hidden
+ }
+ #siteNotice {
+  font-size:95%;
+  padding:0 0.9em
+ }
+ #siteNotice p {
+  margin:0;
+  padding:0
+ }
+ #localNotice {
+  margin:0
+ }
+ table.rimage {
+  float:right;
+  position:relative;
+  margin-left:1em;
+  margin-bottom:1em;
+  text-align:center
+ }
+ .portlet {
+  overflow:hidden
+ }
+ .portlet h3 {
+  background:transparent;
+  display:inline;
+  height:1em;
+  font-size:91%;
+  white-space:nowrap
+ }
+ .portlet ul {
+  line-height:1.5em;
+  font-size:95%
+ }
+ .portlet li {
+  padding:0;
+  margin:0
+ }
+ .pBody {
+  font-size:95%;
+  color:#000000;
+  border-collapse:collapse
+ }
+ .pBody:after {
+  content:'';
+  clear:both;
+  display:block
+ }
+ #p-logo {
+  position:absolute;
+  z-index:3;
+  overflow:visible
+ }
+ #p-logo a,
+ #p-logo a:hover {
+  display:block;
+  background-repeat:no-repeat;
+  text-decoration:none
+ }
+ li#pt-anonuserpage {
+  color:#707070
+ }
+ #footer {
+  background-color:#ffffff;
+  border-top:1px solid #fabd23;
+  border-bottom:1px solid #fabd23;
+  margin:0.6em 0 1em 0;
+  overflow:hidden;
+  padding:0.4em 0 0.3em 0;
+  text-align:center;
+  font-size:90%
+ }
+ #footer li {
+  display:inline;
+  margin:0 1.3em
+ }
+ #userloginprompt,
+ #languagelinks {
+  font-size:85%
+ }
+ #login-sectiontip {
+  font-size:85%;
+  line-height:1.2;
+  padding-top:2em
+ }
+ #pagehistory li.selected {
+  position:relative
+ }
+ div.patrollink {
+  clear:both
+ }
+ .sharedUploadNotice {
+  font-style:italic
+ }
+ .editExternally {
+  border:1px solid #aaaaaa;
+  background-color:#ffffff;
+  padding:3px;
+  margin-top:0.5em;
+  float:left;
+  font-size:small;
+  text-align:center
+ }
+ .editExternallyHelp {
+  font-style:italic;
+  color:#707070
+ }
+ .toggle {
+  margin-left:2em;
+  text-indent:-2em
+ }
+ input#wpSave,
+ input#wpDiff {
+  margin-right:0.33em
+ }
+ #wpSave {
+  font-weight:bold
+ }
+ div.noarticletext {
+  border:1px solid #aaaaaa;
+  background:#ffffff;
+  padding:0.2em 1em;
+  color:#000000
+ }
+ #powersearch p {
+  margin-top:0
+ }
+ div.multipageimagenavbox {
+  border:solid 1px #aaaaaa;
+  padding:4px;
+  margin:1em;
+  background:#f9f9f9
+ }
+ div.multipageimagenavbox div.thumb {
+  border:0;
+  margin-left:2em;
+  margin-right:2em
+ }
+ div.multipageimagenavbox hr {
+  margin:6px
+ }
+ table.multipageimage td {
+  text-align:center
+ }
+ .templatesUsed {
+  margin-top:1.5em
+ }
+ .mw-summary-preview {
+  margin:0.1em 0
+ }
+ div.mw-lag-warn-normal,
+ div.mw-lag-warn-high {
+  padding:3px;
+  text-align:center;
+  margin:3px auto
+ }
+ div.mw-lag-warn-normal {
+  border:1px solid #fc6;
+  background-color:#ffc
+ }
+ div.mw-lag-warn-high {
+  font-weight:bold;
+  border:2px solid #f03;
+  background-color:#fcc
+ }
+ .MediaTransformError {
+  background-color:#aaaaaa;
+  padding:0.1em
+ }
+ .MediaTransformError td {
+  text-align:center;
+  vertical-align:middle;
+  font-size:90%
+ }
+ .tipsy {
+  font-size:127%
+ }
+}
+@media screen and (min-width:551px) {
+ div#column-content {
+  float:right;
+  margin:0 0 0.6em -12.2em
+ }
+ .mw-body {
+  margin:2.8em 0 0 12.2em;
+  border-right:0
+ }
+ div#column-one {
+  padding-top:160px
+ }
+ .special li {
+  line-height:1.4em;
+  margin:0;
+  padding:0
+ }
+ .portlet {
+  border:0;
+  margin:0 0 0.5em;
+  padding:0;
+  float:none;
+  width:11.6em
+ }
+ .portlet h3 {
+  padding:0 1em 0 0.5em;
+  text-transform:lowercase;
+  font-weight:normal
+ }
+ .pBody {
+  background-color:#fff;
+  border:1px solid #aaa;
+  padding:0 0.8em 0.3em 0.5em
+ }
+ li#pt-userpage {
+  text-transform:none
+ }
+ .capitalize-all-nouns .portlet h3,
+ .capitalize-all-nouns #p-personal ul,
+ .capitalize-all-nouns #p-cactions ul li a {
+  text-transform:none
+ }
+ .no-text-transform {
+  text-transform:none
+ }
+ #p-logo {
+  top:0;
+  left:0;
+  height:155px;
+  width:12em
+ }
+ #p-logo a,
+ #p-logo a:hover {
+  height:155px;
+  width:12.2em;
+  background-position:35% 50% !important
+ }
+ #p-search {
+  position:relative;
+  z-index:3
+ }
+ input.searchButton {
+  margin-top:1px;
+  font-size:95%
+ }
+ #searchGoButton {
+  padding-left:0.5em;
+  padding-right:0.5em;
+  font-weight:bold
+ }
+ #searchInput {
+  width:10.9em;
+  margin:0;
+  font-size:95%
+ }
+ #p-search .pBody {
+  padding:0.5em 0.4em 0.4em 0.4em;
+  text-align:center
+ }
+ #p-search #searchform div div {
+  margin-top:0.4em;
+  font-size:95%
+ }
+ #p-personal {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:3;
+  width:100%;
+  white-space:nowrap;
+  padding:0;
+  margin:0;
+  border:0;
+  background:none;
+  overflow:visible;
+  line-height:1.2em
+ }
+ #p-personal h3 {
+  position:absolute;
+  top:-9999px
+ }
+ #p-personal .portlet,
+ #p-personal .pBody {
+  z-index:0;
+  padding:0;
+  margin:0;
+  border:0;
+  overflow:visible;
+  background:none
+ }
+ #p-personal ul {
+  border:0;
+  line-height:1.4em;
+  color:#2f6fab;
+  padding:0;
+  padding-right:2em;
+  padding-left:14em;
+  margin:0;
+  text-align:right;
+  list-style-type:none;
+  list-style-image:none;
+  z-index:0;
+  background:none;
+  cursor:default;
+  text-transform:lowercase
+ }
+ #p-personal li {
+  z-index:0;
+  border:0;
+  padding:0;
+  color:#2f6fab;
+  display:inline;
+  margin-left:1em;
+  line-height:1.2em;
+  background:none
+ }
+ #p-personal li a {
+  color:#005896;
+  text-decoration:none;
+  padding-bottom:0.2em
+ }
+ #p-personal li a:hover {
+  background-color:#fff;
+  text-decoration:none
+ }
+ #p-personal li.active a:hover {
+  background-color:transparent
+ }
+ li#pt-userpage,
+ li#pt-anonuserpage {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-user.gif?d13ac);
+  //background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23fbeacf%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f0bf7b%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9e0ba%22/%3E %3Cstop offset=%221%22 stop-color=%22%23de8a3d%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23dfedc7%22/%3E %3Cstop offset=%221%22 stop-color=%22%2389b92f%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22d%22 x1=%22.794%22 x2=%223.175%22 y1=%222.778%22 y2=%222.778%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22f%22 x1=%221.587%22 x2=%222.381%22 y1=%221.058%22 y2=%221.587%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22e%22 cx=%221.984%22 cy=%222.381%22 r=%22.397%22 fx=%221.984%22 fy=%221.984%22 gradientTransform=%22matrix%28.33333 0 0 1.30283 1.323 -.469%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.661 3.307l.133-.661.264-.265c.53-.264 1.323-.264 1.852 0l.265.265.132.661z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M1.587 2.117v.264l.265.265h.265l.264-.265v-.264c-.264-.265-.529-.265-.793 0z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M1.323 1.058v.53l.264.264c.265.265.53.265.794 0l.265-.265v-.529L2.116.53h-.264z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.646 1.058v.53h.264v-.53zM2.38 2.117v.264h.53v-.264zm.53.264v.265h.264V2.38zm.264.265v.529H.529v.265h2.91v-.795z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058 1.058v.53h.265v-.53zm.265.53v.264h.264v-.265zm-.265.529v.264h.53v-.264zm0 .264H.794v.265h.264zm-.264.265H.529v.529h.265z%22/%3E %3Cpath fill=%22%23768854%22 d=%22M1.587 2.381v.265h.265V2.38zm.265.265v.264h.265v-.264zm.265 0h.264V2.38h-.264z%22/%3E %3Cpath fill=%22%23a6774d%22 d=%22M2.381 1.587v.265h.265v-.265zm0 .265h-.793v.265h.793z%22/%3E %3Cpath fill=%22%239a7b54%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265-.396.794-.793.794l.132-.53.264-.264z%22/%3E %3Cpath fill=%22%2393642b%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265.397.794.794.794l-.132-.53L2.38.53z%22/%3E %3Cpath fill=%22%2386735c%22 d=%22M1.587.265v.264h.794V.265zm0 .264h-.264v.265h.264zm-.264.265h-.265v.529h.265z%22/%3E %3Cpath fill=%22%235a4934%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.529h.264v-.53z%22/%3E %3Cpath fill=%22%2383b625%22 d=%22M1.323 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%236d971f%22 d=%22M2.646 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23cde3a8%22 d=%22M1.058 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a9cd69%22 d=%22M2.381 2.91h.265v.265h-.265z%22/%3E %3C/svg%3E');
+  background-position:top left;
+  background-repeat:no-repeat;
+  padding-left:20px
+ }
+ #p-lang {
+  position:relative;
+  z-index:3
+ }
+ #p-cactions {
+  position:absolute;
+  top:1.3em;
+  left:11.5em;
+  margin:0;
+  white-space:nowrap;
+  width:76%;
+  line-height:1.1em;
+  overflow:visible;
+  background:none;
+  border-collapse:collapse;
+  padding-left:1em;
+  font-size:95%
+ }
+ #p-cactions h3 {
+  position:absolute;
+  top:-9999px
+ }
+ #p-cactions ul {
+  list-style-type:none;
+  list-style-image:none
+ }
+ #p-cactions li {
+  display:inline;
+  border:1px solid #aaa;
+  border-bottom:0;
+  margin:0 0.5em 0 0;
+  padding:0 0 1em 0;
+  overflow:visible;
+  background:#fff
+ }
+ #p-cactions li.selected {
+  border-color:#fabd23;
+  font-weight:bold
+ }
+ #p-cactions li.selected a {
+  z-index:3;
+  background-color:#fff
+ }
+ #p-cactions li a {
+  background-color:#fbfbfb;
+  color:#002bb8;
+  border:0;
+  padding:0 0.8em 0.3em;
+  position:relative;
+  z-index:0;
+  margin:0;
+  text-decoration:none;
+  text-transform:lowercase
+ }
+ #p-cactions li a:hover {
+  z-index:3;
+  text-decoration:none;
+  background-color:#fff
+ }
+ #p-cactions li.istalk {
+  margin-right:0
+ }
+ #p-cactions li.istalk a {
+  padding-right:0.5em
+ }
+ #p-cactions .new a {
+  color:#c20
+ }
+ #p-cactions #ca-addsection a {
+  padding-left:0.4em;
+  padding-right:0.4em
+ }
+ #p-cactions .pBody {
+  font-size:1em;
+  background-color:transparent;
+  color:inherit;
+  border-collapse:inherit;
+  border:0;
+  padding:0
+ }
+ li#ca-talk {
+  margin-right:1.6em
+ }
+ li#ca-watch,
+ li#ca-unwatch,
+ li#ca-varlang-0,
+ li#ca-print {
+  margin-left:1.6em
+ }
+ #p-personal #pt-notifications,
+ #echo-hack-badges,
+ #p-cactions-mobile,
+ #sidebar-mobilejs,
+ .mobile-close-button,
+ .menu-toggle,
+ .menus-cover {
+  display:none
+ }
+ #f-poweredbyico,
+ #f-copyrightico {
+  margin:0 8px;
+  position:relative;
+  top:-2px
+ }
+ #f-poweredbyico {
+  float:right;
+  height:1%
+ }
+ #f-copyrightico {
+  float:left;
+  height:1%
+ }
+}
+@media screen and (max-width:550px) {
+ div#column-content {
+  padding-top:6em
+ }
+ .mw-body {
+  border-right:0;
+  border-left:0
+ }
+ .menu-toggle {
+  display:block;
+  width:35px;
+  height:35px;
+  background:#ffffff;
+  border:solid 1px #fabd23;
+  box-sizing:border-box;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  z-index:4
+ }
+ #sidebar-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-down.gif?3e32c);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%226.879%22 cy=%226.813%22 r=%221.455%22 fx=%226.879%22 fy=%226.813%22 gradientTransform=%22matrix%281 0 0 .72727 -5.292 -3.103%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M3.572 1.455L2.382 2.91h-.53L.794 1.852.66 1.455z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M3.44 1.587v.265h.264v-.265zm0 .265h-.265v.265h.265zm-.265.265H2.91v.264h.265zm-.265.264h-.264v.265h.264zm-.264.265H2.38v.264h.265zm-.265.264h-.264v.265h.264z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M.53 1.323v.53h.264v-.266h2.91v-.264zm.264.53v.264h.264v-.265zm.264.264v.264h.265v-.264zm.265.264v.265h.264V2.38zm.264.265v.264h.265v-.264zm.265.264v.265h.265V2.91z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M3.175 1.587v.265h.265v-.265zm0 .265H2.91v.265h.265zm-.265.265h-.264v.264h.264zm-.264.264H2.38v.265h.265zm-.265.265h-.529v.264h.53z%22/%3E %3C/svg%3E');
+  position:absolute;
+  top:5px;
+  left:1em
+ }
+ #p-personal-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-user.gif?d13ac);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23fbeacf%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f0bf7b%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9e0ba%22/%3E %3Cstop offset=%221%22 stop-color=%22%23de8a3d%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23dfedc7%22/%3E %3Cstop offset=%221%22 stop-color=%22%2389b92f%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22d%22 x1=%22.794%22 x2=%223.175%22 y1=%222.778%22 y2=%222.778%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22f%22 x1=%221.587%22 x2=%222.381%22 y1=%221.058%22 y2=%221.587%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22e%22 cx=%221.984%22 cy=%222.381%22 r=%22.397%22 fx=%221.984%22 fy=%221.984%22 gradientTransform=%22matrix%28.33333 0 0 1.30283 1.323 -.469%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.661 3.307l.133-.661.264-.265c.53-.264 1.323-.264 1.852 0l.265.265.132.661z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M1.587 2.117v.264l.265.265h.265l.264-.265v-.264c-.264-.265-.529-.265-.793 0z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M1.323 1.058v.53l.264.264c.265.265.53.265.794 0l.265-.265v-.529L2.116.53h-.264z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.646 1.058v.53h.264v-.53zM2.38 2.117v.264h.53v-.264zm.53.264v.265h.264V2.38zm.264.265v.529H.529v.265h2.91v-.795z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058 1.058v.53h.265v-.53zm.265.53v.264h.264v-.265zm-.265.529v.264h.53v-.264zm0 .264H.794v.265h.264zm-.264.265H.529v.529h.265z%22/%3E %3Cpath fill=%22%23768854%22 d=%22M1.587 2.381v.265h.265V2.38zm.265.265v.264h.265v-.264zm.265 0h.264V2.38h-.264z%22/%3E %3Cpath fill=%22%23a6774d%22 d=%22M2.381 1.587v.265h.265v-.265zm0 .265h-.793v.265h.793z%22/%3E %3Cpath fill=%22%239a7b54%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265-.396.794-.793.794l.132-.53.264-.264z%22/%3E %3Cpath fill=%22%2393642b%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265.397.794.794.794l-.132-.53L2.38.53z%22/%3E %3Cpath fill=%22%2386735c%22 d=%22M1.587.265v.264h.794V.265zm0 .264h-.264v.265h.264zm-.264.265h-.265v.529h.265z%22/%3E %3Cpath fill=%22%235a4934%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.529h.264v-.53z%22/%3E %3Cpath fill=%22%2383b625%22 d=%22M1.323 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%236d971f%22 d=%22M2.646 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23cde3a8%22 d=%22M1.058 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a9cd69%22 d=%22M2.381 2.91h.265v.265h-.265z%22/%3E %3C/svg%3E');
+  position:absolute;
+  top:5px;
+  right:1em
+ }
+ #globalWrapper-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-up.gif?2cc6b);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%221.733%22 cy=%221.852%22 r=%22.728%22 fx=%221.733%22 fy=%221.852%22 gradientTransform=%22matrix%280 -1.81818 2.54545 0 -3.127 5.268%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M.661 2.778v-.264L1.984 1.19l1.588 1.587z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M2.381 1.323v.265h.265v-.265zm.265.265v.264h.264v-.264zm.264.264v.265h.265v-.265zm.265.265v.264h.265v-.264zm.265.264v.265h.264V2.38z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.852 1.058v.265h.53v-.265zm0 .265h-.264v.265h.264zm-.264.265h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v.265h.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M.53 2.91h3.174v-.264H.53z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M2.117 1.323v.265h.264v-.265zm.264.265v.264h.265v-.264zm.265.264v.265h.264v-.265zm.264.265v.264h.265v-.264zm.265.264v.265h.265V2.38z%22/%3E %3C/svg%3E');
+  margin:1em auto
+ }
+ #p-search {
+  position:absolute;
+  z-index:3;
+  top:5px;
+  left:0;
+  width:100%;
+  padding:0 55px;
+  box-sizing:border-box
+ }
+ #p-search h3 {
+  position:absolute;
+  top:-9999px;
+  left:0
+ }
+ #searchBody {
+  border:solid 1px #fabd23;
+  background-color:#ffffff;
+  height:35px;
+  box-sizing:border-box
+ }
+ #searchform {
+  position:relative;
+  width:100%;
+  padding:3px 42px 3px 9px;
+  box-sizing:border-box
+ }
+ #searchInput {
+  width:100%;
+  height:27px;
+  border:solid 1px #aaaaaa;
+  padding:0 0.25em;
+  box-sizing:border-box
+ }
+ #searchGoButton {
+  position:absolute;
+  box-sizing:border-box;
+  top:1px;
+  right:6px;
+  height:31px;
+  width:35px;
+  text-indent:-99999px;
+  border:0;
+  background:none;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-search.gif?11ad8);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23172bb3%22/%3E %3Cstop offset=%22.804%22 stop-color=%22%23b1d6e5%22/%3E %3Cstop offset=%221%22 stop-color=%22%235c8dc7%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23e4c19d%22/%3E %3Cstop offset=%221%22 stop-color=%22%23975f18%22 stop-opacity=%22.977%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fff%22/%3E %3Cstop offset=%221%22 stop-color=%22%23bdd7f3%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22f%22 cx=%2212.249%22 cy=%221.424%22 r=%22.728%22 fx=%2212.249%22 fy=%221.424%22 gradientTransform=%22matrix%28-.82724 -.02009 .02428 -.9997 12.12 3.422%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22e%22 cx=%222.888%22 cy=%222.578%22 r=%22.562%22 fx=%222.888%22 fy=%222.578%22 gradientTransform=%22matrix%28.47059 -.47059 .94118 .94118 -.875 1.579%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22d%22 cx=%221.79%22 cy=%221.499%22 r=%221.224%22 fx=%221.79%22 fy=%221.499%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.794 1.058c-.265.265-.265.794 0 1.059l.529.529 1.19.132.53-.529-.133-1.19-.529-.53c-.264-.264-.793-.264-1.058 0z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M2.91 2.117l.265.264.265.265c.264.264.264.264 0 .529-.265.265-.265.265-.53 0l-.264-.265-.132-.396.132-.133v-.264z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M2.117 2.117c-.265.264-.265.264-.53 0l-.264-.265c-.265-.265-.265-.265 0-.53l.265-.264c.264-.264.264-.264.529 0l.264.265c.265.264.265.264 0 .53z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.264h.264V.794zm.264.264v1.323h.265V1.058zm.265 1.323v.265h.265V2.38zm.265.265v.529h.264v-.53zm0 .529h-.265v.265h.265zM1.587.794v.264h.53V.794zm0 .264h-.264v.265h.264zm-.264.265h-.265v.53h.265zm0 .53v.264h.264v-.265zm.264.793v.264h1.059v-.529H2.38v.265z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.323.265v.264H2.38V.265zm0 .264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v1.059h.265zm0 1.059v.264h.264v-.264zm.264.264v.265h.265V2.38zm.265.265v.264h.264v-.264zm.794-1.588v.265h.264v-.265zm.264.265v.53h.265v-.53zm0 .53h-.264v.264h.264zm-.264.264h-.53v.264h.53zm.529.793v.265h.264V2.91zm.264.265v.265h.265v-.265z%22/%3E %3Cpath fill=%22%23fff%22 fill-rule=%22evenodd%22 d=%22M1.69 1.267c-.153.038-.197.382-.197.382.148-.268.301-.19.317-.309.007-.052-.048-.091-.12-.073z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.587 3.175v.265h.794v-.265z%22/%3E %3Cpath fill=%22%23e6e6e6%22 d=%22M1.058 3.175v.265h.53v-.265zm1.323 0v.265h.265v-.265z%22/%3E %3C/svg%3E');
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  cursor:pointer
+ }
+ #mw-searchButton {
+  display:none
+ }
+ .client-nojs #p-cactions,
+ .client-nojs #p-personal,
+ .client-nojs #sidebar .generated-sidebar,
+ .client-nojs #p-tb,
+ .client-nojs #p-lang {
+  margin:1em;
+  overflow:visible
+ }
+ .client-nojs #p-cactions .pBody,
+ .client-nojs #p-personal .pBody,
+ .client-nojs #sidebar .generated-sidebar .pBody,
+ .client-nojs #p-tb .pBody,
+ .client-nojs #p-lang .pBody {
+  border:solid 1px #aaaaaa;
+  background:#ffffff;
+  padding:0.5em
+ }
+ .client-nojs #p-cactions ul,
+ .client-nojs #p-personal ul,
+ .client-nojs #sidebar .generated-sidebar ul,
+ .client-nojs #p-tb ul,
+ .client-nojs #p-lang ul {
+  margin:0
+ }
+ .client-nojs #p-cactions li,
+ .client-nojs #p-personal li,
+ .client-nojs #sidebar .generated-sidebar li,
+ .client-nojs #p-tb li,
+ .client-nojs #p-lang li {
+  display:inline-block;
+  border-left:solid 1px #aaaaaa;
+  padding:0 0.5em;
+  white-space:nowrap
+ }
+ .client-nojs #p-cactions li:first-child,
+ .client-nojs #p-personal li:first-child,
+ .client-nojs #sidebar .generated-sidebar li:first-child,
+ .client-nojs #p-tb li:first-child,
+ .client-nojs #p-lang li:first-child {
+  border-left:0;
+  padding-left:0
+ }
+ .client-nojs #p-cactions li#pt-notifications-alert,
+ .client-nojs #p-personal li#pt-notifications-alert,
+ .client-nojs #sidebar .generated-sidebar li#pt-notifications-alert,
+ .client-nojs #p-tb li#pt-notifications-alert,
+ .client-nojs #p-lang li#pt-notifications-alert,
+ .client-nojs #p-cactions li#pt-notifications-notice,
+ .client-nojs #p-personal li#pt-notifications-notice,
+ .client-nojs #sidebar .generated-sidebar li#pt-notifications-notice,
+ .client-nojs #p-tb li#pt-notifications-notice,
+ .client-nojs #p-lang li#pt-notifications-notice {
+  border-left:0
+ }
+ .client-nojs #p-cactions li.selected,
+ .client-nojs #p-personal li.selected,
+ .client-nojs #sidebar .generated-sidebar li.selected,
+ .client-nojs #p-tb li.selected,
+ .client-nojs #p-lang li.selected {
+  font-weight:bold
+ }
+ .client-nojs #p-cactions li.selected a,
+ .client-nojs #p-personal li.selected a,
+ .client-nojs #sidebar .generated-sidebar li.selected a,
+ .client-nojs #p-tb li.selected a,
+ .client-nojs #p-lang li.selected a {
+  color:#000000
+ }
+ .client-nojs #p-cactions h3,
+ .client-nojs #p-personal h3,
+ .client-nojs #sidebar .generated-sidebar h3,
+ .client-nojs #p-tb h3,
+ .client-nojs #p-lang h3 {
+  font-weight:normal
+ }
+ #p-cactions-mobile {
+  position:absolute;
+  top:3.75em;
+  left:0;
+  padding:0 1em;
+  width:100%;
+  box-sizing:border-box
+ }
+ #p-cactions-mobile h3 {
+  display:none
+ }
+ #p-cactions-mobile ul {
+  margin:0;
+  list-style:none
+ }
+ #p-cactions-mobile li {
+  display:inline-block;
+  border:1px solid #aaaaaa;
+  border-bottom:0;
+  margin-right:0.5em;
+  height:2.5em
+ }
+ #p-cactions-mobile li a {
+  text-indent:-99999px;
+  width:1em;
+  display:block;
+  position:relative;
+  padding:0.5em 1em 0.75em;
+  background-color:#fbfbfb;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-page.gif?ca462);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23b8d6f4%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fff%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22 x1=%221.852%22 x2=%221.852%22 y1=%221.587%22 y2=%223.175%22 gradientTransform=%22scale%283.77953%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22%238b8b8b%22 d=%22M.794.265v2.91h.264V.529h1.059v.53h.264V.264z%22/%3E %3Cpath fill=%22url%28%23b%29%22 d=%22M5 4v8h5V4H5z%22 transform=%22scale%28.26458%29%22/%3E %3Cpath fill=%22%23fabd23%22 d=%22M2.381.794v.264h.265V.794H2.38z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.268l-.53-.004v.265h.794v1.852H.794v.265h2.381V1.058H2.91V.794z%22/%3E %3Cpath fill=%22%23fabd23%22 d=%22M1.323 2.646v.264h1.323v-.264H1.323z%22/%3E %3Cpath fill=%22%23538fc8%22 d=%22M1.058.794v.264h1.059V.794H1.058z%22/%3E %3Cpath fill=%22%23fff%22 d=%22M1.058.53v2.645h.265V.794h.794V.529zm1.059.793v.264h.529v1.588h.264V1.323z%22/%3E %3C/svg%3E');
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  text-transform:lowercase
+ }
+ #p-cactions-mobile li#ca-talk-mobile a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-chat.gif?11635);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23d8eef8%22 stop-opacity=%22.996%22/%3E %3Cstop offset=%221%22 stop-color=%22%2375badf%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fef2d3%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fabd23%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22d%22 cx=%222.698%22 cy=%221.985%22 r=%22.942%22 fx=%222.698%22 fy=%221.985%22 gradientTransform=%22matrix%281.23922 .18503 -.09172 .61432 -.452 .228%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22c%22 cx=%221.852%22 cy=%22.952%22 r=%22.926%22 fx=%221.852%22 fy=%22.952%22 gradientTransform=%22matrix%282 0 0 .71429 -1.852 .378%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M.661.926v.794l.133.132.264.53h.265l1.19-.662V.926L2.25.661H.926z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M1.455 1.72v.794l.397.264h1.455l.265-.264V1.72l-.265-.265H1.72z%22/%3E %3Cpath fill=%22%23fff%22 fill-rule=%22evenodd%22 d=%22M1.455 1.72c.36 1.327 2.086.807 2.117.794l-.265.264-.661.132-.265.265h-.264l-.53-.53z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.852 2.646h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M.794.53v.264H2.38V.529zm0 .264H.529v1.058h.265zm0 1.058V2.91h.264V1.852zm.794-.53v.265H3.44v-.264zm0 .265h-.265v1.059h.265zm.264 1.323v.794h.265V2.91z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.588 2.646h.265v.265h-.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.794v.529h.265v-.53zm1.059.793v1.059h.264V1.587zm0 1.059h-.794v.264h.794zm-.794.264H2.38v.265h.265zm-.265.265h-.264v.265h.264zm-1.323-.794v.265h.265V2.38zm.53.265v.264h.529v-.264h-.53z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li#ca-more {
+  border:0
+ }
+ #p-cactions-mobile li#ca-more a {
+  background-color:transparent;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-ltr.gif?3da7a);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%221.587%22 cy=%221.852%22 r=%22.728%22 fx=%221.587%22 fy=%221.852%22 gradientTransform=%22matrix%281.81818 0 0 2.54545 -1.299 -3.127%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M1.19.661l1.456 1.456L1.19 3.572z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M1.323.53v.264h.264V.529zm.264.264v.264h.265V.794zm.265.264v.265h.265v-.265zm.265.265v.264h.264v-.264zm.264.264v.265h.265v-.265zm.265.265v.53h.264v-.53zm0 .53H2.38v.264h.265zm-.265.264h-.264v.264h.264zm-.264.264h-.265v.265h.265zm-.265.265h-.265v.265h.265zm-.265.265h-.529v.264h.53z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058.53v2.91h.265V.53z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M1.323.794v.264h.264V.794zm.264.264v.265h.265v-.265zm.265.265v.264h.265v-.264zm.265.264v.265h.264v-.265zm.264.265v.53h.265v-.53zm0 .53h-.264v.264h.264zm-.264.264h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265h-.264v.265h.264z%22/%3E %3C/svg%3E');
+  background-position:100% 40%;
+  text-indent:0;
+  padding-left:0.5em;
+  padding-right:1.35em;
+  width:auto
+ }
+ #p-cactions-mobile li#ca-languages a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-globe.gif?0a6d8);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f6f9fe%22/%3E %3Cstop offset=%221%22 stop-color=%22%2360acf9%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%239bc56a%22/%3E %3Cstop offset=%221%22 stop-color=%22%233d801e%22 stop-opacity=%22.932%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22d%22 cx=%2226.167%22 cy=%227.091%22 r=%225%22 fx=%2226.167%22 fy=%227.091%22 gradientTransform=%22matrix%28.37042 0 0 .26458 -8.105 -.024%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22c%22 cx=%227.144%22 cy=%221.587%22 r=%221.521%22 fx=%227.144%22 fy=%221.587%22 gradientTransform=%22matrix%281.2174 0 0 .86957 -6.845 .207%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M.794 1.323l.264-.53.53-.264c.264-.264.793-.264 1.058 0l.529.265.265.529c.264.264.264.794 0 1.058l-.265.53-.53.264c-.264.265-.793.265-1.057 0l-.53-.265-.264-.529c-.265-.264-.265-.794 0-1.058z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M2.117.397l-.53.132-.529.265-.132.264c.046.343.422.658.579.749.157.09.194.223.182.256-.013.033-.67.376-.761.583l.132.264.53.265.264.132.794-.132.264-.132-.264-.133s-.24-.002-.273-.15c-.033-.15.008-.379-.277-.602-.14-.11-.252-.066-.285-.136-.033-.07.07-.116.029-.199-.042-.083-.236-.136-.22-.244.017-.107.203.037.207-.029.004-.066-.004-.24.112-.244.205-.237.183-.594.178-.91zM2.91.66c-.181.096-.506.083-.529.302-.014.141-.019.405.104.624.184.331.514.291.616.253.122-.047.29-.248.47-.253l-.131-.264-.265-.53z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M1.588.265v.264h.793V.265zm0 .264h-.53v.265h.53zm-.53.265H.794v.529h.264zm-.264.529H.529V2.38h.265zm0 1.058v.53h.264v-.53zm.264.53v.264h.53V2.91zm.53.264v.265h.264v-.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.265v.264h.265V.265zm.265.264v.265h.529V.529zm.529.265v.529h.265v-.53zm.265.529V2.38h.264V1.323zm0 1.058h-.265v.53h.265zm-.265.53h-.53v.264h.53zm-.53.264h-.793v.265h.794z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li#ca-tools a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-tools.gif?d24b7);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23d8eef8%22 stop-opacity=%22.996%22/%3E %3Cstop offset=%221%22 stop-color=%22%2375badf%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fef2d3%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fabd23%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22c%22 cx=%222.016%22 cy=%222.35%22 r=%22.893%22 fx=%222.016%22 fy=%222.35%22 gradientTransform=%22matrix%28.2963 .2963 -1.48148 1.48148 5.001 -1.962%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22d%22 cx=%222.646%22 cy=%222.646%22 r=%22.628%22 fx=%222.646%22 fy=%222.646%22 gradientTransform=%22matrix%28.42105 -.42105 .7071 .7071 -.34 1.889%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22%23e6e6e6%22 fill-rule=%22evenodd%22 d=%22M1.72 1.984l-.53-.529.265-.264.53.529z%22/%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M1.852 1.852l-.794.794c-.264.264-.264.264 0 .529.265.265.265.265.53 0l1.058-1.058-.53-.53z%22/%3E %3Cpath fill=%22%23e6e6e6%22 fill-rule=%22evenodd%22 d=%22M2.117 1.587l.529.53.529-.265.397-.397-.397-.397v.265H2.91v-.265h.265L2.778.661l-.397.397zM.661 1.19l.662-.66.53-.265-.266.529-.264.529-.265.264H.794z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M2.117 2.646l.529.529c.264.265.264.265.529 0s.265-.265 0-.53l-.53-.528z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M1.323.265v.264h.794V.265zm0 .264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v.53h.265zM2.646.53v.265h.529V.529zm0 .265H2.38v.264h.265zm-.265.264h-.264v.53h.264zm-.264.53h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265h-.264v.264h.264zm-.264.264h-.265v.265h.265zm-.265.265H.794v.529h.264zm2.117-1.588v.265h.53v-.265zm0 .265H2.91v.264h.265zm-.53.794v.264h.265v-.264zm.265.264v.265h.265V2.38z%22/%3E %3Cpath fill=%22%23fff%22 d=%22M1.323.53v.264h.264V.529zm0 .264h-.265v.529h.265zm1.323 0v.264h.264V.794zm0 .264H2.38v.53h.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M1.587.53v.264h.265V.529zm0 .264h-.264v.529h.264zm0 .529v.264h.265v-.264zm0 .264h-.264v.265h.264zm-.264 0v-.264h-.265v.264zm-.265 0H.794v.265h.264zM2.91.794v.264h.265V.794zm0 .264h-.264v.265h.264zm.53.265v.264h.264v-.264zm0 .264h-.265v.265h.265zm-.265.265h-.53v-.265h-.528v.265h.264v.53h.265v-.265h.529zm-.794.53h-.264v.264h-.265v.264h.53zm0 .528v.265h.265V2.91zm.265.265v.265h.529v-.265zm.529 0h.265v-.53h-.265zM1.852 2.91h-.265v.265h.265zm-.265.265h-.529v.265h.53z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li.selected {
+  border-color:#fabd23;
+  font-weight:bold
+ }
+ #p-cactions-mobile li.selected a,
+ #p-cactions-mobile li:hover a {
+  z-index:3;
+  background-color:#ffffff;
+  text-decoration:none
+ }
+ #p-cactions-mobile li#ca-languages,
+ #p-cactions-mobile li#ca-tools {
+  float:right;
+  margin-right:0;
+  margin-left:0.5em
+ }
+ #footer li {
+  margin-left:0
+ }
+ #f-poweredbyico,
+ #f-copyrightico {
+  display:inline-block;
+  margin:0 0.5em 1em
+ }
+ div.thumb {
+  float:none;
+  margin:1em auto
+ }
+ div.tright {
+  margin-left:0;
+  padding-left:0
+ }
+ div.tleft {
+  margin-right:0;
+  padding-right:0
+ }
+ .thumbinner {
+  width:100% !important;
+  box-sizing:border-box
+ }
+ .mw-body-content {
+  overflow:auto
+ }
+ .mw-body-content img {
+  height:auto !important;
+  max-width:100% !important
+ }
+ #toc,
+ .toc,
+ .mw-warning {
+  width:100%;
+  box-sizing:border-box
+ }
+ .nomobile {
+  display:none
+ }
+}
+  </style>
+  <meta charset="utf-8"/>
+  <title>
+   LTE - The Hidden Wiki
+  </title>
+  <script>
+   document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );
+  </script>
+  <script>
+   (window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LTE","wgTitle":"LTE","wgCurRevisionId":445361,"wgRevisionId":445361,"wgArticleId":280205,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with broken file links","3GPP standards","Internet Protocol","LTE (telecommunication)","Mobile technology","Mobile telecommunications"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"LTE","wgRelevantArticleId":280205,"wgRequestId":"903a01ea60b2ee418316199c","wgCSPNonce":false,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","mediawiki.searchSuggest","ext.moderation.notify","ext.moderation.notify.desktop","skins.monobook.mobile"];mw.loader.load(RLPAGEMODULES);});
+  </script>
+  <link href="/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+  <script async="" src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook">
+  </script>
+  <!--[if lt IE 9]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/screen-desktop.css?35132" media="screen"/><![endif]-->
+  <!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/IE60Fixes.css?00946" media="screen"/><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <meta content="MediaWiki 1.32.0" name="generator"/>
+  <meta content="noindex,nofollow" name="robots"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+  <link href="/wiki/resources/favicon.ico" rel="shortcut icon"/>
+  <link href="/wiki/opensearch_desc.php" rel="search" title="The Hidden Wiki (en)" type="application/opensearchdescription+xml"/>
+  <link href="http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="The Hidden Wiki Atom feed" type="application/atom+xml"/>
+  <!--[if lt IE 9]><script src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=monobook&amp;sync=1"></script><![endif]-->
+ </head>
+ <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-LTE rootpage-LTE skin-monobook action-view">
+  <div id="globalWrapper">
+   <div id="column-content">
+    <div class="mw-body" id="content" role="main">
+     <a id="top">
+     </a>
+     <div class="mw-indicators mw-body-content">
+     </div>
+     <h1 class="firstHeading" id="firstHeading" lang="en">
+      LTE
+     </h1>
+     <div class="mw-body-content" id="bodyContent">
+      <div id="siteSub">
+       From The Hidden Wiki
+      </div>
+      <div dir="ltr" id="contentSub" lang="en">
+       <div class="mw-revision">
+        <div id="mw-revision-info">
+         Revision as of 06:38, 13 February 2016 by
+         <a class="mw-userlink" href="/wiki/User:Onionsope" title="User:Onionsope">
+          <bdi>
+           Onionsope
+          </bdi>
+         </a>
+         <span class="mw-usertoollinks">
+          (
+          <a class="mw-usertoollinks-talk" href="/wiki/User_talk:Onionsope" title="User talk:Onionsope">
+           talk
+          </a>
+          |
+          <a class="mw-usertoollinks-contribs" href="/wiki/Special:Contributions/Onionsope" title="Special:Contributions/Onionsope">
+           contribs
+          </a>
+          )
+         </span>
+         <span class="comment">
+          (Created page with "{{redirect|Long-term evolution|the biological concept|Evolution|and|E. coli long-term evolution experiment}} {{merge from|LTE timeline|discuss=Talk:LTE (telecommunication)#Pro...")
+         </span>
+        </div>
+        <div id="mw-revision-nav">
+         (diff) ← Older revision | Latest revision (diff) | Newer revision → (diff)
+        </div>
+       </div>
+      </div>
+      <div id="jump-to-nav">
+      </div>
+      <a class="mw-jump-link" href="#column-one">
+       Jump to navigation
+      </a>
+      <a class="mw-jump-link" href="#searchInput">
+       Jump to search
+      </a>
+      <!-- start content -->
+      <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+       <div class="mw-parser-output">
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Merge_from&amp;action=edit&amp;redlink=1" title="Template:Merge from (page does not exist)">
+          Template:Merge from
+         </a>
+        </p>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:3GPP_Long_Term_Evolution_Country_Map.svg" title="File:3GPP Long Term Evolution Country Map.svg">
+           File:3GPP Long Term Evolution Country Map.svg
+          </a>
+          <div class="thumbcaption">
+           Adoption of LTE technology as of December 7, 2014
+           <a class="new" href="/wiki/index.php?title=Template:Legend&amp;action=edit&amp;redlink=1" title="Template:Legend (page does not exist)">
+            Template:Legend
+           </a>
+           <a class="new" href="/wiki/index.php?title=Template:Legend&amp;action=edit&amp;redlink=1" title="Template:Legend (page does not exist)">
+            Template:Legend
+           </a>
+           <a class="new" href="/wiki/index.php?title=Template:Legend&amp;action=edit&amp;redlink=1" title="Template:Legend (page does not exist)">
+            Template:Legend
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Lte_signal_android.png" title="File:Lte signal android.png">
+           File:Lte signal android.png
+          </a>
+          <div class="thumbcaption">
+           LTE signal indicator in
+           <a class="mw-redirect" href="/wiki/Android_(operating_system)" title="Android (operating system)">
+            Android
+           </a>
+          </div>
+         </div>
+        </div>
+        <p>
+         <b>
+          LTE
+         </b>
+         (
+         <b>
+          Long-Term Evolution
+         </b>
+         , commonly marketed as
+         <b>
+          4G LTE
+         </b>
+         ) is a standard for
+         <a class="new" href="/wiki/index.php?title=Wireless&amp;action=edit&amp;redlink=1" title="Wireless (page does not exist)">
+          wireless
+         </a>
+         communication of high-speed data for mobile phones and data terminals. It is based on the
+         <a class="new" href="/wiki/index.php?title=GSM&amp;action=edit&amp;redlink=1" title="GSM (page does not exist)">
+          GSM
+         </a>
+         /
+         <a class="new" href="/wiki/index.php?title=Enhanced_Data_Rates_for_GSM_Evolution&amp;action=edit&amp;redlink=1" title="Enhanced Data Rates for GSM Evolution (page does not exist)">
+          EDGE
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Universal_Mobile_Telecommunications_System&amp;action=edit&amp;redlink=1" title="Universal Mobile Telecommunications System (page does not exist)">
+          UMTS
+         </a>
+         /
+         <a class="new" href="/wiki/index.php?title=High_Speed_Packet_Access&amp;action=edit&amp;redlink=1" title="High Speed Packet Access (page does not exist)">
+          HSPA
+         </a>
+         network technologies, increasing the capacity and speed using a different radio interface together with core network improvements.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The standard is developed by the
+         <a class="new" href="/wiki/index.php?title=3GPP&amp;action=edit&amp;redlink=1" title="3GPP (page does not exist)">
+          3GPP
+         </a>
+         (3rd Generation Partnership Project) and is specified in its Release 8 document series, with minor enhancements described in Release 9.
+        </p>
+        <p>
+         LTE is the natural upgrade path for carriers with both GSM/UMTS networks and
+         <a class="new" href="/wiki/index.php?title=CDMA2000&amp;action=edit&amp;redlink=1" title="CDMA2000 (page does not exist)">
+          CDMA2000
+         </a>
+         networks. The
+         <a class="new" href="/wiki/index.php?title=LTE_frequency_bands&amp;action=edit&amp;redlink=1" title="LTE frequency bands (page does not exist)">
+          different LTE frequencies and bands
+         </a>
+         used in different countries will mean that only multi-band phones will be able to use LTE in all countries where it is supported.
+        </p>
+        <p>
+         Although marketed as a
+         <a href="/wiki/4G" title="4G">
+          4G
+         </a>
+         wireless service, LTE (as specified in the 3GPP Release 8 and 9 document series) does not satisfy the technical requirements the 3GPP consortium has adopted for its new
+         <a href="/wiki/LTE_Advanced" title="LTE Advanced">
+          LTE Advanced
+         </a>
+         standard.  The requirements were originally set forth by the
+         <a class="new" href="/wiki/index.php?title=ITU-R&amp;action=edit&amp;redlink=1" title="ITU-R (page does not exist)">
+          ITU-R
+         </a>
+         organization in its
+         <a class="new" href="/wiki/index.php?title=IMT_Advanced&amp;action=edit&amp;redlink=1" title="IMT Advanced (page does not exist)">
+          IMT Advanced
+         </a>
+         specification. However, due to marketing pressures and the significant advancements that
+         <a class="new" href="/wiki/index.php?title=WiMAX&amp;action=edit&amp;redlink=1" title="WiMAX (page does not exist)">
+          WiMAX
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Evolved_HSPA&amp;action=edit&amp;redlink=1" title="Evolved HSPA (page does not exist)">
+          Evolved HSPA
+         </a>
+         and LTE bring to the original 3G technologies, ITU later decided that LTE together with the aforementioned technologies can be called 4G technologies.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The LTE Advanced standard formally satisfies the
+         <a class="new" href="/wiki/index.php?title=ITU-R&amp;action=edit&amp;redlink=1" title="ITU-R (page does not exist)">
+          ITU-R
+         </a>
+         requirements to be considered
+         <a class="new" href="/wiki/index.php?title=IMT-Advanced&amp;action=edit&amp;redlink=1" title="IMT-Advanced (page does not exist)">
+          IMT-Advanced
+         </a>
+         .&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; To differentiate LTE Advanced and
+         <a class="new" href="/wiki/index.php?title=WiMAX-Advanced&amp;action=edit&amp;redlink=1" title="WiMAX-Advanced (page does not exist)">
+          WiMAX-Advanced
+         </a>
+         from current 4G technologies, ITU has defined them as "True 4G".&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <div class="toc" id="toc">
+         <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
+         <div class="toctitle" dir="ltr" lang="en">
+          <h2>
+           Contents
+          </h2>
+          <span class="toctogglespan">
+           <label class="toctogglelabel" for="toctogglecheckbox">
+           </label>
+          </span>
+         </div>
+         <ul>
+          <li class="toclevel-1 tocsection-1">
+           <a href="#Overview">
+            <span class="tocnumber">
+             1
+            </span>
+            <span class="toctext">
+             Overview
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-2">
+             <a href="#LTE_Direct">
+              <span class="tocnumber">
+               1.1
+              </span>
+              <span class="toctext">
+               LTE Direct
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-3">
+           <a href="#Features">
+            <span class="tocnumber">
+             2
+            </span>
+            <span class="toctext">
+             Features
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-4">
+           <a href="#Voice_calls">
+            <span class="tocnumber">
+             3
+            </span>
+            <span class="toctext">
+             Voice calls
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-5">
+             <a href="#Enhanced_voice_quality">
+              <span class="tocnumber">
+               3.1
+              </span>
+              <span class="toctext">
+               Enhanced voice quality
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-6">
+           <a href="#Frequency_bands">
+            <span class="tocnumber">
+             4
+            </span>
+            <span class="toctext">
+             Frequency bands
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-7">
+           <a href="#Patents">
+            <span class="tocnumber">
+             5
+            </span>
+            <span class="toctext">
+             Patents
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-8">
+           <a href="#See_also">
+            <span class="tocnumber">
+             6
+            </span>
+            <span class="toctext">
+             See also
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-9">
+           <a href="#References">
+            <span class="tocnumber">
+             7
+            </span>
+            <span class="toctext">
+             References
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-10">
+           <a href="#Further_reading">
+            <span class="tocnumber">
+             8
+            </span>
+            <span class="toctext">
+             Further reading
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-11">
+           <a href="#External_links">
+            <span class="tocnumber">
+             9
+            </span>
+            <span class="toctext">
+             External links
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-12">
+             <a href="#White_papers_and_other_technical_information">
+              <span class="tocnumber">
+               9.1
+              </span>
+              <span class="toctext">
+               White papers and other technical information
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </div>
+        <h2>
+         <span class="mw-headline" id="Overview">
+          Overview
+         </span>
+        </h2>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Samsung_4G_LTE_modem-4.jpg" title="File:Samsung 4G LTE modem-4.jpg">
+           File:Samsung 4G LTE modem-4.jpg
+          </a>
+          <div class="thumbcaption">
+           <a class="new" href="/wiki/index.php?title=TeliaSonera&amp;action=edit&amp;redlink=1" title="TeliaSonera (page does not exist)">
+            Telia
+           </a>
+           -branded Samsung LTE modem
+          </div>
+         </div>
+        </div>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:HTC_Thunderbolt.jpg" title="File:HTC Thunderbolt.jpg">
+           File:HTC Thunderbolt.jpg
+          </a>
+          <div class="thumbcaption">
+           <a class="new" href="/wiki/index.php?title=HTC_ThunderBolt&amp;action=edit&amp;redlink=1" title="HTC ThunderBolt (page does not exist)">
+            HTC ThunderBolt
+           </a>
+           , the second commercially available LTE smartphone
+          </div>
+         </div>
+        </div>
+        <p>
+         LTE stands for Long Term Evolution&lt;ref&gt;
+         <a class="external text" href="http://www.etsi.org/technologies-clusters/technologies/mobile/long-term-evolution" rel="nofollow">
+          ETSI Long Term Evolution
+         </a>
+         page&lt;/ref&gt; and is a registered trademark owned by
+         <a class="new" href="/wiki/index.php?title=ETSI&amp;action=edit&amp;redlink=1" title="ETSI (page does not exist)">
+          ETSI
+         </a>
+         (European Telecommunications Standards Institute) for the wireless data communications technology and a development of the GSM/UMTS standards. However other nations and companies do play an active role in the LTE project.  The goal of LTE was to increase the capacity and speed of wireless data networks using new
+         <a class="new" href="/wiki/index.php?title=Digital_signal_processing&amp;action=edit&amp;redlink=1" title="Digital signal processing (page does not exist)">
+          DSP
+         </a>
+         (digital signal processing) techniques and modulations that were developed around the turn of the millennium. A further goal was the redesign and simplification of the
+         <a class="new" href="/wiki/index.php?title=Network_architecture&amp;action=edit&amp;redlink=1" title="Network architecture (page does not exist)">
+          network architecture
+         </a>
+         to an
+         <a href="/wiki/Internet_Protocol" title="Internet Protocol">
+          IP
+         </a>
+         -based system with significantly reduced transfer
+         <a class="new" href="/wiki/index.php?title=Latency_(engineering)&amp;action=edit&amp;redlink=1" title="Latency (engineering) (page does not exist)">
+          latency
+         </a>
+         compared to the
+         <a href="/wiki/3G" title="3G">
+          3G
+         </a>
+         architecture. The LTE wireless interface is incompatible with
+         <a class="new" href="/wiki/index.php?title=2G&amp;action=edit&amp;redlink=1" title="2G (page does not exist)">
+          2G
+         </a>
+         and 3G networks, so that it must be operated on a separate
+         <a class="new" href="/wiki/index.php?title=Radio_spectrum&amp;action=edit&amp;redlink=1" title="Radio spectrum (page does not exist)">
+          radio spectrum
+         </a>
+         .
+        </p>
+        <p>
+         LTE was first proposed by
+         <a class="new" href="/wiki/index.php?title=NTT_DoCoMo&amp;action=edit&amp;redlink=1" title="NTT DoCoMo (page does not exist)">
+          NTT DoCoMo
+         </a>
+         of Japan in 2004, and studies on the new standard officially commenced in 2005.&lt;ref name="rel8wp"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; In May 2007, the LTE/
+         <a class="new" href="/wiki/index.php?title=System_Architecture_Evolution&amp;action=edit&amp;redlink=1" title="System Architecture Evolution (page does not exist)">
+          SAE
+         </a>
+         Trial Initiative (LSTI) alliance was founded as a global collaboration between vendors and operators with the goal of verifying and promoting the new standard in order to ensure the global introduction of the technology as quickly as possible.&lt;ref name="lsti-3gpp"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The LTE standard was finalized in December 2008, and the first publicly available LTE service was launched by
+         <a class="new" href="/wiki/index.php?title=TeliaSonera&amp;action=edit&amp;redlink=1" title="TeliaSonera (page does not exist)">
+          TeliaSonera
+         </a>
+         in
+         <a class="new" href="/wiki/index.php?title=Oslo&amp;action=edit&amp;redlink=1" title="Oslo (page does not exist)">
+          Oslo
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Stockholm&amp;action=edit&amp;redlink=1" title="Stockholm (page does not exist)">
+          Stockholm
+         </a>
+         on December 14, 2009 as a data connection with a USB modem. The LTE services were launched by major North American carriers as well, with the Samsung SCH-r900 being the world’s first LTE Mobile phone starting on September 21, 2010&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; and Samsung Galaxy Indulge being the world’s first LTE smartphone starting on February 10, 2011&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; both offered by
+         <a class="new" href="/wiki/index.php?title=MetroPCS&amp;action=edit&amp;redlink=1" title="MetroPCS (page does not exist)">
+          MetroPCS
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=HTC_ThunderBolt&amp;action=edit&amp;redlink=1" title="HTC ThunderBolt (page does not exist)">
+          HTC ThunderBolt
+         </a>
+         offered by Verizon starting on March 17 being the second LTE smartphone to be sold commercially.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;  In Canada,
+         <a class="new" href="/wiki/index.php?title=Rogers_Wireless&amp;action=edit&amp;redlink=1" title="Rogers Wireless (page does not exist)">
+          Rogers Wireless
+         </a>
+         was the first to launch LTE network on July 7, 2011 offering the Sierra Wireless AirCard® 313U USB mobile broadband modem, known as the "LTE Rocket™ stick" then followed closely by mobile devices from both HTC and Samsung.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Initially, CDMA operators planned to upgrade to rival standards called
+         <a class="new" href="/wiki/index.php?title=Ultra_Mobile_Broadband&amp;action=edit&amp;redlink=1" title="Ultra Mobile Broadband (page does not exist)">
+          UMB
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=WiMAX&amp;action=edit&amp;redlink=1" title="WiMAX (page does not exist)">
+          WiMAX
+         </a>
+         , but all the major CDMA operators (such as
+         <a class="new" href="/wiki/index.php?title=Verizon_Wireless&amp;action=edit&amp;redlink=1" title="Verizon Wireless (page does not exist)">
+          Verizon
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Sprint_Nextel&amp;action=edit&amp;redlink=1" title="Sprint Nextel (page does not exist)">
+          Sprint
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=MetroPCS&amp;action=edit&amp;redlink=1" title="MetroPCS (page does not exist)">
+          MetroPCS
+         </a>
+         in the United States,
+         <a class="new" href="/wiki/index.php?title=Bell_Mobility&amp;action=edit&amp;redlink=1" title="Bell Mobility (page does not exist)">
+          Bell
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Telus_Mobility&amp;action=edit&amp;redlink=1" title="Telus Mobility (page does not exist)">
+          Telus
+         </a>
+         in Canada,
+         <a class="new" href="/wiki/index.php?title=Au_(mobile_phone_company)&amp;action=edit&amp;redlink=1" title="Au (mobile phone company) (page does not exist)">
+          au by KDDI
+         </a>
+         in Japan,
+         <a class="new" href="/wiki/index.php?title=SK_Telecom&amp;action=edit&amp;redlink=1" title="SK Telecom (page does not exist)">
+          SK Telecom
+         </a>
+         in South Korea and
+         <a class="new" href="/wiki/index.php?title=China_Telecom&amp;action=edit&amp;redlink=1" title="China Telecom (page does not exist)">
+          China Telecom
+         </a>
+         /
+         <a class="new" href="/wiki/index.php?title=China_Unicom&amp;action=edit&amp;redlink=1" title="China Unicom (page does not exist)">
+          China Unicom
+         </a>
+         in China) have announced that they intend to migrate to LTE after all. The evolution of LTE is
+         <a href="/wiki/LTE_Advanced" title="LTE Advanced">
+          LTE Advanced
+         </a>
+         , which was standardized in March 2011.&lt;ref name="LTE End-to-End System Description"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt; Services are expected to commence in 2013.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         The LTE specification provides downlink peak rates of 300 Mbit/s, uplink peak rates of 75 Mbit/s and
+         <a class="new" href="/wiki/index.php?title=Quality_of_service&amp;action=edit&amp;redlink=1" title="Quality of service (page does not exist)">
+          QoS
+         </a>
+         provisions permitting a transfer
+         <a class="new" href="/wiki/index.php?title=Latency_(engineering)&amp;action=edit&amp;redlink=1" title="Latency (engineering) (page does not exist)">
+          latency
+         </a>
+         of less than 5
+         <a class="new" href="/wiki/index.php?title=Millisecond&amp;action=edit&amp;redlink=1" title="Millisecond (page does not exist)">
+          ms
+         </a>
+         in the
+         <a class="new" href="/wiki/index.php?title=E-UTRA&amp;action=edit&amp;redlink=1" title="E-UTRA (page does not exist)">
+          radio access network
+         </a>
+         . LTE has the ability to manage fast-moving mobiles and supports multi-cast and broadcast streams. LTE supports scalable carrier
+         <a class="new" href="/wiki/index.php?title=Bandwidth_(signal_processing)&amp;action=edit&amp;redlink=1" title="Bandwidth (signal processing) (page does not exist)">
+          bandwidths
+         </a>
+         , from 1.4
+         <a class="new" href="/wiki/index.php?title=MHz&amp;action=edit&amp;redlink=1" title="MHz (page does not exist)">
+          MHz
+         </a>
+         to 20 MHz and supports both
+         <a class="new" href="/wiki/index.php?title=Frequency_division_duplexing&amp;action=edit&amp;redlink=1" title="Frequency division duplexing (page does not exist)">
+          frequency division duplexing
+         </a>
+         (FDD) and
+         <a class="new" href="/wiki/index.php?title=Time-division_duplex&amp;action=edit&amp;redlink=1" title="Time-division duplex (page does not exist)">
+          time-division duplexing
+         </a>
+         (TDD). The IP-based network architecture, called the
+         <a class="new" href="/wiki/index.php?title=Evolved_Packet_Core&amp;action=edit&amp;redlink=1" title="Evolved Packet Core (page does not exist)">
+          Evolved Packet Core
+         </a>
+         (EPC) designed to replace the
+         <a class="new" href="/wiki/index.php?title=GPRS_Core_Network&amp;action=edit&amp;redlink=1" title="GPRS Core Network (page does not exist)">
+          GPRS Core Network
+         </a>
+         , supports seamless handovers for both voice and data to cell towers with older network technology such as
+         <a class="new" href="/wiki/index.php?title=GSM&amp;action=edit&amp;redlink=1" title="GSM (page does not exist)">
+          GSM
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=UMTS&amp;action=edit&amp;redlink=1" title="UMTS (page does not exist)">
+          UMTS
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=CDMA2000&amp;action=edit&amp;redlink=1" title="CDMA2000 (page does not exist)">
+          CDMA2000
+         </a>
+         .&lt;ref name=EricssonWhitePaper&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt; The simpler architecture results in lower operating costs (for example, each
+         <a class="new" href="/wiki/index.php?title=E-UTRA&amp;action=edit&amp;redlink=1" title="E-UTRA (page does not exist)">
+          E-UTRA
+         </a>
+         cell will support up to four times the data and voice capacity supported by HSPA&lt;ref name="Motorola White Paper: Long Term Evolution (LTE)"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;).
+        </p>
+        <h3>
+         <span class="mw-headline" id="LTE_Direct">
+          LTE Direct
+         </span>
+        </h3>
+        <p>
+         A new LTE protocol named LTE Direct works as an innovative device-to-device technology enabling the discovery of thousands of devices in the proximity of approximately 500 meters.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Pioneered by
+         <a class="new" href="/wiki/index.php?title=Qualcomm&amp;action=edit&amp;redlink=1" title="Qualcomm (page does not exist)">
+          Qualcomm
+         </a>
+         , the company has been leading the standardization of this new technology along with other 3GPP participants. LTE Direct offers several advantages over existing proximity solutions including but not limited to
+         <a href="/wiki/Wi-Fi" title="Wi-Fi">
+          Wi-Fi
+         </a>
+         or
+         <a class="new" href="/wiki/index.php?title=Bluetooth&amp;action=edit&amp;redlink=1" title="Bluetooth (page does not exist)">
+          Bluetooth
+         </a>
+         . One of the most popular use cases for this technology was developed by a New York City based company called
+         <a class="external text" href="http://www.compass.to" rel="nofollow">
+          Compass.to
+         </a>
+         . The core feature of proximal discovery among devices included a targeted discount voucher to a nearby device which matched specific interests.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The
+         <a class="external text" href="http://www.compass.to" rel="nofollow">
+          Compass.to
+         </a>
+         use case was featured at global conferences and events such as
+         <a class="new" href="/wiki/index.php?title=Consumer_Electronics_Show&amp;action=edit&amp;redlink=1" title="Consumer Electronics Show (page does not exist)">
+          CES
+         </a>
+         2015,
+         <a class="external text" href="http://www.mobileworldcongress.com/" rel="nofollow">
+          MWC
+         </a>
+         2015, and said to be extended to many other scenarios including film festivals, theme parks and sporting events. “You can think of LTE Direct as a sixth sense that is always aware of the environment around you,” said Mahesh Makhijani, technical marketing director at Qualcomm, at a session on the technology. Additionally, the protocol offers less battery drainage and extended range when compared to other proximity solutions.
+        </p>
+        <p>
+         Below is a
+         <a class="new" href="/wiki/index.php?title=List_of_countries_by_4G_LTE_penetration&amp;action=edit&amp;redlink=1" title="List of countries by 4G LTE penetration (page does not exist)">
+          list of countries by 4G LTE penetration
+         </a>
+         as measured by OpenSignal.com in June 2015.&lt;ref&gt;
+         <a class="external free" href="http://opensignal.com/reports/2015/09/state-of-lte-q3-2015/" rel="nofollow">
+          http://opensignal.com/reports/2015/09/state-of-lte-q3-2015/
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <table class="wikitable sortable" style="font-size: 100%; text-align: center; width: 15%;">
+         <tbody>
+          <tr>
+           <th>
+            Rank
+           </th>
+           <th>
+            Country/Territory
+           </th>
+           <th>
+            Penetration
+           </th>
+          </tr>
+          <tr>
+           <td>
+            1
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            97%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            2
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            90%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            3
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            86%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            4
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            86%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            5
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            84%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            6
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            84%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            7
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            81%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            8
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            80%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            9
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            79%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            10
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            78%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            11
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            78%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            12
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            76%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            13
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            75%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            14
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            74%
+           </td>
+          </tr>
+          <tr>
+           <td>
+            15
+           </td>
+           <td style="text-align: left">
+            <a class="new" href="/wiki/index.php?title=Template:Flagcountry&amp;action=edit&amp;redlink=1" title="Template:Flagcountry (page does not exist)">
+             Template:Flagcountry
+            </a>
+           </td>
+           <td>
+            74%
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h2>
+         <span class="mw-headline" id="Features">
+          Features
+         </span>
+        </h2>
+        <p>
+         Much of the LTE standard addresses the upgrading of 3G UMTS to what will eventually be
+         <a href="/wiki/4G" title="4G">
+          4G
+         </a>
+         mobile communications technology. A large amount of the work is aimed at simplifying the architecture of the system, as it transitions from the existing UMTS
+         <a class="new" href="/wiki/index.php?title=Circuit_switching&amp;action=edit&amp;redlink=1" title="Circuit switching (page does not exist)">
+          circuit
+         </a>
+         +
+         <a class="new" href="/wiki/index.php?title=Packet_switching&amp;action=edit&amp;redlink=1" title="Packet switching (page does not exist)">
+          packet switching
+         </a>
+         combined network, to an all-IP flat architecture system.
+         <a class="new" href="/wiki/index.php?title=E-UTRA&amp;action=edit&amp;redlink=1" title="E-UTRA (page does not exist)">
+          E-UTRA
+         </a>
+         is the air interface of LTE. Its main features are:
+        </p>
+        <ul>
+         <li>
+          Peak download rates up to 299.6 Mbit/s and upload rates up to 75.4 Mbit/s depending on the
+          <a class="new" href="/wiki/index.php?title=E-UTRA&amp;action=edit&amp;redlink=1" title="E-UTRA (page does not exist)">
+           user equipment category
+          </a>
+          (with 4×4 antennas using 20 MHz of spectrum). Five different terminal classes have been defined from a voice centric class up to a high end terminal that supports the peak data rates. All terminals will be able to process 20 MHz bandwidth.
+         </li>
+         <li>
+          Low data transfer latencies (sub-5 ms
+          <a class="new" href="/wiki/index.php?title=Latency_(engineering)&amp;action=edit&amp;redlink=1" title="Latency (engineering) (page does not exist)">
+           latency
+          </a>
+          for small IP packets in optimal conditions), lower latencies for
+          <a class="new" href="/wiki/index.php?title=Handover&amp;action=edit&amp;redlink=1" title="Handover (page does not exist)">
+           handover
+          </a>
+          and connection setup time than with previous
+          <a class="new" href="/wiki/index.php?title=Radio_access_network&amp;action=edit&amp;redlink=1" title="Radio access network (page does not exist)">
+           radio access technologies
+          </a>
+          .
+         </li>
+         <li>
+          Improved support for mobility, exemplified by support for terminals moving at up to
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          or
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          depending on the frequency band.&lt;ref&gt;Sesia, Toufik, Baker:
+          <i>
+           LTE
+           <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+            Template:Spaced ndash
+           </a>
+           The UMTS Long Term Evolution; From Theory to Practice
+          </i>
+          , page 11. Wiley, 2009.&lt;/ref&gt;
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Orthogonal_frequency-division_multiple_access&amp;action=edit&amp;redlink=1" title="Orthogonal frequency-division multiple access (page does not exist)">
+           Orthogonal frequency-division multiple access
+          </a>
+          for the downlink,
+          <a class="new" href="/wiki/index.php?title=Single-carrier_FDMA&amp;action=edit&amp;redlink=1" title="Single-carrier FDMA (page does not exist)">
+           Single-carrier FDMA
+          </a>
+          for the uplink to conserve power.
+         </li>
+         <li>
+          Support for both
+          <a class="new" href="/wiki/index.php?title=Frequency-division_duplex&amp;action=edit&amp;redlink=1" title="Frequency-division duplex (page does not exist)">
+           FDD
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=Time-division_duplex&amp;action=edit&amp;redlink=1" title="Time-division duplex (page does not exist)">
+           TDD
+          </a>
+          communication systems as well as half-duplex FDD with the same radio access technology.
+         </li>
+         <li>
+          Support for all
+          <a class="new" href="/wiki/index.php?title=LTE_frequency_bands&amp;action=edit&amp;redlink=1" title="LTE frequency bands (page does not exist)">
+           frequency bands
+          </a>
+          currently used by
+          <a class="new" href="/wiki/index.php?title=IMT-2000&amp;action=edit&amp;redlink=1" title="IMT-2000 (page does not exist)">
+           IMT
+          </a>
+          systems by
+          <a class="new" href="/wiki/index.php?title=ITU-R&amp;action=edit&amp;redlink=1" title="ITU-R (page does not exist)">
+           ITU-R
+          </a>
+          .
+         </li>
+         <li>
+          Increased spectrum flexibility: 1.4 MHz, 3 MHz, 5 MHz, 10 MHz, 15 MHz and 20 MHz wide cells are standardized. (
+          <a class="new" href="/wiki/index.php?title=W-CDMA&amp;action=edit&amp;redlink=1" title="W-CDMA (page does not exist)">
+           W-CDMA
+          </a>
+          has no option for other than 5 MHz slices, leading to some problems rolling-out in countries where 5 MHz is a commonly allocated width of spectrum so would frequently already be in use with legacy standards such as
+          <a class="new" href="/wiki/index.php?title=GSM&amp;action=edit&amp;redlink=1" title="GSM (page does not exist)">
+           2G GSM
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=IS-95&amp;action=edit&amp;redlink=1" title="IS-95 (page does not exist)">
+           cdmaOne
+          </a>
+          .)
+         </li>
+         <li>
+          Support for cell sizes from tens of metres radius (
+          <a class="new" href="/wiki/index.php?title=Femtocell&amp;action=edit&amp;redlink=1" title="Femtocell (page does not exist)">
+           femto
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=Picocell&amp;action=edit&amp;redlink=1" title="Picocell (page does not exist)">
+           picocells
+          </a>
+          ) up to
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          radius
+          <a class="new" href="/wiki/index.php?title=Macrocell&amp;action=edit&amp;redlink=1" title="Macrocell (page does not exist)">
+           macrocells
+          </a>
+          .  In the lower frequency bands to be used in rural areas,
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          is the optimal cell size,
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          having reasonable performance, and up to 100 km cell sizes supported with acceptable performance. In city and urban areas, higher frequency bands (such as 2.6 GHz in EU) are used to support high speed mobile broadband. In this case, cell sizes may be
+          <a class="new" href="/wiki/index.php?title=Template:Convert&amp;action=edit&amp;redlink=1" title="Template:Convert (page does not exist)">
+           Template:Convert
+          </a>
+          or even less.
+         </li>
+         <li>
+          Supports at least 200 active data clients in every 5 MHz cell.&lt;ref&gt;
+          <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+           Template:Cite web
+          </a>
+          &lt;/ref&gt;
+         </li>
+         <li>
+          Simplified architecture: The network side of
+          <a class="new" href="/wiki/index.php?title=E-UTRAN&amp;action=edit&amp;redlink=1" title="E-UTRAN (page does not exist)">
+           E-UTRAN
+          </a>
+          is composed only of
+          <a class="new" href="/wiki/index.php?title=ENode_B&amp;action=edit&amp;redlink=1" title="ENode B (page does not exist)">
+           eNode Bs
+          </a>
+          .
+         </li>
+         <li>
+          Support for inter-operation and co-existence with legacy standards (e.g.,
+          <a class="new" href="/wiki/index.php?title=GSM&amp;action=edit&amp;redlink=1" title="GSM (page does not exist)">
+           GSM
+          </a>
+          /
+          <a class="new" href="/wiki/index.php?title=Enhanced_Data_Rates_for_GSM_Evolution&amp;action=edit&amp;redlink=1" title="Enhanced Data Rates for GSM Evolution (page does not exist)">
+           EDGE
+          </a>
+          ,
+          <a class="new" href="/wiki/index.php?title=Universal_Mobile_Telecommunications_System&amp;action=edit&amp;redlink=1" title="Universal Mobile Telecommunications System (page does not exist)">
+           UMTS
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=CDMA2000&amp;action=edit&amp;redlink=1" title="CDMA2000 (page does not exist)">
+           CDMA2000
+          </a>
+          ). Users can start a call or transfer of data in an area using an LTE standard, and, should coverage be unavailable, continue the operation without any action on their part using GSM/
+          <a class="new" href="/wiki/index.php?title=GPRS&amp;action=edit&amp;redlink=1" title="GPRS (page does not exist)">
+           GPRS
+          </a>
+          or W-CDMA-based UMTS or even
+          <a class="new" href="/wiki/index.php?title=3GPP2&amp;action=edit&amp;redlink=1" title="3GPP2 (page does not exist)">
+           3GPP2
+          </a>
+          networks such as
+          <a class="new" href="/wiki/index.php?title=CdmaOne&amp;action=edit&amp;redlink=1" title="CdmaOne (page does not exist)">
+           cdmaOne
+          </a>
+          or CDMA2000.
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Packet_switching&amp;action=edit&amp;redlink=1" title="Packet switching (page does not exist)">
+           Packet switched
+          </a>
+          radio interface.
+         </li>
+         <li>
+          Support for MBSFN (
+          <a class="new" href="/wiki/index.php?title=Multicast-broadcast_single-frequency_network&amp;action=edit&amp;redlink=1" title="Multicast-broadcast single-frequency network (page does not exist)">
+           Multicast-broadcast single-frequency network
+          </a>
+          ). This feature can deliver services such as Mobile TV using the LTE infrastructure, and is a competitor for
+          <a class="new" href="/wiki/index.php?title=DVB-H&amp;action=edit&amp;redlink=1" title="DVB-H (page does not exist)">
+           DVB-H
+          </a>
+          -based TV broadcast.
+         </li>
+        </ul>
+        <h2>
+         <span class="mw-headline" id="Voice_calls">
+          Voice calls
+         </span>
+        </h2>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:LTE-CSFB-E-UTRAN-UTRAN-GERAN-Interfaces.svg" title="File:LTE-CSFB-E-UTRAN-UTRAN-GERAN-Interfaces.svg">
+           File:LTE-CSFB-E-UTRAN-UTRAN-GERAN-Interfaces.svg
+          </a>
+          <div class="thumbcaption">
+           cs domLTE CSFB to GSM/UMTS network interconnects
+          </div>
+         </div>
+        </div>
+        <p>
+         The LTE standard supports only
+         <a class="new" href="/wiki/index.php?title=Packet_switching&amp;action=edit&amp;redlink=1" title="Packet switching (page does not exist)">
+          packet switching
+         </a>
+         with its all-IP network. Voice calls in GSM, UMTS and CDMA2000 are
+         <a class="new" href="/wiki/index.php?title=Circuit_switching&amp;action=edit&amp;redlink=1" title="Circuit switching (page does not exist)">
+          circuit switched
+         </a>
+         , so with the adoption of LTE, carriers will have to re-engineer their voice call network.&lt;ref&gt;
+         <a class="external text" href="http://www.rohde-schwarz.com/appnote/1MA197" rel="nofollow">
+          "Voice and SMS in LTE Technology White Paper, Rohde &amp; Schwarz, 2011"
+         </a>
+         &lt;/ref&gt; Three different approaches sprang up:
+        </p>
+        <dl>
+         <dt>
+          Voice over LTE (VoLTE)
+         </dt>
+         <dd>
+          <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+           Template:Main
+          </a>
+         </dd>
+        </dl>
+        <dl>
+         <dt>
+          Circuit-switched fallback (CSFB)
+         </dt>
+         <dd>
+          In this approach, LTE just provides data services, and when a voice call is to be initiated or received, it will fall back to the circuit-switched domain. When using this solution, operators just need to upgrade the MSC instead of deploying the IMS, and therefore, can provide services quickly. However, the disadvantage is longer call setup delay.
+         </dd>
+        </dl>
+        <dl>
+         <dt>
+          Simultaneous voice and LTE (SVLTE)
+         </dt>
+         <dd>
+          In this approach, the handset works simultaneously in the LTE and circuit switched modes, with the LTE mode providing data services and the circuit switched mode providing the voice service. This is a solution solely based on the handset, which does not have special requirements on the network and does not require the deployment of IMS either. The disadvantage of this solution is that the phone can become expensive with high power consumption.
+         </dd>
+        </dl>
+        <p>
+         One additional approach which is not initiated by operators is the usage of
+         <a class="new" href="/wiki/index.php?title=Over-the-top_content&amp;action=edit&amp;redlink=1" title="Over-the-top content (page does not exist)">
+          over-the-top content
+         </a>
+         (OTT) services, using applications like Skype and Google Talk to provide LTE voice service.&lt;ref&gt;
+         <a class="external autonumber" href="http://www.huawei.com/en/static/hw-094164.pdf" rel="nofollow">
+          [1]
+         </a>
+         Huawei Communicate Magazine, Issue 61, September 2011.&lt;/ref&gt;
+        </p>
+        <p>
+         Most major backers of LTE preferred and promoted VoLTE from the beginning. The lack of software support in initial LTE devices as well as core network devices however led to a number of carriers promoting
+         <a class="new" href="/wiki/index.php?title=VoLGA&amp;action=edit&amp;redlink=1" title="VoLGA (page does not exist)">
+          VoLGA
+         </a>
+         (Voice over LTE Generic Access) as an interim solution.&lt;ref&gt;
+         <a class="external text" href="http://www.cm-networks.de/volga-a-whitepaper.pdf" rel="nofollow">
+          VoLGA whitepaper
+         </a>
+         &lt;/ref&gt; The idea was to use the same principles as
+         <a class="new" href="/wiki/index.php?title=Generic_Access_Network&amp;action=edit&amp;redlink=1" title="Generic Access Network (page does not exist)">
+          GAN
+         </a>
+         (Generic Access Network, also known as UMA or Unlicensed Mobile Access), which defines the protocols through which a mobile handset can perform voice calls over a customer's private Internet connection, usually over wireless LAN. VoLGA however never gained much support, because VoLTE (IMS) promises much more flexible services, albeit at the cost of having to upgrade the entire voice call infrastructure. VoLTE will also require Single Radio Voice Call Continuity (SRVCC) in order to be able to smoothly perform a handover to a 3G network in case of poor LTE signal quality.&lt;ref&gt;
+         <a class="external text" href="http://www.prnewswire.com/news-releases/qualcomm-chipset-powers-first-successful-voip-over-lte-call-with-single-radio-voice-call-continuity-138556144.html" rel="nofollow">
+          Qualcomm Chipset Powers First Successful VoIP-Over-LTE Call With Single Radio Voice Call Continuity
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         While the industry has seemingly standardized on VoLTE for the future, the demand for voice calls today has led LTE carriers to introduce CSFB as a stopgap measure. When placing or receiving a voice call, LTE handsets will fall back to old 2G or 3G networks for the duration of the call.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Enhanced_voice_quality">
+          Enhanced voice quality
+         </span>
+        </h3>
+        <p>
+         To ensure compatibility, 3GPP demands at least AMR-NB codec (narrow band), but the recommended speech codec for VoLTE is
+         <a class="new" href="/wiki/index.php?title=Adaptive_Multi-Rate_Wideband&amp;action=edit&amp;redlink=1" title="Adaptive Multi-Rate Wideband (page does not exist)">
+          Adaptive Multi-Rate Wideband
+         </a>
+         , also known as
+         <a class="new" href="/wiki/index.php?title=HD_Voice&amp;action=edit&amp;redlink=1" title="HD Voice (page does not exist)">
+          HD Voice
+         </a>
+         . This codec is mandated in 3GPP networks that support 16 kHz sampling.&lt;ref&gt;
+         <a class="external text" href="http://www.ericsson.com/res/thecompany/docs/publications/ericsson_review/2010/lte_e2e.pdf" rel="nofollow">
+          Erricsson - LTE delivers superior voice, too
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Fraunhofer_Society&amp;action=edit&amp;redlink=1" title="Fraunhofer Society (page does not exist)">
+          Fraunhofer IIS
+         </a>
+         has proposed and demonstrated "Full-HD Voice", an implementation of the
+         <a class="new" href="/wiki/index.php?title=AAC-LD&amp;action=edit&amp;redlink=1" title="AAC-LD (page does not exist)">
+          AAC-ELD
+         </a>
+         (Advanced Audio Coding
+         <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+          Template:Spaced ndash
+         </a>
+         Enhanced Low Delay) codec for LTE handsets.&lt;ref&gt;
+         <a class="external text" href="http://hothardware.com/News/Fraunhofer-IIS-Demos-FullHD-Voice-Over-LTE-On-Android-Handsets/" rel="nofollow">
+          Fraunhofer IIS Demos Full-HD Voice Over LTE On Android Handsets
+         </a>
+         &lt;/ref&gt; Where previous cell phone voice codecs only supported frequencies up to 3.5 kHz and upcoming
+         <a class="new" href="/wiki/index.php?title=Wideband_audio&amp;action=edit&amp;redlink=1" title="Wideband audio (page does not exist)">
+          wideband audio
+         </a>
+         services branded as
+         <i>
+          HD Voice
+         </i>
+         up to 7 kHz, Full-HD Voice supports the entire bandwidth range from 20 Hz to 20 kHz. For end-to-end Full-HD Voice calls to succeed however, both the caller and recipient's handsets as well as networks have to support the feature.&lt;ref&gt;
+         <a class="external text" href="http://mobilenow.yankeegroup.com/articles/103805/firm-set-to-demo-hd-voice-over-lte/" rel="nofollow">
+          "Firm Set to Demo HD Voice over LTE"
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h2>
+         <span class="mw-headline" id="Frequency_bands">
+          Frequency bands
+         </span>
+        </h2>
+        <p>
+         The LTE standard covers a range of many different bands, each of which is designated by both a frequency and a band number. In North America, 700, 750, 800, 850, 1900, 1700/2100 (AWS), 2500 and 2600 MHz (
+         <a class="new" href="/wiki/index.php?title=Rogers_Communications&amp;action=edit&amp;redlink=1" title="Rogers Communications (page does not exist)">
+          Rogers Communications
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Bell_Canada&amp;action=edit&amp;redlink=1" title="Bell Canada (page does not exist)">
+          Bell Canada
+         </a>
+         ) are used (bands 2, 4, 7, 12, 13, 17, 25, 26, 41); 2500 MHz in South America; 700, 800, 900, 1800, 2600 MHz in Europe (bands 3, 7, 20);&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; 800, 1800 and 2600 MHz in Asia (bands 1, 3, 5, 7, 8, 11, 13, 40)&lt;ref&gt;
+         <a class="external text" href="https://gsmaintelligence.com/analysis/2010/10/hong-kong-and-singapore-lead-lte-charge-in-asia-pacific/228/" rel="nofollow">
+          CSL begins dual-band 1800/2600 LTE rollout
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="external text" href="http://www.ooredoo.qa/en/4G-LTE-technology#" rel="nofollow">
+          Oredoo - The Technology
+         </a>
+         &lt;/ref&gt; and 1800 MHz and 2300 MHz in Australia&lt;ref&gt;
+         <a class="external text" href="http://www.ericsson.com/news/110530_telstra_switches_on_first_lte_network_244188810_c" rel="nofollow">
+          Telstra switches on first LTE network on 1800MHz in Australia
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="external text" href="http://m.zdnet.com.au/optus-still-evaluating-lte-339313233.htm" rel="nofollow">
+          Optus still evaluating LTE
+         </a>
+         &lt;/ref&gt; and New Zealand (bands 3, 40).&lt;ref&gt;Sexo&lt;/ref&gt; As a result, phones from one country may not work in other countries. Users will need a multi-band capable phone for roaming internationally.
+        </p>
+        <h2>
+         <span class="mw-headline" id="Patents">
+          Patents
+         </span>
+        </h2>
+        <p>
+         According to the
+         <a class="new" href="/wiki/index.php?title=European_Telecommunications_Standards_Institute&amp;action=edit&amp;redlink=1" title="European Telecommunications Standards Institute (page does not exist)">
+          European Telecommunications Standards Institute
+         </a>
+         's (ETSI)
+         <a class="new" href="/wiki/index.php?title=Intellectual_property&amp;action=edit&amp;redlink=1" title="Intellectual property (page does not exist)">
+          intellectual property
+         </a>
+         rights (IPR) database, about 50 companies have declared, as of March 2012, holding
+         <a class="new" href="/wiki/index.php?title=Essential_patent&amp;action=edit&amp;redlink=1" title="Essential patent (page does not exist)">
+          essential patents
+         </a>
+         covering the LTE standard.&lt;ref name="ipeg-6-03-2012"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The ETSI has made no investigation on the correctness of the declarations however,&lt;ref name="ipeg-6-03-2012"/&gt; so that "any analysis of essential LTE patents should take into account more than ETSI declarations."&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         <i>
+          Second comment by the author:
+         </i>
+         "Thus, any analysis of essential LTE patents should take into account more than ETSI declarations."&lt;/ref&gt;
+        </p>
+        <p>
+         The table below shows the available LTE royalty:
+        </p>
+        <table align="center" border="2" cellpadding="4" cellspacing="0">
+         <caption>
+          <b>
+           Announced royalty rates for LTE patents
+          </b>
+         </caption>
+         <tbody>
+          <tr>
+           <th>
+            Company
+           </th>
+           <th>
+            Royalty rate
+           </th>
+          </tr>
+          <tr>
+           <td>
+            Alcatel-Lucent
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             2.00%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Ericsson
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             1.50%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Huawei Technologies Co., Ltd.
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             1.50%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            InterDigital Inc.
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://seekingalpha.com/article/287408-google-buys-motorola-for-12-5-billion-what-interdigital-is-now-worth" rel="nofollow">
+             2.50%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Motorola Inc.
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             2.25%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Motorola Mobility Inc.
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             2.25%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Nokia Corporation
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             1.50%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Nokia Siemens Networks
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             0.80%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Nortel Networks Ltd
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             1.00%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Qualcomm Incorporated
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             3.25%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Samsung Electronics Co., Ltd.
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.iphoneincanada.ca/news/unclassified-letter-reveals-samsungs-royalty-demands-from-apple-for-3gumts-essential-patents/" rel="nofollow">
+             2.40%
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <a class="new" href="/wiki/index.php?title=ZTE&amp;action=edit&amp;redlink=1" title="ZTE (page does not exist)">
+             ZTE Corporation
+            </a>
+           </td>
+           <td style="text-align:center;">
+            <a class="external text" href="http://www.wiseharbor.com/pdfs/wiseharbor-value-of-4g-2012.pdf" rel="nofollow">
+             1.00%
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h2>
+         <span class="mw-headline" id="See_also">
+          See also
+         </span>
+        </h2>
+        <ul>
+         <li>
+          <a class="new" href="/wiki/index.php?title=4G-LTE_filter&amp;action=edit&amp;redlink=1" title="4G-LTE filter (page does not exist)">
+           4G-LTE filter
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Comparison_of_wireless_data_standards&amp;action=edit&amp;redlink=1" title="Comparison of wireless data standards (page does not exist)">
+           Comparison of wireless data standards
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=E-UTRA&amp;action=edit&amp;redlink=1" title="E-UTRA (page does not exist)">
+           E-UTRA
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashthe
+          </a>
+          radio access network used in LTE
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=EMBMS&amp;action=edit&amp;redlink=1" title="EMBMS (page does not exist)">
+           eMBMS
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Multicast Broadcast Multimedia Services (MBMS) enhanced for LTE
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Flat_IP&amp;action=edit&amp;redlink=1" title="Flat IP (page does not exist)">
+           Flat IP
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashflat
+          </a>
+          IP architectures in mobile networks
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=HSPA%2B&amp;action=edit&amp;redlink=1" title="HSPA+ (page does not exist)">
+           HSPA+
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashan
+          </a>
+          enhancement of the 3GPP
+          <a class="new" href="/wiki/index.php?title=High_Speed_Packet_Access&amp;action=edit&amp;redlink=1" title="High Speed Packet Access (page does not exist)">
+           HSPA
+          </a>
+          standard
+         </li>
+         <li>
+          <a href="/wiki/LTE_Advanced" title="LTE Advanced">
+           LTE Advanced
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashthe
+          </a>
+          successor to LTE
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=LTE_in_unlicensed_spectrum&amp;action=edit&amp;redlink=1" title="LTE in unlicensed spectrum (page does not exist)">
+           LTE in unlicensed spectrum
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Next-generation_network&amp;action=edit&amp;redlink=1" title="Next-generation network (page does not exist)">
+           Next-generation network
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=QoS_Class_Identifier&amp;action=edit&amp;redlink=1" title="QoS Class Identifier (page does not exist)">
+           QoS Class Identifier
+          </a>
+          (QCI) - the mechanism used in LTE networks to allocate proper Quality of Service to bearer traffic
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=System_architecture_evolution&amp;action=edit&amp;redlink=1" title="System architecture evolution (page does not exist)">
+           System architecture evolution
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashthe
+          </a>
+          re-architecturing of core networks in LTE
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=TD-LTE&amp;action=edit&amp;redlink=1" title="TD-LTE (page does not exist)">
+           TD-LTE
+          </a>
+          (LTE TDD)
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndashan
+          </a>
+          alternative LTE standard developed by China
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Ultra_Mobile_Broadband&amp;action=edit&amp;redlink=1" title="Ultra Mobile Broadband (page does not exist)">
+           UMB
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndasha
+          </a>
+          proposed competitor to LTE, never commercialized
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=WiMAX&amp;action=edit&amp;redlink=1" title="WiMAX (page does not exist)">
+           WiMAX
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndasha
+          </a>
+          competitor to LTE
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Zadoff%E2%80%93Chu_sequence&amp;action=edit&amp;redlink=1" title="Zadoff–Chu sequence (page does not exist)">
+           Zadoff–Chu sequence
+          </a>
+         </li>
+        </ul>
+        <h2>
+         <span class="mw-headline" id="References">
+          References
+         </span>
+        </h2>
+        <div class="reflist {{#if: | columns {{#iferror: {{#ifexpr: 1">
+         1 }}
+         <pre>     | references-column-width
+     | references-column-count references-column-count-{{#if:1|{{{1}}}}} }}
+   | {{#if: 30em
+     | references-column-width }} }}" style="{{#if:
+   | {{#iferror: {{#ifexpr: 1 &gt; 1 }}
+     | <a class="new" href="/wiki/index.php?title=Template:Column-width&amp;action=edit&amp;redlink=1" title="Template:Column-width (page does not exist)">Template:Column-width</a>
+     | <a class="new" href="/wiki/index.php?title=Template:Column-count&amp;action=edit&amp;redlink=1" title="Template:Column-count (page does not exist)">Template:Column-count</a> }}
+   | {{#if: 30em
+     | <a class="new" href="/wiki/index.php?title=Template:Column-width&amp;action=edit&amp;redlink=1" title="Template:Column-width (page does not exist)">Template:Column-width</a> }} }} list-style-type: {{#switch:
+   | upper-alpha
+   | upper-roman
+   | lower-alpha
+   | lower-greek
+   | lower-roman = {{{group}}}
+   | #default = decimal}};"&gt;
+</pre>
+         &lt;references group=""&gt;&lt;/references&gt;
+        </div>
+        <h2>
+         <span class="mw-headline" id="Further_reading">
+          Further reading
+         </span>
+        </h2>
+        <ul>
+         <li>
+          Gautam Siwach, Dr. Amir Esmailpour "LTE Security Potential Vulnerability and Algorithm Enhancements", IEEE Canadian Conference on Electrical and Computer Engineering,"
+          <i>
+           IEEE CCECE
+          </i>
+          , Toronto, Canada, May 2014
+         </li>
+         <li>
+          Erik Dahlman, Stefan Parkvall, Johan Sköld "4G
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          LTE/LTE-Advanced for Mobile Broadband", Academic Press, 2011, ISBN 978-0-12-385489-6
+         </li>
+         <li>
+          Stefania Sesia, Issam Toufik, and Matthew Baker, "LTE
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          The UMTS Long Term Evolution
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          From Theory to Practice", Second Edition including Release 10 for LTE-Advanced, John Wiley &amp; Sons, 2011, ISBN 978-0-470-66025-6
+         </li>
+         <li>
+          Chris Johnson, "
+          <a class="external text" href="http://www.lte-bullets.com" rel="nofollow">
+           LTE in BULLETS
+          </a>
+          ", CreateSpace, 2010, ISBN 978-1-4528-3464-1
+         </li>
+         <li>
+          Erik Dahlman, Stefan Parkvall, Johan Sköld, Per Beming, "3G Evolution
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          HSPA and LTE for Mobile Broadband", 2nd edition, Academic Press, 2008, ISBN 978-0-12-374538-5
+         </li>
+         <li>
+          Borko Furht, Syed A. Ahson, "Long Term Evolution: 3GPP LTE Radio And Cellular Technology", Crc Press, 2009, ISBN 978-1-4200-7210-5
+         </li>
+         <li>
+          F. Khan, "LTE for 4G Mobile Broadband
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Air Interface Technologies and Performance", Cambridge University Press, 2009
+         </li>
+         <li>
+          Mustafa Ergen, "Mobile Broadband
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Including WiMAX and LTE", Springer, NY, 2009
+         </li>
+         <li>
+          H. Ekström, A. Furuskär, J. Karlsson, M. Meyer, S. Parkvall, J. Torsner, and M. Wahlqvist, "Technical Solutions for the 3G Long-Term Evolution,"
+          <i>
+           IEEE Commun. Mag.
+          </i>
+          , vol. 44, no. 3, March 2006, pp. 38–45
+         </li>
+         <li>
+          E. Dahlman, H. Ekström, A. Furuskär, Y. Jading, J. Karlsson, M. Lundevall, and S. Parkvall, "The 3G Long-Term Evolution
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Radio Interface Concepts and Performance Evaluation,"
+          <i>
+           IEEE Vehicular Technology Conference (VTC) 2006 Spring
+          </i>
+          , Melbourne, Australia, May 2006
+         </li>
+         <li>
+          K. Fazel and S. Kaiser,
+          <i>
+           Multi-Carrier and Spread Spectrum Systems: From OFDM and MC-CDMA to LTE and WiMAX
+          </i>
+          , 2nd Edition, John Wiley &amp; Sons, 2008, ISBN 978-0-470-99821-2
+         </li>
+         <li>
+          Agilent Technologies, "
+          <a class="external text" href="http://www.agilent.com/find/ltebook" rel="nofollow">
+           LTE and the Evolution to 4G Wireless: Design and Measurement Challenges
+          </a>
+          ", John Wiley &amp; Sons, 2009 ISBN 978-0-470-68261-6
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Sajal_K._Das&amp;action=edit&amp;redlink=1" title="Sajal K. Das (page does not exist)">
+           Sajal K. Das
+          </a>
+          , John Wiley &amp; Sons (April 2010): "Mobile Handset Design", ISBN 978-0-470-82467-2 .
+         </li>
+         <li>
+          Beaver, Paul, "
+          <a class="external text" href="http://www.eetimes.com/design/microwave-rf-design/4228238/What-is-TD-LTE-?Ecosystem=microwave-rf-design" rel="nofollow">
+           What is TD-LTE?
+          </a>
+          ", RF&amp;Microwave Designline, September 2011.
+         </li>
+         <li>
+          Dan Forsberg, Günther Horn, Wolf-Dietrich Moeller, Valtteri Niemi, "LTE Security", Second Edition, John Wiley &amp; Sons Ltd, Chichester 2013, ISBN 978-1-118-35558-9
+         </li>
+         <li>
+          SeungJune Yi, SungDuck Chun, YoungDae lee, SungJun Park, SungHoon Jung, "Radio Protocols for LTE and LTE-Advanced", Wiley, 2012, ISBN 978-1-118-18853-8
+         </li>
+        </ul>
+        <h2>
+         <span class="mw-headline" id="External_links">
+          External links
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Sister_project_links&amp;action=edit&amp;redlink=1" title="Template:Sister project links (page does not exist)">
+          Template:Sister project links
+         </a>
+        </p>
+        <ul>
+         <li>
+          <a class="external text" href="http://www.3gpp.org/article/lte" rel="nofollow">
+           LTE homepage
+          </a>
+          from the 3GPP website
+         </li>
+         <li>
+          <a class="external text" href="http://sites.google.com/site/lteencyclopedia/home" rel="nofollow">
+           LTE A-Z Description
+          </a>
+          3GPP LTE Encyclopedia
+         </li>
+         <li>
+          <a class="external text" href="http://www.4g360.com" rel="nofollow">
+           4G/LTE community website
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://lteworld.org/faq" rel="nofollow">
+           LTE Frequently Asked Questions
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://ltemaps.org/" rel="nofollow">
+           LTE Deployment Map
+          </a>
+         </li>
+        </ul>
+        <h3>
+         <span class="mw-headline" id="White_papers_and_other_technical_information">
+          White papers and other technical information
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Div_col&amp;action=edit&amp;redlink=1" title="Template:Div col (page does not exist)">
+          Template:Div col
+         </a>
+        </p>
+        <ul>
+         <li>
+          <a class="external text" href="http://testrf.com/tag/lte-tutorial/" rel="nofollow">
+           LTE Technology Overview and Tutorial Series including Webinars and Video presentations
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.ericsson.com/ericsson/corpinfo/publications/review/2005_02/07.shtml" rel="nofollow">
+           "The Long Term Evolution of 3G" on Ericsson Review, no. 2, 2005
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.rohde-schwarz.com/appnote/1MA111.pdf" rel="nofollow">
+           LTE technology introduction
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.signal.uu.se/Research/PCCWIP/Tunisia/WIP05_EAB.pdf" rel="nofollow">
+           "3G Long-Term Evolution" by Dr. Erik Dahlman at Ericsson Research
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.calit2.net/events/pdfs/S3G_Stefan_Parkvall.pdf" rel="nofollow">
+           "Long-Term 3G Evolution
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Radio Access" by Dr. Stefan Parkvall at Ericsson Research
+         </li>
+         <li>
+          <a class="external text" href="http://www.ikr.uni-stuttgart.de/Content/itg/fg524/Meetings/2006-09-29-Ulm/01-3GPP_LTE-SAE_Overview_Sep06.pdf" rel="nofollow">
+           "3GPP Long-Term Evolution / System Architecture Evolution: Overview" by Ulrich Barth at Alcatel
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.ericsson.com/res/thecompany/docs/journal_conference_papers/atsp/the_3g_long-term_evolution_radi_interface.pdf" rel="nofollow">
+           The 3G Long-Term Evolution
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          Radio Interface Concepts and Performance Evaluation
+         </li>
+         <li>
+          <a class="external text" href="http://www.3g4g.co.uk/Lte/LTE_Security_WP_0907_Agilent.pdf" rel="nofollow">
+           LTE and the Evolution to 4G Wireless Design and Measurement Challenges
+          </a>
+          <a class="new" href="/wiki/index.php?title=Template:Spaced_ndash&amp;action=edit&amp;redlink=1" title="Template:Spaced ndash (page does not exist)">
+           Template:Spaced ndash
+          </a>
+          "LTE Security"
+         </li>
+         <li>
+          <a class="external text" href="https://www.cosic.esat.kuleuven.be/ecrypt/courses/end/slides-28/9-niemi.pdf" rel="nofollow">
+           Role of Crypto in Mobile Communications "LTE Security"
+          </a>
+         </li>
+         <li>
+          Dr. Maode Ma "
+          <a class="external text" href="http://www.ieee-globecom.org/2012/private/T10F.pdf" rel="nofollow">
+           Security Investigation in 4G LTE Wireless Networks
+          </a>
+          ", 2012.
+         </li>
+         <li>
+          <a class="external text" href="http://asp.eurasipjournals.com/content/pdf/1687-6180-2011-61.pdf" rel="nofollow">
+           LTE Uplink Interference Modeling
+          </a>
+         </li>
+        </ul>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Div_col_end&amp;action=edit&amp;redlink=1" title="Template:Div col end (page does not exist)">
+          Template:Div col end
+         </a>
+        </p>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Mobile_telecommunications_standards&amp;action=edit&amp;redlink=1" title="Template:Mobile telecommunications standards (page does not exist)">
+          Template:Mobile telecommunications standards
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Wireless_video&amp;action=edit&amp;redlink=1" title="Template:Wireless video (page does not exist)">
+          Template:Wireless video
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Telecommunications&amp;action=edit&amp;redlink=1" title="Template:Telecommunications (page does not exist)">
+          Template:Telecommunications
+         </a>
+        </p>
+        <!--
+NewPP limit report
+Cached time: 20220716160526
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.097 seconds
+Real time usage: 0.157 seconds
+Preprocessor visited node count: 330/1000000
+Preprocessor generated node count: 3283/1000000
+Post‐expand include size: 2679/2097152 bytes
+Template argument size: 8/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+        <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   40.850      1 -total
+ 18.06%    7.377      1 Template:Reflist
+  7.74%    3.164      1 Template:Redirect
+  4.80%    1.960      3 Template:See_also
+  4.16%    1.700      1 Template:Cite_news
+  4.02%    1.641     25 Template:Cite_web
+  2.27%    0.927      1 Template:Merge_from
+  2.15%    0.880      3 Template:Legend
+  2.14%    0.872     21 Template:Spaced_ndash
+  2.05%    0.837     15 Template:Flagcountry
+-->
+        <!-- Saved in parser cache with key hwiki:pcache:idhash:280205-0!canonical and timestamp 20220716160526 and revision id 445361
+ -->
+       </div>
+      </div>
+      <div class="printfooter">
+       Retrieved from "
+       <a dir="ltr" href="http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php?title=LTE&amp;oldid=445361">
+        http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php?title=LTE&amp;oldid=445361
+       </a>
+       "
+      </div>
+      <div class="catlinks" data-mw="interface" id="catlinks">
+       <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+        <a href="/wiki/Special:Categories" title="Special:Categories">
+         Categories
+        </a>
+        :
+        <ul>
+         <li>
+          <a href="/wiki/Category:Pages_with_broken_file_links" title="Category:Pages with broken file links">
+           Pages with broken file links
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:3GPP_standards&amp;action=edit&amp;redlink=1" title="Category:3GPP standards (page does not exist)">
+           3GPP standards
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Internet_Protocol&amp;action=edit&amp;redlink=1" title="Category:Internet Protocol (page does not exist)">
+           Internet Protocol
+          </a>
+         </li>
+         <li>
+          <a href="/wiki/Category:LTE_(telecommunication)" title="Category:LTE (telecommunication)">
+           LTE (telecommunication)
+          </a>
+         </li>
+         <li>
+          <a href="/wiki/Category:Mobile_technology" title="Category:Mobile technology">
+           Mobile technology
+          </a>
+         </li>
+         <li>
+          <a href="/wiki/Category:Mobile_telecommunications" title="Category:Mobile telecommunications">
+           Mobile telecommunications
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- end content -->
+      <div class="visualClear">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div dir="ltr" id="column-one" lang="en">
+    <h2>
+     Navigation menu
+    </h2>
+    <div aria-labelledby="p-cactions-label" class="portlet" id="p-cactions" role="navigation">
+     <h3 dir="ltr" id="p-cactions-label" lang="en">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li class="selected" id="ca-nstab-main">
+        <a accesskey="c" href="/wiki/LTE" title="View the content page [c]">
+         Page
+        </a>
+       </li>
+       <li class="new" id="ca-talk">
+        <a accesskey="t" href="/wiki/index.php?title=Talk:LTE&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]">
+         Discussion
+        </a>
+       </li>
+       <li id="ca-viewsource">
+        <a accesskey="e" href="/wiki/index.php?title=LTE&amp;action=edit" title="This page is protected.
+You can view its source [e]">
+         View source
+        </a>
+       </li>
+       <li id="ca-history">
+        <a accesskey="h" href="/wiki/index.php?title=LTE&amp;action=history" title="Past revisions of this page [h]">
+         History
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-cactions-mobile-label" class="portlet" id="p-cactions-mobile" role="navigation">
+     <h3 dir="ltr" id="p-cactions-mobile-label" lang="en">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li class="selected" id="ca-nstab-main-mobile">
+        <a href="/wiki/LTE" title="Page">
+         Page
+        </a>
+       </li>
+       <li class="new" id="ca-talk-mobile">
+        <a href="/wiki/index.php?title=Talk:LTE&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">
+         Discussion
+        </a>
+       </li>
+       <li id="ca-more">
+        <a href="#p-cactions">
+         More
+        </a>
+       </li>
+       <li id="ca-tools">
+        <a href="#p-tb" title="Tools">
+         Tools
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-personal-label" class="portlet" id="p-personal" role="navigation">
+     <h3 dir="ltr" id="p-personal-label" lang="en">
+      Personal tools
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li id="pt-createaccount">
+        <a href="/wiki/index.php?title=Special:CreateAccount&amp;returnto=LTE&amp;returntoquery=oldid%3D445361" title="You are encouraged to create an account and log in; however, it is not mandatory">
+         Create account
+        </a>
+       </li>
+       <li id="pt-login">
+        <a accesskey="o" href="/wiki/index.php?title=Special:UserLogin&amp;returnto=LTE&amp;returntoquery=oldid%3D445361" title="You are encouraged to log in; however, it is not mandatory [o]">
+         Log in
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="portlet" id="p-logo" role="banner">
+     <a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page">
+     </a>
+    </div>
+    <div id="sidebar">
+     <div aria-labelledby="p-navigation-label" class="portlet generated-sidebar" id="p-navigation" role="navigation">
+      <h3 dir="ltr" id="p-navigation-label" lang="en">
+       Navigation
+      </h3>
+      <div class="pBody">
+       <ul dir="ltr" lang="en">
+        <li id="n-mainpage-description">
+         <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+          Main page
+         </a>
+        </li>
+        <li id="n-recentchanges">
+         <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]">
+          Recent changes
+         </a>
+        </li>
+        <li id="n-randompage">
+         <a accesskey="x" href="/wiki/Special:Random" title="Load a random page [x]">
+          Random page
+         </a>
+        </li>
+        <li id="n-Rules-of-the-site">
+         <a href="/wiki/Siterules">
+          Rules of the site
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="portlet" id="p-search" role="search">
+      <h3 dir="ltr" id="p-search-label" lang="en">
+       <label for="searchInput">
+        Search
+       </label>
+      </h3>
+      <div class="pBody" id="searchBody">
+       <form action="/wiki/index.php" id="searchform">
+        <input name="title" type="hidden" value="Special:Search"/>
+        <input accesskey="f" id="searchInput" name="search" placeholder="Search The Hidden Wiki" title="Search The Hidden Wiki [f]" type="search"/>
+        <input class="searchButton" id="searchGoButton" name="go" title="Go to a page with this exact name if it exists" type="submit" value="Go"/>
+        <input class="searchButton" id="mw-searchButton" name="fulltext" title="Search the pages for this text" type="submit" value="Search"/>
+       </form>
+      </div>
+     </div>
+     <div aria-labelledby="p-tb-label" class="portlet" id="p-tb" role="navigation">
+      <h3 dir="ltr" id="p-tb-label" lang="en">
+       Tools
+      </h3>
+      <div class="pBody">
+       <ul dir="ltr" lang="en">
+        <li id="t-whatlinkshere">
+         <a accesskey="j" href="/wiki/Special:WhatLinksHere/LTE" title="A list of all wiki pages that link here [j]">
+          What links here
+         </a>
+        </li>
+        <li id="t-recentchangeslinked">
+         <a accesskey="k" href="/wiki/Special:RecentChangesLinked/LTE" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+          Related changes
+         </a>
+        </li>
+        <li id="t-specialpages">
+         <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+          Special pages
+         </a>
+        </li>
+        <li id="t-print">
+         <a accesskey="p" href="/wiki/index.php?title=LTE&amp;oldid=445361&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">
+          Printable version
+         </a>
+        </li>
+        <li id="t-permalink">
+         <a href="/wiki/index.php?title=LTE&amp;oldid=445361" title="Permanent link to this revision of the page">
+          Permanent link
+         </a>
+        </li>
+        <li id="t-info">
+         <a href="/wiki/index.php?title=LTE&amp;action=info" title="More information about this page">
+          Page information
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <a class="menu-toggle" href="#sidebar" id="sidebar-toggle" title="navigation">
+    </a>
+    <a class="menu-toggle" href="#p-personal" id="p-personal-toggle" title="user tools">
+    </a>
+    <a class="menu-toggle" href="#globalWrapper" id="globalWrapper-toggle" title="back to top">
+    </a>
+   </div>
+   <!-- end of the left (by default at least) column -->
+   <div class="visualClear">
+   </div>
+   <div dir="ltr" id="footer" lang="en" role="contentinfo">
+    <div class="footer-icons" id="f-poweredbyico">
+     <a href="//www.mediawiki.org/">
+      <img alt="Powered by MediaWiki" height="31" src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88"/>
+     </a>
+    </div>
+    <ul id="f-list">
+     <li id="lastmod">
+      This page was last edited on 13 February 2016, at 06:38.
+     </li>
+     <li id="privacy">
+      <a href="/wiki/The_Hidden_Wiki:Privacy_policy" title="The Hidden Wiki:Privacy policy">
+       Privacy policy
+      </a>
+     </li>
+     <li id="about">
+      <a href="/wiki/The_Hidden_Wiki:About" title="The Hidden Wiki:About">
+       About The Hidden Wiki
+      </a>
+     </li>
+     <li id="disclaimer">
+      <a href="/wiki/The_Hidden_Wiki:General_disclaimer" title="The Hidden Wiki:General disclaimer">
+       Disclaimers
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script>
+   (window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.097","walltime":"0.157","ppvisitednodes":{"value":330,"limit":1000000},"ppgeneratednodes":{"value":3283,"limit":1000000},"postexpandincludesize":{"value":2679,"limit":2097152},"templateargumentsize":{"value":8,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   40.850      1 -total"," 18.06%    7.377      1 Template:Reflist","  7.74%    3.164      1 Template:Redirect","  4.80%    1.960      3 Template:See_also","  4.16%    1.700      1 Template:Cite_news","  4.02%    1.641     25 Template:Cite_web","  2.27%    0.927      1 Template:Merge_from","  2.15%    0.880      3 Template:Legend","  2.14%    0.872     21 Template:Spaced_ndash","  2.05%    0.837     15 Template:Flagcountry"]},"cachereport":{"timestamp":"20220716160526","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":57});});
+  </script>
+ </body>
+</html>

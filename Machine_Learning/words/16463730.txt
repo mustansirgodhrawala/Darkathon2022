@@ -1,0 +1,224 @@
+
+
+
+
+
+
+
+
+        Ctrl.blog
+        Onion Edition
+
+
+        Skip to main content
+
+
+
+         Daniel Aleksandersen
+
+
+
+
+
+          Latest
+
+
+          Newsletter
+
+
+          Topics
+
+
+          Patrons
+
+
+          About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Set up distributed compilation with Icecream in Fedora Linux
+
+
+
+
+            Daniel Aleksandersen
+
+          2016-12-12
+          9 minute read
+          Includes a promotional link.
+
+
+
+            Tweet
+
+
+            Save
+
+
+
+
+        Icecream (icecc) is a network-distributed C and C++ compiler for Clang and GCC. Icecream lets you tap into any available computer resources on the same network to speed up your code compilation. Here is how you create a distributed build cluster with Icecream in Fedora Linux.
+        Depending on the source code you want to compile, obviously, compilation often takes place on many small files. For most projects, these can be compiled in parallel as separate jobs: usually one per processor core. With a distributed compiler setup, each of these jobs can be distributed out among all the available processor cores on the local network.
+        Icecream consists of two parts: one or more daemon computers that will offer up their resources for building (the build machines), and a scheduler which coordinates, distributes tasks, and collect the work from the build machines on your network. You’ll need at least one scheduler, and two or more build machines.
+        Only need one scheduler will be used in your network at the time, but you can configure multiple schedulers for redundancy. I recommend you configure the scheduler on any computer you’ll use to start builds. This way, there will always be a scheduler available when you want to compile something. Note that you’ll need to run both the daemon and the scheduler service on a PC for it to both coordinate other machines and contribute to the build process.
+
+          Configuring the daemon service on build machines
+          Before we begin, I’ll just like to mention that you should make sure to install Icecream version 1.1 or newer. Earlier versions distributed with Fedora Linux have a few issues that prevent it from working properly without additional configuration.
+          The build machines require very little setup. You’ll only need to install a few packages, configure the firewall, and start the service. Let us begin by installing the required packages:
+
+            Install the required packages by issuing the following command:
+
+
+                dnf install icecream @c-development clang
+
+
+
+          Next, for the firewall setup. Before you proceed, be absolutely sure that you’ve configured a trust firewall zone that is limited to your local network. The below example use the default trusted zone, but this isn’t automagically configured for you. You don’t want to expose your compiler or PC to the public internet.
+
+            Adopt the zone name to match your configuration, and then issue the following commands:
+
+
+                firewall-cmd --reload
+firewall-cmd --permanent --zone="trusted" --add-service="icecream"
+firewall-cmd --reload
+
+
+
+          firewalld’s configuration needs to be reloaded twice: the first time to load in the newly installed icecream.service definition, and the second time to actualize the new rich-rule.
+          Lastly, you need to start the service and then enable it. Enabling a service means it will run by default then next time your computer starts without recurring you to start the service before each time you want to use it.
+
+            Start and enable the Icecream service at boot by issuing the following commands:
+
+
+                systemctl enable --now iceccd
+
+
+
+          Repeat this setup on any and all computers that you want to contribute with the build. You can use pretty much any system, the scheduler will work out which jobs goes to which system based on available resources. Fedora Linux sets a high process “niceness” on the build service by default, meaning you can set up the build service on all your computers and they’ll only contribute to building when they’re otherwise idle.
+
+
+          Configuring the scheduler service
+          Assuming you’ve already setup the computer as a build machine (daemon), you’ll already have all the required packages installed.
+          A scheduler will need an additional firewalld rule installed. The command should be exactly the same, but the service name will be different. This should be set up in addition to the firewall rules for the builder service.
+
+            Adopt the zone name to match your configuration, and then issue the following commands:
+
+
+                firewall-cmd --reload
+firewall-cmd --zone="trusted" --add-service="icecream-scheduler"
+firewall-cmd --reload
+
+
+
+          Again, you need to make sure that you’ve set up and configured a trust firewall zone which is limited to your local network.
+          firewalld’s configuration needs to be reloaded twice: the first time to load in the newly installed icecream.service definition, and the second time to actualize the new rich-rule.
+          Lastly, you need to start the service and then enable it. Enabling a service means it will run by default then next time your computer starts without recurring you to start the service before each time you want to use it.
+
+            Start and enable the Icecream service at boot by issuing the following commands:
+
+
+                systemctl enable --now icecc-scheduler
+
+
+
+          Please note that the firewalld service definition and the systemd service definitions use different names (in bold in the examples for emphasis) for the scheduler service. Because of reasons.
+
+        By this point, you should be all setup and can proceed to start a build.
+
+          Working in parallel
+          Icecream is quite smart in the way it starts builds. You don’t need to change anything about your normal workflow, but you should learn just a tad about how it all works before proceeding. (Yeah, now that you’ve already invested and have installed and configured the software I spring the learning card on you! Ha!)
+          As mentioned earlier, building most projects of any complexity starts many small sub-jobs that are compiled separately. By default, only one job is done at the time; to do more in parallel: the build system needs to be told how many tasks to perform in parallel. A common recommendation is to configure a allow as many parallel jobs to run as the number of processor cores on the local system plus one. The one extra job is to allow for the preparation of the next job while other jobs are compiling.
+          This also holds true for distributed builds, but you need to account for the number of available processors on the network build cluster. The only difference is that you may want to increase the number of extra jobs by one per roughly 15 additional build processor core. You can use the Icecream Monitor utility to see the available number of processors in your cluster at any given time.
+
+            In Fedora Linux 27 and later, you can install Icemon by issuing the following command:
+
+
+                dnf install icemon
+
+
+            Start Icemon from your application launcher to observe your build servers.
+
+          For projects that are using autotools or make, you specify the number of jobs with the -j argument. For other build systems, please refer to their manual for how you configure parallel compilation.
+          If you’re compiling the same project over and over again, you should experiment a bit with the number of jobs you allow to optimize build speeds. The optimal number of jobs will vary with hardware and the code to be compiled.
+
+            Starting a distributed build
+            To compile a project with Icecream, all you’ve to do is replace your regular C compiler with one of Icecream’s C-compiler wrappers. You can either specify this manually each time you compile something, or you can place the paths to Icecream’s wrappers at the front of your PATH environmental variable so all build scripts and systems will pick it up automatically:
+
+
+              echo 'PATH="/usr/libexec/icecc/bin:$PATH"' >> ~/.profile
+
+            And that’s all there’s to it. Build scripts should call their preferred compiler, and get Icecream instead of the compiler they expected to. The wrapper will auto-discover and communicate with the scheduler on the local network, which in turn will communicate with all the build machines. Your local system will prepare the given number of jobs and Icecream will distribute the jobs among the available builders.
+
+          You can open up the Icecream Monitor utility to see all the builds that are going on in the local network. It’s rather fascinating to watch.
+
+
+          A word about network latency
+          Distributed compilation, and Icecream is no exception, is quite sensitive to high network latency. It can be quite damaging to the total compilation time if even one of the build machines has high network latency.
+          If your build machines are connected over Wi-Fi, you should either invest in Ethernet adapters and cabling, or try to reduce the effect of dynamic power savings on Wi-Fi latency.
+          If you’re having trouble with any builder dropping out or having a hard time to discover the scheduler, high latency could very well be a problem. (“icecc: scheduler not yet found”.) Try pinging back and forth between your computers with a long delay (ping -4 -i5 builder2) and confirm that your ping is below 1.5 ms.
+
+
+
+
+          Buy Me A Coffee
+          Post a comment
+
+
+
+            Linux
+
+
+
+
+
+
+
+
+
+
+          Get the weekly Ctrl blog newsletter
+
+              Email:  Follow
+
+
+
+
+
+
+
+          About
+
+
+          Privacy Policy
+
+
+          Colophon
+
+
+          Licensing
+
+
+
+
+
+        Ctrl blog by © 2022 Daniel Aleksandersen.
+
+
+
+      Hosting by Hetzner and Linode. CDN by Bunny.

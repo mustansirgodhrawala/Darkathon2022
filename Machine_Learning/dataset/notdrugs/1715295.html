@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="mystyle.css" rel="stylesheet" type="text/css"/>
+  <title>
+   Buy computers, laptops, desktops, phones, monitors, displays, gaming, electronics at retail or in bulk - Asus Rog, Alienware, Vaio, Sony Vaio. Windows or Linux distributions - Black Arch, Kali, Arch Linux, Qubes, Linux Mint, Ubuntu, RedHat, FreeBSD, Debian, Fedora, Slackware, Fedora, OpenSUSE, Mandriva, Gentoo, CentOS, Solaris, etc. by your order. Summer Sales lasting a few months! 20-45% off! Reseller Discount - 10%-20% off! Full multisignature escrow for protection of your funds.
+  </title>
+  <meta content="Unknown" name="author"/>
+  <meta content="Computer &amp; Mobile Trading" name="copyright"/>
+  <meta content="Dell, Asus, gaming, ROG, Republic of Gamers, Monitor, Ryzen, Microsoft Office, Mid Tower, Full Tower, Strix, Armoury Crate, Aura, Zephyrus, display, G-Sync, Adaptive-Sync, Pantone, headset, mouse, Adapter, Battery, XBOX, GamePass, GameVisual, Scenario Profiles, Keyboard, Touchpad, Ethernet, Microphone, Camera, FingerPrint, 300 Hz, 165 Hz, 120 hz, Kensington, Touch Screen, Flow, Bluetooth, Curved, Overclock, UHD, FHD, QHD, Remote Control, Power, Accessories, HDMI, cable, USB, Card, Certificate, Ultimate, 4K, Mini LED, Swift, Phone, Qualcomm, Snapdragon, Audio, Speaker, Navigation, radio, SIM, Sensor, Cooler, Gamepad, Kunai, Aero, Case, Samsung, AMOLED, Corning, Gorilla, Glass, Victus, Delta-E, Cirrus Logic, amplifier, accelerometer, e-compass, gyroscope, proximity, sensor, ambient-light, ambient, ultrasonic, AirTrigger, Air, Trigger, Quick Charge, AeroActive, Adreno, Pro, Phone 5s Pro, Phone 5s, Phone 5, Phone 3, Phone II, mobile, anti-glare, IPS-level, NVMe, PCIe, M.2 slot, drive, DDR4, 32GB, 16GB, 8GB, 12GB, 16GB, SO-DIMM, Backlit, Chiclet, 4-Zone RGB, Smart, Amp, system, Thermal, Grizzly, Liquid, Metal, Compound, Electro, Punk, Impact, TYPE-C, Device, Lighting, Videocard, Screen, Disk space, Operating system, RAM, Black, Eclipse, Gray, Dolby, Atmos, AI, Light Bar, Credit card, 1TB, 512GB, Glacier, Blue, noise-canceling, technology, Alienware, Aurora, NVIDIA, Intel Core i9,  GeForce, AMD, Radeon, Sony, Vaio, laptop, warranty, crypto, currencies, bitcoin, currency, Full escrow, escrow, etherium, monero, litecoin, bitcoin cache, etherium classic, wallet, Linux, install, bulk, earn money, reseller program, discount, dash, doge, zcash, unity, digi byte, ERC-20, token, buy, buy laptop, buy computer, buy phone, buy gaming, 2021, newest, model, Chipset, U-DIMM, Intel, I211-AT, RJ45, Gigabit, Ethernet, SupremeFX, CODEC, Liquid Cooler, Playstation, Nintendo, Cherry, Flare, Gladius, Balteus, Mouse Pad, Scabbard, Extra-Large, Anti-fray, Slip-free, Spill-resistant, resistant, THRONE, QI/US/AS, VGA, Face,  Mask, Keystone, Carry, handle, transparent, glass panel, Star, Moonlight, heatsink, GameFirst, Sonic Studio, Sonic Radar, Aura Creator, XSplit, Gamecaster, Android, iOS, App, Android 10, Android 11, Windows 10, Windows 11, Summer Sales, sale, Lunar, Dark, Side, Moon, Killer" name="keywords"/>
+  <meta content="Buy computers, laptops, desktops, phones, monitors, displays, gaming, electronics at retail or in bulk - Asus Rog, Alienware, Vaio, Sony Vaio. Windows or Linux distributions - Black Arch, Kali, Arch Linux, Qubes, Linux Mint, Ubuntu, RedHat, FreeBSD, Debian, Fedora, Slackware, Fedora, OpenSUSE, Mandriva, Gentoo, CentOS, Solaris, etc. by your order. Summer Sales lasting a few months! 20-45% off! Reseller Discount - 10%-20% off! Full multisignature escrow for protection of your funds." name="description"/>
+  <meta content="INDEX, FOLLOW" name="ROBOTS"/>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <meta content="0" http-equiv="expires"/>
+  <script src="jquery-3.6.0.min.js">
+  </script>
+  <script>
+   function CheckBrowser() {
+    if ('localStorage' in window && window['localStorage'] !== null) {
+        // We can use localStorage object to store data.
+        return true;
+    } else {
+            return false;
+    }
+}
+
+function doShowAll() {
+ $(document).ready(function(){
+    if (CheckBrowser()) {
+        var key = "";
+        var list = "<tr><th>Item</th><th>Price</th><th>Quantity</th><th>Price total</th><th></th></tr>\n";
+        var i = 0;
+        //For a more advanced feature, you can set a cap on max items in the cart.
+        for (i = 0; i <= localStorage.length-1; i++) {
+            key = localStorage.key(i);
+            var cartValue = localStorage.getItem(key);
+var cartObj = JSON.parse( cartValue );
+            list += "<tr><td class='itemInCartTd'><div class='itemInCart' onmouseover='SaveItemLinux()'>" + key + "</div><input class='itemInCartInput' size='14' name='OrderedItem'></td>\n<td class='ItemPriceInCart'><span class='PriceInCartOld'>" + cartObj.dataOld  + "</span><br><span class='PriceInCartNew'>"
+              + cartObj.data  + "</span></td><td class='quantity'><span class='cartQty'>" + cartObj.qty  + "</span><br><br><br>Change<br>quantity:<br><select title='Change quantity' onmouseover='changeQuantity()' class='cartItemQuantity' name='qty'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option><option value='32'>32</option><option value='33'>33</option><option value='34'>34</option><option value='35'>35</option><option value='36'>36</option><option value='37'>37</option><option value='38'>38</option><option value='39'>39</option><option value='40'>40</option><option value='41'>41</option><option value='42'>42</option><option value='43'>43</option><option value='44'>44</option><option value='45'>45</option><option value='46'>46</option><option value='47'>47</option><option value='48'>48</option><option value='49'>49</option><option value='50'>50</option><option value='51'>51</option><option value='52'>52</option><option value='53'>53</option><option value='54'>54</option><option value='55'>55</option><option value='56'>56</option><option value='57'>57</option><option value='58'>58</option><option value='59'>59</option><option value='60'>60</option><option value='61'>61</option><option value='62'>62</option><option value='63'>63</option><option value='64'>64</option><option value='65'>65</option><option value='66'>66</option><option value='67'>67</option><option value='68'>68</option><option value='69'>69</option><option value='70'>70</option><option value='71'>71</option><option value='72'>72</option><option value='73'>73</option><option value='74'>74</option><option value='75'>75</option><option value='76'>76</option><option value='77'>77</option><option value='78'>78</option><option value='79'>79</option><option value='80'>80</option><option value='81'>81</option><option value='82'>82</option><option value='83'>83</option><option value='84'>84</option><option value='85'>85</option><option value='86'>86</option><option value='87'>87</option><option value='88'>88</option><option value='89'>89</option><option value='90'>90</option><option value='91'>91</option><option value='92'>92</option><option value='93'>93</option><option value='94'>94</option><option value='95'>95</option><option value='96'>96</option><option value='97'>97</option><option value='98'>98</option><option value='99'>99</option><option value='100'>100</option><option value='101'>101</option><option value='102'>102</option><option value='103'>103</option><option value='104'>104</option><option value='105'>105</option><option value='106'>106</option><option value='107'>107</option><option value='108'>108</option><option value='109'>109</option><option value='110'>110</option><option value='111'>111</option><option value='112'>112</option><option value='113'>113</option><option value='114'>114</option><option value='115'>115</option><option value='116'>116</option><option value='117'>117</option><option value='118'>118</option><option value='119'>119</option><option value='120'>120</option><option value='121'>121</option><option value='122'>122</option><option value='123'>123</option><option value='124'>124</option><option value='125'>125</option><option value='126'>126</option><option value='127'>127</option><option value='128'>128</option><option value='129'>129</option><option value='130'>130</option><option value='131'>131</option><option value='132'>132</option><option value='133'>133</option><option value='134'>134</option><option value='135'>135</option><option value='136'>136</option><option value='137'>137</option><option value='138'>138</option><option value='139'>139</option><option value='140'>140</option><option value='141'>141</option><option value='142'>142</option><option value='143'>143</option><option value='144'>144</option><option value='145'>145</option><option value='146'>146</option><option value='147'>147</option><option value='148'>148</option><option value='149'>149</option><option value='150'>150</option><option value='151'>151</option><option value='152'>152</option><option value='153'>153</option><option value='154'>154</option><option value='155'>155</option><option value='156'>156</option><option value='157'>157</option><option value='158'>158</option><option value='159'>159</option><option value='160'>160</option><option value='161'>161</option><option value='162'>162</option><option value='163'>163</option><option value='164'>164</option><option value='165'>165</option><option value='166'>166</option><option value='167'>167</option><option value='168'>168</option><option value='169'>169</option><option value='170'>170</option><option value='171'>171</option><option value='172'>172</option><option value='173'>173</option><option value='174'>174</option><option value='175'>175</option><option value='176'>176</option><option value='177'>177</option><option value='178'>178</option><option value='179'>179</option><option value='180'>180</option><option value='181'>181</option><option value='182'>182</option><option value='183'>183</option><option value='184'>184</option><option value='185'>185</option><option value='186'>186</option><option value='187'>187</option><option value='188'>188</option><option value='189'>189</option><option value='190'>190</option><option value='191'>191</option><option value='192'>192</option><option value='193'>193</option><option value='194'>194</option><option value='195'>195</option><option value='196'>196</option><option value='197'>197</option><option value='198'>198</option><option value='199'>199</option><option value='200'>200</option><option value='201'>201</option><option value='202'>202</option><option value='203'>203</option><option value='204'>204</option><option value='205'>205</option><option value='206'>206</option><option value='207'>207</option><option value='208'>208<option value='209'>209</option><option value='210'>210</option><option value='211'>211</option><option value='212'>212</option><option value='213'>213</option><option value='214'>214</option><option value='215'>215</option><option value='216'>216</option><option value='217'>217</option><option value='218'>218</option><option value='219'>219</option><option value='220'>220</option><option value='221'>221</option><option value='222'>222</option><option value='223'>223</option><option value='224'>224</option><option value='225'>225</option><option value='226'>226</option><option value='227'>227</option><option value='228'>228</option><option value='229'>229</option><option value='230'>230</option><option value='231'>231</option><option value='232'>232</option><option value='233'>233</option><option value='234'>234</option><option value='235'>235</option><option value='236'>236</option><option value='237'>237</option><option value='238'>238</option><option value='239'>239</option><option value='240'>240</option><option value='241'>241</option><option value='242'>242</option><option value='243'>243</option><option value='244'>244</option><option value='245'>245</option><option value='246'>246</option><option value='247'>247</option><option value='248'>248</option><option value='249'>249</option><option value='250'>250</option><option value='251'>251</option><option value='252'>252</option><option value='253'>253</option><option value='254'>254</option><option value='255'>255</option><option value='256'>256</option><option value='257'>257</option><option value='258'>258</option><option value='259'>259</option><option value='260'>260</option><option value='261'>261</option><option value='262'>262</option><option value='263'>263</option><option value='264'>264</option><option value='265'>265</option><option value='266'>266</option><option value='267'>267</option><option value='268'>268</option><option value='269'>269</option><option value='270'>270</option><option value='271'>271</option><option value='272'>272</option><option value='273'>273</option><option value='274'>274</option><option value='275'>275</option><option value='276'>276</option><option value='277'>277</option><option value='278'>278</option><option value='279'>279</option><option value='280'>280</option><option value='281'>281</option><option value='282'>282</option><option value='283'>283</option><option value='284'>284</option><option value='285'>285</option><option value='286'>286</option><option value='287'>287</option><option value='288'>288</option><option value='289'>289</option><option value='290'>290</option><option value='291'>291</option><option value='292'>292</option><option value='293'>293</option><option value='294'>294</option><option value='295'>295</option><option value='296'>296</option><option value='297'>297</option><option value='298'>298</option><option value='299'>299</option><option value='300'>300</option></select></td><td class='PriceTotalInCart'><span class='PriceTotalInCartOld'></span><br><span class='PriceTotalInCartNew'></span></td><td><input type='button' value='Delete' onmouseover='RemoveItem()' class='DeleteCartItem'></td></tr>\n";
+
+        }
+
+        //If no item exists in the cart.
+        if (list == "<tr><th>Item</th><th>Price</th><th>Quantity</th><th>Price total</th><th></th></tr>\n")
+        {
+            list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td><td><i>empty</i></td>\n<td><i>empty</i></td><td></td></tr>\n";
+        }
+        //Bind the data to HTML table.
+        //You can use jQuery, too.
+        document.getElementById('list').innerHTML = list;
+        //$(‘#list’).html()=list;
+        $("div.itemInCart").each(function () {
+           var itemInCartText = $(this).text();
+        	  $(this).next("input.itemInCartInput").val(itemInCartText);
+        });
+         $("div.itemInCart:contains('Install')").parent("td.itemInCartTd").siblings("td.quantity").addClass("quantityInst");
+         calculateTotalPrice();
+
+         $("select.cartItemQuantity option").filter(function() {
+          var cartQty = $(this).parent("select.cartItemQuantity").prevAll("span.cartQty").text();
+          //may want to use $.trim in here
+          return $(this).text() == cartQty;
+        }).prop('selected', true);
+
+    } else {
+        alert('Cannot save shopping list as your browser does not support HTML 5');
+    }
+  });
+}
+
+
+$(document).ready(function(){
+  doShowAll();
+});
+
+
+
+function calculateTotalPrice() {
+   //$("td.ItemPriceInCart").children("span.PriceInCartOld").each(function() {
+    $("span.PriceInCartOld").each(function() {
+       var ItemPriceInCart = 0;
+       var ItemPriceInCart = $(this).text();
+       var ReplacedPriceInCart = 0;
+       var ReplacedPriceInCart = ItemPriceInCart.replace(/\$/g,'');
+       var calculated_total_sum = 0;
+       var Qty = 0;
+       var parsedReplacedPriceInCart = 0;
+       var parsedQty = 0;
+       var Qty = $(this).parent("td.ItemPriceInCart").next("td.quantity").children(".cartQty").text();
+       if ($.isNumeric(ReplacedPriceInCart)) {
+       parsedReplacedPriceInCart = parseFloat(ReplacedPriceInCart);}
+       else {
+       parsedReplacedPriceInCart == 0;}
+       if ($.isNumeric(Qty)) {
+       parsedQty = parseFloat(Qty);}
+       else {
+       parsedQty == 0;}
+       calculated_total_sum += parsedReplacedPriceInCart * parsedQty;
+       $(this).parent("td.ItemPriceInCart").nextAll("td.PriceTotalInCart").children("span.PriceTotalInCartOld").text(calculated_total_sum).prepend("$");
+  });
+  $("td.ItemPriceInCart").children("span.PriceInCartNew").each(function() {
+       var ItemPriceInCart = $(this).text();
+       var ReplacedPriceInCart = ItemPriceInCart.replace(/\$/g,'');
+       var calculated_total_sum = 0;
+       var Qty = $(this).parent("td.ItemPriceInCart").next("td.quantity").children(".cartQty").text();
+       if ($.isNumeric(ReplacedPriceInCart)) {
+       parsedReplacedPriceInCart = parseFloat(ReplacedPriceInCart);}
+       if ($.isNumeric(Qty)) {
+       parsedQty = parseFloat(Qty);}
+       calculated_total_sum += parsedReplacedPriceInCart * parsedQty;
+       $(this).parent("td.ItemPriceInCart").nextAll("td.PriceTotalInCart").children("span.PriceTotalInCartNew").text(calculated_total_sum).prepend("$");
+  });
+  calculateSubtotalPriceQuantity();
+}
+
+
+function calculateSubtotalPriceQuantity() {
+      $("#PriceSubtotalOld").text("");
+      $("#PriceSubtotalNew").text("");
+      $("#QuantitySubtotal").text("");
+      var SubotalPriceOld=0;
+      $("td.PriceTotalInCart").children("span.PriceTotalInCartOld").each(function(){
+      var total_sum = $(this).text();
+      var ReplacedTotal_sum = total_sum.replace(/\$/g,'');
+      if ($.isNumeric(ReplacedTotal_sum)) {
+      SubotalPriceOld += parseFloat(ReplacedTotal_sum);}
+      $("#PriceSubtotalOld").text(SubotalPriceOld).prepend("$");
+      });
+      var SubotalPriceNew=0;
+      $("td.PriceTotalInCart").children("span.PriceTotalInCartNew").each(function(){
+      var total_sum = $(this).text();
+      var ReplacedTotal_sum = total_sum.replace(/\$/g,'');
+      if ($.isNumeric(ReplacedTotal_sum)) {
+      SubotalPriceNew += parseFloat(ReplacedTotal_sum);}
+      $("#PriceSubtotalNew").text(SubotalPriceNew).prepend("$");
+      });
+   var SubotalQuantity=0;
+      $("td.quantity").not(".quantityInst").each(function(){
+      var total_quantity = $(this).children("span.cartQty").text();
+      if ($.isNumeric(total_quantity)) {
+      SubotalQuantity += parseFloat(total_quantity);}
+      $("#QuantitySubtotal").text(SubotalQuantity);
+    });
+
+
+   if(SubotalQuantity > 1 && SubotalQuantity < 5) {
+   $("span#ResellerDiscount").text("10%");
+   var SubotalPriceDisc =  SubotalPriceNew - (SubotalPriceNew * (10 / 100));
+   $("#PriceSubtotalAftResellDisc").text(SubotalPriceDisc.toFixed(0)).prepend("$");
+   $("#PriceSubtAftResellDisc").val(SubotalPriceDisc.toFixed(0));
+   var SubotalPriceDiscFixed = SubotalPriceDisc.toFixed(0);
+   sessionStorage.setItem("PriceSubtotalAftAllDisc", SubotalPriceDiscFixed);
+   }
+   if(SubotalQuantity >= 5) {
+   $("span#ResellerDiscount").text("20%");
+   var SubotalPriceDisc =  SubotalPriceNew - (SubotalPriceNew * (20 / 100));
+   $("#PriceSubtotalAftResellDisc").text(SubotalPriceDisc.toFixed(0)).prepend("$");
+   $("#PriceSubtAftResellDisc").val(SubotalPriceDisc.toFixed(0));
+   var SubotalPriceDiscFixed = SubotalPriceDisc.toFixed(0);
+   sessionStorage.setItem("PriceSubtotalAftAllDisc", SubotalPriceDiscFixed);
+   }
+   if(SubotalQuantity == 1) {
+   $("span#ResellerDiscount").text("0%");
+   var SubotalPriceDisc =  SubotalPriceNew - (SubotalPriceNew * (0 / 100));
+   $("#PriceSubtotalAftResellDisc").text(SubotalPriceDisc.toFixed(0)).prepend("$");
+   $("#PriceSubtAftResellDisc").val(SubotalPriceDisc.toFixed(0));
+   var SubotalPriceDiscFixed = SubotalPriceDisc.toFixed(0);
+   sessionStorage.setItem("PriceSubtotalAftAllDisc", SubotalPriceDiscFixed);
+   }
+   if(SubotalQuantity == 0) {
+   $("span#ResellerDiscount").text("0%");
+   var SubotalPriceDisc =  SubotalPriceNew - (SubotalPriceNew * (0 / 100));
+   $("#PriceSubtotalAftResellDisc").text(SubotalPriceDisc.toFixed(0)).prepend("$");
+   $("#PriceSubtAftResellDisc").val(SubotalPriceDisc.toFixed(0));
+   var SubotalPriceDiscFixed = SubotalPriceDisc.toFixed(0);
+   sessionStorage.setItem("PriceSubtotalAftAllDisc", SubotalPriceDiscFixed);
+   }
+
+        var Savings = 0;
+        var Savings = SubotalPriceOld - SubotalPriceDisc;
+        if (!isNaN(Savings)) {
+        $("#savings").text(Savings.toFixed(0)).prepend("$");}
+
+}
+
+function calculateSubtotalQuantityWithoutInst() {
+      $("#QuantitySubtotal").text("");
+      var SubotalQuantity=0;
+      $("td.quantity").not(".quantityInst").each(function(){
+      //var total_quantity = $(this).children("span.cartQty").text();
+      var total_quantity = $(this).children("select.cartItemQuantity option:selected").text();
+      if ($.isNumeric(total_quantity)) {
+      SubotalQuantity += parseFloat(total_quantity);}
+      $("#QuantitySubtotal").text(SubotalQuantity);
+      });
+}
+
+function SaveItemLinux() {
+  $("div.itemInCart").children("img.comp").click(function() {
+    var itemToInstallOn = $(this).parent("div.itemInCart").text();
+    var OScart = $("#chooseOScart option:selected").text();
+    var nameInst = "Install\n" + OScart + "\n" + "on\n" + itemToInstallOn;
+    var data = "$50";
+    var dataOld = "$90";
+    var qty = "1";
+    var cartItemInst = {
+    nameInst,
+    data,
+    dataOld,
+    qty
+    };
+var jsonStrInst = JSON.stringify( cartItemInst );
+    localStorage.setItem(nameInst, jsonStrInst);
+    doShowAll();
+});
+}
+
+
+function changeQuantity() {
+  $("select.cartItemQuantity").change(function() {
+   var name = $(this).parent("td").prevAll("td.itemInCartTd").children(".itemInCart").html();
+   var data = $(this).parent("td").prev(".ItemPriceInCart").children("span.PriceInCartNew").text();
+   var dataOld = $(this).parents("td").prev(".ItemPriceInCart").children("span.PriceInCartOld").text();
+   var qty = $(this).children("option:selected").text();
+   var cartItem = {
+   name,
+   data,
+   dataOld,
+   qty
+   };
+  var jsonStr = JSON.stringify( cartItem );
+   localStorage.setItem(name, jsonStr);
+   doShowAll();
+  });
+}
+
+function RemoveItem(){
+  $(".DeleteCartItem").click(function()
+  {
+    var name = $(this).parent("td").siblings("td.itemInCartTd").children(".itemInCart").html();
+    localStorage.removeItem(name);
+    doShowAll();
+  });
+}
+
+function ClearAll() {
+    localStorage.clear();
+    doShowAll();
+    $("th#PriceSubtotalAftResellDisc").text("");
+    $("span#PriceSubtotalNew").text("");
+    $("span#PriceSubtotalOld").text("");
+    $("#QuantitySubtotal").text("");
+    $("#savings").text("");
+}
+
+function genOrderId() {
+    var clientOrderId = Math.random().toString(36).slice(2);
+    var clientOrderId1 = Math.random().toString(36).slice(2);
+    var clientOrderId2 = Math.random().toString(36).slice(2);
+    var clientOrderId3 = Math.random().toString(36).slice(2);
+    var clientOrderId4 = Math.random().toString(36).slice(2);
+    var clientOrderIds = clientOrderId + clientOrderId1 + clientOrderId2 + clientOrderId3 + clientOrderId4;
+    sessionStorage.setItem("ClientOrderIds", JSON.stringify(clientOrderIds));
+}
+  </script>
+ </head>
+ <body onfocus="doShowAll()" onload="doShowAll()">
+  <header>
+   <div align="center" class="header">
+    <div class="nav">
+     <a class="nav" href="home.html">
+      FAQ
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="blog.html">
+      Blog
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="contact.html">
+      Contact us
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="buy-in-bulk.html">
+      Buy in bulk
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="Images.html">
+      Images
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="place-your-banner-for-free.html">
+      Place banner
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="client-cart.html" target="ShoppingList">
+      Client cart
+     </a>
+    </div>
+    <div style="clear: both;">
+    </div>
+    <div class="nav">
+     <a class="nav" href="laptops.html">
+      Sony Vaio
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="refurbished.html">
+      Refurbished
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="Alienware-Aurora.html">
+      Alienware Aurora
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="Alienware-x17.html">
+      Alienware x17
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="Alienware-m15-Ryzen.html">
+      Alienware Ryzen
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="ROG_Strix_Mid_Tower.html">
+      Strix Mid Tower
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog.html">
+      ROG Zephyrus
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog_flow.html">
+      ROG Flow
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog_gaming_monitors.html">
+      ROG Monitors
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog_gaming_phones.html">
+      ROG phones
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog_strix.html">
+      ROG Strix
+     </a>
+    </div>
+    <div class="nav">
+     <a class="nav" href="rog_strix_full_tower.html">
+      Strix Full Tower
+     </a>
+    </div>
+    <h1 class="headertext">
+     Summer Sales lasting a few months! 20-45% off!
+     <br/>
+     Full escrow! ~60 cryptocurrencies accepted!
+    </h1>
+   </div>
+  </header>
+  <div class="contentdiv">
+   <div class="thankyoudiv">
+    <h3>
+     Thank you for your order!
+    </h3>
+    <p>
+     This page requires javascript, localStorage and HTML5.
+    </p>
+    <p>
+     Don`t mix localStorage and cookies. They aren`t the same. We do not set any cookies on your browser. You can use our web site with totally blocked cookies.
+    </p>
+    <p>
+     This page contains client cart, API and has much advantages such as possibilities to order different items in one order, easily add and remove, easily change quantity, order Linux installation, add the same items of different colors. This page automatically counts quantity, Reseller Discount and total price, and does everything for you so that you don`t need to do anything yourself.
+    </p>
+    <p>
+     But if you clicked under the item on "Add to cart with javascript" and after that the client cart on this page is empty, you have the following choices:
+    </p>
+    <ul>
+     <li>
+      Try to go back and click again.
+     </li>
+     <li>
+      Enable javascript in your browser.
+     </li>
+     <li>
+      Enable localStorage in your browser.
+     </li>
+     <li>
+      Use another browser, if this browser is so ancient that do not support localStorage and HTML5.
+     </li>
+     <li>
+      Go back to the item and proceed with "Order without javascript"
+     </li>
+    </ul>
+    <p>
+    </p>
+   </div>
+   <div class="thankyoudiv">
+    <form action="/php/Completing-order-with-javascript.php" autocomplete="on" method="get" name="ShoppingList" target="_self">
+     <fieldset>
+      <legend>
+       <h2>
+        Your shopping cart
+       </h2>
+      </legend>
+      <p>
+       You are already enjoying of significant Summer Sales discounts!
+      </p>
+      <p>
+       We have Reseller Discount also.
+      </p>
+      <p>
+       If you buy 1 item - no Reseller Discount, 2-4 items - 10% Reseller Discount, 5 or more items - 20% Reseller Discount.
+      </p>
+      <p>
+       Buy in bulk! Then sell to your friends. Our Reseller Program is just for You.
+      </p>
+      <p>
+       Start earning money with us!
+      </p>
+      <p>
+       Your Shopping Cart remembers what you have added to it. You can continue shopping now by opening another page or going back and adding another items.
+      </p>
+      <p>
+       Many items are sold in different colors or with different GPU etc. If you want a few the same items but with different options, simply go back to the page with the item, change there option, as example it`s color, and click again on "Add to cart with javascript". You will find 2 the same items in the Shopping Cart, but with different colors!
+      </p>
+      <input id="PriceSubtAftResellDisc" name="PriceSubtotal" style="display: none;"/>
+      <table id="list">
+      </table>
+      <table id="listSubtotal" title="If you buy 1 item - no Reseller Discount, 2-4 items - 10% Reseller Discount, 5 or more items - 20% Reseller Discount.
+    Buy in bulk! Then sell to your friends. Our Reseller Program is just for You.
+    Start earning money with us!">
+       <tbody>
+        <tr>
+         <th style="text-decoration: line-through; font-weight: normal;">
+          Price subtotal without discounts:
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+          <span id="PriceSubtotalOld">
+          </span>
+         </th>
+         <th>
+         </th>
+        </tr>
+        <tr>
+         <th>
+          Price subtotal after Summer Sales discounts:
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+          <span id="PriceSubtotalNew">
+          </span>
+         </th>
+         <th>
+         </th>
+        </tr>
+        <tr>
+         <th>
+          Quantity subtotal without installations:
+         </th>
+         <th>
+         </th>
+         <th id="QuantitySubtotal">
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+        </tr>
+        <tr>
+         <th>
+          Your Reseller Discount:
+          <span id="ResellerDiscount">
+          </span>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+        </tr>
+        <tr>
+         <th>
+          Price subtotal after Reseller Discount:
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th id="PriceSubtotalAftResellDisc">
+         </th>
+         <th>
+         </th>
+        </tr>
+        <tr>
+         <th>
+          You have saved on discounts:
+          <span id="savings">
+          </span>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         </th>
+        </tr>
+       </tbody>
+      </table>
+      <label>
+       <input onclick="ClearAll()" type="button" value="Clear"/>
+       * Delete all items
+      </label>
+     </fieldset>
+     <br/>
+     <br/>
+     <fieldset>
+      <legend>
+       <h2>
+        Do you want Linux or Windows 7/8?
+       </h2>
+      </legend>
+      <p>
+       All computers and laptops which we are selling currently have Windows 10 Home or Pro installed. If this is what you want, you should not do anything in this section. But if you want Linux or downgrading Windows to 7 or 8, then:
+      </p>
+      <ul>
+       <li>
+        First choose here OS you want:
+        <select id="chooseOScart">
+         <option value="Debian 10">
+          Debian 10
+         </option>
+         <option value="Debian 11">
+          Debian 11
+         </option>
+         <option value="Fedora 34">
+          Fedora 34
+         </option>
+         <option value="Fedora 33">
+          Fedora 33
+         </option>
+         <option value="OpenBSD">
+          OpenBSD
+         </option>
+         <option value="Qubes 4.1 Alpha">
+          Qubes 4.1 Alpha
+         </option>
+         <option value="Qubes 4.0">
+          Qubes 4.0
+         </option>
+         <option value="Ubuntu 20 LTS">
+          Ubuntu 20 LTS
+         </option>
+         <option value="Ubuntu 21">
+          Ubuntu 21
+         </option>
+         <option value="Linux Mint 20.1 Cinnamon">
+          Linux Mint 20.1 Cinnamon
+         </option>
+         <option value="Linux Mint 20.1 MATE">
+          Linux Mint 20.1 MATE
+         </option>
+         <option value="Linux Mint 20.1 Xfce">
+          Linux Mint 20.1 Xfce
+         </option>
+         <option value="Linux Mint">
+          Linux Mint 20.2 Cinnamon
+         </option>
+         <option value="Linux Mint 20.2 MATE">
+          Linux Mint 20.2 MATE
+         </option>
+         <option value="Linux Mint 20.2 Xfce">
+          Linux Mint 20.2 Xfce
+         </option>
+         <option value="OpenSUSE">
+          OpenSUSE
+         </option>
+         <option value="PCLinuxOS">
+          PCLinuxOS
+         </option>
+         <option value="Mandriva">
+          Mandriva
+         </option>
+         <option value="Gentoo">
+          Gentoo
+         </option>
+         <option value="CentOS">
+          CentOS
+         </option>
+         <option value="Solaris">
+          Solaris
+         </option>
+         <option value="FreeBSD">
+          FreeBSD
+         </option>
+         <option value="Red Hat">
+          RedHat
+         </option>
+         <option value="Arch Linux">
+          Arch Linux
+         </option>
+         <option value="Slackware">
+          Slackware
+         </option>
+         <option value="Puppy Linux">
+          Puppy Linux
+         </option>
+         <option value="Kubuntu">
+          Kubuntu
+         </option>
+         <option value="Zorin OS">
+          Zorin OS
+         </option>
+         <option value="Sto Amigo">
+          Sto Amigo
+         </option>
+         <option value="Elementary OS">
+          Elementary OS
+         </option>
+         <option value="Kali Linux">
+          Kali Linux
+         </option>
+         <option value="Parrot OS">
+          Parrot OS
+         </option>
+         <option value="Black Arch">
+          Black Arch
+         </option>
+         <option value="Manjaro">
+          Manjaro
+         </option>
+         <option value="Windows 7">
+          Windows 7
+         </option>
+         <option value="Windows 8">
+          Windows 8
+         </option>
+         <option value="Linux distribution which is not on this list">
+          Linux distribution which is not on the list
+         </option>
+        </select>
+       </li>
+       <li>
+        Send us e-mail to
+        <a href="mailto:sonyvaiotrading@dnmx.org">
+         sonyvaiotrading@dnmx.org
+        </a>
+        after completing order, if You have chosen last option, to let us know which distribution you want.
+       </li>
+       <li>
+        Then click on the image of the computer or laptop above in the cart, on which you want this OS to be installed. Installation order should appear in the cart. Scroll a little to find it. Our system does not react, if you click on image of phone or monitor.
+       </li>
+       <li>
+        If you order a few computers or laptops of the same model, then decide on how many of them you want installation of this operating system. By default it`s 1. So if you leave it so, and you ordered a few of this model, it means that rest of them would preserve Windows 10. Otherwise you choose a few installations of this operating system on this model.
+       </li>
+       <li>
+        If you order a few computers or laptops of the same model, you maybe want one operating system on one or few of them and some another operating system on one or few of them. Then choose that another operating system again in the list and click again on the same image.
+       </li>
+       <li>
+        If you want some another operating system on another model, the again first choose OS, then click on that another model`s image, then choose quantity.
+       </li>
+       <li>
+        Whenever you make mistake or changed your mind, there is always "Delete" button at your disposal.
+       </li>
+      </ul>
+      <p>
+       Most of Linux operating systems can be installed to every model without any issues. Downgrading of Windows also is not problem for us. But some OS, like Qubes, especially Qubes 4.1 Alfa, are nasty. They have strict hardware requirements, so if there are difficulties with installation of such OS, we would contact you by email for discussing further steps.
+      </p>
+      <p>
+       Installation of Linux or downgrading Windows costs
+       <del>
+        $90
+       </del>
+       <span style="color: red;">
+        $50.
+       </span>
+      </p>
+      <p>
+       <a href="./articles/millions_choose_not_to_upgrade.html" target="_blank">
+        Why downgrading Windows?
+       </a>
+      </p>
+      <p>
+       <a href="./articles/windows_7_is_still_running.html" target="_blank">
+        Windows 7 is still running
+       </a>
+      </p>
+     </fieldset>
+     <fieldset>
+      <legend>
+       <h2>
+        Your personal information and shipping address:
+       </h2>
+      </legend>
+      <p>
+       Used just for shipping. According to our high privacy policies, first name, last name and your address deleted from our database directly after shipping order to you. We never share your private information with anybody.
+      </p>
+      <p>
+       Your email address, information about what have you ordered, payment information and your order id remain on our server during 3 months for communication with you and resolving issues, if such happen. We never share your email address or information about you and your orders with anybody. You can always request by email to delete all information about you from  our database.
+      </p>
+      <p>
+       Just english alphabet letters with spaces between words, digits, - , and email address, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn"
+      </p>
+      <p>
+       If you order for someone else, you would specify name and address of the receiver instead of yours.
+      </p>
+      First name:
+      <br/>
+      <input autofocus="on" maxlength="20" name="first name" pattern="[A-Za-z ]{2,20}" placeholder="First name" required="required" size="50" title="just human name in english alphabet letters with spaces between words, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <br/>
+      Last name:
+      <br/>
+      <input maxlength="20" name="last name" pattern="[A-Za-z ]{2,20}" placeholder="Last name" required="required" size="50" title="just human name in english alphabet letters with spaces between words, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <br/>
+      Your email:
+      <br/>
+      <input maxlength="30" name="email" placeholder="Your email" size="50" title="just email" type="email" value=""/>
+      <br/>
+      Country:
+      <br/>
+      <input list="countries" maxlength="20" name="country" pattern="[A-Za-z -]{2,20}" placeholder="Country" required="required" size="50" title="just country name in english alphabet letters with spaces between words and -, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <datalist id="countries">
+       <option value="Afganistan">
+       </option>
+       <option value="Albania">
+       </option>
+       <option value="Algeria">
+       </option>
+       <option value="American Samoa">
+       </option>
+       <option value="Andorra">
+       </option>
+       <option value="Angola">
+       </option>
+       <option value="Anguilla">
+       </option>
+       <option value="Antigua &amp; Barbuda">
+       </option>
+       <option value="Argentina">
+       </option>
+       <option value="Armenia">
+       </option>
+       <option value="Aruba">
+       </option>
+       <option value="Australia">
+       </option>
+       <option value="Austria">
+       </option>
+       <option value="Azerbaijan">
+       </option>
+       <option value="Bahamas">
+       </option>
+       <option value="Bahrain">
+       </option>
+       <option value="Bangladesh">
+       </option>
+       <option value="Barbados">
+       </option>
+       <option value="Belarus">
+       </option>
+       <option value="Belgium">
+       </option>
+       <option value="Belize">
+       </option>
+       <option value="Benin">
+       </option>
+       <option value="Bermuda">
+       </option>
+       <option value="Bhutan">
+       </option>
+       <option value="Bolivia">
+       </option>
+       <option value="Bonaire">
+       </option>
+       <option value="Bosnia &amp; Herzegovina">
+       </option>
+       <option value="Botswana">
+       </option>
+       <option value="Brazil">
+       </option>
+       <option value="British Indian Ocean Ter">
+       </option>
+       <option value="Brunei">
+       </option>
+       <option value="Bulgaria">
+       </option>
+       <option value="Burkina Faso">
+       </option>
+       <option value="Burundi">
+       </option>
+       <option value="Cambodia">
+       </option>
+       <option value="Cameroon">
+       </option>
+       <option value="Canada">
+       </option>
+       <option value="Canary Islands">
+       </option>
+       <option value="Cape Verde">
+       </option>
+       <option value="Cayman Islands">
+       </option>
+       <option value="Central African Republic">
+       </option>
+       <option value="Chad">
+       </option>
+       <option value="Channel Islands">
+       </option>
+       <option value="Chile">
+       </option>
+       <option value="China">
+       </option>
+       <option value="Christmas Island">
+       </option>
+       <option value="Cocos Island">
+       </option>
+       <option value="Colombia">
+       </option>
+       <option value="Comoros">
+       </option>
+       <option value="Congo">
+       </option>
+       <option value="Cook Islands">
+       </option>
+       <option value="Costa Rica">
+       </option>
+       <option value="Cote DIvoire">
+       </option>
+       <option value="Croatia">
+       </option>
+       <option value="Cuba">
+       </option>
+       <option value="Curaco">
+       </option>
+       <option value="Cyprus">
+       </option>
+       <option value="Czech Republic">
+       </option>
+       <option value="Denmark">
+       </option>
+       <option value="Djibouti">
+       </option>
+       <option value="Dominica">
+       </option>
+       <option value="Dominican Republic">
+       </option>
+       <option value="East Timor">
+       </option>
+       <option value="Ecuador">
+       </option>
+       <option value="Egypt">
+       </option>
+       <option value="El Salvador">
+       </option>
+       <option value="Equatorial Guinea">
+       </option>
+       <option value="Eritrea">
+       </option>
+       <option value="Estonia">
+       </option>
+       <option value="Ethiopia">
+       </option>
+       <option value="Falkland Islands">
+       </option>
+       <option value="Faroe Islands">
+       </option>
+       <option value="Fiji">
+       </option>
+       <option value="Finland">
+       </option>
+       <option value="France">
+       </option>
+       <option value="French Guiana">
+       </option>
+       <option value="French Polynesia">
+       </option>
+       <option value="French Southern Ter">
+       </option>
+       <option value="Gabon">
+       </option>
+       <option value="Gambia">
+       </option>
+       <option value="Georgia">
+       </option>
+       <option value="Germany">
+       </option>
+       <option value="Ghana">
+       </option>
+       <option value="Gibraltar">
+       </option>
+       <option value="Great Britain">
+       </option>
+       <option value="Greece">
+       </option>
+       <option value="Greenland">
+       </option>
+       <option value="Grenada">
+       </option>
+       <option value="Guadeloupe">
+       </option>
+       <option value="Guam">
+       </option>
+       <option value="Guatemala">
+       </option>
+       <option value="Guinea">
+       </option>
+       <option value="Guyana">
+       </option>
+       <option value="Haiti">
+       </option>
+       <option value="Hawaii">
+       </option>
+       <option value="Honduras">
+       </option>
+       <option value="Hong Kong">
+       </option>
+       <option value="Hungary">
+       </option>
+       <option value="Iceland">
+       </option>
+       <option value="India">
+       </option>
+       <option value="Indonesia">
+       </option>
+       <option value="Iran">
+       </option>
+       <option value="Iraq">
+       </option>
+       <option value="Ireland">
+       </option>
+       <option value="Isle of Man">
+       </option>
+       <option value="Israel">
+       </option>
+       <option value="Italy">
+       </option>
+       <option value="Jamaica">
+       </option>
+       <option value="Japan">
+       </option>
+       <option value="Jordan">
+       </option>
+       <option value="Kazakhstan">
+       </option>
+       <option value="Kenya">
+       </option>
+       <option value="Kiribati">
+       </option>
+       <option value="Korea North">
+       </option>
+       <option value="Korea South">
+       </option>
+       <option value="Kuwait">
+       </option>
+       <option value="Kyrgyzstan">
+       </option>
+       <option value="Laos">
+       </option>
+       <option value="Latvia">
+       </option>
+       <option value="Lebanon">
+       </option>
+       <option value="Lesotho">
+       </option>
+       <option value="Liberia">
+       </option>
+       <option value="Libya">
+       </option>
+       <option value="Liechtenstein">
+       </option>
+       <option value="Lithuania">
+       </option>
+       <option value="Luxembourg">
+       </option>
+       <option value="Macau">
+       </option>
+       <option value="Macedonia">
+       </option>
+       <option value="Madagascar">
+       </option>
+       <option value="Malaysia">
+       </option>
+       <option value="Malawi">
+       </option>
+       <option value="Maldives">
+       </option>
+       <option value="Mali">
+       </option>
+       <option value="Malta">
+       </option>
+       <option value="Marshall Islands">
+       </option>
+       <option value="Martinique">
+       </option>
+       <option value="Mauritania">
+       </option>
+       <option value="Mauritius">
+       </option>
+       <option value="Mayotte">
+       </option>
+       <option value="Mexico">
+       </option>
+       <option value="Midway Islands">
+       </option>
+       <option value="Moldova">
+       </option>
+       <option value="Monaco">
+       </option>
+       <option value="Mongolia">
+       </option>
+       <option value="Montserrat">
+       </option>
+       <option value="Morocco">
+       </option>
+       <option value="Mozambique">
+       </option>
+       <option value="Myanmar">
+       </option>
+       <option value="Nambia">
+       </option>
+       <option value="Nauru">
+       </option>
+       <option value="Nepal">
+       </option>
+       <option value="Netherland Antilles">
+       </option>
+       <option value="Netherlands">
+       </option>
+       <option value="Nevis">
+       </option>
+       <option value="New Caledonia">
+       </option>
+       <option value="New Zealand">
+       </option>
+       <option value="Nicaragua">
+       </option>
+       <option value="Niger">
+       </option>
+       <option value="Nigeria">
+       </option>
+       <option value="Niue">
+       </option>
+       <option value="Norfolk Island">
+       </option>
+       <option value="Norway">
+       </option>
+       <option value="Oman">
+       </option>
+       <option value="Pakistan">
+       </option>
+       <option value="Palau Island">
+       </option>
+       <option value="Palestine">
+       </option>
+       <option value="Panama">
+       </option>
+       <option value="Papua New Guinea">
+       </option>
+       <option value="Paraguay">
+       </option>
+       <option value="Peru">
+       </option>
+       <option value="Phillipines">
+       </option>
+       <option value="Pitcairn Island">
+       </option>
+       <option value="Poland">
+       </option>
+       <option value="Portugal">
+       </option>
+       <option value="Puerto Rico">
+       </option>
+       <option value="Qatar">
+       </option>
+       <option value="Republic of Montenegro">
+       </option>
+       <option value="Republic of Serbia">
+       </option>
+       <option value="Reunion">
+       </option>
+       <option value="Romania">
+       </option>
+       <option value="Russia">
+       </option>
+       <option value="Rwanda">
+       </option>
+       <option value="St Barthelemy">
+       </option>
+       <option value="St Eustatius">
+       </option>
+       <option value="St Helena">
+       </option>
+       <option value="St Kitts-Nevis">
+       </option>
+       <option value="St Lucia">
+       </option>
+       <option value="St Maarten">
+       </option>
+       <option value="St Pierre &amp; Miquelon">
+       </option>
+       <option value="St Vincent &amp; Grenadines">
+       </option>
+       <option value="Saipan">
+       </option>
+       <option value="Samoa">
+       </option>
+       <option value="Samoa American">
+       </option>
+       <option value="San Marino">
+       </option>
+       <option value="Sao Tome &amp; Principe">
+       </option>
+       <option value="Saudi Arabia">
+       </option>
+       <option value="Senegal">
+       </option>
+       <option value="Serbia">
+       </option>
+       <option value="Seychelles">
+       </option>
+       <option value="Sierra Leone">
+       </option>
+       <option value="Singapore">
+       </option>
+       <option value="Slovakia">
+       </option>
+       <option value="Slovenia">
+       </option>
+       <option value="Solomon Islands">
+       </option>
+       <option value="Somalia">
+       </option>
+       <option value="South Africa">
+       </option>
+       <option value="Spain">
+       </option>
+       <option value="Sri Lanka">
+       </option>
+       <option value="Sudan">
+       </option>
+       <option value="Suriname">
+       </option>
+       <option value="Swaziland">
+       </option>
+       <option value="Sweden">
+       </option>
+       <option value="Switzerland">
+       </option>
+       <option value="Syria">
+       </option>
+       <option value="Tahiti">
+       </option>
+       <option value="Taiwan">
+       </option>
+       <option value="Tajikistan">
+       </option>
+       <option value="Tanzania">
+       </option>
+       <option value="Thailand">
+       </option>
+       <option value="Togo">
+       </option>
+       <option value="Tokelau">
+       </option>
+       <option value="Tonga">
+       </option>
+       <option value="Trinidad &amp; Tobago">
+       </option>
+       <option value="Tunisia">
+       </option>
+       <option value="Turkey">
+       </option>
+       <option value="Turkmenistan">
+       </option>
+       <option value="Turks &amp; Caicos Is">
+       </option>
+       <option value="Tuvalu">
+       </option>
+       <option value="Uganda">
+       </option>
+       <option value="Ukraine">
+       </option>
+       <option value="United Arab Erimates">
+       </option>
+       <option value="United Kingdom">
+       </option>
+       <option value="United States of America">
+       </option>
+       <option value="Uraguay">
+       </option>
+       <option value="Uzbekistan">
+       </option>
+       <option value="Vanuatu">
+       </option>
+       <option value="Vatican City State">
+       </option>
+       <option value="Venezuela">
+       </option>
+       <option value="Vietnam">
+       </option>
+       <option value="Virgin Islands (Brit)">
+       </option>
+       <option value="Virgin Islands (USA)">
+       </option>
+       <option value="Wake Island">
+       </option>
+       <option value="Wallis &amp; Futana Is">
+       </option>
+       <option value="Yemen">
+       </option>
+       <option value="Zaire">
+       </option>
+       <option value="Zambia">
+       </option>
+       <option value="Zimbabwe">
+       </option>
+      </datalist>
+      <br/>
+      State or province:
+      <br/>
+      <input maxlength="20" name="state or province" pattern="[A-Za-z -]{2,20}" placeholder="State or province" required="required" size="50" title="just state or province in english alphabet letters with spaces between words and -, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <br/>
+      City or town:
+      <br/>
+      <input maxlength="20" name="city or town" pattern="[A-Za-z -]{2,20}" placeholder="City or town" required="required" size="50" title="just city or town in english alphabet letters with spaces between words and -, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <br/>
+      Street:
+      <br/>
+      <input maxlength="20" name="street" pattern="[A-Za-z -]{2,20}" placeholder="Street" required="required" size="50" title="just street in english alphabet letters with spaces between words and -, no accents accepted, eg. Zażółć gęslą jaźń you write as Zazolc gesla jazn" type="text" value=""/>
+      <br/>
+      Number:
+      <br/>
+      <input maxlength="10" name="number" pattern="[A-Za-z0-9 ]{1,}" placeholder="Number" required="required" size="50" title="just digits, english alphabet letters and spaces" type="text" value=""/>
+      <br/>
+      Postal code:
+      <br/>
+      <input maxlength="15" name="postal code" pattern="[A-Za-z0-9 -]{2,}" placeholder="Postal code" required="required" size="50" title="just postal code - just digits, english alphabet letters, spaces and -" type="text" value=""/>
+      <br/>
+     </fieldset>
+     <label>
+      I agree with
+      <a href="Computer-Mobile-Trading-Privacy-Policy.html" target="_blank">
+       Privacy Policy
+      </a>
+      and
+      <a href="Computer-Mobile-Trading-Terms-of-Service.html" target="_blank">
+       Terms of Service
+      </a>
+     </label>
+     <input name="PrivacyPolicyTOSAccepted" required="required" type="checkbox"/>
+     <br/>
+     <input onclick="genOrderId()" type="submit" value="Send order"/>
+     <input type="reset"/>
+    </form>
+   </div>
+  </div>
+  <footer>
+   <div align="center" class="footer">
+    <div style="display: block;">
+     <div class="nav-footer">
+      <a href="home.html">
+       FAQ
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="blog.html">
+       Blog
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="contact.html">
+       Contact us
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="buy-in-bulk.html">
+       Buy in bulk
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Images.html">
+       Images
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="place-your-banner-for-free.html">
+       Place banner
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="client-cart.html" target="ShoppingList">
+       Client cart
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Computer-Mobile-Trading-Privacy-Policy.html">
+       Privacy Policy
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Computer-Mobile-Trading-Terms-of-Service.html">
+       TOS
+      </a>
+     </div>
+     <div style="clear: both;">
+     </div>
+     <div class="nav-footer">
+      <a href="laptops.html">
+       Sony Vaio
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="refurbished.html">
+       Refurbished
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Alienware-Aurora.html">
+       Alienware Aurora
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Alienware-x17.html">
+       Alienware x17
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="Alienware-m15-Ryzen.html">
+       Alienware Ryzen
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="ROG_Strix_Mid_Tower.html">
+       Strix Mid Tower
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog.html">
+       ROG Zephyrus
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog_flow.html">
+       ROG Flow
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog_gaming_monitors.html">
+       ROG Monitors
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog_gaming_phones.html">
+       ROG phones
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog_strix.html">
+       ROG Strix
+      </a>
+     </div>
+     <div class="nav-footer">
+      <a href="rog_strix_full_tower.html">
+       Strix Full Tower
+      </a>
+     </div>
+    </div>
+    <div style="display: block; text-align: left;">
+     <h2 style="text-align: left;">
+      © Computer &amp; Mobile Trading 2018-2022. All rights reserved.
+     </h2>
+     <a href="mailto:sonyvaiotrading@dnmx.org">
+      sonyvaiotrading@dnmx.org
+     </a>
+     <br/>
+     Address: PO Box 1935, Salamat House, La Poudriere Lane, Victoria, Mahe island, Seychelles.
+    </div>
+   </div>
+  </footer>
+  <div align="center" class="footer">
+   <a href="place-your-banner-for-free.html" target="_blank">
+    Place your such a big or small banner for free here:
+   </a>
+   <br/>
+   <img alt="Computer &amp; Mobile Trading`s banner" src="images/BannerNew2.gif" style="display: block; width: 100%;"/>
+   <br/>
+   <img alt="Computer &amp; Mobile Trading`s banner" height="60px" src="images/BannerNew1.gif" width="468px"/>
+  </div>
+  <!--#include file="includes.html" -->
+ </body>
+</html>

@@ -1,0 +1,567 @@
+
+
+
+
+
+
+
+
+DNM Bible
+
+
+
+
+Bible
+
+
+
+
+About
+▾
+
+
+
+Before you start
+
+
+
+
+
+
+Operating Systems
+▾
+
+
+
+
+
+Tails
+▾
+
+
+
+Installing Tails
+
+
+Important settings and tips
+
+
+Setting up the persistence volume
+
+
+Upgrading
+
+
+Backing up
+
+
+Optional: Install Debian Packages on Boot
+
+
+Got problems?
+
+
+
+
+
+
+Whonix
+▾
+
+
+
+Installing Host OS
+
+
+Installing Whonix
+
+
+Starting and shutting down Whonix
+
+
+Performance tips
+
+
+
+
+
+
+
+
+KeePassXC
+▾
+
+
+
+Creating a database
+
+
+Opening a database
+
+
+Adding entries
+
+
+Accessing secrets
+
+
+
+
+
+
+Cryptocurrencies
+▾
+
+
+
+
+
+Monero (XMR)
+▾
+
+
+
+
+
+Monero FAQ
+▾
+
+
+
+How to buy Monero
+
+
+Installing Monero
+
+
+Creating Monero Wallets
+
+
+
+
+
+
+Litecoin (LTC)
+▾
+
+
+
+Installing Litecoin in Tails
+
+
+Tumbling Litecoin
+
+
+
+
+
+
+Bitcoin (BTC)
+▾
+
+
+
+Important tips regarding Bitcoin
+
+
+How to buy Bitcoin (BTC)
+
+
+Tumbling
+
+
+Setting up your wallet (BTC)
+
+
+Sending Bitcoin
+
+
+Transactions not getting confirmed
+
+
+
+
+
+
+Converting
+▾
+
+
+
+Litecoin to Monero/Bitcoin
+
+
+Bitcoin to Monero/Litecoin
+
+
+Monero to Bitcoin/Litecoin
+
+
+Crypto Closing Words
+
+
+
+
+
+
+
+
+PGP
+▾
+
+
+
+Creating a key pair
+
+
+Importing a public key
+
+
+Encrypting a message
+
+
+Verifying a message
+
+
+Decrypting a message
+
+
+Signing a message
+
+
+
+
+
+
+Shipping
+▾
+
+
+
+Origin Countries
+
+
+Stealth
+
+
+Non arriving Packages
+
+
+Drop
+
+
+Controlled Delivery (CD)
+
+
+Monitored Delivery
+
+
+Love Letter
+
+
+
+
+
+
+Harm Reduction
+▾
+
+
+
+Resources
+
+
+Labs
+
+
+Suicide Hotlines
+
+
+
+
+
+
+Darknet Markets
+▾
+
+
+
+Important tips for using markets
+
+
+
+
+Types of market
+▾
+
+
+
+Multisignature (Multisig)
+
+
+Escrow
+
+
+Direct Deal(DD)
+
+
+
+
+Choosing a Darknet Market
+
+
+
+
+How to verify an onion
+▾
+
+
+
+How to verify an onion
+
+
+Practice verifying
+
+
+How DDF/DNL were hijacked
+
+
+
+
+Choosing a vendor
+
+
+Types of Scams
+
+
+How to be a good buyer
+
+
+Getting a lawyer
+
+
+Making a purchase
+
+
+Giving Feedback
+
+
+IRL OpSec
+
+
+
+
+
+
+Alternative communication methods
+▾
+
+
+
+Email
+
+
+
+
+Jabber / XMPP
+▾
+
+
+
+Jabber(XMPP) Setup
+
+
+Using jabber (XMPP)
+
+
+Services
+
+
+
+
+Bitmessage
+
+
+
+
+
+
+Miscellaneous information
+▾
+
+
+
+Javascript
+
+
+
+
+Offline Version
+▾
+
+
+
+
+
+
+
+Removing Exif Data
+▾
+
+
+
+Uploading images securely
+
+
+
+
+
+
+OpenBazaar
+▾
+
+
+
+Installing on Whonix
+
+
+Customizing the settings
+
+
+
+
+
+
+Closing Words
+
+
+
+
+
+
+Appendix
+
+
+Resources
+
+
+Glossary
+
+
+FAQ
+
+
+
+
+
+
+
+
+
+
+
+
+Transactions not getting confirmed
+
+
+
+
+
+
+
+
+Transactions not getting confirmed
+
+FAQ
+
+
+
+
+
+
+
+
+
+
+Transactions not getting confirmed
+Bitcoin transactions become “confirmed” when miners accept to write them in the Bitcoin blockchain. In general, the speed of confirmation depends on the fee you attach to your transaction; miners prioritize transaction that pay the highest fees.
+Another reason could be that the Bitcoin network is overloaded at the moment. Sometimes a lot of unconfirmed transaction rack up (tens of thousands) these have to get processed, which will take a while.
+However for now you have to be patient and wait. It can take several hours or sometimes over a day for a transaction to get confirmed. Making posts about it on /d/DarknetMarketsNoobs
+ is not confirming your transaction faster.
+In the meantime you can check if the destination address of the transaction is correct, because if not you can wait forever for the coins to arrive.
+Make sure that you use the transaction fee that is dynamically created by Electrum next time (by default it will get confirmed within 5 blocks). That means just let the slider under the amount field be in the middle in the “Send” tab.
+There are however two ways which can speed up your transaction:
+
+Increase the transaction fee in Electrum. This is only possible for “replaceable” transactions. To create this type of transaction, you must have enabled “Replace by Fee” in your preferences, before sending the transaction. If it takes too long till this transaction gets confirmed you can right click on the transaction and then upgrade the fee to make it get confirmed faster (only works if you did not spend the full amount of bitcoins in your wallet).
+If you sent the bitcoins to an address you do not control (e.g. a market), the best you can do is try the ViaBTC Transaction Accelerator. It may or may not work.
+
+FAQ
+Can I cancel a transaction I made?
+No, you will have to wait till it get confirmed eventually or rejected by the Bitcoin network.
+Will I lose my bitcoins?
+No, you will just have to wait some time till it gets confirmed or rejected.
+
+
+
+
+
+
+
+      English
+
+
+
+
+
+
+        English
+
+
+
+
+
+        Spanish
+
+
+
+
+
+        French
+
+
+
+
+
+        German
+
+
+
+
+
+
+
+
+
+
+
+
+Transactions not getting confirmed
+
+FAQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Warning
+Warning you have javascript enabled! Go to this page to learn how to disable it.
+X

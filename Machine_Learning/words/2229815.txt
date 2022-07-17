@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+This reverse-chart uses as its source the daily data of Bitcoin price
+in USD (excluding the zero values since genesis block) but asks question
+How much bitcoin could one buy for 1000 (one thousand) USD?
+Updated daily.
+The chart is interactive:
+
+
+
+    Zoom: click-drag
+    Pan: shift-click-drag
+    Restore zoom level: double-click
+
+
+Go back to All-time Bitcoin price chart.

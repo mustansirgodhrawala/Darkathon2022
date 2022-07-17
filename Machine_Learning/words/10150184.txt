@@ -1,0 +1,176 @@
+
+
+
+
+
+
+
+
+			Onion routing
+
+				From The Hidden Wiki
+
+
+				Jump to navigationJump to search
+
+				Template:Short description
+Template:Update
+
+File:Onion diagram.svg  In this example onion, the source of the data sends the onion to Router A, which removes a layer of encryption to learn only where to send it next and where it came from (though it does not know if the sender is the origin or just another node). Router A sends it to Router B, which decrypts another layer to learn its next destination. Router B sends it to Router C, which removes the final layer of encryption and transmits the original message to its destination.
+Onion routing is a technique for anonymous communication over a computer network. In an onion network, messages are encapsulated in layers of encryption, analogous to layers of an onion. The encrypted data is transmitted through a series of network nodes called onion routers, each of which "peels" away from a single layer, uncovering the data's next destination. When the final layer is decrypted, the message arrives at its destination. The sender remains anonymous because each intermediary knows only the location of the immediately preceding and following nodes.<ref>Goldschlag D., Reed M., Syverson P. (1999.) Onion Routing for Anonymous and Private Internet Connections, Onion Router.</ref> While onion routing provides a high level of security and anonymity, there are methods to break the anonymity of this technique, such as timing analysis.<ref name=":0">Template:Cite book</ref>
+
+Contents
+
+1 Development and implementation
+2 Data structure
+
+2.1 Onion creation and transmission
+
+
+3 Weaknesses
+
+3.1 Timing analysis
+3.2 Exit node vulnerability
+
+
+4 See also
+5 References
+6 External links
+
+
+
+Development and implementation
+Onion routing was developed in the mid-1990s at the U.S. Naval Research Laboratory by employees Paul Syverson, Michael G. Reed, and David Goldschlag<ref>Reed M. G., Syverson P. F., Goldschlag D. M. (1998) "Anonymous connections and onion routing", IEEE Journal on Selected Areas in Communications, 16(4):482–494.</ref><ref name=patent>Template:Cite patent</ref> to protect U.S. intelligence communications online.<ref name="pando">Template:Cite news</ref> It was further developed by the Defense Advanced Research Projects Agency (DARPA) and patented by the Navy in 1998.<ref name=patent/><ref>Template:Cite book</ref><ref>Template:Cite book</ref>
+This method was publicly released by the same employees through publishing an article in the IEEE journal of communications the same year. It depicted the use of the method to protect the user from the network and outside observers who eavesdrop and conduct traffic analysis attacks. The most important part of this research is the configurations and applications of onion routing on the existing e-services, such as Virtual private network, Web-browsing, Email, Remote login, and Electronic cash.<ref>Template:Cite journal</ref>
+Based on the existing onion routing technology, computer scientists Roger Dingledine and Nick Mathewson joined Paul Syverson in 2002 to develop what has become the largest and best-known implementation of onion routing, then called The Onion Routing project (Tor project).
+After the Naval Research Laboratory released the code for Tor under a free license,<ref name="pando" /><ref name="prealpha">Template:Cite mailing list</ref><ref name="torproject-faq">Template:Cite web</ref> Dingledine, Mathewson and five others founded The Tor Project as a non-profit organization in 2006, with the financial support of the Electronic Frontier Foundation and several other organizations.<ref name="torproject-sponsors">Template:Cite web</ref><ref name="wp-attacks-prompt">Template:Cite news</ref>
+
+Data structure
+Metaphorically, an onion is the data structure formed by "wrapping" a message with successive layers of encryption to be decrypted ("peeled" or "unwrapped") by as many intermediary computers as there are layers before arriving at its destination. The original message remains hidden as it is transferred from one node to the next, and no intermediary knows both the origin and final destination of the data, allowing the sender to remain anonymous.<ref name=tor-design>Template:Cite web</ref>
+
+Onion creation and transmission
+To create and transmit an onion, the originator selects a set of nodes from a list provided by a "directory node". The chosen nodes are arranged into a path, called a "chain" or "circuit", through which the message will be transmitted. To preserve the anonymity of the sender, no node in the circuit is able to tell whether the node before it is the originator or another intermediary like itself. Likewise, no node in the circuit is able to tell how many other nodes are in the circuit and only the final node, the "exit node", is able to determine its own location in the chain.<ref name=tor-design/>
+Using asymmetric key cryptography, the originator obtains a public key from the directory node to send an encrypted message to the first ("entry") node, establishing a connection  and a shared secret ("session key"). Using the established encrypted link to the entry node, the originator can then relay a message through the first node to a second node in the chain using encryption that only the second node, and not the first, can decrypt. When the second node receives the message, it establishes a connection with the first node. While this extends the encrypted link from the originator, the second node cannot determine whether the first node is the originator or just another node in the circuit. The originator can then send a message through the first and second nodes to a third node, encrypted such that only the third node is able to decrypt it. The third, as with the second, becomes linked to the originator but connects only with the second. This process can be repeated to build larger and larger chains, but is typically limited to preserve performance.<ref name=tor-design/>
+When the chain is complete, the originator can send data over the Internet anonymously. When the final recipient of the data sends data back, the intermediary nodes maintain the same link back to the originator, with data again layered, but in reverse such that the final node this time adds the first layer of encryption and the first node adds the last layer of encryption before sending the data, for example a web page, to the originator, who is able to decrypt all layers.<ref name=tor-design/>
+
+Weaknesses
+Template:See also
+
+Timing analysis
+Template:See also
+One of the reasons why the typical Internet connections are not considered anonymous, is the ability of Internet service providers to trace and log connections between computers. For example, when a person accesses a particular website, the data itself may be secured through a connection like HTTPS such that the user's password, emails, or other content is not visible to an outside party, but there is a record of the connection itself, what time it occurred, and the amount of data transferred. Onion routing creates and obscures a path between two computers such that there's no discernible connection directly from a person to a website, but there still exists records of connections between computers. Traffic analysis searches those records of connections made by a potential originator and tries to match timing and data transfers to connections made to a potential recipient. If an attacker has compromised both ends of a route, a sender may be seen to have transferred an amount of data to an unknown computer a specified amount of seconds before a different unknown computer transferred data of the same exact size to a particular destination.<ref>Template:Cite book</ref><ref name="Dingledine">Template:Cite web</ref> Factors that may facilitate traffic analysis include nodes failing or leaving the network<ref name="Dingledine"/> and a compromised node keeping track of a session as it occurs when chains are periodically rebuilt.<ref>Template:Cite journal</ref>
+Garlic routing is a variant of onion routing associated with the I2P network that encrypts multiple messages together, which both increases the speed of data transfer and makes it more difficult<ref>Template:Cite web</ref> for attackers to perform traffic analysis.<ref>Template:Cite journal</ref>
+
+Exit node vulnerability
+Although the message being sent is transmitted inside several layers of encryption, the job of the exit node, as the final node in the chain, is to decrypt the final layer and deliver the message to the recipient. A compromised exit node is thus able to acquire the raw data being transmitted, potentially including passwords, private messages, bank account numbers, and other forms of personal information. Dan Egerstad, a Swedish researcher, used such an attack to collect the passwords of over 100 email accounts related to foreign embassies.<ref>Template:Cite web</ref>
+Exit node vulnerabilities are similar to those on unsecured wireless networks, where the data being transmitted by a user on the network may be intercepted by another user or by the router operator. Both issues are solved by using a secure end-to-end connection like SSL or secure HTTP (S-HTTP). If there is end-to-end encryption between the sender and the recipient, and the sender isn't lured into trusting a false SSL certificate offered by the exit node, then not even the last intermediary can view the original message.
+
+See also
+Template:Div col
+
+Anonymous remailer
+Bitblinder
+Chaum mixes
+Cryptography
+Degree of anonymity
+Diffie–Hellman key exchange
+Java Anon Proxy
+Key-based routing
+Matryoshka doll
+Mix network
+Mixmaster anonymous remailer
+Public-key cryptography
+Proxy server
+Tox – implements onion routing
+Tribler – implements onion routing
+Template:Div col end
+
+References
+Template:Reflist–
+
+External links
+Onion-Router.net – site formerly hosted at the Center for High Assurance Computer Systems of the U.S. Naval Research Laboratory
+Sylverson, P. F.; Goldschlag, D. M.; Reed, M. G. (1997). "Anonymous Connections and Onion Routing". IEEE Symposium on Security and Privacy. Template:Citeseerx – The original paper from the Naval Research Laboratory
+Template:Tor (anonymity network)
+
+
+
+
+
+
+Retrieved from "http://hiddenwlh5loxyocpfeejxp5za3lkbse5e7kzjmfkflir5jqsoyu2dad.onion/index.php?title=Onion_routing&oldid=12"
+				Categories: Pages with broken file linksAnonymity networksRoutingComputer-related introductions in 1998Network architectureCryptographyCryptographic protocolsOnion routingKey-based routingMix networks
+
+
+
+
+
+
+
+		Navigation menu
+
+			Page actions
+
+
+				PageDiscussionViewView sourceHistory
+
+
+
+
+
+	Page actions
+
+		PageDiscussionMoreTools
+
+
+
+
+
+			Personal tools
+
+
+				Not logged inTalkContributionsLog inRequest account
+
+
+
+
+
+
+
+
+	Navigation
+
+		Main pageRecent changesRandom pageHelp about MediaWiki
+
+
+
+
+
+			Search
+
+
+
+
+
+	Tools
+
+		What links hereRelated changesSpecial pagesPrintable versionPermanent linkPage information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 This page was last edited on 3 February 2022, at 09:21.
+			Privacy policyAbout The Hidden WikiDisclaimers

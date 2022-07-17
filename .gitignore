@@ -5,6 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
+.Machine_Learning/dataset/
+.Machine_Learning/words/
+.Machine_Learning/venv/
+.Machine_Learning/logs/
+.Machine_Learning/__pycache__/
 
 # Distribution / packaging
 .Python

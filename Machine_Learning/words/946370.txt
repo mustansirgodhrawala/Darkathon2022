@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Home
+                Buy Bitcoin
+                Terms
+                FAQ
+                Contact
+                Transactions
+
+                   Register
+                   Login
+
+
+
+
+
+
+            First Anonymous Onion Bitcoin Wallet
+
+
+
+
+
+
+         You must login to use bitcoin wallet.
+
+
+
+
+
+        Bitcoin Wallet
+
+
+        Confirmed Balance :
+         0
+        Total Balance :
+         0
+
+
+
+        Your Bitcoin address :
+         
+
+
+        To recieve Bitcoins, give the address above to the sender of the Bitcoins.
+
+
+
+
+
+
+            Before Send, be sure to press "Estimate Miner Fee" button
+
+        Send Bitcoin to this address :
+         
+
+
+        Amount in Bitcoin :
+         
+         Transaction Speed :
+         
+	Fast
+	Normal
+	Slow
+	Slower
+
+
+
+            Please enter decimal values
+
+        Miner fee :
+         0.0
+         BTC
+
+        Transaction fee :
+         0.00005
+         BTC
+
+
+
+
+             

@@ -1,5 +1,5 @@
 {
-	"keys":{"meth":"buy meth"},
+	"keys":{"meth":["buy meth","buy cocaine"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"},
 	"truncate":"False"
 }

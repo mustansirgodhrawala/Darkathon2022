@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html class="no_js" id="facebook" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="origin-when-crossorigin" id="meta_referrer" name="referrer"/>
+  <script nonce="5Qqlgn23">
+   function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"hostnameRewriterConfig":{"site":"onion","inboundName":"facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion","cdnDomainName":"facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion"},"ajaxpipe_token":"AXgpM9rOK4ZFJ0pxW00","gk_instrument_object_url":true,"gk_log_promise_done":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ5dO1OmQRw2pAhIng4","isCQuick":false});
+  </script>
+  <script nonce="5Qqlgn23">
+   (function(a){function b(b){if(!window.openDatabase)return;b.I_AM_INCOGNITO_AND_I_REALLY_NEED_WEBSQL=function(a,b,c,d){return window.openDatabase(a,b,c,d)};window.openDatabase=function(){throw new Error()}}b(a)})(this);
+  </script>
+  <style nonce="5Qqlgn23">
+  </style>
+  <script nonce="5Qqlgn23">
+   __DEV__=0;CavalryLogger=false;
+  </script>
+  <noscript>
+   <meta content="0; URL=/research/publications/bullettrain-accelerating-robust-neural-network-training-via-boundary-example-mining?_fb_noscript=1" http-equiv="refresh"/>
+  </noscript>
+  <title id="pageTitle">
+   BulletTrain: Accelerating Robust Neural Network Training via Boundary Example Mining | Meta AI Research
+  </title>
+  <meta content="Neural network robustness has become a central topic in machine learning in recent years. Most training algorithms that improve the model’s robustness to..." name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yO/r/JiZnOTNSOFi.png" rel="shortcut icon"/>
+  <link crossorigin="anonymous" data-bootloader-hash="wc08JHn" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y-/l/0,cross/B9HrrIdiKSy.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="IBtmOMB" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yT/l/0,cross/0qRoGmMiiJj.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="kJTARDm" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yq/l/0,cross/dL_ZNiLWoQo.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="dvlbeDT" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y2/l/0,cross/wXmGG7R3BHq.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="n0IEt0l" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/ya/l/0,cross/aUtITQzaG_c.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="GLilxLC" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yE/l/0,cross/apAhTq7YYwf.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="vL3XhVA" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yh/l/0,cross/u2YMHFtyo_s.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="2mpsWTR" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yB/l/0,cross/ZjAhmD1aF1Y.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="ygMK6Qz" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yp/l/0,cross/7k6-Rx8S6-0.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" data-bootloader-hash="ljfj7HP" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yN/l/0,cross/z28oMlgiaId.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <script crossorigin="anonymous" data-bootloader-hash="sHnX78J" nonce="5Qqlgn23" src="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yu/r/7tq_g112Wo2.js?_nc_x=Ij3Wp8lg5Kz">
+  </script>
+  <script nonce="5Qqlgn23">
+   requireLazy(["HasteSupportData"],function(m){m.handle({"clpData":{"1838142":{"r":1,"s":1},"1949898":{"r":1},"1848815":{"r":10000,"s":1}},"gkxData":{"5241":{"result":true,"hash":"AT7o1bCQPGpf3ShEL8w"},"5919":{"result":false,"hash":"AT6PGptIPUYH051BD5Y"},"676837":{"result":false,"hash":"AT4N8wBZA8ctCdHwa5I"},"708253":{"result":false,"hash":"AT5n4hBL3YTMnQWthYY"},"996940":{"result":false,"hash":"AT7opYuEGy3sjG1a6Ko"},"1167394":{"result":false,"hash":"AT7BpN-tlUPwbIIFZHA"},"1224637":{"result":false,"hash":"AT7JRluWxuwDm3Xz9_8"},"1263340":{"result":false,"hash":"AT5bwizWgDaFQudmwxA"},"676920":{"result":false,"hash":"AT497IX4gOFG8gZeiok"},"1073500":{"result":false,"hash":"AT7aJmfnqWyioxOOJ8k"},"1857581":{"result":false,"hash":"AT5yTxGMp6le0PAtxnM"}}})});requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){(new ServerJS()).handle({"define":[["URLFragmentPreludeConfig",[],{"hashtagRedirect":false,"fragBlacklist":["nonce","access_token","oauth_token","xs","checkpoint_data","code"]},137],["CometPersistQueryParams",[],{"relative":{},"domain":{}},6231],["CookieDomain",[],{"domain":"facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion"},6421],["BootloaderConfig",[],{"deferBootloads":false,"jsRetries":[200,500],"jsRetryAbortNum":2,"jsRetryAbortTime":5,"silentDups":false,"hypStep4":false,"phdOn":false,"btCutoffIndex":3073},329],["CSSLoaderConfig",[],{"timeout":5000,"modulePrefix":"BLCSS:","loadEventSupported":true},619],["CookieCoreConfig",[],{"c_user":{},"cppo":{"t":86400},"dpr":{"t":604800},"fbl_ci":{"t":31536000},"fbl_cs":{"t":31536000},"fbl_st":{"t":31536000},"i_user":{},"locale":{"t":604800},"m_pixel_ratio":{"t":604800},"noscript":{},"presence":{"t":2592000},"sfau":{},"usida":{},"vpd":{"t":5184000},"wd":{"t":604800},"x-referer":{},"x-src":{"t":1}},2104],["CurrentCommunityInitialData",[],{},490],["CurrentEnvironment",[],{"facebookdotcom":true,"messengerdotcom":false,"workplacedotcom":false,"instagramdotcom":false},827],["CurrentUserInitialData",[],{"ACCOUNT_ID":"0","USER_ID":"0","NAME":"","SHORT_NAME":null,"IS_BUSINESS_PERSON_ACCOUNT":false,"HAS_SECONDARY_BUSINESS_PERSON":false,"IS_FACEBOOK_WORK_ACCOUNT":false,"IS_MESSENGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":false,"IS_MESSENGER_CALL_GUEST_USER":false,"IS_WORK_MESSENGER_CALL_GUEST_USER":false,"IS_WORKROOMS_USER":false,"APP_ID":"256281040558","IS_BUSINESS_DOMAIN":false},270],["DTSGInitialData",[],{},258],["ISB",[],{},330],["LSD",[],{"token":"AVpUAMxnBH8"},323],["ServerNonce",[],{"ServerNonce":"eihJCPofQUliRtrJ-HLG-b"},141],["SiteData",[],{"server_revision":1005858511,"client_revision":1005858511,"tier":"","push_phase":"C3","pkg_cohort":"BP:DEFAULT","haste_session":"19189.BP:DEFAULT.2.0.0.0.0","pr":1,"haste_site":"www","manifest_base_uri":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion","manifest_origin":null,"be_one_ahead":false,"is_rtl":false,"is_comet":false,"is_experimental_tier":false,"is_jit_warmed_up":true,"hsi":"7121017067280870403","semr_host_bucket":"6","bl_hash_version":2,"skip_rd_bl":true,"comet_env":0,"wbloks_env":false,"spin":4,"__spin_r":1005858511,"__spin_b":"trunk","__spin_t":1657990986,"vip":"2a03:2880:f00d:110:face:b00c:0:2"},317],["SprinkleConfig",[],{"param_name":"jazoest","version":2,"should_randomize":false},2111],["UserAgentData",[],{"browserArchitecture":"32","browserFullVersion":"54.0.2840.99","browserMinorVersion":0,"browserName":"Chrome","browserVersion":54,"deviceName":"Unknown","engineName":"WebKit","engineVersion":"537.36","platformArchitecture":"64","platformName":"Windows","platformVersion":"7","platformFullVersion":"7"},527],["PromiseUsePolyfillSetImmediateGK",[],{"www_always_use_polyfill_setimmediate":false},2190],["KSConfig",[],{"killed":{"__set":["MOBILIZER_SELF_SERVE_OWNERSHIP_RESOLVER","MLHUB_FLOW_AUTOREFRESH_SEARCH","NEKO_DISABLE_CREATE_FOR_SAP","EO_DISABLE_SYSTEM_SERIAL_NUMBER_FREE_TYPING_IN_CPE_NON_CLIENT","MOBILITY_KILL_OLD_VISIBILITY_POSITION_SETTING","WORKPLACE_DISPLAY_TEXT_EVIDENCE_REPORTING","BUSINESS_INVITE_FLOW_WITH_SELLER_PROFILE","BUY_AT_UI_LINE_DELETE","BUSINESS_GRAPH_SETTING_APP_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_BU_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_ESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_PRODUCT_CATALOG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_SESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_WABA_ASSIGNED_USERS_NEW_API","ADS_PLACEMENT_FIX_PUBLISHER_PLATFORMS_MUTATION","FORCE_FETCH_BOOSTED_COMPONENT_AFTER_ADS_CREATION","VIDEO_DIMENSIONS_FROM_PLAYER_IN_UPLOAD_DIALOG","SNIVY_GROUP_BY_EVENT_TRACE_ID_AND_NAME","ADS_STORE_VISITS_METRICS_DEPRECATION","DYNAMIC_ADS_SET_CATALOG_AND_PRODUCT_SET_TOGETHER","AD_DRAFT_ENABLE_SYNCRHONOUS_FRAGMENT_VALIDATION","SEPARATE_MESSAGING_COMACTIVITY_PAGE_PERMS","LAB_NET_NEW_UI_RELEASE","POCKET_MONSTERS_CREATE","POCKET_MONSTERS_DELETE","SRT_BANZAI_SRT_CORE_LOGGER","SRT_BANZAI_SRT_MAIN_LOGGER","WORKPLACE_PLATFORM_SECURE_APPS_MAILBOXES","POCKET_MONSTERS_UPDATE_NAME","IC_DISABLE_MERGE_TOOL_FEED_CHECK_FOR_REPLACE_SCHEDULE","ADS_EPD_IMPACTED_ADVERTISER_MIGRATE_XCONTROLLER","RECRUITING_CANDIDATE_PORTAL_ACCOUNT_DELETION_CARD","BIZ_INBOX_POP_UP_TIP_NAVIGATION_BUG_FIX"]},"ko":{"__set":["8H4bQmEiuLT","3OsLvnSHNTt","1G7wJ6bJt9K","9NpkGYwzrPG","3oh5Mw86USj","8NAceEy9JZo","7FOIzos6XJX","rf8JEPGgOi","4j36SVzvP3w","4NSq3ZC4ScE","53gCxKq281G","3yzzwBY7Npj","1onzIv0jH6H","8PlKuowafe8","1ntjZ2zgf03","4SIH2GRVX5W","2dhqRnqXGLQ","2WgiNOrHVuC","amKHb4Cw4WI","5mNEXob0nTj","8rDvN9vWdAK","5BdzWGmfvrA","DDZhogI19W","acrJTh9WGdp","1oOE64fL4wO","9Gd8qgRxn8z","MPMaqnqZ9c","5XCz1h9Iaw3","7r6mSP7ofr2","6DGPLrRdyts","aWxCyi1sEC7","9kCSDzzr8fu","awYA7fn2Bse"]}},2580],["JSErrorLoggingConfig",[],{"appId":256281040558,"extra":[],"reportInterval":50,"sampleWeight":null,"sampleWeightKey":"__jssesw","projectBlocklist":[]},2776],["DataStoreConfig",[],{"expandoKey":"__FB_STORE","useExpando":true},2915],["CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"sampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastStale":1.0e-8},3401],["ImmediateImplementationExperiments",[],{"prefer_message_channel":true},3419],["DTSGInitData",[],{"token":"","async_get_token":""},3515],["UriNeedRawQuerySVConfig",[],{"uris":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.com","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io","www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com","technopark.ru","officedepot.com.mx","bestbuy.com.mx","booking.com","nibio.no"]},3871],["InitialCookieConsent",[],{"deferCookies":false,"initialConsent":{"__set":[1,2]},"noCookies":false,"shouldShowCookieBanner":false},4328],["TrustedTypesConfig",[],{"useTrustedTypes":false,"reportOnly":false},4548],["WebConnectionClassServerGuess",[],{"connectionClass":"EXCELLENT"},4705],["CometAltpayJsSdkIframeAllowedDomains",[],{"allowed_domains":["https:\/\/live.adyen.com","https:\/\/integration-facebook.payu.in","https:\/\/facebook.payulatam.com","https:\/\/secure.payu.com","https:\/\/facebook.dlocal.com","https:\/\/buy2.boku.com"]},4920],["BootloaderEndpointConfig",[],{"debugNoBatching":false,"endpointURI":"https:\/\/ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion\/ajax\/bootloader-endpoint\/"},5094],["CookieConsentIFrameConfig",[],{"consent_param":"FQAREhIA.ARbqNdVyi--ZkvKN9odlIMGGI26SXFiziREnw6bh1KnZ5wPH","allowlisted_iframes":[]},5540],["BigPipeExperiments",[],{"link_images_to_pagelets":false},907],["IntlVariationHoldout",[],{"disable_variation":false},6533],["AsyncRequestConfig",[],{"retryOnNetworkError":"1","useFetchStreamAjaxPipeTransport":false},328],["FbtResultGK",[],{"shouldReturnFbtResult":true,"inlineMode":"NO_INLINE"},876],["IntlPhonologicalRules",[],{"meta":{"\/_B\/":"([.,!?\\s]|^)","\/_E\/":"([.,!?\\s]|$)"},"patterns":{"\/\u0001(.*)('|&#039;)s\u0001(?:'|&#039;)s(.*)\/":"\u0001$1$2s\u0001$3","\/_\u0001([^\u0001]*)\u0001\/":"javascript"}},1496],["IntlViewerContext",[],{"GENDER":3,"regionalLocale":null},772],["NumberFormatConfig",[],{"decimalSeparator":".","numberDelimiter":",","minDigitsForThousandsSeparator":4,"standardDecimalPatternInfo":{"primaryGroupSize":3,"secondaryGroupSize":3},"numberingSystemData":null},54],["SessionNameConfig",[],{"seed":"1QrT"},757],["ZeroCategoryHeader",[],{},1127],["ZeroRewriteRules",[],{"rewrite_rules":{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_browser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,"\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/privacy\/":1,"\/about\/privacy\/update\/":1,"\/privacy\/explanation\/":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,"\/zero\/toggle\/settings\/":1,"\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialog_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAppInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJSDialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action\/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_redirect\/":1,"\/zero_balance_redirect":1,"\/zero_balance_redirect\/l\/":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkpoint\/block\/":1,"\/exitdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,"\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/bookmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.php":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/":1,"\/hr\/zsh\/wc\/":1,"\/ajax\/bootloader-endpoint\/":1,"\/mobile\/zero\/carrier_page\/":1,"\/mobile\/zero\/carrier_page\/education_page\/":1,"\/mobile\/zero\/carrier_page\/feature_switch\/":1,"\/mobile\/zero\/carrier_page\/settings_page\/":1,"\/aloha_check_build":1,"\/upsell\/zbd\/softnudge\/":1,"\/mobile\/zero\/af_transition\/":1,"\/mobile\/zero\/af_transition\/action\/":1,"\/mobile\/zero\/freemium\/":1,"\/mobile\/zero\/freemium\/redirect\/":1,"\/mobile\/zero\/freemium\/zero_fup\/":1,"\/privacy\/policy\/":1,"\/privacy\/center\/":1,"\/data\/manifest\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/birthday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\/cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\/mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/upsell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h\/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchase\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"\/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthday_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wap\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/datapolicy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"\/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/terms\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/":1,"\/fbs\/pixel\/":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff\/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/confirmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/contactpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/upsell\/loyaltytopup\/accept\/":1,"\/settings\/":1,"\/lite\/":1,"\/zero_status_update\/":1,"\/operator_store\/":1,"\/upsell\/":1,"\/wifiauth\/login\/":1}},1478],["IntlNumberTypeConfig",[],{"impl":"if (n === 1) { return IntlVariations.NUMBER_ONE; } else { return IntlVariations.NUMBER_OTHER; }"},3405],["ServerTimeData",[],{"serverTime":1657990987068,"timeOfRequestStart":1657990986978.7,"timeOfResponseStart":1657990986978.7},5943],["FbtQTOverrides",[],{"overrides":{}},551],["AnalyticsCoreData",[],{"device_id":"$^|AcZLAZsiQZQkK5I8RF02ncb2NCXRRtynM9aBD_8B1AjMv3HZBgpyIN9iEewXExRHelNqF6rDIxEIDDZ8JILH2Ls|fd.AcaFHCynxAf_vTb6RnJzOJ3OxLaHIQ7B_E3DieYskHZVpUuXSLm_pCNsaknyTV6ea8FvtTBNvdA0DwGi1KNYiacR","app_id":"256281040558","enable_bladerunner":false,"enable_ack":true,"push_phase":"C3","enable_observer":false,"enable_dataloss_timer":false,"enable_fallback_for_br":true,"fix_br_init_rc":true,"queue_activation_experiment":false},5237],["cr:696703",[],{"__rc":[null,"Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:708886",["EventProfilerImpl"],{"__rc":["EventProfilerImpl","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:717822",["TimeSliceImpl"],{"__rc":["TimeSliceImpl","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:806696",["clearTimeoutBlue"],{"__rc":["clearTimeoutBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:896462",["setIntervalAcrossTransitionsBlue"],{"__rc":["setIntervalAcrossTransitionsBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:986633",["setTimeoutAcrossTransitionsBlue"],{"__rc":["setTimeoutAcrossTransitionsBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1003267",["clearIntervalBlue"],{"__rc":["clearIntervalBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1183579",["InlineFbtResultImpl"],{"__rc":["InlineFbtResultImpl","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:925100",["RunBlue"],{"__rc":["RunBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:729414",[],{"__rc":[null,"Aa2eYDu2b-kQiuUXgUi7xWB9wpPQVgMsV23ovoIDSjiWfolBsu0MRAcNno_fF7AjP4nphVlLULyuM7gYen1YehOv"]},-1],["cr:1094907",[],{"__rc":[null,"Aa1swfb11H2PQZWB9TVV7rL3Gfd-bbmYAMzAef_Fu5_mRyv3ToVfxaQj0ys352zEtenqcCTNUNCEkjFHfbN3FpM"]},-1],["EventConfig",[],{"sampling":{"bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canplay":0,"selectionchange":0,"change":0,"timeupdate":0,"adaptation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abort":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":10000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keydown":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default":5000,"__min":100,"__interactionDefault":200,"__eventDefault":100000},"page_sampling_boost":1,"interaction_regexes":{},"interaction_boost":{},"event_types":{},"manual_instrumentation":false,"profile_eager_execution":false,"disable_heuristic":true,"disable_event_profiler":false},1726],["AdsInterfacesSessionConfig",[],{},2393]],"require":[["markJSEnabled"],["URLFragmentPrelude"],["Primer"],["BigPipe"],["Bootloader"],["TimeSlice"],["AsyncRequest"],["BanzaiScuba_DEPRECATED"],["VisualCompletionGating"],["FbtLogging"],["IntlQtEventFalcoEvent"],["RequireDeferredReference","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"css"]]]});});
+  </script>
+ </head>
+ <body class="_605a chrome webkit win x1 Locale_en_US" dir="ltr">
+  <script nonce="5Qqlgn23" type="text/javascript">
+   requireLazy(["bootstrapWebSession"],function(j){j(1657990986)})
+  </script>
+  <div class="_li">
+   <div class="_8xs5">
+    <div class="_7gdp">
+     <div class="_7gb8 _8xcd" id="u_0_0_Rb">
+      <div class="_7gdj _a2sb" id="u_0_1_R0">
+       <div class="_7gbc">
+        <a class="_8xc5 _8y8i _8x97 _8w61 _7gbe" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/">
+         <span class="_8x6t _8x94 _8w61 _8w6h">
+          <img alt="" class="_8zlc _7f2d _7gb9 _8zvb _7gb9 _8zvb img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/261808793_1082281822528512_588598751091579214_n.png?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=ZlLEb1TQGT0AX9CSCcT&amp;_nc_ht=scontent.xx&amp;oh=00_AT-nbsoYG0sMGxi86MnMCu23RX1cAqkmyC8ogK7cQxHXdA&amp;oe=62D7286D"/>
+          <img alt="" class="_8zlc _7f2d _8zvc _8zvc img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/260316493_3045593119093164_4195057262580722106_n.png?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=Z58wq2nQ3MgAX-ll9CR&amp;_nc_ht=scontent.xx&amp;oh=00_AT8A9vg7Fbtvb5cAyX5T3juzao4rZSHgUR5IMWmjP9_VKQ&amp;oe=62D8A807"/>
+          <img alt="" class="_8zlc _7f2d _8zvd _8zvd img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/260316493_3045593119093164_4195057262580722106_n.png?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=Z58wq2nQ3MgAX-ll9CR&amp;_nc_ht=scontent.xx&amp;oh=00_AT8A9vg7Fbtvb5cAyX5T3juzao4rZSHgUR5IMWmjP9_VKQ&amp;oe=62D8A807"/>
+         </span>
+        </a>
+        <div class="_8cm8">
+         <div class="_7gbf">
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/" id="u_0_2_k7">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Research
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_3_1/">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="research-areas" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas" id="u_0_4_AK">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Research Areas
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/impact/" id="u_0_5_mP">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Impact
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="notable-papers" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers" id="u_0_6_Mq">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Notable Papers
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="publications" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications" id="u_0_7_AS">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Publications
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="fundamental-and-applied" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied" id="u_0_8_UL">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Fundamental &amp; Applied
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/" id="u_0_9_oc">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Request for Proposals
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="projects" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects" id="u_0_a_3P">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Projects
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_b_RD">
+            <span class="_a2sa">
+             Research
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_c_TQ" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_d_zV" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_e_qL">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Research
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Research Areas
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/impact/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Impact
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Notable Papers
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Publications
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Fundamental &amp; Applied
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Request for Proposals
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Projects
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _7gbo _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;content_types[0]=publication" id="u_0_f_nR">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Publications
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_g_kE">
+           <div class="_8zvk">
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person" id="u_0_h_J9">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             People
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_i_Wb">
+           <div class="_8zvk">
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/events/" id="u_0_j_Ay">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Events
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_k_kQ">
+           <div class="_8zvk">
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/" id="u_0_l_CZ">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Tools
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_m_qF">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="frameworks-and-tools" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools" id="u_0_n_i8">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Frameworks &amp; Tools
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="libraries-and-models" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#libraries-and-models" id="u_0_o_qw">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Libraries &amp; Models
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/system-cards/" id="u_0_p_fH">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              System Cards
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_q_yM">
+            <span class="_a2sa">
+             Tools
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_r_UA" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_s_Ms" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_t_h3">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Tools
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Frameworks &amp; Tools
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#libraries-and-models">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Libraries &amp; Models
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/system-cards/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               System Cards
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/datasets/" id="u_0_u_jx">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Datasets
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_v_sR">
+           <div class="_8zvk">
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog/" id="u_0_w_ig">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Blog
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_x_hh">
+           <div class="_8zvk">
+           </div>
+          </div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/" id="u_0_y_7o">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Join Us
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_z_zz">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/" id="u_0_10_GK">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Jobs
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="residency-program" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/" id="u_0_11_so">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              AI Residency Program
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/" id="u_0_12_Vp">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              RAISE Program
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_13_BC">
+            <span class="_a2sa">
+             Join Us
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_14_35" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_15_wZ" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_16_xv">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Join Us
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Jobs
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               AI Residency Program
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               RAISE Program
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="_FBAIV2NavSearchBar__desktop">
+          <div>
+           <noscript id="u_0_17_Zy">
+           </noscript>
+          </div>
+         </div>
+        </div>
+        <div class="_7gbs">
+         <img alt="" class="_8zlc _7f2d _7gb9 _7gb9 img" id="u_0_18_0X" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83271035_2632912153661839_668787963458486272_n.svg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=l2tDsYQ3TdsAX8vl3Ds&amp;_nc_ht=scontent.xx&amp;oh=00_AT_YElIC3PME7QqQXpWHRqzBlS8CvvHYutDLNOwEal6Cdg&amp;oe=62D85606"/>
+         <img alt="" class="_8zlc _7f2d _7gba _7gba img" id="u_0_19_ZT" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83271035_2632912153661839_668787963458486272_n.svg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=l2tDsYQ3TdsAX8vl3Ds&amp;_nc_ht=scontent.xx&amp;oh=00_AT_YElIC3PME7QqQXpWHRqzBlS8CvvHYutDLNOwEal6Cdg&amp;oe=62D85606"/>
+         <img alt="" class="_8zlc _7f2d _7gbp _7gbp img" id="u_0_1a_t0" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83062140_636691383771739_7554317247066406912_n.svg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=hQzf8rXJ-ksAX-05APv&amp;_nc_ht=scontent.xx&amp;oh=00_AT8ZXNPd9HjaSLV3Psv_65ze6h0IleBxEGYw3Hxztlpvdw&amp;oe=62D8702B"/>
+        </div>
+       </div>
+       <div class="_7hlc">
+       </div>
+       <div class="_7gbq" id="u_0_1b_Wz">
+        <div class="_FBAIV2FooterNavSearchBar__desktop">
+         <div>
+          <noscript id="u_0_1c_Bg">
+          </noscript>
+         </div>
+        </div>
+        <div class="_7gbr">
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/" id="u_0_1d_30">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Research
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_1e_82">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="research-areas" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas" id="u_0_1f_eP">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Research Areas
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/impact/" id="u_0_1g_gq">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Impact
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="notable-papers" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers" id="u_0_1h_BW">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Notable Papers
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="publications" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications" id="u_0_1i_OC">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Publications
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="fundamental-and-applied" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied" id="u_0_1j_Gn">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Fundamental &amp; Applied
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/" id="u_0_1k_2N">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Request for Proposals
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="projects" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects" id="u_0_1l_cv">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Projects
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_1m_7f">
+            <span class="_a2sa">
+             Research
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_1n_4T" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_1o_r4" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_1p_ba">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Research
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Research Areas
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/impact/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Impact
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Notable Papers
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Publications
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Fundamental &amp; Applied
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Request for Proposals
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Projects
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _7gbo _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;content_types[0]=publication" id="u_0_1q_qw">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Publications
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_1r_Gb">
+           <div class="_8zvk">
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person" id="u_0_1s_FN">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             People
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_1t_JY">
+           <div class="_8zvk">
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/events/" id="u_0_1u_fJ">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Events
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_1v_AP">
+           <div class="_8zvk">
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/" id="u_0_1w_t1">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Tools
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_1x_N4">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="frameworks-and-tools" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools" id="u_0_1y_Zz">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Frameworks &amp; Tools
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="libraries-and-models" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#libraries-and-models" id="u_0_1z_LM">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Libraries &amp; Models
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/system-cards/" id="u_0_20_sW">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              System Cards
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_21_nf">
+            <span class="_a2sa">
+             Tools
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_22_CJ" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_23_Ak" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_24_JW">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Tools
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Frameworks &amp; Tools
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#libraries-and-models">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Libraries &amp; Models
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools/system-cards/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               System Cards
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/datasets/" id="u_0_25_V/">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Datasets
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_26_hy">
+           <div class="_8zvk">
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog/" id="u_0_27_ok">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Blog
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_28_UX">
+           <div class="_8zvk">
+           </div>
+          </div>
+         </div>
+         <div>
+          <a class="_8xc5 _8y8i _8x97 _8w61 _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/" id="u_0_29_rX">
+           <span class="_8x6t _8x94 _8w61 _8w6h">
+            <span class="_a2sa">
+             Join Us
+            </span>
+            <div class="_8-c2">
+            </div>
+           </span>
+          </a>
+          <div class="_8zvj" id="u_0_2a_+w">
+           <div class="_8zvk">
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/" id="u_0_2b_NQ">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Jobs
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="residency-program" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/" id="u_0_2c_RE">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              AI Residency Program
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w61" data-id="" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/" id="u_0_2d_fi">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              RAISE Program
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="_8xce">
+           <div class="_8xc5 _8x6t _7g57 _7gbg _8xcb _8xc8" id="u_0_2e_gI">
+            <span class="_a2sa">
+             Join Us
+            </span>
+            <div class="_FBAINavMobileDropdown__arrow">
+             <img alt="Closed mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__openArrow _FBAINavMobileDropdown__openArrow img" id="u_0_2f_tL" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/82984939_485833095455121_15678146753855488_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=tt8bvxNr8QYAX-gFHvY&amp;_nc_ht=scontent.xx&amp;oh=00_AT80sgwwvSpTE1tcf9o81xkeEb0_ykbxZYVkxIEqYw3GRA&amp;oe=62D79920"/>
+             <img alt="Open mobile nav bar link dropdown" class="_8zlc _7f2d _FBAINavMobileDropdown__closeArrow hidden_elem _FBAINavMobileDropdown__closeArrow hidden_elem img" id="u_0_2g_TY" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83118354_799551107205746_2662992071274528768_n.svg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=gFKUzJ5hju0AX8gj8Qc&amp;_nc_ht=scontent.xx&amp;oh=00_AT-DHlcPljHRrwfZ76j1NFVhmixnRvb9-gehlEk_b7nNpQ&amp;oe=62D7C555"/>
+            </div>
+           </div>
+           <div class="_8xcf" id="u_0_2h_nn">
+            <a class="_8xc5 _8y8i _8x97 _8w61 _8xc9 _7gbg _8xc8 _8zvf _8zvg _8xca _7gbg _8xc8 _8zvf _8zvg _8xca" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              <span class="_a2sa">
+               Join Us
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               Jobs
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _7gbo _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               AI Residency Program
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+            <a class="_8xc5 _8y8i _8x97 _8w60 _7gbg _8xc8 _8xc9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/">
+             <span class="_8x6t _8x94 _8w60 _8w6h">
+              <span class="_a2sa">
+               RAISE Program
+              </span>
+              <div class="_8-c2">
+              </div>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="u_0_2i_0y">
+      </div>
+     </div>
+    </div>
+    <div>
+     <div class="">
+      <div>
+       <div class="_8zlh">
+       </div>
+       <div class="_8zlh">
+       </div>
+       <div class="_8zli">
+       </div>
+       <div class="_8zli">
+       </div>
+       <div class="_8zlj">
+       </div>
+       <div class="_8za3" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}'>
+       </div>
+       <div class="_8y2o">
+        <div class="_8y2r">
+         <div class="_8y2p">
+          <div class="_8y2q">
+           <div class="_8xke _8xhs _8xkf _8xkh _8xhs _913n">
+            <div class="_8x6u">
+             <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+              INTEGRITY
+             </h4>
+             <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+              CORE MACHINE LEARNING
+             </h4>
+            </div>
+            <div class="_8_wk">
+             <h1 class="_8w6a _8w6b _8w61">
+              BulletTrain: Accelerating Robust Neural Network Training via Boundary Example Mining
+             </h1>
+            </div>
+            <p class="_8w6f _8wl0 _8w6h">
+             December 06, 2021
+            </p>
+           </div>
+          </div>
+          <div class="_8xke _8xhs _8xkf _8xkh _8xhs _8_wl">
+           <h2 class="_8w6a _8w6c _8w61">
+            Abstract
+           </h2>
+           <p class="_8w6f _8w61 _8w6h">
+            Neural network robustness has become a central topic in machine learning in recent years. Most training algorithms that improve the model’s robustness to adversarial and common corruptions also introduce a large computational overhead, requiring as many as ten times the number of forward and backward passes in order to converge. To combat this inefficiency, we propose BulletTrain — a boundary example mining technique to drastically reduce the computational cost of robust training. Our key observation is that only a small fraction of examples are beneficial for improving robustness. BulletTrain dynamically predicts these important examples and optimizes robust training algorithms to focus on the important examples. We apply our technique to several existing robust training algorithms and achieve a 2.2× speed-up for TRADES and MART on CIFAR-10 and a 1.7× speed-up for AugMix on CIFAR-10-C and CIFAR-100-C without any reduction in clean and robust accuracy.
+           </p>
+           <div class="_8zli">
+           </div>
+           <a class="_8x6s _8x6w _8x6x _8x76 _8x70 _8w61" data-ms='{"creative":"button","creative_detail":"button","create_type":"button","create_type_detail":"button"}' href="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/256163584_2080659985442123_2290373898743429751_n.pdf?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=3c67a6&amp;_nc_ohc=QryW_YhuJ0wAX9Btefa&amp;_nc_ht=scontent.xx&amp;oh=00_AT_MNB376nfuZe4do6rcF2HnM4xKkvQJIJJVlKsw8EbpzQ&amp;oe=62D739E4" role="button" target="_blank">
+            <div class="_8x6z">
+             <svg fill="none" height="29" viewBox="0 0 29 29" width="29" xmlns="http://www.w3.org/2000/svg">
+              <path class="_8x6_" d="M9 13.75C8.58579 13.75 8.25 14.0858 8.25 14.5C8.25 14.9142 8.58579 15.25 9 15.25V13.75ZM20.5303 15.0303C20.8232 14.7374 20.8232 14.2626 20.5303 13.9697L15.7574 9.1967C15.4645 8.90381 14.9896 8.90381 14.6967 9.1967C14.4038 9.48959 14.4038 9.96447 14.6967 10.2574L18.9393 14.5L14.6967 18.7426C14.4038 19.0355 14.4038 19.5104 14.6967 19.8033C14.9896 20.0962 15.4645 20.0962 15.7574 19.8033L20.5303 15.0303ZM9 15.25H20V13.75H9V15.25Z" fill="#344854">
+              </path>
+              <circle cx="14.5" cy="14.5" r="14" stroke="#CCD1D4">
+              </circle>
+             </svg>
+            </div>
+            <div class="_8x6- _8x32">
+             Download the Paper
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="_8y2t">
+          <div class="_8xke _8xhs _8xkf _8xkh _8xhs _913o">
+           <h4 class="_8w6a _8w6e _8w60 _8xok">
+            AUTHORS
+           </h4>
+           <div class="_8-f-">
+           </div>
+           <div class="_8y2n">
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             Written by
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              Weizhe Hua
+             </span>
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              Yichi Zhang
+             </span>
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/people/chuan-guo/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Chuan Guo
+              </span>
+             </a>
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              Zhiru Zhang
+             </span>
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              Edward Suh
+             </span>
+            </p>
+           </div>
+           <div class="_8y2n">
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             Publisher
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              NeurIPS
+             </span>
+            </p>
+           </div>
+           <div class="_8y2n">
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             Research Topics
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/integrity/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Integrity
+              </span>
+             </a>
+            </p>
+            <p class="_8w6f _8xm4 _8w61 _8w6h">
+             <span>
+              Core Machine Learning
+             </span>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="_8zlh">
+       </div>
+       <div class="_8za3" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}'>
+        <h3 class="_8w6a _8w6d _8w60 _3-98">
+         Related Publications
+        </h3>
+        <div class="_9ni4">
+         <div class="_9nio">
+          <p class="_8w6f _8wl0 _8w6h">
+           December 06, 2021
+          </p>
+         </div>
+         <div class="_9nil">
+          <div class="_9nim">
+           <div class="_8x6u">
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             COMPUTER VISION
+            </h4>
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             CORE MACHINE LEARNING
+            </h4>
+           </div>
+           <div class="_9nid">
+            <h4 class="_8w6a _8w6e _8w61">
+             Debugging the Internals of Convolutional Networks
+            </h4>
+           </div>
+           <div class="_9rxa">
+            <div id="u_0_2j_tO">
+            </div>
+           </div>
+           <p class="_8w6f _8w61 _8w6h _9nie">
+            <span>
+             <span>
+              Bilal Alsallakh
+             </span>
+            </span>
+            ,
+            <span>
+             <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/people/narine-kokhlikyan/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Narine Kokhlikyan
+              </span>
+             </a>
+            </span>
+            ,
+            <span>
+             <span>
+              Vivek Miglani
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              Shubham Muttepawar
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              Edward Wang (AI Infra)
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              Sara Zhang
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              David Adkins
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              Orion Reblitz-Richardson
+             </span>
+            </span>
+           </p>
+          </div>
+          <div class="_9nin">
+           <div class="_9nih">
+            <p class="_8w6f _8xm4 _8wl0 _8w6h">
+             December 06, 2021
+            </p>
+           </div>
+           <div class="_9nig">
+            <a class="_8xc5 _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/publications/debugging-the-internals-of-convolutional-networks/" rel="noreferrer" target="_blank">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Read the Paper
+              <img alt="" class="_9nik img" height="10" src="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yg/r/tUzuMVQc9Wx.png" width="10"/>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_9ni4">
+         <div class="_9nio">
+          <p class="_8w6f _8wl0 _8w6h">
+           December 06, 2021
+          </p>
+         </div>
+         <div class="_9nil">
+          <div class="_9nim">
+           <div class="_8x6u">
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             CORE MACHINE LEARNING
+            </h4>
+           </div>
+           <div class="_9nid">
+            <h4 class="_8w6a _8w6e _8w61">
+             Revisiting Graph Neural Networks for Link Prediction
+            </h4>
+           </div>
+           <div class="_9rxa">
+            <div id="u_0_2k_4t">
+            </div>
+           </div>
+           <p class="_8w6f _8w61 _8w6h _9nie">
+            <span>
+             <span>
+              Yinglong Xia
+             </span>
+            </span>
+           </p>
+          </div>
+          <div class="_9nin">
+           <div class="_9nih">
+            <p class="_8w6f _8xm4 _8wl0 _8w6h">
+             December 06, 2021
+            </p>
+           </div>
+           <div class="_9nig">
+            <a class="_8xc5 _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/publications/revisiting-graph-neural-networks-for-link-prediction/" rel="noreferrer" target="_blank">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Read the Paper
+              <img alt="" class="_9nik img" height="10" src="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yg/r/tUzuMVQc9Wx.png" width="10"/>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_9ni4">
+         <div class="_9nio">
+          <p class="_8w6f _8wl0 _8w6h">
+           December 06, 2021
+          </p>
+         </div>
+         <div class="_9nil">
+          <div class="_9nim">
+           <div class="_8x6u">
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             THEORY
+            </h4>
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             CORE MACHINE LEARNING
+            </h4>
+           </div>
+           <div class="_9nid">
+            <h4 class="_8w6a _8w6e _8w61">
+             Learning on Random Balls is Sufficient for Estimating (Some) Graph Parameters
+            </h4>
+           </div>
+           <div class="_9rxa">
+            <div id="u_0_2l_0P">
+            </div>
+           </div>
+           <p class="_8w6f _8w61 _8w6h _9nie">
+            <span>
+             <span>
+              Takanori Maehara
+             </span>
+            </span>
+            ,
+            <span>
+             <span>
+              Hoang NT
+             </span>
+            </span>
+           </p>
+          </div>
+          <div class="_9nin">
+           <div class="_9nih">
+            <p class="_8w6f _8xm4 _8wl0 _8w6h">
+             December 06, 2021
+            </p>
+           </div>
+           <div class="_9nig">
+            <a class="_8xc5 _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/publications/learning-on-random-balls-is-sufficient-for-estimating-some-graph-parameters/" rel="noreferrer" target="_blank">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Read the Paper
+              <img alt="" class="_9nik img" height="10" src="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yg/r/tUzuMVQc9Wx.png" width="10"/>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_9ni4">
+         <div class="_9nio">
+          <p class="_8w6f _8wl0 _8w6h">
+           November 12, 2021
+          </p>
+         </div>
+         <div class="_9nil">
+          <div class="_9nim">
+           <div class="_8x6u">
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             THEORY
+            </h4>
+            <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+             REINFORCEMENT LEARNING
+            </h4>
+           </div>
+           <div class="_9nid">
+            <h4 class="_8w6a _8w6e _8w61">
+             Bandits with Knapsacks beyond the Worst-Case Analysis
+            </h4>
+           </div>
+           <div class="_9rxa">
+            <div id="u_0_2m_CX">
+            </div>
+           </div>
+           <p class="_8w6f _8w61 _8w6h _9nie">
+            <span>
+             <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/people/karthik-abinav-sankararaman/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Karthik Abinav Sankararaman
+              </span>
+             </a>
+            </span>
+            ,
+            <span>
+             <span>
+              Aleksandrs Slivkins
+             </span>
+            </span>
+           </p>
+          </div>
+          <div class="_9nin">
+           <div class="_9nih">
+            <p class="_8w6f _8xm4 _8wl0 _8w6h">
+             November 12, 2021
+            </p>
+           </div>
+           <div class="_9nig">
+            <a class="_8xc5 _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/publications/bandits-with-knapsacks-beyond-the-worst-case-analysis/" rel="noreferrer" target="_blank">
+             <span class="_8x6t _8x94 _8w61 _8w6h">
+              Read the Paper
+              <img alt="" class="_9nik img" height="10" src="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yg/r/tUzuMVQc9Wx.png" width="10"/>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_9nii">
+         <a class="_8x6s _8x6w _8x6y _8x76 _8x70 _8w61 _9nij" data-ms='{"creative":"button","creative_detail":"button","create_type":"button","create_type_detail":"button"}' href="/global_search/?content_types%5B0%5D=publication&amp;page=1" role="button">
+          <div class="_8x6z">
+           <svg fill="none" height="29" viewBox="0 0 29 29" width="29" xmlns="http://www.w3.org/2000/svg">
+            <path class="_8x6_" d="M9 13.75C8.58579 13.75 8.25 14.0858 8.25 14.5C8.25 14.9142 8.58579 15.25 9 15.25V13.75ZM20.5303 15.0303C20.8232 14.7374 20.8232 14.2626 20.5303 13.9697L15.7574 9.1967C15.4645 8.90381 14.9896 8.90381 14.6967 9.1967C14.4038 9.48959 14.4038 9.96447 14.6967 10.2574L18.9393 14.5L14.6967 18.7426C14.4038 19.0355 14.4038 19.5104 14.6967 19.8033C14.9896 20.0962 15.4645 20.0962 15.7574 19.8033L20.5303 15.0303ZM9 15.25H20V13.75H9V15.25Z" fill="#344854">
+            </path>
+            <circle cx="14.5" cy="14.5" r="14" stroke="#CCD1D4">
+            </circle>
+           </svg>
+          </div>
+          <div class="_8x6- _8x32">
+           See All Papers
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="_8zlh">
+       </div>
+       <div class="_8zlh">
+       </div>
+       <div class="_8za3" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}'>
+        <div class="_8xiq">
+         <div class="_8xmc">
+          <h3 class="_8w6a _8w6d _8w60">
+           Latest News
+          </h3>
+         </div>
+         <div class="_8xmd">
+          <div class="_8x7h _8x8q _8x92 _8xme _8xmg">
+           <div class="_8xm7" data-ms='{"creative":"card","creative_detail":"card","create_type":"card","create_type_detail":"card"}'>
+            <div class="_8wpt">
+             <a class="_8wrb" href="https://ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/blog/greater-creative-control-for-ai-image-generation/">
+              <div class="_8wpu">
+               <div class="_8-qn _8xhs">
+                <div class="_8wpv">
+                 <img alt="" class="_8zlc _7f2d _8zjt _8zjw img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/286442952_3184286368567410_7469879982655029238_n.gif?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=BUJYK4DTSRoAX-M2-Sn&amp;_nc_ht=scontent.xx&amp;oh=00_AT9U6Rwbtoz8pFTFZhifLF_Pu9SZ7s1cfoxjKu-5xQ9oJQ&amp;oe=62D71C43"/>
+                </div>
+               </div>
+               <div class="_8xhs _a570">
+                <div class="_8wpx">
+                 <div class="_8wpy">
+                  <div class="_8x6u">
+                   <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+                    RESEARCH
+                   </h4>
+                  </div>
+                 </div>
+                 <div class="_8wpz _a56-">
+                  <h4 class="_8w6a _8w6e _8w61">
+                   Greater creative control for AI image generation
+                  </h4>
+                 </div>
+                 <div class="_8wp_">
+                  <p class="_8w6f _8xm4 _8w60 _8w6h">
+                   July 14, 2022
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_8x7h _8x8q _8x92 _8xme _8xmg">
+           <div class="_8xm7" data-ms='{"creative":"card","creative_detail":"card","create_type":"card","create_type_detail":"card"}'>
+            <div class="_8wpt">
+             <a class="_8wrb" href="https://ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/blog/nllb-200-high-quality-machine-translation/">
+              <div class="_8wpu">
+               <div class="_8-qn _8xhs">
+                <div class="_8wpv">
+                 <img alt="" class="_8zlc _7f2d _8zjt _8zjw img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/286923276_1068412353806183_2175883936839055295_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=sRu-ERgGdFMAX_auNZr&amp;_nc_ht=scontent.xx&amp;oh=00_AT_z-BUYZKtaMIS92BnUG8_ggu8fe2f6aF0K_obSvJ0oDA&amp;oe=62D72D09"/>
+                </div>
+               </div>
+               <div class="_8xhs _a570">
+                <div class="_8wpx">
+                 <div class="_8wpy">
+                  <div class="_8x6u">
+                   <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+                    RESEARCH
+                   </h4>
+                  </div>
+                 </div>
+                 <div class="_8wpz _a56-">
+                  <h4 class="_8w6a _8w6e _8w61">
+                   200 languages within a single AI model: A breakthrough in high-quality machine translation
+                  </h4>
+                 </div>
+                 <div class="_8wp_">
+                  <p class="_8w6f _8xm4 _8w60 _8w6h">
+                   July 06, 2022
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_8x7h _8x8q _8x92 _8xme _8xmg">
+           <div class="_8xm7" data-ms='{"creative":"card","creative_detail":"card","create_type":"card","create_type_detail":"card"}'>
+            <div class="_8wpt">
+             <a class="_8wrb" href="https://ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/blog/introducing-sphere-meta-ais-web-scale-corpus-for-better-knowledge-intensive-nlp/">
+              <div class="_8wpu">
+               <div class="_8-qn _8xhs">
+                <div class="_8wpv">
+                 <img alt="" class="_8zlc _7f2d _8zjt _8zjw img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/291960519_725957045327707_8585421034921666233_n.png?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=oR-5NPd2QdsAX9WQKR2&amp;_nc_ht=scontent.xx&amp;oh=00_AT-YrIr1GioHs2DHC_8efxx6dWtkMgAtTWmf3zxhHKKJoQ&amp;oe=62D72135"/>
+                </div>
+               </div>
+               <div class="_8xhs _a570">
+                <div class="_8wpx">
+                 <div class="_8wpy">
+                  <div class="_8x6u">
+                   <h4 class="_8w6a _8w6e _8w60 _8xok _8x78">
+                    RESEARCH
+                   </h4>
+                  </div>
+                 </div>
+                 <div class="_8wpz _a56-">
+                  <h4 class="_8w6a _8w6e _8w61">
+                   Introducing Sphere: Meta AI’s web-scale corpus for better knowledge-intensive NLP
+                  </h4>
+                 </div>
+                 <div class="_8wp_">
+                  <p class="_8w6f _8xm4 _8w60 _8w6h">
+                   July 04, 2022
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_8zlh">
+        </div>
+        <div class="_8xka _8xkd">
+         <div class="_8x7r _8x8q _8x92 _8-qp _8xjp">
+          <img alt="" class="_8zlc _7f2d _8zjt _8zjw img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/91900227_227456494975764_5988561604772364288_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=GLdzaR1_A8oAX_W9_o-&amp;_nc_ht=scontent.xx&amp;oh=00_AT-lTiGJ6VjFkSdWz_KsZVS8Wnxgra5jt8Om-IhJAzJPkw&amp;oe=62D813D7"/>
+         </div>
+         <div class="_8x7h _8x8q _8x92">
+          <div class="_8y2u _8xjp">
+           <div class="_913l">
+            <h2 class="_8w6a _8w6b _8wmo">
+             Help Us Pioneer The Future of AI
+            </h2>
+           </div>
+           <h5 class="_8w6a _8_w4 _8wmo">
+            We share our open source frameworks, tools, libraries, and models for everything from research exploration to large-scale production deployment.
+           </h5>
+           <div class="_913m">
+            <a class="_8x6s _8x6w _8x6y _8x76 _8x70 _8wmo" data-ms='{"creative":"button","creative_detail":"button","create_type":"button","create_type_detail":"button"}' href="/join-us/" id="join-us_publication" role="button">
+             <div class="_8x6z">
+              <svg height="30px" version="1.1" viewBox="0 0 30 30" width="30px" xmlns="http://www.w3.org/2000/svg">
+               <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                <g transform="translate(1.000000, 1.000000)">
+                 <path class="_8x6_" d="M13.2246129,9.17898199 L17.7898922,13.0678881 C18.0700359,13.3065267 18.0700359,13.6934441 17.7898922,13.9320885 L13.2246129,17.8210167 C12.9444632,18.0596611 12.4902573,18.0596611 12.21011,17.8210167 C11.9299633,17.5823723 11.9299633,17.1954316 12.21011,16.9567872 L15.1982452,14.2960474 L16.1547297,13.4812713 L15.1982452,12.6664952 L12.21011,10.0431836 C11.9299633,9.80453921 11.9299633,9.41762464 12.21011,9.17898199 C12.4902573,8.94033934 12.9444632,8.94033934 13.2246129,9.17898199 Z" fill="#FBD6B7" fill-rule="nonzero">
+                 </path>
+                 <circle cx="14" cy="14" r="14" stroke="#FBD6B7">
+                 </circle>
+                </g>
+               </g>
+              </svg>
+             </div>
+             <div class="_8x6- _8x4x">
+              Join our Team
+             </div>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="_7f9y _8xdf">
+     <div class="_7f9z">
+      <div class="_7f9x _8xdd">
+       <div class="_8za3" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}'>
+        <div class="_7f90">
+         <div class="_7ot8">
+          <div class="_8-bz">
+           <div class="_7f91">
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Tools
+              </span>
+             </a>
+             <div class="_7fa4">
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Frameworks &amp; Tools
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/datasets/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Datasets
+              </span>
+             </a>
+             <div class="_7fa4">
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Research
+              </span>
+             </a>
+             <div class="_7fa4">
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Research Areas
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Notable Papers
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Publications
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Fundamental &amp; Applied
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Request for Proposals
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Projects
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Blog
+              </span>
+             </a>
+             <div class="_7fa4">
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Read Blog
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               People
+              </span>
+             </a>
+             <div class="_7fa4">
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 People Profiles
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/careers/jobs?sub_teams[0]=Artificial%20Intelligence">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Join Us
+              </span>
+             </a>
+             <div class="_7fa4">
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/careers/jobs?sub_teams[0]=Artificial%20Intelligence">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 Jobs
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 AI Residency Program
+                </span>
+               </a>
+              </div>
+              <div class="_7fa5">
+               <a class="_8xc5 _8y8i _8x97 _8w61 _7f94" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/">
+                <span class="_8x6t _8x94 _8w61 _8w6h">
+                 RAISE Program
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="_8xe1">
+             <a class="_8xc5 _8x97 _8w61 _7ot6 _8-c1" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/events/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Events
+              </span>
+             </a>
+             <div class="_7fa4">
+             </div>
+            </div>
+           </div>
+           <img alt="" class="_8zlc _7f2d _8-b- _8-b- img" id="u_0_2n_kQ" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/87524316_2677189655726266_6338721200264445952_n.svg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=74_Cxly8VRQAX8DvF-B&amp;_nc_ht=scontent.xx&amp;oh=00_AT88KKPDsCCdAbjKRK3qJhPB-P7pGx7qXwMtcdbQKL1u6Q&amp;oe=62D7BBF8"/>
+          </div>
+          <div class="_7ot7">
+           <div class="_8z0n _FBAIV2FooterNavSearchBar__desktop">
+            <div>
+             <noscript id="u_0_2o_Q9">
+             </noscript>
+            </div>
+           </div>
+           <div class="_7spo">
+            <div class="_7es9 _7sp9">
+             <a href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/MetaAI/" target="_blank">
+              <div class="_7es8 _7sp8">
+               <div class="_7esb">
+                <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+               </div>
+               <div class="_7esd">
+                <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+               </div>
+              </div>
+             </a>
+            </div>
+            <div class="_7es9 _7sp9">
+             <a data-lynx-mode="asynclazy" href="https://l.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/l.php?u=https%3A%2F%2Ftwitter.com%2FMetaAI%2F&amp;h=AT0_toC3J_3PqgcLtN3VcQaLsuLr9FNiQKxh1BU9qQ9eREPZKVUoGGEzl4bACIgSASG9fzz2abECItAwZPVKMNdBvzyQuRlVHuTOWCHsfsxhJ96eyqJeeGLh9jat2KEc79OMz_1xsQXG5-hPEAWg" rel="nofollow" target="_blank">
+              <div class="_7es8 _7sp8">
+               <div class="_7esa">
+                <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+               </div>
+               <div class="_7esc">
+                <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+               </div>
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_7f9-">
+      <div class="_7fa7">
+       <div class="_7fbm" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}' style="">
+        <div class="_FBAIExpandableCategoryFooter__footerContainer">
+         <div>
+          <div class="_7fa0">
+           <div class="_7fa1" id="u_0_2p_5p">
+            <p class="_8w6f _8w6h _7fa9">
+             Tools
+            </p>
+            <i class="_FBAIExpandableItem__expandIcon img sp_Sb15XW74Nii sx_2b07f2" id="u_0_2q_yF">
+            </i>
+            <i class="_FBAIExpandableItem__collapseIcon hidden_elem img sp_Sb15XW74Nii sx_7ae895" id="u_0_2r_Bn">
+            </i>
+           </div>
+           <div class="_7fa2" id="u_0_2s_4N">
+            <div class="_7fab">
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Tools
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/tools#frameworks-and-tools">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Frameworks &amp; Tools
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_7ot9">
+           <a class="_8xc5 _8x97 _8w61 _7fa9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/datasets/">
+            <span class="_8x6t _8x94 _8w61 _8w6h">
+             Datasets
+            </span>
+           </a>
+          </div>
+          <div class="_7fa0">
+           <div class="_7fa1" id="u_0_2t_OR">
+            <p class="_8w6f _8w6h _7fa9">
+             Research
+            </p>
+            <i class="_FBAIExpandableItem__expandIcon img sp_Sb15XW74Nii sx_2b07f2" id="u_0_2u_9r">
+            </i>
+            <i class="_FBAIExpandableItem__collapseIcon hidden_elem img sp_Sb15XW74Nii sx_7ae895" id="u_0_2v_NP">
+            </i>
+           </div>
+           <div class="_7fa2" id="u_0_2w_9p">
+            <div class="_7fab">
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Research
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#research-areas">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Research Areas
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#notable-papers">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Notable Papers
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#publications">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Publications
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#fundamental-and-applied">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Fundamental &amp; Applied
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research/request-for-proposals/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Request for Proposals
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/research#projects">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Projects
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_7fa0">
+           <div class="_7fa1" id="u_0_2x_fZ">
+            <p class="_8w6f _8w6h _7fa9">
+             Blog
+            </p>
+            <i class="_FBAIExpandableItem__expandIcon img sp_Sb15XW74Nii sx_2b07f2" id="u_0_2y_Im">
+            </i>
+            <i class="_FBAIExpandableItem__collapseIcon hidden_elem img sp_Sb15XW74Nii sx_7ae895" id="u_0_2z_9N">
+            </i>
+           </div>
+           <div class="_7fa2" id="u_0_30_zg">
+            <div class="_7fab">
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Blog
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/blog">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Read Blog
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_7fa0">
+           <div class="_7fa1" id="u_0_31_iG">
+            <p class="_8w6f _8w6h _7fa9">
+             People
+            </p>
+            <i class="_FBAIExpandableItem__expandIcon img sp_Sb15XW74Nii sx_2b07f2" id="u_0_32_NB">
+            </i>
+            <i class="_FBAIExpandableItem__collapseIcon hidden_elem img sp_Sb15XW74Nii sx_7ae895" id="u_0_33_N3">
+            </i>
+           </div>
+           <div class="_7fa2" id="u_0_34_7P">
+            <div class="_7fab">
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               People
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/results/?page=1&amp;sort_by=random&amp;content_types[0]=person">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               People Profiles
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_7fa0">
+           <div class="_7fa1" id="u_0_35_QY">
+            <p class="_8w6f _8w6h _7fa9">
+             Join Us
+            </p>
+            <i class="_FBAIExpandableItem__expandIcon img sp_Sb15XW74Nii sx_2b07f2" id="u_0_36_km">
+            </i>
+            <i class="_FBAIExpandableItem__collapseIcon hidden_elem img sp_Sb15XW74Nii sx_7ae895" id="u_0_37_Ia">
+            </i>
+           </div>
+           <div class="_7fa2" id="u_0_38_9y">
+            <div class="_7fab">
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/careers/jobs?sub_teams[0]=Artificial%20Intelligence">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Join Us
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/careers/jobs?sub_teams[0]=Artificial%20Intelligence">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               Jobs
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/residency-program/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               AI Residency Program
+              </span>
+             </a>
+             <a class="_8xc5 _8y8i _8x97 _8w61 _7faa" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/join-us/raise/">
+              <span class="_8x6t _8x94 _8w61 _8w6h">
+               RAISE Program
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="_7ot9">
+           <a class="_8xc5 _8x97 _8w61 _7fa9" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="/events/">
+            <span class="_8x6t _8x94 _8w61 _8w6h">
+             Events
+            </span>
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="_7ota">
+         <div class="_7es9 _7sp9">
+          <a href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/MetaAI/" target="_blank">
+           <div class="_7es8 _7sp8">
+            <div class="_7esb">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+            </div>
+            <div class="_7esd">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+            </div>
+           </div>
+          </a>
+         </div>
+         <div class="_7es9 _7sp9">
+          <a data-lynx-mode="asynclazy" href="https://l.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/l.php?u=https%3A%2F%2Ftwitter.com%2FMetaAI%2F&amp;h=AT24vcHad9AVHu9sqZUc6Oc-p6qZHgF_Rb1-XPtvZ6npcQEcRNTZfvKpEM9ZAAIoj-AtKZrt4SwrFuMbeF2h8VPPpGSWcwgxPb1Z-FOF9IzQsFug4TMT6wDX1pFOS0wAz3HSoqA1GwGQixVbqM4C" rel="nofollow" target="_blank">
+           <div class="_7es8 _7sp8">
+            <div class="_7esa">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+            </div>
+            <div class="_7esc">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_8za3" data-ms='{"creative":"section","creative_detail":"section","create_type":"section","create_type_detail":"section"}'>
+      <div class="_7es3 _8xde">
+       <div class="_7es4">
+        <div class="_7es5">
+         <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/about/privacy/">
+          <span class="_8x6t _8x94 _8w61 _8w6h">
+           Privacy Policy
+          </span>
+         </a>
+        </div>
+        <div class="_7es5">
+         <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/policies/">
+          <span class="_8x6t _8x94 _8w61 _8w6h">
+           Terms
+          </span>
+         </a>
+        </div>
+        <div class="_7es5">
+         <a class="_8xc5 _8y8i _8x97 _8w61" data-ms='{"creative":"link","creative_detail":"link","create_type":"link","create_type_detail":"link"}' href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/policies/cookies/">
+          <span class="_8x6t _8x94 _8w61 _8w6h">
+           Cookies
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="_8-b_">
+        <div class="_7es6">
+         <p class="_8w6f _8w6h _7fa6">
+          Meta © 2022
+         </p>
+        </div>
+        <div class="_8-c0">
+         <div class="_7es9 _7sp9">
+          <a href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/MetaAI/" target="_blank">
+           <div class="_7es8 _7sp8">
+            <div class="_7esb">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+            </div>
+            <div class="_7esd">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83008415_652417658629610_2770151458065088512_n.svg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=PXrVlk77ZwsAX-bmPoD&amp;_nc_ht=scontent.xx&amp;oh=00_AT_vt_Q6SUBlK7mQo5hyR7CSh3v_omH4eU3YS_iHWcMHkA&amp;oe=62D7F1E2"/>
+            </div>
+           </div>
+          </a>
+         </div>
+         <div class="_7es9 _7sp9">
+          <a data-lynx-mode="asynclazy" href="https://l.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/l.php?u=https%3A%2F%2Ftwitter.com%2FMetaAI%2F&amp;h=AT35WG3pa12U3SedeDY4pQLdJvMAc3Q4chXB6tLgn0tiIrRy-EBYH6x_IcIhQA9mB7JQRIyrUMVKFCxLA11LwiGRwglbju4Lh__K_RQmFGBw9gBLAr8_k_deNM_-29NzZLPAlMggNjM8BFPe5dZD" rel="nofollow" target="_blank">
+           <div class="_7es8 _7sp8">
+            <div class="_7esa">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+            </div>
+            <div class="_7esc">
+             <img alt="" class="_8zlc _7f2d img" src="https://scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/v/t39.2365-6/83504457_657983571406144_3931884461741834240_n.svg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=B-t3cp9F--sAX9IjOzv&amp;_nc_ht=scontent.xx&amp;oh=00_AT9OHRdFajuOZa6SYuz20iPXZM81mT6tP0plIBmgRlFIUg&amp;oe=62D84227"/>
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <noscript>
+    </noscript>
+    <noscript>
+    </noscript>
+   </div>
+   <div data-referrer="pagelet_dock" data-visualcompletion="ignore" id="pagelet_dock">
+   </div>
+  </div>
+  <script>
+   requireLazy(["HasteSupportData"],function(m){m.handle({"gkxData":{"1465":{"result":true,"hash":"AT7xYfmgiZ3heiVqmrk"},"4166":{"result":false,"hash":"AT7yrb5QuQ92736uhBI"},"1742795":{"result":false,"hash":"AT6dbnY5JZm_bTINbF8"},"1912204":{"result":false,"hash":"AT72FnwJF9IKaIf-5AQ"},"3491":{"result":true,"hash":"AT4IlnJ7mhmBxk2yn8g"},"12":{"result":false,"hash":"AT7MdxfOMhMQYcz0mVM"},"6862":{"result":false,"hash":"AT68ofpcSp7CAzMdMqw"},"729631":{"result":false,"hash":"AT7b0tj8AHWG5lTFE28"},"1281505":{"result":false,"hash":"AT4PHZM9gFoypCjQ8xU"},"1291023":{"result":false,"hash":"AT519LseIG1nwq3o9gQ"},"1294182":{"result":false,"hash":"AT4vd6mwrtAJouEJ_K4"},"1399218":{"result":true,"hash":"AT6guCW1eyIkOV1EYyA"},"1401060":{"result":true,"hash":"AT5aetN5Gb3reIXVnBk"},"1485055":{"result":true,"hash":"AT5lkGxmhfrVKlcn7pI"},"1596063":{"result":false,"hash":"AT7JHuDWtaOqRuBUVrE"},"1597642":{"result":true,"hash":"AT78G4fDXhlnMl7o8h0"},"1647260":{"result":false,"hash":"AT4WdkrQSGE5dIsE5MQ"},"1695831":{"result":false,"hash":"AT7RA6TJmDFGF-D62TE"},"1722014":{"result":false,"hash":"AT6_M5gpc6RLrHjcUUg"},"1778302":{"result":false,"hash":"AT65fisZhmc2X92EYlM"},"1840809":{"result":false,"hash":"AT5nYctoTsr7alRiiAo"},"1848749":{"result":false,"hash":"AT5GsH9Kb-3W-taZ_zE"},"1906871":{"result":false,"hash":"AT6dIBiVv9bUDXlmm9g"},"1985945":{"result":false,"hash":"AT66Oo5lY__5wUTp0Rw"},"5541":{"result":true,"hash":"AT70V-Q_zfEykznOdI4"},"1099893":{"result":false,"hash":"AT5kly2LSZV_DKGRhz8"}},"qexData":{"723":{"r":null},"644":{"r":null},"647":{"r":null},"648":{"r":null},"650":{"r":null},"651":{"r":null}}})});requireLazy(["Bootloader"],function(m){m.handlePayload({"consistency":{"rev":1005858511},"rsrcMap":{"By5IgmU":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y2\/r\/C4t6XissAlp.js?_nc_x=Ij3Wp8lg5Kz"},"vJoxXZE":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y_\/r\/Nwu11P6g5HY.js?_nc_x=Ij3Wp8lg5Kz"},"sDoRBPp":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yl\/r\/yRzQj3CtOOH.js?_nc_x=Ij3Wp8lg5Kz"},"XDLArku":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ipVm4\/yy\/l\/en_US\/Od0LAhulSzz.js?_nc_x=Ij3Wp8lg5Kz"},"QvOtGL6":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yh\/r\/BT8w9HZghpi.js?_nc_x=Ij3Wp8lg5Kz"},"Rtwqv9J":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i7M54\/y5\/l\/en_US\/7sQ4paSA82Q.js?_nc_x=Ij3Wp8lg5Kz"},"4V9IJl7":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iv-n4\/yo\/l\/en_US\/YKZK53JE7tQ.js?_nc_x=Ij3Wp8lg5Kz"},"WRvOZKQ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ye\/r\/e2uYqNlODhM.js?_nc_x=Ij3Wp8lg5Kz"},"yiyYHK7":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yW\/r\/NMkLR6my0IC.js?_nc_x=Ij3Wp8lg5Kz"},"czsQTSm":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y8\/r\/9r8JqCgJvpo.js?_nc_x=Ij3Wp8lg5Kz"},"Lnk29Go":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ye\/r\/4ATzB05QPr5.js?_nc_x=Ij3Wp8lg5Kz"},"wtunlrR":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ixx34\/y0\/l\/en_US\/_WWcd3_SG0Y.js?_nc_x=Ij3Wp8lg5Kz"},"et7uqCn":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yf\/r\/dcm6lSKC-4R.js?_nc_x=Ij3Wp8lg5Kz"},"2\/maQ\/Q":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yL\/r\/mPQTxAVB7AK.js?_nc_x=Ij3Wp8lg5Kz"},"R1JMNBw":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yw\/r\/UQc13wnoWNb.js?_nc_x=Ij3Wp8lg5Kz"},"OKmVa+P":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yY\/r\/EZx4YhaI7S4.js?_nc_x=Ij3Wp8lg5Kz"},"g8Nj89H":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3id044\/yx\/l\/en_US\/HRm1LuvW59Z.js?_nc_x=Ij3Wp8lg5Kz"},"CGkH4FY":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yZ\/r\/x4Eyp9nQ1uk.js?_nc_x=Ij3Wp8lg5Kz"},"VbeV7v7":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yp\/l\/0,cross\/gsVdYchtNab.css?_nc_x=Ij3Wp8lg5Kz"},"R5w1rCJ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yF\/r\/p55HfXW__mM.js?_nc_x=Ij3Wp8lg5Kz"},"0cL4lAm":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yd\/l\/0,cross\/4ayDQYcP9mZ.css?_nc_x=Ij3Wp8lg5Kz"},"idVLWWS":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yz\/l\/0,cross\/cVFN2e1lXri.css?_nc_x=Ij3Wp8lg5Kz"},"nEGssXB":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y6\/r\/7f3htpnDCOe.js?_nc_x=Ij3Wp8lg5Kz"},"72l+l2B":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iPwL4\/y-\/l\/en_US\/dehia3S_sqD.js?_nc_x=Ij3Wp8lg5Kz"},"\/mnVquy":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ikPw4\/ya\/l\/en_US\/p1zGgkjUEjK.js?_nc_x=Ij3Wp8lg5Kz"},"lCiWnqM":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iE_g4\/yk\/l\/en_US\/7SXfmyLRrBz.js?_nc_x=Ij3Wp8lg5Kz"},"sVQdLRz":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iIma4\/y0\/l\/en_US\/iRVV5pnPN4b.js?_nc_x=Ij3Wp8lg5Kz"},"GpQFBwL":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ys\/r\/B1QkyGvU3pd.js?_nc_x=Ij3Wp8lg5Kz"},"Hdut67R":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iZNn4\/yd\/l\/en_US\/77ffNT1mn4R.js?_nc_x=Ij3Wp8lg5Kz"},"n\/KAfcq":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yS\/r\/Eo_BI_I20ov.js?_nc_x=Ij3Wp8lg5Kz"},"3rvwZyp":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yN\/l\/0,cross\/56_ehS8yw2X.css?_nc_x=Ij3Wp8lg5Kz"},"Lc6FhTQ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i0XQ4\/yr\/l\/en_US\/gIOokCdbClk.js?_nc_x=Ij3Wp8lg5Kz"},"+WLO04n":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yY\/r\/He02E3XQ6Aj.js?_nc_x=Ij3Wp8lg5Kz"},"\/zbxQ3F":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ys\/r\/XaJzqdSJ5Ez.js?_nc_x=Ij3Wp8lg5Kz"},"XBO+MqR":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yb\/r\/kl_fSLmC-Hc.js?_nc_x=Ij3Wp8lg5Kz"},"OgLHca\/":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yi\/l\/0,cross\/N9xrD4bXRdl.css?_nc_x=Ij3Wp8lg5Kz"},"l+lGG6+":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iwdk4\/yM\/l\/en_US\/mzIS9HKyF78.js?_nc_x=Ij3Wp8lg5Kz"},"XCWygIO":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yh\/r\/fs_MSG5pbgf.js?_nc_x=Ij3Wp8lg5Kz"},"XSn8mVF":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y8\/l\/0,cross\/1Oxfik2NDE0.css?_nc_x=Ij3Wp8lg5Kz"},"I4T2LaG":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iwg74\/yk\/l\/en_US\/Bs3T3QKaOn2.js?_nc_x=Ij3Wp8lg5Kz"},"\/g8g6la":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y1\/l\/0,cross\/HOhUoLciKcH.css?_nc_x=Ij3Wp8lg5Kz"},"qtuCCp4":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yw\/r\/igZteeaCmLc.js?_nc_x=Ij3Wp8lg5Kz"},"xauFUwO":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yn\/l\/0,cross\/0Z_bOzpY9WU.css?_nc_x=Ij3Wp8lg5Kz"},"QCCx1JH":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i1HD4\/yq\/l\/en_US\/vwZPY6g4Eff.js?_nc_x=Ij3Wp8lg5Kz"},"yEH+pkr":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ya\/r\/-4p9A2fOcMi.js?_nc_x=Ij3Wp8lg5Kz"},"nR3i3uV":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ym\/r\/1bnXY7tF5Bx.js?_nc_x=Ij3Wp8lg5Kz"},"aC8A+Rb":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yh\/r\/8h2PslUKFHc.js?_nc_x=Ij3Wp8lg5Kz"},"5KqtzwJ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yq\/r\/oVBj5VhEKHA.js?_nc_x=Ij3Wp8lg5Kz"},"VtZ600j":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y8\/l\/0,cross\/iYuVC1so9AF.css?_nc_x=Ij3Wp8lg5Kz"},"qdGHce5":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y8\/l\/0,cross\/gA3PdpINR4n.css?_nc_x=Ij3Wp8lg5Kz"},"rs+j\/Ae":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yC\/l\/0,cross\/JgyEeZA6YIr.css?_nc_x=Ij3Wp8lg5Kz"},"72YXxjp":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i8594\/y1\/l\/en_US\/fB6bHcCDGkk.js?_nc_x=Ij3Wp8lg5Kz"},"6wI004b":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iJ984\/yk\/l\/en_US\/9xCLnOcbR8o.js?_nc_x=Ij3Wp8lg5Kz"},"BeaYVaG":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yR\/r\/4ZyYRJlkity.js?_nc_x=Ij3Wp8lg5Kz"},"HfaxuXM":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yR\/r\/9CYYVDiJcsD.js?_nc_x=Ij3Wp8lg5Kz"},"kKVtO2\/":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yz\/r\/bXaD7L4iUtv.js?_nc_x=Ij3Wp8lg5Kz"},"IjyuYS8":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iTQy4\/y9\/l\/en_US\/qzHa-ud1bOZ.js?_nc_x=Ij3Wp8lg5Kz"},"18dG1sp":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yV\/r\/8gjIqkUnBC6.js?_nc_x=Ij3Wp8lg5Kz"},"j55NIq3":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yZ\/r\/260UgeeNR1p.js?_nc_x=Ij3Wp8lg5Kz"},"JqiCp\/p":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iAgG4\/yk\/l\/en_US\/UVOwi756dic.js?_nc_x=Ij3Wp8lg5Kz"},"Om\/zuQx":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y0\/r\/0bf1T27wPkj.js?_nc_x=Ij3Wp8lg5Kz"},"tphu\/a3":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iTER4\/yt\/l\/en_US\/oV0kSRZviR0.js?_nc_x=Ij3Wp8lg5Kz"},"VgUDzh7":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iH_P4\/yn\/l\/en_US\/Q9ZRKOexD-c.js?_nc_x=Ij3Wp8lg5Kz"},"m9AQnsq":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yd\/r\/DoxtFZwfWaT.js?_nc_x=Ij3Wp8lg5Kz"},"PjirnkC":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iRw54\/y0\/l\/en_US\/jobCB_D1RFr.js?_nc_x=Ij3Wp8lg5Kz"},"\/mBlYFx":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y0\/r\/S6msAMHF_yV.js?_nc_x=Ij3Wp8lg5Kz"},"tyqOj5H":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yj\/l\/0,cross\/2UcNflycRtC.css?_nc_x=Ij3Wp8lg5Kz"},"PogKv1z":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yU\/r\/B_KGsWja-Lk.js?_nc_x=Ij3Wp8lg5Kz"},"A3hlr8p":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yw\/r\/Lao84HunJqm.js?_nc_x=Ij3Wp8lg5Kz"},"1d6ueZi":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yC\/l\/0,cross\/Edq_ijwIlDm.css?_nc_x=Ij3Wp8lg5Kz"},"WiI6r8U":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yC\/l\/0,cross\/H-9GzH8DBMW.css?_nc_x=Ij3Wp8lg5Kz"},"Q1hmhly":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yW\/l\/0,cross\/BxeUnHPhWd5.css?_nc_x=Ij3Wp8lg5Kz"},"9drsDNz":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yz\/r\/ckEtYrMxLWV.js?_nc_x=Ij3Wp8lg5Kz"},"SrpP6vx":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yx\/r\/bll4-7p4Ipj.js?_nc_x=Ij3Wp8lg5Kz"},"sKCQcVV":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yo\/r\/w3RcVcrdLjy.js?_nc_x=Ij3Wp8lg5Kz"},"+iNmQOj":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yj\/l\/0,cross\/YV8mHRGAWvW.css?_nc_x=Ij3Wp8lg5Kz"},"jj29UZB":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yE\/r\/w5W7kbBpKe-.js?_nc_x=Ij3Wp8lg5Kz"},"J+vI9it":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yy\/r\/woSjpSLmG4O.js?_nc_x=Ij3Wp8lg5Kz"},"RPbIncb":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iHBn4\/yz\/l\/en_US\/11EPb6AkdWR.js?_nc_x=Ij3Wp8lg5Kz"},"U14FKF9":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yM\/l\/0,cross\/GH7S_YzNRO3.css?_nc_x=Ij3Wp8lg5Kz"},"RLNnP+9":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y6\/r\/nPC6rn9_Jjy.js?_nc_x=Ij3Wp8lg5Kz"},"NsK\/jQf":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ijzQ4\/y9\/l\/en_US\/T6T_IbPwn-9.js?_nc_x=Ij3Wp8lg5Kz"},"dsV5VvK":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yQ\/l\/0,cross\/lZ2emUOGiQ-.css?_nc_x=Ij3Wp8lg5Kz"},"qtDewXO":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iqOa4\/y2\/l\/en_US\/XSYwkqEvlD5.js?_nc_x=Ij3Wp8lg5Kz"},"Yn40J8B":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yO\/l\/0,cross\/oLDJ6rzs_U6.css?_nc_x=Ij3Wp8lg5Kz"},"ZdOMPeJ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i-FK4\/y9\/l\/en_US\/1tuuChOIuEZ.js?_nc_x=Ij3Wp8lg5Kz"},"8VVv4d4":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iIMq4\/yA\/l\/en_US\/Hy9I6l5S9kp.js?_nc_x=Ij3Wp8lg5Kz"},"\/jN3FRx":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i6An4\/yl\/l\/en_US\/2ktKKi7nLO4.js?_nc_x=Ij3Wp8lg5Kz"},"gf4oXSY":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y_\/l\/0,cross\/XnE-xAErFL9.css?_nc_x=Ij3Wp8lg5Kz"},"DW6Lwm3":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iwS34\/yf\/l\/en_US\/Th74FnWM_ao.js?_nc_x=Ij3Wp8lg5Kz"},"CpaLQQ7":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i29k4\/y1\/l\/en_US\/Sz-7OigtgFB.js?_nc_x=Ij3Wp8lg5Kz"},"cwNFXH8":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iG2U4\/yX\/l\/en_US\/2daej_jGdmw.js?_nc_x=Ij3Wp8lg5Kz"},"cwdzCLH":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3isly4\/yU\/l\/en_US\/0wJz8Rd1esQ.js?_nc_x=Ij3Wp8lg5Kz"},"LP\/Y1SY":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yQ\/r\/CH-tZLBHW9K.js?_nc_x=Ij3Wp8lg5Kz"},"jHxpDAJ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iQSy4\/yH\/l\/en_US\/XifABmLkH97.js?_nc_x=Ij3Wp8lg5Kz"},"6T7hURa":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ibHy4\/ya\/l\/en_US\/Y0wAD5vK8Qu.js?_nc_x=Ij3Wp8lg5Kz"},"9gPkypr":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yt\/l\/0,cross\/mFai7yzeHSR.css?_nc_x=Ij3Wp8lg5Kz"},"hM2DEGN":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yF\/l\/0,cross\/YitZjSBfp2S.css?_nc_x=Ij3Wp8lg5Kz"},"2rr9kN+":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iUeH4\/yX\/l\/en_US\/VoldCIS_HQa.js?_nc_x=Ij3Wp8lg5Kz"},"Tw2WFuc":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yJ\/l\/0,cross\/p1Cl4yxuS0E.css?_nc_x=Ij3Wp8lg5Kz"},"8zjjTD4":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yh\/l\/0,cross\/OFsaKXMeAqH.css?_nc_x=Ij3Wp8lg5Kz"},"JaDzeCs":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3izSD4\/yj\/l\/en_US\/3aWKrvLJSfC.js?_nc_x=Ij3Wp8lg5Kz"},"4Jaesww":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ilmQ4\/yF\/l\/en_US\/FTd5jPN-lx5.js?_nc_x=Ij3Wp8lg5Kz"},"pdpH3pO":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yX\/r\/VH1GK4tjLpW.js?_nc_x=Ij3Wp8lg5Kz"},"GQaWz8T":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yn\/r\/ngE_0xyFwgy.js?_nc_x=Ij3Wp8lg5Kz"},"j2SIkXd":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yF\/l\/0,cross\/WdTQit_U-gE.css?_nc_x=Ij3Wp8lg5Kz"},"pEIRrPt":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yS\/l\/0,cross\/fDDBBrV5sNt.css?_nc_x=Ij3Wp8lg5Kz"},"rNwtgcM":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yV\/l\/0,cross\/fU12ce4DM37.css?_nc_x=Ij3Wp8lg5Kz"},"iqrNbtP":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iD6b4\/ye\/l\/en_US\/sUttMeFGXhG.js?_nc_x=Ij3Wp8lg5Kz"},"uVh6YDV":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iMTG4\/yD\/l\/en_US\/Xse7dAPr4fh.js?_nc_x=Ij3Wp8lg5Kz"},"pfeXchm":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iqPV4\/yk\/l\/en_US\/BHYwexm-eqU.js?_nc_x=Ij3Wp8lg5Kz"},"TYQshHU":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yI\/l\/0,cross\/_Ko9yRrJK7A.css?_nc_x=Ij3Wp8lg5Kz"},"YsZ\/FOC":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iZ544\/y3\/l\/en_US\/6sbRDIz5SxZ.js?_nc_x=Ij3Wp8lg5Kz"},"cz+qFNR":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ii-34\/y3\/l\/en_US\/BRCYcoRLtDn.js?_nc_x=Ij3Wp8lg5Kz"},"ouFd5SY":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3il0o4\/yO\/l\/en_US\/x-VxgU-PoJ9.js?_nc_x=Ij3Wp8lg5Kz"},"rTSD+sn":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ivuq4\/yf\/l\/en_US\/6hbrNopaqZW.js?_nc_x=Ij3Wp8lg5Kz"},"9LAjWi2":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yJ\/l\/0,cross\/jUS0g4qp8LD.css?_nc_x=Ij3Wp8lg5Kz"},"zCVY+24":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yL\/r\/JRqknBaWvJl.js?_nc_x=Ij3Wp8lg5Kz"},"r4ZRpKG":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yM\/l\/0,cross\/O4e4CRCwjaP.css?_nc_x=Ij3Wp8lg5Kz"},"aF9iPHd":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iLl54\/ym\/l\/en_US\/yMzqnohiu7a.js?_nc_x=Ij3Wp8lg5Kz"},"4i3xv5g":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iF584\/yM\/l\/en_US\/GrHNMyooEj2.js?_nc_x=Ij3Wp8lg5Kz"},"T0K0Tnd":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yJ\/r\/KJ8bKrjlWJf.js?_nc_x=Ij3Wp8lg5Kz"},"L1j0etx":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yo\/r\/XKPle4X8kbm.js?_nc_x=Ij3Wp8lg5Kz"},"KGunZd8":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yg\/l\/0,cross\/C7EAmGLaGLJ.css?_nc_x=Ij3Wp8lg5Kz"},"zI8nkoQ":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yZ\/l\/0,cross\/kYGjcqU5hFL.css?_nc_x=Ij3Wp8lg5Kz"},"0FggxZ8":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yq\/r\/lb2qYpbsO5d.js?_nc_x=Ij3Wp8lg5Kz"},"nThM4S1":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iB9B4\/y_\/l\/en_US\/Wuygkcd225v.js?_nc_x=Ij3Wp8lg5Kz"},"o2NfR43":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yX\/r\/XGSg6LDSknn.js?_nc_x=Ij3Wp8lg5Kz"},"EVgJcXo":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iy134\/y9\/l\/en_US\/GmVk7W4DIeZ.js?_nc_x=Ij3Wp8lg5Kz"},"6Fq1wf1":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ivb84\/yb\/l\/en_US\/jqWoxJNjlwI.js?_nc_x=Ij3Wp8lg5Kz"},"xGf1Yj2":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iYF84\/yE\/l\/en_US\/ctq1C7J9n3L.js?_nc_x=Ij3Wp8lg5Kz"},"gAmsEOc":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iNHG4\/y5\/l\/en_US\/658u2q5g3hT.js?_nc_x=Ij3Wp8lg5Kz"},"L6QRN8P":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yK\/r\/xe5U_iQ2or8.js?_nc_x=Ij3Wp8lg5Kz"},"TPbU+eZ":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yO\/r\/5T7vZuOfUzh.js?_nc_x=Ij3Wp8lg5Kz"},"zT4AZal":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yA\/r\/bzJWtICw6vm.js?_nc_x=Ij3Wp8lg5Kz"},"Evmrrhj":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yF\/r\/h7VKcR5Upy7.js?_nc_x=Ij3Wp8lg5Kz"},"Sk\/3U0\/":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iomK4\/yK\/l\/en_US\/u0T2TvtQU26.js?_nc_x=Ij3Wp8lg5Kz"},"jAtyCGc":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yo\/l\/0,cross\/Fb-sZMDcwze.css?_nc_x=Ij3Wp8lg5Kz"},"\/XpVFyu":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iAiU4\/yv\/l\/en_US\/H-dF6m8H1Hy.js?_nc_x=Ij3Wp8lg5Kz"},"Pa9tecr":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3i--64\/ya\/l\/en_US\/yDyUtjCMvmq.js?_nc_x=Ij3Wp8lg5Kz"},"hgjLodr":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iICT4\/y_\/l\/en_US\/KObFvLVifM_.js?_nc_x=Ij3Wp8lg5Kz"},"jgOBONE":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yE\/r\/x8JEeuBKhnK.js?_nc_x=Ij3Wp8lg5Kz"},"Ors71lL":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y0\/r\/77akAkl_1hb.js?_nc_x=Ij3Wp8lg5Kz"},"3Ob\/okd":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iEBX4\/yg\/l\/en_US\/8Uh1em1AcHW.js?_nc_x=Ij3Wp8lg5Kz"},"N6PqHXH":{"type":"css","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yL\/l\/0,cross\/4HNW1swWCZH.css?_nc_x=Ij3Wp8lg5Kz"},"TPwdqup":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iGyA4\/ys\/l\/en_US\/cLMd6I8mUzk.js?_nc_x=Ij3Wp8lg5Kz"},"Km+TAUm":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3ifjG4\/ye\/l\/en_US\/8pc8UcPAAwa.js?_nc_x=Ij3Wp8lg5Kz"},"gWMJgTe":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yH\/r\/iGksp69foR_.js?_nc_x=Ij3Wp8lg5Kz"},"hIek+bG":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yY\/r\/DZ_VBlsy-dC.js?_nc_x=Ij3Wp8lg5Kz"},"z5TzYcg":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iT-I4\/y1\/l\/en_US\/qDMYQGfMJE8.js?_nc_x=Ij3Wp8lg5Kz"},"x22Oby4":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/y0\/r\/fN3cCj7Il4D.js?_nc_x=Ij3Wp8lg5Kz"},"8ELCBwH":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ye\/r\/VRzSVH5iU-V.js?_nc_x=Ij3Wp8lg5Kz"},"SWx3yNv":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yW\/r\/O_SjdcR-xKL.js?_nc_x=Ij3Wp8lg5Kz"},"oE4DofT":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yJ\/r\/EejAgnHUad4.js?_nc_x=Ij3Wp8lg5Kz"},"d9wBQj0":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/ym\/r\/APtiNZJ8ENq.js?_nc_x=Ij3Wp8lg5Kz"},"\/mkls6B":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yR\/r\/eVLp0acSmWw.js?_nc_x=Ij3Wp8lg5Kz"},"Z2VqRsL":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3\/yM\/r\/4Sl2Pg6mrU9.js?_nc_x=Ij3Wp8lg5Kz"},"ohW62Em":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iRHR4\/yU\/l\/en_US\/zA6eCl5sK0O.js?_nc_x=Ij3Wp8lg5Kz"},"0BCoA+5":{"type":"js","src":"https:\/\/static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/rsrc.php\/v3iPTF4\/yX\/l\/en_US\/QMMiwc9pFba.js?_nc_x=Ij3Wp8lg5Kz"}},"compMap":{"ODS":{"r":["By5IgmU"],"be":1},"Dock":{"r":["vJoxXZE","sDoRBPp","XDLArku","QvOtGL6","By5IgmU","Rtwqv9J","kJTARDm","ygMK6Qz","4V9IJl7","WRvOZKQ","yiyYHK7","czsQTSm"],"be":1},"WebSpeedInteractionsTypedLogger":{"r":["By5IgmU","Lnk29Go","QvOtGL6"],"rds":{"m":["BanzaiScuba_DEPRECATED"]},"be":1},"AsyncRequest":{"r":["By5IgmU","Rtwqv9J","WRvOZKQ","czsQTSm","kJTARDm"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["QvOtGL6"]},"be":1},"DOM":{"r":["WRvOZKQ","czsQTSm","kJTARDm"],"be":1},"Form":{"r":["QvOtGL6","WRvOZKQ","czsQTSm","kJTARDm"],"be":1},"FormSubmit":{"r":["QvOtGL6","By5IgmU","Rtwqv9J","WRvOZKQ","wtunlrR","czsQTSm","kJTARDm"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED"]},"be":1},"Input":{"r":["QvOtGL6"],"be":1},"Live":{"r":["et7uqCn","By5IgmU","Rtwqv9J","2\/maQ\/Q","WRvOZKQ","R1JMNBw","czsQTSm","kJTARDm"],"be":1},"Toggler":{"r":["vJoxXZE","QvOtGL6","By5IgmU","Rtwqv9J","kJTARDm","ygMK6Qz","4V9IJl7","WRvOZKQ","czsQTSm"],"be":1},"Tooltip":{"r":["vJoxXZE","sDoRBPp","QvOtGL6","OKmVa+P","By5IgmU","g8Nj89H","Rtwqv9J","CGkH4FY","kJTARDm","VbeV7v7","R5w1rCJ","0cL4lAm","4V9IJl7","idVLWWS","WRvOZKQ","yiyYHK7","czsQTSm","nEGssXB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","BanzaiScuba_DEPRECATED","Animation"],"r":["72l+l2B"]},"be":1},"URI":{"r":[],"be":1},"trackReferrer":{"r":[],"rds":{"m":["BanzaiScuba_DEPRECATED"],"r":["QvOtGL6","By5IgmU"]},"be":1},"PhotoTagApproval":{"r":["\/mnVquy","lCiWnqM","WRvOZKQ","czsQTSm","kJTARDm"],"be":1},"PhotoSnowlift":{"r":["sVQdLRz","GpQFBwL","vJoxXZE","Hdut67R","sDoRBPp","n\/KAfcq","QvOtGL6","OKmVa+P","et7uqCn","By5IgmU","3rvwZyp","Lc6FhTQ","g8Nj89H","+WLO04n","\/zbxQ3F","XBO+MqR","OgLHca\/","Rtwqv9J","CGkH4FY","kJTARDm","l+lGG6+","72l+l2B","XCWygIO","XSn8mVF","VbeV7v7","I4T2LaG","\/g8g6la","qtuCCp4","xauFUwO","QCCx1JH","yEH+pkr","nR3i3uV","aC8A+Rb","R5w1rCJ","5KqtzwJ","lCiWnqM","0cL4lAm","VtZ600j","qdGHce5","rs+j\/Ae","ygMK6Qz","72YXxjp","4V9IJl7","idVLWWS","6wI004b","BeaYVaG","WRvOZKQ","HfaxuXM","kKVtO2\/","IjyuYS8","ljfj7HP","18dG1sp","yiyYHK7","j55NIq3","JqiCp\/p","R1JMNBw","czsQTSm","Om\/zuQx","tphu\/a3","VgUDzh7","m9AQnsq","PjirnkC","nEGssXB","\/mBlYFx"],"rds":{"m":["Animation","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions"]},"be":1},"PhotoTagger":{"r":["tyqOj5H","PogKv1z","GpQFBwL","A3hlr8p","1d6ueZi","WiI6r8U","Q1hmhly","9drsDNz","SrpP6vx","vJoxXZE","sDoRBPp","n\/KAfcq","XDLArku","sKCQcVV","+iNmQOj","jj29UZB","QvOtGL6","OKmVa+P","J+vI9it","et7uqCn","By5IgmU","3rvwZyp","RPbIncb","Lc6FhTQ","U14FKF9","g8Nj89H","\/zbxQ3F","RLNnP+9","XBO+MqR","NsK\/jQf","OgLHca\/","Rtwqv9J","CGkH4FY","kJTARDm","dsV5VvK","qtDewXO","l+lGG6+","72l+l2B","Yn40J8B","ZdOMPeJ","XCWygIO","8VVv4d4","\/jN3FRx","gf4oXSY","VbeV7v7","DW6Lwm3","I4T2LaG","CpaLQQ7","\/g8g6la","qtuCCp4","cwNFXH8","cwdzCLH","yEH+pkr","LP\/Y1SY","jHxpDAJ","aC8A+Rb","R5w1rCJ","6T7hURa","lCiWnqM","9gPkypr","0cL4lAm","VtZ600j","qdGHce5","rs+j\/Ae","hM2DEGN","2rr9kN+","Tw2WFuc","ygMK6Qz","4V9IJl7","8zjjTD4","idVLWWS","JaDzeCs","4Jaesww","pdpH3pO","GQaWz8T","BeaYVaG","WRvOZKQ","j2SIkXd","pEIRrPt","HfaxuXM","rNwtgcM","kKVtO2\/","iqrNbtP","IjyuYS8","ljfj7HP","18dG1sp","yiyYHK7","uVh6YDV","pfeXchm","TYQshHU","j55NIq3","YsZ\/FOC","JqiCp\/p","R1JMNBw","cz+qFNR","ouFd5SY","czsQTSm","Om\/zuQx","rTSD+sn","tphu\/a3","9LAjWi2","VgUDzh7","zCVY+24","m9AQnsq","r4ZRpKG","PjirnkC","aF9iPHd","nEGssXB","4i3xv5g","T0K0Tnd","L1j0etx","KGunZd8","zI8nkoQ","\/mBlYFx"],"rdfds":{"m":["GamesVideoModerationRulesNux.react","GamesVideoDeleteCommentDialog.react","GamesVideoCommentRemovedDialog.react","CometTooltipDeferredImpl.react"],"r":["0FggxZ8","nThM4S1","o2NfR43","EVgJcXo","6Fq1wf1","xGf1Yj2","gAmsEOc","L6QRN8P","TPbU+eZ","zT4AZal","Evmrrhj","Sk\/3U0\/","jAtyCGc","\/XpVFyu","Pa9tecr","hgjLodr","jgOBONE","Ors71lL"]},"rds":{"m":["PresenceStatus","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","Animation","PageTransitions","LynxAsyncCallbackFalcoEvent","CometSuspenseFalcoEvent"],"r":["3Ob\/okd"]},"be":1},"PhotoTags":{"r":["QvOtGL6","\/mnVquy","lCiWnqM","WRvOZKQ","czsQTSm","kJTARDm"],"be":1},"TagTokenizer":{"r":["N6PqHXH","sVQdLRz","vJoxXZE","QvOtGL6","By5IgmU","TPwdqup","OgLHca\/","Km+TAUm","kJTARDm","\/mnVquy","rs+j\/Ae","WRvOZKQ","j55NIq3","czsQTSm"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"AsyncDialog":{"r":["vJoxXZE","sDoRBPp","QvOtGL6","OKmVa+P","By5IgmU","g8Nj89H","Rtwqv9J","kJTARDm","VbeV7v7","R5w1rCJ","qdGHce5","ygMK6Qz","4V9IJl7","idVLWWS","WRvOZKQ","18dG1sp","yiyYHK7","czsQTSm","Om\/zuQx","m9AQnsq","nEGssXB","\/mBlYFx"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"Hovercard":{"r":["vJoxXZE","sDoRBPp","sKCQcVV","QvOtGL6","OKmVa+P","By5IgmU","3rvwZyp","g8Nj89H","Rtwqv9J","CGkH4FY","kJTARDm","VbeV7v7","R5w1rCJ","0cL4lAm","hM2DEGN","4V9IJl7","idVLWWS","WRvOZKQ","yiyYHK7","czsQTSm","tphu\/a3","aF9iPHd","nEGssXB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions","Animation"],"r":["72l+l2B"]},"be":1},"XSalesPromoWWWDetailsDialogAsyncController":{"r":["gWMJgTe"],"be":1},"XOfferController":{"r":["hIek+bG"],"be":1},"PerfXSharedFields":{"r":["czsQTSm"],"be":1},"Dialog":{"r":["vJoxXZE","QvOtGL6","By5IgmU","g8Nj89H","Rtwqv9J","kJTARDm","4V9IJl7","WRvOZKQ","IjyuYS8","ljfj7HP","yiyYHK7","czsQTSm","sDoRBPp","OKmVa+P","72l+l2B","R5w1rCJ","nEGssXB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","Animation","PageTransitions","BanzaiScuba_DEPRECATED"]},"be":1},"ExceptionDialog":{"r":["vJoxXZE","sDoRBPp","4i3xv5g","QvOtGL6","OKmVa+P","By5IgmU","Lc6FhTQ","g8Nj89H","Rtwqv9J","kJTARDm","72l+l2B","8VVv4d4","\/jN3FRx","VbeV7v7","yEH+pkr","R5w1rCJ","qdGHce5","rs+j\/Ae","ygMK6Qz","4V9IJl7","idVLWWS","WRvOZKQ","yiyYHK7","czsQTSm","Om\/zuQx","tphu\/a3","m9AQnsq","nEGssXB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"QuickSandSolver":{"r":["z5TzYcg","QvOtGL6","By5IgmU","Rtwqv9J","x22Oby4","aC8A+Rb","WRvOZKQ","8ELCBwH","czsQTSm","SWx3yNv","kJTARDm"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"ConfirmationDialog":{"r":["QvOtGL6","oE4DofT","WRvOZKQ","czsQTSm","kJTARDm"],"be":1},"EncryptedImg":{"r":["By5IgmU","XBO+MqR","aC8A+Rb","6wI004b","czsQTSm"],"be":1},"React":{"r":["sDoRBPp","nEGssXB"],"be":1}}})});
+  </script>
+  <script>
+   requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["By5IgmU","d9wBQj0","\/mkls6B","Z2VqRsL","QvOtGL6","Rtwqv9J","WRvOZKQ","czsQTSm","sDoRBPp","nR3i3uV","aC8A+Rb","R5w1rCJ","vJoxXZE","XBO+MqR","ohW62Em","72l+l2B","yiyYHK7","0BCoA+5","g8Nj89H","VgUDzh7","nEGssXB","\/mBlYFx","18dG1sp","4V9IJl7","idVLWWS"]);});
+  </script>
+  <script>
+   requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){var s=(new ServerJS());s.handle({"define":[["WebDriverConfig",[],{"isTestRunning":false,"isJestE2ETestRun":false,"isXRequestConfigEnabled":false,"auxiliaryServiceInfo":{},"testPath":null,"originHost":null},5332],["LinkshimHandlerConfig",[],{"supports_meta_referrer":true,"default_meta_referrer_policy":"origin-when-crossorigin","switched_meta_referrer_policy":"origin","non_linkshim_lnfb_mode":null,"link_react_default_hash":"AT02GHzS4bkhvv5lYouz5SE7Em6JQxqDo-OoGsKGrdkTWge253OLXev3_4NBdvJDL24AamrX2hcD6nWGTuMK1WBfpQmZL4bt24aTPj8pTSdM-YsxoP4ve2jxaMLImIMgu_5STrAAQrHT2facBxP2","untrusted_link_default_hash":"AT2JvR-fs16_MG0_T4vbZ1vYY0xNR2vkLMSmZ2ahnfKSs4NO9hQh_7cZC11vGm71WS0B9GkG2pEmG62SmTCRIDcVHlrAjqXxmDv-Dx92jHdxnMYEzx4hvmUb2cNMhrevBi1YiY4AKuBsppefdQ09","linkshim_host":"l.facebook.com","linkshim_path":"\/l.php","linkshim_enc_param":"h","linkshim_url_param":"u","use_rel_no_opener":false,"always_use_https":true,"onion_always_shim":false,"middle_click_requires_event":false,"www_safe_js_mode":"asynclazy","m_safe_js_mode":"MLynx_asynclazy","ghl_param_link_shim":false,"click_ids":[],"is_linkshim_supported":true,"current_domain":"facebook.com","blocklisted_domains":["ad.doubleclick.net","ads-encryption-url-example.com","bs.serving-sys.com","ad.atdmt.com","adform.net","ad13.adfarm1.adition.com","ilovemyfreedoms.com","secure.adnxs.com"],"is_mobile_device":false},27],["cr:1108857",[],{"__rc":[null,"Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:1294158",["React.classic"],{"__rc":["React.classic","Aa3kjrNehCGySss0AYSzpjG_c8M6vGTNVlUWiC3CY3lidSUF2LA2FSvmNYTnlN8Pdo2SrVmV3iFtQ1P_P6GXqUhrkABw"]},-1],["cr:1294159",["ReactDOM.classic"],{"__rc":["ReactDOM.classic","Aa3kjrNehCGySss0AYSzpjG_c8M6vGTNVlUWiC3CY3lidSUF2LA2FSvmNYTnlN8Pdo2SrVmV3iFtQ1P_P6GXqUhrkABw"]},-1],["cr:1294246",["ReactDOM.classic"],{"__rc":["ReactDOM.classic","Aa3kjrNehCGySss0AYSzpjG_c8M6vGTNVlUWiC3CY3lidSUF2LA2FSvmNYTnlN8Pdo2SrVmV3iFtQ1P_P6GXqUhrkABw"]},-1],["cr:2682",["warningBlueish"],{"__rc":["warningBlueish","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:11202",[],{"__rc":[null,"Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:1105154",[],{"__rc":[null,"Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:1292365",["React-prod.classic"],{"__rc":["React-prod.classic","Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:1344485",["ReactDOM.classic.prod-or-profiling"],{"__rc":["ReactDOM.classic.prod-or-profiling","Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:2683",["warningBlue"],{"__rc":["warningBlue","Aa0A8O8Ws13qNFW2Q3d4QVs3qmtAaOy63ewK_HNmUmBQgxU3-aFp7hilTnS9dCvGCL8By3HJvHNKvLYu5zysSZn4Bhcn"]},-1],["CoreWarningGK",[],{"forceWarning":false},725],["cr:1344486",["ReactDOM.classic.prod"],{"__rc":["ReactDOM.classic.prod","Aa0t1kcLHdSzz6RJogHAK8aMHOgkjQjpYd_XcYTbh2GEP_-vh-9lbq6WBC1t5zZPyuf1wv28EIZ5tSvpCcaVf5quQmtbHRgFuQ"]},-1],["cr:983844",[],{"__rc":[null,"Aa22DKkKUeXRuxUWYPHQG9DT00CvMg0qHSd61WVhifAv7HXMotcI9hQTVFx2pngWd9VsOsJuN8Lr3PLSCw"]},-1],["cr:1344487",["ReactDOMForked-prod.classic"],{"__rc":["ReactDOMForked-prod.classic","Aa12BHSuIdJPqdybRx5xZcLChFFW2sM_rccAJoisDofwdmJUSttqPnUl4sW8qZ86_ozGqBfUcijoH4pVlByktU79pPHgfSg8Qgrfni-h"]},-1],["cr:1353359",["EventListenerImplForBlue"],{"__rc":["EventListenerImplForBlue","Aa20w4bg_aGox-HG84b_FR2jlZPM5aRpBmteY4Th2DNcmm3tNnijlGx3A-O_Vt765_t8h_ESsr8XILIbDSTMf-VNijWLE5exiA"]},-1]],"instances":[["__inst_00de605a_0_0_jv",["FBAIShyNavBar","__elem_a588f507_0_0_pR","__elem_a588f507_0_1_pM","__elem_f0141c9b_0_0_6u"],[{"canSeeV2":true,"root":{"__m":"__elem_a588f507_0_0_pR"},"searchBar":{"__m":"__elem_a588f507_0_1_pM"},"shyBar":{"__m":"__elem_f0141c9b_0_0_6u"}}],1],["__inst_f0141c9b_0_0_oB",["FBAINavBarMobileMenu","__elem_de0251b4_0_0_D2","__elem_de0251b4_0_1_+r","__elem_a588f507_0_2_JZ","__elem_de0251b4_0_2_xh"],[{"blueButton":{"__m":"__elem_de0251b4_0_0_D2"},"closeButton":{"__m":"__elem_de0251b4_0_1_+r"},"mobileMenu":{"__m":"__elem_a588f507_0_2_JZ"},"whiteButton":{"__m":"__elem_de0251b4_0_2_xh"}}],1],["__inst_357af554_0_0_kG",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_0_aK","__elem_6d7985bd_0_1_qG","__elem_6d7985bd_0_2_\/c","__elem_6d7985bd_0_3_\/C","__elem_6d7985bd_0_4_6O","__elem_6d7985bd_0_5_R0","__elem_6d7985bd_0_6_Qv","__elem_a588f507_0_3_M6","__elem_39aefd50_0_0_25"],[{"links":[{"__m":"__elem_6d7985bd_0_0_aK"},{"__m":"__elem_6d7985bd_0_1_qG"},{"__m":"__elem_6d7985bd_0_2_\/c"},{"__m":"__elem_6d7985bd_0_3_\/C"},{"__m":"__elem_6d7985bd_0_4_6O"},{"__m":"__elem_6d7985bd_0_5_R0"},{"__m":"__elem_6d7985bd_0_6_Qv"}],"secondaryBar":{"__m":"__elem_a588f507_0_3_M6"},"activePage":"research-publication","secondaryBarActivePage":"research","primaryLink":{"__m":"__elem_39aefd50_0_0_25"}}],1],["__inst_560c4631_0_0_rt",["FBAINavMobileDropdown","__elem_a588f507_0_4_iw","__elem_a588f507_0_5_\/h","__elem_de0251b4_0_3_pY","__elem_de0251b4_0_4_3F"],[{"primaryLink":{"__m":"__elem_a588f507_0_4_iw"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_5_\/h"},"openArrow":{"__m":"__elem_de0251b4_0_3_pY"},"closeArrow":{"__m":"__elem_de0251b4_0_4_3F"}}],1],["__inst_357af554_0_1_VA",["FBAIV2SecondaryNavBar","__elem_a588f507_0_6_JF","__elem_39aefd50_0_1_I7"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_6_JF"},"activePage":"research-publication","secondaryBarActivePage":"research-publication","primaryLink":{"__m":"__elem_39aefd50_0_1_I7"}}],1],["__inst_357af554_0_2_Gw",["FBAIV2SecondaryNavBar","__elem_a588f507_0_7_or","__elem_39aefd50_0_2_Cj"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_7_or"},"activePage":"research-publication","secondaryBarActivePage":"people-project","primaryLink":{"__m":"__elem_39aefd50_0_2_Cj"}}],1],["__inst_357af554_0_3_OR",["FBAIV2SecondaryNavBar","__elem_a588f507_0_8_Gr","__elem_39aefd50_0_3_yC"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_8_Gr"},"activePage":"research-publication","secondaryBarActivePage":"events","primaryLink":{"__m":"__elem_39aefd50_0_3_yC"}}],1],["__inst_357af554_0_4_eL",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_7_Uu","__elem_6d7985bd_0_8_eG","__elem_6d7985bd_0_9_9p","__elem_a588f507_0_9_Hu","__elem_39aefd50_0_4_Pc"],[{"links":[{"__m":"__elem_6d7985bd_0_7_Uu"},{"__m":"__elem_6d7985bd_0_8_eG"},{"__m":"__elem_6d7985bd_0_9_9p"}],"secondaryBar":{"__m":"__elem_a588f507_0_9_Hu"},"activePage":"research-publication","secondaryBarActivePage":"tools","primaryLink":{"__m":"__elem_39aefd50_0_4_Pc"}}],1],["__inst_560c4631_0_1_8p",["FBAINavMobileDropdown","__elem_a588f507_0_a_NH","__elem_a588f507_0_b_Hg","__elem_de0251b4_0_5_AX","__elem_de0251b4_0_6_gf"],[{"primaryLink":{"__m":"__elem_a588f507_0_a_NH"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_b_Hg"},"openArrow":{"__m":"__elem_de0251b4_0_5_AX"},"closeArrow":{"__m":"__elem_de0251b4_0_6_gf"}}],1],["__inst_357af554_0_5_S2",["FBAIV2SecondaryNavBar","__elem_a588f507_0_c_y\/","__elem_39aefd50_0_5_dO"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_c_y\/"},"activePage":"research-publication","secondaryBarActivePage":"datasets","primaryLink":{"__m":"__elem_39aefd50_0_5_dO"}}],1],["__inst_357af554_0_6_ge",["FBAIV2SecondaryNavBar","__elem_a588f507_0_d_9W","__elem_39aefd50_0_6_WP"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_d_9W"},"activePage":"research-publication","secondaryBarActivePage":"blog","primaryLink":{"__m":"__elem_39aefd50_0_6_WP"}}],1],["__inst_357af554_0_7_SS",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_a_nB","__elem_6d7985bd_0_b_Tr","__elem_6d7985bd_0_c_cw","__elem_a588f507_0_e_DA","__elem_39aefd50_0_7_16"],[{"links":[{"__m":"__elem_6d7985bd_0_a_nB"},{"__m":"__elem_6d7985bd_0_b_Tr"},{"__m":"__elem_6d7985bd_0_c_cw"}],"secondaryBar":{"__m":"__elem_a588f507_0_e_DA"},"activePage":"research-publication","secondaryBarActivePage":"join-us","primaryLink":{"__m":"__elem_39aefd50_0_7_16"}}],1],["__inst_560c4631_0_2_N6",["FBAINavMobileDropdown","__elem_a588f507_0_f_Pu","__elem_a588f507_0_g_nh","__elem_de0251b4_0_7_k+","__elem_de0251b4_0_8_MO"],[{"primaryLink":{"__m":"__elem_a588f507_0_f_Pu"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_g_nh"},"openArrow":{"__m":"__elem_de0251b4_0_7_k+"},"closeArrow":{"__m":"__elem_de0251b4_0_8_MO"}}],1],["__inst_357af554_0_8_rV",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_d_E1","__elem_6d7985bd_0_e_ib","__elem_6d7985bd_0_f_fY","__elem_6d7985bd_0_g_OJ","__elem_6d7985bd_0_h_DN","__elem_6d7985bd_0_i_59","__elem_6d7985bd_0_j_0f","__elem_a588f507_0_h_\/n","__elem_39aefd50_0_8_Q4"],[{"links":[{"__m":"__elem_6d7985bd_0_d_E1"},{"__m":"__elem_6d7985bd_0_e_ib"},{"__m":"__elem_6d7985bd_0_f_fY"},{"__m":"__elem_6d7985bd_0_g_OJ"},{"__m":"__elem_6d7985bd_0_h_DN"},{"__m":"__elem_6d7985bd_0_i_59"},{"__m":"__elem_6d7985bd_0_j_0f"}],"secondaryBar":{"__m":"__elem_a588f507_0_h_\/n"},"activePage":"research-publication","secondaryBarActivePage":"research","primaryLink":{"__m":"__elem_39aefd50_0_8_Q4"}}],1],["__inst_560c4631_0_3_Y4",["FBAINavMobileDropdown","__elem_a588f507_0_i_Wc","__elem_a588f507_0_j_xv","__elem_de0251b4_0_9_AG","__elem_de0251b4_0_a_Ey"],[{"primaryLink":{"__m":"__elem_a588f507_0_i_Wc"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_j_xv"},"openArrow":{"__m":"__elem_de0251b4_0_9_AG"},"closeArrow":{"__m":"__elem_de0251b4_0_a_Ey"}}],1],["__inst_357af554_0_9_sE",["FBAIV2SecondaryNavBar","__elem_a588f507_0_k_TM","__elem_39aefd50_0_9_lH"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_k_TM"},"activePage":"research-publication","secondaryBarActivePage":"research-publication","primaryLink":{"__m":"__elem_39aefd50_0_9_lH"}}],1],["__inst_357af554_0_a_Bp",["FBAIV2SecondaryNavBar","__elem_a588f507_0_l_JT","__elem_39aefd50_0_a_ru"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_l_JT"},"activePage":"research-publication","secondaryBarActivePage":"people-project","primaryLink":{"__m":"__elem_39aefd50_0_a_ru"}}],1],["__inst_357af554_0_b_07",["FBAIV2SecondaryNavBar","__elem_a588f507_0_m_3c","__elem_39aefd50_0_b_7s"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_m_3c"},"activePage":"research-publication","secondaryBarActivePage":"events","primaryLink":{"__m":"__elem_39aefd50_0_b_7s"}}],1],["__inst_357af554_0_c_NT",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_k_Xc","__elem_6d7985bd_0_l_3t","__elem_6d7985bd_0_m_Md","__elem_a588f507_0_n_D\/","__elem_39aefd50_0_c_cZ"],[{"links":[{"__m":"__elem_6d7985bd_0_k_Xc"},{"__m":"__elem_6d7985bd_0_l_3t"},{"__m":"__elem_6d7985bd_0_m_Md"}],"secondaryBar":{"__m":"__elem_a588f507_0_n_D\/"},"activePage":"research-publication","secondaryBarActivePage":"tools","primaryLink":{"__m":"__elem_39aefd50_0_c_cZ"}}],1],["__inst_560c4631_0_4_ra",["FBAINavMobileDropdown","__elem_a588f507_0_o_CS","__elem_a588f507_0_p_t6","__elem_de0251b4_0_b_8x","__elem_de0251b4_0_c_MS"],[{"primaryLink":{"__m":"__elem_a588f507_0_o_CS"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_p_t6"},"openArrow":{"__m":"__elem_de0251b4_0_b_8x"},"closeArrow":{"__m":"__elem_de0251b4_0_c_MS"}}],1],["__inst_357af554_0_d_mz",["FBAIV2SecondaryNavBar","__elem_a588f507_0_q_EB","__elem_39aefd50_0_d_h3"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_q_EB"},"activePage":"research-publication","secondaryBarActivePage":"datasets","primaryLink":{"__m":"__elem_39aefd50_0_d_h3"}}],1],["__inst_357af554_0_e_AJ",["FBAIV2SecondaryNavBar","__elem_a588f507_0_r_39","__elem_39aefd50_0_e_mi"],[{"links":[],"secondaryBar":{"__m":"__elem_a588f507_0_r_39"},"activePage":"research-publication","secondaryBarActivePage":"blog","primaryLink":{"__m":"__elem_39aefd50_0_e_mi"}}],1],["__inst_357af554_0_f_k8",["FBAIV2SecondaryNavBar","__elem_6d7985bd_0_n_Sy","__elem_6d7985bd_0_o_V0","__elem_6d7985bd_0_p_6r","__elem_a588f507_0_s_t9","__elem_39aefd50_0_f_ek"],[{"links":[{"__m":"__elem_6d7985bd_0_n_Sy"},{"__m":"__elem_6d7985bd_0_o_V0"},{"__m":"__elem_6d7985bd_0_p_6r"}],"secondaryBar":{"__m":"__elem_a588f507_0_s_t9"},"activePage":"research-publication","secondaryBarActivePage":"join-us","primaryLink":{"__m":"__elem_39aefd50_0_f_ek"}}],1],["__inst_560c4631_0_5_iu",["FBAINavMobileDropdown","__elem_a588f507_0_t_9t","__elem_a588f507_0_u_rd","__elem_de0251b4_0_d_pU","__elem_de0251b4_0_e_Iw"],[{"primaryLink":{"__m":"__elem_a588f507_0_t_9t"},"secondaryLinksContainer":{"__m":"__elem_a588f507_0_u_rd"},"openArrow":{"__m":"__elem_de0251b4_0_d_pU"},"closeArrow":{"__m":"__elem_de0251b4_0_e_Iw"}}],1],["__inst_f1d0759c_0_0_s5",["FBAIExpandableItem","__elem_a588f507_0_v_nQ","__elem_a588f507_0_w_WW","__elem_94c15385_0_0_7m","__elem_94c15385_0_1_pd"],[{"title":{"__m":"__elem_a588f507_0_v_nQ"},"contentArea":{"__m":"__elem_a588f507_0_w_WW"},"expandButton":{"__m":"__elem_94c15385_0_0_7m"},"collapseButton":{"__m":"__elem_94c15385_0_1_pd"}}],1],["__inst_f1d0759c_0_1_Ps",["FBAIExpandableItem","__elem_a588f507_0_x_PI","__elem_a588f507_0_y_ag","__elem_94c15385_0_2_rb","__elem_94c15385_0_3_YR"],[{"title":{"__m":"__elem_a588f507_0_x_PI"},"contentArea":{"__m":"__elem_a588f507_0_y_ag"},"expandButton":{"__m":"__elem_94c15385_0_2_rb"},"collapseButton":{"__m":"__elem_94c15385_0_3_YR"}}],1],["__inst_f1d0759c_0_2_Wt",["FBAIExpandableItem","__elem_a588f507_0_z_Bz","__elem_a588f507_0_10_V5","__elem_94c15385_0_4_f+","__elem_94c15385_0_5_Ca"],[{"title":{"__m":"__elem_a588f507_0_z_Bz"},"contentArea":{"__m":"__elem_a588f507_0_10_V5"},"expandButton":{"__m":"__elem_94c15385_0_4_f+"},"collapseButton":{"__m":"__elem_94c15385_0_5_Ca"}}],1],["__inst_f1d0759c_0_3_42",["FBAIExpandableItem","__elem_a588f507_0_11_Y2","__elem_a588f507_0_12_xK","__elem_94c15385_0_6_JH","__elem_94c15385_0_7_Ds"],[{"title":{"__m":"__elem_a588f507_0_11_Y2"},"contentArea":{"__m":"__elem_a588f507_0_12_xK"},"expandButton":{"__m":"__elem_94c15385_0_6_JH"},"collapseButton":{"__m":"__elem_94c15385_0_7_Ds"}}],1],["__inst_f1d0759c_0_4_sT",["FBAIExpandableItem","__elem_a588f507_0_13_yl","__elem_a588f507_0_14_JR","__elem_94c15385_0_8_Ek","__elem_94c15385_0_9_Ay"],[{"title":{"__m":"__elem_a588f507_0_13_yl"},"contentArea":{"__m":"__elem_a588f507_0_14_JR"},"expandButton":{"__m":"__elem_94c15385_0_8_Ek"},"collapseButton":{"__m":"__elem_94c15385_0_9_Ay"}}],1]],"markup":[["__markup_97adea0c_0_0_D6",{"__html":"\u003Cp class=\"_8w6f _8xm4 _8w61 _8w6h\">The filters learned by Convolutional Neural Networks (CNNs) and the feature maps these filters compute are sensitive to convolution arithmetic. Several architectural choices that dictate this arithmetic can result in feature-map artifacts. These artifacts can interfere with the downstream task and impact the accuracy and robustness. We provide a number of visual-debugging means to surface feature-map artifacts and to analyze how they emerge in CNNs. Our means help analyze the impact of these artifacts on the weights learned by the model. Guided by our analysis, model developers can make informed architectural choices that can verifiably mitigate harmful artifacts and improve the model\u2019s accuracy and its shift robustness.\u003C\/p>"},1],["__markup_97adea0c_0_1_Ji",{"__html":"\u003Cp class=\"_8w6f _8xm4 _8w61 _8w6h\">In this paper, we theoretically characterize graph neural network\u2019s representation\npower for high-order node set prediction problems (where a prediction is made\nover a set of more than 1 node). In particular, we focus on one most important\nsecond-order task\u2014link prediction. There are two representative classes of GNN\nmethods for link prediction: GAE and SEAL. GAE (Graph Autoencoder) first\napplies a GNN to the whole graph, and then aggregates the representations of the\nsource and target nodes as their link representation. SEAL extracts a subgraph\naround the source and target nodes, labels the nodes in the subgraph, and then uses\na GNN to learn a link representation from the labeled subgraph. At first glance,\nboth GAE and SEAL use a GNN. However, their performance gap can be very\nlarge. On the recent Open Graph Benchmark datasets, SEAL achieved 3 first places\nout of 4 datasets, outperforming the best GAE method by up to 195\u0025 in Hits&#064;100.\nIn this paper, by studying this performance gap between GAE and SEAL, we\nfirst point out a key limitation of GAE caused by directly aggregating two node\nrepresentations as a link representation. To address this limitation, we propose the\nlabeling trick. Labeling trick unifies several recent successes to improve GNNs\u2019\nrepresentation power, such as SEAL, Distance Encoding, and Identity-aware GNN,\ninto a single and most basic form. We prove that with labeling trick a sufficiently\nexpressive GNN can learn the most expressive structural representations for node\nsets. Our work establishes a theoretical foundation for using GNNs for high-order\nnode set prediction.\u003C\/p>"},1],["__markup_97adea0c_0_2_OK",{"__html":"\u003Cp class=\"_8w6f _8xm4 _8w61 _8w6h\">Theoretical analyses for graph learning methods often assume a complete observation of the input graph. Such an assumption might not be useful for handling any-size graphs due to the scalability issues in practice. In this work, we develop a theoretical framework for graph classification problems in the partial observation setting (i.e., subgraph samplings). Equipped with insights from graph limit theory, we propose a new graph classification model that works on a randomly sampled subgraph and a novel topology to characterize the representability of the model. Our theoretical framework contributes a theoretical validation of mini-batch learning on graphs and leads to new learning-theoretic results on generalization bounds as well as size-generalizability without assumptions on the input.\u003C\/p>"},1],["__markup_97adea0c_0_3_D6",{"__html":"\u003Cp class=\"_8w6f _8xm4 _8w61 _8w6h\">Bandits with Knapsacks (BwK) is a general model for multi-armed bandits under supply\/budget\nconstraints. While worst-case regret bounds for BwK are well-understood, we present three results\nthat go beyond the worst-case perspective. First, we provide upper and lower bounds which\namount to a full characterization for logarithmic, instance-dependent regret rates. Second, we\nconsider \u201csimple regret\u201d in BwK, which tracks algorithm\u2019s performance in a given round, and\nprove that it is small in all but a few rounds. Third, we provide a general \u201creduction\u201d from BwK\nto bandits which takes advantage of some known helpful structure, and apply this reduction to\ncombinatorial semi-bandits, linear contextual bandits, and multinomial-logit bandits. Our results\nbuild on the BwK algorithm from Agrawal and Devanur (2014), providing new analyses thereof.\u003C\/p>"},1]],"elements":[["__elem_a588f507_0_0_pR","u_0_0_Rb",1],["__elem_f0141c9b_0_0_6u","u_0_1_R0",1],["__elem_39aefd50_0_0_25","u_0_2_k7",1],["__elem_a588f507_0_3_M6","u_0_3_1\/",1],["__elem_6d7985bd_0_0_aK","u_0_4_AK",1],["__elem_6d7985bd_0_1_qG","u_0_5_mP",1],["__elem_6d7985bd_0_2_\/c","u_0_6_Mq",1],["__elem_6d7985bd_0_3_\/C","u_0_7_AS",1],["__elem_6d7985bd_0_4_6O","u_0_8_UL",1],["__elem_6d7985bd_0_5_R0","u_0_9_oc",1],["__elem_6d7985bd_0_6_Qv","u_0_a_3P",1],["__elem_a588f507_0_4_iw","u_0_b_RD",1],["__elem_de0251b4_0_4_3F","u_0_c_TQ",1],["__elem_de0251b4_0_3_pY","u_0_d_zV",1],["__elem_a588f507_0_5_\/h","u_0_e_qL",1],["__elem_39aefd50_0_1_I7","u_0_f_nR",1],["__elem_a588f507_0_6_JF","u_0_g_kE",1],["__elem_39aefd50_0_2_Cj","u_0_h_J9",1],["__elem_a588f507_0_7_or","u_0_i_Wb",1],["__elem_39aefd50_0_3_yC","u_0_j_Ay",1],["__elem_a588f507_0_8_Gr","u_0_k_kQ",1],["__elem_39aefd50_0_4_Pc","u_0_l_CZ",1],["__elem_a588f507_0_9_Hu","u_0_m_qF",1],["__elem_6d7985bd_0_7_Uu","u_0_n_i8",1],["__elem_6d7985bd_0_8_eG","u_0_o_qw",1],["__elem_6d7985bd_0_9_9p","u_0_p_fH",1],["__elem_a588f507_0_a_NH","u_0_q_yM",1],["__elem_de0251b4_0_6_gf","u_0_r_UA",1],["__elem_de0251b4_0_5_AX","u_0_s_Ms",1],["__elem_a588f507_0_b_Hg","u_0_t_h3",1],["__elem_39aefd50_0_5_dO","u_0_u_jx",1],["__elem_a588f507_0_c_y\/","u_0_v_sR",1],["__elem_39aefd50_0_6_WP","u_0_w_ig",1],["__elem_a588f507_0_d_9W","u_0_x_hh",1],["__elem_39aefd50_0_7_16","u_0_y_7o",1],["__elem_a588f507_0_e_DA","u_0_z_zz",1],["__elem_6d7985bd_0_a_nB","u_0_10_GK",1],["__elem_6d7985bd_0_b_Tr","u_0_11_so",1],["__elem_6d7985bd_0_c_cw","u_0_12_Vp",1],["__elem_a588f507_0_f_Pu","u_0_13_BC",1],["__elem_de0251b4_0_8_MO","u_0_14_35",1],["__elem_de0251b4_0_7_k+","u_0_15_wZ",1],["__elem_a588f507_0_g_nh","u_0_16_xv",1],["__elem_fc9f538f_0_1_eD","u_0_17_Zy",1],["__elem_de0251b4_0_0_D2","u_0_18_0X",1],["__elem_de0251b4_0_2_xh","u_0_19_ZT",1],["__elem_de0251b4_0_1_+r","u_0_1a_t0",1],["__elem_a588f507_0_2_JZ","u_0_1b_Wz",1],["__elem_fc9f538f_0_0_2o","u_0_1c_Bg",1],["__elem_39aefd50_0_8_Q4","u_0_1d_30",1],["__elem_a588f507_0_h_\/n","u_0_1e_82",1],["__elem_6d7985bd_0_d_E1","u_0_1f_eP",1],["__elem_6d7985bd_0_e_ib","u_0_1g_gq",1],["__elem_6d7985bd_0_f_fY","u_0_1h_BW",1],["__elem_6d7985bd_0_g_OJ","u_0_1i_OC",1],["__elem_6d7985bd_0_h_DN","u_0_1j_Gn",1],["__elem_6d7985bd_0_i_59","u_0_1k_2N",1],["__elem_6d7985bd_0_j_0f","u_0_1l_cv",1],["__elem_a588f507_0_i_Wc","u_0_1m_7f",1],["__elem_de0251b4_0_a_Ey","u_0_1n_4T",1],["__elem_de0251b4_0_9_AG","u_0_1o_r4",1],["__elem_a588f507_0_j_xv","u_0_1p_ba",1],["__elem_39aefd50_0_9_lH","u_0_1q_qw",1],["__elem_a588f507_0_k_TM","u_0_1r_Gb",1],["__elem_39aefd50_0_a_ru","u_0_1s_FN",1],["__elem_a588f507_0_l_JT","u_0_1t_JY",1],["__elem_39aefd50_0_b_7s","u_0_1u_fJ",1],["__elem_a588f507_0_m_3c","u_0_1v_AP",1],["__elem_39aefd50_0_c_cZ","u_0_1w_t1",1],["__elem_a588f507_0_n_D\/","u_0_1x_N4",1],["__elem_6d7985bd_0_k_Xc","u_0_1y_Zz",1],["__elem_6d7985bd_0_l_3t","u_0_1z_LM",1],["__elem_6d7985bd_0_m_Md","u_0_20_sW",1],["__elem_a588f507_0_o_CS","u_0_21_nf",1],["__elem_de0251b4_0_c_MS","u_0_22_CJ",1],["__elem_de0251b4_0_b_8x","u_0_23_Ak",1],["__elem_a588f507_0_p_t6","u_0_24_JW",1],["__elem_39aefd50_0_d_h3","u_0_25_V\/",1],["__elem_a588f507_0_q_EB","u_0_26_hy",1],["__elem_39aefd50_0_e_mi","u_0_27_ok",1],["__elem_a588f507_0_r_39","u_0_28_UX",1],["__elem_39aefd50_0_f_ek","u_0_29_rX",1],["__elem_a588f507_0_s_t9","u_0_2a_+w",1],["__elem_6d7985bd_0_n_Sy","u_0_2b_NQ",1],["__elem_6d7985bd_0_o_V0","u_0_2c_RE",1],["__elem_6d7985bd_0_p_6r","u_0_2d_fi",1],["__elem_a588f507_0_t_9t","u_0_2e_gI",1],["__elem_de0251b4_0_e_Iw","u_0_2f_tL",1],["__elem_de0251b4_0_d_pU","u_0_2g_TY",1],["__elem_a588f507_0_u_rd","u_0_2h_nn",1],["__elem_a588f507_0_1_pM","u_0_2i_0y",1],["__elem_a588f507_0_15_fC","u_0_2j_tO",1],["__elem_a588f507_0_16_4s","u_0_2k_4t",1],["__elem_a588f507_0_17_YV","u_0_2l_0P",1],["__elem_a588f507_0_18_ep","u_0_2m_CX",1],["__elem_072b8e64_0_0_FB","join-us_publication",1],["__elem_de0251b4_0_f_wr","u_0_2n_kQ",1],["__elem_fc9f538f_0_2_sL","u_0_2o_Q9",1],["__elem_a588f507_0_v_nQ","u_0_2p_5p",1],["__elem_94c15385_0_0_7m","u_0_2q_yF",1],["__elem_94c15385_0_1_pd","u_0_2r_Bn",1],["__elem_a588f507_0_w_WW","u_0_2s_4N",1],["__elem_a588f507_0_x_PI","u_0_2t_OR",1],["__elem_94c15385_0_2_rb","u_0_2u_9r",1],["__elem_94c15385_0_3_YR","u_0_2v_NP",1],["__elem_a588f507_0_y_ag","u_0_2w_9p",1],["__elem_a588f507_0_z_Bz","u_0_2x_fZ",1],["__elem_94c15385_0_4_f+","u_0_2y_Im",1],["__elem_94c15385_0_5_Ca","u_0_2z_9N",1],["__elem_a588f507_0_10_V5","u_0_30_zg",1],["__elem_a588f507_0_11_Y2","u_0_31_iG",1],["__elem_94c15385_0_6_JH","u_0_32_NB",1],["__elem_94c15385_0_7_Ds","u_0_33_N3",1],["__elem_a588f507_0_12_xK","u_0_34_7P",1],["__elem_a588f507_0_13_yl","u_0_35_QY",1],["__elem_94c15385_0_8_Ek","u_0_36_km",1],["__elem_94c15385_0_9_Ay","u_0_37_Ia",1],["__elem_a588f507_0_14_JR","u_0_38_9y",1],["__elem_9f5fac15_0_0_Sf","pagelet_dock",1]],"require":[["FBAIDesktopView","initFBAIAnchorlinkScroll",[],[]],["GoogleAnalyticsCookies","writeGACookies",[],[false,"https:\/\/www.google-analytics.com\/analytics.js","UA-137226323-1",{"sampleRate":100,"cookieDomain":"ai.facebook.com"},true,[]]],["fbq","init",[],["765371877188948"]],["fbq","init",[],["720048218061799"]],["fbq","track",[],["PageView"]],["WebPixelRatioDetector","startDetecting",[],[false]],["ScriptPath","set",[],["XFBAIResearchPublicationEntController","a1f3c513",{"imp_id":"0q5MoVfpAjNNgqapP","ef_page":null,"uri":"https:\/\/ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion\/research\/publications\/bullettrain-accelerating-robust-neural-network-training-via-boundary-example-mining"}]],["HostnameRewriter","registerFacebookOverTorFilters",[],["facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion","facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion"]],["__inst_00de605a_0_0_jv"],["__inst_f0141c9b_0_0_oB"],["__inst_357af554_0_0_kG"],["__inst_560c4631_0_0_rt"],["__inst_357af554_0_1_VA"],["__inst_357af554_0_2_Gw"],["__inst_357af554_0_3_OR"],["__inst_357af554_0_4_eL"],["__inst_560c4631_0_1_8p"],["__inst_357af554_0_5_S2"],["__inst_357af554_0_6_ge"],["__inst_357af554_0_7_SS"],["__inst_560c4631_0_2_N6"],["__inst_357af554_0_8_rV"],["__inst_560c4631_0_3_Y4"],["__inst_357af554_0_9_sE"],["__inst_357af554_0_a_Bp"],["__inst_357af554_0_b_07"],["__inst_357af554_0_c_NT"],["__inst_560c4631_0_4_ra"],["__inst_357af554_0_d_mz"],["__inst_357af554_0_e_AJ"],["__inst_357af554_0_f_k8"],["__inst_560c4631_0_5_iu"],["ReactRenderer","constructAndRenderComponentIntoComment_DO_NOT_USE",["FBAIV2SearchBar.react","__elem_fc9f538f_0_0_2o"],[{"constructor":{"__m":"FBAIV2SearchBar.react"},"concurrentRootOptions":null,"props":{"magnifyingGlassSrc":"https:\/\/scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/v\/t39.2365-6\/84278324_3612125228829875_4543433937212407808_n.svg?_nc_cat=105&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=Ar3rH9K5LRAAX_c6r-R&_nc_ht=scontent.xx&oh=00_AT-eLfsdPdoAOy49BDGymlPKQWGnIu7WiR9U41xt-7Sveg&oe=62D72D40","isFooterStyle":true},"dummyElem":{"__m":"__elem_fc9f538f_0_0_2o"},"acrossTransitions":false,"clobberSiblings":false,"preloader":null,"bigPipeContext":{"__bigPipeContext":1},"nonBlockingPreloaders":null}]],["ReactRenderer","constructAndRenderComponentIntoComment_DO_NOT_USE",["FBAIV2SearchBar.react","__elem_fc9f538f_0_1_eD"],[{"constructor":{"__m":"FBAIV2SearchBar.react"},"concurrentRootOptions":null,"props":{"magnifyingGlassSrc":"https:\/\/scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/v\/t39.2365-6\/84278324_3612125228829875_4543433937212407808_n.svg?_nc_cat=105&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=Ar3rH9K5LRAAX_c6r-R&_nc_ht=scontent.xx&oh=00_AT-eLfsdPdoAOy49BDGymlPKQWGnIu7WiR9U41xt-7Sveg&oe=62D72D40","isFooterStyle":false},"dummyElem":{"__m":"__elem_fc9f538f_0_1_eD"},"acrossTransitions":false,"clobberSiblings":false,"preloader":null,"bigPipeContext":{"__bigPipeContext":1},"nonBlockingPreloaders":null}]],["FBAIV2BackToTop","onClick",["__elem_de0251b4_0_f_wr"],[{"__m":"__elem_de0251b4_0_f_wr"}]],["__inst_f1d0759c_0_0_s5"],["__inst_f1d0759c_0_1_Ps"],["__inst_f1d0759c_0_2_Wt"],["__inst_f1d0759c_0_3_42"],["__inst_f1d0759c_0_4_sT"],["ReactRenderer","constructAndRenderComponentIntoComment_DO_NOT_USE",["FBAIV2SearchBar.react","__elem_fc9f538f_0_2_sL"],[{"constructor":{"__m":"FBAIV2SearchBar.react"},"concurrentRootOptions":null,"props":{"magnifyingGlassSrc":"https:\/\/scontent.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion\/v\/t39.2365-6\/85559716_2814260008668824_1992323131183726592_n.svg?_nc_cat=103&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=0bh4t3f5DeMAX_YKAby&_nc_ht=scontent.xx&oh=00_AT8vDfdYrKZwanavlFbRDWgXxsjLph8XNHEeD1nvZOUmfQ&oe=62D8314F","isFooterStyle":true},"dummyElem":{"__m":"__elem_fc9f538f_0_2_sL"},"acrossTransitions":false,"clobberSiblings":false,"preloader":null,"bigPipeContext":{"__bigPipeContext":1},"nonBlockingPreloaders":null}]],["FBLynx","setupDelegation",[],[]],["FBAIPixelAnalytics","logOnEvent",["__elem_072b8e64_0_0_FB"],[{"__m":"__elem_072b8e64_0_0_FB"},"click","meta-careers"]],["ReactRenderer","constructAndRenderComponent",["LineClamp.react","__markup_97adea0c_0_0_D6","HTML","__elem_a588f507_0_15_fC"],[{"__m":"LineClamp.react"},{"lines":3,"lineHeight":24,"disableNative":null,"fitHeightToShorterText":null,"customEllipsis":null,"customEllipsisDisableGradient":null,"children":{"__m":"__markup_97adea0c_0_0_D6"},"hasXHPChildren":true,"className":null,"enableTooltipOnOverflow":false},{"__m":"__elem_a588f507_0_15_fC"}]],["ReactRenderer","constructAndRenderComponent",["LineClamp.react","__markup_97adea0c_0_1_Ji","HTML","__elem_a588f507_0_16_4s"],[{"__m":"LineClamp.react"},{"lines":3,"lineHeight":24,"disableNative":null,"fitHeightToShorterText":null,"customEllipsis":null,"customEllipsisDisableGradient":null,"children":{"__m":"__markup_97adea0c_0_1_Ji"},"hasXHPChildren":true,"className":null,"enableTooltipOnOverflow":false},{"__m":"__elem_a588f507_0_16_4s"}]],["ReactRenderer","constructAndRenderComponent",["LineClamp.react","__markup_97adea0c_0_2_OK","HTML","__elem_a588f507_0_17_YV"],[{"__m":"LineClamp.react"},{"lines":3,"lineHeight":24,"disableNative":null,"fitHeightToShorterText":null,"customEllipsis":null,"customEllipsisDisableGradient":null,"children":{"__m":"__markup_97adea0c_0_2_OK"},"hasXHPChildren":true,"className":null,"enableTooltipOnOverflow":false},{"__m":"__elem_a588f507_0_17_YV"}]],["ReactRenderer","constructAndRenderComponent",["LineClamp.react","__markup_97adea0c_0_3_D6","HTML","__elem_a588f507_0_18_ep"],[{"__m":"LineClamp.react"},{"lines":3,"lineHeight":24,"disableNative":null,"fitHeightToShorterText":null,"customEllipsis":null,"customEllipsisDisableGradient":null,"children":{"__m":"__markup_97adea0c_0_3_D6"},"hasXHPChildren":true,"className":null,"enableTooltipOnOverflow":false},{"__m":"__elem_a588f507_0_18_ep"}]],["Animation"],["RequireDeferredReference","unblock",[],[["BanzaiScuba_DEPRECATED","FbtLogging","IntlQtEventFalcoEvent","Animation"],"sd"]],["RequireDeferredReference","unblock",[],[["BanzaiScuba_DEPRECATED","FbtLogging","IntlQtEventFalcoEvent","Animation"],"css"]],["TimeSliceImpl"],["HasteSupportData"],["ServerJS"],["Run"],["InitialJSLoader"]],"contexts":[[{"__m":"__elem_9f5fac15_0_0_Sf"},false]]});requireLazy(["Run"],function(Run){Run.onAfterLoad(function(){s.cleanup(TimeSlice)})});});
+  </script>
+  <script>
+   now_inl=(function(){var p=window.performance;return p&&p.now&&p.timing&&p.timing.navigationStart?function(){return p.now()+p.timing.navigationStart}:function(){return new Date().getTime()};})();window.__bigPipeFR=now_inl();
+  </script>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y2/r/C4t6XissAlp.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y-/l/0,cross/B9HrrIdiKSy.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yT/l/0,cross/0qRoGmMiiJj.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yq/l/0,cross/dL_ZNiLWoQo.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y2/l/0,cross/wXmGG7R3BHq.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yl/r/yRzQj3CtOOH.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yh/r/BT8w9HZghpi.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/ym/r/1bnXY7tF5Bx.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yh/r/8h2PslUKFHc.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yF/r/p55HfXW__mM.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y_/r/Nwu11P6g5HY.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yb/r/kl_fSLmC-Hc.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3iRHR4/yU/l/en_US/zA6eCl5sK0O.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/ye/r/e2uYqNlODhM.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y8/r/9r8JqCgJvpo.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3i7M54/y5/l/en_US/7sQ4paSA82Q.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/ya/l/0,cross/aUtITQzaG_c.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yE/l/0,cross/apAhTq7YYwf.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yh/l/0,cross/u2YMHFtyo_s.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yB/l/0,cross/ZjAhmD1aF1Y.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yp/l/0,cross/7k6-Rx8S6-0.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yN/l/0,cross/z28oMlgiaId.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yz/l/0,cross/cVFN2e1lXri.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y6/r/7f3htpnDCOe.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/y0/r/S6msAMHF_yV.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <link as="script" crossorigin="anonymous" href="https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yV/r/8gjIqkUnBC6.js?_nc_x=Ij3Wp8lg5Kz" nonce="5Qqlgn23" rel="preload"/>
+  <script>
+   window.__bigPipeCtor=now_inl();requireLazy(["BigPipe"],function(BigPipe){define("__bigPipe",[],window.bigPipe=new BigPipe({"forceFinish":true,"config":null}));});
+  </script>
+  <script nonce="5Qqlgn23">
+   (function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("first_response",n);})})();
+  </script>
+  <script nonce="5Qqlgn23">
+   requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["By5IgmU","wc08JHn","IBtmOMB","kJTARDm","dvlbeDT","sDoRBPp","QvOtGL6","nR3i3uV","aC8A+Rb","R5w1rCJ","vJoxXZE","XBO+MqR","ohW62Em","WRvOZKQ","czsQTSm","Rtwqv9J","n0IEt0l","GLilxLC","vL3XhVA","2mpsWTR","ygMK6Qz","ljfj7HP","idVLWWS","nEGssXB","/mBlYFx","18dG1sp"],id:"first_response",phase:0,last_in_phase:true,tti_phase:0,all_phases:[63,62],hsrp:{hblp:{consistency:{rev:1005858511}}},allResources:["By5IgmU","wc08JHn","IBtmOMB","kJTARDm","d9wBQj0","/mkls6B","Z2VqRsL","QvOtGL6","Rtwqv9J","WRvOZKQ","czsQTSm","dvlbeDT","sDoRBPp","nR3i3uV","aC8A+Rb","R5w1rCJ","vJoxXZE","XBO+MqR","ohW62Em","n0IEt0l","GLilxLC","vL3XhVA","2mpsWTR","ygMK6Qz","ljfj7HP","72l+l2B","yiyYHK7","0BCoA+5","g8Nj89H","VgUDzh7","idVLWWS","nEGssXB","/mBlYFx","18dG1sp","4V9IJl7"]});}));
+  </script>
+  <script>
+   requireLazy(["__bigPipe"],function(bigPipe){bigPipe.setPageID("7121017067280870403")});
+  </script>
+  <script nonce="5Qqlgn23">
+   (function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("pagelet_dock",n);})})();
+  </script>
+  <script nonce="5Qqlgn23">
+   requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["kJTARDm"],id:"pagelet_dock",phase:1,last_in_phase:true,last_pagelet:true,tti_phase:1,jsmods:{require:[["AsyncRequestNectarLogging"],["RequireDeferredReference","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent"],"css"]]]},hsrp:{hblp:{consistency:{rev:1005858511}}},allResources:["QvOtGL6","By5IgmU","Rtwqv9J","WRvOZKQ","czsQTSm","kJTARDm"]});}));
+  </script>
+  <script nonce="5Qqlgn23">
+   (function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("last_response",n);})})();
+  </script>
+  <script nonce="5Qqlgn23">
+   requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["By5IgmU"],id:"last_response",phase:2,last_in_phase:true,the_end:true,jsmods:{define:[["TimeSliceInteractionSV",[],{on_demand_reference_counting:true,on_demand_profiling_counters:true,default_rate:1000,lite_default_rate:100,interaction_to_lite_coinflip:{ADS_INTERFACES_INTERACTION:0,ads_perf_scenario:0,ads_wait_time:0,Event:1},interaction_to_coinflip:{ADS_INTERFACES_INTERACTION:1,ads_perf_scenario:1,ads_wait_time:1,Event:100},enable_heartbeat:true,maxBlockMergeDuration:0,maxBlockMergeDistance:0,enable_banzai_stream:true,user_timing_coinflip:50,banzai_stream_coinflip:0,compression_enabled:true,ref_counting_fix:false,ref_counting_cont_fix:false,also_record_new_timeslice_format:false,force_async_request_tracing_on:false},2609],["cr:1069930",[],{__rc:[null,"Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1083116",["XAsyncRequest"],{__rc:["XAsyncRequest","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1083117",[],{__rc:[null,"Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["BrowserPaymentHandlerConfig",[],{enabled:false},3904],["TimeSpentConfig",[],{"0_delay":0,"0_timeout":8,delay:1000,timeout:64},142],["TrackingConfig",[],{domain:"https://pixel.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion"},325],["cr:1642797",["BanzaiBase"],{__rc:["BanzaiBase","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:844180",["TimeSpentImmediateActiveSecondsLoggerBlue"],{__rc:["TimeSpentImmediateActiveSecondsLoggerBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1187159",["BlueCompatBroker"],{__rc:["BlueCompatBroker","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["cr:1634616",["UserActivityBlue"],{__rc:["UserActivityBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1],["BanzaiConfig",[],{MAX_SIZE:10000,MAX_WAIT:150000,MIN_WAIT:null,RESTORE_WAIT:150000,blacklist:["time_spent"],disabled:false,gks:{boosted_pagelikes:true,mercury_send_error_logging:true,platform_oauth_client_events:true,graphexplorer:true,sticker_search_ranking:true},known_routes:["artillery_javascript_actions","artillery_javascript_trace","artillery_logger_data","logger","falco","gk2_exposure","js_error_logging","loom_trace","marauder","perfx_custom_logger_endpoint","qex","require_cond_exposure_logging"],should_drop_unknown_routes:true,should_log_unknown_routes:false},7],["ImmediateActiveSecondsConfig",[],{sampling_rate:0},423],["cr:692209",["cancelIdleCallbackBlue"],{__rc:["cancelIdleCallbackBlue","Aa1-NdjNnCd2ZkIyTlW4QnOvJ_THZVsPoJufkzRgdxo4AVBARb3vubGHNietRcZR1BymqsnLosHgmOf1ji_nIDk9xsg"]},-1]],require:[["NavigationMetrics","setPage",[],[{page:"XFBAIResearchPublicationEntController",page_type:"normal",page_uri:"https://ai.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/research/publications/bullettrain-accelerating-robust-neural-network-training-via-boundary-example-mining",serverLID:"7121017067280870403"}]],["FalcoLoggerTransports","attach",[],[]],["Chromedome","start",[],[{}]],["DimensionTracking"],["NavigationClickPointHandler"],["Artillery","disable",[],[]],["ScriptPathLogger","startLogging",[],[]],["TimeSpentBitArrayLogger","init",[],[]],["CookieCore","setWithoutChecksIfFirstPartyContext",[],["_js_datr","Su_SYldllySFkxb2eSJPZosm",63072000000,"/",true]],["ClickRefLogger"],["DetectBrokenProxyCache","run",[],[0,"c_user"]]]},hsrp:{hsdp:{clpData:{"1829319":{r:1},"1829320":{r:1},"1843988":{r:1}}},hblp:{consistency:{rev:1005858511},rsrcMap:{B2ZbRV3:{type:"js",src:"https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3/yT/r/9nmhULZMT4p.js?_nc_x=Ij3Wp8lg5Kz"},"83Zjgc2":{type:"js",src:"https://static.xx.facebookcooa4ldbat4g7iacswl3p2zrf5nuylvnhxn6kqolvojixwid.onion/rsrc.php/v3iqES4/y2/l/en_US/WJP8bzQFY5_.js?_nc_x=Ij3Wp8lg5Kz"}},compMap:{TransportSelectingClientSingleton:{r:["aC8A+Rb","nEGssXB"],rds:{m:["ContextualConfig","BladeRunnerClient","DGWRequestStreamClient","MqttLongPollingRunner","BanzaiScuba_DEPRECATED"],r:["By5IgmU","B2ZbRV3","I4T2LaG","R1JMNBw","vJoxXZE","QvOtGL6","18dG1sp","czsQTSm","WRvOZKQ","yiyYHK7"]},be:1},RequestStreamCommonRequestStreamCommonTypes:{r:["aC8A+Rb"],be:1}}}},allResources:["By5IgmU","18dG1sp","R1JMNBw","czsQTSm","83Zjgc2","WRvOZKQ","yiyYHK7","GpQFBwL","Rtwqv9J","QvOtGL6"]});}));
+  </script>
+ </body>
+</html>

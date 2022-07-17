@@ -1,0 +1,344 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Michael Altfield's Tech BlogTechnology, Science, and the pursuit of EnlightenmentCommentsPosts
+
+
+
+
+
+Home
+About
+Resume
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Featured Articles
+
+
+
+
+
+
+                        WordPress Multisite on the Darknet (Mercator .onion alias)Continuous Documentation: Hosting Read the Docs on GitHub Pages (2/2)Introducing BusKill: A Kill Cord for your LaptopDetecting (Malicious) Unicode in GitHub PRsHardening Guide for phpListWordPress Profiling with XHProf (Debugging & Optimizing Speed)
+
+
+
+
+
+
+
+
+
+				Detect outgoing port blocking with nmap and portquiz.net		By Michael Altfield, on July 3rd, 2018		This post will describe how to detect if your network is blocking outgoing ports. In this test, we'll be using nmap and the fine website portquiz.net
+ Michael Altfield
+Hi, I’m Michael Altfield. I write articles about opsec, privacy, and devops ➡
+About Michael
+  . . . → Read More: Detect outgoing port blocking with nmap and portquiz.net
+						 Leave a comment  
+
+
+
+
+				Howto Guide: Whole House VPN with Ubiquiti + Cryptostorm (netflix safe!)		By Michael Altfield, on August 20th, 2017
+				This post will describe what hardware to buy & how to configure it so that you have 2 wireless networks in your house: One that seamlessly forces all of the traffic on that network through a VPN--and one that connects to the Internet normally . When finished, the internet activity for any device connected to the first network will be entirely encrypted so that the ISP cannot see which websites are visited*, what software you use, and what information you send & receive on the internet.
+* Assuming your config doesn't leak DNS; see improvements section
+Update 2017-08-25: Added "kill switch" firewall rule that prevents LAN traffic from escaping to the ISP unless it passed through the VPN's vtun0 interface first. Following this change, if the VPN connection is down, the internet will not be accessible (as desired) over the 'home' wifi network (without this, the router bypasses the VPN by sending the packets straight to the ISP--giving a false sense of privacy).
+Update 2021-02-01: Fixed GitHub URL of cryptostorm's free OpenVPN configuration file Update 2021-02-14: Fixed GitHub URL of cryptostorm's paid OpenVPN configuration file
+ Update: I wrote this guide in 2017. It's intended for an audience that has  . . . → Read More: Howto Guide: Whole House VPN with Ubiquiti + Cryptostorm (netflix safe!)
+						 20 comments  
+
+
+
+
+				Tor->VPN in TAILS to bypass tor-blocking		By Michael Altfield, on May 31st, 2015		This post will describe how to route outgoing traffic in a python script running on TAILS first through Tor, then through a SOCKS proxy created with an ssh tunnel. This is helpful when you want to use the anonymizing capabilities of tor, but you need to access a website that explicitly blocks tor exit nodes (common with sites running CloudFlare on default settings).
+ Michael Altfield
+Hi, I’m Michael Altfield. I write articles about opsec, privacy, and devops ➡
+About Michael
+  . . . → Read More: Tor->VPN in TAILS to bypass tor-blocking
+						 3 comments  
+
+
+
+
+				kmhssoccer.org Update		By Michael Altfield, on February 26th, 2009		To a degree, I still actively work on my high school soccer team's website (which I created back in 2005). I started working on it on and off since summer 2008, and 71 hours of development later, I finally pushed my changes to the live server in January 2009.
+ Michael Altfield
+Hi, I’m Michael Altfield. I write articles about opsec, privacy, and devops ➡
+About Michael
+  . . . → Read More: kmhssoccer.org Update
+						 Leave a comment  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+		Michael Altfield			Hi, I'm Michael Altfield. I write articles about opsec, privacy, and devops ➡
+About Michael
+
+		Follow me
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Donate
+BTC
+1DXyJpmu2KQMw2v4QJVzzjZo6f87BBndu6
+
+XMR4B5ra5N1SN4d7BqDtkxAE5G5kGNz5mA5oCob41RzzoduM1uPAcr7QmNLzXtci5HvtkNXC7SowkxMjUUCXF2hm57MMS4jwkx
+
+
+		.onion address
+michaelahgu 3sqef5yz3u2
+42nok2uczdu q5oxqfkwq64
+6tvjhdnl35i     d.onion
+
+
+
+
+
+
+
+
+
+				We’re on the Darknet! Visit this site at our tor .onion
+
+
+
+
+		Tagsanonymity
+apache
+bash
+centos
+centos5
+compartmentalization
+debian
+devops
+dns
+eff
+encryption
+facebook
+firefox
+firewall
+gentoo
+git
+github
+gpg
+hpkp
+https
+lets encrypt
+linux
+MITM
+openvpn
+pdf
+pgp
+php
+portage
+privacy
+proxy
+python
+qubes
+red hat
+rhel
+rhel5
+script
+security
+site-specific browser
+ssh
+tails
+tor
+ubuntu
+vpn
+whonix
+wordpress
+Feautred Articles
+
+
+
+
+
+
+
+				Introducing BusKill: A Kill Cord for your Laptop
+
+
+
+
+
+
+
+
+
+
+
+				Howto Guide: Whole House VPN with Ubiquiti + Cryptostorm (netflix safe!)
+
+
+
+
+
+
+
+
+
+
+
+				Ephemeral Firefox as a Site-Specific Browser (3/3)
+
+
+
+
+
+
+
+
+
+
+
+				Hardening Guide for phpList
+
+
+
+
+
+
+
+
+
+
+
+				Mitigating Poisoned PGP Certificates (CVE-2019-13050)
+
+
+
+
+
+
+
+
+
+
+
+				Continuous Documentation: Hosting Read the Docs on GitHub Pages (1/2)
+
+
+
+
+
+
+		Recent Posts
+
+
+					WordPress Profiling with XHProf (Debugging & Optimizing Speed)
+
+
+					Detecting (Malicious) Unicode in GitHub PRs
+
+
+					Monitoring Tor .onion Websites (uptime alerts)
+
+
+					WordPress Multisite on the Darknet (Mercator .onion alias)
+
+
+					We're on the Darknet! Visit this site at our tor .onion
+
+
+
+		Links
+My Cycling Blog
+My Resume
+My Sustainability Blog
+
+
+
+
+
+
+
+
+
+
+
+    Copyright © 2022 Michael Altfield's Tech Blog - All Rights ReservedPowered by WordPress & Atahualpa

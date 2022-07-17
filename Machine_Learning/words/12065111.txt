@@ -1,0 +1,935 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  	  Travel
+
+	    From DebConf7
+
+
+	    This page gives options for travel to Edinburgh for DebConf 2007.  You may also want:
+
+ Information on getting to the DebConf venue
+ Information on travel around Edinburgh
+
+Please use debconf:DebConf7/Travel to make suggestions for this page, and to discuss how you plan to reach Edinburgh.
+Budget airlines are marked in bold in the lists below.
+
+Contents
+
+1 Visa information
+2 Customs rules
+3 Travel information
+
+3.1 Train
+3.2 Ferry
+3.3 Bus
+3.4 Car
+3.5 Walking/cycling/riding
+3.6 Swimming
+3.7 Air
+
+3.7.1 Europe
+
+3.7.1.1 Austria
+3.7.1.2 Belarus
+3.7.1.3 Belgium
+3.7.1.4 Bosnia and Herzegovina
+3.7.1.5 Bulgaria
+3.7.1.6 Croatia
+3.7.1.7 Cyprus
+3.7.1.8 Czech Republic
+3.7.1.9 Denmark
+3.7.1.10 Estonia
+3.7.1.11 Finland
+3.7.1.12 France
+3.7.1.13 Germany
+3.7.1.14 Greece
+3.7.1.15 Hungary
+3.7.1.16 Iceland
+3.7.1.17 Ireland
+3.7.1.18 Italy
+3.7.1.19 Latvia
+3.7.1.20 Lithuania
+3.7.1.21 Former Yugoslav Republic of Macedonia
+3.7.1.22 Luxembourg
+3.7.1.23 Malta
+3.7.1.24 Netherlands
+3.7.1.25 Norway
+3.7.1.26 Poland
+3.7.1.27 Portugal
+3.7.1.28 Romania
+3.7.1.29 Russian Federation
+3.7.1.30 Serbia
+3.7.1.31 Slovakia
+3.7.1.32 Slovenia
+3.7.1.33 Spain
+3.7.1.34 Sweden
+3.7.1.35 Switzerland
+3.7.1.36 Turkey
+3.7.1.37 UK
+3.7.1.38 Ukraine
+
+
+3.7.2 Middle East
+
+3.7.2.1 Egypt
+3.7.2.2 Iran
+3.7.2.3 Israel
+3.7.2.4 Syria
+
+
+3.7.3 Africa
+
+3.7.3.1 Libya
+3.7.3.2 Morocco
+3.7.3.3 South Africa
+
+
+3.7.4 Asia
+
+3.7.4.1 Bangladesh
+3.7.4.2 Bhutan
+3.7.4.3 China
+3.7.4.4 India
+3.7.4.5 Indonesia
+3.7.4.6 Japan
+3.7.4.7 Pakistan
+3.7.4.8 Philippines
+3.7.4.9 South Korea
+3.7.4.10 Taiwan
+
+
+3.7.5 Oceania
+
+3.7.5.1 Australia
+3.7.5.2 New Zealand
+
+
+3.7.6 South America
+
+3.7.6.1 Argentina
+3.7.6.2 Bolivia
+3.7.6.3 Brazil
+3.7.6.4 Chile
+3.7.6.5 Colombia
+3.7.6.6 Peru
+3.7.6.7 Venezuela
+
+
+3.7.7 Central America
+
+3.7.7.1 El Salvador
+3.7.7.2 Guatemala
+
+
+3.7.8 North America
+
+3.7.8.1 Canada
+3.7.8.2 Cuba
+3.7.8.3 Mexico
+3.7.8.4 USA
+
+
+
+
+
+
+
+
+  Visa information
+Most countries from which DebConf attendees come do not require a visa to visit the UK.  However, note that the UK is not a Schengen country.  Passports are checked even when arriving from elsewhere in the EU.
+These are some of the countries whose nationals require a visa to visit the UK (as of June 2006): Bosnia, China, Colombia, Cuba, Egypt, India, Indonesia, Peru, Romania, Russian Federation, Ukraine.
+To transit through France: Afghanistan, Albania, Angola, Bengladesh, Burkina Faso (*), Cameroon (*), Cuba (*), Democratic Republic of Congo, Erythrée, Ethiopia, Gambia (*), Ghana, Guinea(*), Haïti, India (*), Irak, Iran, Ivory Coast (*), Liberia, Libya, Mali (*), Nigeria, Pakistan, Senegal (*), Sierra Leone, Somalia, Sri Lanka, Sudan, Syria(*), and Palestinians holders of a travel document for refugee which has been issued by Egypt, Lebanon or Syria.  *: unless a US visa is held.
+To transit through Germany: Afghanistan, Angola, Bangladesh, Democratic Republic of Congo, Ethiopia, Eritrea, Gambia, Ghana, India, Iraq, Iran, Jordan, Lebanon, Nigeria, Pakistan, Somalia, Sri Lanka, Sudan, Syria, Turkey.
+To transit through the Netherlands: Afghanistan, Angola, Bangladesh, Colombia, DR Congo, Eritrea, Ethiopia, Gambia, Ghana, Guinea, Iran, Iraq, Nigeria, Pakistan, Sierra Leone, Sudan, Somalia, Sri Lanka, Syria.
+To transit through Spain: Afghanistan, Bangladesh, Congo, Eritrea, Ethopia, Ghana, Iraq, Iran, Nigeria, Pakistan, Somalia, Sri Lanka.
+To transit through the USA: you need a transit visa if you would need a visa to visit the USA.
+More visa information is available on a separate page.
+
+  Customs rules
+Eligible goods under 4,000 euros in value (except pets and firearms) may be temporarily imported while you are in the UK without needing to be declared.  More info
+Customs allowances travelling from outside the EU: 200 cigarettes or 100 cigarillos or 50 cigars or 250g of tobacco; 2 litres of still table wine; 1 litre of strong liqueurs or 2 litres of fortified wine/sparkling wine/other liqueur; 60cc of perfume; 250cc of eau de toilette; £145 of other goods including gifts and souvenirs.
+Restricted goods: firearms, explosives, ammunition, live animals, endangered species, certain plants and their produce, certain radio transmitters.
+Prohibited goods for import: unlicensed drugs, offensive weapons, some types of pornographic and obscene material, counterfeit and pirated goods, meat, milk, and other animal products.
+
+
+  Travel information
+  Train
+Edinburgh is linked to the continental rail system via London and the Channel Tunnel.  There are trains to Edinburgh via both the east and west coast lines: http://www.gner.co.uk/ http://www.virgintrains.co.uk/  Trains to Glasgow and elsewhere within Scotland are operated by http://www.firstgroup.com/scotrail/
+http://www.nationalrail.co.uk/ is a good site for searching train timetables and comparing prices, although tickets may be slightly cheaper when booked directly with the relevant train company.
+The cheapest train option for e.g. the London-Edinburgh route is buying single tickets (for fixed times) as early as possible, online.
+http://www.gner.co.uk/GNER/Tickets/advancesingletickets.htm  Tickets for the end of June went on sale in early April.  Another option for London-Edinburgh is the overnight sleeper train, http://www.firstgroup.com/scotrail/content/caledoniansleeper/index.php
+Apparently GNER won't post tickets outside the UK. The best option is to use the FastTicket option, which means you pick up the tickets from a machine in the station.
+If you'll be spending more than £60 on UK train travel, and are a student or less than 26, you should get a Young Person's Railcard, which for £20 gives you 1/3 off tickets for a year -- even with the cost of the railcard you can save money on a single journey.
+You can get cheaper tickets by booking Eurostar to London and GNER on to Edinburgh together.
+The main railway stations in Edinburgh are Edinburgh Waverley and Edinburgh Haymarket.  Edinburgh Waverley is closer to the DebConf venue. (Map)
+Travel times:
+
+ London-Edinburgh: 4 1/2 hours
+ Glasgow-Edinburgh: 50 minutes
+ Newcastle-Edinburgh: 1 1/2 hours
+ Paris-London: 2 1/2 hours
+ Brussels-London: 2 1/2 hours
+
+http://www.seat61.com/ is a good source of information on international train travel to and from the UK.
+Train tickets can be much cheaper if you book them in advance, especially if you book non-flexible tickets for a specific time.
+
+  Ferry
+Superfast operate a ferry service from Rosyth, a few miles from Edinburgh (map), to Zeebrugge. Timetable
+Other East Coast ferry services operate e.g. from Newcastle to Amsterdam, Kristiansand and Gothenburg, and from Hull to Rotterdam, Helsinki and Hamina.  From Newcastle you can take the train to Edinburgh (see above).
+http://www.cheapest-ferry-crossing.co.uk/FERRY-MAP/ferry-route-map.shtml
+
+  Bus
+Within the UK, long-distance buses can be much cheaper than the equivalent trains, though they also tend to take much longer.
+You can also reach the UK from continental Europe by bus.
+Eurolines international buses
+Megabus low-cost intercity buses (UK)
+Citylink buses (Scotland)
+See the local travel page for information on buses around Edinburgh.
+
+  Car
+Some parking information is available on the City Council website.
+Note that the carpark you may see marked on maps right next to Teviot no longer exists.
+
+  Walking/cycling/riding
+There are many rights of way in the UK besides the ordinary road network.  Note that land access is far more restricted in England than in Scotland, where public access is the default.
+The National Cycle Network may be helpful to cyclists/walkers wanting to avoid busy roads.
+
+  Swimming
+Jordi, please tell us when you'll arrive at Leith, and we can arrange for someone to come and pick you up with a towel and some whisky. (Map)
+
+  Air
+  Airport bus
+Edinburgh airport (airport code EDI) is 12 km from the city centre.
+Arrival information
+Many budget airlines fly to Edinburgh: http://www.whichbudget.com/en/cheapflights.php?to=EDI
+Glasgow and Glasgow Prestwick airports are also near Edinburgh (80 km / 100 km), with good public transport links to it.  It's worth flying to Glasgow or Glasgow Prestwick if you can get to one of them by budget airline but not Edinburgh:
+http://www.whichbudget.com/en/cheapflights.php?to=GLA
+http://www.whichbudget.com/en/cheapflights.php?to=PIK
+In some cases it might be cheaper to fly elsewhere in the UK (e.g. London or Manchester) and arrange onward travel to Edinburgh separately, by train or a cheap internal flight.  You should check the price of onward travel before assuming that this saves you money, however.
+The lists below generally only show routes that can be booked as connecting tickets.  You may be able to travel more cheaply by, for example, using two different budget airline flights.  Note that if you do not book the whole journey together as connecting flights, the airline will not help you if the first flight is late.  Therefore you should leave at least several hours between the flights, or perhaps take an overnight break between them.
+These websites have been useful to us looking for flight information in the past (they combine information from many other sources):
+
+ Checkfelix flight search
+ Skyscanner budget airline search
+
+SeatGuru has information on the best plane seats to choose when booking with different airlines.
+
+  Europe
+  Austria
+ Vienna-Glasgow: Air Berlin
+
+  Belarus
+Nationals of Belarus need a visa to visit the UK.
+
+ Minsk-Vienna-London-Edinburgh: Austrian Airlines + bmi
+ Minsk-Frankfurt-Edinburgh: Lufthansa + bmi
+ Minsk-Warsaw-London-Edinburgh: LOT Polish Airways + British Airways
+
+  Belgium
+ Brussels-Edinburgh: bmi, bmibaby
+
+  Bosnia and Herzegovina
+Bosnian nationals need a visa to visit the UK.
+
+ Sarajevo-Prague-Edinburgh: Czech Airlines
+
+  Bulgaria
+ Burgas-Glasgow: First Choice
+ Burgas-Glasgow: Thomsonfly
+ Sofia-London Heathrow-Edinburgh: British Airways
+ Sofia-Paris Charles de Gaulle-Edinburgh: Air France
+ Sofia-Frankfurt - Edinburgh: Lufthansa
+
+  Croatia
+ Pula-Edinburgh: Flyglobespan
+ Pula-Glasgow: Flyglobespan
+ Zagreb-London-Edinburgh: Croatia Airlines + British Airways
+
+  Cyprus
+Cyprus is a member of the EU, but nationals of the Turkish Republic of Northern Cyprus need a visa to visit the UK.
+
+ Larnaca-Frankfurt-Edinburgh: Lufthansa
+ Larnaca-London-Edinburgh: Cyprus Airways + bmi
+ Paphos-Glasgow: First Choice, Flyglobespan, Thomsonfly
+
+  Czech Republic
+ Brno-London Stansted: Ryanair
+ Prague-Edinburgh: Czech Airlines
+ Prague-Edinburgh: Flyglobespan (restarts 2 November 2006)
+ Prague-Glasgow: Flyglobespan
+
+  Denmark
+ Vágar-Edinburgh: Atlantic Airways
+ Copenhagen-Edinburgh: Sterling European Airlines, bmibaby, bmi, SAS
+
+  Estonia
+ Tallinn-London Stansted: Easyjet
+ Tallinn-Amsterdam-Edinburgh: KLM
+ Tallinn-Copenhagen-Edinburgh: SAS
+
+  Finland
+ Helsinki-Edinburgh: Finnair
+
+  France
+ Avignon-Edinburgh: Jet2 (weekly)
+ Grenoble Lyons-Prestwick: RyanAir
+ Marseilles-Prestwick: RyanAir
+ Nice-Edinburgh: Flyglobespan
+ Nice-Glasgow: Flyglobespan
+ Paris Charles de Gaulle-Edinburgh: Air France, British Airways
+ Paris Beauvais-Prestwick: RyanAir
+ Rennes-Edinburgh: flybe
+
+  Germany
+ Berlin Schönefeld-Glasgow: easyJet
+ Berlin Tegel-Glasgow: Air Berlin
+ Cologne Bonn-Edinburgh: Germanwings
+ Dortmund-Edinburgh: easyJet
+ Düsseldorf-Glasgow: Air Berlin (from May)
+ Hannover-Glasgow: Air Berlin
+ Frankfurt-Edinburgh: Lufthansa
+ Frankfurt Hahn-Prestwick: RyanAir
+ Leipzig-Glasgow: Air Berlin
+ Munich-Edinburgh: EasyJet (from 4 April)
+ Münster Osnabrück-Glasgow: Air Berlin
+ Nuremberg-Glasgow: Air Berlin
+ Paderborn Lippstadt-Glasgow: Air Berlin
+ Weeze Dusseldorf-Prestwick: RyanAir
+
+  Greece
+ Athens-Glasgow: FlyGlobespan
+ Corfu-Glasgow: Thomsonfly
+ Heraklion-Glasgow: FlyGlobespan
+ Zante-Glasgow: Thomsonfly
+
+  Hungary
+ Budapest-London-Edinburgh: British Airways
+ Budapest-Amsterdam-Edinburgh: KLM
+
+  Iceland
+ Keflavik-London-Edinburgh: Icelandair + bmi, Icelandair + British Airways
+ Keflavik-Amsterdam-Edinburgh: Icelandair + KLM
+
+  Ireland
+ Carrickfinn-Glasgow: Aer Arann
+ Cork-Edinburgh: Aer Arann
+ Galway-Edinburgh: Aer Arann
+ Dublin-Edinburgh: Aer Lingus
+ Dublin-Glasgow: Aer Lingus
+ Dublin-Prestwick: RyanAir
+ Dublin-Edinburgh: Ryanair
+ Shannon-Edinburgh: Ryanair
+ Shannon-Prestwick: Ryanair
+
+  Italy
+ Milan: easyJet, Jet2.com
+ Naples-Glasgow: Thomsonfly
+ Pisa-Edinburgh: Jet2.com
+ Pisa-Prestwick: RyanAir
+ Rome Fiumicino-Edinburgh: Flyglobespan
+ Rome Ciampino-Prestwick: RyanAir
+ Turin-London-Edinburgh: British Airways
+ Verona-Glasgow: Thomsonfly
+
+  Latvia
+ Riga-Prestwick: RyanAir
+ Riga-Birmingham: airBaltic
+ Riga-London: airBaltic
+
+  Lithuania
+ Vilnius-Birmingham: airBaltic
+ Vilnius-London-Edinburgh: Lithuanian Airlines + British Airways
+ Vilnius-Amsterdam-Edinburgh: KLM
+ Vilnius-Copenhagen-Edinburgh: SAS
+ Vilnius-London: airBaltic
+ Kaunas-London Stansted: Ryanair
+
+  Former Yugoslav Republic of Macedonia
+FYROM nationals need a visa to visit the UK.
+If possible, it will probably be cheaper to fly from a neighbouring country.
+
+ Skopje-Belgrade-London-Edinburgh: JAT Yugoslav Airlines, bmi
+ Skopje-Budapest-Frankfurt-Edinburgh: Malev, bmi
+
+  Luxembourg
+ Luxembourg-Amsterdam-Edinburgh: KLM
+ Luxembourg-Frankfurt-Edinburgh: Luxair, Lufthansa
+ Luxembourg-Manchester-Edinburgh: Luxair, British Airways
+ Luxembourg-London-Edinburgh: Luxair, British Airways
+ Luxembourg-Paris-Edinburgh: Luxair, British Airways
+
+  Malta
+ Malta-Glasgow: Thomsonfly
+
+  Netherlands
+ Amsterdam-Edinburgh: easyJet, KLM Royal Dutch Airlines and KLM Cityhopper
+ Amsterdam-Prestwick: Transavia
+ Eindhoven-Prestwick: RyanAir
+
+  Norway
+ Bergen-Edinburgh: Widerøe
+ Oslo-Edinburgh: Norwegian
+ Torp-Prestwick: RyanAir
+
+  Poland
+ Gdansk-Edinburgh: Centralwings
+ Gdansk-Prestwick: WizzAir
+ Katowice-Edinburgh: Centralwings
+ Krakow-Edinburgh: Sky Europe
+ Krakow-Prestwick: RyanAir
+ Warsaw-Edinburgh: Centralwings
+ Warsaw-Prestwick: WizzAir
+ Wroclaw-Prestwick: WizzAir
+
+  Portugal
+ Faro-Edinburgh: Avro, Flyglobespan
+ Faro-Glasgow: Avro, First Choice, Thomsonfly, Flyglobespan
+ Lisbon-London-Edinburgh: British Airways
+ Lisbon-Paris-Edinburgh: Air France
+ Lisbon-Amsterdam-Edinburgh: KLM
+ Madeira-Glasgow: Thomsonfly, First Choice
+
+  Romania
+ Bucharest-Paris-Edinburgh: Air France
+ Bucharest-London-Edinburgh: British Airways
+ Bucharest-Frankfurt-Edinburgh: Lufthansa
+
+  Russian Federation
+Russian nationals need a visa to visit the UK.
+
+ Moscow Domodedovo-Edinburgh: Transaero
+ Moscow-London-Edinburgh: British Airways, bmi
+ Moscow-Paris-Edinburgh: Air France
+ St Petersburg-Frankfurt-Edinburgh: Lufthansa
+
+  Serbia
+Serbian nationals need a visa to visit the UK.
+
+ Belgrade-London-Edinburgh: JAT Yugoslav Airlines + bmi
+ Belgrade-Frankfurt-Edinburgh: Lufthansa
+
+  Slovakia
+ Bratislava-London Stansted: Ryanair
+ Bratislava-Prague-Edinburgh: CSA (on some days)
+ Bratislava-Munich-Frankfurt-Edinburgh: Lufthansa
+ Bratislava-Prague-Copenhagen: Edinburgh: CSA, bmi
+
+  Slovenia
+ Ljubljana-Paris-Edinburgh: Air France
+ Ljubljana-Prague-Edinburgh: CSA (on some days)
+ Ljubljana-Frankfurt-Edinburgh: Adria Airways, Lufthansa
+
+  Spain
+ Alicante-Edinburgh: Air Scotland, easyJet, Flyglobespan
+ Alicante-Glasgow: Air Scotland, Thomsonfly, Flyglobespan, easyJet, First Choice
+ Arrecife-Edinburgh: Flyglobespan
+ Arrecife Lanzarote-Glasgow: Thomsonfly, Avro, Flyglobespan, First Choice
+ Barcelona-Edinburgh: Flyglobespan, Iberia
+ Barcelona-Glasgow: Air Scotland, Flyglobespan
+ Fuerteventura-Glasgow: Flyglobespan
+ Gerona-Glasgow: Thomsonfly
+ Gerona-Prestwick: RyanAir
+ Ibiza-Edinburgh: Flyglobespan
+ Ibiza-Glasgow: Flyglobespan
+ Las Palmas Gran Canaria-Edinburgh: Avro
+ Las Palmas Gran Canaria-Glasgow: Avro, Flyglobespan, Thomsonfly
+ Madrid-Edinburgh: easyJet, Iberia
+ Mahon-Edinburgh: Flyglobespan
+ Málaga-Edinburgh: Air Scotland, Flyglobespan, Thomsonfly
+ Málaga-Glasgow: Air Scotland, Avro, easyJet, First Choice, Flyglobespan, Thomsonfly
+ Menorca-Edinburgh: Flyglobespan
+ Menorca-Glasgow: Avro, Flyglobespan, Thomsonfly
+ Murcia-Edinburgh: Flyglobespan, Jet2.com
+ Murcia-Prestwick: RyanAir
+ Palma de Mallorca-Edinburgh: Flyglobespan, Thomsonfly, easyJet (from 5 May)
+ Palma de Mallorca-Glasgow: Air Scotland, Avro, easyJet, First Choice, Flyglobespan
+ Reus-Edinburgh: Monarch (weekly)
+ Reus-Glasgow: First Choice, Thomsonfly
+ Reus-Prestwick: RyanAir
+ Seville-Paris-Edinburgh: Air France
+ Seville-Madrid-London-Edinburgh: Iberia
+ Tenerife-Edinburgh: Avro, Flyglobespan, Thomsonfly
+ Tenerife South-Edinburgh: Avro, First Choice, Flyglobespan, Thomsonfly
+ Valencia-Hamburg-Frankfurt-Edinburgh: Lufthansa
+ Valencia-Dusseldorf-Frankfurt-Edinburgh: Lufthansa
+ Valencia-Barcelona-London-Edinburgh: Iberia
+ Valencia-Paris-Edinburgh: Air France
+
+  Sweden
+ Gothenburg Save-Prestwick: RyanAir
+ Skavsta-Prestwick: RyanAir
+ Stockholm-Edinburgh: Scandinavian Airlines System, Sterling
+ Stockholm Arlanda-Edinburgh: Snowflake
+
+  Switzerland
+ Geneva-Edinburgh: easyJet, Flyglobespan (seasonal)
+ Geneva-Glasgow: easyJet
+ Zurich-Edinburgh: bmi
+
+  Turkey
+Turkish nationals require a visa to visit the UK.
+
+ Ankara-London-Edinburgh: British Airways
+ Antalya-Glasgow: Avro
+ Dalaman-Glasgow: Avro
+ Istanbul-London-Edinburgh: British Airways
+ Istanbul-Amsterdam-Edinburgh: KLM
+ Istanbul-Frankfurt-Edinburgh: Lufthansa (Schengen airport transit visa may be required)
+ Istanbul-Paris-Edinburgh: Air France
+ Istanbul Sabiha Gökçen-London Luton: easyJet
+
+  UK
+ Belfast City-Edinburgh: Flybe
+ Belfast City-Glasgow: Flybe
+ Belfast International-Edinburgh: easyJet
+ Belfast International-Glasgow: easyJet
+ Birmingham-Edinburgh: Flybe, bmibaby, BA Connect
+ Birmingham-Glasgow: Flybe
+ Bournemouth-Prestwick: RyanAir
+ Bristol-Edinburgh: easyjet, BA Connect
+ Bristol-Glasgow: easyjet
+ Cardiff-Edinburgh: bmibaby
+ Cardiff-Glasgow: bmibaby, bmi
+ Cardiff-Prestwick: bmi
+ Exeter-Edinburgh: Flybe
+ Exeter-Glasgow: Flybe
+ Guernsey-Glasgow: Flybe
+ Inverness-Edinburgh: Loganair
+ Isle of Man-Edinburgh: Loganair
+ Kirkwall-Edinburgh: Loganair
+ Jersey-Edinburgh: Flybe, bmi
+ Jersey-Glasgow: Flybe, bmibaby, bmi
+ Leeds Bradford-Edinburgh: bmi
+ Leeds Bradford-Glasgow: bmibaby, bmi
+ Lerwick-Edinburgh: Loganair
+ London City-Edinburgh: BA Connect, ScotAirways
+ London Gatwick-Edinburgh: easyJet, British Airways
+ London Gatwick-Glasgow: easyJet
+ London Heathrow-Edinburgh: bmi, British Airways
+ London Heathrow-Glasgow: bmibaby, bmi
+ London Luton-Edinburgh: easyJet
+ London Luton-Glasgow: easyJet
+ London Stansted-Edinburgh: easyJet
+ London Stansted-Glasgow: easyJet, Air Berlin
+ London Stansted-Prestwick: RyanAir
+ Manchester-Edinburgh: Jet2.com, BA Connect, bmi
+ Manchester-Glasgow: bmibaby, bmi
+ Newquay-Edinburgh: Flybe
+ Norwich-Edinburgh: Flybe
+ Norwich-Glasgow: Flybe
+ Nottingham Easy Midlands-Edinburgh: bmibaby
+ Nottingham Easy Midlands-Glasgow: bmibaby, bmi
+ Shetland Sumburgh-Edinburgh: Loganair
+ Southampton-Edinburgh: Flybe, BA Connect
+ Southampton-Glasgow: Flybe
+ Stornoway-Edinburgh: bmi, Loganair
+ Wick-Edinburgh: Loganair
+
+  Ukraine
+Ukrainian nationals need a visa to visit the UK.
+
+ Kiev-Amsterdam-Edinburgh: KLM
+
+  Middle East
+  Egypt
+Egyptian nationals need a visa to visit the UK.
+
+ Cairo-London-Edinburgh: British Airways
+ Cairo-Amsterdam-Edinburgh: KLM
+ Cairo-Paris-Edinburgh: Air France
+
+  Iran
+Iranian nationals need a visa to visit the UK.
+
+ Tehran-London-Edinburgh: British Airways
+ Tehran-Frankfurt-Edinburgh: Lufthansa (Schengen airport transit visa may be required)
+
+  Israel
+ Tel Aviv-Prague-Edinburgh: Czech Airlines
+ Tel Aviv-Paris-Edinburgh: Air France
+ Tel Aviv-London-Edinburgh: British Airways
+
+  Syria
+Syrian nationals need a visa to visit the UK.
+
+ Aleppo-London-Edinburgh: British Airways
+ Damascus-London-Edinburgh: British Airways
+ Damascus-Paris-Edinburgh: Air France (Schengen airport transit visa may be required)
+
+  Africa
+  Libya
+Libyan nationals need a visa to visit the UK.
+
+ Tripoli-Amsterdam-Edinburgh: KLM
+ Tripoli-London-Edinburgh: bmi, British Airways
+
+  Morocco
+Moroccan nationals need a visa to visit the UK.
+
+ Fez-London Luton: Ryanair
+ Marrakech-London Gatwick: easyJet
+ Marrakech-London Luton: Ryanair
+ Marrakech-London-Edinburgh: British Airways
+ Rabat-Paris-Edinburgh: Air France
+
+  South Africa
+ Cape Town-London-Edinburgh: British Airways, bmi+South Africa Airways
+ Cape Town-Amsterdam-Edinburgh: KLM
+ Cape Town-Frankfurt-Edinburgh: Lufthansa
+
+  Asia
+  Bangladesh
+Nationals of Bangladesh need a visa to visit the UK.
+
+ Dhaka-London-Edinburgh: British Airways
+
+  Bhutan
+Nationals of Bhutan need a visa to visit the UK.  You need to apply via Kolkata (Calcutta); see the High Commission's website for information.
+
+  China
+Chinese nationals need a visa to visit the UK.
+
+ Beijing-London-Edinburgh: British Airways, bmi
+ Beijing-Amsterdam-Edinburgh: KLM
+ Beijing-Amsterdam-Edinburgh: Lufthansa
+ Shanghai-London-Edinburgh: British Airways, bmi, Virgin Atlantic
+ Shanghai-Paris-Edinburgh: Air France
+ Shanghai-Frankfurt-Edinburgh: Lufthansa
+
+  India
+Indian nationals need a visa to visit the UK.
+
+ Chennai-London-Edinburgh: British Airways
+ Delhi-London-Edinburgh: Virgin Atlantic, British Airways
+ Kolkata-Mumbai-Amsterdam-Edinburgh: Indian Airways + KLM
+ Kolkata-Delhi-Amsterdam-Edinburgh: Indian Airways + KLM
+ Mumbai-London-Edinburgh: bmi, British Airways, Virgin Atlantic
+
+  Indonesia
+Indonesian nationals need a visa to visit the UK.
+
+ Jakarta-Kuala Lumpur-Amsterdam-Edinburgh: KLM
+
+  Japan
+ Osaka-Tokyo-Paris-Edinburgh: All Nippon Airways, Air France
+ Osaka-Paris-Edinburgh: Air France
+ Osaka-Amsterdam-Edinburgh: KLM
+ Osaka-London-Edinburgh
+ Tokyo-London-Edinburgh: British Airways
+ Tokyo-Frankfurt-Edinburgh: Lufthansa
+
+  Pakistan
+Pakistani nationals need a visa to visit the UK.
+
+ Islamabad-Abu Dhabi-London-Etihad Airways + British Airways
+ Karachi-Bahrain-London-Edinburgh: Gulf Air
+ Karachi-Muscat-London-Edinburgh: Gulf Air
+
+  Philippines
+Nationals of the Philippines need a visa to visit the UK.
+
+ Manila-Amsterdam-Edinburgh: KLM
+ Manila-Hong Kong-Paris-Edinburgh: Philippine Airlines + Air France
+
+  South Korea
+ Seoul-London-Edinburgh: Korean Air/Asiana Airlines + bmi/British Airways
+ Seoul-Amsterdam-Edinburgh: KLM
+ Seoul-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+
+  Taiwan
+Taiwanese nationals need a visa to visit the UK.
+
+ Taipei-Frankfurt-Edinburgh: Chinaairline + BMI, Lufthansa
+ Taipei-Pars-Edinburgh: Eva + BA, Air France
+ Taipei-London-Edinburgh: Eva + BA, BMI
+ Taipei-Amsterdam-Edinburgh: Chinaairline + EasyJet, KLM
+ Kaohsiung-Frankfurt-Edinburgh: Lufthansa
+ Kaohsiung-Paris-Edinburgh: Air France
+ Kaohsiung-Amsterdam-Edinburgh: KLM
+
+  Oceania
+  Australia
+ Sydney-Bangkok-London-Edinburgh: British Airways
+
+  New Zealand
+ Auckland-Hong Kong-London-Edinburgh: Cathay Pacific, Air New Zealand + bmi
+ Auckland-London-Edinburgh: Air New Zealand + bmi
+ Wellington-Sydney-Bangkok-London-Edinburgh: British Airways
+
+  South America
+From South America you can fly to Edinburgh through European hubs like London/Paris/Amsterdam/Frankfurt.
+
+  Argentina
+ Buenos Aires-Paris-Edinburgh: Air France
+ Buenos Aires-Sao Paolo-Amsterdam-Edinburgh: KLM
+
+  Bolivia
+ La Paz-Sao Paulo-Paris-Edinburgh: AeroSur + Air France
+ La Paz-Miami-Newark-Edinburgh: American Airlines + Continental Airlines (requires USA visa)
+
+  Brazil
+ Rio de Janeiro-Paris-Edinburgh: Tam Linhas Aereas + Air France
+ Rio de Janeiro-London-Edinburgh: British Airways
+ Rio de Janeiro-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+ Rio de Janeiro-Lisbon-London-Edinburgh: TAP Air Portugal
+ Sao Paulo-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+ Sao Paulo-London-Edinburgh: Tam Linhas Aereas + British Airways/bmi
+ Sao Paulo-Paris-Edinburgh: Air France
+ Sao Paulo-Madrid-London-Edinburgh: Iberia
+ Sao Paulo-Amsterdam-Edinburgh: KLM
+ Sao Paulo-Milan-London-Edinburgh: Alitalia + bmi
+ Sao Paulo-Washington-London-Edinburgh: United Airlines (requires USA visa)
+
+  Chile
+ Santiago-Paris-Edinburgh: Air France
+ Santiago-Madrid-London-Edinburgh: Iberia
+ Santiago-Sao Paulo-London-Edinburgh: TAM + bmi/British Airways
+ Santiago-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+
+  Colombia
+Colombian nationals need a visa to visit the UK.
+
+ Bogota-Newark-Edinburgh: Continental (requires USA visa)
+ Bogota-Miami-London: American Airways + British Airways/bmi (requires USA visa)
+ Bogota-Paris-Edinburgh: Air France
+ Bogota-Madrid-London: Iberia
+ Bogota-Miami-Atlanta-Edinburgh: Avianca + Delta Airlines (requires USA visa)
+
+  Peru
+Peruvian nationals need a visa to visit the UK.
+
+ Lima-Amsterdam-Edinburgh: KLM
+ Lima-Orlando-Atlanta-Edinburgh: Copa Airlines + Delta Airlines (requires USA visa)
+ Lima-New York-London-Edinburgh: LAN Peru + British Airways (requires USA visa)
+ Lima-Miami-Newark-Edinburgh: Continental + American Airlines (requires USA visa)
+ Lima-Madrid-London-Edinburgh: Iberia
+
+  Venezuela
+Venezuelan citizens travelling to the UK do not need a visa to travel to the UK. However, if you have been refused a visa before, please contact the British Embassy in Caracas.
+
+ Caracas-Paris--Edinburgh: Air France
+ Caracas-Frankfurt-Edinburgh: Lufthansa
+ Caracas-Atlanta-Edinburgh: Delta Airlines (requires a USA visa)
+
+As always, travellers from the countryside might decide for a different flight plan depending on the local airline they're going to fly. Some airlines (Air France?) have special offers with local airlines. If the deal is still very expensive for you, consider travelling by car to Caracas and staying with one of the locals overnight.
+
+  Central America
+You can fly to Edinburgh through European hubs like London/Paris/Amsterdam/Frankfurt, or it may be quicker to fly via Atlanta or Newark (US visa required).
+
+  El Salvador
+It may be possible to fly via Montreal/Toronto/Mexico/Madrid to avoid the USA.  Please send an update for this page if you find some appropriate flights.
+
+ San Salvador-Los Angeles-London-Edinburgh: United Airlines (requires USA visa)
+ San Salvador-Newark-Edinburgh: Continental Airlines (requires USA visa)
+ San Salvador-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+
+  Guatemala
+ Guatemala City-Newark-Edinburgh: Continental Airlines (requires USA visa)
+ Guatemala City-Atlanta-Edinburgh: Delta Airlines (requires USA visa)
+
+  North America
+  Canada
+ Calgary-Glasgow: Air Transat, Zoom, IgluCanada
+ Edmonton-London-Edinburgh: Air Canada, bmi (same planes, but price can differ)
+ Halifax-Glasgow: Zoom, IgluCanada
+ Hamilton-Glasgow: FlyGlobeSpan
+ Montreal-London-Edinburgh: bmi, Air Canada (same planes, but price can differ)
+ Montreal-Newark-Edinburgh: Continental
+ Ottawa-Glasgow: IgluCanada, Zoom
+ Toronto-Edinburgh: Air Transat, FlyGlobeSpan
+ Toronto-Glasgow: IgluCanada, AirTransat, FlyGlobeSpan, Zoom
+ Vancouver-Glasgow: Zoom, Air Transat, IgluCanada
+ Vancouver-Newark-Edinburgh: Continental
+ Vancouver-London-Edinburgh: bmi, Air Canada (same planes, but price can differ)
+
+  Cuba
+Cuban nationals need a visa to visit the UK.
+
+ Havana-Madrid-London-Edinburgh: Iberia
+
+  Mexico
+ Mexico City-Amsterdam-Edinburgh: KLM
+ Cancun-Glasgow: Thomsonfly (only on Mondays)
+
+  USA
+ Atlanta-Edinburgh: Delta Air Lines
+ Boston-Glasgow: FlyGlobespan
+ Las Vegas-Glasgow: FlyGlobespan
+ Los Angeles
+ Newark-Edinburgh: Continental Airlines
+ New York-Liverpool: FlyGlobespan
+ Orlando Sanford-Glasgow: Avro, FlyGlobespan
+ Washington Dulles-Newark-Edinburgh: Continental
+ Washington (Reagan)-Newark-Edinburgh: Continental
+
+
+
+
+
+
+Retrieved from "https://debconf7.debconf.org/wiki/Travel"
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  Navigation
+
+
+	    	      Main Page
+	     	      Press
+	     	      Recent changes
+	     	      Random page
+	     	      Sponsorship
+	     	      Interwiki linking
+
+
+
+
+
+
+	  Search
+
+
+
+	       
+
+
+
+
+
+
+	  Personal tools
+
+
+	    Log in / create account
+
+
+
+
+
+
+	  Views
+
+	    PageDiscussionView sourceHistory
+
+
+
+
+	  Toolbox
+
+
+		  		  What links here
+		  		  Related changes
+		                	      	      	      	      	      	      	      	      	      Special pages	      	      	      Printable version
+
+
+
+
+
+
+
+        Sponsors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Germany,
+Spain,
+Poland,
+Brazil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    This page was last modified on 7 June 2007, at 11:09. - 	  This page has been accessed 13,875 times. - 	  	  	  	  Disclaimers - 	  About DebConf7

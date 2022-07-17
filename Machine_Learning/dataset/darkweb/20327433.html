@@ -1,0 +1,4682 @@
+<html class="client-nojs" dir="ltr" lang="en">
+ <head>
+  <style>
+   @media print {
+ .noprint,
+ .catlinks,
+ .magnify,
+ .mw-cite-backlink,
+ .mw-editsection,
+ .mw-editsection-like,
+ .mw-hidden-catlinks,
+ .mw-indicators,
+ .mw-redirectedfrom,
+ .patrollink,
+ .usermessage,
+ #column-one,
+ #footer-places,
+ #mw-navigation,
+ #siteNotice,
+ #f-poweredbyico,
+ #f-copyrightico,
+ li#about,
+ li#disclaimer,
+ li#mobileview,
+ li#privacy {
+  display:none
+ }
+ body {
+  background:#fff;
+  color:#000;
+  margin:0;
+  padding:0
+ }
+ a {
+  background:none !important;
+  padding:0 !important
+ }
+ a,
+ a.external,
+ a.new,
+ a.stub {
+  color:#000 !important;
+  text-decoration:none !important;
+  color:inherit !important;
+  text-decoration:inherit !important
+ }
+ .mw-parser-output a.external.text:after,
+ .mw-parser-output a.external.autonumber:after {
+  content:' (' attr(href) ')';
+  word-break:break-all;
+  word-wrap:break-word
+ }
+ .mw-parser-output a.external.text[href^='//']:after,
+ .mw-parser-output a.external.autonumber[href^='//']:after {
+  content:' (https:' attr(href) ')'
+ }
+ dt {
+  font-weight:bold
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  font-weight:bold;
+  page-break-after:avoid;
+  page-break-before:avoid
+ }
+ p {
+  margin:1em 0;
+  line-height:1.2;
+  orphans:3;
+  widows:3
+ }
+ img,
+ figure,
+ .wikitable,
+ .thumb {
+  page-break-inside:avoid
+ }
+ img {
+  border:0;
+  vertical-align:middle
+ }
+ pre,
+ .mw-code {
+  background:#fff;
+  color:#000;
+  border:1pt dashed #000;
+  padding:1em 0;
+  font-size:8pt;
+  white-space:pre-wrap;
+  word-wrap:break-word
+ }
+ sup,
+ sub {
+  line-height:1
+ }
+ ul {
+  list-style-type:square
+ }
+ #globalWrapper {
+  width:100% !important;
+  min-width:0 !important
+ }
+ .mw-body {
+  background:#fff;
+  color:#000;
+  border:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  direction:ltr
+ }
+ #column-content {
+  margin:0 !important
+ }
+ #column-content .mw-body {
+  padding:1em;
+  margin:0 !important
+ }
+ .toc {
+  background-color:#f9f9f9;
+  border:1pt solid #aaa;
+  padding:5px;
+  display:table
+ }
+ .tocnumber,
+ .toctext {
+  display:table-cell
+ }
+ .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-ltr .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-rtl .tocnumber {
+  padding-left:0.5em;
+  padding-right:0
+ }
+ table.floatright,
+ div.floatright,
+ div.tright {
+  float:right;
+  clear:right;
+  position:relative
+ }
+ table.floatleft,
+ div.floatleft,
+ div.tleft {
+  float:left;
+  clear:left;
+  position:relative
+ }
+ div.tleft {
+  margin:0.5em 1.4em 1.3em 0
+ }
+ div.tright {
+  margin:0.5em 0 1.3em 1.4em
+ }
+ table.floatright,
+ div.floatright {
+  margin:0 0 0.5em 0.5em;
+  border:0
+ }
+ table.floatleft,
+ div.floatleft {
+  margin:0 0.5em 0.5em 0;
+  border:0
+ }
+ .center {
+  text-align:center
+ }
+ div.thumb {
+  background-color:transparent;
+  width:auto
+ }
+ div.thumb a {
+  border-bottom:0
+ }
+ div.thumbinner {
+  background-color:#fff;
+  border:0;
+  border-radius:2px;
+  padding:5px;
+  font-size:10pt;
+  color:#666;
+  text-align:center;
+  overflow:hidden;
+  min-width:100px
+ }
+ html .thumbcaption {
+  text-align:left;
+  line-height:1.4;
+  padding:3px
+ }
+ img.thumbborder {
+  border:1pt solid #ddd
+ }
+ table.wikitable,
+ .mw_metadata {
+  background:#fff;
+  margin:1em 0;
+  border:1pt solid #aaa;
+  border-collapse:collapse;
+  font-size:10pt
+ }
+ table.wikitable > caption,
+ .mw_metadata caption {
+  padding:5px;
+  font-size:10pt
+ }
+ table.wikitable > tr > th,
+ table.wikitable > tr > td,
+ table.wikitable > * > tr > th,
+ table.wikitable > * > tr > td,
+ .mw_metadata th,
+ .mw_metadata td {
+  background:#fff !important;
+  color:#000 !important;
+  border:1pt solid #aaa;
+  padding:0.4em 0.6em
+ }
+ table.wikitable > tr > th,
+ table.wikitable > * > tr > th,
+ .mw_metadata th {
+  text-align:center
+ }
+ table.listing,
+ table.listing td {
+  border:1pt solid #000;
+  border-collapse:collapse
+ }
+ .catlinks ul {
+  display:inline;
+  padding:0;
+  list-style:none none
+ }
+ .catlinks li {
+  display:inline-block;
+  line-height:1.15;
+  margin:0.1em 0;
+  border-left:1pt solid #aaa;
+  padding:0 0.4em
+ }
+ .catlinks li:first-child {
+  border-left:0;
+  padding-left:0.2em
+ }
+ .printfooter {
+  padding:1em 0
+ }
+ #footer {
+  background:#fff;
+  color:#000;
+  margin-top:1em;
+  border-top:1pt solid #aaa;
+  padding-top:5px;
+  direction:ltr
+ }
+}
+@media screen {
+ .mw-content-ltr {
+  direction:ltr
+ }
+ .mw-content-rtl {
+  direction:rtl
+ }
+ .sitedir-ltr textarea,
+ .sitedir-ltr input {
+  direction:ltr
+ }
+ .sitedir-rtl textarea,
+ .sitedir-rtl input {
+  direction:rtl
+ }
+ .mw-userlink {
+  unicode-bidi:embed
+ }
+ mark {
+  background-color:#ff0;
+  color:#000
+ }
+ wbr {
+  display:inline-block
+ }
+ input[type='submit'],
+ input[type='button'],
+ input[type='reset'],
+ input[type='file'] {
+  direction:ltr
+ }
+ textarea[dir='ltr'],
+ input[dir='ltr'] {
+  direction:ltr
+ }
+ textarea[dir='rtl'],
+ input[dir='rtl'] {
+  direction:rtl
+ }
+ abbr[title],
+ .explain[title] {
+  border-bottom:1px dotted;
+  cursor:help
+ }
+ @supports (text-decoration:underline dotted) {
+  abbr[title],
+  .explain[title] {
+   border-bottom:0;
+   text-decoration:underline dotted
+  }
+ }
+ span.comment {
+  font-style:italic;
+  unicode-bidi:-moz-isolate;
+  unicode-bidi:isolate
+ }
+ #editform,
+ #toolbar,
+ #wpTextbox1 {
+  clear:both
+ }
+ #toolbar {
+  height:22px
+ }
+ .mw-underline-always a {
+  text-decoration:underline
+ }
+ .mw-underline-never a {
+  text-decoration:none
+ }
+ li span.deleted,
+ span.history-deleted {
+  text-decoration:line-through;
+  color:#72777d;
+  font-style:italic
+ }
+ .not-patrolled {
+  background-color:#ffa
+ }
+ .unpatrolled {
+  font-weight:bold;
+  color:#d33
+ }
+ div.patrollink {
+  font-size:75%;
+  text-align:right
+ }
+ td.mw-label {
+  text-align:right;
+  vertical-align:middle
+ }
+ td.mw-input {
+  text-align:left
+ }
+ td.mw-submit {
+  text-align:left;
+  white-space:nowrap
+ }
+ .mw-input-with-label {
+  white-space:nowrap;
+  display:inline-block
+ }
+ .mw-content-ltr .thumbcaption {
+  text-align:left
+ }
+ .mw-content-ltr .magnify {
+  float:right
+ }
+ .mw-content-rtl .thumbcaption {
+  text-align:right
+ }
+ .mw-content-rtl .magnify {
+  float:left
+ }
+ #catlinks {
+  text-align:left
+ }
+ .catlinks ul {
+  display:inline;
+  margin:0;
+  padding:0;
+  list-style:none none;
+  vertical-align:middle !ie
+ }
+ .catlinks li {
+  display:inline-block;
+  line-height:1.25em;
+  border-left:1px solid #a2a9b1;
+  margin:0.125em 0;
+  padding:0 0.5em;
+  zoom:1;
+  display:inline !ie
+ }
+ .catlinks li:first-child {
+  padding-left:0.25em;
+  border-left:0
+ }
+ .catlinks li a.mw-redirect {
+  font-style:italic
+ }
+ .mw-hidden-cats-hidden {
+  display:none
+ }
+ .catlinks-allhidden {
+  display:none
+ }
+ p.mw-protect-editreasons,
+ p.mw-filedelete-editreasons,
+ p.mw-delete-editreasons {
+  font-size:90%;
+  text-align:right
+ }
+ .autocomment {
+  color:#72777d
+ }
+ .newpage,
+ .minoredit,
+ .botedit {
+  font-weight:bold
+ }
+ div.mw-warning-with-logexcerpt {
+  padding:3px;
+  margin-bottom:3px;
+  border:2px solid #2a4b8d;
+  clear:both
+ }
+ div.mw-warning-with-logexcerpt ul li {
+  font-size:90%
+ }
+ span.mw-revdelundel-link,
+ strong.mw-revdelundel-link {
+  font-size:90%
+ }
+ span.mw-revdelundel-hidden,
+ input.mw-revdelundel-hidden {
+  visibility:hidden
+ }
+ td.mw-revdel-checkbox,
+ th.mw-revdel-checkbox {
+  padding-right:10px;
+  text-align:center
+ }
+ a.new {
+  color:#ba0000
+ }
+ .plainlinks a.external {
+  background:none !important;
+  padding:0 !important
+ }
+ .rtl a.external.free,
+ .rtl a.external.autonumber {
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ table.wikitable {
+  background-color:#f8f9fa;
+  color:#222;
+  margin:1em 0;
+  border:1px solid #a2a9b1;
+  border-collapse:collapse
+ }
+ table.wikitable > tr > th,
+ table.wikitable > tr > td,
+ table.wikitable > * > tr > th,
+ table.wikitable > * > tr > td {
+  border:1px solid #a2a9b1;
+  padding:0.2em 0.4em
+ }
+ table.wikitable > tr > th,
+ table.wikitable > * > tr > th {
+  background-color:#eaecf0;
+  text-align:center
+ }
+ table.wikitable > caption {
+  font-weight:bold
+ }
+ .error,
+ .warning,
+ .success {
+  font-size:larger
+ }
+ .error {
+  color:#d33
+ }
+ .warning {
+  color:#705000
+ }
+ .success {
+  color:#009000
+ }
+ .errorbox,
+ .warningbox,
+ .successbox {
+  border:1px solid;
+  padding:0.5em 1em;
+  margin-bottom:1em;
+  display:inline-block;
+  zoom:1;
+  *display:inline
+ }
+ .errorbox h2,
+ .warningbox h2,
+ .successbox h2 {
+  font-size:1em;
+  color:inherit;
+  font-weight:bold;
+  display:inline;
+  margin:0 0.5em 0 0;
+  border:0
+ }
+ .errorbox {
+  color:#d33;
+  border-color:#fac5c5;
+  background-color:#fae3e3
+ }
+ .warningbox {
+  color:#705000;
+  border-color:#fde29b;
+  background-color:#fdf1d1
+ }
+ .successbox {
+  color:#008000;
+  border-color:#b7fdb5;
+  background-color:#e1fddf
+ }
+ .mw-infobox {
+  border:2px solid #ff7f00;
+  margin:0.5em;
+  clear:left;
+  overflow:hidden
+ }
+ .mw-infobox-left {
+  margin:7px;
+  float:left;
+  width:35px
+ }
+ .mw-infobox-right {
+  margin:0.5em 0.5em 0.5em 49px
+ }
+ .previewnote {
+  color:#d33;
+  margin-bottom:1em
+ }
+ .previewnote p {
+  text-indent:3em;
+  margin:0.8em 0
+ }
+ .visualClear {
+  clear:both
+ }
+ .mw-datatable {
+  border-collapse:collapse
+ }
+ .mw-datatable,
+ .mw-datatable td,
+ .mw-datatable th {
+  border:1px solid #a2a9b1;
+  padding:0 0.15em 0 0.15em
+ }
+ .mw-datatable th {
+  background-color:#ddf
+ }
+ .mw-datatable td {
+  background-color:#fff
+ }
+ .mw-datatable tr:hover td {
+  background-color:#eaf3ff
+ }
+ .mw-content-ltr ul,
+ .mw-content-rtl .mw-content-ltr ul {
+  margin:0.3em 0 0 1.6em;
+  padding:0
+ }
+ .mw-content-rtl ul,
+ .mw-content-ltr .mw-content-rtl ul {
+  margin:0.3em 1.6em 0 0;
+  padding:0
+ }
+ .mw-content-ltr ol,
+ .mw-content-rtl .mw-content-ltr ol {
+  margin:0.3em 0 0 3.2em;
+  padding:0
+ }
+ .mw-content-rtl ol,
+ .mw-content-ltr .mw-content-rtl ol {
+  margin:0.3em 3.2em 0 0;
+  padding:0
+ }
+ .mw-content-ltr dd,
+ .mw-content-rtl .mw-content-ltr dd {
+  margin-left:1.6em;
+  margin-right:0
+ }
+ .mw-content-rtl dd,
+ .mw-content-ltr .mw-content-rtl dd {
+  margin-right:1.6em;
+  margin-left:0
+ }
+ .mw-ajax-loader {
+  background-image:url(/wiki/resources/src/mediawiki.legacy/images/ajax-loader.gif?57f34);
+  background-position:center center;
+  background-repeat:no-repeat;
+  padding:16px;
+  position:relative;
+  top:-16px
+ }
+ .mw-small-spinner {
+  padding:10px !important;
+  margin-right:0.6em;
+  background-image:url(/wiki/resources/src/mediawiki.legacy/images/spinner.gif?ca65b);
+  background-position:center center;
+  background-repeat:no-repeat
+ }
+ h1:lang(anp),
+ h1:lang(as),
+ h1:lang(bh),
+ h1:lang(bho),
+ h1:lang(bn),
+ h1:lang(gu),
+ h1:lang(hi),
+ h1:lang(kn),
+ h1:lang(ks),
+ h1:lang(ml),
+ h1:lang(mr),
+ h1:lang(my),
+ h1:lang(mai),
+ h1:lang(ne),
+ h1:lang(new),
+ h1:lang(or),
+ h1:lang(pa),
+ h1:lang(pi),
+ h1:lang(sa),
+ h1:lang(ta),
+ h1:lang(te) {
+  line-height:1.6em !important
+ }
+ h2:lang(anp),
+ h3:lang(anp),
+ h4:lang(anp),
+ h5:lang(anp),
+ h6:lang(anp),
+ h2:lang(as),
+ h3:lang(as),
+ h4:lang(as),
+ h5:lang(as),
+ h6:lang(as),
+ h2:lang(bho),
+ h3:lang(bho),
+ h4:lang(bho),
+ h5:lang(bho),
+ h6:lang(bho),
+ h2:lang(bh),
+ h3:lang(bh),
+ h4:lang(bh),
+ h5:lang(bh),
+ h6:lang(bh),
+ h2:lang(bn),
+ h3:lang(bn),
+ h4:lang(bn),
+ h5:lang(bn),
+ h6:lang(bn),
+ h2:lang(gu),
+ h3:lang(gu),
+ h4:lang(gu),
+ h5:lang(gu),
+ h6:lang(gu),
+ h2:lang(hi),
+ h3:lang(hi),
+ h4:lang(hi),
+ h5:lang(hi),
+ h6:lang(hi),
+ h2:lang(kn),
+ h3:lang(kn),
+ h4:lang(kn),
+ h5:lang(kn),
+ h6:lang(kn),
+ h2:lang(ks),
+ h3:lang(ks),
+ h4:lang(ks),
+ h5:lang(ks),
+ h6:lang(ks),
+ h2:lang(ml),
+ h3:lang(ml),
+ h4:lang(ml),
+ h5:lang(ml),
+ h6:lang(ml),
+ h2:lang(mr),
+ h3:lang(mr),
+ h4:lang(mr),
+ h5:lang(mr),
+ h6:lang(mr),
+ h2:lang(my),
+ h3:lang(my),
+ h4:lang(my),
+ h5:lang(my),
+ h6:lang(my),
+ h2:lang(mai),
+ h3:lang(mai),
+ h4:lang(mai),
+ h5:lang(mai),
+ h6:lang(mai),
+ h2:lang(ne),
+ h3:lang(ne),
+ h4:lang(ne),
+ h5:lang(ne),
+ h6:lang(ne),
+ h2:lang(new),
+ h3:lang(new),
+ h4:lang(new),
+ h5:lang(new),
+ h6:lang(new),
+ h2:lang(or),
+ h3:lang(or),
+ h4:lang(or),
+ h5:lang(or),
+ h6:lang(or),
+ h2:lang(pa),
+ h3:lang(pa),
+ h4:lang(pa),
+ h5:lang(pa),
+ h6:lang(pa),
+ h2:lang(pi),
+ h3:lang(pi),
+ h4:lang(pi),
+ h5:lang(pi),
+ h6:lang(pi),
+ h2:lang(sa),
+ h3:lang(sa),
+ h4:lang(sa),
+ h5:lang(sa),
+ h6:lang(sa),
+ h2:lang(ta),
+ h3:lang(ta),
+ h4:lang(ta),
+ h5:lang(ta),
+ h6:lang(ta),
+ h2:lang(te),
+ h3:lang(te),
+ h4:lang(te),
+ h5:lang(te),
+ h6:lang(te) {
+  line-height:1.2em
+ }
+ ol:lang(azb) li,
+ ol:lang(bcc) li,
+ ol:lang(bgn) li,
+ ol:lang(bqi) li,
+ ol:lang(fa) li,
+ ol:lang(glk) li,
+ ol:lang(kk-arab) li,
+ ol:lang(lrc) li,
+ ol:lang(luz) li,
+ ol:lang(mzn) li {
+  list-style-type:-moz-persian;
+  list-style-type:persian
+ }
+ ol:lang(ckb) li,
+ ol:lang(sdh) li {
+  list-style-type:-moz-arabic-indic;
+  list-style-type:arabic-indic
+ }
+ ol:lang(hi) li,
+ ol:lang(mai) li,
+ ol:lang(mr) li,
+ ol:lang(ne) li {
+  list-style-type:-moz-devanagari;
+  list-style-type:devanagari
+ }
+ ol:lang(as) li,
+ ol:lang(bn) li {
+  list-style-type:-moz-bengali;
+  list-style-type:bengali
+ }
+ ol:lang(or) li {
+  list-style-type:-moz-oriya;
+  list-style-type:oriya
+ }
+ .toc ul {
+  margin:0.3em 0
+ }
+ .mw-content-ltr .toc ul,
+ .mw-content-rtl .mw-content-ltr .toc ul {
+  text-align:left
+ }
+ .mw-content-rtl .toc ul,
+ .mw-content-ltr .mw-content-rtl .toc ul {
+  text-align:right
+ }
+ .mw-content-ltr .toc ul ul,
+ .mw-content-rtl .mw-content-ltr .toc ul ul {
+  margin:0 0 0 2em
+ }
+ .mw-content-rtl .toc ul ul,
+ .mw-content-ltr .mw-content-rtl .toc ul ul {
+  margin:0 2em 0 0
+ }
+ .toc .toctitle {
+  direction:ltr
+ }
+ #mw-clearyourcache,
+ #mw-sitecsspreview,
+ #mw-sitejspreview,
+ #mw-usercsspreview,
+ #mw-userjspreview {
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ #mw-revision-info,
+ #mw-revision-info-current,
+ #mw-revision-nav {
+  direction:ltr
+ }
+ div.tright,
+ div.floatright,
+ table.floatright {
+  clear:right;
+  float:right
+ }
+ div.tleft,
+ div.floatleft,
+ table.floatleft {
+  float:left;
+  clear:left
+ }
+ div.floatright,
+ table.floatright,
+ div.floatleft,
+ table.floatleft {
+  position:relative
+ }
+ #mw-credits a {
+  unicode-bidi:embed
+ }
+ .printfooter {
+  display:none
+ }
+ .xdebug-error {
+  position:absolute;
+  z-index:99
+ }
+ .mw-editsection {
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+ }
+ .mw-editsection,
+ .mw-editsection-like {
+  font-size:small;
+  font-weight:normal;
+  margin-left:1em;
+  vertical-align:baseline;
+  line-height:1em
+ }
+ .mw-content-ltr .mw-editsection,
+ .mw-content-rtl .mw-content-ltr .mw-editsection {
+  margin-left:1em
+ }
+ .mw-content-rtl .mw-editsection,
+ .mw-content-ltr .mw-content-rtl .mw-editsection {
+  margin-right:1em
+ }
+ sup,
+ sub {
+  line-height:1
+ }
+}
+@media screen {
+ .mw-parser-output a.external,
+ .link-https {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAs0lEQVR4AWP4//8/yRiroHH6njrjtN1/sGGYJpwajdJ2bXNI2M8BE8PQhMXUv0B8yThtMxeGJgyBmf9ZDRO3iRqn775rmL5NCyQG0giyEacm0WWvVstNvnNXt+hYNogP0giyEeRUnJpkVj3mBGqcC8SvNGrOVIJsBDkV5EecmmBYZOnrbqmZD1+CnAqTA2nEq4lh/38W0aWv9gGxF4YcpiYEFlz1jh+kGa8m3BhTE1GYYk0A08+9f1lXOBcAAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/external-ltr.png?bbaf6)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='mailto:'],
+ .link-mailto {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAdElEQVR4AWP4//8/yZjOmozTdv8nFqNoEl36ajYQfxNf+sIf2VQQHyQOksfQBKJFlr7uBkr+AdJpUH4alN8N4mPVBMJARVVADLJ5J5SuAonj1ATDYktfZgIV/wbRID4BTQgssfy5AogmqAkdE9RELKZvigAAGXrTaOmS5A4AAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/mail.png?e8eba)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='ftp://'],
+ .link-ftp {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAkklEQVR4AWP4//8/yZh8TSZpu+6apO76A8E795mm7rInqAmkGCYA0gDSCBJDxiCDsWrCgTHUgAnj9N1/xJa8uAvEf3BhqTmP/qNo0i0+8hekCZ9NQHlUm9Qaz/8VX/piHkmaFPpv/hNd8jyeJE3iC56+R3a/VsXJfyCM7i+8kQsLZoIpAjlOjFN3/QVhZDGKkxEAJnHYmBjMi10AAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/ftp-ltr.png?b23f8)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='irc://'],
+ .mw-parser-output a.external[href^='ircs://'],
+ .link-irc {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAa0lEQVR4AWP4//8/yZh8Tcapu84Yp+3+QwiD1ME1gQQImA5XN0w1YYaeSdqug+Ype8SN0/aswhd6cGyStvu0UdruRcZpu86bpO/2Jxi52ln7eYCmfQPaMNE6aSMvUSnCNGmPkknGXjOaJSMAP/vVKEltp2IAAAAASUVORK5CYII=);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/chat-ltr.png?c1f6b)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogg'],
+ .mw-parser-output a.external[href$='.OGG'],
+ .mw-parser-output a.external[href$='.mid'],
+ .mw-parser-output a.external[href$='.MID'],
+ .mw-parser-output a.external[href$='.midi'],
+ .mw-parser-output a.external[href$='.MIDI'],
+ .mw-parser-output a.external[href$='.mp3'],
+ .mw-parser-output a.external[href$='.MP3'],
+ .mw-parser-output a.external[href$='.wav'],
+ .mw-parser-output a.external[href$='.WAV'],
+ .mw-parser-output a.external[href$='.wma'],
+ .mw-parser-output a.external[href$='.WMA'],
+ .link-audio {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAzElEQVR4AWP4//8/yRinhHH6njpccjg1GKft/gPjiyx5WSey9PUiGB+7hvTdd0GaRJe/shVd+qJGZPlrB9Glr/6ILXtrCdcEUgDDIA0GGdsVgGygopcBIMV8qx4LAenbYktflqBoQrcRbNOqVzxiS1//FF76xkx02aupQI1rCGriX/pQEKjwt8iK10ZAep7YkpfLCDpPZOnLaJAmoSVv+USXvn4MZOcRDAigIgORZa9TRJe8CgGyQQFjSHSQAwMgU3Tpm2ZqRy4CU1UTAPkTw90uS0O9AAAAAElFTkSuQmCC);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/audio-ltr.png?d3074)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogm'],
+ .mw-parser-output a.external[href$='.OGM'],
+ .mw-parser-output a.external[href$='.avi'],
+ .mw-parser-output a.external[href$='.AVI'],
+ .mw-parser-output a.external[href$='.mpeg'],
+ .mw-parser-output a.external[href$='.MPEG'],
+ .mw-parser-output a.external[href$='.mpg'],
+ .mw-parser-output a.external[href$='.MPG'],
+ .link-video {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAiElEQVR4AWP4//8/yRjOME7b/Qe7Ikx5uKBR2u6/oktezQVK/kPHIHGj9N1/sdokOv+VBNREDHHcNi191WqUtusvuiaIOA6bxJe/MDdOB2pe9moBDIOcBxLHahPIBpGlr9OM0/b8Ayq+DMMgPkgcJI9HE6af0DWhSCI5A0Oc7CCnOHKJxhRpAgAit8mhJyKLBQAAAABJRU5ErkJggg==);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/video.png?4b736)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.pdf'],
+ .mw-parser-output a.external[href$='.PDF'],
+ .mw-parser-output a.external[href*='.pdf#'],
+ .mw-parser-output a.external[href*='.PDF#'],
+ .mw-parser-output a.external[href*='.pdf?'],
+ .mw-parser-output a.external[href*='.PDF?'],
+ .link-document {
+  background-position:center right;
+  background-repeat:no-repeat;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAYElEQVR4AWP4//8/yRiFY5y2+w86Nszc90w3c4sgXk3IfJFlr+u0y4+fAorvdGjYz0K0JrFFLxuNU3cdMUrbPZloTaJLX/2RmP/sj3H67r/EaMKQG1GacGF0TURjijQBAIHu2xsEOapJAAAAAElFTkSuQmCC);
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/document-ltr.png?de931)!ie;
+  padding-right:13px
+ }
+ .mw-parser-output a.extiw,
+ .mw-parser-output a.extiw:active {
+  color:#36b
+ }
+ .mw-parser-output a.external {
+  color:#36b
+ }
+}
+@media screen {
+ a {
+  text-decoration:none;
+  color:#0645ad;
+  background:none
+ }
+ a:not([href]) {
+  cursor:pointer
+ }
+ a:visited {
+  color:#0b0080
+ }
+ a:active {
+  color:#faa700
+ }
+ a:hover,
+ a:focus {
+  text-decoration:underline
+ }
+ a:lang(ar),
+ a:lang(kk-arab),
+ a:lang(mzn),
+ a:lang(ps),
+ a:lang(ur) {
+  text-decoration:none
+ }
+ a.stub {
+  color:#723
+ }
+ a.new,
+ #p-personal a.new {
+  color:#ba0000
+ }
+ a.mw-selflink {
+  color:inherit;
+  font-weight:bold;
+  text-decoration:inherit
+ }
+ a.mw-selflink:hover {
+  cursor:inherit;
+  text-decoration:inherit
+ }
+ a.mw-selflink:active,
+ a.mw-selflink:visited {
+  color:inherit
+ }
+ a.new:visited,
+ #p-personal a.new:visited {
+  color:#a55858
+ }
+ .mw-parser-output a.extiw,
+ .mw-parser-output a.extiw:active {
+  color:#36b
+ }
+ .mw-parser-output a.extiw:visited {
+  color:#636
+ }
+ .mw-parser-output a.extiw:active {
+  color:#b63
+ }
+ .mw-parser-output a.external {
+  color:#36b
+ }
+ .mw-parser-output a.external:visited {
+  color:#636
+ }
+ .mw-parser-output a.external:active {
+  color:#b63
+ }
+ .mw-parser-output a.external.free {
+  word-wrap:break-word
+ }
+ img {
+  border:0;
+  vertical-align:middle
+ }
+ hr {
+  height:1px;
+  color:#a2a9b1;
+  background-color:#a2a9b1;
+  border:0;
+  margin:0.2em 0
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  color:#000;
+  background:none;
+  font-weight:normal;
+  margin:0;
+  overflow:hidden;
+  padding-top:0.5em;
+  padding-bottom:0.17em;
+  border-bottom:1px solid #a2a9b1
+ }
+ h1 {
+  font-size:188%
+ }
+ h2 {
+  font-size:150%
+ }
+ h3,
+ h4,
+ h5,
+ h6 {
+  border-bottom:0;
+  font-weight:bold
+ }
+ h3 {
+  font-size:128%
+ }
+ h4 {
+  font-size:116%
+ }
+ h5 {
+  font-size:108%
+ }
+ h6 {
+  font-size:100%
+ }
+ h1,
+ h2 {
+  margin-bottom:0.6em
+ }
+ h3,
+ h4,
+ h5 {
+  margin-bottom:0.3em
+ }
+ p {
+  margin:0.4em 0 0.5em 0
+ }
+ p img {
+  margin:0
+ }
+ ul {
+  list-style-type:square;
+  margin:0.3em 0 0 1.6em;
+  padding:0
+ }
+ ol {
+  margin:0.3em 0 0 3.2em;
+  padding:0;
+  list-style-image:none
+ }
+ li {
+  margin-bottom:0.1em
+ }
+ dt {
+  font-weight:bold;
+  margin-bottom:0.1em
+ }
+ dl {
+  margin-top:0.2em;
+  margin-bottom:0.5em
+ }
+ dd {
+  margin-left:1.6em;
+  margin-bottom:0.1em
+ }
+ pre,
+ code,
+ tt,
+ kbd,
+ samp,
+ .mw-code {
+  font-family:monospace,monospace
+ }
+ code {
+  color:#000;
+  background-color:#f8f9fa;
+  border:1px solid #eaecf0;
+  border-radius:2px;
+  padding:1px 4px
+ }
+ pre,
+ .mw-code {
+  color:#000;
+  background-color:#f8f9fa;
+  border:1px solid #eaecf0;
+  padding:1em;
+  white-space:pre-wrap
+ }
+ table {
+  font-size:100%
+ }
+ fieldset {
+  border:1px solid #2a4b8d;
+  margin:1em 0 1em 0;
+  padding:0 1em 1em
+ }
+ fieldset.nested {
+  margin:0 0 0.5em 0;
+  padding:0 0.5em 0.5em
+ }
+ legend {
+  padding:0.5em;
+  font-size:95%
+ }
+ form {
+  border:0;
+  margin:0
+ }
+ textarea {
+  width:100%;
+  padding:0.1em;
+  display:block;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+ }
+ .center {
+  width:100%;
+  text-align:center
+ }
+ *.center * {
+  margin-left:auto;
+  margin-right:auto
+ }
+ .small {
+  font-size:94%
+ }
+ table.small {
+  font-size:100%
+ }
+ .toc,
+ .mw-warning,
+ .toccolours {
+  border:1px solid #a2a9b1;
+  background-color:#f8f9fa;
+  padding:5px;
+  font-size:95%
+ }
+ .toc {
+  display:inline-block;
+  display:table;
+  zoom:1;
+  *display:inline;
+  padding:7px
+ }
+ table.toc {
+  border-collapse:collapse
+ }
+ table.toc td {
+  padding:0
+ }
+ .toc h2 {
+  display:inline;
+  border:0;
+  padding:0;
+  font-size:100%;
+  font-weight:bold
+ }
+ .toc .toctitle {
+  text-align:center
+ }
+ .toc ul {
+  list-style-type:none;
+  list-style-image:none;
+  margin-left:0;
+  padding:0;
+  text-align:left
+ }
+ .toc ul ul {
+  margin:0 0 0 2em
+ }
+ .tocnumber,
+ .toctext {
+  display:table-cell;
+  text-decoration:inherit
+ }
+ .tocnumber {
+  padding-left:0;
+  padding-right:0.5em;
+  color:#222
+ }
+ .mw-content-ltr .tocnumber {
+  padding-left:0;
+  padding-right:0.5em
+ }
+ .mw-content-rtl .tocnumber {
+  padding-left:0.5em;
+  padding-right:0
+ }
+ .mw-warning {
+  margin-left:50px;
+  margin-right:50px;
+  text-align:center
+ }
+ div.floatright,
+ table.floatright {
+  margin:0 0 0.5em 0.5em
+ }
+ div.floatleft,
+ table.floatleft {
+  margin:0 0.5em 0.5em 0
+ }
+ div.thumb {
+  margin-bottom:0.5em;
+  width:auto;
+  background-color:transparent
+ }
+ div.thumbinner {
+  border:1px solid #c8ccd1;
+  padding:3px;
+  background-color:#f8f9fa;
+  font-size:94%;
+  text-align:center;
+  overflow:hidden
+ }
+ html .thumbimage {
+  background-color:#fff;
+  border:1px solid #c8ccd1
+ }
+ html .thumbcaption {
+  border:0;
+  line-height:1.4em;
+  padding:3px;
+  font-size:94%;
+  text-align:left
+ }
+ div.magnify {
+  float:right;
+  margin-left:3px
+ }
+ div.magnify a {
+  display:block;
+  text-indent:15px;
+  white-space:nowrap;
+  overflow:hidden;
+  width:15px;
+  height:11px;
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919h-10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E');
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+ }
+ img.thumbborder {
+  border:1px solid #eaecf0
+ }
+ .mw-content-ltr .thumbcaption {
+  text-align:left
+ }
+ .mw-content-ltr .magnify {
+  float:right;
+  margin-left:3px;
+  margin-right:0
+ }
+ .mw-content-ltr div.magnify a {
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919h-10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E')
+ }
+ .mw-content-rtl .thumbcaption {
+  text-align:right
+ }
+ .mw-content-rtl .magnify {
+  float:left;
+  margin-left:0;
+  margin-right:3px
+ }
+ .mw-content-rtl div.magnify a {
+  background-image:url(/wiki/resources/src/mediawiki.skinning/images/magnify-clip-rtl.png?a9fb3);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 11 15%22 width=%2215%22 height=%2211%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M9.491 1.865h-10.99v7.919h10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M12.499 6.868h-5.943v4.904h5.943z%22/%3E %3C/g%3E %3C/svg%3E')
+ }
+ div.tright {
+  margin:0.5em 0 1.3em 1.4em
+ }
+ div.tleft {
+  margin:0.5em 1.4em 1.3em 0
+ }
+ body.mw-hide-empty-elt .mw-empty-elt {
+  display:none
+ }
+ .catlinks {
+  border:1px solid #a2a9b1;
+  background-color:#f8f9fa;
+  padding:5px;
+  margin-top:1em;
+  clear:both
+ }
+ textarea {
+  border:1px solid #c8ccd1
+ }
+ .editOptions {
+  background-color:#eaecf0;
+  color:#222;
+  border:1px solid #c8ccd1;
+  border-top:0;
+  padding:1em 1em 1.5em 1em;
+  margin-bottom:2em
+ }
+ .usermessage {
+  background-color:#ffce7b;
+  border:1px solid #ffa500;
+  color:#000;
+  font-weight:bold;
+  margin:2em 0 1em;
+  padding:0.5em 1em;
+  vertical-align:middle
+ }
+ #siteNotice {
+  position:relative;
+  text-align:center;
+  margin:0
+ }
+ #localNotice {
+  margin-bottom:0.9em
+ }
+ .firstHeading {
+  margin-bottom:0.1em;
+  line-height:1.2em;
+  padding-bottom:0
+ }
+ #siteSub {
+  display:none
+ }
+ #contentSub,
+ #contentSub2 {
+  font-size:84%;
+  line-height:1.2em;
+  margin:0 0 1.4em 1em;
+  color:#54595d;
+  width:auto
+ }
+ span.subpages {
+  display:block
+ }
+}
+.mw-wiki-logo {
+ background-image:url(/wiki/resources/wiki.png?e0777)
+}
+.toctogglecheckbox:checked ~ ul {
+ display:none
+}
+@media screen {
+ :not(:checked) > .toctogglecheckbox {
+  display:inline !important;
+  position:absolute;
+  opacity:0
+ }
+ .toctogglespan {
+  font-size:94%
+ }
+ :not(:checked) > .toctogglespan:before {
+  content:' ['
+ }
+ :not(:checked) > .toctogglespan:after {
+  content:']'
+ }
+ .toctogglelabel {
+  cursor:pointer;
+  color:#0645ad
+ }
+ .toctogglelabel:hover {
+  text-decoration:underline
+ }
+ .toctogglecheckbox:focus + .toctitle .toctogglelabel {
+  text-decoration:underline;
+  outline:dotted 1px;
+  outline:auto -webkit-focus-ring-color
+ }
+ .toctogglecheckbox:checked + .toctitle .toctogglelabel:after {
+  content:'show'
+ }
+ .toctogglecheckbox:not(:checked) + .toctitle .toctogglelabel:after {
+  content:'hide'
+ }
+ .toctogglespan ~ .toctoggle {
+  display:none
+ }
+}
+@media print {
+ .toctogglecheckbox:checked + .toctitle {
+  display:none
+ }
+}
+@media screen {
+ div#column-content {
+  width:100%;
+  margin:0;
+  padding:0
+ }
+ .mw-body {
+  padding:1em;
+  position:relative;
+  z-index:2;
+  background:#ffffff;
+  color:#000000;
+  border:1px solid #aaaaaa;
+  line-height:1.5em
+ }
+ #column-one h2 {
+  position:absolute;
+  top:-9999px;
+  left:0
+ }
+ body {
+  font:x-small sans-serif;
+  background-color:#f9f9f9;
+  background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%225%22 height=%22220%22 viewBox=%220 0 1.323 58.208%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22 x1=%22262.803%22 x2=%22263.049%22 y1=%2229.234%22 y2=%22.97%22 gradientTransform=%22translate%28-492.003 238.792%29 scale%281.875%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9f9f9%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f3f3f3%22/%3E %3C/linearGradient%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 d=%22M0 238.792h1.323V297H0z%22 transform=%22translate%280 -238.792%29%22/%3E %3C/svg%3E');
+  background-position:0 0;
+  background-repeat:repeat-x;
+  color:#000000;
+  margin:0;
+  padding:0;
+  direction:ltr;
+  unicode-bidi:embed
+ }
+ div#globalWrapper {
+  font-size:127%;
+  background-image:url(/wiki/skins/MonoBook/resources/images/headbg.jpg?13df6);
+  background-position:0 0;
+  background-repeat:no-repeat;
+  width:100%;
+  margin:0;
+  padding:0;
+  position:relative;
+  z-index:0
+ }
+ a {
+  color:#002bb8
+ }
+ a:visited {
+  color:#5a3696
+ }
+ a.new,
+ #p-personal a.new {
+  color:#cc2200
+ }
+ ul {
+  list-style-type:square;
+  list-style-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22 viewBox=%220 0 1.323 3.44%22%3E %3Cpath fill=%22%23638c9c%22 d=%22M0 1.852v1.323h1.323V1.852z%22/%3E %3C/svg%3E');
+  list-style-image:url(data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs=) \9;
+  list-style-image:url(/wiki/skins/MonoBook/resources/images/bullet.gif?11907) \9!ie
+ }
+ pre,
+ .mw-code {
+  line-height:1.1em
+ }
+ #firstHeading {
+  padding-top:0;
+  overflow:visible
+ }
+ .mw-indicators {
+  float:right;
+  line-height:1.5em;
+  font-size:95%
+ }
+ .mw-indicator {
+  display:-moz-inline-block;
+  display:inline-block;
+  zoom:1;
+  *display:inline
+ }
+ .mw-jump-link:not(:focus) {
+  display:block;
+  position:absolute !important;
+  clip:rect(1px,1px,1px,1px);
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:0;
+  padding:0;
+  overflow:hidden
+ }
+ #siteNotice {
+  font-size:95%;
+  padding:0 0.9em
+ }
+ #siteNotice p {
+  margin:0;
+  padding:0
+ }
+ #localNotice {
+  margin:0
+ }
+ table.rimage {
+  float:right;
+  position:relative;
+  margin-left:1em;
+  margin-bottom:1em;
+  text-align:center
+ }
+ .portlet {
+  overflow:hidden
+ }
+ .portlet h3 {
+  background:transparent;
+  display:inline;
+  height:1em;
+  font-size:91%;
+  white-space:nowrap
+ }
+ .portlet ul {
+  line-height:1.5em;
+  font-size:95%
+ }
+ .portlet li {
+  padding:0;
+  margin:0
+ }
+ .pBody {
+  font-size:95%;
+  color:#000000;
+  border-collapse:collapse
+ }
+ .pBody:after {
+  content:'';
+  clear:both;
+  display:block
+ }
+ #p-logo {
+  position:absolute;
+  z-index:3;
+  overflow:visible
+ }
+ #p-logo a,
+ #p-logo a:hover {
+  display:block;
+  background-repeat:no-repeat;
+  text-decoration:none
+ }
+ li#pt-anonuserpage {
+  color:#707070
+ }
+ #footer {
+  background-color:#ffffff;
+  border-top:1px solid #fabd23;
+  border-bottom:1px solid #fabd23;
+  margin:0.6em 0 1em 0;
+  overflow:hidden;
+  padding:0.4em 0 0.3em 0;
+  text-align:center;
+  font-size:90%
+ }
+ #footer li {
+  display:inline;
+  margin:0 1.3em
+ }
+ #userloginprompt,
+ #languagelinks {
+  font-size:85%
+ }
+ #login-sectiontip {
+  font-size:85%;
+  line-height:1.2;
+  padding-top:2em
+ }
+ #pagehistory li.selected {
+  position:relative
+ }
+ div.patrollink {
+  clear:both
+ }
+ .sharedUploadNotice {
+  font-style:italic
+ }
+ .editExternally {
+  border:1px solid #aaaaaa;
+  background-color:#ffffff;
+  padding:3px;
+  margin-top:0.5em;
+  float:left;
+  font-size:small;
+  text-align:center
+ }
+ .editExternallyHelp {
+  font-style:italic;
+  color:#707070
+ }
+ .toggle {
+  margin-left:2em;
+  text-indent:-2em
+ }
+ input#wpSave,
+ input#wpDiff {
+  margin-right:0.33em
+ }
+ #wpSave {
+  font-weight:bold
+ }
+ div.noarticletext {
+  border:1px solid #aaaaaa;
+  background:#ffffff;
+  padding:0.2em 1em;
+  color:#000000
+ }
+ #powersearch p {
+  margin-top:0
+ }
+ div.multipageimagenavbox {
+  border:solid 1px #aaaaaa;
+  padding:4px;
+  margin:1em;
+  background:#f9f9f9
+ }
+ div.multipageimagenavbox div.thumb {
+  border:0;
+  margin-left:2em;
+  margin-right:2em
+ }
+ div.multipageimagenavbox hr {
+  margin:6px
+ }
+ table.multipageimage td {
+  text-align:center
+ }
+ .templatesUsed {
+  margin-top:1.5em
+ }
+ .mw-summary-preview {
+  margin:0.1em 0
+ }
+ div.mw-lag-warn-normal,
+ div.mw-lag-warn-high {
+  padding:3px;
+  text-align:center;
+  margin:3px auto
+ }
+ div.mw-lag-warn-normal {
+  border:1px solid #fc6;
+  background-color:#ffc
+ }
+ div.mw-lag-warn-high {
+  font-weight:bold;
+  border:2px solid #f03;
+  background-color:#fcc
+ }
+ .MediaTransformError {
+  background-color:#aaaaaa;
+  padding:0.1em
+ }
+ .MediaTransformError td {
+  text-align:center;
+  vertical-align:middle;
+  font-size:90%
+ }
+ .tipsy {
+  font-size:127%
+ }
+}
+@media screen and (min-width:551px) {
+ div#column-content {
+  float:right;
+  margin:0 0 0.6em -12.2em
+ }
+ .mw-body {
+  margin:2.8em 0 0 12.2em;
+  border-right:0
+ }
+ div#column-one {
+  padding-top:160px
+ }
+ .special li {
+  line-height:1.4em;
+  margin:0;
+  padding:0
+ }
+ .portlet {
+  border:0;
+  margin:0 0 0.5em;
+  padding:0;
+  float:none;
+  width:11.6em
+ }
+ .portlet h3 {
+  padding:0 1em 0 0.5em;
+  text-transform:lowercase;
+  font-weight:normal
+ }
+ .pBody {
+  background-color:#fff;
+  border:1px solid #aaa;
+  padding:0 0.8em 0.3em 0.5em
+ }
+ li#pt-userpage {
+  text-transform:none
+ }
+ .capitalize-all-nouns .portlet h3,
+ .capitalize-all-nouns #p-personal ul,
+ .capitalize-all-nouns #p-cactions ul li a {
+  text-transform:none
+ }
+ .no-text-transform {
+  text-transform:none
+ }
+ #p-logo {
+  top:0;
+  left:0;
+  height:155px;
+  width:12em
+ }
+ #p-logo a,
+ #p-logo a:hover {
+  height:155px;
+  width:12.2em;
+  background-position:35% 50% !important
+ }
+ #p-search {
+  position:relative;
+  z-index:3
+ }
+ input.searchButton {
+  margin-top:1px;
+  font-size:95%
+ }
+ #searchGoButton {
+  padding-left:0.5em;
+  padding-right:0.5em;
+  font-weight:bold
+ }
+ #searchInput {
+  width:10.9em;
+  margin:0;
+  font-size:95%
+ }
+ #p-search .pBody {
+  padding:0.5em 0.4em 0.4em 0.4em;
+  text-align:center
+ }
+ #p-search #searchform div div {
+  margin-top:0.4em;
+  font-size:95%
+ }
+ #p-personal {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:3;
+  width:100%;
+  white-space:nowrap;
+  padding:0;
+  margin:0;
+  border:0;
+  background:none;
+  overflow:visible;
+  line-height:1.2em
+ }
+ #p-personal h3 {
+  position:absolute;
+  top:-9999px
+ }
+ #p-personal .portlet,
+ #p-personal .pBody {
+  z-index:0;
+  padding:0;
+  margin:0;
+  border:0;
+  overflow:visible;
+  background:none
+ }
+ #p-personal ul {
+  border:0;
+  line-height:1.4em;
+  color:#2f6fab;
+  padding:0;
+  padding-right:2em;
+  padding-left:14em;
+  margin:0;
+  text-align:right;
+  list-style-type:none;
+  list-style-image:none;
+  z-index:0;
+  background:none;
+  cursor:default;
+  text-transform:lowercase
+ }
+ #p-personal li {
+  z-index:0;
+  border:0;
+  padding:0;
+  color:#2f6fab;
+  display:inline;
+  margin-left:1em;
+  line-height:1.2em;
+  background:none
+ }
+ #p-personal li a {
+  color:#005896;
+  text-decoration:none;
+  padding-bottom:0.2em
+ }
+ #p-personal li a:hover {
+  background-color:#fff;
+  text-decoration:none
+ }
+ #p-personal li.active a:hover {
+  background-color:transparent
+ }
+ li#pt-userpage,
+ li#pt-anonuserpage {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-user.gif?d13ac);
+  //background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23fbeacf%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f0bf7b%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9e0ba%22/%3E %3Cstop offset=%221%22 stop-color=%22%23de8a3d%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23dfedc7%22/%3E %3Cstop offset=%221%22 stop-color=%22%2389b92f%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22d%22 x1=%22.794%22 x2=%223.175%22 y1=%222.778%22 y2=%222.778%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22f%22 x1=%221.587%22 x2=%222.381%22 y1=%221.058%22 y2=%221.587%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22e%22 cx=%221.984%22 cy=%222.381%22 r=%22.397%22 fx=%221.984%22 fy=%221.984%22 gradientTransform=%22matrix%28.33333 0 0 1.30283 1.323 -.469%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.661 3.307l.133-.661.264-.265c.53-.264 1.323-.264 1.852 0l.265.265.132.661z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M1.587 2.117v.264l.265.265h.265l.264-.265v-.264c-.264-.265-.529-.265-.793 0z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M1.323 1.058v.53l.264.264c.265.265.53.265.794 0l.265-.265v-.529L2.116.53h-.264z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.646 1.058v.53h.264v-.53zM2.38 2.117v.264h.53v-.264zm.53.264v.265h.264V2.38zm.264.265v.529H.529v.265h2.91v-.795z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058 1.058v.53h.265v-.53zm.265.53v.264h.264v-.265zm-.265.529v.264h.53v-.264zm0 .264H.794v.265h.264zm-.264.265H.529v.529h.265z%22/%3E %3Cpath fill=%22%23768854%22 d=%22M1.587 2.381v.265h.265V2.38zm.265.265v.264h.265v-.264zm.265 0h.264V2.38h-.264z%22/%3E %3Cpath fill=%22%23a6774d%22 d=%22M2.381 1.587v.265h.265v-.265zm0 .265h-.793v.265h.793z%22/%3E %3Cpath fill=%22%239a7b54%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265-.396.794-.793.794l.132-.53.264-.264z%22/%3E %3Cpath fill=%22%2393642b%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265.397.794.794.794l-.132-.53L2.38.53z%22/%3E %3Cpath fill=%22%2386735c%22 d=%22M1.587.265v.264h.794V.265zm0 .264h-.264v.265h.264zm-.264.265h-.265v.529h.265z%22/%3E %3Cpath fill=%22%235a4934%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.529h.264v-.53z%22/%3E %3Cpath fill=%22%2383b625%22 d=%22M1.323 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%236d971f%22 d=%22M2.646 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23cde3a8%22 d=%22M1.058 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a9cd69%22 d=%22M2.381 2.91h.265v.265h-.265z%22/%3E %3C/svg%3E');
+  background-position:top left;
+  background-repeat:no-repeat;
+  padding-left:20px
+ }
+ #p-lang {
+  position:relative;
+  z-index:3
+ }
+ #p-cactions {
+  position:absolute;
+  top:1.3em;
+  left:11.5em;
+  margin:0;
+  white-space:nowrap;
+  width:76%;
+  line-height:1.1em;
+  overflow:visible;
+  background:none;
+  border-collapse:collapse;
+  padding-left:1em;
+  font-size:95%
+ }
+ #p-cactions h3 {
+  position:absolute;
+  top:-9999px
+ }
+ #p-cactions ul {
+  list-style-type:none;
+  list-style-image:none
+ }
+ #p-cactions li {
+  display:inline;
+  border:1px solid #aaa;
+  border-bottom:0;
+  margin:0 0.5em 0 0;
+  padding:0 0 1em 0;
+  overflow:visible;
+  background:#fff
+ }
+ #p-cactions li.selected {
+  border-color:#fabd23;
+  font-weight:bold
+ }
+ #p-cactions li.selected a {
+  z-index:3;
+  background-color:#fff
+ }
+ #p-cactions li a {
+  background-color:#fbfbfb;
+  color:#002bb8;
+  border:0;
+  padding:0 0.8em 0.3em;
+  position:relative;
+  z-index:0;
+  margin:0;
+  text-decoration:none;
+  text-transform:lowercase
+ }
+ #p-cactions li a:hover {
+  z-index:3;
+  text-decoration:none;
+  background-color:#fff
+ }
+ #p-cactions li.istalk {
+  margin-right:0
+ }
+ #p-cactions li.istalk a {
+  padding-right:0.5em
+ }
+ #p-cactions .new a {
+  color:#c20
+ }
+ #p-cactions #ca-addsection a {
+  padding-left:0.4em;
+  padding-right:0.4em
+ }
+ #p-cactions .pBody {
+  font-size:1em;
+  background-color:transparent;
+  color:inherit;
+  border-collapse:inherit;
+  border:0;
+  padding:0
+ }
+ li#ca-talk {
+  margin-right:1.6em
+ }
+ li#ca-watch,
+ li#ca-unwatch,
+ li#ca-varlang-0,
+ li#ca-print {
+  margin-left:1.6em
+ }
+ #p-personal #pt-notifications,
+ #echo-hack-badges,
+ #p-cactions-mobile,
+ #sidebar-mobilejs,
+ .mobile-close-button,
+ .menu-toggle,
+ .menus-cover {
+  display:none
+ }
+ #f-poweredbyico,
+ #f-copyrightico {
+  margin:0 8px;
+  position:relative;
+  top:-2px
+ }
+ #f-poweredbyico {
+  float:right;
+  height:1%
+ }
+ #f-copyrightico {
+  float:left;
+  height:1%
+ }
+}
+@media screen and (max-width:550px) {
+ div#column-content {
+  padding-top:6em
+ }
+ .mw-body {
+  border-right:0;
+  border-left:0
+ }
+ .menu-toggle {
+  display:block;
+  width:35px;
+  height:35px;
+  background:#ffffff;
+  border:solid 1px #fabd23;
+  box-sizing:border-box;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  z-index:4
+ }
+ #sidebar-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-down.gif?3e32c);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%226.879%22 cy=%226.813%22 r=%221.455%22 fx=%226.879%22 fy=%226.813%22 gradientTransform=%22matrix%281 0 0 .72727 -5.292 -3.103%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M3.572 1.455L2.382 2.91h-.53L.794 1.852.66 1.455z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M3.44 1.587v.265h.264v-.265zm0 .265h-.265v.265h.265zm-.265.265H2.91v.264h.265zm-.265.264h-.264v.265h.264zm-.264.265H2.38v.264h.265zm-.265.264h-.264v.265h.264z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M.53 1.323v.53h.264v-.266h2.91v-.264zm.264.53v.264h.264v-.265zm.264.264v.264h.265v-.264zm.265.264v.265h.264V2.38zm.264.265v.264h.265v-.264zm.265.264v.265h.265V2.91z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M3.175 1.587v.265h.265v-.265zm0 .265H2.91v.265h.265zm-.265.265h-.264v.264h.264zm-.264.264H2.38v.265h.265zm-.265.265h-.529v.264h.53z%22/%3E %3C/svg%3E');
+  position:absolute;
+  top:5px;
+  left:1em
+ }
+ #p-personal-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-user.gif?d13ac);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23fbeacf%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f0bf7b%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9e0ba%22/%3E %3Cstop offset=%221%22 stop-color=%22%23de8a3d%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23dfedc7%22/%3E %3Cstop offset=%221%22 stop-color=%22%2389b92f%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22d%22 x1=%22.794%22 x2=%223.175%22 y1=%222.778%22 y2=%222.778%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3ClinearGradient id=%22f%22 x1=%221.587%22 x2=%222.381%22 y1=%221.058%22 y2=%221.587%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22e%22 cx=%221.984%22 cy=%222.381%22 r=%22.397%22 fx=%221.984%22 fy=%221.984%22 gradientTransform=%22matrix%28.33333 0 0 1.30283 1.323 -.469%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.661 3.307l.133-.661.264-.265c.53-.264 1.323-.264 1.852 0l.265.265.132.661z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M1.587 2.117v.264l.265.265h.265l.264-.265v-.264c-.264-.265-.529-.265-.793 0z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M1.323 1.058v.53l.264.264c.265.265.53.265.794 0l.265-.265v-.529L2.116.53h-.264z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.646 1.058v.53h.264v-.53zM2.38 2.117v.264h.53v-.264zm.53.264v.265h.264V2.38zm.264.265v.529H.529v.265h2.91v-.795z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058 1.058v.53h.265v-.53zm.265.53v.264h.264v-.265zm-.265.529v.264h.53v-.264zm0 .264H.794v.265h.264zm-.264.265H.529v.529h.265z%22/%3E %3Cpath fill=%22%23768854%22 d=%22M1.587 2.381v.265h.265V2.38zm.265.265v.264h.265v-.264zm.265 0h.264V2.38h-.264z%22/%3E %3Cpath fill=%22%23a6774d%22 d=%22M2.381 1.587v.265h.265v-.265zm0 .265h-.793v.265h.793z%22/%3E %3Cpath fill=%22%239a7b54%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265-.396.794-.793.794l.132-.53.264-.264z%22/%3E %3Cpath fill=%22%2393642b%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265.397.794.794.794l-.132-.53L2.38.53z%22/%3E %3Cpath fill=%22%2386735c%22 d=%22M1.587.265v.264h.794V.265zm0 .264h-.264v.265h.264zm-.264.265h-.265v.529h.265z%22/%3E %3Cpath fill=%22%235a4934%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.529h.264v-.53z%22/%3E %3Cpath fill=%22%2383b625%22 d=%22M1.323 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%236d971f%22 d=%22M2.646 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23cde3a8%22 d=%22M1.058 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a9cd69%22 d=%22M2.381 2.91h.265v.265h-.265z%22/%3E %3C/svg%3E');
+  position:absolute;
+  top:5px;
+  right:1em
+ }
+ #globalWrapper-toggle {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-up.gif?2cc6b);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%221.733%22 cy=%221.852%22 r=%22.728%22 fx=%221.733%22 fy=%221.852%22 gradientTransform=%22matrix%280 -1.81818 2.54545 0 -3.127 5.268%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M.661 2.778v-.264L1.984 1.19l1.588 1.587z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M2.381 1.323v.265h.265v-.265zm.265.265v.264h.264v-.264zm.264.264v.265h.265v-.265zm.265.265v.264h.265v-.264zm.265.264v.265h.264V2.38z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.852 1.058v.265h.53v-.265zm0 .265h-.264v.265h.264zm-.264.265h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v.265h.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M.53 2.91h3.174v-.264H.53z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M2.117 1.323v.265h.264v-.265zm.264.265v.264h.265v-.264zm.265.264v.265h.264v-.265zm.264.265v.264h.265v-.264zm.265.264v.265h.265V2.38z%22/%3E %3C/svg%3E');
+  margin:1em auto
+ }
+ #p-search {
+  position:absolute;
+  z-index:3;
+  top:5px;
+  left:0;
+  width:100%;
+  padding:0 55px;
+  box-sizing:border-box
+ }
+ #p-search h3 {
+  position:absolute;
+  top:-9999px;
+  left:0
+ }
+ #searchBody {
+  border:solid 1px #fabd23;
+  background-color:#ffffff;
+  height:35px;
+  box-sizing:border-box
+ }
+ #searchform {
+  position:relative;
+  width:100%;
+  padding:3px 42px 3px 9px;
+  box-sizing:border-box
+ }
+ #searchInput {
+  width:100%;
+  height:27px;
+  border:solid 1px #aaaaaa;
+  padding:0 0.25em;
+  box-sizing:border-box
+ }
+ #searchGoButton {
+  position:absolute;
+  box-sizing:border-box;
+  top:1px;
+  right:6px;
+  height:31px;
+  width:35px;
+  text-indent:-99999px;
+  border:0;
+  background:none;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-search.gif?11ad8);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23172bb3%22/%3E %3Cstop offset=%22.804%22 stop-color=%22%23b1d6e5%22/%3E %3Cstop offset=%221%22 stop-color=%22%235c8dc7%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23e4c19d%22/%3E %3Cstop offset=%221%22 stop-color=%22%23975f18%22 stop-opacity=%22.977%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fff%22/%3E %3Cstop offset=%221%22 stop-color=%22%23bdd7f3%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22f%22 cx=%2212.249%22 cy=%221.424%22 r=%22.728%22 fx=%2212.249%22 fy=%221.424%22 gradientTransform=%22matrix%28-.82724 -.02009 .02428 -.9997 12.12 3.422%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22e%22 cx=%222.888%22 cy=%222.578%22 r=%22.562%22 fx=%222.888%22 fy=%222.578%22 gradientTransform=%22matrix%28.47059 -.47059 .94118 .94118 -.875 1.579%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3CradialGradient id=%22d%22 cx=%221.79%22 cy=%221.499%22 r=%221.224%22 fx=%221.79%22 fy=%221.499%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23c%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M.794 1.058c-.265.265-.265.794 0 1.059l.529.529 1.19.132.53-.529-.133-1.19-.529-.53c-.264-.264-.793-.264-1.058 0z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M2.91 2.117l.265.264.265.265c.264.264.264.264 0 .529-.265.265-.265.265-.53 0l-.264-.265-.132-.396.132-.133v-.264z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M2.117 2.117c-.265.264-.265.264-.53 0l-.264-.265c-.265-.265-.265-.265 0-.53l.265-.264c.264-.264.264-.264.529 0l.264.265c.265.264.265.264 0 .53z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.264h.264V.794zm.264.264v1.323h.265V1.058zm.265 1.323v.265h.265V2.38zm.265.265v.529h.264v-.53zm0 .529h-.265v.265h.265zM1.587.794v.264h.53V.794zm0 .264h-.264v.265h.264zm-.264.265h-.265v.53h.265zm0 .53v.264h.264v-.265zm.264.793v.264h1.059v-.529H2.38v.265z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.323.265v.264H2.38V.265zm0 .264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v1.059h.265zm0 1.059v.264h.264v-.264zm.264.264v.265h.265V2.38zm.265.265v.264h.264v-.264zm.794-1.588v.265h.264v-.265zm.264.265v.53h.265v-.53zm0 .53h-.264v.264h.264zm-.264.264h-.53v.264h.53zm.529.793v.265h.264V2.91zm.264.265v.265h.265v-.265z%22/%3E %3Cpath fill=%22%23fff%22 fill-rule=%22evenodd%22 d=%22M1.69 1.267c-.153.038-.197.382-.197.382.148-.268.301-.19.317-.309.007-.052-.048-.091-.12-.073z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.587 3.175v.265h.794v-.265z%22/%3E %3Cpath fill=%22%23e6e6e6%22 d=%22M1.058 3.175v.265h.53v-.265zm1.323 0v.265h.265v-.265z%22/%3E %3C/svg%3E');
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  cursor:pointer
+ }
+ #mw-searchButton {
+  display:none
+ }
+ .client-nojs #p-cactions,
+ .client-nojs #p-personal,
+ .client-nojs #sidebar .generated-sidebar,
+ .client-nojs #p-tb,
+ .client-nojs #p-lang {
+  margin:1em;
+  overflow:visible
+ }
+ .client-nojs #p-cactions .pBody,
+ .client-nojs #p-personal .pBody,
+ .client-nojs #sidebar .generated-sidebar .pBody,
+ .client-nojs #p-tb .pBody,
+ .client-nojs #p-lang .pBody {
+  border:solid 1px #aaaaaa;
+  background:#ffffff;
+  padding:0.5em
+ }
+ .client-nojs #p-cactions ul,
+ .client-nojs #p-personal ul,
+ .client-nojs #sidebar .generated-sidebar ul,
+ .client-nojs #p-tb ul,
+ .client-nojs #p-lang ul {
+  margin:0
+ }
+ .client-nojs #p-cactions li,
+ .client-nojs #p-personal li,
+ .client-nojs #sidebar .generated-sidebar li,
+ .client-nojs #p-tb li,
+ .client-nojs #p-lang li {
+  display:inline-block;
+  border-left:solid 1px #aaaaaa;
+  padding:0 0.5em;
+  white-space:nowrap
+ }
+ .client-nojs #p-cactions li:first-child,
+ .client-nojs #p-personal li:first-child,
+ .client-nojs #sidebar .generated-sidebar li:first-child,
+ .client-nojs #p-tb li:first-child,
+ .client-nojs #p-lang li:first-child {
+  border-left:0;
+  padding-left:0
+ }
+ .client-nojs #p-cactions li#pt-notifications-alert,
+ .client-nojs #p-personal li#pt-notifications-alert,
+ .client-nojs #sidebar .generated-sidebar li#pt-notifications-alert,
+ .client-nojs #p-tb li#pt-notifications-alert,
+ .client-nojs #p-lang li#pt-notifications-alert,
+ .client-nojs #p-cactions li#pt-notifications-notice,
+ .client-nojs #p-personal li#pt-notifications-notice,
+ .client-nojs #sidebar .generated-sidebar li#pt-notifications-notice,
+ .client-nojs #p-tb li#pt-notifications-notice,
+ .client-nojs #p-lang li#pt-notifications-notice {
+  border-left:0
+ }
+ .client-nojs #p-cactions li.selected,
+ .client-nojs #p-personal li.selected,
+ .client-nojs #sidebar .generated-sidebar li.selected,
+ .client-nojs #p-tb li.selected,
+ .client-nojs #p-lang li.selected {
+  font-weight:bold
+ }
+ .client-nojs #p-cactions li.selected a,
+ .client-nojs #p-personal li.selected a,
+ .client-nojs #sidebar .generated-sidebar li.selected a,
+ .client-nojs #p-tb li.selected a,
+ .client-nojs #p-lang li.selected a {
+  color:#000000
+ }
+ .client-nojs #p-cactions h3,
+ .client-nojs #p-personal h3,
+ .client-nojs #sidebar .generated-sidebar h3,
+ .client-nojs #p-tb h3,
+ .client-nojs #p-lang h3 {
+  font-weight:normal
+ }
+ #p-cactions-mobile {
+  position:absolute;
+  top:3.75em;
+  left:0;
+  padding:0 1em;
+  width:100%;
+  box-sizing:border-box
+ }
+ #p-cactions-mobile h3 {
+  display:none
+ }
+ #p-cactions-mobile ul {
+  margin:0;
+  list-style:none
+ }
+ #p-cactions-mobile li {
+  display:inline-block;
+  border:1px solid #aaaaaa;
+  border-bottom:0;
+  margin-right:0.5em;
+  height:2.5em
+ }
+ #p-cactions-mobile li a {
+  text-indent:-99999px;
+  width:1em;
+  display:block;
+  position:relative;
+  padding:0.5em 1em 0.75em;
+  background-color:#fbfbfb;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-page.gif?ca462);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23b8d6f4%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fff%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22 x1=%221.852%22 x2=%221.852%22 y1=%221.587%22 y2=%223.175%22 gradientTransform=%22scale%283.77953%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22%238b8b8b%22 d=%22M.794.265v2.91h.264V.529h1.059v.53h.264V.264z%22/%3E %3Cpath fill=%22url%28%23b%29%22 d=%22M5 4v8h5V4H5z%22 transform=%22scale%28.26458%29%22/%3E %3Cpath fill=%22%23fabd23%22 d=%22M2.381.794v.264h.265V.794H2.38z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.268l-.53-.004v.265h.794v1.852H.794v.265h2.381V1.058H2.91V.794z%22/%3E %3Cpath fill=%22%23fabd23%22 d=%22M1.323 2.646v.264h1.323v-.264H1.323z%22/%3E %3Cpath fill=%22%23538fc8%22 d=%22M1.058.794v.264h1.059V.794H1.058z%22/%3E %3Cpath fill=%22%23fff%22 d=%22M1.058.53v2.645h.265V.794h.794V.529zm1.059.793v.264h.529v1.588h.264V1.323z%22/%3E %3C/svg%3E');
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  text-transform:lowercase
+ }
+ #p-cactions-mobile li#ca-talk-mobile a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-chat.gif?11635);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23d8eef8%22 stop-opacity=%22.996%22/%3E %3Cstop offset=%221%22 stop-color=%22%2375badf%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fef2d3%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fabd23%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22d%22 cx=%222.698%22 cy=%221.985%22 r=%22.942%22 fx=%222.698%22 fy=%221.985%22 gradientTransform=%22matrix%281.23922 .18503 -.09172 .61432 -.452 .228%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22c%22 cx=%221.852%22 cy=%22.952%22 r=%22.926%22 fx=%221.852%22 fy=%22.952%22 gradientTransform=%22matrix%282 0 0 .71429 -1.852 .378%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M.661.926v.794l.133.132.264.53h.265l1.19-.662V.926L2.25.661H.926z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M1.455 1.72v.794l.397.264h1.455l.265-.264V1.72l-.265-.265H1.72z%22/%3E %3Cpath fill=%22%23fff%22 fill-rule=%22evenodd%22 d=%22M1.455 1.72c.36 1.327 2.086.807 2.117.794l-.265.264-.661.132-.265.265h-.264l-.53-.53z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.852 2.646h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M.794.53v.264H2.38V.529zm0 .264H.529v1.058h.265zm0 1.058V2.91h.264V1.852zm.794-.53v.265H3.44v-.264zm0 .265h-.265v1.059h.265zm.264 1.323v.794h.265V2.91z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.588 2.646h.265v.265h-.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.794v.529h.265v-.53zm1.059.793v1.059h.264V1.587zm0 1.059h-.794v.264h.794zm-.794.264H2.38v.265h.265zm-.265.265h-.264v.265h.264zm-1.323-.794v.265h.265V2.38zm.53.265v.264h.529v-.264h-.53z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li#ca-more {
+  border:0
+ }
+ #p-cactions-mobile li#ca-more a {
+  background-color:transparent;
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-triangle-ltr.gif?3da7a);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%238ed3e0%22/%3E %3Cstop offset=%221%22 stop-color=%22%233771c8%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22b%22 cx=%221.587%22 cy=%221.852%22 r=%22.728%22 fx=%221.587%22 fy=%221.852%22 gradientTransform=%22matrix%281.81818 0 0 2.54545 -1.299 -3.127%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 fill-rule=%22evenodd%22 d=%22M1.19.661l1.456 1.456L1.19 3.572z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M1.323.53v.264h.264V.529zm.264.264v.264h.265V.794zm.265.264v.265h.265v-.265zm.265.265v.264h.264v-.264zm.264.264v.265h.265v-.265zm.265.265v.53h.264v-.53zm0 .53H2.38v.264h.265zm-.265.264h-.264v.264h.264zm-.264.264h-.265v.265h.265zm-.265.265h-.265v.265h.265zm-.265.265h-.529v.264h.53z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058.53v2.91h.265V.53z%22/%3E %3Cpath fill=%22%235f5fd3%22 d=%22M1.323.794v.264h.264V.794zm.264.264v.265h.265v-.265zm.265.265v.264h.265v-.264zm.265.264v.265h.264v-.265zm.264.265v.53h.265v-.53zm0 .53h-.264v.264h.264zm-.264.264h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265h-.264v.265h.264z%22/%3E %3C/svg%3E');
+  background-position:100% 40%;
+  text-indent:0;
+  padding-left:0.5em;
+  padding-right:1.35em;
+  width:auto
+ }
+ #p-cactions-mobile li#ca-languages a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-globe.gif?0a6d8);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f6f9fe%22/%3E %3Cstop offset=%221%22 stop-color=%22%2360acf9%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%239bc56a%22/%3E %3Cstop offset=%221%22 stop-color=%22%233d801e%22 stop-opacity=%22.932%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22d%22 cx=%2226.167%22 cy=%227.091%22 r=%225%22 fx=%2226.167%22 fy=%227.091%22 gradientTransform=%22matrix%28.37042 0 0 .26458 -8.105 -.024%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22c%22 cx=%227.144%22 cy=%221.587%22 r=%221.521%22 fx=%227.144%22 fy=%221.587%22 gradientTransform=%22matrix%281.2174 0 0 .86957 -6.845 .207%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M.794 1.323l.264-.53.53-.264c.264-.264.793-.264 1.058 0l.529.265.265.529c.264.264.264.794 0 1.058l-.265.53-.53.264c-.264.265-.793.265-1.057 0l-.53-.265-.264-.529c-.265-.264-.265-.794 0-1.058z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M2.117.397l-.53.132-.529.265-.132.264c.046.343.422.658.579.749.157.09.194.223.182.256-.013.033-.67.376-.761.583l.132.264.53.265.264.132.794-.132.264-.132-.264-.133s-.24-.002-.273-.15c-.033-.15.008-.379-.277-.602-.14-.11-.252-.066-.285-.136-.033-.07.07-.116.029-.199-.042-.083-.236-.136-.22-.244.017-.107.203.037.207-.029.004-.066-.004-.24.112-.244.205-.237.183-.594.178-.91zM2.91.66c-.181.096-.506.083-.529.302-.014.141-.019.405.104.624.184.331.514.291.616.253.122-.047.29-.248.47-.253l-.131-.264-.265-.53z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M1.588.265v.264h.793V.265zm0 .264h-.53v.265h.53zm-.53.265H.794v.529h.264zm-.264.529H.529V2.38h.265zm0 1.058v.53h.264v-.53zm.264.53v.264h.53V2.91zm.53.264v.265h.264v-.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.381.265v.264h.265V.265zm.265.264v.265h.529V.529zm.529.265v.529h.265v-.53zm.265.529V2.38h.264V1.323zm0 1.058h-.265v.53h.265zm-.265.53h-.53v.264h.53zm-.53.264h-.793v.265h.794z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li#ca-tools a {
+  background-image:url(/wiki/skins/MonoBook/resources/images/icon-tools.gif?d24b7);
+  background-image:linear-gradient(transparent,transparent),url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23d8eef8%22 stop-opacity=%22.996%22/%3E %3Cstop offset=%221%22 stop-color=%22%2375badf%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23fef2d3%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fabd23%22/%3E %3C/linearGradient%3E %3CradialGradient id=%22c%22 cx=%222.016%22 cy=%222.35%22 r=%22.893%22 fx=%222.016%22 fy=%222.35%22 gradientTransform=%22matrix%28.2963 .2963 -1.48148 1.48148 5.001 -1.962%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23a%22/%3E %3CradialGradient id=%22d%22 cx=%222.646%22 cy=%222.646%22 r=%22.628%22 fx=%222.646%22 fy=%222.646%22 gradientTransform=%22matrix%28.42105 -.42105 .7071 .7071 -.34 1.889%29%22 gradientUnits=%22userSpaceOnUse%22 xlink:href=%22%23b%22/%3E %3C/defs%3E %3Cpath fill=%22%23e6e6e6%22 fill-rule=%22evenodd%22 d=%22M1.72 1.984l-.53-.529.265-.264.53.529z%22/%3E %3Cpath fill=%22url%28%23c%29%22 fill-rule=%22evenodd%22 d=%22M1.852 1.852l-.794.794c-.264.264-.264.264 0 .529.265.265.265.265.53 0l1.058-1.058-.53-.53z%22/%3E %3Cpath fill=%22%23e6e6e6%22 fill-rule=%22evenodd%22 d=%22M2.117 1.587l.529.53.529-.265.397-.397-.397-.397v.265H2.91v-.265h.265L2.778.661l-.397.397zM.661 1.19l.662-.66.53-.265-.266.529-.264.529-.265.264H.794z%22/%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22M2.117 2.646l.529.529c.264.265.264.265.529 0s.265-.265 0-.53l-.53-.528z%22/%3E %3Cpath fill=%22%238b8b8b%22 d=%22M1.323.265v.264h.794V.265zm0 .264h-.265v.265h.265zm-.265.265H.794v.264h.264zm-.264.264H.529v.53h.265zM2.646.53v.265h.529V.529zm0 .265H2.38v.264h.265zm-.265.264h-.264v.53h.264zm-.264.53h-.265v.264h.265zm-.265.264h-.265v.265h.265zm-.265.265h-.264v.264h.264zm-.264.264h-.265v.265h.265zm-.265.265H.794v.529h.264zm2.117-1.588v.265h.53v-.265zm0 .265H2.91v.264h.265zm-.53.794v.264h.265v-.264zm.265.264v.265h.265V2.38z%22/%3E %3Cpath fill=%22%23fff%22 d=%22M1.323.53v.264h.264V.529zm0 .264h-.265v.529h.265zm1.323 0v.264h.264V.794zm0 .264H2.38v.53h.265z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M1.587.53v.264h.265V.529zm0 .264h-.264v.529h.264zm0 .529v.264h.265v-.264zm0 .264h-.264v.265h.264zm-.264 0v-.264h-.265v.264zm-.265 0H.794v.265h.264zM2.91.794v.264h.265V.794zm0 .264h-.264v.265h.264zm.53.265v.264h.264v-.264zm0 .264h-.265v.265h.265zm-.265.265h-.53v-.265h-.528v.265h.264v.53h.265v-.265h.529zm-.794.53h-.264v.264h-.265v.264h.53zm0 .528v.265h.265V2.91zm.265.265v.265h.529v-.265zm.529 0h.265v-.53h-.265zM1.852 2.91h-.265v.265h.265zm-.265.265h-.529v.265h.53z%22/%3E %3C/svg%3E')
+ }
+ #p-cactions-mobile li.selected {
+  border-color:#fabd23;
+  font-weight:bold
+ }
+ #p-cactions-mobile li.selected a,
+ #p-cactions-mobile li:hover a {
+  z-index:3;
+  background-color:#ffffff;
+  text-decoration:none
+ }
+ #p-cactions-mobile li#ca-languages,
+ #p-cactions-mobile li#ca-tools {
+  float:right;
+  margin-right:0;
+  margin-left:0.5em
+ }
+ #footer li {
+  margin-left:0
+ }
+ #f-poweredbyico,
+ #f-copyrightico {
+  display:inline-block;
+  margin:0 0.5em 1em
+ }
+ div.thumb {
+  float:none;
+  margin:1em auto
+ }
+ div.tright {
+  margin-left:0;
+  padding-left:0
+ }
+ div.tleft {
+  margin-right:0;
+  padding-right:0
+ }
+ .thumbinner {
+  width:100% !important;
+  box-sizing:border-box
+ }
+ .mw-body-content {
+  overflow:auto
+ }
+ .mw-body-content img {
+  height:auto !important;
+  max-width:100% !important
+ }
+ #toc,
+ .toc,
+ .mw-warning {
+  width:100%;
+  box-sizing:border-box
+ }
+ .nomobile {
+  display:none
+ }
+}
+  </style>
+  <meta charset="utf-8"/>
+  <title>
+   Black market - The Hidden Wiki
+  </title>
+  <script>
+   document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );
+  </script>
+  <script>
+   (window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Black_market","wgTitle":"Black market","wgCurRevisionId":463278,"wgRevisionId":463278,"wgArticleId":319,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with broken file links","Anti-globalization","Corruption","Crime","Ethically disputed business practices","Financial crimes","Informal economy","Price controls","Retail markets","Tax evasion","Underground culture","Cyberpunk themes"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Black_market","wgRelevantArticleId":319,"wgRequestId":"7cf710367c01555997862f51","wgCSPNonce":false,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.moderation.notify","ext.moderation.notify.desktop","skins.monobook.mobile"];mw.loader.load(RLPAGEMODULES);});
+  </script>
+  <link href="/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+  <script async="" src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook">
+  </script>
+  <!--[if lt IE 9]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/screen-desktop.css?35132" media="screen"/><![endif]-->
+  <!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/IE60Fixes.css?00946" media="screen"/><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <meta content="MediaWiki 1.32.0" name="generator"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+  <link href="/wiki/resources/favicon.ico" rel="shortcut icon"/>
+  <link href="/wiki/opensearch_desc.php" rel="search" title="The Hidden Wiki (en)" type="application/opensearchdescription+xml"/>
+  <link href="http://zqktlwiawxckqmthzpumhmizxwtf6hd7btimcul2bvpgp5mglbvs7yad.onion/wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="The Hidden Wiki Atom feed" type="application/atom+xml"/>
+  <!--[if lt IE 9]><script src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=monobook&amp;sync=1"></script><![endif]-->
+ </head>
+ <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Black_market rootpage-Black_market skin-monobook action-view">
+  <div id="globalWrapper">
+   <div id="column-content">
+    <div class="mw-body" id="content" role="main">
+     <a id="top">
+     </a>
+     <div class="mw-indicators mw-body-content">
+     </div>
+     <h1 class="firstHeading" id="firstHeading" lang="en">
+      Black market
+     </h1>
+     <div class="mw-body-content" id="bodyContent">
+      <div id="siteSub">
+       From The Hidden Wiki
+      </div>
+      <div dir="ltr" id="contentSub" lang="en">
+      </div>
+      <div id="jump-to-nav">
+      </div>
+      <a class="mw-jump-link" href="#column-one">
+       Jump to navigation
+      </a>
+      <a class="mw-jump-link" href="#searchInput">
+       Jump to search
+      </a>
+      <!-- start content -->
+      <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+       <div class="mw-parser-output">
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Redirect4&amp;action=edit&amp;redlink=1" title="Template:Redirect4 (page does not exist)">
+          Template:Redirect4
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Pp-move-indef&amp;action=edit&amp;redlink=1" title="Template:Pp-move-indef (page does not exist)">
+          Template:Pp-move-indef
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Grey_market&amp;action=edit&amp;redlink=1" title="Template:Grey market (page does not exist)">
+          Template:Grey market
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Economic_systems_sidebar&amp;action=edit&amp;redlink=1" title="Template:Economic systems sidebar (page does not exist)">
+          Template:Economic systems sidebar
+         </a>
+        </p>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Black_market_in_Shinbashi.JPG" title="File:Black market in Shinbashi.JPG">
+           File:Black market in Shinbashi.JPG
+          </a>
+          <div class="thumbcaption">
+           A black market in
+           <a class="new" href="/wiki/index.php?title=Shinbashi&amp;action=edit&amp;redlink=1" title="Shinbashi (page does not exist)">
+            Shinbashi
+           </a>
+           in 1946.
+          </div>
+         </div>
+        </div>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:132px;">
+          <a href="/wiki/File:%D0%A5%D0%B0%D1%80%D1%8C%D0%BA.%D0%BD%D0%B0%D0%B1.%D0%BB.8_%D0%A1%D0%BF%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D0%BD%D1%82_VizuIMG_3671.JPG" title="File:Харьк.наб.л.8 Спекулянт VizuIMG 3671.JPG">
+           File:Харьк.наб.л.8 Спекулянт VizuIMG 3671.JPG
+          </a>
+          <div class="thumbcaption">
+           A black market salesman depicted in
+           <a class="new" href="/wiki/index.php?title=Graffiti&amp;action=edit&amp;redlink=1" title="Graffiti (page does not exist)">
+            graffiti
+           </a>
+           in
+           <a class="new" href="/wiki/index.php?title=Kharkiv&amp;action=edit&amp;redlink=1" title="Kharkiv (page does not exist)">
+            Kharkov
+           </a>
+           , Ukraine (2008)
+          </div>
+         </div>
+        </div>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2834.jpg" title="File:15-10-27-Vista des de l'estàtua de Colom a Barcelona-WMA 2834.jpg">
+           File:15-10-27-Vista des de l'estàtua de Colom a Barcelona-WMA 2834.jpg
+          </a>
+          <div class="thumbcaption">
+           Barcelona 2015
+          </div>
+         </div>
+        </div>
+        <p>
+         A
+         <b>
+          black market
+         </b>
+         or
+         <b>
+          underground economy
+         </b>
+         is a
+         <a class="new" href="/wiki/index.php?title=Market_(economics)&amp;action=edit&amp;redlink=1" title="Market (economics) (page does not exist)">
+          market
+         </a>
+         in which goods or services are traded illegally.  The key distinction of a black market trade is that the transaction itself is illegal.  The goods or services themselves may or may not be
+         <a class="new" href="/wiki/index.php?title=Contraband&amp;action=edit&amp;redlink=1" title="Contraband (page does not exist)">
+          illegal
+         </a>
+         to own, or to trade through other, legal channels.  Because the transactions are illegal, the market itself is forced to operate
+         <a class="new" href="/wiki/index.php?title=Informal_sector&amp;action=edit&amp;redlink=1" title="Informal sector (page does not exist)">
+          outside the formal economy
+         </a>
+         that is supported by the established state power. Common motives for operating in black markets are to trade contraband, avoid taxes and regulations, or skirt price controls or rationing. Typically the totality of such activity is referred to with the definite article as a complement to the official economies, by market for such goods and services, e.g. "the black market in bush meat".
+        </p>
+        <p>
+         The black market is distinct from the
+         <a class="new" href="/wiki/index.php?title=Grey_market&amp;action=edit&amp;redlink=1" title="Grey market (page does not exist)">
+          grey market
+         </a>
+         , in which commodities are distributed through channels which, while legal, are unofficial, unauthorized, or unintended by the original manufacturer, and the
+         <a class="new" href="/wiki/index.php?title=White_market&amp;action=edit&amp;redlink=1" title="White market (page does not exist)">
+          white market
+         </a>
+         .
+        </p>
+        <p>
+         The black market is considered a subset of the
+         <a class="new" href="/wiki/index.php?title=Informal_economy&amp;action=edit&amp;redlink=1" title="Informal economy (page does not exist)">
+          informal economy
+         </a>
+         , of which 1.8 billion people worldwide are employed or which makes up 15-17% of world GDP (averages over 1999-2007, weighted by total GDP in 2005).&lt;ref name="Neuwirth"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         Black markets have online counterparts consisting of
+         <a class="new" href="/wiki/index.php?title=Darknet_market&amp;action=edit&amp;redlink=1" title="Darknet market (page does not exist)">
+          darknet market
+         </a>
+         websites such as the
+         <a class="new" href="/wiki/index.php?title=Silk_Road_(marketplace)&amp;action=edit&amp;redlink=1" title="Silk Road (marketplace) (page does not exist)">
+          Silk Road
+         </a>
+         , individual websites,
+         <a href="/wiki/Internet_forum" title="Internet forum">
+          forums
+         </a>
+         and
+         <a href="/wiki/Chat_room" title="Chat room">
+          chat rooms
+         </a>
+         . While overlaps exist, the online markets are focused on specific areas including drugs, compromised credentials, malware, digital goods and weapons.
+         <a class="new" href="/wiki/index.php?title=Piracy&amp;action=edit&amp;redlink=1" title="Piracy (page does not exist)">
+          Piracy
+         </a>
+         specifically takes place on private or public
+         <a class="new" href="/wiki/index.php?title=Warez_scene&amp;action=edit&amp;redlink=1" title="Warez scene (page does not exist)">
+          warez
+         </a>
+         and
+         <a href="/wiki/BitTorrent" title="BitTorrent">
+          BitTorrent
+         </a>
+         sites as well as various
+         <a class="new" href="/wiki/index.php?title=Peer-to-peer_file_sharing&amp;action=edit&amp;redlink=1" title="Peer-to-peer file sharing (page does not exist)">
+          peer-to-peer file sharing
+         </a>
+         networks.
+        </p>
+        <div class="toc" id="toc">
+         <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
+         <div class="toctitle" dir="ltr" lang="en">
+          <h2>
+           Contents
+          </h2>
+          <span class="toctogglespan">
+           <label class="toctogglelabel" for="toctogglecheckbox">
+           </label>
+          </span>
+         </div>
+         <ul>
+          <li class="toclevel-1 tocsection-1">
+           <a href="#Background">
+            <span class="tocnumber">
+             1
+            </span>
+            <span class="toctext">
+             Background
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-2">
+           <a href="#Pricing">
+            <span class="tocnumber">
+             2
+            </span>
+            <span class="toctext">
+             Pricing
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-3">
+           <a href="#Consumer_issues">
+            <span class="tocnumber">
+             3
+            </span>
+            <span class="toctext">
+             Consumer issues
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-4">
+           <a href="#Traded_goods_and_services">
+            <span class="tocnumber">
+             4
+            </span>
+            <span class="toctext">
+             Traded goods and services
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-5">
+             <a href="#Sexual_exploitation_and_forced_labor">
+              <span class="tocnumber">
+               4.1
+              </span>
+              <span class="toctext">
+               Sexual exploitation and forced labor
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-6">
+             <a href="#Illegal_drugs">
+              <span class="tocnumber">
+               4.2
+              </span>
+              <span class="toctext">
+               Illegal drugs
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-7">
+             <a href="#Prostitution">
+              <span class="tocnumber">
+               4.3
+              </span>
+              <span class="toctext">
+               Prostitution
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-8">
+             <a href="#Weapons">
+              <span class="tocnumber">
+               4.4
+              </span>
+              <span class="toctext">
+               Weapons
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-9">
+             <a href="#Illegally_logged_timber">
+              <span class="tocnumber">
+               4.5
+              </span>
+              <span class="toctext">
+               Illegally logged timber
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-10">
+             <a href="#Animals_and_animal_products">
+              <span class="tocnumber">
+               4.6
+              </span>
+              <span class="toctext">
+               Animals and animal products
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-11">
+             <a href="#Alcohol">
+              <span class="tocnumber">
+               4.7
+              </span>
+              <span class="toctext">
+               Alcohol
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-12">
+             <a href="#Tobacco">
+              <span class="tocnumber">
+               4.8
+              </span>
+              <span class="toctext">
+               Tobacco
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-13">
+             <a href="#Biological_organs">
+              <span class="tocnumber">
+               4.9
+              </span>
+              <span class="toctext">
+               Biological organs
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-14">
+             <a href="#Racketeering">
+              <span class="tocnumber">
+               4.10
+              </span>
+              <span class="toctext">
+               Racketeering
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-15">
+             <a href="#Transportation_providers">
+              <span class="tocnumber">
+               4.11
+              </span>
+              <span class="toctext">
+               Transportation providers
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-16">
+             <a href="#Housing_rental">
+              <span class="tocnumber">
+               4.12
+              </span>
+              <span class="toctext">
+               Housing rental
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-17">
+             <a href="#Counterfeit_medicine.2C_essential_aircraft_and_automobile_parts">
+              <span class="tocnumber">
+               4.13
+              </span>
+              <span class="toctext">
+               Counterfeit medicine, essential aircraft and automobile parts
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-18">
+             <a href="#Copyrighted_media">
+              <span class="tocnumber">
+               4.14
+              </span>
+              <span class="toctext">
+               Copyrighted media
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-19">
+             <a href="#Currency">
+              <span class="tocnumber">
+               4.15
+              </span>
+              <span class="toctext">
+               Currency
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-20">
+             <a href="#Fuel">
+              <span class="tocnumber">
+               4.16
+              </span>
+              <span class="toctext">
+               Fuel
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-21">
+           <a href="#Organized_crime">
+            <span class="tocnumber">
+             5
+            </span>
+            <span class="toctext">
+             Organized crime
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-22">
+           <a href="#Consequences">
+            <span class="tocnumber">
+             6
+            </span>
+            <span class="toctext">
+             Consequences
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-23">
+             <a href="#Wars">
+              <span class="tocnumber">
+               6.1
+              </span>
+              <span class="toctext">
+               Wars
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-24">
+             <a href="#Indian_black-money">
+              <span class="tocnumber">
+               6.2
+              </span>
+              <span class="toctext">
+               Indian black-money
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-25">
+             <a href="#Prohibition">
+              <span class="tocnumber">
+               6.3
+              </span>
+              <span class="toctext">
+               Prohibition
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-26">
+           <a href="#See_also">
+            <span class="tocnumber">
+             7
+            </span>
+            <span class="toctext">
+             See also
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-27">
+           <a href="#References">
+            <span class="tocnumber">
+             8
+            </span>
+            <span class="toctext">
+             References
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-28">
+           <a href="#Further_reading">
+            <span class="tocnumber">
+             9
+            </span>
+            <span class="toctext">
+             Further reading
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-29">
+           <a href="#External_links">
+            <span class="tocnumber">
+             10
+            </span>
+            <span class="toctext">
+             External links
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <h2>
+         <span class="mw-headline" id="Background">
+          Background
+         </span>
+        </h2>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Mercado_Negro,_La_Paz,_Bolivia.JPG" title="File:Mercado Negro, La Paz, Bolivia.JPG">
+           File:Mercado Negro, La Paz, Bolivia.JPG
+          </a>
+          <div class="thumbcaption">
+           Mercado Negro, so called "Black Market", in
+           <a class="new" href="/wiki/index.php?title=La_Paz&amp;action=edit&amp;redlink=1" title="La Paz (page does not exist)">
+            La Paz
+           </a>
+           , Bolivia.
+          </div>
+         </div>
+        </div>
+        <p>
+         The literature on the black market has not established a common terminology and has instead offered many synonyms including: subterranean; hidden;
+         <a class="new" href="/wiki/index.php?title=Grey_market&amp;action=edit&amp;redlink=1" title="Grey market (page does not exist)">
+          grey
+         </a>
+         ; shadow; informal; clandestine; illegal; unobserved; unreported; unrecorded; second; parallel and black.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         There is no single underground economy; there are many. These underground economies are omnipresent, existing in market oriented as well as in centrally planned nations, be they developed or developing. Those engaged in underground activities circumvent, escape or are excluded from the institutional system of rules, rights, regulations and enforcement penalties that govern formal agents engaged in production and exchange. Different types of underground activities are distinguished according to the particular institutional rules that they violate. Five specific underground economies can be identified:
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <ol>
+         <li>
+          criminal drugs
+         </li>
+         <li>
+          the illegal economy
+         </li>
+         <li>
+          the unreported economy
+         </li>
+         <li>
+          the unrecorded economy
+         </li>
+         <li>
+          the informal economy
+         </li>
+        </ol>
+        <p>
+         The "illegal economy" consists of the income produced by those economic activities pursued in violation of legal statutes defining the scope of legitimate forms of commerce. Illegal economy participants engage in the production and distribution of prohibited
+         <a class="new" href="/wiki/index.php?title=Good_(economics)&amp;action=edit&amp;redlink=1" title="Good (economics) (page does not exist)">
+          goods
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Service_(economics)&amp;action=edit&amp;redlink=1" title="Service (economics) (page does not exist)">
+          services
+         </a>
+         , such as
+         <a class="new" href="/wiki/index.php?title=Drug_trafficking&amp;action=edit&amp;redlink=1" title="Drug trafficking (page does not exist)">
+          drug trafficking
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Arms_trafficking&amp;action=edit&amp;redlink=1" title="Arms trafficking (page does not exist)">
+          arms trafficking
+         </a>
+         , and
+         <a class="new" href="/wiki/index.php?title=Prostitution&amp;action=edit&amp;redlink=1" title="Prostitution (page does not exist)">
+          prostitution
+         </a>
+         .
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <p>
+         The "unreported economy" consists of those economic activities that circumvent or evade the institutionally established fiscal rules as codified in the tax code. A summary measure of the unreported economy is the amount of income that should be reported to the tax authority but is not so reported. A complementary measure of the unreported economy is the "
+         <a class="new" href="/wiki/index.php?title=Tax_gap&amp;action=edit&amp;redlink=1" title="Tax gap (page does not exist)">
+          tax gap
+         </a>
+         ", namely the difference between the amount of tax revenues due the fiscal authority and the amount of tax revenue actually collected. In the U.S. unreported income is estimated to be $2 trillion resulting in a "tax gap" of $450–$500billion.&lt;ref name="Cebula and Feige"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         The "unrecorded economy" consists of those economic activities that circumvent the institutional rules that define the reporting requirements of government statistical agencies.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         A summary measure of the unrecorded economy is the amount of unrecorded income, namely the amount of income that should (under existing rules and conventions) be recorded in national accounting systems (e.g.
+         <a class="new" href="/wiki/index.php?title=National_Income_and_Product_Accounts&amp;action=edit&amp;redlink=1" title="National Income and Product Accounts (page does not exist)">
+          National Income and Product Accounts
+         </a>
+         ) but is not. Unrecorded income is a particular problem in
+         <a class="new" href="/wiki/index.php?title=Transition_countries&amp;action=edit&amp;redlink=1" title="Transition countries (page does not exist)">
+          transition countries
+         </a>
+         that switched from a
+         <a class="new" href="/wiki/index.php?title=Socialist_economics&amp;action=edit&amp;redlink=1" title="Socialist economics (page does not exist)">
+          socialist
+         </a>
+         accounting system to
+         <a class="new" href="/wiki/index.php?title=United_Nations_System_of_National_Accounts&amp;action=edit&amp;redlink=1" title="United Nations System of National Accounts (page does not exist)">
+          UN standard national accounting
+         </a>
+         . New methods have been proposed for estimating the size of the unrecorded (non-observed) economy.&lt;ref&gt;OECD (2002) Measuring the Non-Observed Economy A Handbook, Paris France.&lt;/ref&gt; But there is still little consensus concerning the size of the unreported economies of transition countries.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         The "
+         <a class="new" href="/wiki/index.php?title=Informal_economy&amp;action=edit&amp;redlink=1" title="Informal economy (page does not exist)">
+          informal economy
+         </a>
+         " comprises those economic activities that circumvent the costs and are excluded from the benefits and rights incorporated in the laws and administrative rules covering property relationships, commercial licensing, labor contracts, torts, financial credit and social security systems.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         A summary measure of the informal economy is the income generated by economic agents that operate informally.&lt;ref&gt;De Soto, Hernando, The Other Path: The Invisible Revolution in the Third World. Harper and Row, New York, 1989&lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt; The informal sector is defined as the part of an economy that is
+         <a class="new" href="/wiki/index.php?title=Tax_noncompliance&amp;action=edit&amp;redlink=1" title="Tax noncompliance (page does not exist)">
+          not taxed
+         </a>
+         , monitored by any form of
+         <a href="/wiki/Government" title="Government">
+          government
+         </a>
+         , or included in any
+         <a class="new" href="/wiki/index.php?title=Gross_national_product&amp;action=edit&amp;redlink=1" title="Gross national product (page does not exist)">
+          gross national product
+         </a>
+         (GNP), unlike the formal economy. In
+         <a class="new" href="/wiki/index.php?title=Developed_country&amp;action=edit&amp;redlink=1" title="Developed country (page does not exist)">
+          developed countries
+         </a>
+         the informal sector is characterized by
+         <a class="new" href="/wiki/index.php?title=Unreported_employment&amp;action=edit&amp;redlink=1" title="Unreported employment (page does not exist)">
+          unreported employment
+         </a>
+         . This is hidden from the state for tax, social security or labour law purposes but is legal in all other aspects.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt; On the other hand, the term
+         <i>
+          black market
+         </i>
+         can be used in reference to a specific part of the economy in which
+         <a class="new" href="/wiki/index.php?title=Contraband&amp;action=edit&amp;redlink=1" title="Contraband (page does not exist)">
+          contraband
+         </a>
+         is traded.
+        </p>
+        <h2>
+         <span class="mw-headline" id="Pricing">
+          Pricing
+         </span>
+        </h2>
+        <p>
+         Goods acquired illegally may exchange above or below the price of legal market transactions:
+        </p>
+        <ul>
+         <li>
+          They may be cheaper than legal market prices. The
+          <a class="new" href="/wiki/index.php?title=Fence_(criminal)&amp;action=edit&amp;redlink=1" title="Fence (criminal) (page does not exist)">
+           supplier
+          </a>
+          does not have to pay for production costs or taxes. This is usually the case in the underground economy. Criminals steal goods and sell them below the legal market price, but there is no receipt, guarantee, and so forth.
+         </li>
+         <li>
+          They may be more expensive than legal market prices. For example, the product is difficult to acquire or produce, dangerous to handle, or not easily available legally, if at all. If exchange of goods are made illegal by some sort of
+          <a class="new" href="/wiki/index.php?title=State_(polity)&amp;action=edit&amp;redlink=1" title="State (polity) (page does not exist)">
+           state
+          </a>
+          sanction, such as is often seen with certain pharmaceutical drugs, their prices will tend to rise as a result of that sanction.
+         </li>
+        </ul>
+        <p>
+         Black markets can form part of
+         <a class="new" href="/wiki/index.php?title=Border_trade&amp;action=edit&amp;redlink=1" title="Border trade (page does not exist)">
+          border trade
+         </a>
+         near the borders of neighboring jurisdictions with little or no border control if there are substantially different tax rates, or where goods are legal on one side of the border but not on the other. Products that are commonly
+         <a class="new" href="/wiki/index.php?title=Smuggling&amp;action=edit&amp;redlink=1" title="Smuggling (page does not exist)">
+          smuggled
+         </a>
+         like this include
+         <a class="new" href="/wiki/index.php?title=Alcoholic_beverage&amp;action=edit&amp;redlink=1" title="Alcoholic beverage (page does not exist)">
+          alcohol
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Tobacco&amp;action=edit&amp;redlink=1" title="Tobacco (page does not exist)">
+          tobacco
+         </a>
+         . However, not all border trade is illegal.
+        </p>
+        <h2>
+         <span class="mw-headline" id="Consumer_issues">
+          Consumer issues
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Unreliable_sources&amp;action=edit&amp;redlink=1" title="Template:Unreliable sources (page does not exist)">
+          Template:Unreliable sources
+         </a>
+        </p>
+        <table cellspacing="5" class="toccolours" style="float: right; margin-left: 1em; margin-right: 2em; font-size: 85%; background:#c6dbf7; color:black; width:25em; max-width: 25%;">
+         <tbody>
+          <tr>
+           <td style="text-align: left;">
+            No government, no global nonprofit, no multinational enterprise can seriously claim to be able to replace the 1.8 billion jobs created by the economic underground. In truth, the best hope for growth in most emerging economies lies in the shadows.
+           </td>
+          </tr>
+          <tr>
+           <td style="text-align: left;">
+            —
+            <i>
+             Global Bazaar
+            </i>
+            ,
+            <i>
+             <a class="new" href="/wiki/index.php?title=Scientific_American&amp;action=edit&amp;redlink=1" title="Scientific American (page does not exist)">
+              Scientific American
+             </a>
+            </i>
+            &lt;ref name="Neuwirth"/&gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p>
+         Even when the underground market offers lower prices, consumers still have an incentive to buy on the legal market when possible, because:
+        </p>
+        <ul>
+         <li>
+          They may prefer legal suppliers, as they are easier to contact and can be held accountable for faults;
+         </li>
+         <li>
+          In some&lt;ref&gt;
+          <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+           Template:Cite web
+          </a>
+          &lt;/ref&gt; jurisdictions,
+          <a class="new" href="/wiki/index.php?title=Template:Which&amp;action=edit&amp;redlink=1" title="Template:Which (page does not exist)">
+           Template:Which
+          </a>
+          customers may be charged with a
+          <a class="new" href="/wiki/index.php?title=Criminal_offense&amp;action=edit&amp;redlink=1" title="Criminal offense (page does not exist)">
+           criminal offense
+          </a>
+          if they knowingly participate in the black economy, even as a consumer;
+         </li>
+         <li>
+          They may feel in danger of being hurt while making the deal;
+          <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+           Template:Citation needed
+          </a>
+         </li>
+         <li>
+          They may have a moral dislike of black marketing;
+         </li>
+         <li>
+          In some jurisdictions (such as
+          <a class="new" href="/wiki/index.php?title=England&amp;action=edit&amp;redlink=1" title="England (page does not exist)">
+           England
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=Wales&amp;action=edit&amp;redlink=1" title="Wales (page does not exist)">
+           Wales
+          </a>
+          ), consumers in possession of stolen goods will have them taken away if they are traced, even if they did not know they were stolen. Though they themselves commit no offense, they are still left with no goods and no money back. This risk may make some averse to buying goods that they think may be from the underground market, even if in fact they are legitimate (for example, items sold at a
+          <a class="new" href="/wiki/index.php?title=Car_boot_sale&amp;action=edit&amp;redlink=1" title="Car boot sale (page does not exist)">
+           car boot sale
+          </a>
+          ).
+         </li>
+        </ul>
+        <p>
+         However, in some situations, consumers can actually be in a better situation when using black market services, particularly when government regulations and monopolies
+         <a class="new" href="/wiki/index.php?title=Template:Which&amp;action=edit&amp;redlink=1" title="Template:Which (page does not exist)">
+          Template:Which
+         </a>
+         hinder what would otherwise be a legitimate competitive service. For example:
+        </p>
+        <ul>
+         <li>
+          Unlicensed
+          <a class="new" href="/wiki/index.php?title=Taxicab&amp;action=edit&amp;redlink=1" title="Taxicab (page does not exist)">
+           taxicabs
+          </a>
+          . In
+          <a class="new" href="/wiki/index.php?title=Baltimore&amp;action=edit&amp;redlink=1" title="Baltimore (page does not exist)">
+           Baltimore
+          </a>
+          , it has been reported that many consumers actively prefer illegal taxis, citing that they are more available, convenient, and priced fairly.&lt;ref name="Baltimore"&gt;Sexo&lt;/ref&gt;
+         </li>
+        </ul>
+        <h2>
+         <span class="mw-headline" id="Traded_goods_and_services">
+          Traded goods and services
+         </span>
+        </h2>
+        <p>
+         Some examples of underground economic activities include:
+        </p>
+        <h3>
+         <span class="mw-headline" id="Sexual_exploitation_and_forced_labor">
+          Sexual exploitation and forced labor
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+        </p>
+        <h3>
+         <span class="mw-headline" id="Illegal_drugs">
+          Illegal drugs
+         </span>
+        </h3>
+        <div class="thumb tleft">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Yellow_Cannabis_strain.jpg" title="File:Yellow Cannabis strain.jpg">
+           File:Yellow Cannabis strain.jpg
+          </a>
+          <div class="thumbcaption">
+           In the U.S.,
+           <a href="/wiki/Cannabis_(drug)" title="Cannabis (drug)">
+            cannabis
+           </a>
+           has been termed as a
+           <a class="new" href="/wiki/index.php?title=Cash_crop&amp;action=edit&amp;redlink=1" title="Cash crop (page does not exist)">
+            cash crop
+           </a>
+           .
+          </div>
+         </div>
+        </div>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         From the late 19th and early 20th centuries, many countries began to ban the keeping or using of some
+         <a class="new" href="/wiki/index.php?title=Recreational_drug&amp;action=edit&amp;redlink=1" title="Recreational drug (page does not exist)">
+          recreational drugs
+         </a>
+         , such as the United States'
+         <a class="new" href="/wiki/index.php?title=War_on_drugs&amp;action=edit&amp;redlink=1" title="War on drugs (page does not exist)">
+          war on drugs
+         </a>
+         . Many people nonetheless continue to use illegal drugs, and a black market exists to supply them. Despite law enforcement efforts to intercept them, demand remains high, providing a large
+         <a class="new" href="/wiki/index.php?title=Profit_motive&amp;action=edit&amp;redlink=1" title="Profit motive (page does not exist)">
+          profit motive
+         </a>
+         for
+         <a class="new" href="/wiki/index.php?title=Organized_crime&amp;action=edit&amp;redlink=1" title="Organized crime (page does not exist)">
+          organized criminal groups
+         </a>
+         to keep drugs supplied. The United Nations has reported that the retail market value of illegal drugs is $321.6 billion USD.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         Although law enforcement agencies intercept a fraction of the illegal drugs, and incarcerate hundreds of thousands of wholesale and retail sellers, the very stable demand for such drugs and the high profit margins encourages new distributors to enter the market without a decrease in the retail price. Many
+         <a class="new" href="/wiki/index.php?title=Drug_legalization&amp;action=edit&amp;redlink=1" title="Drug legalization (page does not exist)">
+          drug legalization
+         </a>
+         activists draw parallels between the illegal drug trade and the
+         <a class="new" href="/wiki/index.php?title=Prohibition&amp;action=edit&amp;redlink=1" title="Prohibition (page does not exist)">
+          Prohibition
+         </a>
+         of alcohol in the United States in the 1920s.
+        </p>
+        <p>
+         In the United Kingdom, it is not illegal to take drugs, but it is illegal to possess them. This can lead to the
+         <a class="new" href="/wiki/index.php?title=Unintended_consequence&amp;action=edit&amp;redlink=1" title="Unintended consequence (page does not exist)">
+          unintended consequence
+         </a>
+         that those in possession may swallow the evidence; once in the body they are committing no crime.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <h3>
+         <span class="mw-headline" id="Prostitution">
+          Prostitution
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Prostitution&amp;action=edit&amp;redlink=1" title="Prostitution (page does not exist)">
+          Prostitution
+         </a>
+         is illegal or highly regulated in most countries across the world. These places form a classic study of the underground economy, because of consistent high demand from customers, relatively high pay, but labor-intensive and low skilled work, which attracts a continual supply of workers. While prostitution exists in every country, studies show that it tends to flourish more in poorer countries, and in areas with large numbers of unattached men, such as around military bases.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         Prostitutes in the black market generally operate with some degree of secrecy, sometimes negotiating prices and activities through
+         <a class="new" href="/wiki/index.php?title=Code_word_(figure_of_speech)&amp;action=edit&amp;redlink=1" title="Code word (figure of speech) (page does not exist)">
+          codewords
+         </a>
+         and subtle gestures. In countries such as the
+         <a href="/wiki/Netherlands" title="Netherlands">
+          Netherlands
+         </a>
+         , where prostitution is legal but regulated, illegal prostitutes exist whose services are offered cheaper without regard for the legal requirements or procedures— health checks, standards of accommodation, and so on.
+        </p>
+        <p>
+         In other countries, such as
+         <a class="new" href="/wiki/index.php?title=Nicaragua&amp;action=edit&amp;redlink=1" title="Nicaragua (page does not exist)">
+          Nicaragua
+         </a>
+         , where legal prostitution is regulated, hotels may require both parties to identify themselves, to prevent the rise of
+         <a class="new" href="/wiki/index.php?title=Child_prostitution&amp;action=edit&amp;redlink=1" title="Child prostitution (page does not exist)">
+          child prostitution
+         </a>
+         .
+        </p>
+        <h3>
+         <span class="mw-headline" id="Weapons">
+          Weapons
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+        </p>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:132px;">
+          <a href="/wiki/File:Gun_pyre_in_Uhuru_Gardens,_Nairobi.jpg" title="File:Gun pyre in Uhuru Gardens, Nairobi.jpg">
+           File:Gun pyre in Uhuru Gardens, Nairobi.jpg
+          </a>
+          <div class="thumbcaption">
+           A tower of confiscated smuggled weapons about to be set ablaze in
+           <a class="new" href="/wiki/index.php?title=Nairobi&amp;action=edit&amp;redlink=1" title="Nairobi (page does not exist)">
+            Nairobi
+           </a>
+           ,
+           <a class="new" href="/wiki/index.php?title=Kenya&amp;action=edit&amp;redlink=1" title="Kenya (page does not exist)">
+            Kenya
+           </a>
+          </div>
+         </div>
+        </div>
+        <p>
+         The
+         <a class="new" href="/wiki/index.php?title=Legislatures&amp;action=edit&amp;redlink=1" title="Legislatures (page does not exist)">
+          legislatures
+         </a>
+         of many countries forbid or restrict the personal
+         <a class="new" href="/wiki/index.php?title=Ownership&amp;action=edit&amp;redlink=1" title="Ownership (page does not exist)">
+          ownership
+         </a>
+         of
+         <a class="new" href="/wiki/index.php?title=Weapon&amp;action=edit&amp;redlink=1" title="Weapon (page does not exist)">
+          weapons
+         </a>
+         . These restrictions can range from small
+         <a class="new" href="/wiki/index.php?title=Combat_knife&amp;action=edit&amp;redlink=1" title="Combat knife (page does not exist)">
+          knives
+         </a>
+         to
+         <a class="new" href="/wiki/index.php?title=Firearms&amp;action=edit&amp;redlink=1" title="Firearms (page does not exist)">
+          firearms
+         </a>
+         , either altogether or by classification (e.g.
+         <a class="new" href="/wiki/index.php?title=Caliber&amp;action=edit&amp;redlink=1" title="Caliber (page does not exist)">
+          caliber
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Handgun&amp;action=edit&amp;redlink=1" title="Handgun (page does not exist)">
+          handguns
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Automatic_weapon&amp;action=edit&amp;redlink=1" title="Automatic weapon (page does not exist)">
+          automatic weapons
+         </a>
+         , etc.), and
+         <a class="new" href="/wiki/index.php?title=Explosives&amp;action=edit&amp;redlink=1" title="Explosives (page does not exist)">
+          explosives
+         </a>
+         . The black market supplies the demands for weaponry that can not be obtained legally, or may only be obtained legally after obtaining permits and paying fees. This may be by
+         <a class="new" href="/wiki/index.php?title=Smuggling&amp;action=edit&amp;redlink=1" title="Smuggling (page does not exist)">
+          smuggling
+         </a>
+         the arms from countries where they were bought legally or stolen, or by stealing from arms manufacturers within the country itself, using
+         <a class="new" href="/wiki/index.php?title=Insider&amp;action=edit&amp;redlink=1" title="Insider (page does not exist)">
+          insiders
+         </a>
+         . In cases where the underground economy is unable to smuggle firearms, they can also satisfy requests by
+         <a class="new" href="/wiki/index.php?title=Gunsmith&amp;action=edit&amp;redlink=1" title="Gunsmith (page does not exist)">
+          gunsmithing
+         </a>
+         their own firearms. Those who may buy this way include
+         <a class="new" href="/wiki/index.php?title=Criminals&amp;action=edit&amp;redlink=1" title="Criminals (page does not exist)">
+          criminals
+         </a>
+         to use for illegal activities, gun collectors, and otherwise law abiding citizens interested in protecting their dwellings, families or businesses.
+        </p>
+        <p>
+         In England and Wales, certain categories of weapons used for hunting may be owned by qualified residents but must be registered with the local police force and kept within a locked cabinet. Another segment of the population who may purchase weapons on the black market are individuals who are unable to pass the legal requirements for registration — convicted felons or those suffering from mental illness for example. In some jurisdictions, collectors may legally keep antique weapons made incapable of being readily restored to a firing condition.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Illegally_logged_timber">
+          Illegally logged timber
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         Illegally logged
+         <a class="new" href="/wiki/index.php?title=Timber&amp;action=edit&amp;redlink=1" title="Timber (page does not exist)">
+          timber
+         </a>
+         is a huge problem. According to Interpol, the illegal logging industry is worth almost as much as drug production industry, in some countries.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="external text" href="http://www.illegal-logging.info/approach.php?a_id=109" rel="nofollow">
+          Illegal logging industry worth almost as much as drug production industry
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Animals_and_animal_products">
+          Animals and animal products
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         In many developing countries, living animals are captured in the wild and sold as pets. Wild animals are also hunted and killed for their
+         <a class="new" href="/wiki/index.php?title=Bushmeat&amp;action=edit&amp;redlink=1" title="Bushmeat (page does not exist)">
+          meat
+         </a>
+         , hide, and organs, the latter of which and other animal parts are sold for use in traditional medicine.
+        </p>
+        <p>
+         In several of the states within the
+         <a href="/wiki/United_States" title="United States">
+          United States
+         </a>
+         , laws requiring the pasteurization of milk has created black market situations involving the transport and sale of
+         <a class="new" href="/wiki/index.php?title=Raw_milk&amp;action=edit&amp;redlink=1" title="Raw milk (page does not exist)">
+          raw milk
+         </a>
+         .
+        </p>
+        <h3>
+         <span class="mw-headline" id="Alcohol">
+          Alcohol
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+        </p>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:182px;">
+          <a href="/wiki/File:Raid_at_elk_lake.jpg" title="File:Raid at elk lake.jpg">
+           File:Raid at elk lake.jpg
+          </a>
+          <div class="thumbcaption">
+           Broken barrels of liquor after a police raid in 1925, in
+           <a class="new" href="/wiki/index.php?title=Elk_Lake,_Ontario&amp;action=edit&amp;redlink=1" title="Elk Lake, Ontario (page does not exist)">
+            Elk Lake, Ontario
+           </a>
+          </div>
+         </div>
+        </div>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Rum-running&amp;action=edit&amp;redlink=1" title="Rum-running (page does not exist)">
+          Rum-running
+         </a>
+         , or bootlegging, is the illegal business of transporting (
+         <a class="new" href="/wiki/index.php?title=Smuggling&amp;action=edit&amp;redlink=1" title="Smuggling (page does not exist)">
+          smuggling
+         </a>
+         )
+         <a class="new" href="/wiki/index.php?title=Alcoholic_beverage&amp;action=edit&amp;redlink=1" title="Alcoholic beverage (page does not exist)">
+          alcoholic beverages
+         </a>
+         where such transportation is forbidden by law. Smuggling is usually done to circumvent
+         <a class="new" href="/wiki/index.php?title=Tax&amp;action=edit&amp;redlink=1" title="Tax (page does not exist)">
+          taxation
+         </a>
+         or
+         <a class="new" href="/wiki/index.php?title=Prohibition&amp;action=edit&amp;redlink=1" title="Prohibition (page does not exist)">
+          prohibition
+         </a>
+         laws within a particular jurisdiction. The term
+         <i>
+          rum-running
+         </i>
+         is more commonly applied to smuggling over water;
+         <i>
+          bootlegging
+         </i>
+         is applied to smuggling over land. According to the
+         <a class="new" href="/wiki/index.php?title=PBS&amp;action=edit&amp;redlink=1" title="PBS (page does not exist)">
+          PBS
+         </a>
+         documentary
+         <i>
+          <a class="new" href="/wiki/index.php?title=Prohibition_(miniseries)&amp;action=edit&amp;redlink=1" title="Prohibition (miniseries) (page does not exist)">
+           Prohibition
+          </a>
+         </i>
+         , the term "bootlegging" was popularized when thousands of city dwellers would sell liquor from flasks they kept in their boot leg all across major cities and rural areas.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Prohibition_(miniseries)&amp;action=edit&amp;redlink=1" title="Prohibition (miniseries) (page does not exist)">
+          Prohibition (miniseries)
+         </a>
+         , Episode 1, "A Nation of Drunkards". Directed by
+         <a class="new" href="/wiki/index.php?title=Ken_Burns&amp;action=edit&amp;redlink=1" title="Ken Burns (page does not exist)">
+          Ken Burns
+         </a>
+         &amp;
+         <a class="new" href="/wiki/index.php?title=Lynn_Novick&amp;action=edit&amp;redlink=1" title="Lynn Novick (page does not exist)">
+          Lynn Novick
+         </a>
+         . Distributed by PBS.&lt;/ref&gt; The term "rum-running" most likely originated at the start of
+         <a class="new" href="/wiki/index.php?title=Prohibition_in_the_United_States&amp;action=edit&amp;redlink=1" title="Prohibition in the United States (page does not exist)">
+          Prohibition in the United States
+         </a>
+         (1920–1933), when ships from
+         <a class="new" href="/wiki/index.php?title=Bimini&amp;action=edit&amp;redlink=1" title="Bimini (page does not exist)">
+          Bimini
+         </a>
+         in the western Bahamas transported cheap Caribbean
+         <a class="new" href="/wiki/index.php?title=Rum&amp;action=edit&amp;redlink=1" title="Rum (page does not exist)">
+          rum
+         </a>
+         to Florida
+         <a class="new" href="/wiki/index.php?title=Speakeasy&amp;action=edit&amp;redlink=1" title="Speakeasy (page does not exist)">
+          speakeasies
+         </a>
+         . But
+         <a class="new" href="/wiki/index.php?title=Rum&amp;action=edit&amp;redlink=1" title="Rum (page does not exist)">
+          rum
+         </a>
+         's cheapness made it a low-profit item for the rum-runners, and they soon moved on to smuggling
+         <a class="new" href="/wiki/index.php?title=Canadian_whisky&amp;action=edit&amp;redlink=1" title="Canadian whisky (page does not exist)">
+          Canadian whisky
+         </a>
+         , French
+         <a class="new" href="/wiki/index.php?title=Champagne&amp;action=edit&amp;redlink=1" title="Champagne (page does not exist)">
+          champagne
+         </a>
+         , and English
+         <a class="new" href="/wiki/index.php?title=Gin&amp;action=edit&amp;redlink=1" title="Gin (page does not exist)">
+          gin
+         </a>
+         to major cities like
+         <a class="new" href="/wiki/index.php?title=New_York_City&amp;action=edit&amp;redlink=1" title="New York City (page does not exist)">
+          New York City
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Boston&amp;action=edit&amp;redlink=1" title="Boston (page does not exist)">
+          Boston
+         </a>
+         , where prices ran high. It was said that some ships carried $200,000 in contraband in a single run.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Tobacco">
+          Tobacco
+         </span>
+        </h3>
+        <p>
+         It has been reported that smuggling one truckload of cigarettes from a low-tax
+         <a class="new" href="/wiki/index.php?title=U.S._state&amp;action=edit&amp;redlink=1" title="U.S. state (page does not exist)">
+          US state
+         </a>
+         to a high-tax state can lead to a profit of up to $2 million.&lt;ref&gt;Sexo&lt;/ref&gt; The low-tax states are generally the major tobacco producers, and have come under enormous criticism for their reluctance to increase taxes.
+         <a class="new" href="/wiki/index.php?title=North_Carolina&amp;action=edit&amp;redlink=1" title="North Carolina (page does not exist)">
+          North Carolina
+         </a>
+         eventually agreed to raise its taxes from 5 cents to 35 cents per pack of 20 cigarettes, although this remains far below the national average.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; But
+         <a class="new" href="/wiki/index.php?title=South_Carolina&amp;action=edit&amp;redlink=1" title="South Carolina (page does not exist)">
+          South Carolina
+         </a>
+         has so far refused to follow suit and raise taxes from seven cents per pack (the lowest in the USA).&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         In the UK, it has been reported that "27% of cigarettes and 68% of roll your own tobacco [is] purchased on the black market".&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Biological_organs">
+          Biological organs
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         According to the
+         <a class="new" href="/wiki/index.php?title=World_Health_Organization&amp;action=edit&amp;redlink=1" title="World Health Organization (page does not exist)">
+          World Health Organization
+         </a>
+         (WHO), illegal organ trade occurs when organs are removed from the body for the purpose of commercial transactions.&lt;ref name="Jafar"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt; The
+         <a class="new" href="/wiki/index.php?title=WHO&amp;action=edit&amp;redlink=1" title="WHO (page does not exist)">
+          WHO
+         </a>
+         justifies these actions by stating that, “Payment for...organs is likely to take unfair advantage of the poorest and most vulnerable groups, undermines altruistic donation and leads to profiteering and human trafficking.”&lt;ref name=Crim&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;  Despite these ordinances, it was estimated that 5% of all organ recipients engaged in commercial organ transplant in 2005.&lt;ref name="Shimazono"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt; Research indicates that illegal organ trade is on the rise, with a recent report by
+         <a class="new" href="/wiki/index.php?title=Global_Financial_Integrity&amp;action=edit&amp;redlink=1" title="Global Financial Integrity (page does not exist)">
+          Global Financial Integrity
+         </a>
+         estimating that the illegal organ trade generates profits between $600 million and $1.2 billion per year with a span over many countries.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Racketeering">
+          Racketeering
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         A
+         <a class="new" href="/wiki/index.php?title=Racket_(crime)&amp;action=edit&amp;redlink=1" title="Racket (crime) (page does not exist)">
+          racket
+         </a>
+         is a service that is
+         <a class="new" href="/wiki/index.php?title=Fraud&amp;action=edit&amp;redlink=1" title="Fraud (page does not exist)">
+          fraudulently
+         </a>
+         offered to solve a problem, such as for a problem that does not actually exist, that will not be put into effect, or that would not otherwise exist if the racket did not exist. Conducting a racket is racketeering.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;  Particularly, the potential problem may be caused by the same party that offers to solve it, although that fact may be concealed, with the specific intent to engender continual patronage for this party. An archetype is the
+         <a class="new" href="/wiki/index.php?title=Protection_racket&amp;action=edit&amp;redlink=1" title="Protection racket (page does not exist)">
+          protection racket
+         </a>
+         , wherein a person or group (e.g., a criminal gang) indicates to a store owner that they could protect her store from potential damage, damage that the same person or group would otherwise inflict, while the correlation of threat and protection may be more or less deniably veiled, distinguishing it from the more direct act of
+         <a class="new" href="/wiki/index.php?title=Extortion&amp;action=edit&amp;redlink=1" title="Extortion (page does not exist)">
+          extortion
+         </a>
+         .
+Racketeering is often associated with
+         <a class="new" href="/wiki/index.php?title=Organized_crime&amp;action=edit&amp;redlink=1" title="Organized crime (page does not exist)">
+          organized crime
+         </a>
+         , and the term was coined by the
+         <a class="new" href="/wiki/index.php?title=Employers%27_Association_of_Greater_Chicago&amp;action=edit&amp;redlink=1" title="Employers' Association of Greater Chicago (page does not exist)">
+          Employers' Association of Chicago
+         </a>
+         in June 1927 in a statement about the influence of organized crime in the
+         <a class="new" href="/wiki/index.php?title=International_Brotherhood_of_Teamsters&amp;action=edit&amp;redlink=1" title="International Brotherhood of Teamsters (page does not exist)">
+          Teamsters
+         </a>
+         union.&lt;ref&gt;David Witwer, "'The Most Racketeer-Ridden Union in America': The Problem of Corruption in the Teamsters Union During the 1930s", in
+         <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Transportation_providers">
+          Transportation providers
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         Where taxicabs, buses, and other transportation providers are strictly regulated or monopolized by government, a black market typically flourishes to provide transportation to poorly served or overpriced communities. In the United States, some cities restrict entry to the taxicab market with a medallion system— that is, taxicabs must get a special license and display it on a medallion in the vehicle. This has led to a market in
+         <a class="new" href="/wiki/index.php?title=Carpooling&amp;action=edit&amp;redlink=1" title="Carpooling (page does not exist)">
+          Carpooling
+         </a>
+         /
+         <a class="new" href="/wiki/index.php?title=Illegal_taxicab_operation&amp;action=edit&amp;redlink=1" title="Illegal taxicab operation (page does not exist)">
+          illegal taxicab operation
+         </a>
+         , although in most jurisdictions it is not illegal to sell the medallions.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         In
+         <a class="new" href="/wiki/index.php?title=Baltimore&amp;action=edit&amp;redlink=1" title="Baltimore (page does not exist)">
+          Baltimore
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Maryland&amp;action=edit&amp;redlink=1" title="Maryland (page does not exist)">
+          Maryland
+         </a>
+         , for example, it is not uncommon for private individuals to provide illegal taxicab service&lt;ref name="Baltimore"/&gt; for city residents.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Housing_rental">
+          Housing rental
+         </span>
+        </h3>
+        <p>
+         In places where there is
+         <a class="new" href="/wiki/index.php?title=Rent_control&amp;action=edit&amp;redlink=1" title="Rent control (page does not exist)">
+          rent control
+         </a>
+         there may be a black market for housing. For instance, in the UK there's illegal
+         <a class="new" href="/wiki/index.php?title=Lease&amp;action=edit&amp;redlink=1" title="Lease (page does not exist)">
+          subletting
+         </a>
+         of
+         <a class="new" href="/wiki/index.php?title=Social_housing&amp;action=edit&amp;redlink=1" title="Social housing (page does not exist)">
+          social housing
+         </a>
+         homes where the tenant illegally rents out the home at a higher rent.&lt;ref&gt;
+         <a class="external text" href="http://news.bbc.co.uk/panorama/hi/front_page/newsid_9474000/9474045.stm" rel="nofollow">
+          Tracking down England's council house sublet cheats
+         </a>
+         ,
+         <i>
+          <a class="new" href="/wiki/index.php?title=Panorama_(TV_series)&amp;action=edit&amp;redlink=1" title="Panorama (TV series) (page does not exist)">
+           Panorama
+          </a>
+         </i>
+         , BBC, 4 May 2011&lt;/ref&gt; In Sweden, rental contracts with regulated rent can be bought on the black market,&lt;ref&gt;
+         <a class="external text" href="http://www.thelocal.se/20100830/28666" rel="nofollow">
+          'Egalitarian' Stockholm rents feed black market
+         </a>
+         ,
+         <i>
+          <a class="new" href="/wiki/index.php?title=The_Local&amp;action=edit&amp;redlink=1" title="The Local (page does not exist)">
+           The Local
+          </a>
+         </i>
+         , 30 Aug 2010&lt;/ref&gt; either from the current tenant or sometimes directly from the property owner. Specialised black-market dealers assist the property owners with such transactions.&lt;ref&gt;
+         <a class="external text" href="http://www.svd.se/nyheter/inrikes/svd-avslojar-systematisk-forsaljning-av-svartkontrakt_8146104.svd" rel="nofollow">
+          "Hyrestvåan är din för 300 000"
+         </a>
+         (in Swedish, "The rental one-bedroom [apartment] is yours for 300 000 [SEK]"),
+         <a class="new" href="/wiki/index.php?title=Svenska_Dagbladet&amp;action=edit&amp;redlink=1" title="Svenska Dagbladet (page does not exist)">
+          Svenska Dagbladet
+         </a>
+         , 5 May 2013&lt;/ref&gt; In India, places like Kota, New Delhi where students are coming from all over India, getting high rented PG (Paying guests) or other forms of rented apartments without any Taxation or regulations.
+        </p>
+        <h3>
+         <span id="Counterfeit_medicine,_essential_aircraft_and_automobile_parts">
+         </span>
+         <span class="mw-headline" id="Counterfeit_medicine.2C_essential_aircraft_and_automobile_parts">
+          Counterfeit medicine, essential aircraft and automobile parts
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         Medicines and essential aircraft and automobile parts (e.g. brakes, motor parts, ...) are counterfeited on a large scale.
+        </p>
+        <h3>
+         <span class="mw-headline" id="Copyrighted_media">
+          Copyrighted media
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+        </p>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Street_vendor&amp;action=edit&amp;redlink=1" title="Street vendor (page does not exist)">
+          Street vendors
+         </a>
+         in countries where there is little enforcement of
+         <a class="new" href="/wiki/index.php?title=Copyright_law&amp;action=edit&amp;redlink=1" title="Copyright law (page does not exist)">
+          copyright law
+         </a>
+         , particularly in Asia and Latin America, often sell deeply discounted copies of
+         <a class="new" href="/wiki/index.php?title=Film&amp;action=edit&amp;redlink=1" title="Film (page does not exist)">
+          films
+         </a>
+         , music
+         <a class="new" href="/wiki/index.php?title=CD&amp;action=edit&amp;redlink=1" title="CD (page does not exist)">
+          CDs
+         </a>
+         , and computer
+         <a href="/wiki/Software" title="Software">
+          software
+         </a>
+         such as
+         <a class="new" href="/wiki/index.php?title=Video_game&amp;action=edit&amp;redlink=1" title="Video game (page does not exist)">
+          video games
+         </a>
+         , sometimes even before the official release of the title. A determined counterfeiter with a few hundred dollars can make copies that are digitally identical to an original and face no loss in quality; innovations in consumer
+         <a class="new" href="/wiki/index.php?title=DVD&amp;action=edit&amp;redlink=1" title="DVD (page does not exist)">
+          DVD
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=CD&amp;action=edit&amp;redlink=1" title="CD (page does not exist)">
+          CD
+         </a>
+         writers and the widespread availability of
+         <a href="/wiki/Software_cracking" title="Software cracking">
+          cracks
+         </a>
+         on the
+         <a href="/wiki/Internet" title="Internet">
+          Internet
+         </a>
+         for most forms of
+         <a class="new" href="/wiki/index.php?title=Copy_protection&amp;action=edit&amp;redlink=1" title="Copy protection (page does not exist)">
+          copy protection
+         </a>
+         technology make this cheap and easy to do.
+        </p>
+        <p>
+         Copyright-holders and other proponents of copyright laws have found this phenomenon hard to stop through the courts, as the operations are distributed and widespread,
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         transversing national borders and thus legal systems. Since digital information can be duplicated repeatedly with no loss of quality, and passed on electronically at little to no cost, the effective underground market value of media is zero, differentiating it from nearly all other forms of underground economic activity. The issue is compounded by widespread indifference to enforcing copyright law, both with governments and the public at large. To steal a car is seen as a crime in most people's eyes, but to obtain unauthorized copies of music or a game is not.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Additionally,
+         <a class="new" href="/wiki/index.php?title=Anti-copyright&amp;action=edit&amp;redlink=1" title="Anti-copyright (page does not exist)">
+          not all people agree
+         </a>
+         with 'copyright laws', as it unfairly criminalises competition, allowing the copyright-holder to effectively monopolise related industries. It also authorises copyright-holders to use
+         <a class="new" href="/wiki/index.php?title=DVD_region_codes&amp;action=edit&amp;redlink=1" title="DVD region codes (page does not exist)">
+          region-coding
+         </a>
+         to discriminate against selected populations price-wise and availability-wise.
+        </p>
+        <p>
+         The comparison to car-theft, although common, is not truly analogous. Automobile theft results in an item being removed from the owner with the ownership transferred to a second party. Media piracy is a crime of duplication, with no physical property being stolen. Copyright infringement law goes as far as to deem illegal "
+         <a class="new" href="/wiki/index.php?title=Mix-tape&amp;action=edit&amp;redlink=1" title="Mix-tape (page does not exist)">
+          mix-tapes
+         </a>
+         " and other such material copied to tape or disk. Copyright holders typically attest the act of theft to be in the profits forgone to the pirates. However, this makes the unsubstantiated assumption that the pirates would have bought the copyrighted material if it had not been available through
+         <a class="new" href="/wiki/index.php?title=File_sharing&amp;action=edit&amp;redlink=1" title="File sharing (page does not exist)">
+          file sharing
+         </a>
+         or other means. Copyright holders also say that they did some work for creating their copyrighted material and they wish to get compensated for their work. No other system than copyright has been found to compensate the artists and other creators for their work, and many artists do not have any alternative source of income or another job. Many artists and film producers have accepted the role of piracy in media distribution.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The spread of material through file sharing is a major source of publicity for artists and has been shown to build fan bases that may be more inclined to see the performer live&lt;ref&gt;Sexo&lt;/ref&gt; (live performances make up the bulk of successful artists' revenues,&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; however not all artists can make live performances, for example photographers typically only have a single source of income which is the licensing of their photos).
+        </p>
+        <h3>
+         <span class="mw-headline" id="Currency">
+          Currency
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         Money itself is traded on the black market. This may happen for one or more of several reasons:
+        </p>
+        <ul>
+         <li>
+          The government sets ("pegs") the local currency at some arbitrary level to another currency that does not reflect its true market value.
+         </li>
+         <li>
+          A government makes it difficult or illegal for its citizens to own much or any foreign currency.
+         </li>
+         <li>
+          The government taxes exchanging the local currency with other currencies, either in one direction or both (e.g. foreigners are taxed to buy local currency, or residents are taxed to buy foreign currency).
+         </li>
+         <li>
+          The currency is
+          <a class="new" href="/wiki/index.php?title=Counterfeit_money&amp;action=edit&amp;redlink=1" title="Counterfeit money (page does not exist)">
+           counterfeit
+          </a>
+          .
+         </li>
+         <li>
+          The currency has been acquired illegally and needs to be
+          <a href="/wiki/Money_laundering" title="Money laundering">
+           laundered
+          </a>
+          before the money can be used.&lt;ref&gt;
+          <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+           Template:Cite web
+          </a>
+          &lt;/ref&gt;
+         </li>
+        </ul>
+        <p>
+         A government may officially set the rate of exchange of its currency with that of other currencies, typically the
+         <a class="new" href="/wiki/index.php?title=US_dollar&amp;action=edit&amp;redlink=1" title="US dollar (page does not exist)">
+          US dollar
+         </a>
+         . When it does, the peg often overvalues the local currency relative to what its market value would be if it were a
+         <a class="new" href="/wiki/index.php?title=Floating_currency&amp;action=edit&amp;redlink=1" title="Floating currency (page does not exist)">
+          floating currency
+         </a>
+         . Those in possession of the "harder" currency, for example expatriate workers, may be able to use the black market to buy the local currency at better exchange rates than they can get officially.
+        </p>
+        <p>
+         In situations of financial instability and inflation, citizens may substitute a foreign currency for the local currency. The U.S. dollar is viewed as a relatively stable and safe currency and is often used abroad as a second currency. In 2012, $340 billion, roughly 37 percent&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt; of all U.S. currency, was believed to be circulating abroad.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The most recent study of the amount of currency held overseas suggests that only 25 percent of U.S. currency is presently held abroad.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; The widespread substitution of U.S. currency for local currency is known as
+         <i>
+          <a class="new" href="/wiki/index.php?title=De_facto&amp;action=edit&amp;redlink=1" title="De facto (page does not exist)">
+           de facto
+          </a>
+          <a class="new" href="/wiki/index.php?title=Dollarisation&amp;action=edit&amp;redlink=1" title="Dollarisation (page does not exist)">
+           dollarisation
+          </a>
+         </i>
+         , and has been observed in transition countries such as Cambodia &lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Edgar_L._Feige&amp;action=edit&amp;redlink=1" title="Edgar L. Feige (page does not exist)">
+          Edgar L. Feige
+         </a>
+         , "Dynamics of Currency Substitution, Asset Substitution and De facto Dollarisation and Euroisation in Transition Countries", Comparative Economic Studies, September, 2003, Vol. 45 #3 pp. 358-383.&lt;/ref&gt; and in some Latin American countries.&lt;ref&gt;E. L. Feige et al. "Unofficial Dollarization in Latin America: Currency Substitution, Network Externalities and Irreversibility", in Dean, Salvatore and Willett (eds.) The Dollarization Debate, Oxford Press, 2003.&lt;/ref&gt; Some countries, such as
+         <a class="new" href="/wiki/index.php?title=Ecuador&amp;action=edit&amp;redlink=1" title="Ecuador (page does not exist)">
+          Ecuador
+         </a>
+         , abandoned their local currency and now use US dollars, essentially for this reason, a process known as
+         <a class="new" href="/wiki/index.php?title=De_jure_dollarization&amp;action=edit&amp;redlink=1" title="De jure dollarization (page does not exist)">
+          de jure dollarization
+         </a>
+         . See also the example of the
+         <a class="new" href="/wiki/index.php?title=Ghanaian_cedi&amp;action=edit&amp;redlink=1" title="Ghanaian cedi (page does not exist)">
+          Ghanaian cedi
+         </a>
+         from the 1970s and 1980s.
+        </p>
+        <p>
+         If foreign currency is difficult or illegal for local citizens to acquire, they will pay a premium to acquire it. U.S. currency is viewed as a relatively stable store of value and since it does not leave a paper trail,
+         <a class="new" href="/wiki/index.php?title=Template:Dubious&amp;action=edit&amp;redlink=1" title="Template:Dubious (page does not exist)">
+          Template:Dubious
+         </a>
+         it is also a convenient medium of exchange for both illegal transactions and for
+         <a class="new" href="/wiki/index.php?title=Tax_evasion&amp;action=edit&amp;redlink=1" title="Tax evasion (page does not exist)">
+          unreported income
+         </a>
+         both in the U.S and abroad.&lt;ref name="Cebula and Feige"/&gt;
+        </p>
+        <p>
+         More recently
+         <a href="/wiki/Cryptocurrency" title="Cryptocurrency">
+          cryptocurrencies
+         </a>
+         such as
+         <a href="/wiki/Bitcoin" title="Bitcoin">
+          bitcoin
+         </a>
+         have been used as medium of exchange in black market transactions. Sometimes favored over
+         <a class="new" href="/wiki/index.php?title=Central_bank&amp;action=edit&amp;redlink=1" title="Central bank (page does not exist)">
+          centralized currency
+         </a>
+         due to its untraceable nature, and its ability to be traded over the internet, thus allowing the transacting parties to remain anonymous.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Fuel">
+          Fuel
+         </span>
+        </h3>
+        <p>
+         In the EU, it is not illegal for a person or business to buy fuel in one EU state for their own use in another, but as with other goods the tax will generally be payable by the final customer at the physical place of making the purchase.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <p>
+         Between the
+         <a class="new" href="/wiki/index.php?title=Republic_of_Ireland&amp;action=edit&amp;redlink=1" title="Republic of Ireland (page does not exist)">
+          Republic of Ireland
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Northern_Ireland&amp;action=edit&amp;redlink=1" title="Northern Ireland (page does not exist)">
+          Northern Ireland
+         </a>
+         , there has often been a black market in
+         <a class="new" href="/wiki/index.php?title=Petrol&amp;action=edit&amp;redlink=1" title="Petrol (page does not exist)">
+          petrol
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Diesel_fuel&amp;action=edit&amp;redlink=1" title="Diesel fuel (page does not exist)">
+          diesel
+         </a>
+         .&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;Sexo&lt;/ref&gt;
+The direction of smuggling can change depending on the variation of the taxes and the
+         <a class="new" href="/wiki/index.php?title=Exchange_rate&amp;action=edit&amp;redlink=1" title="Exchange rate (page does not exist)">
+          exchange rate
+         </a>
+         between the
+         <a class="new" href="/wiki/index.php?title=Euro&amp;action=edit&amp;redlink=1" title="Euro (page does not exist)">
+          Euro
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Pound_Sterling&amp;action=edit&amp;redlink=1" title="Pound Sterling (page does not exist)">
+          Pound Sterling
+         </a>
+         ; indeed sometimes diesel will be smuggled in one direction and petrol the other.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <p>
+         In some countries, diesel fuel for agricultural vehicles or domestic use is taxed at a much lower rate than that for other vehicles. This is known as
+         <a class="new" href="/wiki/index.php?title=Fuel_dyes&amp;action=edit&amp;redlink=1" title="Fuel dyes (page does not exist)">
+          dyed fuel
+         </a>
+         , because a coloured dye is added so it can be detected if used in other vehicles (e.g. a red dye in the UK, a green dye in Ireland). Nevertheless, the saving is attractive enough to make a black market in agricultural diesel. In 2007 it was estimated that £350 million was not gained in profit as a result of this phenomenon, in the UK.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h2>
+         <span class="mw-headline" id="Organized_crime">
+          Organized crime
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Main&amp;action=edit&amp;redlink=1" title="Template:Main (page does not exist)">
+          Template:Main
+         </a>
+         People engaged in the black market usually run their business hidden under a
+         <a class="new" href="/wiki/index.php?title=Front_organization&amp;action=edit&amp;redlink=1" title="Front organization (page does not exist)">
+          front
+         </a>
+         business that is legal.
+        </p>
+        <p>
+         Often, certain types of illegal products are traded against one another, depending on the geographical location.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h2>
+         <span class="mw-headline" id="Consequences">
+          Consequences
+         </span>
+        </h2>
+        <h3>
+         <span class="mw-headline" id="Wars">
+          Wars
+         </span>
+        </h3>
+        <p>
+         Black markets flourish in most countries during
+         <a class="new" href="/wiki/index.php?title=War&amp;action=edit&amp;redlink=1" title="War (page does not exist)">
+          wartime
+         </a>
+         . States that are engaged in
+         <a class="new" href="/wiki/index.php?title=Total_war&amp;action=edit&amp;redlink=1" title="Total war (page does not exist)">
+          total war
+         </a>
+         or other large-scale, extended
+         <a class="new" href="/wiki/index.php?title=War&amp;action=edit&amp;redlink=1" title="War (page does not exist)">
+          wars
+         </a>
+         often impose restrictions on home use of critical resources that are needed for the war effort, such as
+         <a class="new" href="/wiki/index.php?title=Food&amp;action=edit&amp;redlink=1" title="Food (page does not exist)">
+          food
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Gasoline&amp;action=edit&amp;redlink=1" title="Gasoline (page does not exist)">
+          gasoline
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Rubber&amp;action=edit&amp;redlink=1" title="Rubber (page does not exist)">
+          rubber
+         </a>
+         ,
+         <a class="new" href="/wiki/index.php?title=Metal&amp;action=edit&amp;redlink=1" title="Metal (page does not exist)">
+          metal
+         </a>
+         , etc., typically through
+         <a class="new" href="/wiki/index.php?title=Rationing&amp;action=edit&amp;redlink=1" title="Rationing (page does not exist)">
+          rationing
+         </a>
+         . In most cases, a black market develops to supply rationed goods at exorbitant prices. The
+         <a class="new" href="/wiki/index.php?title=Rationing&amp;action=edit&amp;redlink=1" title="Rationing (page does not exist)">
+          rationing
+         </a>
+         and
+         <a class="new" href="/wiki/index.php?title=Price_controls&amp;action=edit&amp;redlink=1" title="Price controls (page does not exist)">
+          price controls
+         </a>
+         enforced in many countries during
+         <a class="new" href="/wiki/index.php?title=World_War_II&amp;action=edit&amp;redlink=1" title="World War II (page does not exist)">
+          World War II
+         </a>
+         encouraged widespread black market activity.&lt;ref name="TheHomeFront"&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt; One source of black-market meat under wartime rationing was by farmers declaring fewer domestic animal births to the
+         <a class="new" href="/wiki/index.php?title=Minister_of_Food_(United_Kingdom)&amp;action=edit&amp;redlink=1" title="Minister of Food (United Kingdom) (page does not exist)">
+          Ministry of Food
+         </a>
+         than actually happened. Another in Britain was supplies from the USA, intended only for use in USA army bases on British land, but leaked into the local native British black market.
+        </p>
+        <p>
+         For example, in the
+         <a class="new" href="/wiki/index.php?title=Parliament_of_the_United_Kingdom&amp;action=edit&amp;redlink=1" title="Parliament of the United Kingdom (page does not exist)">
+          Parliament of the United Kingdom
+         </a>
+         on 17 February 1945&lt;ref&gt;
+         <i>
+          <a class="new" href="/wiki/index.php?title=Daily_Telegraph&amp;action=edit&amp;redlink=1" title="Daily Telegraph (page does not exist)">
+           Daily Telegraph
+          </a>
+         </i>
+         Saturday 17 February 1945, reprinted on page 30
+         <i>
+          Daily Telegraph
+         </i>
+         Tuesday 17 February 2015&lt;/ref&gt;
+         <a class="new" href="/wiki/index.php?title=Member_of_parliament&amp;action=edit&amp;redlink=1" title="Member of parliament (page does not exist)">
+          members
+         </a>
+         said that "the whole
+         <a class="new" href="/wiki/index.php?title=Domesticated_turkey&amp;action=edit&amp;redlink=1" title="Domesticated turkey (page does not exist)">
+          turkey
+         </a>
+         production of
+         <a class="new" href="/wiki/index.php?title=East_Anglia&amp;action=edit&amp;redlink=1" title="East Anglia (page does not exist)">
+          East Anglia
+         </a>
+         had gone to the black market" and "prosecutions [for black-marketing] were like trying to stop a leak in a battleship", and it was said that official prices of such foods were set so low that their producers often sold their produce on the black market for higher prices; one such route (seen to operate at the market at
+         <a class="new" href="/wiki/index.php?title=Diss&amp;action=edit&amp;redlink=1" title="Diss (page does not exist)">
+          Diss
+         </a>
+         in Norfolk) was to sell live poultry to members of the public, and each purchaser would sign a form promising that he was buying the birds to breed from, and then take them home for eating.
+        </p>
+        <p>
+         During the
+         <a class="new" href="/wiki/index.php?title=Vietnam_war&amp;action=edit&amp;redlink=1" title="Vietnam war (page does not exist)">
+          Vietnam war
+         </a>
+         , soldiers would spend
+         <a class="new" href="/wiki/index.php?title=Military_Payment_Certificate&amp;action=edit&amp;redlink=1" title="Military Payment Certificate (page does not exist)">
+          Military Payment Certificates
+         </a>
+         on
+         <a class="new" href="/wiki/index.php?title=Maid&amp;action=edit&amp;redlink=1" title="Maid (page does not exist)">
+          maid
+         </a>
+         service and
+         <a class="new" href="/wiki/index.php?title=Human_sexuality&amp;action=edit&amp;redlink=1" title="Human sexuality (page does not exist)">
+          sexual
+         </a>
+         entertainment,
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         thus supporting their
+         <a class="new" href="/wiki/index.php?title=Sexual_partner&amp;action=edit&amp;redlink=1" title="Sexual partner (page does not exist)">
+          partners
+         </a>
+         and their families. If the Vietnamese civilian wanted something that was hard to get, he would buy it at double the price from one of the soldiers, who had a monthly ration card and thus had access to the military stores.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+         The transactions ran through the on-base maids to the local populace. Although these activities were illegal, only flagrant or large-scale black-marketeers were prosecuted by the military.
+         <a class="new" href="/wiki/index.php?title=Template:Citation_needed&amp;action=edit&amp;redlink=1" title="Template:Citation needed (page does not exist)">
+          Template:Citation needed
+         </a>
+        </p>
+        <h3>
+         <span class="mw-headline" id="Indian_black-money">
+          Indian black-money
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Further&amp;action=edit&amp;redlink=1" title="Template:Further (page does not exist)">
+          Template:Further
+         </a>
+         The black money market situation in
+         <a class="new" href="/wiki/index.php?title=India&amp;action=edit&amp;redlink=1" title="India (page does not exist)">
+          India
+         </a>
+         is
+         <a class="new" href="/wiki/index.php?title=Epidemic&amp;action=edit&amp;redlink=1" title="Epidemic (page does not exist)">
+          epidemic
+         </a>
+         . India currently tops the list for illegal monies in the entire world, estimated to be almost US$1,456
+         <a class="new" href="/wiki/index.php?title=1,000,000,000_(number)&amp;action=edit&amp;redlink=1" title="1,000,000,000 (number) (page does not exist)">
+          billion
+         </a>
+         stored in Swiss banks in the form of unaccounted money.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; According to the data provided by the Swiss Banking Association, India has more black money than the rest of the world combined.&lt;ref&gt;
+         <a class="external free" href="http://cbi.nic.in/articles/pdf/Jogindersing_pioneer_11-1-2012.pdf" rel="nofollow">
+          http://cbi.nic.in/articles/pdf/Jogindersing_pioneer_11-1-2012.pdf
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Indian Swiss bank account assets are worth 13 times (1300%) the country’s national debt, and, if this black money is seized and brought back to the country, India has the potential to become one of the richest countries in the world.&lt;ref&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Allegations of Indians holding trillions in black money in Switzerland are, however, in dispute. Later reports, including those by Swiss Bankers Association and the Government of Switzerland, claim that these allegations are false and fabricated, and the total amount held in all Swiss banks by citizens of India is about
+         <a class="new" href="/wiki/index.php?title=Template:USD&amp;action=edit&amp;redlink=1" title="Template:USD (page does not exist)">
+          Template:USD
+         </a>
+         2 billion.&lt;ref&gt;Sexo&lt;/ref&gt;&lt;ref name=fm2012&gt;
+         <a class="new" href="/wiki/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Prohibition">
+          Prohibition
+         </span>
+        </h3>
+        <p>
+         A classic example of creating a black market is the
+         <a class="new" href="/wiki/index.php?title=Prohibition&amp;action=edit&amp;redlink=1" title="Prohibition (page does not exist)">
+          Prohibition
+         </a>
+         of alcohol. In the United States, many
+         <a class="new" href="/wiki/index.php?title=Organized_crime&amp;action=edit&amp;redlink=1" title="Organized crime (page does not exist)">
+          organized crime
+         </a>
+         syndicates took advantage of the lucrative opportunities in the resulting black market in banned
+         <a class="new" href="/wiki/index.php?title=Alcoholic_beverage&amp;action=edit&amp;redlink=1" title="Alcoholic beverage (page does not exist)">
+          alcohol
+         </a>
+         production and sale. Most people did not think drinking alcohol was particularly harmful nor that its buyers and sellers should be treated like common
+         <a class="new" href="/wiki/index.php?title=Crime&amp;action=edit&amp;redlink=1" title="Crime (page does not exist)">
+          criminals
+         </a>
+         . This led to the illegal
+         <a class="new" href="/wiki/index.php?title=Speakeasy&amp;action=edit&amp;redlink=1" title="Speakeasy (page does not exist)">
+          speakeasies
+         </a>
+         , and organizations such as the
+         <a class="new" href="/wiki/index.php?title=Mafia&amp;action=edit&amp;redlink=1" title="Mafia (page does not exist)">
+          Mafia
+         </a>
+         grew tremendously more powerful through their black market activities distributing alcohol. This lasted until repeal of Prohibition.
+        </p>
+        <h2>
+         <span class="mw-headline" id="See_also">
+          See also
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Columns-list&amp;action=edit&amp;redlink=1" title="Template:Columns-list (page does not exist)">
+          Template:Columns-list
+         </a>
+        </p>
+        <h2>
+         <span class="mw-headline" id="References">
+          References
+         </span>
+        </h2>
+        <div class="reflist {{#if: | columns {{#iferror: {{#ifexpr: 1">
+         1 }}
+         <pre>     | references-column-width
+     | references-column-count references-column-count-{{#if:1|{{{1}}}}} }}
+   | {{#if: 30em
+     | references-column-width }} }}" style="{{#if:
+   | {{#iferror: {{#ifexpr: 1 &gt; 1 }}
+     | <a class="new" href="/wiki/index.php?title=Template:Column-width&amp;action=edit&amp;redlink=1" title="Template:Column-width (page does not exist)">Template:Column-width</a>
+     | <a class="new" href="/wiki/index.php?title=Template:Column-count&amp;action=edit&amp;redlink=1" title="Template:Column-count (page does not exist)">Template:Column-count</a> }}
+   | {{#if: 30em
+     | <a class="new" href="/wiki/index.php?title=Template:Column-width&amp;action=edit&amp;redlink=1" title="Template:Column-width (page does not exist)">Template:Column-width</a> }} }} list-style-type: {{#switch:
+   | upper-alpha
+   | upper-roman
+   | lower-alpha
+   | lower-greek
+   | lower-roman = {{{group}}}
+   | #default = decimal}};"&gt;
+</pre>
+         &lt;references group=""&gt;&lt;/references&gt;
+        </div>
+        <h2>
+         <span class="mw-headline" id="Further_reading">
+          Further reading
+         </span>
+        </h2>
+        <ul>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+           Template:Cite journal
+          </a>
+         </li>
+         <li>
+          Cebula, R. (2014).
+          <a class="external text" href="http://mpra.ub.uni-muenchen.de/55284/1/MPRA_paper_55284.pdf" rel="nofollow">
+           Where Has the Currency Gone? And Why? The Underground Economy and Personal Income Tax Evasion in the US, 1970-2008
+          </a>
+          ,
+          <i>
+           Review of Economic Analysis, Rimini Centre for Economic Analysis
+          </i>
+          , vol. 6(1), pages 36–52, June.
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+           Template:Cite book
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+           Template:Cite journal
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+           Template:Cite journal
+          </a>
+         </li>
+         <li>
+          Schneider, F., and Willams, C.C. (2013). The shadow economy. IEA, Institute for Economic Affairs, London.
+         </li>
+         <li>
+          Feld, L., and Schneider, F. (2010). Survey on the shadow economy and undeclared earnings in OECD countries. German Economic Review, 11/2, pp. 109–149.
+         </li>
+         <li>
+          Frey, B.S., and Schneider, F. (2015). Informal and Underground Economics. In: James D. Wright (ed.), International Encyclopedia of the Social and Behavioral Sciences, 2nd edition, Vol. 12. Oxford: Elsevier, pp. 50–55.
+         </li>
+        </ul>
+        <h2>
+         <span class="mw-headline" id="External_links">
+          External links
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Wiktionary&amp;action=edit&amp;redlink=1" title="Template:Wiktionary (page does not exist)">
+          Template:Wiktionary
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Commons_category&amp;action=edit&amp;redlink=1" title="Template:Commons category (page does not exist)">
+          Template:Commons category
+         </a>
+        </p>
+        <ul>
+         <li>
+          <a class="external text" href="http://www.havocscope.com/" rel="nofollow">
+           Havocscope Black Markets - Database and statistics on black market activities
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.assemblee-nationale.fr/rap-info/i2311-51.asp#P1089_155970" rel="nofollow">
+           Official March 2000 French Parliamentary Report on the obstacles on the control and repression of financial criminal activity and of money-laundering in Europe
+          </a>
+          by French MPs
+          <a class="new" href="/wiki/index.php?title=Vincent_Peillon&amp;action=edit&amp;redlink=1" title="Vincent Peillon (page does not exist)">
+           Vincent Peillon
+          </a>
+          and
+          <a class="new" href="/wiki/index.php?title=Arnaud_Montebourg&amp;action=edit&amp;redlink=1" title="Arnaud Montebourg (page does not exist)">
+           Arnaud Montebourg
+          </a>
+          , third section on "Luxembourg's political dependency toward the financial sector: the Clearstream affair" (pp. 83–111 on PDF version)
+         </li>
+         <li>
+          <a class="external text" href="http://www.ncpa.org/pub/ba273" rel="nofollow">
+           <i>
+            The Underground Economy
+           </i>
+           from National Center for Policy Analysis
+          </a>
+          (1998)
+         </li>
+         <li>
+          <a class="external text" href="http://www.frontpagemag.com/Articles/ReadArticle.asp?ID=16532" rel="nofollow">
+           <i>
+            Going Underground: America's Shadow Economy
+           </i>
+           by Jim McTague
+          </a>
+          (2005)
+         </li>
+         <li>
+          <a class="external text" href="http://oldfraser.lexi.net/publications/books/underground/" rel="nofollow">
+           <i>
+            The Underground Economy: Global Evidence of Its Size and Impact
+           </i>
+          </a>
+          (1997)
+         </li>
+         <li>
+          <a class="external text" href="http://economics.about.com/od/demand/ss/black_market.htm" rel="nofollow">
+           The Effects of a Black Market Using Supply and Demand
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.economist.com/node/16784402" rel="nofollow">
+           A lengthening shadow: Shadow economies have grown since the financial crisis began
+          </a>
+          11.August.2010
+          <a class="new" href="/wiki/index.php?title=The_Economist&amp;action=edit&amp;redlink=1" title="The Economist (page does not exist)">
+           The Economist
+          </a>
+         </li>
+         <li>
+          <a class="external text" href="http://www.businessweek.com/articles/2012-04-05/the-secret-strength-of-pakistans-economy" rel="nofollow">
+           The Secret Strength of Pakistan's Economy
+          </a>
+          April 5, 2012
+          <a class="new" href="/wiki/index.php?title=BusinessWeek&amp;action=edit&amp;redlink=1" title="BusinessWeek (page does not exist)">
+           BusinessWeek
+          </a>
+         </li>
+        </ul>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Alcohol_and_health&amp;action=edit&amp;redlink=1" title="Template:Alcohol and health (page does not exist)">
+          Template:Alcohol and health
+         </a>
+         <a class="new" href="/wiki/index.php?title=Template:Corruption&amp;action=edit&amp;redlink=1" title="Template:Corruption (page does not exist)">
+          Template:Corruption
+         </a>
+        </p>
+        <p>
+         <a class="new" href="/wiki/index.php?title=Template:Authority_control&amp;action=edit&amp;redlink=1" title="Template:Authority control (page does not exist)">
+          Template:Authority control
+         </a>
+        </p>
+        <!--
+NewPP limit report
+Cached time: 20210705124511
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.120 seconds
+Real time usage: 0.178 seconds
+Preprocessor visited node count: 444/1000000
+Preprocessor generated node count: 5593/1000000
+Post‐expand include size: 2777/2097152 bytes
+Template argument size: 8/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+        <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   33.908      1 -total
+ 17.65%    5.983      1 Template:Reflist
+  5.37%    1.819      5 Template:Cite_news
+  2.93%    0.992     17 Template:Cite_journal
+  2.89%    0.981     21 Template:Cite_web
+  2.87%    0.973      1 Template:Redirect4
+  2.82%    0.957     13 Template:Citation_needed
+  2.44%    0.828      4 Template:Cite_book
+  2.41%    0.817      1 Template:Grey_market
+  2.37%    0.804      1 Template:Unreliable_sources
+-->
+        <!-- Saved in parser cache with key hwiki:pcache:idhash:319-0!canonical and timestamp 20210705124511 and revision id 463278
+ -->
+       </div>
+      </div>
+      <div class="printfooter">
+       Retrieved from "
+       <a dir="ltr" href="http://zqktlwiawxckqmthzpumhmizxwtf6hd7btimcul2bvpgp5mglbvs7yad.onion/wiki/index.php?title=Black_market&amp;oldid=463278">
+        http://zqktlwiawxckqmthzpumhmizxwtf6hd7btimcul2bvpgp5mglbvs7yad.onion/wiki/index.php?title=Black_market&amp;oldid=463278
+       </a>
+       "
+      </div>
+      <div class="catlinks" data-mw="interface" id="catlinks">
+       <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+        <a href="/wiki/Special:Categories" title="Special:Categories">
+         Categories
+        </a>
+        :
+        <ul>
+         <li>
+          <a href="/wiki/Category:Pages_with_broken_file_links" title="Category:Pages with broken file links">
+           Pages with broken file links
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Anti-globalization&amp;action=edit&amp;redlink=1" title="Category:Anti-globalization (page does not exist)">
+           Anti-globalization
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Corruption&amp;action=edit&amp;redlink=1" title="Category:Corruption (page does not exist)">
+           Corruption
+          </a>
+         </li>
+         <li>
+          <a href="/wiki/Category:Crime" title="Category:Crime">
+           Crime
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Ethically_disputed_business_practices&amp;action=edit&amp;redlink=1" title="Category:Ethically disputed business practices (page does not exist)">
+           Ethically disputed business practices
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Financial_crimes&amp;action=edit&amp;redlink=1" title="Category:Financial crimes (page does not exist)">
+           Financial crimes
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Informal_economy&amp;action=edit&amp;redlink=1" title="Category:Informal economy (page does not exist)">
+           Informal economy
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Price_controls&amp;action=edit&amp;redlink=1" title="Category:Price controls (page does not exist)">
+           Price controls
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Retail_markets&amp;action=edit&amp;redlink=1" title="Category:Retail markets (page does not exist)">
+           Retail markets
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Tax_evasion&amp;action=edit&amp;redlink=1" title="Category:Tax evasion (page does not exist)">
+           Tax evasion
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Underground_culture&amp;action=edit&amp;redlink=1" title="Category:Underground culture (page does not exist)">
+           Underground culture
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/wiki/index.php?title=Category:Cyberpunk_themes&amp;action=edit&amp;redlink=1" title="Category:Cyberpunk themes (page does not exist)">
+           Cyberpunk themes
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- end content -->
+      <div class="visualClear">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div dir="ltr" id="column-one" lang="en">
+    <h2>
+     Navigation menu
+    </h2>
+    <div aria-labelledby="p-cactions-label" class="portlet" id="p-cactions" role="navigation">
+     <h3 dir="ltr" id="p-cactions-label" lang="en">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li class="selected" id="ca-nstab-main">
+        <a accesskey="c" href="/wiki/Black_market" title="View the content page [c]">
+         Page
+        </a>
+       </li>
+       <li class="new" id="ca-talk">
+        <a accesskey="t" href="/wiki/index.php?title=Talk:Black_market&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]">
+         Discussion
+        </a>
+       </li>
+       <li id="ca-viewsource">
+        <a accesskey="e" href="/wiki/index.php?title=Black_market&amp;action=edit" title="This page is protected.
+You can view its source [e]">
+         View source
+        </a>
+       </li>
+       <li id="ca-history">
+        <a accesskey="h" href="/wiki/index.php?title=Black_market&amp;action=history" title="Past revisions of this page [h]">
+         History
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-cactions-mobile-label" class="portlet" id="p-cactions-mobile" role="navigation">
+     <h3 dir="ltr" id="p-cactions-mobile-label" lang="en">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li class="selected" id="ca-nstab-main-mobile">
+        <a href="/wiki/Black_market" title="Page">
+         Page
+        </a>
+       </li>
+       <li class="new" id="ca-talk-mobile">
+        <a href="/wiki/index.php?title=Talk:Black_market&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">
+         Discussion
+        </a>
+       </li>
+       <li id="ca-more">
+        <a href="#p-cactions">
+         More
+        </a>
+       </li>
+       <li id="ca-tools">
+        <a href="#p-tb" title="Tools">
+         Tools
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-personal-label" class="portlet" id="p-personal" role="navigation">
+     <h3 dir="ltr" id="p-personal-label" lang="en">
+      Personal tools
+     </h3>
+     <div class="pBody">
+      <ul dir="ltr" lang="en">
+       <li id="pt-createaccount">
+        <a href="/wiki/index.php?title=Special:CreateAccount&amp;returnto=Black+market" title="You are encouraged to create an account and log in; however, it is not mandatory">
+         Create account
+        </a>
+       </li>
+       <li id="pt-login">
+        <a accesskey="o" href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Black+market" title="You are encouraged to log in; however, it is not mandatory [o]">
+         Log in
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="portlet" id="p-logo" role="banner">
+     <a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page">
+     </a>
+    </div>
+    <div id="sidebar">
+     <div aria-labelledby="p-navigation-label" class="portlet generated-sidebar" id="p-navigation" role="navigation">
+      <h3 dir="ltr" id="p-navigation-label" lang="en">
+       Navigation
+      </h3>
+      <div class="pBody">
+       <ul dir="ltr" lang="en">
+        <li id="n-mainpage-description">
+         <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+          Main page
+         </a>
+        </li>
+        <li id="n-recentchanges">
+         <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]">
+          Recent changes
+         </a>
+        </li>
+        <li id="n-randompage">
+         <a accesskey="x" href="/wiki/Special:Random" title="Load a random page [x]">
+          Random page
+         </a>
+        </li>
+        <li id="n-Rules-of-the-site">
+         <a href="/wiki/Siterules">
+          Rules of the site
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="portlet" id="p-search" role="search">
+      <h3 dir="ltr" id="p-search-label" lang="en">
+       <label for="searchInput">
+        Search
+       </label>
+      </h3>
+      <div class="pBody" id="searchBody">
+       <form action="/wiki/index.php" id="searchform">
+        <input name="title" type="hidden" value="Special:Search"/>
+        <input accesskey="f" id="searchInput" name="search" placeholder="Search The Hidden Wiki" title="Search The Hidden Wiki [f]" type="search"/>
+        <input class="searchButton" id="searchGoButton" name="go" title="Go to a page with this exact name if it exists" type="submit" value="Go"/>
+        <input class="searchButton" id="mw-searchButton" name="fulltext" title="Search the pages for this text" type="submit" value="Search"/>
+       </form>
+      </div>
+     </div>
+     <div aria-labelledby="p-tb-label" class="portlet" id="p-tb" role="navigation">
+      <h3 dir="ltr" id="p-tb-label" lang="en">
+       Tools
+      </h3>
+      <div class="pBody">
+       <ul dir="ltr" lang="en">
+        <li id="t-whatlinkshere">
+         <a accesskey="j" href="/wiki/Special:WhatLinksHere/Black_market" title="A list of all wiki pages that link here [j]">
+          What links here
+         </a>
+        </li>
+        <li id="t-recentchangeslinked">
+         <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Black_market" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+          Related changes
+         </a>
+        </li>
+        <li id="t-specialpages">
+         <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+          Special pages
+         </a>
+        </li>
+        <li id="t-print">
+         <a accesskey="p" href="/wiki/index.php?title=Black_market&amp;printable=yes" rel="alternate" title="Printable version of this page [p]">
+          Printable version
+         </a>
+        </li>
+        <li id="t-permalink">
+         <a href="/wiki/index.php?title=Black_market&amp;oldid=463278" title="Permanent link to this revision of the page">
+          Permanent link
+         </a>
+        </li>
+        <li id="t-info">
+         <a href="/wiki/index.php?title=Black_market&amp;action=info" title="More information about this page">
+          Page information
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <a class="menu-toggle" href="#sidebar" id="sidebar-toggle" title="navigation">
+    </a>
+    <a class="menu-toggle" href="#p-personal" id="p-personal-toggle" title="user tools">
+    </a>
+    <a class="menu-toggle" href="#globalWrapper" id="globalWrapper-toggle" title="back to top">
+    </a>
+   </div>
+   <!-- end of the left (by default at least) column -->
+   <div class="visualClear">
+   </div>
+   <div dir="ltr" id="footer" lang="en" role="contentinfo">
+    <div class="footer-icons" id="f-poweredbyico">
+     <a href="//www.mediawiki.org/">
+      <img alt="Powered by MediaWiki" height="31" src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88"/>
+     </a>
+    </div>
+    <ul id="f-list">
+     <li id="lastmod">
+      This page was last edited on 20 July 2016, at 07:39.
+     </li>
+     <li id="privacy">
+      <a href="/wiki/The_Hidden_Wiki:Privacy_policy" title="The Hidden Wiki:Privacy policy">
+       Privacy policy
+      </a>
+     </li>
+     <li id="about">
+      <a href="/wiki/The_Hidden_Wiki:About" title="The Hidden Wiki:About">
+       About The Hidden Wiki
+      </a>
+     </li>
+     <li id="disclaimer">
+      <a href="/wiki/The_Hidden_Wiki:General_disclaimer" title="The Hidden Wiki:General disclaimer">
+       Disclaimers
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script>
+   (window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.120","walltime":"0.178","ppvisitednodes":{"value":444,"limit":1000000},"ppgeneratednodes":{"value":5593,"limit":1000000},"postexpandincludesize":{"value":2777,"limit":2097152},"templateargumentsize":{"value":8,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   33.908      1 -total"," 17.65%    5.983      1 Template:Reflist","  5.37%    1.819      5 Template:Cite_news","  2.93%    0.992     17 Template:Cite_journal","  2.89%    0.981     21 Template:Cite_web","  2.87%    0.973      1 Template:Redirect4","  2.82%    0.957     13 Template:Citation_needed","  2.44%    0.828      4 Template:Cite_book","  2.41%    0.817      1 Template:Grey_market","  2.37%    0.804      1 Template:Unreliable_sources"]},"cachereport":{"timestamp":"20210705124511","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":314});});
+  </script>
+ </body>
+ <!-- Cached 20210705124511 -->
+</html>

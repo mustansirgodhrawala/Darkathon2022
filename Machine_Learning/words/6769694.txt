@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Mix/Clean    Coins
+
+
+
+
+
+
+
+
+
+   
+  Why it is necessary
+  Using Bitcoins does not protect your anonymity.
+  From the moment you buy your coins to the moment you cash it out
+  anybody anywhere can see and follow every transaction you ever made
+  Mixing your coins breaks the link between your identity and your transactions,
+  breaking the chain.
+   
+
+  Calculator
+
+
+   Amount sent
+       Amount received
+
+
+
+
+
+
+  Min amount for mixing €150=฿0.00712, Fee 1% but not less than 0.0001 btc
+   
+
+  How to proceed
+
+
+   Fill in the required information
+
+
+
+   Your BTC  address: 
+
+
+
+
+
+
+   Amount for mixing: 
+
+
+
+
+
+
+   Passphrase: 
+
+
+
+
+
+   
+
+   Mix coins
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+   mixer@bitemail.net
+   mixerablhhujhyyainmaiw4hgyl6r2oikylb7yeqh2tqpjpfujjlhdyd.onion.onion © All Rights Reserved
+
+
+
+
+
+
+
+  Chat
+
+   </td></tr>
+  </table>
+  </div>
+
+ </div>
+
+
+</body>
+</html>

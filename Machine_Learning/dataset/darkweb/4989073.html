@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Bitcoin Mixer - Instant Bitcoin Mixer | Bitcoin Mixer Bitcoin Tumbler Coin Mixing
+  </title>
+  <meta content="Best anonymous bitcoin mixing service! Mix your bitcoin fast and secure!" name="description"/>
+  <meta content="bitcoin mixer blender bitblender tumbler guide laundry btc anonymous" name="keywords"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Best anonymous bitcoin mixing service! Mix your bitcoin fast and secure!" property="og:description"/>
+  <meta content="Bitcoin Mixer - Instant Bitcoin Mixer | Bitcoin Mixer Bitcoin Tumbler Coin Mixing" property="og:title"/>
+  <meta content="articles" property="og:type"/>
+  <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/css/bootstrap-5.0.0-alpha-2.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css/colors.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <header class="header">
+   <div class="navbar-area">
+    <div class="container">
+     <div class="row align-items-center">
+      <div class="col-lg-12">
+       <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+         <img alt="Logo" src="assets/img/logo/logo.png"/>
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+         <span class="toggler-icon">
+         </span>
+         <span class="toggler-icon">
+         </span>
+         <span class="toggler-icon">
+         </span>
+        </button>
+        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto" id="nav">
+          <li class="nav-item">
+           <a href="how">
+            How
+           </a>
+          </li>
+          <li class="nav-item">
+           <a href="faq">
+            Faq
+           </a>
+          </li>
+          <li class="nav-item">
+           <a href="mailto:teadmixer@protonmail.com">
+            teadmixer@protonmail.com
+           </a>
+          </li>
+         </ul>
+        </div>
+       </nav>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <section class="contact-section pt-120 pb-120 mt-120" id="contact">
+   <div class="container">
+    <div class="contact-form-wrapper">
+     <form action="summary" class="contact-form" id="contact-form" method="POST">
+      <input name="random_number" type="hidden" value="Xfag7c"/>
+      <input class="form-input" name="random_wallet" type="hidden" value="16GGdwWmxVsYybPbnovzWSEsxrfSYHZdbq"/>
+      <div class="row">
+       <noscript>
+        <div class="col-lg-12">
+         <div class="alert alert-danger" role="alert">
+          Enable JavaScript in your browser to use the calculator
+         </div>
+        </div>
+       </noscript>
+       <div class="col-md-12">
+        <div class="single-form">
+         <input class="form-input" id="bitcoin_address" name="bitcoin_address" placeholder="Please enter bitcoin forward to address:" required="" type="text"/>
+        </div>
+       </div>
+       <div class="col-md-6">
+        <div class="single-form">
+         <input class="form-input" id="sending_money" name="sending_money" placeholder="Your Sending money" required="" type="text"/>
+        </div>
+       </div>
+       <div class="col-md-6">
+        <div class="single-form">
+         <input class="form-input" id="receive_money" name="receive_money" placeholder="Your Receive money" required="" type="text"/>
+        </div>
+       </div>
+       <div class="col-md-12">
+        <input class="form-range" id="first" max="3" min="0.001" step="0.001" type="range"/>
+        <input class="form-input" id="second" readonly="" type="hidden" value=""/>
+        <input class="form-input" id="textInput" name="percent" readonly="" type="hidden" value=""/>
+        <div class="single-form">
+         <div class="text-center mt-3">
+          <p>
+           Your personal fee
+           <span id="y_fee">
+           </span>
+           (
+           <a href="fees" target="_blank">
+            discount
+           </a>
+           )
+          </p>
+          <script id="feeTooltipText" type="text/ng-template">
+           <span>It is very important to set custom service fee to prevent amount-based blockchain analysis. See FAQ for details.<br/><br/> If you use CryptoMixer often, you get the discount on the service commission fee. See Fees for details.</span>
+          </script>
+          <p id="security">
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col-12">
+        <div class="submit-btn text-center">
+         <button class="main-btn btn-hover" type="submit">
+          Continue
+         </button>
+        </div>
+       </div>
+       <div class="col-12">
+        <div class="mt-3 text-center">
+         <p>
+          Mix my bitcoins
+         </p>
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </section>
+  <script>
+   function calc() {
+
+    var first = document.getElementById("first");
+    var second = document.getElementById("second");
+    var result = document.getElementById("result");
+    var sending_money = document.getElementById("sending_money");
+    var receive_money = document.getElementById("receive_money");
+    first.addEventListener("input", sum);
+    second.addEventListener("input", sum);
+    sending_money.addEventListener("input", sum);
+    receive_money.addEventListener("input", sum);
+    function sum() {
+        var one = parseFloat(first.value) || 0;
+        var send_money = sending_money.value.replace(",", ".").replace("-", "");
+
+        var two = parseFloat(second.value) || 0;
+        var percent = parseFloat(textInput.value) || 0;
+        var bitcoinTransfer = 2.3325519284373E-8
+        var add = (send_money * percent) / 100;
+        var sum = one;
+
+        var sending = send_money;
+        if (sending_money.value != 0 || sending_money.value != '') {
+            document.getElementById("receive_money").innerHTML = ' '
+            var receive = send_money - add - bitcoinTransfer;
+            document.getElementById("textInput").value = sum+ '%';
+            document.getElementById("receive_money").value = receive;
+            document.getElementById("sending_money").value = sending;
+        }
+    }
+}
+calc()
+
+function counter(){
+    document.addEventListener("input", function(){
+        var first = document.getElementById('first');
+        var receive = document.getElementById('textInput');
+        if (first.value <= 1){
+            document.getElementById("security").innerHTML = '<p>Security level: <b class="text-green">Standard</b> <br /> (NO) Fast payouts confirmation <br />Up to <b>24</b> hours of configurable delays'
+        }
+        if (first.value > 1){
+            document.getElementById("security").innerHTML = '<p>Security level: <b class="text-silver">Silver</b> <br /> Fast payouts confirmation <br />Up to <b>48</b> hours of configurable delays'
+        }
+        if (first.value > 2){
+            document.getElementById("security").innerHTML = '<p>Security level: <b class="text-gold">Gold</b> <br /> Fast payouts confirmation <br />Up to <b>96</b> hours of configurable delays'
+        }
+        document.getElementById('y_fee').innerHTML = receive.value;
+    });
+}
+counter()
+  </script>
+  <div class="hidden">
+   Official Bitcoin cleaner | bitcoin, bitcoin mixer free bitcoin mixer legit bitcoin mixer real bitcoin mixer working bitcoin mixer instant bitcoin mixerbitcoin cleaner 2020, bitcoin cleaner software, bitcoin cleaner freeware, bitcoin cleaner download, download bitcoin mixerlegit working bitcoin mixerreal working bitcoin mixerfree download bitcoin cleaner 2020, bitcoinmixerbitcoincleaners, bitcoingen, bitgen, bitcoingen 2020, bitcoin cleaner legit 2020, bitcoin cleaner 2020, bitcoin cleaner full, bitcoin adder, bitcoin adder full, bitcoin adder software, bitcoin adder freeware, download bitcoin adder, working bitcoin adder, real bitcoin adder, legit bitcoin adder, bitcoin adder 2020, bitcoin adder legit 2020, mix bitcoin, bitcoin mixer, instant bitcoin mixer, bitcoin cleanerment, bitcoins, mix bitcoins, mix cleaner instantly, mix bitcoin instantly, cleaner bitcoin, mix bitcoins instantly, mixing bitcoin, bitcoins, bitcoin, cleaner, cleaner cleaner, mix bitcoins, mix bitcoin, mix cleaner, mix my bitcoin, mix my bitcoins, mix my cleaner, mix cleaners, mix bits, bitcoin mixer, mix cleaner, cleaner mixer, bit mixer, mix coin, mix coins, cryptocurrency mixer, mix my coins, mix my coin, cleaner bitcoin, cleaner bitcoins, mixing bitcoin, bitcoin cleanerment, mixing in bitcoin, mixing in bitcoins, bitcoin mixing guide, bitcoin cleaner guide, bitcoin mixing guides, bitcoin cleanerment tips, bitcoin mixing tips, bitcoin cleaner tips, bitcoin cleaner advice, bitcoin cleanerment advice, bitcoin cleanerment trust, bitcoin cleaner trust, bitcoin trust bank, bitcoin mixing tours, best guide to cleaner bitcoins, where to cleaner my bitcoins, multiply bitcoins, multiply bitcoin, multiply cleaner, increase bitcoins, increase bitcoin, bitcoin multiplier, cleaner multiplier, free bitcoins, free bitcoin, free cleaner, mix bitcoin cleanerment, how to cleaner in bitcoin, how to cleaner in bitcoins, bitcoin mixing, cleaner in bitcoin mixing, mix your bitcoin in , 24 hours, 48 hours, 72 hours, 96 hours, 100 hours, how to sell bitcoins, how to sell bitcoin, cleaner in bitcoin technology, cleaner in bitcoin companies, cleaner in bitcoin stock, can i make money with bitcoin, how to make money with bitcoin, bitcoin secret, bitcoin tricks, best bitcoin cleanerment opportunities, free bitcoins, free bitcoin, bitcoin mixing, bitcoin price, bitcoin stock, how to get bitcoins, cheap bitcoin, discount bitcoin, bitcoin exchange, bitcoin exchanges, bitcoin news, bitcoin market, bitcoin wallet, best bitcoin wallets, top bitcoin wallets, free bitcoin wallet, where to buy bitcoins, where to buy bitcoins online, where to get bitcoins, where to get free bitcoins, how to get free bitcoins, bitcoin trading secrets, how to increase your bitcoin, where to cleaner your bitcoins, best bitcoin mixing tricks, top bitcoin cleanerment opportunities, how to cleaner your bitcoins, where to buy cleaner, bitcoin market price, cleaner market prices, bitcoin mixing strategy, how to cleaner in bitcoin stock, can i make money with bitcoin, bitcoin mixing profit system, bitcoin lending, bitcoin gambling guide, bitcoin gambling secrets, how to gamble with bitcoin, bitcoin betting tricks, best bitcoin gambling secrets, mixing in bitcoin mixing, mixing in bitcoin stocks, mixing in bitcoin companies, mixing in bitcoin startups, best way to cleaner bitcoin, how to gamble with bitcoin and win, bitcoin betting techniques, bitcoin gambling hack, bitcoin mixerbitcoin hacks, bitcoin secrets, bitcoin mix spend, bitcoin guide, bitcoin guides, how to hack bitcoin, how to steal bitcoins, how to hack bitcoins, how to mine bitcoin, bitcoin mixing tips, bitcoin mixing tricks, bitcoin mixing tips tricks, bitcoin mixing guide, guide to successful bitcoin mixing, bitcoin betting hacks, bitcoin gambling hack downloads, bitcoin gambling hacks, free bitcoin gambling hack, cleaner bitcoin 2016, cleaner bitcoin 2020, trusted bitcoin cleanerment option, trusted bitcoin mixing solution, best bitcoin cleanerment, top bitcoin cleanerments, top best bitcoin mixing site, legit bitcoin cleaner websites, mixing in bitcoin 2015, mixing bitcoin in 2016, mixing bitcoin in 2020, should i buy bitcoin, where to cleaner bitcoins, where should i cleaner my bitcoins, is bitcoin a good cleanerment, bitcoin mixing for beginners, bitcoin mixing calculator, bitcoin mixing software, bitcoin gambling software, bitcoin betting software, best bitcoin gambling websites, cleaner in bitcoin mixing pool, top bitcoin mixing pools, highest paying bitcoin mixing pools, top paying bitcoin mixing pools, best paying bitcoin mixing pool, bitcoin mixing profitable, bitcoin mixing hardware, cleaner in bitcoin mixing hardware, buy cheap bitcoin mixing hardware, best bitcoin mixing hardware, bitcoin secrets, bitcoin tricks, bitcoin cleaner price, buy bitcoin instantly, where to buy bitcoins instantly with credit card, buy bitcoins with paypal account, where to buy bitcoins instantly using paypal, is bitcoin a good cleanerment for the future, bitcoin gambling secrets, bitcoin gambling tricks, best bitcoin gambling sites, best websites to gamble bitcoins, top bitcoin gambling websites, how to win at bitcoin gambling, bitcoin gambling guide, 24 hours mixer, bitcoin mix 24 hours, mix cleaner in 24 hours, mix bitcoin 24 hours, mix your bitcoin in 24 hours, mix bitcoin in 24 hours, mix bitcoins in 24 hours, bitcoin mix in 24 hours, mix your bitcoins in 24 hours, mix your cleaner in 24 hours, cleanermixer, legit bitcoin mixer, mix bitcoin cleanerment, working bitcoin mixer, real bitcoin mixer, legit way to mix my bitcoins, working method to mix bitcoins, mix - my - cleaner, how to mix cleaner, mix bit coin, mixbitcoin, mix bitcoins in 72 hours, doble bitcoin, mix my cleaner, mixcleaner, mix my bitcoin, mix bitcoins, mix - cleaner, mix bitcoin, bitcoinmix, bitcoins mix, bitcoin 24 hours, cleaner mixer, mix my bitcoins, best bitcoin mixer, mixer cleaner, bitcoin mix, duble bitcoin, cleaner mix, mix cleaner, how to mix my bitcoins, mix your bitcoin, how to mix bitcoin, royal mixer bitcoin, mix your bitcoins, b - t - c mix, mix your cleaner
+  </div>
+  <footer class="footer pt-150">
+   <div class="container">
+    <div class="widget-wrapper">
+     <div class="row">
+      <div class="col-md-2">
+       <div class="footer-widget">
+        <div class="footer-logo">
+         <a href="/">
+          <img alt="Bitcoin Mixer - Instant Bitcoin Mixer | Bitcoin Mixer Bitcoin Tumbler Coin Mixing" src="assets/img/logo/logo.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-10">
+       <p class="desc text-center">
+        Bitcoin Mixer - Instant Bitcoin Mixer | Bitcoin Mixer Bitcoin Tumbler Coin Mixing
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

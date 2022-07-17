@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Send files fully anonymous and decentralized! Upload and download over Tor network from .onion address. Pay with Monero." name="description"/>
+  <meta content="http://sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion/" http-equiv="onion-location"/>
+  <title>
+   Send files anonymously | sendanon.io
+  </title>
+  <link href="/favicon-32.png" rel="icon" sizes="32x32"/>
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+  <link href="/css/landing-page.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+   <div class="container">
+    <a class="navbar-brand" href="/">
+     <img alt="" src="/logo-101x30.png"/>
+     SEND ANON
+    </a>
+   </div>
+  </nav>
+  <!-- Masthead -->
+  <header class="masthead text-center">
+   <div class="container">
+    <div class="row">
+     <div class="col-xl-9 mx-auto">
+      <h1 class="mb-5">
+       SEND FILES ANONYMOUSLY
+      </h1>
+     </div>
+     <div id="drop-area">
+      <form class="my-form">
+       <input name="_token" type="hidden" value="FcUznbw37cvhwrwNbghdJZMrTwWbobx4xBqMWGak"/>
+       <p>
+        Upload something with the file dialog or by dragging and dropping files onto the dashed region
+       </p>
+       <input accept="*/*" id="fileElem" onchange="handleFiles(this.files)" type="file"/>
+       <label class="button" for="fileElem">
+        Select file
+       </label>
+      </form>
+      <div id="uploadinfo">
+       <progress id="progress-bar" max="100" style="display:none" value="0">
+       </progress>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-4">
+      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+       <div class="features-icons-icon d-flex">
+        <i class="fas fa-mask m-auto text-primary">
+        </i>
+       </div>
+       <h3>
+        Fully anonymous
+       </h3>
+       <p class="lead mb-0">
+        We do not track you! No login, no KYC, no personal info, no trackers, no ads!
+       </p>
+      </div>
+     </div>
+     <div class="col-lg-4">
+      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+       <div class="features-icons-icon d-flex">
+        <i class="fas fa-project-diagram m-auto text-primary">
+        </i>
+       </div>
+       <h3>
+        Decentralized
+       </h3>
+       <p class="lead mb-0">
+        We use the
+        <a href="https://storj.io/" tyarget="_blank">
+         Storj
+        </a>
+        network, so your file is distributed across many nodes around the world!
+       </p>
+      </div>
+     </div>
+     <div class="col-lg-4">
+      <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+       <div class="features-icons-icon d-flex">
+        <i class="far fa-check-circle m-auto text-primary">
+        </i>
+       </div>
+       <h3>
+        Easy to Use
+       </h3>
+       <p class="lead mb-0">
+        Just upload a file, pay anonymously with Monero and we will give you a HTTP link to share!
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Image Showcases -->
+  <section class="showcase">
+   <div class="container-fluid p-1">
+    <div class="row no-gutters">
+     <div class="col-lg-8 order-lg-1 my-auto showcase-text">
+      <h1 id="faq">
+       F.А.Q.
+      </h1>
+      <br/>
+      <h2>
+       How it works?
+      </h2>
+      <p class="lead mb-0">
+       You upload a file here and we send it on
+       <a href="https://storj.io" target="_blank">
+        Storj
+       </a>
+       decentralized network. After that, we delete the file from our server and give you a link to share it.
+      </p>
+      <br/>
+      <h2>
+       Do you use Storj DCS?
+      </h2>
+      <p class="lead mb-0">
+       Currently yes. We plan to start our own satellite in the future. Using our service you don't have to subscribe to
+       <a href="https://storj.io" target="_blank">
+        Storj.io
+       </a>
+      </p>
+      <br/>
+      <h2>
+       What's the price?
+      </h2>
+      <p class="lead mb-0">
+       We try to make sharing as simple as possible, so the price is simply too - 0.5$/GB/month. So if you upload a file up to 1GB we will give you a link to download valid for 1 month. 2Gb file is 1$ - simple?
+      </p>
+      <br/>
+      <h2>
+       Why pay?
+      </h2>
+      <p class="lead mb-0">
+       First of all - we pay Storj node operators for storing and downloading your file. Second - privacy has its price. We do not track you, we don't place ads, and don't use analytics services.
+      </p>
+      <br/>
+      <h2>
+       Why Monero?
+      </h2>
+      <p class="lead mb-0">
+       <a href="https://www.getmonero.org" target="_blank">
+        Monero
+       </a>
+       is the only cryptocurrency that keeps private all transactions and we think this is the best payment provider for this service. We believe in Monero and run our own full node.
+      </p>
+      <br/>
+      <h2>
+       Do you restrict downloads?
+      </h2>
+      <p class="lead mb-0">
+       No! We don't place countdowns, ads, or limiting speed. When someone requests files we stream it directly from Storj network at the maximum speed possible.
+       <br/>
+       <small>
+        * In extraordinary situations (when the file is downloaded many, many times and cross monthly bandwidth limit from tardigrade network) we may ask the downloader to pay 1$ in Monero to extend the validity of the file before download it.
+       </small>
+      </p>
+      <br/>
+      <h2>
+       Do you have .onion Tor address?
+      </h2>
+      <p class="lead mb-0">
+       Yes, it's
+       <a href="http://sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion">
+        sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion
+       </a>
+       . You can even download files from Storj network directly to Tor network.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer bg-light">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+      <ul class="list-inline mb-2">
+       <li class="list-inline-item">
+        <a href="/">
+         Home
+        </a>
+       </li>
+       <li class="list-inline-item">
+        ⋅
+       </li>
+       <li class="list-inline-item">
+        <a href="/#faq">
+         FAQ
+        </a>
+       </li>
+       <li class="list-inline-item">
+        ⋅
+       </li>
+       <li class="list-inline-item">
+        <a href="/contact">
+         Contact
+        </a>
+       </li>
+       <li class="list-inline-item">
+        ⋅
+       </li>
+       <li class="list-inline-item">
+        <a href="/status">
+         File status
+        </a>
+       </li>
+       <p class="text-muted small mb-4 mb-lg-0">
+        © 2022
+        <a href="https://sendanon.io">
+         SendAnon.io
+        </a>
+       </p>
+       <p class="text-muted small mb-4 mb-lg-0">
+        onion link:
+        <a href="http://sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion">
+         sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion
+        </a>
+       </p>
+      </ul>
+     </div>
+     <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+      <img alt="Monero accepted here" src="/img/monero_accepted.png"/>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="/vendor/jquery/jquery.min.js">
+  </script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+   // ************************ Drag and drop ***************** //
+let dropArea = document.getElementById("drop-area")
+
+// Prevent default drag behaviors
+;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, preventDefaults, false)
+  document.body.addEventListener(eventName, preventDefaults, false)
+})
+
+// Highlight drop area when item is dragged over it
+;['dragenter', 'dragover'].forEach(eventName => {
+  dropArea.addEventListener(eventName, highlight, false)
+})
+
+;['dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, unhighlight, false)
+})
+
+// Handle dropped files
+dropArea.addEventListener('drop', handleDrop, false)
+
+function preventDefaults (e) {
+  e.preventDefault()
+  e.stopPropagation()
+}
+
+function highlight(e) {
+  dropArea.classList.add('highlight')
+}
+
+function unhighlight(e) {
+  dropArea.classList.remove('active')
+}
+
+function handleDrop(e) {
+  var dt = e.dataTransfer
+  var files = dt.files
+
+  handleFiles(files)
+}
+
+let uploadProgress = []
+let progressBar = document.getElementById('progress-bar')
+var divUpload = document.getElementById('uploadinfo');
+
+function initializeProgress(numFiles) {
+  progressBar.style.display='';
+  progressBar.value = 0
+  uploadProgress = []
+
+  for(let i = numFiles; i > 0; i--) {
+    uploadProgress.push(0)
+  }
+}
+
+function updateProgress(fileNumber, percent) {
+  uploadProgress[fileNumber] = percent
+  let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+  console.debug('update', fileNumber, percent, total)
+  progressBar.value = total
+}
+
+function handleFiles(files) {
+  files = [...files]
+  initializeProgress(files.length)
+  files.forEach(uploadFile)
+}
+
+function uploadFile(file, i) {
+  var url = '/upload'
+  var xhr = new XMLHttpRequest()
+  var formData = new FormData()
+  xhr.open('POST', url, true)
+  xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+
+  xhr.upload.addEventListener("progress", function(e) {
+    let percent = ((e.loaded * 100.0 / e.total) || 100);
+    if (percent < 100)
+        updateProgress(i, percent)
+    else
+        divUpload.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Working ...';
+  })
+
+  xhr.addEventListener('readystatechange', function(e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      //alert(xhr.response.uuid)
+      if (xhr.response.success == true)
+      {
+        window.location.replace("/status?uuid=" + xhr.response.uuid);
+        divUpload.innerHTML = 'Upload done! If you are not autoredirected, go to https://sendanon.io/status?uuid='+xhr.response.uuid;
+      } else
+        alert(xhr.response.error_message)
+    }
+    else if (xhr.readyState == 4 && xhr.status != 200) {
+      // Error
+      alert("File upload failed. Please try again.")
+    }
+  })
+
+  formData.append("_token", "FcUznbw37cvhwrwNbghdJZMrTwWbobx4xBqMWGak")
+  formData.append('file', file)
+  xhr.responseType = 'json';
+  xhr.send(formData)
+}
+  </script>
+ </body>
+</html>

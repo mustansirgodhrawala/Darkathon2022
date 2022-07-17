@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- Site meta -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <title>
+   MadMax - Vendor Store
+  </title>
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="favicon.png" rel="icon" sizes="32x32" type="image/png"/>
+  <style>
+   /* ================= RATINGS ============== */
+.label-rating {
+  margin-left: 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* rating-list */
+.rating-stars {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+  clear: both;
+}
+.rating-stars i {
+  font-size: 14px;
+  color: #ccc;
+  display: inline;
+}
+.rating-stars img {
+  height: 14px;
+  max-width: none;
+}
+.rating-stars li {
+  display: block;
+  text-overflow: clip;
+  white-space: nowrap;
+  z-index: 1;
+}
+.rating-stars li.stars-active {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.rating-stars li.stars-active i {
+  color: orange;
+}
+.rating-stars.stars-lg img {
+  height: 20px;
+  max-width: none;
+}
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#17202A">
+   <div class="container">
+    <a class="navbar-brand" href="index.php">
+     <h1 class="display-5 fw-bold font-weight-bold">
+      <span style="color:#FFFFFF;">
+       Mad
+      </span>
+      <span style="color: #d0d3d4;">
+       Max
+      </span>
+     </h1>
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+     <ul class="navbar-nav m-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="index.php">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="category.php">
+        Categories
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.php">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="pgp.php">
+        PGP
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="feedback.php">
+        Feedback
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contact.php">
+        Contact
+       </a>
+      </li>
+     </ul>
+     <!-- SIGNUP TEXT -->
+     <ul class="navbar-nav">
+      <li class="nav-item active">
+       <a class="nav-link" href="signup.php">
+        Sign Up
+       </a>
+      </li>
+     </ul>
+     <ul class="navbar-nav">
+      <li class="nav-item active">
+      </li>
+      <li class="nav-item active">
+      </li>
+      <li class="nav-item active">
+      </li>
+      <li class="nav-item active">
+      </li>
+     </ul>
+     <form action="search.php" class="form-inline my-2 my-lg-0" method="post">
+      <a class="btn btn-secondary btn-lg ml-3 d-sm-inline-block" href="cart.php" style="background-color:#34495E">
+       <i class="fa fa-shopping-cart">
+       </i>
+       Cart
+       <span class="badge badge-light">
+       </span>
+      </a>
+     </form>
+     <ul class="navbar-nav">
+      <li class="nav-item active">
+       <a class="btn btn-primary btn-lg ml-3" href="login.php" style="background-color:#85929E">
+        <i class="fa fa-sign-in">
+        </i>
+        Login
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="col-xs-12" style="height:100px;">
+  </div>
+  <div class="col-xs-12" style="height:10px;">
+  </div>
+  <!-- BREADCRUMB -->
+  <div class="container">
+   <div class="row">
+    <div class="col">
+     <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+        <a href="index.php">
+         Store
+        </a>
+       </li>
+       <li class="breadcrumb-item active">
+        All Products
+       </li>
+       <li class="ml-auto">
+        <form class="form-inline float-right" method="GET">
+         <span class="mr-2">
+          Sort by:
+         </span>
+         <select class="" name="sortby">
+          <option value="random">
+           Random
+          </option>
+          <option value="price_asc">
+           Price low to high
+          </option>
+          <option value="price_desc">
+           Price high to low
+          </option>
+          <option value="newest">
+           Newest
+          </option>
+          <option value="oldest">
+           Oldest
+          </option>
+         </select>
+         <span class="ml-2">
+          <button class="btn btn-outline-secondary btn-sm" type="submit">
+           Sort
+          </button>
+         </span>
+         <input name="cat" type="hidden" value="Ketamine"/>
+        </form>
+       </li>
+      </ol>
+     </nav>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-12 col-sm-3">
+     <div class="card bg-light mb-3">
+      <div class="card-header text-white text-uppercase" style="background-color:#34495E">
+       <i class="fa fa-list">
+       </i>
+       Categories
+      </div>
+      <ul class="list-group category_block">
+       <li class="list-group-item list-group-item-secondary">
+        <a href="listing.php?cat=Top Shelf Designer Cali Weed Cannabis">
+         Top Shelf Designer Cali Weed Cannabis
+        </a>
+       </li>
+       <li class="list-group-item list-group-item-secondary">
+        <a href="listing.php?cat=Ketamine ">
+         Ketamine
+        </a>
+       </li>
+       <li class="list-group-item list-group-item-secondary">
+        <a href="listing.php?cat=4MMC MEPHEDRONE 99.9% PURE ">
+         4MMC MEPHEDRONE 99.9% PURE
+        </a>
+       </li>
+       <li class="list-group-item list-group-item-secondary">
+        <a href="listing.php?cat=Cocaine">
+         Cocaine
+        </a>
+       </li>
+       <li class="list-group-item list-group-item-secondary">
+        <a href="listing.php?cat=Cannabis">
+         Cannabis
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="col">
+     <div class="row">
+      <div class="col-xs-12" style="height:15px;">
+      </div>
+      <!-- ============================ LISTINGS START================================= -->
+      <div class="container">
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=61b163e5ba4203b08b141181a5d9e9796267d5ff311956.75145296">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=61b163e5ba4203b08b141181a5d9e9796267d5ff311956.75145296">
+            500G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             4750
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=61b163e5ba4203b08b141181a5d9e9796267d5ff311956.75145296" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="61b163e5ba4203b08b141181a5d9e9796267d5ff311956.75145296"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=789424c4e23f07ec08d0216a982a29e36267d4d135b351.07585066">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=789424c4e23f07ec08d0216a982a29e36267d4d135b351.07585066">
+            7G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             99
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=789424c4e23f07ec08d0216a982a29e36267d4d135b351.07585066" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="789424c4e23f07ec08d0216a982a29e36267d4d135b351.07585066"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=1bc20c4ff4a000cbe0f4572a2311b2af6267d5997b3f97.72727462">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=1bc20c4ff4a000cbe0f4572a2311b2af6267d5997b3f97.72727462">
+            50G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             620
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=1bc20c4ff4a000cbe0f4572a2311b2af6267d5997b3f97.72727462" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="1bc20c4ff4a000cbe0f4572a2311b2af6267d5997b3f97.72727462"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=5cb4d70e2d1c7fd3874f2cbc2aa7fced6267d617cde5b3.61986857">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=5cb4d70e2d1c7fd3874f2cbc2aa7fced6267d617cde5b3.61986857">
+            1KG KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             8500
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=5cb4d70e2d1c7fd3874f2cbc2aa7fced6267d617cde5b3.61986857" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="5cb4d70e2d1c7fd3874f2cbc2aa7fced6267d617cde5b3.61986857"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=3e029dba586b193c92d04323f9eb34ab6267d567e267e0.56696391">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=3e029dba586b193c92d04323f9eb34ab6267d567e267e0.56696391">
+            25G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             304
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=3e029dba586b193c92d04323f9eb34ab6267d567e267e0.56696391" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="3e029dba586b193c92d04323f9eb34ab6267d567e267e0.56696391"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=95881df567243566a5aeb17c41f1022a6267d5141f6dc9.86291248">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=95881df567243566a5aeb17c41f1022a6267d5141f6dc9.86291248">
+            10G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             140
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=95881df567243566a5aeb17c41f1022a6267d5141f6dc9.86291248" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="95881df567243566a5aeb17c41f1022a6267d5141f6dc9.86291248"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=f447b59fdfd147cdf689fa53fa3e57d06267d5433171c5.65695262">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=f447b59fdfd147cdf689fa53fa3e57d06267d5433171c5.65695262">
+            14G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             185
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=f447b59fdfd147cdf689fa53fa3e57d06267d5433171c5.65695262" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="f447b59fdfd147cdf689fa53fa3e57d06267d5433171c5.65695262"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=2c418d3c410a89c0c499ea3a4862c6926267d5d39efee1.27105958">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=2c418d3c410a89c0c499ea3a4862c6926267d5d39efee1.27105958">
+            250G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             2450
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=2c418d3c410a89c0c499ea3a4862c6926267d5d39efee1.27105958" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="2c418d3c410a89c0c499ea3a4862c6926267d5d39efee1.27105958"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=241871ae8b849d7b01757fc538af270e6267d3763d5031.77882049">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=241871ae8b849d7b01757fc538af270e6267d3763d5031.77882049">
+            5G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             75
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=241871ae8b849d7b01757fc538af270e6267d3763d5031.77882049" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="241871ae8b849d7b01757fc538af270e6267d3763d5031.77882049"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+       <article class="card card-product-list">
+        <div class="row">
+         <aside class="col-md-3">
+          <a href="product.php?product=5cb185ec4c9f7bc8c8d135889381588e6267d5b48ab916.65918235">
+           <img length="200" src="./img/products/small_product_1tdlpbtp8h473vkpgf2h.jpg" width="200"/>
+          </a>
+         </aside>
+         <!-- col.// -->
+         <div class="col-md-6">
+          <div class="info-main">
+           <a class="h5 title" href="product.php?product=5cb185ec4c9f7bc8c8d135889381588e6267d5b48ab916.65918235">
+            100G KETAMINE STRONG NEEDLE SHARDS
+           </a>
+           <div class="rating-wrap mb-3">
+            <ul class="rating-stars">
+             <li class="stars-active" style="width:100%">
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+             <li>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+              <i class="fa fa-star">
+              </i>
+             </li>
+            </ul>
+            <div class="label-rating">
+             10/10
+            </div>
+           </div>
+           <!-- rating-wrap.// -->
+           <p>
+            Indian ketamine quality level shards.
+
+10/10 Quality!
+
+Next day delivery UK to UK
+
+Sale price on!
+           </p>
+          </div>
+          <!-- info-main.// -->
+         </div>
+         <!-- col.// -->
+         <aside class="pb-sm-2">
+          <div class="info-aside">
+           <div class="price-wrap">
+            <span class="price h3">
+             <i class="fa fa-gbp">
+             </i>
+             1200
+            </span>
+            <del class="price-old">
+            </del>
+           </div>
+           <!-- info-price-detail // -->
+           <br/>
+           <p>
+            <a class="btn btn-block text-white" href="product.php?product=5cb185ec4c9f7bc8c8d135889381588e6267d5b48ab916.65918235" style="background-color:#34495E">
+             <i class="fa fa-info-circle">
+             </i>
+             View Details
+            </a>
+           </p>
+           <form action="product.php?action=addcart" method="post">
+            <input name="product_id" type="hidden" value="5cb185ec4c9f7bc8c8d135889381588e6267d5b48ab916.65918235"/>
+            <input name="qty" type="hidden" value="1"/>
+            <button class="btn btn-lg btn-block text-uppercase text-white" style="background-color:#85929E;" type="submit">
+             <i class="fa fa-shopping-cart">
+             </i>
+             Add To Cart
+            </button>
+           </form>
+           <p>
+           </p>
+          </div>
+          <!-- info-aside.// -->
+         </aside>
+         <!-- col.// -->
+        </div>
+        <!-- row.// -->
+       </article>
+       <!-- card-product .// -->
+       <br/>
+      </div>
+      <!-- ============================ LISTINGS END ================================= -->
+      <div class="col-xs-12" style="height:15px;">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-light" style="background-color:#17202A">
+   <div class="container">
+    <div class="row">
+     <div class="col-12 copyright mt-3">
+      <p class="float-left">
+       <!-- <a href="#">Back to top</a> -->
+       506 Active Users
+      </p>
+      <p class="text-right text-bold text-white">
+       <a href="contact.php">
+        MadMax
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

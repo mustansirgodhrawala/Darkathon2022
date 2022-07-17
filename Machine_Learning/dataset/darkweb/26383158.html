@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet"/>
+  <script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <title>
+   Bobby
+  </title>
+ </head>
+ <body>
+  <div class="container-fluide" style="height: 100vh;">
+   <div class="d-flex flex-row p-2 fixed-top" style="background-color:#F7F9F9;">
+    <div>
+     <a href="index.php" style="color: black;">
+      <i class="far fa-lightbulb" id="crowlogo">
+      </i>
+     </a>
+    </div>
+    <div class="ml-2" id="searchbar">
+     <form action="search_result.php" method="GET">
+      <div class="input-group">
+       <input class="form-control" id="search_q" name="search_text" placeholder="carding" required="" type="text"/>
+       <div class="input-group-append">
+        <button class="btn" id="lense" name="search_btn" type="submit">
+         <i class="fas fa-search">
+         </i>
+        </button>
+       </div>
+      </div>
+     </form>
+     <div class="shadow-lg" id="suggesstion-box">
+     </div>
+    </div>
+    <div class="pl-3 pr-2" id="extra" style="margin-top: 22px;font-size: 16px;color: black;">
+     <a href="advertise.php">
+      advertise
+     </a>
+    </div>
+    <div class="pl-2" id="extra" style="margin-top: 22px;font-size: 16px;color: black;">
+     <a href="upload_link.php">
+      index
+     </a>
+    </div>
+   </div>
+   <div id="margintop">
+    <div class="alert alert-danger alert-dismissible fade show text-center m-3" id="addlinkal" role="alert" style="font-size: 14px;">
+     Please be kind to index the onion addresses that you know in to the Bobby's databases 🥺. Click
+     <a class="font-weight-bold text-primary" href="upload_link.php">
+      here
+     </a>
+     here to index
+     <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+    </div>
+    <div class="row m-2">
+     <div class="col-md-9" style="word-break: break-all;">
+      <p class="foundcount mb-1">
+       Found
+       <strong>
+        346
+       </strong>
+       results for
+       <i class="mark">
+        carding
+       </i>
+       (connected via secure servers located in Switzerland)
+      </p>
+      <div>
+       <a href="http://silkr4lawr2zanmaqfbcpdtmybjmk2m6lu3iv5iw7jyivyz2cgt2xgid.onion" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         SilkRoad 4.0 - Largest DarkNet Trading Marketplace
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://silkr4lawr2zanmaqfbcpdtmybjmk2m6lu3iv5iw7jyivyz2cgt2xgid.onion
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        SilkRoad 4.0 back live &amp; active. Multisignature escrow. Verified Vendors. High end digital escrow. 1000 + active products. Minimum vendor bond of 500$. Join Now!
+       </p>
+      </div>
+      <div>
+       <a href="http://wiki6dtqpuvwtc5hopuj33eeavwa6sik7sy57cor35chkx5nrbmmolqd.onion" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         Trust Wiki
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://wiki6dtqpuvwtc5hopuj33eeavwa6sik7sy57cor35chkx5nrbmmolqd.onion
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        Verified deep links. There's everything you need. Marketplace.
+Communities. Forums. Useful services. Anonymous services.
+       </p>
+      </div>
+      <div>
+       <a href="http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         TorBuy | EscrowMarket #1 in Tor
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        Money transfers Paypal, Western Union. Prepaid Cards Visa, Master Card.
+Appliances Apple, iPhones. Phones Samsung, Huawei. Buy gift codes for
+Amazon, Asos, Ebay, AppStore and more...
+       </p>
+      </div>
+      <div>
+       <a href="http://ezzee4epayx5chngxnwhjehdvyvmh37cm6d5brydhs4abtipdhremfyd.onion" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         EZZEE - Dark WEB PORN
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://ezzee4epayx5chngxnwhjehdvyvmh37cm6d5brydhs4abtipdhremfyd.onion
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        Private porn collection without censorship. All you need can be found here.
+       </p>
+      </div>
+      <div>
+       <a href="http://mfjj65nurutalrivvb2s5zmow4c62qusp4sia4utxht3qffym2vypsqd.oni" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         The Hidden Market
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://mfjj65nurutalrivvb2s5zmow4c62qusp4sia4utxht3qffym2vypsqd.onion/
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        The Hidden Market, is one of the most known Marketplaces with over 10.000 Products and over 2000 sellers
+       </p>
+      </div>
+      <div>
+       <a href="http://scoobyzz6hl76y3q3fqb6tlosn7xvtqt7krnqqbdpuqpcevi6kvttmyd.onion" style="text-decoration:none;" target="_blank">
+        <span class="badge badge-danger" style="font-size:13px;">
+         Sponsered by
+        </span>
+        <h4 class="p-0 m-0" style="color:blue;font-size:22px;">
+         <i class="fas fa-ad">
+         </i>
+         Scooby-Doo Market
+        </h4>
+        <p class="h6 text-success font-weight-bold m-0 p-0" style="font-size:14px;">
+         http://scoobyzz6hl76y3q3fqb6tlosn7xvtqt7krnqqbdpuqpcevi6kvttmyd.onion
+        </p>
+       </a>
+       <p class="h6" style="font-size:15px;">
+        Trusted drugs market with a loyal, satisfied and growing customer base
+       </p>
+      </div>
+      <div>
+       <div class="card border shadow">
+        <a href="http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion/vendors/carding" id="onionlinkopen" target="_blank">
+         <div class="card-body text-center">
+          <h5 class="p-0 m-0" id="oniontoptitle" style="font-size:22px;color:black;">
+           Carding
+          </h5>
+          <p class="font-weight-bold p-0 m-0" style="font-size:14px;color:green;">
+           http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion/vendors/carding
+          </p>
+          <p class="p-0 m-0" style="font-size:15px;">
+           Money transfers Paypal, Western Union. Prepaid Cards Visa, Master Card. Appliances Apple, iPhones. Phones Samsung, Huawei. Buy gift codes for Amazon, Asos, Ebay, AppStore and more.
+          </p>
+         </div>
+        </a>
+       </div>
+      </div>
+      <div id="load_data">
+      </div>
+      <div id="load_data_message">
+      </div>
+      <br/>
+      <br/>
+      <script>
+       $(document).ready(function(){
+
+ var limit = 6;
+ var start = 0;
+ var action = 'inactive';
+ function load_country_data(limit, start)
+ {
+  $.ajax({
+   url:"fetch.php",
+   method:"POST",
+   data:{limit:limit, start:start},
+   cache:false,
+   success:function(data)
+   {
+    $('#load_data').append(data);
+    if(data == '')
+    {
+     $('#load_data_message').html("<div class='alert alert-dark alert-dismissible fade show text-center ml-3 mr-3 mt-2' role='alert' style='font-size: 15px;'>Your search results end from here. Please be kind to index if we missed something...<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>");
+     action = 'active';
+    }
+    else
+    {
+     action = "inactive";
+    }
+   }
+  });
+ }
+
+ if(action == 'inactive')
+ {
+  action = 'active';
+  load_country_data(limit, start);
+ }
+ $(window).scroll(function(){
+  if($(window).scrollTop() + $(window).height() > $("#load_data").height() && action == 'inactive')
+  {
+   action = 'active';
+   start = start + limit;
+   setTimeout(function(){
+    load_country_data(limit, start);
+   }, 500);
+  }
+ });
+
+});
+      </script>
+     </div>
+     <div class="col-md-3 text-center p-0" id="adlist">
+      <div class="" style="height: auto;position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 78px;">
+       <a href="http://silkr4lawr2zanmaqfbcpdtmybjmk2m6lu3iv5iw7jyivyz2cgt2xgid.onion" target="_blank">
+        <img class="mb-1" src="ads/silklarge.png" style="height: 250px;" width="100%"/>
+       </a>
+       <a href="http://zuf7xa6ut5cbwxkmirslyb7g3wcrklkdukgvpyw37uqbo7igbvbkbnqd.onion" target="_blank">
+        <img class="mb-1" src="ads/clay.gif" style="height: 250px;" width="100%"/>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+body{
+  font-family: 'Gothic A1', sans-serif;
+  background-color: #F7F9F9;
+}
+
+
+h1{
+  font-family: 'Staatliches', cursive;
+}
+#search_q{
+  font-size: 18px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #808B96;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+#search_q:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+a{
+	color: black;
+}
+#onionlinkopen{
+  color: black;
+  text-decoration: none;
+}
+#onionlinkopen:hover{
+  background-color:#EAECEE;
+}
+#oniontoptitle{
+font-family: 'Ubuntu', sans-serif;
+}
+#crowlogo{
+  font-size: 70px;
+}
+#lense{
+font-size: 17px;
+border: 1px solid #808B96;
+}
+#lense:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#searchbar{
+  width: 100%;
+  margin-top: 15px;
+}
+#margintop{
+  margin-top: 90px;
+}
+.foundcount{
+  font-size:14px
+}
+@media only screen and (max-width: 600px) {
+
+#extra{
+  display: none;
+}
+#crowlogo{
+  font-size: 45px;
+}
+#lense{
+  font-size: 10px;
+}
+#search_q{
+  font-size: 12px;
+}
+#searchbar{
+  width: 100%;
+  margin-top: 5px;
+}
+#addlinkal{
+  display: none;
+}
+#margintop{
+  margin-top: 90px;
+}
+
+#adlist{
+  display: none;
+}
+
+
+
+
+
+
+}
+  </style>
+  <script>
+   // AJAX call for autocomplete
+$(document).ready(function(){
+  $("#search_q").keyup(function(){
+    $.ajax({
+    type: "POST",
+    url: "action.php",
+    data:'keyword='+$(this).val(),
+    beforeSend: function(){
+      $("#search_q").css("background","#FFF url(LoaderIcon.gif) no-repeat 165px");
+    },
+    success: function(data){
+      $("#suggesstion-box").show();
+      $("#suggesstion-box").html(data);
+      $("#search_q").css("background","#FFF");
+    }
+    });
+  });
+});
+//To select country name
+function selectCountry(val) {
+$("#search_q").val(val);
+$("#suggesstion-box").hide();
+}
+  </script>
+ </body>
+</html>

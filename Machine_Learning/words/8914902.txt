@@ -1,0 +1,305 @@
+
+
+
+
+
+                R0cc0's market
+
+
+
+
+                            Order
+
+
+                            Verify me
+
+
+                            F.A.Q
+
+
+                            Loyalty program
+
+
+                            Reviews
+
+
+
+
+
+                                Register
+
+
+                                Login
+
+
+
+
+
+
+
+
+
+
+PGP
+
+
+    Besides delivering high quality drugs to your door our store is mainly focused on security.
+    The most basic and important thing to do is communicate through PGP. All of our communication (e-mails, orders and all other data traffic) goes through multiple layers of encryption. We suggest you do this as well.
+
+
+
+    One of the most popular and simple PGP you could use:
+    https://gpg4usb.org/.
+    There are a lot of youtube videos explaining how this works so please invest a few minutes of your time to boost up the security.
+
+
+
+
+    Our Public PGP:
+
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1
+
+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
+=SGoA
+-----END PGP PUBLIC KEY BLOCK-----
+
+
+
+
+
+Payment methods
+
+    At this moment we accept bitcoin and monero.
+
+
+Recommended wallets for monero
+
+    Linux, Windows, Mac: The official Monero client from https://web.getmonero.org/downloads (clearnet link).
+    Android: Monerujo from https://github.com/m2049r/xmrwallet or https://www.monerujo.io (clearnet links), also available on FDroid.
+    IOS: Cake Wallet from https://cakewallet.io/ (clearnet link)
+    We advise against using a mobile phone/tablet for dark net activities if you don't really know what you are doing. Unless properly secured, mobile devices are a security and privacy nightmare.
+
+
+Recommended wallets for bitcoin
+
+    https://bitcoin.org/en/choose-your-wallet (clearnet link)
+    https://electrum.org/ (clearnet link)
+    https://wallet.mycelium.com/ (clearnet link)
+
+
+
+    Bitcoin exchanges are all over the internet :) Make sure to buy at a varified source.
+
+
+Buyers guide and general information
+
+
+    If you find something you like you can check the current price on the main page or on the order tab.
+    Choose the right amount/quantity. The shipping cost are standard €3 (worldwide).
+    Bulk orders may vary in the shipping cost price depending on the country, stealth and shipping method.
+    When placing the order you lock the given price at that moment.
+    Make sure to pay for the order within the next 12 hours.
+    Send the exact order amount to the given address.
+    The payment requires at least 1 confirmation so dont be greedy on the transaction costs.
+    If you send less then the required amount, the order will be cancelled and a refund will be issued to your wallet.
+    If you send more then the required amount, the difference will be refunded.
+    If you don't send any payment, your invoice will be cancelled.
+    After the payment you will be kept up to date by e-mail. All of our customers get a personal touch.
+
+
+Shipping times
+
+
+
+            Country
+            Shipping time
+
+
+
+
+            Austria
+            2-4 days
+
+
+            Belgium
+            1-2 days
+
+
+            Brasil
+            6-9 days
+
+
+            Bulgaria
+            3-7 days
+
+
+            Czech republic
+            3-6 days
+
+
+            Canada
+            4-8 days
+
+
+            Denmark
+            2-3 days*
+
+
+            France
+            2-3 days
+
+
+            Germany
+            2-3 days
+
+
+            Greece
+            5-7 days*
+
+
+            Hungary
+            3-7 days
+
+
+            United Kingdom
+            2-5 days
+
+
+            The Netherlands
+            1-2 days
+
+
+            India
+            10-20 days
+
+
+            Italy
+            3-5 days*
+
+
+            Spain
+            3-5 days
+
+
+            South Africa
+            8-11 days
+
+
+
+* High risk shipping countries get 50% reship.
+* If you country isn't listed anywhere you can always message me for an indication.
+
+
+
+
+    A shipment is considered a no-show if the following time has passed:
+    30 days for shipments within the EU.
+    40 days for the rest of the world.
+
+
+We do not ship to
+
+    Australia & New Zealand
+    Arab countries
+    Austria
+    Most of Asia
+    United States of America
+    Scandiavian countries
+    Switzerland
+    Isreal
+    India
+    Turkey
+    Poland
+
+
+
+    Re-shipping policy
+    The rules for first time customers:
+    50% re-ship
+    The rules for trusted customer
+    50% re-ship
+
+
+
+
+
+
+
+
+
+            R0cc0's market
+
+                - DarkNet Trust -
+                DarkEye -
+                Recon -
+                Dread
+
+
+
+
+
+                Active since
+                24-01-2021
+
+
+
+                Total users
+
+
+                    576
+
+
+
+
+                Total orders
+                678
+
+
+
+                Rating
+
+
+
+
+
+
+
+                            (231
+
+reviews)

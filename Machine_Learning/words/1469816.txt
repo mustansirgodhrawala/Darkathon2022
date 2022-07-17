@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+	About
+	Pricing
+	Read
+
+
+
+
+			Studio
+
+
+						Write.as
+						Start a minimal blog. Keep your privacy.
+
+
+						Snap.as
+						Share beautifully simple photos and galleries.
+
+
+						Submit.as
+						Accept writing submissions, no signup required.
+
+
+						Remark.as
+						Start a conversation around your blog.
+
+				The Musing Studio suite
+
+
+
+
+
+
+
+
+
+
+						Start a blog
+						Log in
+
+
+
+
+
+
+
+
+
+	iOS app updates
+	A history of changes to the Write.as iOS app.
+
+			1.2 - October 10, 2017
+
+				Fix iOS 11 editor layout issues
+				Use text wrapping (wrap appearance) on Monospace posts
+				Only show Share button on shareable posts
+				Use more iOS-style icons
+				Prevent multiple posts on slow connections
+				Speed up some animations
+				Replace GPG key link in About screen with our site link
+				Change app name to "Write.as" (with a dot)
+
+
+			1.1 - October 9, 2015
+
+				Add RTL support
+				Add German, Portuguese, and Vietnamese translations
+				Remove error message when attempting to publish nothing
+				Remove 3 day waiting period before prompting for app rating
+
+
+			1.0 - June 18, 2015
+
+				Initial release
+
+
+
+
+
+
+
+
+
+
+
+
+
+			write.as
+
+				about
+				apps
+				pricing
+				help
+				updates
+				developers
+				platform guidelines
+				privacy
+
+
+
+
+	studio
+
+		write.as
+		snap.as
+		submit.as
+		remark.as
+		writefreely
+
+
+
+
+			community
+
+				read write.as
+				community forum
+				themes
+				writing exchange
+
+
+
+			our company
+
+				about us
+				blog
+				our principles
+
+				contact
+
+
+
+
+
+
+
+
+
+Founder-owned and operated since 2015. Made in Brooklyn, NY.

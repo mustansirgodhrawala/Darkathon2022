@@ -1,0 +1,351 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Home
+					Blocks
+					Mempool
+					Ticket Pool
+					Charts
+					Agendas
+					Proposals
+					Market
+					Attack Cost
+					Parameters
+					Treasury
+					Decode/Broadcast Tx
+					Switch To Testnet
+
+
+
+
+
+
+								  Night Mode
+
+
+
+
+						Enable Hot Keys(   ←→  enter  \  =  )
+
+					JSON API Docs
+
+
+
+
+
+
+
+
+
+
+
+
+          Majority Attack Cost Calculator
+
+
+
+              Chart
+
+
+
+
+
+
+
+
+
+                  Description
+
+
+
+                If an attacker has in their control
+                  0 and
+                  0 hashrate,
+                  they will be able to generate blocks at the same average speed as the honest network.
+
+
+
+
+
+
+
+
+
+            Current Mainnet Parameters
+
+
+
+
+
+                  Best Block
+
+                  0
+
+
+
+
+
+                  Hashrate
+
+                   Ph/s
+
+
+
+
+
+
+
+                  Ticket Pool Size
+
+                  0
+
+
+
+
+
+                  Ticket Price
+
+                  0
+                  DCR
+
+
+
+
+
+
+            Adjustable Parameters
+
+
+
+
+
+
+                  Attack Time
+
+
+
+
+                  hour(s)
+
+
+
+
+
+                  Electricity Cost
+
+
+
+
+                  USD/kWh
+
+
+
+
+
+
+                  Exchange Rate
+
+
+
+                   USD/DCR
+
+
+
+
+                  Attack Type
+
+
+                    External
+                    Internal
+
+
+
+
+
+
+
+
+
+
+              PoW Attack
+
+
+
+
+                  Mining Device:
+
+                    DCR5
+                    D1
+
+
+
+
+
+                A
+                %
+
+                  PoW attack would need 0
+                  Ph/s.
+
+
+                PoW attack requires adding 0
+                Ph/s to the existing 0
+                Ph/s network hashrate.
+
+
+
+              New network hashrate will be
+              0
+              Ph/s.
+
+
+
+              In order to acquire a 0 Ph/s
+              hashrate, it would take
+              0
+              —
+              at a cost of $0
+              USD to buy them.
+
+
+              Electricity consumed by 0
+              — in
+              0 is
+
+              0 kWh.
+
+
+              Cost of 0
+              electricity consumption for
+              0
+              — is
+
+                $0
+                USD.
+
+
+              To carry out the attack, additional costs for facilities and cooling are estimated at
+              % of the cost of the miner(s).
+
+
+              The additional facility cost is $0
+              USD.
+
+
+              Total PoW attack cost:
+
+                $0
+                USD.
+
+
+
+
+            PoS Attack
+
+
+
+              Current total staked is
+              0 DCR.
+
+
+              An internal %
+              PoS attack would need
+
+                  0
+                  tickets.
+
+
+
+                0
+                DCR
+
+              is needed for the attack
+              (0 DCR
+                 *
+                0%).
+
+
+              Total PoS attack cost:
+
+                $0
+                USD
+
+              (0 DCR
+                 *
+                $0 USD/DCR).
+
+
+
+
+              Current total staked is
+              0 DCR.
+
+
+              An external % PoS attack would add
+              0 DCR
+              to the total staked.
+
+
+              New total staked will be
+              0 DCR.
+
+            Attack not possible. Total coin supply is
+            0 DCR.
+
+
+            The projected ticket price is
+
+            0
+              DCR
+
+            (A 0%
+            change).
+
+
+            Total PoS attack cost:
+
+              $0
+              USD
+
+            (0 DCR
+               *
+              $0 USD/DCR).
+
+
+
+
+        Total attack cost:
+
+          $0
+          USD
+
+
+
+
+
+
+
+
+
+			 since last block
+
+
+			dcrdata v6.1.0-pre+dev
+			© 2022 The Decred developers (ISC)
+
+		Connecting to WebSocket...

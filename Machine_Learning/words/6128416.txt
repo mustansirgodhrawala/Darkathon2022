@@ -1,0 +1,121 @@
+
+
+
+
+
+        SEND ANON
+
+
+
+
+
+
+
+
+                    SEND FILES ANONYMOUSLY
+
+
+
+                                        Upload something with the file dialog or by dragging and dropping files onto the dashed region
+
+                    Select file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Fully anonymous
+            We do not track you! No login, no KYC, no personal info, no trackers, no ads!
+
+
+
+
+
+
+
+            Decentralized
+            We use the Storj network, so your file is distributed across many nodes around the world!
+
+
+
+
+
+
+
+            Easy to Use
+            Just upload a file, pay anonymously with Monero and we will give you a HTTP link to share!
+
+
+
+
+
+
+
+
+
+
+
+          F.А.Q.
+
+          How it works?
+          You upload a file here and we send it on Storj decentralized network. After that, we delete the file from our server and give you a link to share it.
+
+          Do you use Storj DCS?
+          Currently yes. We plan to start our own satellite in the future. Using our service you don't have to subscribe to Storj.io
+
+          What's the price?
+          We try to make sharing as simple as possible, so the price is simply too - 0.5$/GB/month. So if you upload a file up to 1GB we will give you a link to download valid for 1 month. 2Gb file is 1$ - simple?
+
+          Why pay?
+          First of all - we pay Storj node operators for storing and downloading your file. Second - privacy has its price. We do not track you, we don't place ads, and don't use analytics services.
+
+          Why Monero?
+          Monero is the only cryptocurrency that keeps private all transactions and we think this is the best payment provider for this service. We believe in Monero and run our own full node.
+
+          Do you restrict downloads?
+          No! We don't place countdowns, ads, or limiting speed. When someone requests files we stream it directly from Storj network at the maximum speed possible.
+          * In extraordinary situations (when the file is downloaded many, many times and cross monthly bandwidth limit from tardigrade network) we may ask the downloader to pay 1$ in Monero to extend the validity of the file before download it.
+
+          Do you have .onion Tor address?
+          Yes, it's sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion . You can even download files from Storj network directly to Tor network.
+
+
+
+
+
+
+
+
+
+
+
+
+              Home
+
+            ⋅
+
+              FAQ
+
+            ⋅
+
+              Contact
+
+            ⋅
+
+              File status
+
+            © 2022 SendAnon.io
+            onion link: sendanonczrjgi3ly72a57oeuhgbeibiqhz6yqtmira5e6ahfkdg4hqd.onion

@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+				 
+
+				 
+
+
+
+				0day Today is the ultimate database of exploits and vulnerabilities and a great resource for vulnerability researchers and security professionals.
+				Our aim is to collect exploits from submittals and various mailing lists and concentrate them in one, easy-to-navigate database.
+				This was written solely for educational purposes. Use it at your own risk.
+				The author will be not responsible for any damage. // r0073r
+
+
+
+
+				Select your language
+
+
+
+
+									English
+
+							 
+
+
+									Русский
+
+							 
+
+
+									Deutsch
+
+							 
+
+
+									Türkçe
+
+							 
+
+
+									Français
+
+							 
+
+
+									Italiano
+
+							 
+
+
+									Español
+
+							 
+
+
+									Romania
+
+							 
+
+
+									Polskie
+
+							 
+
+
+									العربية
+
+							 
+
+
+									Japan
+
+							 
+
+
+									China
+
+							 
+
+
+
+
+				Do you agree to these terms?
+
+
+
+
+
+
+
+
+
+
+
+				User Agreement
+				Anyone who accesses the site 0day.today MUST accept the Terms and Conditions (listed below) or instead immediately navigate away from 0day.today.
+									If you DISAGREE with the Rules of 0day.today you MUST IMMEDIATELY navigate away from 0day.today.
+									The 0day.today team gladly invites you to participate in our project - all you need to do is register to get started!
+
+
+
+				General Information
+				Official information about 0day.today and its team is published exclusively on the 0day.today website.
+                                                                        Do not rely on the negative criticism/rumors others say - it's a MYTH! We do not deface ANY website and we do NOT attack any web-servers.
+									The 0day.today team specializes solely in bug research, not malicious actions.
+									0day.today is released without any warranty and exists solely for educational purposes.
+									0day.today and its team are not responsible for illegal use of the information provided.
+									0day.today is your new digital friend who will help you avoid many security problems on your website!
+
+
+
+				Justice, Law, Programmer & Source Code
+				We pay extra attention to follow all necessary European laws, but we exercise our right to exchange information in a secure way.
+									All the submitted vulnerabilities will be forwarded to the manufacturer of the product and will be published to protect your local environment.
+									If a submission contains either malicious code, illegal comments and/or sensitive details, the submission will be removed or modified.
+
+
+
+				0day.today Mission Statement
+				The 0day.today Mission is to provide a database of standards and technology to protect your information systems against possible threats.
+									Some threats may be targeting the confidentiality or integrity of your information/processes and the availability of your information and services.
+									Here at 0day.today, we try to inform you as soon as possible when new security breaches are discovered so you can take appropriate action to patch/fix them.
+
+
+
+				Official Statement of the 0day.today Team
+				We do not approve or encourage anyone to nullify any vendor licenses, deface websites, hack into databases and/or trade with fraudulent or stolen material.
+									We do not publish advisories/vulnerabilities which speak against certain religions, support terrorism/racism, or anything negative in nature.
+									We do not allow any criminal activities or requests by members in our database or emails. Such examples will be deleted instantly without any comment.
+									0day.today provides information to you 'as is' and will not be held responsible for any damage done to you.
+									0day Today contains information which may be considered illegal in some countries.
+									Such information is provided here solely for educational purposes and is not intended to be used for illegal activities.  // 0day.today Administration
+
+
+
+
+
+
+
+
+
+					0day Today Exploit Database buy and sell exploits type (local, remote, DoS, PoC, etc.) Send all submissions to  mr.inj3ct0r[at]gmail.com
+				Copyright © 2008-2022 0day Today Team

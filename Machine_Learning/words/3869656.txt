@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+            Products
+			Login
+			Register
+
+
+
+
+
+Freshly mined virgin bitcoinsDo you want to clean your bitcoins?
+
+Then don't use a bitcoin mixer, where you only get more dirty coins back.
+
+With us you can buy freshly mined new virgin bitcoins.
+
+Simply buy them in our shop and 12-24 hours later we will transfer them to the addresses you give us at checkout.
+
+You can give us as many bitcoin addresses as you want, and tell us how much bitcoins you want on each of them.
+
+We will mine the coins directly to your addresses, which means the input will be a coinbase transaction from a miner!.
+
+You can also add an additional time delay, so it will be impossible to know who bought which bitcoins.
+
+We delete all logs after the transaction!
+
+
+
+
+
+ProductPriceQuantity
+
+
+
+
+We mine bitcoins worth $250 to your addresses262.5 USD = 0.01266 ฿
+
+
+
+ X
+
+
+We mine bitcoins worth $500 to your addresses520 USD = 0.02508 ฿
+
+
+
+ X
+
+
+We mine bitcoins worth $1000 to your addresses1025 USD = 0.04943 ฿
+
+
+
+ X
+
+
+We mine bitcoins worth $2500 to your addresses2540 USD = 0.12250 ฿
+
+
+
+ X
+
+
+
+
+
+
+
+VirginBitcoins

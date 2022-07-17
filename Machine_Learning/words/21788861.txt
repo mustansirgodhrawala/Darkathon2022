@@ -1,0 +1,163 @@
+Security & PrivacyProductsEncrypted email that's private by default.Your calendar is a record of your life. Keep it safe.Secure cloud storage that gives you control of your data.Your gateway to online freedom.(new window)Proton for BusinessPrivacy solutions that work for your business.PricingWho we areAbout usProton stands for privacy. Always has, always will.TeamMeet the people building a better internet.ImpactDefending freedom through tech is why we exist.CareersWe're hiringSeeking talented people to take Proton to the next level.(new window)We've always been guided by the Proton community.CommunityJoin the fight to make the internet a better place.Open sourceEveryone is welcome to inspect our code. We're open.Resources & SupportGet startedSwitch to ProtonMove to Proton in just a few clicks with Easy Switch.ResourcesBlogLatest news on privacy and the internet.NewsProton announcements, audits, and releases.Help and supportGuides and customer support for Proton products.Download the appsProton MailProton CalendarProton VPN(new window)Sign in(new window)Create a free accountOpen menuSupportProton AccountPlans and paymentsPremium plansProton plans explained: Proton Free, Proton Mail Plus, Proton Unlimited, and Proton Visionary (legacy users only)Reading6 minsCategoryPremium plans
+
+
+
+
+Whether you’re an occasional user concerned about privacy or a busy professional demanding the highest levels of security and reliability, Proton(new window) has a plan for you.
+
+
+
+Here we explain our plans for individuals:
+
+
+
+Proton FreeProton Mail PlusProton UnlimitedProton Visionary (legacy users only)
+
+
+
+If you’re looking for a professional plan that supports more than one user, see Proton for Business plans(new window).
+
+
+
+How to upgrade or downgrade your plan
+
+
+
+You can upgrade or downgrade your account anytime from within the web app. To do this, go to Settings → Dashboard and select Explore all Proton plans.
+
+
+
+
+
+
+
+Please note that when you change your plan, all changes become active immediately. That means if you downgrade your plan, you’ll immediately lose access to all the premium features that came with your old plan.
+
+
+
+Learn more about how to upgrade or downgrade your Proton plan(new window)
+
+
+
+To thank you for your support, if you pay for Proton, we’ll top up your account with additional storage for every year that you’re a paying member.
+
+
+
+Learn more about Proton Storage Bonuses(new window)
+
+
+
+However, there will always be a free Proton plan, which we support with our paid plans.
+
+
+
+Proton Free
+
+
+
+Pricing: Free
+
+
+
+We created Proton Mail to bring encrypted email to everyone around the world. We know that some of the people who need our service the most will not be able to pay, so there will always be an option to create a free email address(new window).
+
+
+
+Our free plan comes with the same security and ease of use as our paid plans. Here are the main features and limits of Proton Free:
+
+
+
+1 email addressUp to 1 GB of total storage (500 MB boosted to 1 GB if you complete your get started actions(new window)) shared with Proton Drive (beta)Short domain email address(new window) (@pm.me): receive messages onlyLabels limit: 3Folders limit: 31 active filter(new window)Easy Switch(new window) import assistantPassword-protected Emails(new window)Additional addresses: not supportedCustom email domains: not supportedSending limit: 150 messages/dayProton Calendar (1 personal calendar)Access to free Proton Drive (beta)Access to free Proton VPN
+
+
+
+Unlike many internet companies that depend on invading your privacy to sell ads, Proton is funded by revenue from paid plans. Because we rely on you for funding, and because you rely on Proton to protect your data, we’re always incentivized to keep your data secure and private.
+
+
+
+Your subscription pays for the development of new features and services, as well as the cost of running Proton. By upgrading to a paid plan, not only will you get access to advanced features, you’ll support our mission to provide citizens around the world with an internet where privacy is the default.
+
+
+
+Proton Mail Plus
+
+
+
+Pricing: €4.99/month, or €47.88 for one year (€3.99/month), or €83.76 for two years (€3.49/month)
+
+
+
+Proton Mail Plus is our basic paid plan that comes with a number of advanced features for your everyday communications:
+
+
+
+1 user with up to 10 email addresses15 GB of total storage shared with Proton Drive (beta)Support for 1 custom email domainShort domain email address(new window) (@pm.me): send and receive messagesUnlimited labels, folders, and filtersIMAP support via Proton Mail Bridge(new window)Contact groupsAuto-reply(new window)Catch-all email(new window)Easy Switch(new window) import assistantPassword-protected Emails(new window)Sending limit: unlimited*Priority customer supportProton Drive (beta)Proton Calendar (up to 20 personal calendars with sharing via link)Access to free Proton VPN
+
+
+
+If you need a plan with higher limits, consider Proton Unlimited below.
+
+
+
+If you’re looking for a multi-user plan that you can customize, see Proton for Business plans(new window).
+
+
+
+Proton Unlimited
+
+
+
+Pricing: €11.99/month, or €119.88 for one year (€9.99/month), or €191.76 for two years (€7.99/month)
+
+
+
+Proton Unlimited is our great value bundle that gives you all our services in one easy subscription: Proton Mail, Proton Calendar, Proton Drive (beta), and Proton VPN.
+
+
+
+Proton Unlimited
+
+
+
+Proton Mail, Proton Calendar, and Proton Drive (beta)• 1 user with up to 15 email addresses• 500 GB of total storage shared with Proton Drive (beta)• Support for 3 custom email domains• Short domain email address(new window) (@pm.me): send and receive messages• Unlimited labels, folders, and filters• IMAP support via Proton Mail Bridge(new window)• Contact groups• Auto-reply(new window)• Catch-all email(new window)• Easy Switch(new window) import assistant• Password-protected Emails(new window)• Sending limit: unlimited*• Priority customer support• Proton Calendar (20 personal calendars with sharing via link)• Proton Drive (beta)Proton VPN• Connect to VPN on 10 devices per user at the same time• Highest VPN speed• 1700+ servers in 60+ countries• NetShield malware and ad-blocker• Worldwide streaming services• P2P/BitTorrent support• Secure Core servers• Tor over VPN• Strict no-logs policy• Unlimited volume/bandwidth• DNS leak prevention• Kill switch/always-on VPN• Encrypted VPN servers• Router support• Split tunneling (Android and Windows only)
+
+
+
+If you’re looking for a multi-user plan that you can customize, consider our Proton for Business plans(new window).
+
+
+
+Proton Visionary (legacy users only)
+
+
+
+Pricing: no longer available for purchase
+
+
+
+Proton Visionary is our exclusive plan for early supporters. It gets its name from a group of crowdfunding contributors who donated significant funds(new window) in 2014 to make Proton Mail possible in the first place.
+
+
+
+With Visionary, you get access to all our premium services and features at their highest limits: Proton Mail, Proton Calendar, Proton Drive (beta), and Proton VPN. You’ll also receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.
+
+
+
+
+
+
+
+Proton Visionary
+
+
+
+Proton Mail, Proton Calendar, and Proton Drive (beta)• 6 users• 100 email addresses• 3 TB of total storage shared with Proton Drive (beta)• Support for 10 custom domains• Short domain email address(new window) (@pm.me): send and receive messages• Unlimited labels, folders, and filters• IMAP support via Proton Mail Bridge(new window)• Auto-reply(new window)• Catch-all email(new window)• Easy Switch(new window) import assistant• Password-protected Emails(new window)• Sending limit: unlimited*• Priority customer support• Proton Calendar (20 personal calendars with sharing via link)• Proton Drive (beta)Proton VPN• Connect to VPN on 10 devices per user at the same time• Highest VPN speed• 1700+ servers in 60+ countries• NetShield malware and ad-blocker• Worldwide streaming services• P2P/BitTorrent support• Secure Core servers• Tor over VPN• Strict no-logs policy• Unlimited volume/bandwidth• DNS leak prevention• Kill switch/always-on VPN• Encrypted VPN servers• Router support• Split tunneling (Android and Windows only)
+
+
+
+
+
+
+
+*Subject to Proton Mail’s Terms and Conditions(new window). Legitimate emails are unlimited. Proton Mail cannot be used for mass emailing or spam. If you send spam, your account will be subject to review and termination. Please note that 10 recipients (any email address added to TO, CC, or BCC) within a message count as 10 unique messages.
+On this pageHow to upgrade or downgrade your planProton FreeProton Mail PlusProton UnlimitedProton Visionary (legacy users only)Premium plansNew Proton plans: your questions answeredHow to upgrade or downgrade your Proton planWhat happens with my stored data when I downgrade my subscription?Proton plans explained: Proton Free, Proton Mail Plus, Proton Unlimited, and Proton Visionary (legacy users only)Didn’t find what you were looking for?Contact supportGeneral contactcontact@proton.meMedia contactmedia@proton.meLegal contactlegal@proton.mePartnerships contactpartners@proton.meProton - Privacy by default(new window)(new window)(new window)(new window)(new window)ProductsProton MailProton CalendarProton DriveProton VPN(new window)Proton for BusinessPrivacy and communityPrivacy and securitySwitch to ProtonCommunityOpen sourcePricingCompanyAbout usTeamImpactCareers(new window)We’re hiringShop(new window)ConnectBlogHelp and supportPartners and affiliatesPress and mediaContact usProductsProton MailProton CalendarProton DriveProton VPN(new window)Proton for BusinessPrivacy and communityPrivacy and securitySwitch to ProtonCommunityOpen sourcePricingCompanyAbout usTeamImpactCareers(new window)We’re hiringShop(new window)ConnectBlogHelp and supportPartners and affiliatesPress and mediaContact usProton AGRoute de la Galaise 321228 Plan-les-OuatesGeneva, SwitzerlandBuilt with support fromSchweizerische EidgenossenschaftConfédération SuisseConfederazione SvizzeraConfederaziun SvizraSwiss ConfederationInnosuisse - Swiss Innovation AgencyThis project is supportedby the European Union'sHorizon 2020 program(Grant No 848554)EnglishSystem status(new window)Report abuseReport a problemReport a security issueRequest a feature(new window)Privacy PolicyTerms & conditionsTransparency Report© 2022 Proton AG. All rights reserved.

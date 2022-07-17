@@ -1,0 +1,176 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Home
+					Blocks
+					Mempool
+					Ticket Pool
+					Charts
+					Agendas
+					Proposals
+					Market
+					Attack Cost
+					Parameters
+					Treasury
+					Decode/Broadcast Tx
+					Switch To Testnet
+
+
+
+
+
+
+								  Night Mode
+
+
+
+
+						Enable Hot Keys(   ←→  enter  \  =  )
+
+					JSON API Docs
+
+
+
+
+
+
+
+
+
+
+
+
+                Educational Video series for Decred in the Indian Market
+
+
+                    Voting complete –
+
+                      rejected
+
+
+
+
+
+
+
+
+                      45.1%
+
+
+
+
+                      45.1%
+                      approval of 31,340 votes (77% turnout)
+
+
+
+                      Quorum achieved
+
+
+
+
+
+
+                  Discussion
+
+
+
+                  Proposals
+
+
+
+
+
+
+                    Author:
+                    @finstreet21
+                    Status:
+
+                      vetted / public
+
+
+
+
+                      Yes:
+
+                        14138 votes (45.1%)
+
+                      No:
+
+                        17202 votes (54.9%)
+
+
+
+                      Eligible:
+                      40853 tickets
+                      Voting Period:
+                      587291
+                        –
+
+                          589563
+
+
+
+
+
+                    Discussion:
+                    9 comments
+                    Updated:
+                    2021-08-28 15:52:53 UTC
+
+
+                    Version:
+                    v1
+                    Published:
+                    2021-08-28 15:52:53 UTC
+
+
+                    Token:
+                    150cf811432b0b7d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 since last block
+
+
+			dcrdata v6.1.0-pre+dev
+			© 2022 The Decred developers (ISC)
+
+		Connecting to WebSocket...

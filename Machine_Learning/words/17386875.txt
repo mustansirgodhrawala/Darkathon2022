@@ -1,0 +1,1869 @@
+
+
+
+
+
+		This website works better with JavaScript.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Explore
+
+
+
+
+
+
+
+
+		Help
+
+
+
+					 Register
+
+
+
+				 Sign In
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					pluja
+					/
+					awesome-privacy
+
+
+
+
+
+
+
+
+
+				mirror of https://github.com/pluja/awesome-privacy
+
+
+
+
+
+
+
+
+
+
+								Watch
+
+
+								1
+
+
+
+
+
+
+
+
+									Star
+
+
+									1
+
+
+
+
+
+
+
+								Fork
+
+
+
+
+									You've already forked awesome-privacy
+
+
+
+
+
+
+
+
+
+								0
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 Code
+
+
+
+
+
+						 Issues
+
+
+
+
+
+
+
+
+
+
+						 Projects
+
+
+
+
+
+
+					 Releases
+
+
+
+
+
+
+						 Wiki
+
+
+
+
+
+						 Activity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.
+
+MIRROR
+
+
+
+
+
+		privacydegooglegafamalternativesawesome-listappsawesomelistservices
+
+
+
+
+			You can not select more than 25 topics
+			Topics must start with a letter or number, can include dashes ('-') and can be up to 35 characters long.
+
+
+
+
+
+
+
+					 457 Commits
+
+
+					 2 Branches
+
+
+
+						 0 Tags
+
+
+
+					 16 MiB
+
+
+
+
+
+
+
+
+
+
+
+
+						Markdown
+
+
+				100%
+
+
+
+
+
+
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Branch:
+					main
+
+
+
+
+
+
+
+					main
+
+					revert-99-patch-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									Branches
+
+
+
+
+									Tags
+
+
+
+
+
+
+
+				${ item.name }
+
+
+
+
+							Create tag ${ searchTerm }
+
+
+
+							Create branch ${ searchTerm }
+
+
+
+								from 'main'
+
+
+
+
+
+
+
+
+
+
+			${ noResults }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		HTTPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								Download ZIP
+								Download TAR.GZ
+								Download BUNDLE
+								Clone in VS Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							pluja
+
+
+
+						b6648cb448
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Add SearxNG
+
+
+
+
+			5 days ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										.github/ISSUE_TEMPLATE
+
+
+
+
+
+
+
+
+
+
+							Update new-service-proposal.md
+
+
+
+				1 year ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										misc
+
+
+
+
+
+
+
+
+
+
+							Add contribution to projects advice
+
+
+
+				4 months ago
+
+
+
+
+
+
+
+
+
+
+
+								LICENSE
+
+
+
+
+
+
+
+
+							Add a LICENSE
+
+
+
+				1 year ago
+
+
+
+
+
+
+
+
+
+
+
+								README.md
+
+
+
+
+
+
+
+
+							Add SearxNG
+
+
+
+				5 days ago
+
+
+
+
+
+
+
+
+
+
+				README.md
+
+
+
+
+
+				Unescape
+				Escape
+
+
+
+
+
+
+
+
+
+
+				Awesome Privacy
+
+
+
+
+
+List of free, open source and privacy respecting services and alternatives to privative services.
+
+	 About  |
+	 Contributing  |
+	 Quotes
+
+
+⚠️ Privacy Shields are provided by TOSDR. They analyse Terms of Service and Privacy Policies but you should know they don't take into account other things like trackers, source code, historic record, etc.
+
+Contents
+
+2FA
+Analytics
+Android App Store
+Android Dialer
+Android File Manager
+Android Keyboard
+Android Launcher
+Captchas
+Cloaking
+Cloud Storage
+Databases
+Dating Apps
+Developer Tools
+
+IDEs
+
+
+Domain Registrar
+Download Manager
+Encryption
+File Management and Sharing
+Fitness and Health
+Fonts
+Forms
+Games
+
+Mario Kart
+Minecraft
+
+
+Home Assistants
+Instant Messaging
+Link Shorteners
+Location tracking
+Mail Services
+Maps and Navigation
+Media Streaming Platforms
+
+Video and Audio
+Audio
+Podcasts
+
+
+Notes and Tasks
+Office
+Operating Systems
+
+Android
+PC / MacOS
+Smart TV
+
+
+Password Managers
+Payments
+Personal Finances
+Photo Editing and Management
+Photo Storage
+Privacy Tools
+Remote Access and Control
+Search Engines
+Social Networks and Platforms
+
+Alternative Frontends
+Imgur
+Instagram
+LBRY and Odysee
+Reddit
+Streaming Platforms (Twitch)
+TikTok
+Twitter
+Wikipedia
+YouTube
+
+
+Teamworking Tools
+Translation
+Uncategorized
+Utilities
+Video and Audio Conferencing
+Video Editing
+Web Browser
+
+Browser Addons
+Browser Sync
+WebView
+
+
+
+2FA
+  Avoid using apps that won't let you export your keys easily.
+
+Authy
+Google Authenticator
+
+  Instead use
+
+ Aegis - A free, secure and open source app for Android to manage your 2-step verification tokens. Supports variety of imports from other apps (Google Authenticator, Authy etc.), vault encryption and exporting keys (plaintext or encrypted).
+ andOTP - Open source two-factor authentication for Android.
+ FreeOTPPlus - Enhanced fork of FreeOTP-Android providing a feature-rich 2FA authenticator.
+RavioOTP - A native, lightweight and secure one-time-password (OTP) solution for iOS users.
+ Authenticator Pro - Two-Factor Authentication (2FA) client for Android + Wear OS.
+Gnome Authenticator - Open source two-factor authentication for Linux.
+
+Analytics
+  Avoid any analytics service that comes from Google, Facebook, Microsoft or any private service. These kind of analytics hurt user privacy.
+   Instead use
+
+Matomo - Google Analytics alternative that protects your data and your customers' privacy.
+Plausible - Simple and privacy-friendly alternative to Google Analytics.
+Umami - A simple, fast, website analytics alternative to Google Analytics.
+Aurora - 100% Cookie-Free Open Website Analytics. Collect Anonymous Data. Make your Audience Happy Now!
+Nullitics - Zero-effort open-source cheap analytics.
+Ackee - Self-hosted website analytics.
+Shynet - Modern, privacy-friendly, and detailed web analytics that works without cookies or JS.
+Pirsch - Pirsch is a simple, privacy-friendly, open-source alternative to Google Analytics — lightweight, cookie-free and easily integrated into any website or backend.
+Swetrix - Privacy-focused, fully cookieless and opensource (and selfhostable) web-analytics service.
+
+Android App Store
+  Avoid
+
+Google Play Store
+
+   Instead use
+
+
+F-Droid - F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform.
+
+Droid-ify - Lightweight F-Droid client with Material UI.
+Aurora Droid - Aurora Droid is a modern FOSS client for F-Droid.
+Foxy Droid - Unofficial F-Droid client in the style of the classic one.
+
+
+
+FossDroid - Fossdroid's aim is to promote free and open source apps on the Android platform: newest, trendiest and the most popular ones.
+
+
+SkyDroid - Decentralized App Store for Android
+
+
+Alternative Google Play Store clients
+
+Aurora Store - Aurora Store is an open-source alternative Google Play Store frontend client with privacy and modern design in mind.
+
+Android Dialer
+  Avoid
+Third party dialers found on the play store. They may contain ads/trackers and may ask for unnecessary permissions.
+   Instead use
+
+Simple Dialer - A lightweight app for handling your calls, no matter where are you. Comes with a handy call log for easy call initiation.
+Koler - Uniquely stylized phone app with customizable features.
+
+Android File Manager
+  Avoid
+Preinstalled file managers and third party file manager apps found on the play store. They may contain ads/trackers and may ask for unnecessary permissions.
+   Instead use
+
+Simple File Manager - A simple file manager for browsing and editing files and directories.
+Amaze File Manager - Simple and attractive Material Design file manager for Android.
+Material Files - An open source Material Design file manager, for Android 5.0+.
+Ghost Commander - Dual-panel file manager.
+
+Android Keyboard
+  Avoid
+
+GBoard (Google)
+SwiftKey
+
+  Instead use
+
+OpenBoard - 100% FOSS keyboard, based on AOSP.
+FlorisBoard - FlorisBoard is a free and open-source keyboard for Android 6.0+ devices. It aims at being modern, user-friendly and customizable while fully respecting your privacy. Currently in early-beta state.
+AnySoftKeyboard - The only Android keyboard you'll ever need. Free as in speech and Free as in beer.
+Indic Keyboard - Indic Keyboard is a versatile keyboard for Android users who wish to use Indic and Indian languages to type messages, compose emails and generally prefer to use them in addition to English on their phone.
+Simple Keyboard - Simply keyboard and nothing more.
+
+Android Launcher
+  Avoid
+Third party launchers found on the play store. They may contain ads/trackers and may ask for unnecessary permissions.
+   Instead use
+
+Lawnchair - No clever tagline needed.
+OpenLauncher - Customizable and Open Source Launcher for Android.
+KISS - Lightning fast, open-source, < 200kb Android launcher.
+Olauncher - Minimal AF (ad-free) launcher app for Android.
+Posidon Launcher - Posidon launcher is a minimal, one page homescreen with a vertical scrolling feed.
+Pie Launcher - Android home screen launcher that uses a dynamic pie menu instead of fixed positioned icons.
+Simple App Launcher - A simple holder for favourite apps for quick & easy app launcher icon management.
+Rootless Pixel Launcher - The Launcher3 fork known as "Rootless Pixel Launcher".
+
+Captchas
+  Avoid
+Google captchas use cookies to track users and rank their IPs.
+
+Google reCAPTCHA
+
+   Instead use
+
+DoomCaptcha - Captchas don't have to be boring READ THE DISCLAIMER ON PROJECT'S WEBSITE.
+hCaptcha - Privacy-first CAPTCHA for web, mobile, and more.
+
+Cloaking
+Images
+
+Fawkes - privacy preserving tool against facial recognition systems.
+
+CloakMe - Web interface for Fawkes algorithm.
+
+
+ImageScrubber - A friendly browser-based tool for anonymizing photographs taken at protests (hosted version provided by everestpipkin).
+
+Text
+
+Stegcloak - Hide secrets with invisible characters in plain text securely using passwords (repo).
+
+Cloud Storage
+  Avoid
+
+Google Drive
+
+OneDrive
+
+   Instead use
+
+Nextcloud - The open source self-hosted productivity platform that keeps you in control.
+Seafile - High performance file syncing and sharing. It includes a Wiki, WYSIWYG editing and other knowledge management features.
+
+Other useful tools
+
+Cryptomator - Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service
+Syncthing - Continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.
+Rclone - Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces and like the tools listed above enables encryption for encrypting files in the cloud.
+
+Databases
+
+  Avoid using privative databases which you don't control such as Google Firebase.
+  Instead use
+
+Appwrite - Secure open-source backend server for web, mobile & Flutter developers.
+Supabase - Open source Firebase alternative (Limited self-hosting)
+Pocketbase - Open Source backend in 1 file written in Go.
+CondensationDB [Inactive] - Condensation is an open-source zero trust, distributed database enabling to build modern applications while ensuring data ownership and security.
+
+Developer Tools
+
+Beekeeper Studio - Open Source SQL Editor and Database Manager with a privacy commitment in their mission statement.
+
+IDEs
+  Avoid using privative IDEs that are full of trackers and telemetry.
+  Instead use
+
+Neovim - Hyperextensible Vim-based text editor.
+VSCodium - Free/Libre Open Source Software Binaries of VSCode. Vscode source code is open source (MIT-licensed), but the product available for download (Visual Studio Code) is licensed under this not-FLOSS license and contains telemetry/tracking.
+
+Dating Apps
+Apps such as Tinder collect and sell your personal intimate information. Tinder in particular has been found to charge users up to five times more for same service, extrapolate estimations on your intelligence and other psychometrics and sell it to third parties , it may know more about you than yourself, and many more bad things you can find on the internet.
+  Avoid
+
+
+Grindr
+Badoo
+Lovoo
+
+   Instead use
+
+Alovoa - Free and open-source dating platform that respects your privacy.
+
+Domain Registrar
+  Avoid using domain registrars who are privacy invasive.
+  Instead use
+
+Njalla - Privacy-aware domain service, sitting in between the domain service registrations and you, acting like a privacy shield.
+OrangeWebsite
+1984 Hosting
+
+Download Manager
+  Avoid
+IDM, Download Accelerator Plus etc which are proprietary and cost you money plus privacy.
+   Instead use
+
+Persepolis Download Manager - Persepolis is a download manager & a GUI for Aria2. It's written in Python. Persepolis is a sample of free and open source software. It's developed for GNU/Linux distributions, BSDs, MacOS, and Microsoft Windows.
+uGet Download Manager - uGet is a lightweight yet powerful Open Source download manager for GNU/Linux developed with GTK+, which also comes packaged as a portable Windows app. It is also available for Android.
+Motrix - A full-featured download manager.
+FireDM - FireDM is a python open source (Internet Download Manager) with multi-connections, high speed engine, it downloads general files and videos from youtube and tons of other streaming websites. It is availabe for Linux & Windows.
+Xtreme Download Manager - Xtreme Download Manager (XDM) is a powerful tool to increase download speeds up to 500%, save streaming videos from YouTube, DailyMotion, Facebook, Vimeo, Google Video and 1000+ other websites, resume broken/dead downloads, schedule and convert downloads.
+axel - Lightweight CLI download accelerator. It supports HTTP, HTTPS, FTP and FTPS protocols.
+
+Encryption
+Remember: Without strong encryption, you will be spied on systematically by lots of people.
+
+Veracrypt - VeraCrypt is a free open source disk encryption software for Windows, macOS and Linux.
+Hat.sh - A Free, Fast, Secure and Serverless File Encryption.
+Cryptomator - Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service.
+Stegcloak - Hide secrets with invisible characters in plain text securely using passwords.
+Picocrypt - A very small (hence "Pico"), very simple, yet very secure file encryption tool.
+Photok - Photok is a free Photo-Safe. It stores your photos encrypted on your device and hides them from others.
+
+OS Encryption
+
+Cryptsetup - Full disk encryption for Linux. Cryptsetup is a utility used to conveniently set up disk encryption based
+on the DMCrypt kernel module.
+
+File Management and Sharing
+  Avoid
+
+
+SendAnywhere
+
+  Instead use
+
+Blaze - A fast, p2p and radically different way to transfer files.
+Send - Simple, private file sharing. (Mozilla Send Fork)
+Lufi - Let's Upload that FIle — File sharing software.
+Croc - Easily and securely send things from one computer to another.
+Dat-cp - Copy files between hosts on a network using the peer-to-peer Dat network.
+Magic Wormhole - Get things from one computer to another, safely.
+QRcp - Transfer files over wifi from your computer to your mobile device by scanning a QR code without leaving the terminal.
+Snapdrop - A Progressive Web App for local file sharing inspired by Apple's Airdrop.
+Paperless-ng - A supercharged version of paperless: scan, index and archive all your physical documents.
+
+Paperless - [Now archived] Scan, index, and archive all of your paper documents.
+
+
+OnionShare - An open source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.
+Sharik - Sharik works with Wi-Fi connection or Tethering (Wi-Fi Hotspot). No internet connection needed. Available for Android, iOS, Linux, MacOS & Windows.
+Blindsend - Open source tool for private, end-to-end encrypted file exchange.
+
+Fitness and Health
+  Your health is a very important piece of your private data and you should care a lot about it. Also, health related data is among the most coveted. Please don't use apps from Google, Fitbit, Huawei, Xiaomi or any company that seeks the gathering of your personal data.
+If you need an app for menstrual cycle tracking please don't use any apps like Clue, Period Tracker, etc. Those cute pink apps are greedy for your menstrual cycle and intimate life data and will sell it for sure, protect your private life. Check the list below and you will find nice alternatives.
+   Instead use
+
+wger - A free, open source, self-hosted web application that manages your exercises, workouts and nutrition.
+Fitotrack - A privacy oriented fitness tracker for Android.
+OpenFoodFacts - Open Food Facts is a food products database made by everyone, for everyone. You can use it to make better food choices.
+
+OFF Apps
+
+
+ Drip - Menstrual cycle and fertility tracking. Everything you enter stays on your device.
+ log28 - a (very) simple no-frills period tracker for Android.
+ OpenTracks - OpenTracks is a sport tracking application that completely respects your privacy.
+
+Fonts
+  Avoid
+
+Google Fonts (no selfhosted)
+
+   Instead use
+Google Fonts Replacements
+
+coolLabs Fonts - A privacy-friendly drop-in replacement for Google Fonts.
+
+Foundries
+
+Velvetyne
+OpenFoundry
+
+Forms
+  Avoid
+
+Google Forms
+
+   Instead use
+
+TypeBot - Open-source conversational forms.
+CryptPad Forms - Part of the Cryptpad end-to-end encrypted and open-source collaboration suite.
+FramaForms - Design your online surveys easily while respecting your audience.
+
+Games
+Mario Kart
+Nintendo collects user data, and if you disable it, they can turn it back on. Also, it has a paid plan that is not accessible to everyone economically.
+   Instead use
+
+SuperTuxKart - A 3D open-source arcade racer with a variety characters, tracks, and modes to play.
+
+Minecraft
+
+The game is owned by Microsoft. If this is not enough, you need a Microsoft account to play Minecraft since March 11th, 2022. Microsoft locks accounts some time not long after account creation and forces the user to provide a phone number. See: Minecraft FAQ, 1, 2
+The game has telemetry embeded in it since v21w38a which you can't opt-out. Also, it is tied to the Microsoft privacy terms which are a privacy nightmare.
+   Instead use
+
+Minetest - An open source voxel game engine with many features.
+
+Mineclone5 - Updated version of MineClone2, an attempt to clone Minecraft into Minetest.
+
+
+
+Plugins for Minecraft
+If you still want to play Minecraft, you can add some plugins that can help you preserve a bit your privacy. But still consider that you are supporting Microsfot this way.
+
+No-Telemetry - Mod that disables the usage data collection, aka telemetry, introduced in Minecraft 1.18 (snapshot 21w38a).
+
+Home Assistants
+Don't use Google Home or Alexa. Please don't. Don't gift them to anyone. They open the homes doors to surveillace. They can turn these auto-updating devices into surveillance devices at will.
+Interesting articles: 1, 2, 3, 4, 5, 6, 7.
+
+Google Home
+Alexa
+Cortana
+Siri
+
+   Instead use
+
+Mycroft - The Private and Open Voice Assistant.
+Home Assistant - Open source home automation that puts local control and privacy first.
+
+Instant Messaging
+*Check out this site for comparisons.
+  Avoid
+
+WhatsApp |
+Instagram DM |
+Facebook Messenger |
+Skype |
+Zoom |
+Google Hangouts / Chat |
+
+   Instead use
+Decentralized
+No single point of control or failure. A decentralized network operated by different servers from different volunteers around the globe. You choose where your data stays or you can self-host your own server. Somewhat more complex protocols (because of federation between servers) and some extra metadata is added to the messages (without compromising privacy).
+
+Matrix (Protocol) - An open network for secure, decentralized communication.
+
+Element - All-in-one secure chat app for teams, friends and organisations. Keeps conversations in your control, safe from data-mining and ads. End-to-end encryption.
+
+
+Jabber / XMPP (Protocol) - The universal and open messaging standard. Tried and tested. Independent. Privacy-focused. E2E encrypted.
+
+ Conversations - Jabber/XMPP client for Android 4.0+ smartphones that has been optimized to provide a unique mobile experience.
+AstraChat - Another XMPP client.
+
+
+DeltaChat - Chat over encrypted e-mail.
+Session - Extreme focus on privacy and anonymity. Blockchain technology.
+SimpleX Chat - The first chat platform that is 100% private by design - it has no access to your connection graph
+
+Centralized
+The service is in charge of running the servers that allow users to communicate. Single point of failure and control, but still 100% safe and trustworthy if the protocols and code are open and audited.
+
+Threema - The messenger that puts security and privacy first. Pay once, chat forever. No collection of user data. Open Source client.
+Signal - Extreme focus on privacy, combined with all of the features you expect. Strong encryption by design. 100% Open Source.
+
+ Molly - Signal-compatible fork client with some security enhancements.
+
+
+Status - Status is a secure messaging app, crypto wallet, and Web3 browser built with state of the art technology.
+
+P2P
+No servers involved. Everything goes directly from one peer to the other peer. No point of failure or control. The features are reduced because of the lack of server, messaging can be slower. Best option for critical chats.
+
+Tox - Tox is easy-to-use software that connects you with friends and family without anyone else listening in.
+Briar - Peer-to-peer encrypted messaging and forums.
+Tinfoil Chat - Onion-routed, endpoint secure messaging system.
+
+Worth mentioning
+
+Berty - Not released yet. The privacy-first messaging app that works with or without internet access, cellular data or trust in the network.
+Telegram - Not fully open source. No E2E encryption by default on chats.
+
+Link Shorteners
+  Avoid
+
+Bit.ly
+
+   Instead use
+
+MagLit - An encrypted and privacy respecting Link Shortener service that also supports Magnet Links.
+
+Location tracking
+  Avoid
+
+Google location history
+Google FindMyDevice
+
+   Instead use
+Tracking
+
+Nextcloud Phonetrack - Nextcloud app to track location history with an Android app (other apps also supported). Supports caching positions offline and sending them to the server in batches. The first-party app has good battery saving options.
+OwnTracks - Location tracking for displaying the current location only (limited location history functionality).
+Traccar - Location tracking software made for dedicated GPS logging devices.
+
+Find My Device
+
+Find My Device - Find your Android Device via SMS.
+
+Mail Services
+  Avoid
+
+Gmail
+Outlook
+Yandex Mail
+Yahoo! Mail
+
+  Instead use
+Third party owned
+
+ProtonMail - Secure Email. Based in Switzerland. Read this article over Climate activist arrest.
+Tutanota - Secure email for everybody. Open Source.
+Riseup - Online communication tools for people and groups working on liberatory social change.
+
+Self hosted
+
+Mail-in-a-box - Mail-in-a-Box helps individuals take back control of their email by defining a one-click, easy-to-deploy SMTP+everything else server: a mail server in a box.
+Docker mail server - A fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) using Docker.
+
+Clients
+Android / iOS
+
+ FairEmail - Fully featured, open source, privacy friendly email app for Android.
+ K9 - Open Source Email App for Android.
+
+Desktop
+
+Thunderbird - A free customizable open source email client.
+
+Email Alias Services (Anonymous Forwarding)
+With email aliases, you can finally create a different identity for each website. Defend against spams, phishing and data breach. You can choose self-hosting any of the following options or you can also use their own platform as a service.
+
+SimpleLogin
+AnonAddy
+
+Maps and Navigation
+  Avoid
+
+Google Maps
+Apple Maps
+Yandex Maps
+Bing Maps
+Waze
+Sygic
+HERE WeGo
+Petal Maps
+
+  Instead use
+
+Open Street Map (OSM) - OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world.
+
+OSMAnd - Android/iOS Navigation app using OSM. It is a feature-rich app with all you expect.
+
+
+Qwant Maps - An OpenStreetMap-based private Google Maps alternative.
+Organic Maps - Great offline maps for hikers and cyclists.
+
+Media Streaming Platforms
+  Avoid
+
+
+
+
+Plex
+
+SoundCloud
+
+   Instead use
+Video and Audio
+
+Jellyfin - Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.
+Dim - Dim is a self-hosted media manager. With minimal setup, Dim will organize and beautify your media collections, letting you access and play them anytime from anywhere.
+Stremio - Stremio is a modern media center that's a one-stop solution for your video entertainment.
+
+Audio
+
+Funkwhale - A social platform to enjoy and share music (SoundCloud alternative).
+Subsonic - Your complete, personal music streamer.
+Ampache - A web based audio/video streaming application and file manager.
+Koel - a personal music streaming server that works.
+Nuclear - Modern music player focused on streaming from free sources.
+Navidrome - Lightweight, fast and self-contained personal music streamer.
+
+Spotify alternative clients
+
+These clients, although will have less tracking, still DO NOT protect your privacy at all as you will still be streaming from Spotify servers from you own premium (paid, identified) account.
+
+* Premium required.
+
+Spotube - A lightweight free Spotify crossplatform-client.
+Spot* - Native Spotify client built in GTK and Rust.
+psst* - Fast and multi-platform Spotify client with native GUI.
+ncspot* - Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes.ç
+
+* No premium required.
+
+ Blade Player - Open source Spotify client, works without premium.
+
+Youtube Music alternative clients
+
+Beatbump - Alternative frontend for YouTube Music; no ads and custom API wrapper.
+
+Deezer alternative clients
+
+dzr - Command line Deezer player for Linux, BSD, Android+Termux
+
+Podcasts
+
+Antennapod - The Open Podcast Player.
+
+Notes and Tasks
+  Avoid
+
+Google Keep
+
+Google Keep Exporter -  Convert your Google Keep notes into a standard markdown + YAML header format.
+
+
+Evernote
+Squid
+Notion
+OneNote
+
+   Instead use
+
+TinyList - Create and share notes and checklists, without sacrificing your privacy.
+HedgeDoc - Formerly CodiMD (community). An awesome platform to write and share markdown.
+Standard Notes - A free, open-source, and completely encrypted notes app.
+ Notally - A beautiful notes app.
+ Quillnote - Take beautiful markdown notes and stay organized with task lists.
+Joplin - Note taking and to-do application with synchronisation capabilities.
+YankNote - A Hackable Markdown Note Application for Programmers.
+Logseq - A privacy-first alternative to WorkFlowy.
+Nextcloud Notes - The Notes app is a distraction free notes taking app for Nextcloud.
+
+ Nextcloud Notes app - An android client for Nextcloud Notes.
+
+
+Vikunja - The open-source to-do app to organize your life.
+AppFlowy - Open Source Notion Alternative. You are in charge of your data and customizations.
+
+Office
+  Avoid
+
+Microsoft Office
+Google Docs
+
+   Instead use
+
+LibreOffice - Free and open source offline office.
+OnlyOffice - Free and open source online office for collaboration.
+Cryptpad - Collaboration suite, encrypted and open-source.
+Etherpad - Highly customizable open source online editor providing collaborative editing in really real-time.
+
+Operating Systems
+Android
+  Try to avoid using Google Android or any Android that has been modified and tuned by any manufacturer such as Xiaomi, Huawei, Samsung, etc. Android is an Open Source project - AOSP - Android Open Source Project - and it has many versions that will respect the user privacy and data and won't share it with private servers from manufacturers or service providers.
+  Instead use
+Android app compatibility
+
+Although all of these Operating Systems are Android, app compatibility may not be perfect due to a lack of GMS (Google Mobile Services) which some apps require. You can check how well apps work with microg (a free and open source alternative to GMS) or no GMS at all with Plexus where the community can report how well android apps perform in those environments.
+
+Android Security
+
+Custom ROMs can improve your privacy the same as they can decrease the Android security, always use ROMs that support verified boot and encryption and DO NOT have root enabled by default. If possible, don't use userdebug builds. If your threat model requires security, buy a Google Pixel and install GrapheneOS on it. Read more on PrivacyGuides.
+
+
+GrapheneOS - GrapheneOS is an open source privacy and security focused mobile OS with Android app compatibility.
+CalyxOS - CalyxOS lets you have your cake and eat it too, with  "Privacy by Design".
+LineageOS - A free and open-source operating system for various devices, based on the Android mobile platform.
+DivestOS - LineageOS fork with increased security and privacy.
+Replicant - A free software mobile operating system putting the emphasis on freedom and privacy/security.
+
+Based on Linux
+
+UBPorts - Ubuntu Touch is the touch-friendly mobile version of Ubuntu.
+postmarketOS - Touch optimised and pre-configured version of Alpine Linux.
+PureOS - Operating system developed by purism for the Librem 5.
+Plasma Mobile - Plasma, in your pocket. Privacy-respecting, open source and secure phone ecosystem.
+mobian - Debian for mobile.
+
+Smart TV
+  Don't use Android TV, LG WebOS or any other privacy-invasive common TV OS that comes preinstalled with your TV.
+  Instead use
+
+Kodi - It is an entertainment hub that brings all your digital media together into a beautiful and user friendly package. It is 100% free and open source, very customisable and runs on a wide variety of devices.
+Jellyfin - Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.
+OSMC - OSMC is a free and open source media center built for the people, by the people.
+RaspberryCast - Transform your Raspberry Pi into a streaming device. Cast videos from mobile devices or computers to your TV.
+
+PC / MacOS
+  Don't use MS Windows or MacOS.
+  Instead use
+
+
+GNU/Linux - GNU/Linux is a family of mostly free and open source Operating Systems mostly developed by the community. If you don't know where to start, Linux Mint (Cinnamon) is a beginner friendly distribution. If you want to try it out without installing it to your computer, you can use a Live USB Stick. If you want to install Linux but keep your current operating System, you can set up dual boot.
+
+
+ReactOS - ReactOS is an operating system able to run Windows software, Windows drivers that looks-like Windows and is free and open source.
+
+
+Password Managers
+  Avoid
+
+LastPass
+Dashlane
+1Password
+
+   Instead use
+
+Bitwarden - An open source cloud based password manager.
+
+vaultwarden - Unofficial Bitwarden compatible self-hosted server, formerly known as bitwarden_rs.
+
+
+KeepassXC - Securely store passwords using industry standard encryption, no sync just storage.
+
+KeepassDX for Android.
+Strongbox for iOS.
+KeeWeb for Web and other platforms.
+
+
+Padloc - The last password manager you'll ever want to use.
+Passky - Simple, modern, lightweight, open-source and secure password manager.
+LessPass - Stateless password manager. Remember one master password to access your passwords. No sync needed.
+
+Payments
+  Avoid
+
+Visa / Mastercard
+
+WeChat
+_insertBigTechHere_Pay
+Bank payments (wire, SEPA, etc)
+
+   Instead use
+
+Monero - Monero is cash for a connected world. It's fast, private, untraceable and secure.
+Cash - Use person-to-person payments using physical notes and coins.
+
+USE WITH CAUTION
+
+Bitcoin - Bitcoin is not anonymous nor private. Bitcoin is traceable, transparent and pseudonymous. You need to be really careful when using Bitcoin so you don't leave any traces that can later be used against you to harm your privacy. See aantonop's video.
+
+Personal Finances
+FIAT
+
+My Expenses - Featureful GPL licenced Android Expense Tracking App.
+ProExpense - A simple free finance note to safely record daily expenses.
+IHateMoney - Manage your shared expenses, easily.
+Debitum - With Debitum you can track all kinds of IOUs, be it money or lent items.
+Nextcloud Cospend - A group/shared budget manager inspired by the great IHateMoney.
+
+MoneyBuster - Android client for Nextcloud Cospend and IHateMoney servers.
+
+
+GnuCash - GnuCash is personal and small-business financial-accounting software, freely licensed under the GNU GPL and available for GNU/Linux, BSD, Solaris, Mac OS X and Microsoft Windows.
+Budget Zen - Simple and Encrypted Budget Management.
+
+CRYPTO
+  Avoid using any exchange portfolio tracking or any app like Blockfolio as they do not respect your privacy in any way.
+  Instead use Rotki, an awesome, feature-rich and open source app:
+
+Rotki - An awesome portfolio tracking, analytics, accounting and tax reporting application that protects your privacy.
+
+Photo Editing and Management
+  Avoid
+
+
+VSCO
+
+   Instead use
+Web
+
+miniPaint - Open Source alternative to Photopea. miniPaint operates directly in the browser. Nothing will be sent to any server. Everything stays in your browser.
+
+Desktop
+
+GIMP - The Free & Open Source Image Editor.
+Krita - Krita is a free and open source digital painting application
+Czkawka - Multi functional app to find duplicates and similar images etc.
+DigiKam - Awesome Professional Photo Management with the Power of Open Source.
+Inkscape - Inkscape is a free and open-source vector graphics editor used to create vector images.
+ImageGlass - ImageGlass is a lightweight software application whose purpose is to help you view images in a clean and intuitive working environment.
+
+Android
+
+Pocket Paint - The standard image manipulation app for Catroid.
+Scrambled Exif - Remove Exif data from pictures before sharing them.
+ImagePipe - Reduces image size and removes exif-tags when sharing images on android devices.
+
+Photo Storage
+  Avoid
+
+Google Photos
+
+Google Photos Takeout Helper - Script that organizes the Google Takeout messy archive into one big chronological folder. Use this script to get out of Google Photos :).
+
+
+Amazon Photos
+
+   Instead use
+Self-hosted
+
+Immich (WIP) - Self-hosted photo and video backup solution directly from your mobile phone.
+LibrePhotos - Active OwnPhotos fork. Self hosted alternative to Google Photos.
+Nextcloud - The open source self-hosted productivity platform that keeps you in control. It has a Photos plugin to help you organize and visualize your photos.
+Photoprism - Feature rich server-based application for browsing, organizing and sharing your personal photo collection. The most similar to Google Photos.
+Pigallery2 - A self-hosted directory-first photo gallery website.
+Photoview - Photo gallery for self-hosted personal servers with Facial Recognition.
+Photostructure - Self-hosted photo library that makes browsing and sharing a lifetime of memories delightful.
+
+Third-party
+
+Crypt.ee - A private and encrypted place for all your photos, documents, notes and more.
+Ente - End-to-end encrypted storage for photos and videos. Open source clients.
+Stingle Photos - Open source solution that provides strong security, privacy and encryption to backup your photos.
+
+Local
+
+DigiKam - Awesome Professional Photo Management with the Power of Open Source.
+Photok - Photok is a free Photo-Safe. It stores your photos encrypted on your device and hides them from others.
+ImageGlass - ImageGlass is a lightweight software application whose purpose is to help you view images in a clean and intuitive working environment.
+
+Privacy Tools
+This section is dedicated to some tools that may help users analyze the privacy status on their devices.
+Desktop
+
+Whoami Project - Whoami provides enhanced privacy, anonymity for Debian and Arch based linux distributions.
+
+Android
+
+εxodus - The privacy audit platform for Android applications. Find how many trackers have your apps.
+
+ClassyShark3xodus - Checks apk(s) for known trackers (provided by Exodus) +other warnings and specs.
+
+
+Plexus - Remove the fear of Android app compatibility on de-Googled devices. Find if an app will work on a De-Googled device.
+Netguard - A simple way to block access to the internet per application.
+RethinkDNS + Firewall - An open-source, no-root firewall and DNS changer, with anti-censorship capabilities for Android 6+.
+
+Remote Access and Control
+  Avoid
+
+TeamViewer
+AnyDesk
+
+   Instead use
+
+RustDesk - Open-source remote desktop client software, written in Rust. Works out of the box, full control of your data, with no concerns about security.
+screego - Screen sharing for developers.
+Remmina - Remote access screen and file sharing to your desktop (RDP).
+UltraVNC - UltraVNC is a powerful, easy to use and free - remote pc access softwares - that can display the screen of another computer (via internet or network) on your own screen.
+MeshCentral - The open source, multi-platform, self-hosted, feature packed web site for remote device management.
+
+Search Engines
+  Avoid
+
+
+
+Bing
+
+
+
+   Instead use
+
+Whoogle Search - A self-hosted, ad-free, privacy-respecting Google metasearch engine.
+SearX - Privacy-respecting metasearch engine.
+
+SearxNG - Free internet metasearch engine which aggregates results from various search services and databases.
+
+
+DuckDuckGo - A privacy respecting search engine.
+Brave Search - A privacy respecting search engine with its own index, which for the most part doesn't rely on search engines like Google or Bing, but falls back on them if not enough results are found.
+
+Social Networks and Platforms
+
+Note: Alternative clients will share your IP with the service as they make direct requests.
+
+Alternative Frontends
+Alternative frontends are good to protect your individual privacy. You can still consume the contents of privative and privacy-harmful services with protection over your privacy and some anonimity. Even using most these alternative frontends, still, the privative services will receive requests about the content you are consuming (even not knowing it is you). This sitll harms the collective privacy and adds data to their algorithms in some ways.
+You can use these tools to automatically redirect any links to privacy-respecting alternative frontends:
+
+Farside - A smart redirecting gateway for various frontend services.
+LibRedirect - A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends.
+UntrackMe - Transform Youtube, Twitter & Instagram links to their free and open source alternatives.
+
+Instagram
+
+  Don't use Instagram (or at least the official client). Instagram is a very privacy-invasive app with biased results and feeds based on user profiles, it is also used as a manipulation tool and has a lot of censorship going against free speech. Lastly, it has an addictive and toxic UI design.
+  Instead use
+Alternatives to Instagram
+
+Pixelfed - Decentralized, federated and Open Source alternative to Instagram with posts, videos, stories, tags, etc.
+
+Alternative Instagram clients
+
+Barinsta - Android instagram alternative client with enhanced privacy features (Your requests will be sent to instagram).
+Bibliogram - Watch Instagram's public profile in a friendlier page that loads faster, gives downloadable images, eliminates ads and doesn't urge you to sign up.
+
+LBRY and Odysee
+
+Odysee website contains some trackers and is a heavy site. You can use these alternatives to avoid trackers and have a more minimalistic and lightweight UI:
+
+Librarian - An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
+
+YouTube
+
+  Don't use YouTube (or at least the official client). YouTube is very privacy invasive, it generates a very accurate profile based on your interests. Also it is a radicalization tool which shows biased content to users in order to get more engagement and to get them to watch more and more content creating an addiction. It never shows you alternative opinions to your ideology/bias. YouTube censors a lot. YouTube collects a LOT of your data: interests, free time, ideology, likes, dislikes, music taste, etc.
+  Instead use
+
+Peertube - A free, open and decentralized alternative to video platforms.
+
+SimpleerTube - A simple frontend for PeerTube with SepiaSearch Source.
+
+
+Odysee - Odysee is a video platform backed by the creators of lbry and uses the lbry blockchain protocol.
+DTube - A full-featured video sharing website, decentralized.
+
+  YouTube alternative frontends (web-based):
+
+Piped - An alternative privacy-friendly YouTube frontend which is efficient by design.
+
+ LibreTube - An alternative frontend for YouTube, for Android using Piped.
+
+
+Invidious - Alternative and privacy respecting YouTube frontend.
+ViewTube - ViewTube is an alternative privacy-friendly YouTube frontend written in Vue.js
+
+  YouTube alternative clients (apps):
+
+ NewPipe - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
+
+NewPipe x Sponsorblock - NewPipe fork that incorporates Sponsorblock.
+
+
+ SkyTube - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
+FreeTube - FreeTube is an open source desktop YouTube player built with privacy in mind. (Uses Local RSS API or Invidious for backend).
+ LibreTube - An alternative frontend for YouTube, for Android using Piped.
+Yattee - Alternative YouTube frontend for iOS, tvOS and macOS built with Invidious and Piped.
+
+TikTok
+
+  Avoid using TikTok, it is a toxic-designed application that harms not only the user privacy but also user integrity. You can take a read on these several posts.
+  TikTok alternative frontends (web-based):
+
+ProxiTok - Open source alternative frontend for TikTok
+
+Twitter
+
+  Avoid using Twitter official app / website. It tracks users and creates user profiles based on what they follow, retweet and like. Twitter harms and violates user privacy with their policies.
+  Alternatives to Twitter:
+
+Federated social networks: A federated social network isn't a single website like Twitter or Facebook, it's a network of thousands of communities operated by different organizations and individuals that provide a seamless social media experience.
+
+
+Pleroma - Pleroma is a free, federated social networking server built on open protocols.
+
+Soapbox - A frontend for Pleroma with a focus on custom branding and ease of use.
+ Husky - Android client for Pleroma and Mastodon.
+
+
+Mastodon - Free, federated microblogging social network built on open protocols.
+
+Mastodon Apps - List of Mastodon apps for Android, iOS, Web and Desktop.
+
+
+
+  Alternative Twitter Frontends:
+
+Nitter - Nitter is a free and open source alternative Twitter front-end focused on privacy.
+
+Fritter - A free, open-source Nitter client for Android.
+
+
+Feetter - Create, sync and manage Nitter feeds without registration from any device.
+Kizie - Cleaner, better and privacy focussed Twitter client for Web.
+
+Reddit
+
+  Try to avoid using Reddit or at least avoid their official clients as they are plenty of trackers, ads and share unnecessary user data with their servers.
+  Reddit alternatives:
+
+Lemmy - A federated and open alternative to Reddit in Rust.
+Aether - Peer-to-peer ephemeral public communities.
+SaidIt - Open source Reddit clone.
+
+  Privacy respecting Reddit clients:
+
+Libreddit - Private Reddit front-end written in Rust
+Teddit - Alternative Reddit front-end focused on privacy
+ Infinity - A beautiful Reddit client for Android.
+ Dawn - A gesture driven, open source reddit client for android
+  Slide - Slide is an open sourced, ad free Reddit browser for Android and iOS.
+
+Streaming Platforms (Twitch)
+
+   Avoid using platforms as Twitch, Patreon, YouTube as they are very privacy-invasive with your viewers (and you!). Instead, you can try using some self-hosted platforms that do take care of everyone's privacy.
+  Alternatives:
+
+Owncast - Take control over your live stream video by running it yourself. Streaming + chat out of the box.
+livego - Live video streaming server in golang.
+
+Wikipedia
+
+  Read more about the issue with Wikipedia on the Wikiless manifesto.
+  Alternatives:
+
+Wikiless - A free open source alternative Wikipedia front-end focused on privacy Source Code.
+
+Imgur
+
+  Imgur website is plenty of bloat, gifs, cookies, javascript and trackers.
+  Alternatives:
+
+Imgin - A minimalist, tor-friendly, read-only Imgur proxy insipired by software like Invidious, Nitter, and Bibliogram.
+rimgo - An alternative frontend for Imgur. Read-only, no-js, Based on rimgu and rewritten in Go.
+
+Medium
+
+  Medium website has Google trackers and ads.
+  Alternative frontends:
+
+Scribe - Medium alternative forntend inspired by Invidious.
+
+Teamworking Tools
+  Avoid
+
+
+Google Hangouts
+Microsoft Teams
+
+
+   Instead use
+
+Zulip - Chat for distributed teams.
+Revolt - User-first chat platform built with modern web technologies.
+Twake - Work in a team faster. Twake covers all of your organizational needs through a single platform.
+RocketChat - Control your communication, manage your data, and have your own collaboration platform to improve team productivity.
+Nextcloud Talk - Keep conversations private with Nextcloud Talk.
+Mattermost - Open-source Slack alternative.
+
+Alternative clients/modifications of Discord:
+
+Your IP and messages will still be shared and belong to Discord and they are not encrypted.
+Also using any of these modifications/clients violates the Discord ToS so, we are not responsible of any suspension or termination of your account but, this should not happen yet.
+
+
+OpenAsar - An open-source alternative of Discord desktop's app.asar that comes with a No Track function.
+GooseMod - A new store-driven Discord mod that comes with a Fucklytics plugin to block trackers.
+Cumcord - A Discord client mod for your Discord client mod, also you need to install a Fucklytics plugin to block trackers.
+BetterDiscord - A client modification for Discord, also you need to install a DoNotTrack plugin to block trackers.
+Kernel - A super small and fast Electron client mod with the most capability, also you need to install a Discord Utilities package to block trackers.
+Powercord - A lightweight client mod focused on simplicity and performance that comes with a No Track function.
+WebCord - A Discord and Fosscord API-less client made with the Electron.
+ Aliucord - A modification for the Android Discord app that fully disables the Discord Tracking.
+
+Translation
+  Avoid
+
+Google Translate
+DeepL
+Bing Translator
+
+  Instead use
+
+Libretranslate - Open Source Machine Translation - 100% Self-Hosted. No Limits. No Ties to Proprietary Services.
+Apertium - A free/open-source machine translation platform, runs offline on your computer
+Softcatala - Open Source Translation tool - Only Catalan/Spanish/English/French (uses apertium)
+TranslateLocally – Free/open-source neural MT, runs offline on your computer
+
+  Alternative Google Translate frontends
+
+Lingva - Alternative front-end for Google Translate. Demo.
+Simplytranslate - Alternative front-end for Google Translate and LibreTranslate. Demo
+
+Uncategorized
+
+Skymap - Open online planetarium program.
+CrowdSec - An open-source, modernized and collaborative fail2ban.
+Hetty - Hetty is an HTTP toolkit for security research. It aims to be an open-source alternative to Burp Suite Pro.
+Visited - Locally collect browsing history over browsers.
+
+Utilities
+
+Deskreen - Turn any device into a secondary screen for your computer.
+
+Video and Audio Conferencing
+  Avoid
+
+
+Skype
+Google Meet
+
+
+
+Clubhouse
+
+   Instead use
+
+Jitsi Meet - More secure, more flexible, and completely free video conferencing. No account needed, no installation needed.
+Jami - P2P audio and video conferences.
+BigBlueButton - BigBlueButton is a web conferencing system designed for online learning.
+PeerCalls - Group peer to peer video calls for everyone written in Go and TypeScript.
+Jam - Jam is your own open source Clubhouse for mini conferences, friends, communities.
+Mumble - Mumble is an open source voice communication application with advanced features.
+
+Alternative clients/modifications of Discord:
+
+Your IP and messages will still be shared and belong to Discord and they are not encrypted.
+Also using any of these modifications/clients violates the Discord ToS so, we are not responsible of any suspension or termination of your account but, this should not happen yet.
+
+
+OpenAsar - An open-source alternative of Discord desktop's app.asar that comes with a No Track function.
+GooseMod - A new store-driven Discord mod that comes with a Fucklytics plugin to block trackers.
+Cumcord - A Discord client mod for your Discord client mod, also you need to install a Fucklytics plugin to block trackers.
+BetterDiscord - A client modification for Discord, also you need to install a DoNotTrack plugin to block trackers.
+Kernel - A super small and fast Electron client mod with the most capability, also you need to install a Discord Utilities package to block trackers.
+Powercord - A lightweight client mod focused on simplicity and performance that comes with a No Track function.
+WebCord - A Discord and Fosscord API-less client made with the Electron.
+ Aliucord - A modification for the Android Discord app that fully disables the Discord Tracking.
+
+Video Editing
+  Avoid
+
+
+Sony Vegas
+DaVinci Resolve
+
+Such programs come filled with trackers and telemetry. You can get a full list of reasons of why you should not use Adobe here. Almost the same apply for many privative editors.
+   Instead use
+
+Olive Video Editor - Free open-source advanced non-linear video editor currently in Alpha state.
+kdenlive - Open source video editor. Free and easy to use for any purpose, forever.
+Shotcut - Shotcut is a free, open source and simple cross-platform video editor.
+
+Web Browser
+Android / iOS
+
+ Bromite
+ Vanadium - Privacy and security enhanced releases of Chromium for GrapheneOS.
+ Ungoogled Chromium
+ Privacy Browser
+Firefox - Android/iOS
+
+ Mull - Privacy hardened fork of Firefox for Android, with proprietary blobs removed.
+
+
+Tor Browser - Android/iOS
+SnowHaze - iOS
+
+Desktop
+
+Firefox - Open Source, independent browser. It needs some hardening and tweaking to achieve great privacy.
+
+LibreWolf - Privacy-focused Firefox fork.
+
+
+Ungoogled Chromium
+Tor Browser
+
+
+Controversial option:
+Brave - Android/iOS.
+Read more info on this related discussion and the Wikipedia page.
+
+Browser Addons
+Anti-tracking
+Please read about what the addon does before installing. If you don't understand what you are doing you could end up damaging your privacy. Also, too many addons can slow down your browsing experience.
+
+uBlock Origin - Free, open-source ad content blocker. Easy on CPU and memory.
+ClearURLs - This extension will automatically remove tracking elements from URLs to help protect your privacy when browsing the Internet and sharing links.
+Decentraleyes - Protects you against tracking through "free", centralized, content delivery.
+Cookie Autodelete - When a tab closes, any cookies not being used are automatically deleted. Prevent tracking by other cookies and add only the ones you trust.
+Smart Referer - Automatically hide HTTP and JavaScript Referer for cross-domain requests.
+~Privacy Redirect~ LibRedirect - A simple web extension that redirects Twitter, YouTube, Instagram, Google Maps and many more requests to privacy friendly alternatives. Former Privacy Redirect is no longer maintained, LibRedirect is a maintained fork.
+
+Tools
+
+Single File - Save a faithful copy of an entire web page in a single HTML file.
+
+Browser Sync
+
+xBrowserSync - Browser syncing as it should be: secure, anonymous and free!
+
+WebView
+
+ Bromite WebView - Bromite WebView is a version of Android System WebView with support for ad blocking and enhanced privacy.
+
+WebView Switcher - A tool for installing Bromite WebView on android 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Powered by Gitea Version: 1.16.9
+
+
+
+
+
+				English
+
+
+						bahasa Indonesia
+
+						Deutsch
+
+						English
+
+						español
+
+						français
+
+						italiano
+
+						latviešu
+
+						magyar nyelv
+
+						Nederlands
+
+						polski
+
+						Português de Portugal
+
+						português do Brasil
+
+						suomi
+
+						svenska
+
+						Türkçe
+
+						čeština
+
+						ελληνικά
+
+						български
+
+						русский
+
+						српски
+
+						Українська
+
+						فارسی
+
+						മലയാളം
+
+						日本語
+
+						简体中文
+
+						繁體中文（台灣）
+
+						繁體中文（香港）
+
+						한국어
+
+
+
+			Licenses
+			API
+			Website
+
+			Go1.18.3

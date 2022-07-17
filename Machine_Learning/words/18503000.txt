@@ -1,0 +1,549 @@
+
+
+
+
+
+
+Secure Computing Practices Links
+Contribute on Endchan
+Last update: 22 november 2017
+
+
+
+
+
+Hardware
+
+
+x86
+Any platform supported by Libreboot
+Use Thinkpad x60 or x200 if you can.
+It's stable and clean. The wifi 802.11 card (require closed embedded firmware), modem card, bluetooth card, infra-red and microphone should be removed. Speakers should
+also be removed (see side-channel attacks bellow). The dockstation input should be removed (Direct Memory Access). Some blobs still remain, as in the case of the Embedded Controller (use external keyboard for mitigation).
+
+You can also achieve good security on some boards using Coreboot, ME_Cleaner and tested with Sandsifter and CHIPSEC.
+Good examples are the Minnowboard Max and APU2.
+Be aware that x86 cannot be trusted.
+
+
+ARM
+SabreLite
+BeagleBone Black
+
+If you need something with more computational power:
+Radxa
+USB Armory (see Genode TrustZone)
+ODROID-C1
+Note: Reflash uBoot to make sure it's
+not altered.
+
+
+POWER
+TALOS Workstation
+
+
+MIPS
+Lemote Yeeloong
+
+
+SPARC64
+OpenSPARC supported platforms
+
+
+RISC-V
+HiFive1
+Looking hopefully to LowRISC
+
+
+Wireless connection
+Ralink devices from here
+Atheros9K
+DASH7
+
+
+Keyboard
+GH60
+
+
+Storage
+OpenSSD
+ODROID eMMC module
+Note: flash memory is not a good storage at all, according with bunnie. HDD is not a secure alternative too, see side-channel attacks.
+Write-once medias, such as optical discs (although not fully secure).
+
+
+Display
+HDMIPi
+ODROID-VU7
+
+
+Audio
+
+HiFiBerry
+
+
+GPU
+GPLGPU
+Note: The project failed. It's a good idea,
+though.
+
+
+One-Time Passphrase Device
+Nitrokey
+
+
+RNG Device
+OneRNG
+Z1FFER
+ChaosKey
+Though they are open hardware, don't fully trust these or any hardware-based crypto/rng.
+
+
+Misc
+TREZOR Bitcoin Wallet
+
+
+
+Side-Channel Attacks and Physical Security
+
+
+
+TEMPEST attacks:
+Faraday cages
+WaveBubble
+
+
+Accoustic Analysis:
+White noise generator machine
+Note: It has to be stochastic. Digital white-noise
+players won't work.
+Kscope (HDD turned into a microphone). The author provides this solution. I suppose a white noise machine would also work (if it's close enough to the machine to interfere with the vibrations).
+
+
+Power Analysis:
+Use DC power (battery)
+
+
+Shoulder Surfing and CCTV:
+Display Privacy Filter
+Changing keyboard layout might help with shoulder surfing or security cameras recording you.
+CV Dazzle (it looks stupid, we know)
+Don't use stickies. They can identify you or at least profile you. Remove serial number stickies too if your hardware have it.
+Don't go on public thinking you're such a "hacker", opening terminals and compiling stuff. People will call security guards. If you want to use public wifi, be stealth.
+
+
+Hardware manipulation:
+Coldboot attack (DDR2 only), EPROM reflashing, Direct-Memory Access attacks (such as PCILeech - your system should encrypt your memory anyway), all can be prevented if you have good physical security practices. For laptops, for example, Pelican has some rugged cases that can be adapted for it and Evva MCS is a very hard lock to pick.
+
+
+Storage firmware exploits, such as HDD hack and BadUSB. No solution yet, although you can debug and dump your firmware with the specific tools. See Psychson.
+
+
+Evil Made attack. Solutions are addressed here.
+
+
+Row Hammer. No widespread software solution. You can test if you're vulnerable.
+
+
+Printer tracking dots. Buy a printer without it. Or don't use paper at all.
+
+
+Jamming. Although there's a extensive military and academic research on this area, no solution seems to be in production (that we know of). Most of it use notch filtering. If you have more information about it, contact us on endchan.
+
+
+Hardware Trojan (manufacturer instruction set manipulation). Although there's some academic hypothesis about a solution, we can't do nothing about it now.
+
+
+About package shipping, be aware of Interdiction (shipping interception). We can't do nothing about it. You can pay in cash for a locked PO Box to prevent seller identification of your location, but we can't prevent interception. If you buy a open hardware, check if the product match the schematics provided and always reflash your firmware.
+
+
+Natural language analysis:
+Stylometrics analysis can be mitigated with Anonymouth (caution, it uses Java). A coded language or a constructed language (see Lojban) might help with that.
+
+
+
+
+
+And finally: have a gun with you. Nothing will help you if they use Rubberhose attack.
+
+
+
+
+Firmware
+
+
+Coreboot - Check ME_Cleaner
+Libreboot
+uBoot
+OpenEC (Caution, Google link)
+OpenBIOS
+OPAL firmware
+Magic Lantern
+Rockbox
+
+
+
+Operating Systems
+
+OpenBSD
+(set fulldisk encryption, also, if you're paranoid,
+you can mount the root filesystem to read-only and disable single-user mode)
+Heads
+Alpine Linux (with LUKS for FDE)
+
+
+
+VPS and Dedicated Servers
+
+You SHOULD NOT trust these companies. Use with
+caution and anonymize yourself.
+Vikings
+Netcup
+1984host
+FlokiNET
+
+
+
+VPN
+
+Get a VPS and do your own VPN:
+OpenIKED
+Look for WireGuard in future.
+
+
+
+SSH software
+
+OpenSSH
+Note: no need to use fail2ban on OpenBSD. You can use the option max-src-conn from the OpenBSD packet filter. Alternatively, see SEC and SSHGuard.
+
+
+
+
+Email
+
+Set your own server using OpenSMTPD. Use mutt client.
+
+
+
+HTTP server
+
+OpenBSD's httpd(8)
+Nostromo
+darkhttpd
+
+
+
+Firewall
+
+pf(4)
+Unbound
+
+Use emerging threats rules on pf. The most used dns blocklists are Abuse.ch, Spamhaus, Wizcrafts and Dshield. There's others here. You should definetly be blocking these autonomous systems if you want privacy:
+
+AS16509 (Amazon data mining)
+AS15169 (Google)
+AS21342 (Akamai/Facebook)
+AS14618 (Amazon)
+AS32934 (Facebook)
+AS54113 (Fastly data mining)
+
+To block it, use this command to transform AS to IP:
+
+
+$ whois -h whois.radb.net -- '-i origin ASxxxxx' | grep ^route
+
+
+Then, transform the range of IP's to CIDR. There's many ways to do it, just search. The range of CIDR should be used on pf(4) to block all traffic.
+After that, put the securelevel(7) to 2 and configure files the pf rule with chflags so it become immutable.
+
+
+
+
+
+DNS
+
+NSD (your own authoritative server) or just use OpenNIC Project
+The AS250.net also has a good DNS server with adblocking: 194.150.168.169
+Unbound
+DNScrypt
+
+
+
+Terminal Emulator
+
+tmux
+st
+
+
+
+Document Encryption
+
+reop
+
+
+
+File signing
+
+signify
+
+
+
+TLS encryption
+
+Let's Encrypt with acme-client
+
+
+
+Blog
+
+BCHS
+Jekyll
+
+
+
+Repository
+
+Pijul
+stagit
+CVS
+
+
+
+Anonymous Networks
+
+Tor
+Note: you have to setup Transparent Proxy on your system. Use sysctl to stop
+recording TCP timestamps. Disable ICMP service, since it can leak host time. Don't run tor as root. Configure resolv.conf to localhost, so you don't leak DNS (needs DNSPort). Put Tor on chroot. And compile it yourself.
+Write this to your torrc:
+
+Sandbox 1
+SafeSocks 1
+SocksPort IsolateClientProtocol, IsolateDestPort, IsolateDestAddr IsolateSOCKSAuth
+DNSPort 5555
+StrictNodes 1
+ExcludeNodes {US},{CA},{UK},{GB},{CN},{RU},{HK},{TW},{VN},{EG},{??},{AE},{AF},{AS},{AU},{BD},{BG},{BO},{BT},{CO},{CR},{CU},{CZ},{EC},{EE},{EH},{ES},{FM},{FR},{GF},{IE},{IL},{IN},{IO},{IQ},{IR},{IT},{JE},{JP},{KG},{KH},{KP},{KR},{KZ},{LA},{LB},{LR},{LT},{LU},{LY},{MX},{NZ},{PF},{PK},{PT},{RS},{SA},{SD},{SG},{SI},{SK},{SS},{SY},{TD},{TF},{TH},{TJ},{TK},{TM},{TN},{TR},{UA},{UG},{UM},{UZ},{VE}
+
+ExitNodes {IS},{FO},{CH},{DK},{SE},{DE},{EE},{NL},{NO},{AT},{BE},{FI},{MC},{PL},{RO}, {GL}
+
+This configuration will exclude countries that you probably don't want to route your traffic and ensure exitnodes to better places (such as Iceland). It may break your connections, though. Use at your own risk.
+
+
+
+
+Mesh Networks
+
+B.A.T.M.A.N. (Better Approach To Mobile Ad-hoc Networking)
+
+
+
+Application Filtering
+
+relayd
+Privoxy
+
+
+
+Traffic Analysis
+
+tcpdump
+traceroute
+nslookup
+whois
+GLASNOST (Traffic shaping and Deep Packet Inspection)
+
+
+
+Cryptocoins
+
+Dashcoin
+Monero
+Zcash
+Note: check also ADVcash or similar for bitcoin cards.
+Always buy bitcoin using money, and then use a BT Mixer (like this or coinjoin),
+through Tor. As always: bitcoin is not anonymous, be
+careful. That's why we're suggesting Dashcoin
+instead.
+
+
+
+Passphrase Manager
+
+If you can't or don't want to buy a Nitrokey, use this command:
+
+
+$ head -c 10 /dev/random | base64 > passphrase
+
+
+Use the file generated as your passphrase and further encrypt it using reop
+
+
+Alternatively, use pass
+
+
+
+MAC Address Spoofing
+
+In case you are using a public wifi, it is a good practice.
+For OpenBSD, use ifconfig
+macchiato
+
+
+
+Instant Communication
+
+Ricochet
+Briar (currenly in beta)
+Jitsi
+
+
+
+File Sharing
+
+You have to route through Tor for anonymity
+Tahoe-LAFS
+IPFS
+Retroshare
+
+
+
+
+RSS Readers
+
+Newsbeuter
+
+
+
+Web Browsers
+
+Links2
+lynx from OpenBSD ports
+Never use ECMAScript. Never.
+
+
+
+Media Players
+
+ffplay
+mpv
+
+
+
+PDF Reader
+
+mupdf
+from command line, without javascript decoding
+
+
+
+Window Manager
+
+CWM (use pledge(2) by default)
+
+
+
+Search Engines
+
+Host your own instance of Searx (disable Google crawling).
+
+
+
+Psychology
+
+Cognitive Bias Mitigation
+List of fallacies
+Intel analysis
+Be aware of Social Engineering Techniques and Astroturfing. See for example the Operation Earnest Voice and IRA.
+
+
+
+Misc
+
+
+Remove metadata from all files you post online. MAT works well. Rename your files using a random string. For videos, use ffmpeg to strip metadata:
+
+
+$ ffmpeg -metadata title="" -acodec copy -vcodec copy -i original.avi new.avi
+
+
+Always remove files securely using the command rm -rfP on OpenBSD or shred on other unix-like systems
+
+
+When possible, don't use X windowing system. It's a mess. Even Xenocara (OpenBSD fork of X). When you have no alternative, always init the session using tmux:
+
+
+$ tmux
+
+
+Then type this command inside it:
+
+
+$ startx & lock -np
+
+
+Go back to tmux, close the session (using control+b) and exit the user. This is a good way to prevent someone that has physical access to the machine from just pressing Ctrl+C on the tty and exit your X session (gaining complete shell access).
+
+
+Use slock instead of xlock (simple code)
+
+
+
+News
+
+Use your RSS reader and get news from:
+Lobsters and
+SoylentNews
+CVE
+EFF, CDT, Cryptome and Intellipedia
+Undeadly
+LibreCores and FirmwareSecurity (hardware and firmware)
+Lambda the Utimate (proglangs)
+
+Interesting projects:
+Robigalia and
+seL4
+Muen
+Genode
+Galois
+
+
+
+Mailing Lists
+
+OpenBSD-misc and OpenBSD-tech.
+SecLists
+Metzdowd and
+ModernCrypto
+
+
+
+Basic Tips
+
+Make sure to do your own router using OpenBSD and a SoC board
+Don't use hardware-based cryptography
+If you can, don't use wireless connections
+Don't use social media and don't expose your personal life on the internet.
+Smartphones are a government tool. Don't even try.
+
+
+
+TODO
+
+Show how to get Tor transparent proxy working on OpenBSD
+
+See more on traffic shaping and deep packet inspection. See this
+
+Put Wikipedia Snapshots on Searx, so you don't need to request the page everytime. See if plato.stanford.edu has a public snapshot.
+
+Show how to disable all protocols but TCP/IPv4 and Close all ports, allow only Tor (generally 9050 and 5555). Disable WoL (Wake on LAN) and INET6 using ifconfig.
+
+Show how to compile Links2 from ports. Disable cookies and iframe support. Add pledge privsep.
+
+Show how to mount the system as read-only and put everything on RAM, through MFS  - nosuid, nodev, noexec. [?]
+
+See if it's possible to adapt this or this to OpenBSD
+
+
+
+Disclaimer
+No disclaimer needed. You know you should use anything listed here at your own risk.

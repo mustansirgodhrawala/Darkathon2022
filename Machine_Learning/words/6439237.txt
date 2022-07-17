@@ -1,0 +1,782 @@
+
+
+
+
+
+
+
+
+
+
+
+
+				TorDex Forum
+				The official forum for TorDex
+				Skip to content
+
+
+
+
+
+
+
+						Search
+
+
+						Advanced search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Quick links
+
+
+
+
+
+
+
+
+									Unanswered topics
+
+
+
+
+									Active topics
+
+
+
+
+
+									Search
+
+
+
+
+
+
+
+
+
+
+
+				FAQ
+
+
+
+
+
+				Login
+
+
+
+
+
+
+
+
+
+
+							Board index
+
+
+
+
+
+
+
+					Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	TorDex Forum - Registration
+
+
+
+		Username:Length must be between 3 characters and 20 characters.
+
+
+
+		Password:Must be at least 6 characters long.
+
+
+
+		Confirm password:
+
+
+
+			Email address:
+
+
+
+
+
+
+		Language:
+		British English
+
+
+
+	My timezone:
+
+
+			Select current time
+							UTC-11:00 - 16 Jul 2022, 06:30
+							UTC-10:00 - 16 Jul 2022, 07:30
+							UTC-09:30 - 16 Jul 2022, 08:00
+							UTC-09:00 - 16 Jul 2022, 08:30
+							UTC-08:00 - 16 Jul 2022, 09:30
+							UTC-07:00 - 16 Jul 2022, 10:30
+							UTC-06:00 - 16 Jul 2022, 11:30
+							UTC-05:00 - 16 Jul 2022, 12:30
+							UTC-04:00 - 16 Jul 2022, 13:30
+							UTC-03:00 - 16 Jul 2022, 14:30
+							UTC-02:30 - 16 Jul 2022, 15:00
+							UTC-02:00 - 16 Jul 2022, 15:30
+							UTC-01:00 - 16 Jul 2022, 16:30
+							UTC+00:00 - 16 Jul 2022, 17:30
+							UTC+01:00 - 16 Jul 2022, 18:30
+							UTC+02:00 - 16 Jul 2022, 19:30
+							UTC+03:00 - 16 Jul 2022, 20:30
+							UTC+04:00 - 16 Jul 2022, 21:30
+							UTC+04:30 - 16 Jul 2022, 22:00
+							UTC+05:00 - 16 Jul 2022, 22:30
+							UTC+05:30 - 16 Jul 2022, 23:00
+							UTC+05:45 - 16 Jul 2022, 23:15
+							UTC+06:00 - 16 Jul 2022, 23:30
+							UTC+06:30 - 17 Jul 2022, 00:00
+							UTC+07:00 - 17 Jul 2022, 00:30
+							UTC+08:00 - 17 Jul 2022, 01:30
+							UTC+08:45 - 17 Jul 2022, 02:15
+							UTC+09:00 - 17 Jul 2022, 02:30
+							UTC+09:30 - 17 Jul 2022, 03:00
+							UTC+10:00 - 17 Jul 2022, 03:30
+							UTC+10:30 - 17 Jul 2022, 04:00
+							UTC+11:00 - 17 Jul 2022, 04:30
+							UTC+12:00 - 17 Jul 2022, 05:30
+							UTC+12:45 - 17 Jul 2022, 06:15
+							UTC+13:00 - 17 Jul 2022, 06:30
+							UTC+14:00 - 17 Jul 2022, 07:30
+
+
+
+
+
+			Select timezone
+
+								Pacific/Midway
+								Pacific/Niue
+								Pacific/Pago Pago
+
+
+								Pacific/Honolulu
+								Pacific/Rarotonga
+								Pacific/Tahiti
+
+
+								Pacific/Marquesas
+
+
+								America/Adak
+								Pacific/Gambier
+
+
+								America/Anchorage
+								America/Juneau
+								America/Metlakatla
+								America/Nome
+								America/Sitka
+								America/Yakutat
+								Pacific/Pitcairn
+
+
+								America/Creston
+								America/Dawson
+								America/Dawson Creek
+								America/Fort_Nelson
+								America/Hermosillo
+								America/Los Angeles
+								America/Phoenix
+								America/Tijuana
+								America/Vancouver
+								America/Whitehorse
+
+
+								America/Belize
+								America/Boise
+								America/Cambridge Bay
+								America/Chihuahua
+								America/Costa Rica
+								America/Denver
+								America/Edmonton
+								America/El Salvador
+								America/Guatemala
+								America/Inuvik
+								America/Managua
+								America/Mazatlan
+								America/Ojinaga
+								America/Regina
+								America/Swift Current
+								America/Tegucigalpa
+								America/Yellowknife
+								Pacific/Easter
+								Pacific/Galapagos
+
+
+								America/Atikokan
+								America/Bahia Banderas
+								America/Bogota
+								America/Cancun
+								America/Cayman
+								America/Chicago
+								America/Eirunepe
+								America/Guayaquil
+								America/Indiana/Knox
+								America/Indiana/Tell City
+								America/Jamaica
+								America/Lima
+								America/Matamoros
+								America/Menominee
+								America/Merida
+								America/Mexico City
+								America/Monterrey
+								America/North Dakota/Beulah
+								America/North Dakota/Center
+								America/North Dakota/New Salem
+								America/Panama
+								America/Rainy River
+								America/Rankin Inlet
+								America/Resolute
+								America/Rio Branco
+								America/Winnipeg
+
+
+								America/Anguilla
+								America/Antigua
+								America/Aruba
+								America/Asuncion
+								America/Barbados
+								America/Blanc-Sablon
+								America/Boa Vista
+								America/Campo Grande
+								America/Caracas
+								America/Cuiaba
+								America/Curacao
+								America/Detroit
+								America/Dominica
+								America/Grand Turk
+								America/Grenada
+								America/Guadeloupe
+								America/Guyana
+								America/Havana
+								America/Indiana/Indianapolis
+								America/Indiana/Marengo
+								America/Indiana/Petersburg
+								America/Indiana/Vevay
+								America/Indiana/Vincennes
+								America/Indiana/Winamac
+								America/Iqaluit
+								America/Kentucky/Louisville
+								America/Kentucky/Monticello
+								America/Kralendijk
+								America/La Paz
+								America/Lower Princes
+								America/Manaus
+								America/Marigot
+								America/Martinique
+								America/Montserrat
+								America/Nassau
+								America/New York
+								America/Nipigon
+								America/Pangnirtung
+								America/Port-au-Prince
+								America/Port of Spain
+								America/Porto Velho
+								America/Puerto Rico
+								America/Santiago
+								America/Santo Domingo
+								America/St. Barthelemy
+								America/St. Kitts
+								America/St. Lucia
+								America/St. Thomas
+								America/St. Vincent
+								America/Thunder Bay
+								America/Toronto
+								America/Tortola
+
+
+								America/Araguaina
+								America/Argentina/Buenos Aires
+								America/Argentina/Catamarca
+								America/Argentina/Cordoba
+								America/Argentina/Jujuy
+								America/Argentina/La Rioja
+								America/Argentina/Mendoza
+								America/Argentina/Rio Gallegos
+								America/Argentina/Salta
+								America/Argentina/San Juan
+								America/Argentina/San Luis
+								America/Argentina/Tucuman
+								America/Argentina/Ushuaia
+								America/Bahia
+								America/Belem
+								America/Cayenne
+								America/Fortaleza
+								America/Glace Bay
+								America/Goose Bay
+								America/Halifax
+								America/Maceio
+								America/Moncton
+								America/Montevideo
+								America/Paramaribo
+								America/Punta_Arenas
+								America/Recife
+								America/Santarem
+								America/Sao Paulo
+								America/Thule
+								Antarctica/Palmer
+								Antarctica/Rothera
+								Atlantic/Bermuda
+								Atlantic/Stanley
+
+
+								America/St. Johns
+
+
+								America/Miquelon
+								America/Noronha
+								America/Nuuk
+								Atlantic/South Georgia
+
+
+								Atlantic/Cape Verde
+
+
+								UTC
+								Africa/Abidjan
+								Africa/Accra
+								Africa/Bamako
+								Africa/Banjul
+								Africa/Bissau
+								Africa/Conakry
+								Africa/Dakar
+								Africa/Freetown
+								Africa/Lome
+								Africa/Monrovia
+								Africa/Nouakchott
+								Africa/Ouagadougou
+								Africa/Sao Tome
+								America/Danmarkshavn
+								America/Scoresbysund
+								Atlantic/Azores
+								Atlantic/Reykjavik
+								Atlantic/St. Helena
+
+
+								Africa/Algiers
+								Africa/Bangui
+								Africa/Brazzaville
+								Africa/Casablanca
+								Africa/Douala
+								Africa/El Aaiun
+								Africa/Kinshasa
+								Africa/Lagos
+								Africa/Libreville
+								Africa/Luanda
+								Africa/Malabo
+								Africa/Ndjamena
+								Africa/Niamey
+								Africa/Porto-Novo
+								Africa/Tunis
+								Atlantic/Canary
+								Atlantic/Faroe
+								Atlantic/Madeira
+								Europe/Dublin
+								Europe/Guernsey
+								Europe/Isle of Man
+								Europe/Jersey
+								Europe/Lisbon
+								Europe/London
+
+
+								Africa/Blantyre
+								Africa/Bujumbura
+								Africa/Cairo
+								Africa/Ceuta
+								Africa/Gaborone
+								Africa/Harare
+								Africa/Johannesburg
+								Africa/Juba
+								Africa/Khartoum
+								Africa/Kigali
+								Africa/Lubumbashi
+								Africa/Lusaka
+								Africa/Maputo
+								Africa/Maseru
+								Africa/Mbabane
+								Africa/Tripoli
+								Africa/Windhoek
+								Antarctica/Troll
+								Arctic/Longyearbyen
+								Europe/Amsterdam
+								Europe/Andorra
+								Europe/Belgrade
+								Europe/Berlin
+								Europe/Bratislava
+								Europe/Brussels
+								Europe/Budapest
+								Europe/Busingen
+								Europe/Copenhagen
+								Europe/Gibraltar
+								Europe/Kaliningrad
+								Europe/Ljubljana
+								Europe/Luxembourg
+								Europe/Madrid
+								Europe/Malta
+								Europe/Monaco
+								Europe/Oslo
+								Europe/Paris
+								Europe/Podgorica
+								Europe/Prague
+								Europe/Rome
+								Europe/San Marino
+								Europe/Sarajevo
+								Europe/Skopje
+								Europe/Stockholm
+								Europe/Tirane
+								Europe/Vaduz
+								Europe/Vatican
+								Europe/Vienna
+								Europe/Warsaw
+								Europe/Zagreb
+								Europe/Zurich
+
+
+								Africa/Addis Ababa
+								Africa/Asmara
+								Africa/Dar es Salaam
+								Africa/Djibouti
+								Africa/Kampala
+								Africa/Mogadishu
+								Africa/Nairobi
+								Antarctica/Syowa
+								Asia/Aden
+								Asia/Amman
+								Asia/Baghdad
+								Asia/Bahrain
+								Asia/Beirut
+								Asia/Damascus
+								Asia/Famagusta
+								Asia/Gaza
+								Asia/Hebron
+								Asia/Jerusalem
+								Asia/Kuwait
+								Asia/Nicosia
+								Asia/Qatar
+								Asia/Riyadh
+								Europe/Athens
+								Europe/Bucharest
+								Europe/Chisinau
+								Europe/Helsinki
+								Europe/Istanbul
+								Europe/Kiev
+								Europe/Kirov
+								Europe/Mariehamn
+								Europe/Minsk
+								Europe/Moscow
+								Europe/Riga
+								Europe/Simferopol
+								Europe/Sofia
+								Europe/Tallinn
+								Europe/Uzhgorod
+								Europe/Vilnius
+								Europe/Volgograd
+								Europe/Zaporozhye
+								Indian/Antananarivo
+								Indian/Comoro
+								Indian/Mayotte
+
+
+								Asia/Baku
+								Asia/Dubai
+								Asia/Muscat
+								Asia/Tbilisi
+								Asia/Yerevan
+								Europe/Astrakhan
+								Europe/Samara
+								Europe/Saratov
+								Europe/Ulyanovsk
+								Indian/Mahe
+								Indian/Mauritius
+								Indian/Reunion
+
+
+								Asia/Kabul
+								Asia/Tehran
+
+
+								Antarctica/Mawson
+								Asia/Aqtau
+								Asia/Aqtobe
+								Asia/Ashgabat
+								Asia/Atyrau
+								Asia/Dushanbe
+								Asia/Karachi
+								Asia/Oral
+								Asia/Qyzylorda
+								Asia/Samarkand
+								Asia/Tashkent
+								Asia/Yekaterinburg
+								Indian/Kerguelen
+								Indian/Maldives
+
+
+								Asia/Colombo
+								Asia/Kolkata
+
+
+								Asia/Kathmandu
+
+
+								Antarctica/Vostok
+								Asia/Almaty
+								Asia/Bishkek
+								Asia/Dhaka
+								Asia/Omsk
+								Asia/Qostanay
+								Asia/Thimphu
+								Asia/Urumqi
+								Indian/Chagos
+
+
+								Asia/Yangon
+								Indian/Cocos
+
+
+								Antarctica/Davis
+								Asia/Bangkok
+								Asia/Barnaul
+								Asia/Ho Chi Minh
+								Asia/Hovd
+								Asia/Jakarta
+								Asia/Krasnoyarsk
+								Asia/Novokuznetsk
+								Asia/Novosibirsk
+								Asia/Phnom Penh
+								Asia/Pontianak
+								Asia/Tomsk
+								Asia/Vientiane
+								Indian/Christmas
+
+
+								Asia/Brunei
+								Asia/Choibalsan
+								Asia/Hong Kong
+								Asia/Irkutsk
+								Asia/Kuala Lumpur
+								Asia/Kuching
+								Asia/Macau
+								Asia/Makassar
+								Asia/Manila
+								Asia/Shanghai
+								Asia/Singapore
+								Asia/Taipei
+								Asia/Ulaanbaatar
+								Australia/Perth
+
+
+								Australia/Eucla
+
+
+								Asia/Chita
+								Asia/Dili
+								Asia/Jayapura
+								Asia/Khandyga
+								Asia/Pyongyang
+								Asia/Seoul
+								Asia/Tokyo
+								Asia/Yakutsk
+								Pacific/Palau
+
+
+								Australia/Adelaide
+								Australia/Broken Hill
+								Australia/Darwin
+
+
+								Antarctica/DumontDUrville
+								Antarctica/Macquarie
+								Asia/Ust-Nera
+								Asia/Vladivostok
+								Australia/Brisbane
+								Australia/Hobart
+								Australia/Lindeman
+								Australia/Melbourne
+								Australia/Sydney
+								Pacific/Chuuk
+								Pacific/Guam
+								Pacific/Port Moresby
+								Pacific/Saipan
+
+
+								Australia/Lord Howe
+
+
+								Antarctica/Casey
+								Asia/Magadan
+								Asia/Sakhalin
+								Asia/Srednekolymsk
+								Pacific/Bougainville
+								Pacific/Efate
+								Pacific/Guadalcanal
+								Pacific/Kosrae
+								Pacific/Norfolk
+								Pacific/Noumea
+								Pacific/Pohnpei
+
+
+								Antarctica/McMurdo
+								Asia/Anadyr
+								Asia/Kamchatka
+								Pacific/Auckland
+								Pacific/Fiji
+								Pacific/Funafuti
+								Pacific/Kwajalein
+								Pacific/Majuro
+								Pacific/Nauru
+								Pacific/Tarawa
+								Pacific/Wake
+								Pacific/Wallis
+
+
+								Pacific/Chatham
+
+
+								Pacific/Apia
+								Pacific/Enderbury
+								Pacific/Fakaofo
+								Pacific/Tongatapu
+
+
+								Pacific/Kiritimati
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Confirmation of registration
+
+
+
+
+		Confirmation code:
+
+
+
+		Enter the code exactly as it appears. All letters are case insensitive.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									Board index
+
+				All times are UTC
+
+
+					Delete cookies
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
+
+
+
+
+
+
+		 

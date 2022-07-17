@@ -1,0 +1,361 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 +1 877-718-0801
+
+            About Us
+            Articles
+            Contact
+            Privacy
+
+
+
+                 +1-404S-PRIVEX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Upgrading your server's network speeds / bandwidth policy + Fully Unmetered (FUM) Traffic Pricing
+
+
+
+
+
+
+                    Table of Contents
+Network Upgrades / Unmetered Traffic in Privex's Autonomous Regions (SE + NL)
+Mixed Traffic Bandwidth Pricing
+High Transit Bandwidth Pricing
+
+
+Network Upgrades / Unmetered Traffic in Germany and Finland (DE / FI)
+DE/FI Dedicated Servers
+DE/FI Virtual Servers
+
+
+
+
+
+
+
+
+                Network Upgrades / Unmetered Traffic in Privex's Autonomous Regions (SE + NL)
+In Privex's autonomous regions (where Privex controls both the hardware and the network), we charge customers for fully unmetered (FUM) networking based on the cost of our transit and peering - as well as based on which/how many major networks we peer with (peering with more major networks = less traffic going over expensive transit).
+This is generally priced per megabit per month, with the price per megabit getting lower as you buy higher speeds (because transit and peering connections are usually cheaper per mbit - the higher the port speed you buy).
+Virtual servers (VPS) in our autonomous regions, generally come with either 100mbps or 1gbps (1,000mbps) Effectively Unmetered (EUM), while Dedicated Servers generally come with either 1gbps Fair Use, or 1gbps Effectively Unmetered (unless you opted for an alternative bandwidth plan at the time of ordering).
+Mixed Traffic Bandwidth Pricing
+
+
+
+Speed (mbps)
+SE $/mbit/mo
+NL $/mbit/mo
+SE Total $/mo
+NL Total $/mo
+
+
+
+
+100
+$0.65
+$0.50
+$65.00
+$50.00
+
+
+300
+$0.62
+$0.33
+$186.00
+$99.00
+
+
+500
+$0.40
+$0.30
+$200.00
+$150.00
+
+
+1,000
+$0.35
+$0.20
+$350.00
+$200.00
+
+
+2,000
+$0.30
+$0.15
+$600.00
+$300.00
+
+
+5,000
+$0.25
+$0.10
+$1,250.00
+$500.00
+
+
+10,000
+$0.20
+$0.08
+$2,000.00
+$800.00
+
+
+
+
+The "Mixed Traffic" pricing applies if at least 40% of your traffic (on average) goes over Privex's peering, whether via an internet exchange (STHIX, SOL-IX, AMS-IX, etc.), or a direct in-datacenter peer.
+This is because a connection to an Internet Exchange such as STHIX/AMS-IX, generally has a MUCH lower monthly cost per mbit compared to a transit provider.
+In some cases, it can even be FREE for us to peer at certain non-profit exchanges, such as SOL-IX - which only required us to pay a relatively small one-time connection fee for our 10gbps port, after which - we're allowed to keep our port and use the exchange without paying a monthly fee or any other extra costs (unless we wanted a second exchange port, or wanted to upgrade our port to a faster speed).
+High Transit Bandwidth Pricing
+
+
+
+Speed (mbps)
+SE $/mbit/mo
+NL $/mbit/mo
+SE Total $/mo
+NL Total $/mo
+
+
+
+
+100
+$0.65
+$0.50
+$65.00
+$50.00
+
+
+300
+$0.62
+$0.40
+$186.00
+$120.00
+
+
+500
+$0.50
+$0.35
+$250.00
+$175.00
+
+
+1,000
+$0.45
+$0.32
+$450.00
+$320.00
+
+
+2,000
+$0.42
+$0.30
+$840.00
+$600.00
+
+
+5,000
+$0.40
+$0.25
+$2,000.00
+$1,250.00
+
+
+10,000
+$0.38
+$0.20
+$3,800.00
+$2,000.00
+
+
+
+
+The "High Transit" pricing applies if 60% or more of your traffic (on average) goes over Privex's
+transit providers (e.g. Hurricane Electric, Obenetwork).
+As explained in the "Mixed Traffic" notes, transit is generally much more expensive per mbit than peering, so if we believe/detect that a majority of your traffic would go via our transit rather than peering, then you'd need to pay for your unmetered bandwidth at the "High Transit" rates.
+
+Network Upgrades / Unmetered Traffic in Germany and Finland (DE / FI)
+DE/FI Dedicated Servers
+All dedicated servers in Germany and Finland come with FULLY UNMETERED (FUM) 1gbps (1,000 megabits per second) as standard, meaning you can max out the provided 1gbps 24/7 if you need to do so :)
+If you want to upgrade your DE/FI dedicated server to 10gbps, you can do so for an additional US$70/mo (price is subject to change. please contact us to find out the current monthly price for a DE/FI dedicated server 10gbps upgrade).
+The $70/mo includes both the 10gbps uplink (internet connection), and upgrading the server's NIC (Network Card) to a 10gbps NIC. Please be aware that the 10gbps upgrade is NOT unmetered. A DE/FI dedicated server upgraded to 10gbps will have 20TB per month of inclusive bandwidth, while if you use more than 20TB of bandwidth in a single month, you'll be charged at ~$2.00/TB on your next month's bill.
+DE/FI Virtual Servers
+For virtual servers in DE/FI, you receive fully unmetered (FUM) 100mbps (100 megabits per second) as standard, but you can upgrade to a higher unmetered speed up to 1gbps for $0.15/mbit/mo ($15/mo per extra 100mbps).
+While it's possible to upgrade a DE/FI virtual server to up to 8gbps, we can't guarantee that we'll have a DE/FI VPS node with a 10gbps NIC available at the time of your request. Note that 8gbps is the maximum speed for a VPS's network connection, as to ensure at least 2gbps of leftover network capacity for other VPS's on the same node.
+Assuming we have a DE/FI VPS node with 10gbps available (or are able to upgrade an existing VPS node to 10gbps), the cost for an 8gbps connection on your VPS is estimated to be US $300/mo + $200 one-time setup charge, with 100TB of bandwidth included (bandwidth usage over 100TB will be charged at $2/TB).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Company
+
+
+
+
+                    Who We Are
+
+
+
+
+
+                    Privacy Policy
+
+
+
+
+
+
+                Service
+
+
+                  FAQ
+
+
+                  Peering with Privex
+
+
+
+                        Tor Hidden Service
+
+
+
+
+                      
+                    I2P Eepsite (privex.i2p)
+
+
+
+
+                        Tor Exit Policy
+
+
+
+
+
+
+                Connect
+
+
+                 Twitter
+
+
+                 GitHub
+
+
+
+                     Hive Blog (Peakd)
+
+
+
+                 Discord
+
+
+                 Matrix Chat
+
+
+
+
+
+
+
+
+
+
+                    We Accept
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Bitcoin
+
+
+                    Litecoin
+
+
+                    HIVE / HBD
+
+
+                    Monero (XMR)
+
+
+                    EOS
+
+
+                    Dogecoin
+
+
+
+
+
+
+
+
+
+
+            Trustpilot
+
+
+
+
+        Privex Belize © 2020. Putting your privacy first.

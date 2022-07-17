@@ -1,0 +1,88 @@
+
+
+ UDN
+ Ukrainian Data Network
+
+
+
+    Index
+
+
+    Virtual
+
+
+    Dedicated
+
+
+    Colocation
+
+
+    Network
+
+
+    FAQ
+
+
+    Payment
+
+
+    Contact
+
+
+  Bitcoin Exchange
+
+ Due to the situation in Ukraine, this service is
+  heavily disrupted.
+
+ We're interested in providing people with convenient ways to buy and sell
+    Bitcoin with us.
+ We have had experience with the following payment systems:
+
+
+
+    SWIFT
+    :
+    Reliable. Fast enough.
+
+
+    SEPA
+    :
+    Reliable and fast. Transactions may be pretty much instant, but not always.
+
+
+    Skrill
+    :
+    Works but sometimes ask additional verifications after they have
+        already charged the money.
+
+
+    TransferWise
+    :
+    Fast and surprisingly reliable. The support is also friendly.
+
+
+    WorldRemit
+    :
+    Trash. Sends threats to remove mentions of their company
+        then ban you from using their service if you don't comply.
+
+
+    Western Union, MoneyGram, RIA...
+    :
+    Generally work, but sometimes cancel transfers while they are being picked
+        up and never explain as to why this has happened.
+
+
+    Cash
+    :
+    Always works and very reliable!
+
+
+    Xoom
+    :
+    Works. This is a Paypal service, it has been surprisingly reliable so far.
+
+
+
+ The rate is usually around 4.5% based on market indicators. Please
+    contact us for more details!

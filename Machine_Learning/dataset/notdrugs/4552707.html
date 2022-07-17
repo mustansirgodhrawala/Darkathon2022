@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Onion routing - The Hidden Wiki
+  </title>
+  <script>
+   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"3c104d131aeb4ec94719ea2d","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Onion_routing","wgTitle":"Onion routing","wgCurRevisionId":12,"wgRevisionId":12,"wgArticleId":3,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with broken file links","Anonymity networks","Routing","Computer-related introductions in 1998","Network architecture","Cryptography","Cryptographic protocols","Onion routing","Key-based routing","Mix networks"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Onion_routing",
+"wgRelevantArticleId":3,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});
+  </script>
+  <link href="/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+  <script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook">
+  </script>
+  <meta content="MediaWiki 1.37.1" name="generator"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <link href="/opensearch_desc.php" rel="search" title="The Hidden Wiki (en)" type="application/opensearchdescription+xml"/>
+  <link href="http://hiddenwlh5loxyocpfeejxp5za3lkbse5e7kzjmfkflir5jqsoyu2dad.onion/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="The Hidden Wiki Atom feed" type="application/atom+xml"/>
+ </head>
+ <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Onion_routing rootpage-Onion_routing skin-monobook action-view skin--responsive">
+  <div id="globalWrapper">
+   <div id="column-content">
+    <div class="mw-body" id="content" role="main">
+     <a id="top">
+     </a>
+     <div id="siteNotice">
+     </div>
+     <div class="mw-indicators">
+     </div>
+     <h1 class="firstHeading" id="firstHeading">
+      Onion routing
+     </h1>
+     <div class="monobook-body" id="bodyContent">
+      <div id="siteSub">
+       From The Hidden Wiki
+      </div>
+      <div id="contentSub">
+      </div>
+      <div id="jump-to-nav">
+      </div>
+      <a class="mw-jump-link" href="#column-one">
+       Jump to navigation
+      </a>
+      <a class="mw-jump-link" href="#searchInput">
+       Jump to search
+      </a>
+      <!-- start content -->
+      <div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+       <div class="mw-parser-output">
+        <p>
+         <a class="new" href="/index.php?title=Template:Short_description&amp;action=edit&amp;redlink=1" title="Template:Short description (page does not exist)">
+          Template:Short description
+         </a>
+         <a class="new" href="/index.php?title=Template:Update&amp;action=edit&amp;redlink=1" title="Template:Update (page does not exist)">
+          Template:Update
+         </a>
+        </p>
+        <div class="thumb tright">
+         <div class="thumbinner" style="width:132px;">
+          <a href="/index.php?title=File:Onion_diagram.svg" title="File:Onion diagram.svg">
+           File:Onion diagram.svg
+          </a>
+          <div class="thumbcaption">
+           In this example onion, the source of the data sends the onion to Router A, which removes a layer of encryption to learn only where to send it next and where it came from (though it does not know if the sender is the origin or just another node). Router A sends it to Router B, which decrypts another layer to learn its next destination. Router B sends it to Router C, which removes the final layer of encryption and transmits the original message to its destination.
+          </div>
+         </div>
+        </div>
+        <p>
+         <b>
+          Onion routing
+         </b>
+         is a technique for
+         <a href="/index.php?title=Anonymity" title="Anonymity">
+          anonymous
+         </a>
+         communication over a
+         <a href="/index.php?title=Computer_network" title="Computer network">
+          computer network
+         </a>
+         . In an
+         <b>
+          onion network
+         </b>
+         , messages are encapsulated in layers of
+         <a href="/index.php?title=Encryption" title="Encryption">
+          encryption
+         </a>
+         , analogous to layers of an
+         <a href="/index.php?title=Onion" title="Onion">
+          onion
+         </a>
+         . The encrypted data is transmitted through a series of
+         <a href="/index.php?title=Network_nodes" title="Network nodes">
+          network nodes
+         </a>
+         called
+         <b>
+          onion routers
+         </b>
+         , each of which "peels" away from a single layer, uncovering the data's next destination. When the final layer is decrypted, the message arrives at its destination. The sender remains anonymous because each intermediary knows only the location of the immediately preceding and following nodes.&lt;ref&gt;Goldschlag D., Reed M., Syverson P. (1999.)
+         <a class="external text" href="http://www.onion-router.net/Publications/CACM-1999.pdf" rel="nofollow">
+          Onion Routing for Anonymous and Private Internet Connections
+         </a>
+         , Onion Router.&lt;/ref&gt; While onion routing provides a high level of security and anonymity, there are methods to break the anonymity of this technique, such as timing analysis.&lt;ref name=":0"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation">
+         <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
+         <div class="toctitle" dir="ltr" lang="en">
+          <h2 id="mw-toc-heading">
+           Contents
+          </h2>
+          <span class="toctogglespan">
+           <label class="toctogglelabel" for="toctogglecheckbox">
+           </label>
+          </span>
+         </div>
+         <ul>
+          <li class="toclevel-1 tocsection-1">
+           <a href="#Development_and_implementation">
+            <span class="tocnumber">
+             1
+            </span>
+            <span class="toctext">
+             Development and implementation
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-2">
+           <a href="#Data_structure">
+            <span class="tocnumber">
+             2
+            </span>
+            <span class="toctext">
+             Data structure
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-3">
+             <a href="#Onion_creation_and_transmission">
+              <span class="tocnumber">
+               2.1
+              </span>
+              <span class="toctext">
+               Onion creation and transmission
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-4">
+           <a href="#Weaknesses">
+            <span class="tocnumber">
+             3
+            </span>
+            <span class="toctext">
+             Weaknesses
+            </span>
+           </a>
+           <ul>
+            <li class="toclevel-2 tocsection-5">
+             <a href="#Timing_analysis">
+              <span class="tocnumber">
+               3.1
+              </span>
+              <span class="toctext">
+               Timing analysis
+              </span>
+             </a>
+            </li>
+            <li class="toclevel-2 tocsection-6">
+             <a href="#Exit_node_vulnerability">
+              <span class="tocnumber">
+               3.2
+              </span>
+              <span class="toctext">
+               Exit node vulnerability
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="toclevel-1 tocsection-7">
+           <a href="#See_also">
+            <span class="tocnumber">
+             4
+            </span>
+            <span class="toctext">
+             See also
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-8">
+           <a href="#References">
+            <span class="tocnumber">
+             5
+            </span>
+            <span class="toctext">
+             References
+            </span>
+           </a>
+          </li>
+          <li class="toclevel-1 tocsection-9">
+           <a href="#External_links">
+            <span class="tocnumber">
+             6
+            </span>
+            <span class="toctext">
+             External links
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <h2>
+         <span class="mw-headline" id="Development_and_implementation">
+          Development and implementation
+         </span>
+        </h2>
+        <p>
+         Onion routing was developed in the mid-1990s at the
+         <a class="new" href="/index.php?title=U.S._Naval_Research_Laboratory&amp;action=edit&amp;redlink=1" title="U.S. Naval Research Laboratory (page does not exist)">
+          U.S. Naval Research Laboratory
+         </a>
+         by employees
+         <a class="new" href="/index.php?title=Paul_Syverson&amp;action=edit&amp;redlink=1" title="Paul Syverson (page does not exist)">
+          Paul Syverson
+         </a>
+         , Michael G. Reed, and David Goldschlag&lt;ref&gt;Reed M. G., Syverson P. F., Goldschlag D. M. (1998) "Anonymous connections and onion routing", IEEE Journal on Selected Areas in Communications, 16(4):482–494.&lt;/ref&gt;&lt;ref name=patent&gt;
+         <a class="new" href="/index.php?title=Template:Cite_patent&amp;action=edit&amp;redlink=1" title="Template:Cite patent (page does not exist)">
+          Template:Cite patent
+         </a>
+         &lt;/ref&gt; to protect U.S.
+         <a class="new" href="/index.php?title=United_States_Intelligence_Community&amp;action=edit&amp;redlink=1" title="United States Intelligence Community (page does not exist)">
+          intelligence
+         </a>
+         communications online.&lt;ref name="pando"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_news&amp;action=edit&amp;redlink=1" title="Template:Cite news (page does not exist)">
+          Template:Cite news
+         </a>
+         &lt;/ref&gt; It was further developed by the
+         <a class="new" href="/index.php?title=Defense_Advanced_Research_Projects_Agency&amp;action=edit&amp;redlink=1" title="Defense Advanced Research Projects Agency (page does not exist)">
+          Defense Advanced Research Projects Agency
+         </a>
+         (DARPA) and patented by the Navy in 1998.&lt;ref name=patent/&gt;&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt;&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         This method was publicly released by the same employees through publishing an article in the IEEE journal of communications the same year. It depicted the use of the method to protect the user from the network and outside observers who eavesdrop and conduct traffic analysis attacks. The most important part of this research is the configurations and applications of onion routing on the existing e-services, such as
+         <a class="new" href="/index.php?title=Virtual_private_network&amp;action=edit&amp;redlink=1" title="Virtual private network (page does not exist)">
+          Virtual private network
+         </a>
+         ,
+         <a class="new" href="/index.php?title=Web-browsing&amp;action=edit&amp;redlink=1" title="Web-browsing (page does not exist)">
+          Web-browsing
+         </a>
+         ,
+         <a class="new" href="/index.php?title=Email&amp;action=edit&amp;redlink=1" title="Email (page does not exist)">
+          Email
+         </a>
+         ,
+         <a class="new" href="/index.php?title=Remote_login&amp;action=edit&amp;redlink=1" title="Remote login (page does not exist)">
+          Remote login
+         </a>
+         , and
+         <a class="new" href="/index.php?title=Electronic_cash&amp;action=edit&amp;redlink=1" title="Electronic cash (page does not exist)">
+          Electronic cash
+         </a>
+         .&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         Based on the existing onion routing technology, computer scientists
+         <a class="new" href="/index.php?title=Roger_Dingledine&amp;action=edit&amp;redlink=1" title="Roger Dingledine (page does not exist)">
+          Roger Dingledine
+         </a>
+         and
+         <a class="new" href="/index.php?title=Nick_Mathewson&amp;action=edit&amp;redlink=1" title="Nick Mathewson (page does not exist)">
+          Nick Mathewson
+         </a>
+         joined
+         <a class="new" href="/index.php?title=Paul_Syverson&amp;action=edit&amp;redlink=1" title="Paul Syverson (page does not exist)">
+          Paul Syverson
+         </a>
+         in 2002 to develop what has become the largest and best-known implementation of onion routing, then called The Onion Routing project (
+         <a class="new" href="/index.php?title=Tor_(network)&amp;action=edit&amp;redlink=1" title="Tor (network) (page does not exist)">
+          Tor
+         </a>
+         project).
+        </p>
+        <p>
+         After the Naval Research Laboratory released the code for Tor under a
+         <a class="new" href="/index.php?title=Free_license&amp;action=edit&amp;redlink=1" title="Free license (page does not exist)">
+          free license
+         </a>
+         ,&lt;ref name="pando" /&gt;&lt;ref name="prealpha"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_mailing_list&amp;action=edit&amp;redlink=1" title="Template:Cite mailing list (page does not exist)">
+          Template:Cite mailing list
+         </a>
+         &lt;/ref&gt;&lt;ref name="torproject-faq"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Dingledine, Mathewson and five others founded The Tor Project as a
+         <a class="new" href="/index.php?title=501(c)(3)&amp;action=edit&amp;redlink=1" title="501(c)(3) (page does not exist)">
+          non-profit organization
+         </a>
+         in 2006, with the
+         <a class="new" href="/index.php?title=Fiscal_sponsorship&amp;action=edit&amp;redlink=1" title="Fiscal sponsorship (page does not exist)">
+          financial support
+         </a>
+         of the
+         <a class="new" href="/index.php?title=Electronic_Frontier_Foundation&amp;action=edit&amp;redlink=1" title="Electronic Frontier Foundation (page does not exist)">
+          Electronic Frontier Foundation
+         </a>
+         and several other organizations.&lt;ref name="torproject-sponsors"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;&lt;ref name="wp-attacks-prompt"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_news&amp;action=edit&amp;redlink=1" title="Template:Cite news (page does not exist)">
+          Template:Cite news
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h2>
+         <span class="mw-headline" id="Data_structure">
+          Data structure
+         </span>
+        </h2>
+        <p>
+         Metaphorically, an onion is the data structure formed by "wrapping" a message with successive layers of encryption to be decrypted ("peeled" or "unwrapped") by as many intermediary computers as there are layers before arriving at its destination. The original message remains hidden as it is transferred from one node to the next, and no intermediary knows both the origin and final destination of the data, allowing the sender to remain anonymous.&lt;ref name=tor-design&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Onion_creation_and_transmission">
+          Onion creation and transmission
+         </span>
+        </h3>
+        <p>
+         To create and transmit an onion, the originator selects a set of nodes from a list provided by a "directory node". The chosen nodes are arranged into a path, called a "chain" or "circuit", through which the message will be transmitted. To preserve the anonymity of the sender, no node in the circuit is able to tell whether the node before it is the originator or another intermediary like itself. Likewise, no node in the circuit is able to tell how many other nodes are in the circuit and only the final node, the "exit node", is able to determine its own location in the chain.&lt;ref name=tor-design/&gt;
+        </p>
+        <p>
+         Using
+         <a class="new" href="/index.php?title=Asymmetric_key_cryptography&amp;action=edit&amp;redlink=1" title="Asymmetric key cryptography (page does not exist)">
+          asymmetric key cryptography
+         </a>
+         , the originator obtains a
+         <a class="new" href="/index.php?title=Public_key&amp;action=edit&amp;redlink=1" title="Public key (page does not exist)">
+          public key
+         </a>
+         from the directory node to send an encrypted message to the first ("entry") node, establishing a connection  and a
+         <a class="new" href="/index.php?title=Shared_secret&amp;action=edit&amp;redlink=1" title="Shared secret (page does not exist)">
+          shared secret
+         </a>
+         ("session key"). Using the established encrypted link to the entry node, the originator can then relay a message through the first node to a second node in the chain using encryption that only the second node, and not the first, can decrypt. When the second node receives the message, it establishes a connection with the first node. While this extends the encrypted link from the originator, the second node cannot determine whether the first node is the originator or just another node in the circuit. The originator can then send a message through the first and second nodes to a third node, encrypted such that only the third node is able to decrypt it. The third, as with the second, becomes linked to the originator but connects only with the second. This process can be repeated to build larger and larger chains, but is typically limited to preserve performance.&lt;ref name=tor-design/&gt;
+        </p>
+        <p>
+         When the chain is complete, the originator can send data over the Internet anonymously. When the final recipient of the data sends data back, the intermediary nodes maintain the same link back to the originator, with data again layered, but in reverse such that the final node this time adds the first layer of encryption and the first node adds the last layer of encryption before sending the data, for example a web page, to the originator, who is able to decrypt all layers.&lt;ref name=tor-design/&gt;
+        </p>
+        <h2>
+         <span class="mw-headline" id="Weaknesses">
+          Weaknesses
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/index.php?title=Template:See_also&amp;action=edit&amp;redlink=1" title="Template:See also (page does not exist)">
+          Template:See also
+         </a>
+        </p>
+        <h3>
+         <span class="mw-headline" id="Timing_analysis">
+          Timing analysis
+         </span>
+        </h3>
+        <p>
+         <a class="new" href="/index.php?title=Template:See_also&amp;action=edit&amp;redlink=1" title="Template:See also (page does not exist)">
+          Template:See also
+         </a>
+         One of the reasons why the typical Internet connections are not considered anonymous, is the ability of
+         <a class="new" href="/index.php?title=Internet_service_provider&amp;action=edit&amp;redlink=1" title="Internet service provider (page does not exist)">
+          Internet service providers
+         </a>
+         to trace and log connections between computers. For example, when a person accesses a particular website, the data itself may be secured through a connection like
+         <a class="new" href="/index.php?title=HTTPS&amp;action=edit&amp;redlink=1" title="HTTPS (page does not exist)">
+          HTTPS
+         </a>
+         such that the user's password, emails, or other content is not visible to an outside party, but there is a record of the connection itself, what time it occurred, and the amount of data transferred. Onion routing creates and obscures a path between two computers such that there's no discernible connection directly from a person to a website, but there still exists records of connections between computers. Traffic analysis searches those records of connections made by a potential originator and tries to match timing and data transfers to connections made to a potential recipient. If an attacker has compromised both ends of a route, a sender may be seen to have transferred an amount of data to an unknown computer a specified amount of seconds before a different unknown computer transferred data of the same exact size to a particular destination.&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_book&amp;action=edit&amp;redlink=1" title="Template:Cite book (page does not exist)">
+          Template:Cite book
+         </a>
+         &lt;/ref&gt;&lt;ref name="Dingledine"&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; Factors that may facilitate traffic analysis include nodes failing or leaving the network&lt;ref name="Dingledine"/&gt; and a compromised node keeping track of a session as it occurs when chains are periodically rebuilt.&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         <a class="new" href="/index.php?title=Garlic_routing&amp;action=edit&amp;redlink=1" title="Garlic routing (page does not exist)">
+          Garlic routing
+         </a>
+         is a variant of onion routing associated with the
+         <a class="new" href="/index.php?title=I2P&amp;action=edit&amp;redlink=1" title="I2P (page does not exist)">
+          I2P
+         </a>
+         network that encrypts multiple messages together, which both increases the speed of data transfer and makes it more difficult&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt; for attackers to perform traffic analysis.&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_journal&amp;action=edit&amp;redlink=1" title="Template:Cite journal (page does not exist)">
+          Template:Cite journal
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <h3>
+         <span class="mw-headline" id="Exit_node_vulnerability">
+          Exit node vulnerability
+         </span>
+        </h3>
+        <p>
+         Although the message being sent is transmitted inside several layers of encryption, the job of the exit node, as the final node in the chain, is to decrypt the final layer and deliver the message to the recipient. A compromised exit node is thus able to acquire the raw data being transmitted, potentially including passwords, private messages, bank account numbers, and other forms of personal information. Dan Egerstad, a Swedish researcher, used such an attack to collect the passwords of over 100 email accounts related to foreign embassies.&lt;ref&gt;
+         <a class="new" href="/index.php?title=Template:Cite_web&amp;action=edit&amp;redlink=1" title="Template:Cite web (page does not exist)">
+          Template:Cite web
+         </a>
+         &lt;/ref&gt;
+        </p>
+        <p>
+         Exit node vulnerabilities are similar to those on unsecured wireless networks, where the data being transmitted by a user on the network may be intercepted by another user or by the router operator. Both issues are solved by using a secure end-to-end connection like
+         <a class="new" href="/index.php?title=Transport_Layer_Security&amp;action=edit&amp;redlink=1" title="Transport Layer Security (page does not exist)">
+          SSL
+         </a>
+         or
+         <a class="new" href="/index.php?title=Secure_HTTP&amp;action=edit&amp;redlink=1" title="Secure HTTP (page does not exist)">
+          secure HTTP
+         </a>
+         (S-HTTP). If there is
+         <a class="new" href="/index.php?title=End-to-end_encryption&amp;action=edit&amp;redlink=1" title="End-to-end encryption (page does not exist)">
+          end-to-end encryption
+         </a>
+         between the sender and the recipient, and the sender isn't lured into trusting a false SSL certificate offered by the exit node, then not even the last intermediary can view the original message.
+        </p>
+        <h2>
+         <span class="mw-headline" id="See_also">
+          See also
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/index.php?title=Template:Div_col&amp;action=edit&amp;redlink=1" title="Template:Div col (page does not exist)">
+          Template:Div col
+         </a>
+        </p>
+        <ul>
+         <li>
+          <a class="new" href="/index.php?title=Anonymous_remailer&amp;action=edit&amp;redlink=1" title="Anonymous remailer (page does not exist)">
+           Anonymous remailer
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Bitblinder&amp;action=edit&amp;redlink=1" title="Bitblinder (page does not exist)">
+           Bitblinder
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Chaum_mixes&amp;action=edit&amp;redlink=1" title="Chaum mixes (page does not exist)">
+           Chaum mixes
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Cryptography&amp;action=edit&amp;redlink=1" title="Cryptography (page does not exist)">
+           Cryptography
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Degree_of_anonymity&amp;action=edit&amp;redlink=1" title="Degree of anonymity (page does not exist)">
+           Degree of anonymity
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Diffie%E2%80%93Hellman_key_exchange&amp;action=edit&amp;redlink=1" title="Diffie–Hellman key exchange (page does not exist)">
+           Diffie–Hellman key exchange
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Java_Anon_Proxy&amp;action=edit&amp;redlink=1" title="Java Anon Proxy (page does not exist)">
+           Java Anon Proxy
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Key-based_routing&amp;action=edit&amp;redlink=1" title="Key-based routing (page does not exist)">
+           Key-based routing
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Matryoshka_doll&amp;action=edit&amp;redlink=1" title="Matryoshka doll (page does not exist)">
+           Matryoshka doll
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Mix_network&amp;action=edit&amp;redlink=1" title="Mix network (page does not exist)">
+           Mix network
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Mixmaster_anonymous_remailer&amp;action=edit&amp;redlink=1" title="Mixmaster anonymous remailer (page does not exist)">
+           Mixmaster anonymous remailer
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Public-key_cryptography&amp;action=edit&amp;redlink=1" title="Public-key cryptography (page does not exist)">
+           Public-key cryptography
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Proxy_server&amp;action=edit&amp;redlink=1" title="Proxy server (page does not exist)">
+           Proxy server
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Tox_(protocol)&amp;action=edit&amp;redlink=1" title="Tox (protocol) (page does not exist)">
+           Tox
+          </a>
+          – implements onion routing
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Tribler&amp;action=edit&amp;redlink=1" title="Tribler (page does not exist)">
+           Tribler
+          </a>
+          – implements onion routing
+         </li>
+        </ul>
+        <p>
+         <a class="new" href="/index.php?title=Template:Div_col_end&amp;action=edit&amp;redlink=1" title="Template:Div col end (page does not exist)">
+          Template:Div col end
+         </a>
+        </p>
+        <h2>
+         <span class="mw-headline" id="References">
+          References
+         </span>
+        </h2>
+        <p>
+         <a class="new" href="/index.php?title=Template:Reflist&amp;action=edit&amp;redlink=1" title="Template:Reflist (page does not exist)">
+          Template:Reflist
+         </a>
+         –
+        </p>
+        <h2>
+         <span class="mw-headline" id="External_links">
+          External links
+         </span>
+        </h2>
+        <ul>
+         <li>
+          <a class="external text" href="http://www.onion-router.net" rel="nofollow">
+           Onion-Router.net
+          </a>
+          – site formerly hosted at the Center for High Assurance Computer Systems of the
+          <a class="new" href="/index.php?title=U.S._Naval_Research_Laboratory&amp;action=edit&amp;redlink=1" title="U.S. Naval Research Laboratory (page does not exist)">
+           U.S. Naval Research Laboratory
+          </a>
+         </li>
+         <li>
+          Sylverson, P. F.; Goldschlag, D. M.; Reed, M. G. (1997).
+          <a class="external text" href="http://www.onion-router.net/Publications/SSP-1997.pdf" rel="nofollow">
+           "Anonymous Connections and Onion Routing"
+          </a>
+          .
+          <i>
+           IEEE Symposium on Security and Privacy
+          </i>
+          .
+          <a class="new" href="/index.php?title=Template:Citeseerx&amp;action=edit&amp;redlink=1" title="Template:Citeseerx (page does not exist)">
+           Template:Citeseerx
+          </a>
+          – The original paper from the
+          <a class="new" href="/index.php?title=Naval_Research_Laboratory&amp;action=edit&amp;redlink=1" title="Naval Research Laboratory (page does not exist)">
+           Naval Research Laboratory
+          </a>
+         </li>
+        </ul>
+        <p>
+         <a class="new" href="/index.php?title=Template:Tor_(anonymity_network)&amp;action=edit&amp;redlink=1" title="Template:Tor (anonymity network) (page does not exist)">
+          Template:Tor (anonymity network)
+         </a>
+        </p>
+        <!--
+NewPP limit report
+Cached time: 20220716170500
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.064 seconds
+Real time usage: 0.070 seconds
+Preprocessor visited node count: 149/1000000
+Post‐expand include size: 626/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+        <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    9.090      1 -total
+  7.82%    0.711      1 Template:Short_description
+  7.17%    0.652      1 Template:Update
+  6.49%    0.590      1 Template:Cite_patent
+  6.39%    0.581      1 Template:Cite_mailing_list
+  6.28%    0.571      1 Template:Tor_(anonymity_network)
+  5.73%    0.521      1 Template:Citeseerx
+  5.27%    0.479      4 Template:Cite_book
+  5.26%    0.478      2 Template:See_also
+  5.20%    0.473      6 Template:Cite_web
+-->
+        <!-- Saved in parser cache with key 7773GrofLa777HrT5991238Uf666WP:pcache:idhash:3-0!canonical and timestamp 20220716170500 and revision id 12. Serialized with JSON.
+ -->
+       </div>
+       <div class="printfooter">
+        Retrieved from "
+        <a dir="ltr" href="http://hiddenwlh5loxyocpfeejxp5za3lkbse5e7kzjmfkflir5jqsoyu2dad.onion/index.php?title=Onion_routing&amp;oldid=12">
+         http://hiddenwlh5loxyocpfeejxp5za3lkbse5e7kzjmfkflir5jqsoyu2dad.onion/index.php?title=Onion_routing&amp;oldid=12
+        </a>
+        "
+       </div>
+      </div>
+      <div class="catlinks" data-mw="interface" id="catlinks">
+       <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+        <a href="/index.php?title=Special:Categories" title="Special:Categories">
+         Categories
+        </a>
+        :
+        <ul>
+         <li>
+          <a class="new" href="/index.php?title=Category:Pages_with_broken_file_links&amp;action=edit&amp;redlink=1" title="Category:Pages with broken file links (page does not exist)">
+           Pages with broken file links
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Anonymity_networks&amp;action=edit&amp;redlink=1" title="Category:Anonymity networks (page does not exist)">
+           Anonymity networks
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Routing&amp;action=edit&amp;redlink=1" title="Category:Routing (page does not exist)">
+           Routing
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Computer-related_introductions_in_1998&amp;action=edit&amp;redlink=1" title="Category:Computer-related introductions in 1998 (page does not exist)">
+           Computer-related introductions in 1998
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Network_architecture&amp;action=edit&amp;redlink=1" title="Category:Network architecture (page does not exist)">
+           Network architecture
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Cryptography&amp;action=edit&amp;redlink=1" title="Category:Cryptography (page does not exist)">
+           Cryptography
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Cryptographic_protocols&amp;action=edit&amp;redlink=1" title="Category:Cryptographic protocols (page does not exist)">
+           Cryptographic protocols
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Onion_routing&amp;action=edit&amp;redlink=1" title="Category:Onion routing (page does not exist)">
+           Onion routing
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Key-based_routing&amp;action=edit&amp;redlink=1" title="Category:Key-based routing (page does not exist)">
+           Key-based routing
+          </a>
+         </li>
+         <li>
+          <a class="new" href="/index.php?title=Category:Mix_networks&amp;action=edit&amp;redlink=1" title="Category:Mix networks (page does not exist)">
+           Mix networks
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- end content -->
+      <div class="visualClear">
+      </div>
+     </div>
+    </div>
+    <div class="visualClear">
+    </div>
+   </div>
+   <div id="column-one">
+    <h2>
+     Navigation menu
+    </h2>
+    <div aria-labelledby="p-cactions-label" class="portlet" id="p-cactions" role="navigation">
+     <h3 id="p-cactions-label">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul>
+       <li class="selected mw-list-item" id="ca-nstab-main">
+        <a accesskey="c" href="/index.php?title=Onion_routing" title="View the content page [c]">
+         Page
+        </a>
+       </li>
+       <li class="new mw-list-item" id="ca-talk">
+        <a accesskey="t" href="/index.php?title=Talk:Onion_routing&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]">
+         Discussion
+        </a>
+       </li>
+       <li class="selected mw-list-item" id="ca-view">
+        <a href="/index.php?title=Onion_routing">
+         View
+        </a>
+       </li>
+       <li class="mw-list-item" id="ca-viewsource">
+        <a accesskey="e" href="/index.php?title=Onion_routing&amp;action=edit" title="This page is protected.
+You can view its source [e]">
+         View source
+        </a>
+       </li>
+       <li class="mw-list-item" id="ca-history">
+        <a accesskey="h" href="/index.php?title=Onion_routing&amp;action=history" title="Past revisions of this page [h]">
+         History
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-cactions-mobile-label" class="portlet mw-portlet mw-portlet-cactions-mobile" id="p-cactions-mobile" role="navigation">
+     <h3 id="p-cactions-mobile-label">
+      Page actions
+     </h3>
+     <div class="pBody">
+      <ul>
+       <li class="selected mw-list-item" id="main-mobile">
+        <a href="/index.php?title=Onion_routing" title="Page">
+         Page
+        </a>
+       </li>
+       <li class="new mw-list-item" id="talk-mobile">
+        <a href="/index.php?title=Talk:Onion_routing&amp;action=edit&amp;redlink=1" title=" (page does not exist)">
+         Discussion
+        </a>
+       </li>
+       <li class="mw-list-item" id="ca-more">
+        <a href="#p-cactions">
+         More
+        </a>
+       </li>
+       <li class="mw-list-item" id="ca-tools">
+        <a href="#p-tb" title="Tools">
+         Tools
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div aria-labelledby="p-personal-label" class="portlet" id="p-personal" role="navigation">
+     <h3 id="p-personal-label">
+      Personal tools
+     </h3>
+     <div class="pBody">
+      <ul>
+       <li class="mw-list-item" id="pt-anonuserpage">
+        Not logged in
+       </li>
+       <li class="mw-list-item" id="pt-anontalk">
+        <a accesskey="n" href="/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]">
+         Talk
+        </a>
+       </li>
+       <li class="mw-list-item" id="pt-anoncontribs">
+        <a accesskey="y" href="/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]">
+         Contributions
+        </a>
+       </li>
+       <li class="mw-list-item" id="pt-login">
+        <a accesskey="o" href="/index.php?title=Special:UserLogin&amp;returnto=Onion+routing" title="You are encouraged to log in; however, it is not mandatory [o]">
+         Log in
+        </a>
+       </li>
+       <li class="mw-list-item" id="pt-createaccount">
+        <a href="/index.php?title=Special:RequestAccount" title="You are encouraged to create an account and log in; however, it is not mandatory">
+         Request account
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="portlet" id="p-logo" role="banner">
+     <a class="mw-wiki-logo" href="/index.php?title=Main_Page">
+     </a>
+    </div>
+    <div id="sidebar">
+     <div aria-labelledby="p-navigation-label" class="portlet mw-portlet mw-portlet-navigation" id="p-navigation" role="navigation">
+      <h3 id="p-navigation-label">
+       Navigation
+      </h3>
+      <div class="pBody">
+       <ul>
+        <li class="mw-list-item" id="n-mainpage-description">
+         <a accesskey="z" href="/index.php?title=Main_Page" title="Visit the main page [z]">
+          Main page
+         </a>
+        </li>
+        <li class="mw-list-item" id="n-recentchanges">
+         <a accesskey="r" href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]">
+          Recent changes
+         </a>
+        </li>
+        <li class="mw-list-item" id="n-randompage">
+         <a accesskey="x" href="/index.php?title=Special:Random" title="Load a random page [x]">
+          Random page
+         </a>
+        </li>
+        <li class="mw-list-item" id="n-help-mediawiki">
+         <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">
+          Help about MediaWiki
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="portlet" id="p-search" role="search">
+      <h3 dir="ltr" id="p-search-label" lang="en-GB">
+       <label for="searchInput">
+        Search
+       </label>
+      </h3>
+      <div class="pBody" id="searchBody">
+       <form action="/index.php" id="searchform">
+        <input name="title" type="hidden" value="Special:Search"/>
+        <input accesskey="f" autocapitalize="sentences" id="searchInput" name="search" placeholder="Search The Hidden Wiki" title="Search The Hidden Wiki [f]" type="search"/>
+        <input class="searchButton" id="searchButton" name="go" title="Go to a page with this exact name if it exists" type="submit" value="Go"/>
+        <input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Search the pages for this text" type="submit" value="Search"/>
+       </form>
+      </div>
+     </div>
+     <div aria-labelledby="p-tb-label" class="portlet mw-portlet mw-portlet-tb" id="p-tb" role="navigation">
+      <h3 id="p-tb-label">
+       Tools
+      </h3>
+      <div class="pBody">
+       <ul>
+        <li class="mw-list-item" id="t-whatlinkshere">
+         <a accesskey="j" href="/index.php?title=Special:WhatLinksHere/Onion_routing" title="A list of all wiki pages that link here [j]">
+          What links here
+         </a>
+        </li>
+        <li class="mw-list-item" id="t-recentchangeslinked">
+         <a accesskey="k" href="/index.php?title=Special:RecentChangesLinked/Onion_routing" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+          Related changes
+         </a>
+        </li>
+        <li class="mw-list-item" id="t-specialpages">
+         <a accesskey="q" href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]">
+          Special pages
+         </a>
+        </li>
+        <li class="mw-list-item" id="t-print">
+         <a accesskey="p" href="javascript:print();" rel="alternate" title="Printable version of this page [p]">
+          Printable version
+         </a>
+        </li>
+        <li class="mw-list-item" id="t-permalink">
+         <a href="/index.php?title=Onion_routing&amp;oldid=12" title="Permanent link to this revision of the page">
+          Permanent link
+         </a>
+        </li>
+        <li class="mw-list-item" id="t-info">
+         <a href="/index.php?title=Onion_routing&amp;action=info" title="More information about this page">
+          Page information
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <a class="menu-toggle" href="#sidebar" id="sidebar-toggle" title="Jump to navigation">
+    </a>
+    <a class="menu-toggle" href="#p-personal" id="p-personal-toggle" title="user tools">
+    </a>
+    <a class="menu-toggle" href="#globalWrapper" id="globalWrapper-toggle" title="back to top">
+    </a>
+   </div>
+   <!-- end of the left (by default at least) column -->
+   <div class="visualClear">
+   </div>
+   <div class="mw-footer" id="footer" role="contentinfo">
+    <div class="footer-icons" id="f-poweredbyico">
+     <a href="https://www.mediawiki.org/">
+      <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/resources/assets/poweredby_mediawiki_88x31.png" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88"/>
+     </a>
+    </div>
+    <ul id="f-list">
+     <li id="lastmod">
+      This page was last edited on 3 February 2022, at 09:21.
+     </li>
+     <li id="privacy">
+      <a href="/index.php?title=The_Hidden_Wiki:Privacy_policy" title="The Hidden Wiki:Privacy policy">
+       Privacy policy
+      </a>
+     </li>
+     <li id="about">
+      <a href="/index.php?title=The_Hidden_Wiki:About" title="The Hidden Wiki:About">
+       About The Hidden Wiki
+      </a>
+     </li>
+     <li id="disclaimer">
+      <a href="/index.php?title=The_Hidden_Wiki:General_disclaimer" title="The Hidden Wiki:General disclaimer">
+       Disclaimers
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.064","walltime":"0.070","ppvisitednodes":{"value":149,"limit":1000000},"postexpandincludesize":{"value":626,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    9.090      1 -total","  7.82%    0.711      1 Template:Short_description","  7.17%    0.652      1 Template:Update","  6.49%    0.590      1 Template:Cite_patent","  6.39%    0.581      1 Template:Cite_mailing_list","  6.28%    0.571      1 Template:Tor_(anonymity_network)","  5.73%    0.521      1 Template:Citeseerx","  5.27%    0.479      4 Template:Cite_book","  5.26%    0.478      2 Template:See_also","  5.20%    0.473      6 Template:Cite_web"]},"cachereport":{"timestamp":"20220716170500","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":412});});
+  </script>
+ </body>
+</html>

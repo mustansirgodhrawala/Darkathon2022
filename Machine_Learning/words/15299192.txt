@@ -1,0 +1,311 @@
+
+
+
+
+        VendorCC
+
+
+                Home
+                FAQ
+                Support
+
+
+
+
+
+            Welcome To VendorCC!
+            The High Quality Credit Card Dump Shop.
+
+
+
+
+            News: For the entier month of Jul all cards are just $5 USD! This offer will end at the end of the month.
+
+
+
+                        Last Updated 16-Jul-2022
+
+
+
+
+
+
+                        Available Fullz (23)
+
+
+
+
+                                        CCID
+                                        Type
+                                        Country
+                                        SSN/SIN
+                                        Email
+                                        DOB
+                                        Price (USD)
+
+
+
+
+
+                                        6733
+                                        Visa
+                                        United kingdom
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        6124
+                                        Visa
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        6112
+                                        Amex
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        6003
+                                        Visa
+                                        United states
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        6000
+                                        Mastercard
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5998
+                                        Amex
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5995
+                                        Visa
+                                        Australia
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5964
+                                        Amex
+                                        United states
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5719
+                                        Mastercard
+                                        United states
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5643
+                                        Visa
+                                        Canada
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5499
+                                        Visa
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5433
+                                        Visa
+                                        Canada
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5324
+                                        Mastercard
+                                        Canada
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5194
+                                        Visa
+                                        United states
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5134
+                                        Visa
+                                        Canada
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        5112
+                                        Visa
+                                        Canada
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4981
+                                        Mastercard
+                                        Canada
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4916
+                                        Visa
+                                        Australia
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4511
+                                        Visa
+                                        Australia
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4343
+                                        Amex
+                                        United states
+                                        Last 4
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4332
+                                        Visa
+                                        Australia
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4276
+                                        Visa
+                                        United kingdom
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+                                        4187
+                                        Visa
+                                        United states
+                                        Full
+                                        Yes
+                                        Yes
+                                        $5.00
+                                        Buy Now
+
+
+
+
+
+
+
+
+
+
+
+            VendorCC FAQ
+
+
+                    Q: What format do I get the data in?
+                    A: Standard dumps format "cardnumber|M/Y|CVV|type" and so on.
+
+                    Q: Where can I use the card info?
+                    A: You can use the card info on any credit card processor.
+
+                    Q: Do I get a refund if the card is dead?
+                    A: Yes, please contact support. We will not refund you if you get the card frozen.
+
+
+                    Q: What does "email", "SSN/SIN" and "DOB" mean?
+                    A: Email means you receive the email address of the card holder, SSN is the social security number either the entier number or last 4 numbers. DOB is the date of birth of the card holder.
+
+
+
+
+
+
+            Support Email:
+            vendorcc@asapmail.me

@@ -1,0 +1,30 @@
+
+
+
+
+
+Home
+Login
+Register
+Buy Bitcoins
+FAQ
+Blog
+
+
+
+How to buy Bitcoins:
+Step 1
+Create an account on EasyCoin or through Tor on walletbgznxbm3jxsmi6edh2qbxq424rk3wfegs3zwcpxhi4felhg7yd.onion
+Make sure to write down your username, password and optionally pin on a piece of paper and store it securely.
+After you have logged in check the Wallet menu link for your Bitcoin address.
+
+Step 2
+You may choose between many exchanges and marketplaces to fund your Bitcoin address depending on your location and available payment methods.
+https://localbitcoins.com/ - Buy Bitcoins locally with cash - person to person - no banks involved
+https://www.coinbase.com/ - Coinbase is the easiest place to buy, sell, and manage your cryptocurrency portfolio
+https://www.bitstamp.net/ - World's longest-standing crypto exchange
+
+Step 3
+Once you have choosen an exchange, just make a buy order for Bitcoins and when asked for a Bitcoin address, enter your EasyCoin bitcoin address.
+Make sure to follow the instructions of the exchange service when making payment.
+You will recieve the Bitcoins in your EasyCoin account once the exchange has processed your order.

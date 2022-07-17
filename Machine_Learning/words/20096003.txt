@@ -1,0 +1,820 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Useful information
+Answers to Your Questions (FAQ)
+Contact Us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Login / Register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										Contact us
+
+									cardedstore @onionmail.org
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @onionmail.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @airmail.cc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @cock.lu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @tormail.io
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							0
+
+
+								0 items
+								$0.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							buy bitcoin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is the complete beginner’s guide on how to safely buy and store Bitcoin.
+
+
+
+Bitcoin was created in January 2009 by an anonymous person named Satoshi Nakamoto when his goal was to create a decentralized digital currency without the need for third-party intermediaries, thereby saving the cost of side-to-side money transfers. The added benefits of Bitcoin are that any financial institution does not control it, the total of Bitcoin coins that can be mined is 21 million, and it provides privacy and control over our money.
+
+
+
+Bitcoin and the cryptocurrency field is the hottest financial thing today, everyone talks about it, everyone wants to touch it, and everyone wants to make money through it.
+
+
+
+But at the same time, Bitcoin is also used as a payment method to buy products on the web and stores, and some people have bought cars and homes by using Bitcoin.
+
+
+
+Whether you want to invest or shop with Bitcoin. To buy and store Bitcoin you need to follow the steps we will explain in this guide.
+
+
+
+Main Points:
+
+
+
+These are the main points to pay attention to when purchasing and storing Bitcoin and we will explain each point:
+
+
+
+Install a Bitcoin wallet on your computer or mobile phone and secure it with a strong password.Choosing the bitcoin exchange through which you want to make the purchase.Choose your preferred form of payment.Purchase some Bitcoin.
+
+
+
+Step 1: Find and install quality and reliable bitcoin wallet
+
+
+
+The Bitcoin wallet is used to store your Bitcoin until you want to spend it or exchange it for another digital currency. The differences between the wallets available in the market are in their features such as design, security and trading options. It is important to choose a reliable and secure wallet that will keep your Bitcoin safe.
+
+
+
+We recommend that you keep your Bitcoin in a PC or Mobile wallet because you have full control over the private keys and your Bitcoin. In this guide, we bring a few options for good wallets that are suitable for computers and mobile phones.
+
+
+
+Recommended Wallets:
+
+
+
+Electrum (PC, Mac, Linux and Android Wallet):
+
+
+
+Electrom is our favorite wallet because it provides the best control and security for Bitcoin. The wallet has many functions along with the possibility to control the fee you need to pay for the bitcoin transaction, and another great benefit is that it supports hardware wallets such as TREZOR, Ledger Nano, and KeepKey. This wallet is suitable for both beginner and advanced users.
+
+
+
+Download:
+
+
+
+Windows , Mac and LinuixAndroid
+
+
+
+BRD (iPhone and Android Wallet):
+
+
+
+BRD is the best wallet for iPhone or Android, it is built on open source and gives the user complete control over his private key. The wallet interface is comfortable and user-friendly so that the process of sending or receiving Bitcoin is done quickly and easily.
+
+
+
+Download:
+
+
+
+iPhoneAndroid
+
+
+
+Edge (iPhone and Android Wallet):
+
+
+
+Edge is a great wallet for novice users with iPhone or Android devices. The wallet is easy to use and automatically creates a full backup of the private keys, so the user doesn’t have to mess with it.
+
+
+
+Download:
+
+
+
+iPhoneAndroid
+
+
+
+Step 2: Choose the best bitcoin exchange for you
+
+
+
+There are several ways to purchase bitcoin; one of them is to purchase bitcoin through one of the popular and secure bitcoin exchange sites. Some sites provide a P2P trading platform and some provide the bitcoin buying service directly.
+
+
+
+Coinbase:
+
+
+
+Coinbase is the largest bitcoin broker in the world and they provide the most convenient platform for buying Bitcoin for both new and old users. They supports over 60 countries, including the USA. Bitcoin can be purchased using a debit card or bank account and the verification process is quick and easy.
+
+
+
+https://www.coinbase.com/
+
+
+
+Coinmama:
+
+
+
+Coinmama serves as a broker for the purchase of bitcoin and nine other types of cryptocurrency. The verification process is fast; they support most countries in the world, and you can buy bitcoin using a credit card, bank account, or SEPA.
+
+
+
+https://www.coinmama.com/
+
+
+
+LocalBitcoins:
+
+
+
+Localbitcoins is the largest and most popular P2P platform in the world. The platform enables bitcoin trading between people when it serves as an escrow that protects the transaction until it is completed successfully. Transactions can be made through most countries of the world and through many types of payment methods.
+
+
+
+https://localbitcoins.com/
+
+
+
+There are many more brokers and platforms for buying Bitcoin. Additional platforms supported in the country you live in can be found through the https://bitcoin.org/en/exchanges website
+
+
+
+Note: After purchasing bitcoin through one of the brokers or P2P platforms, it is advisable to send the Bitcoin to a wallet outside the platform (one of the wallets mentioned in Step 1)
+
+
+
+But it’s anonymous?
+
+
+
+Buying BTC is not anonymous you must provide your real information but is very difficult and expensive to follow the trace of your bitcoins when you withdraw so you should not worry. Most sellers also use Mixers that make it impossible to trace what you have bought with your Bitcoins. There is no risk when using bitcoin to pay at the Deepweb.
+
+
+
+Step 3: Spend your bitcoin
+
+
+
+So once you’ve purchased Bitcoin and stored it in your wallet, it’s time to purchase some products or services. CardedStore is the best and most trusted place to do it.
+
+
+
+                February 20, 2020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		            			PGP Key.
+All our prices are in Dollars (USD). Cardedsqtmrq2sawmhg5q4el4cxw66fzkmbid3k37lrgw33jnqb6aryd.onion is our only website, all telegram groups, instagram and other websites using our reputable name are fake. Be careful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						Contact Us
+
+
+
+
+
+
+
+
+
+
+							© 2020 - 2021 CardedStore - CardingTeam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								0
+
+
+									0 items
+									$0.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+												Contact us
+
+											cardedstore @onionmail.org
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @onionmail.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @airmail.cc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @cock.lu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	    		cardedstore @tormail.io
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		                            Useful information
+Answers to Your Questions (FAQ)
+Contact Us
+
+
+
+
+
+
+						                						                	Login / Register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Search for:
+
+
+
+
+		Recent Posts
+
+
+					It’s safe to buy from CardedStore?
+
+
+					Use a VPN + Tor
+
+
+					How to buy bitcoins safely
+
+
+
+		Recent CommentsArchives
+
+					October 2020
+	June 2020
+	February 2020
+
+
+			Categories
+
+					CardedStore
+
+
+
+			Meta
+
+						Log in
+			Entries feed
+			Comments feed
+
+			WordPress.org
+
+
+
+
+		Recent Posts
+
+
+					It’s safe to buy from CardedStore?
+
+
+					Use a VPN + Tor
+
+
+					How to buy bitcoins safely
+
+
+
+		Tagsbuy bitcoin
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Cart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Refund Reason
+
+
+
+
+            Request Refund
+            Cancel

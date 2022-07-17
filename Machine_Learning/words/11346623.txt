@@ -1,0 +1,4557 @@
+
+
+
+
+
+				libreddit.
+				v0.22.9
+
+
+		Feeds
+
+			MAIN FEEDS
+			Home
+			Popular
+			All
+
+
+
+
+
+
+
+
+
+
+
+		in /r/pcmasterrace
+
+
+
+
+
+
+			→
+
+
+
+
+
+
+					reddit
+
+
+
+
+
+					settings
+
+
+
+
+
+
+					code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				r/pcmasterrace
+				•
+				u/kodester1234
+
+				•
+				Apr 05 '22
+
+				•
+
+
+
+
+						1
+
+
+
+
+
+
+				Figured I would share this revolutionary technology with you all
+
+					Hardware
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			1.4k Upvotes
+
+
+					permalink
+					reddit
+
+				96% Upvoted
+
+
+
+
+
+
+
+
+			Confidence
+
+
+
+			Top
+
+
+
+			New
+
+
+
+			Controversial
+
+
+
+			Old
+
+
+
+
+
+
+					→
+
+
+
+
+
+
+
+
+
+
+
+
+
+		405
+
+
+
+
+
+				u/AgentSiren
+
+
+				R7 5800X | RTX 3070 | 16GB
+
+			Apr 05 '22
+
+
+
+
+		ahh yes the 960mm side panel fan
+
+
+
+
+
+
+
+		14
+
+
+
+
+
+				u/Signaturisti
+
+
+			Apr 05 '22
+
+
+
+
+		Much closer to 460mm
+
+
+
+
+
+
+
+		14
+
+
+
+
+
+				u/TheRealMrTrueX
+
+
+			Apr 05 '22
+
+
+
+
+		589mm fan to be exact kek
+
+
+
+
+
+
+
+		4
+
+
+
+
+
+				u/Mypoopyissoupy
+
+
+			Apr 05 '22
+
+
+
+
+		Seems more like 573mm
+
+
+
+
+
+
+
+		4
+
+
+
+
+
+				u/[deleted]
+
+
+			Apr 06 '22
+
+
+
+
+		Nah def 567mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		171
+
+
+
+
+
+				u/Josef_ab
+
+
+			Apr 05 '22
+
+
+
+
+		Bye bye heat. Hei ho dust
+
+
+
+
+
+
+
+		53
+
+
+
+
+
+				u/BossOfTheGame
+
+
+				 | i9-11900K | 2x3090 | 64GB | 20TB ZFS
+
+			Apr 05 '22
+
+
+
+
+		Tape a $4 filter on the front of the fan. https://www.homedepot.com/p/True-Blue-12-x-12-x-1-Basic-FPR-5-Pleated-Air-Filter-HD212121/100352764
+
+It's 90% as good as an expensive engineered air purifier.
+
+https://www.nytimes.com/wirecutter/blog/how-to-diy-an-air-purifier/
+
+
+
+
+
+
+
+		34
+
+
+
+
+
+				u/Alastor_Hawking
+
+
+			Apr 05 '22
+
+
+
+
+		Next time on redneck rocket science, we’ll show you how to use moonshine for a full submersive-cooling build. Don’t smoke around that one!
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/Ok_Designer_Things
+
+
+			Apr 05 '22
+
+
+
+
+		You joke but my dad taught me the trick above with the filter on the fan and he also can build a moonshine still pretty much anywhere lol.
+
+Give him some metal and some space and he will have a nice still set up in 45 mins lol
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/Alastor_Hawking
+
+
+			Apr 05 '22
+
+
+			•
+
+
+
+
+
+
+
+
+		Oh no, respect to the rednecks. They can literally fix anything. Might not look pretty but it will run. I love seeing that ingenuity in action!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		38
+
+
+
+
+
+				u/Crintor
+
+
+				5950X | 3090FTW3 | 32GB 3600 C16 | 5120x1440 @240hz
+
+			Apr 05 '22
+
+
+
+
+		In my experience running a huge fan like this actually prevents most dust buildup as there is too much airflow for dust to accumulate anywhere except small gaps like the radiator.
+
+Also the big brain move is to use the box fan as an exhaust and run all other case fans as intake through filters.
+
+The box fan is sucking all the heat from the GPU(whe not vertically mounted) directly out of the case. You don't even need to have the box fan running on max. I did this for almost a year and gives moderate temp improvements, and no dust.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		70
+
+
+
+
+
+				u/typi_314
+
+
+				3700x - 5700xt - x570 aorus elite
+
+			Apr 05 '22
+
+
+
+
+		fan noises “I’m sorry, COULD YOU REPEAT WHAT YOU SAID!”
+
+
+
+
+
+
+
+		15
+
+
+
+
+
+				u/JoaGamo
+
+
+				 11700KF / 32GB / 2060
+
+			Apr 05 '22
+
+
+
+
+		I don't know why I've heard this in wheatley voice
+
+
+
+
+
+
+
+		4
+
+
+
+
+
+				u/Minute-Load
+
+
+				-elitist,  intel-m3@1.00ghz, 4g-ddr22@1600, HHD@5400rpm
+
+			Apr 05 '22
+
+
+
+
+		Now that you said that all I can read is wheatly in a American accent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/[deleted]
+
+
+			Apr 05 '22
+			edited Jun 04 '22
+
+
+
+		[deleted]
+
+
+
+
+
+
+
+		3
+
+
+
+
+
+				u/RedditedYoshi
+
+
+			Apr 05 '22
+
+
+
+
+		This is actually part of my "dream build" goal. That or mineral oil submerge. XD
+
+
+
+
+
+
+
+		3
+
+
+
+
+
+				u/pharmajap
+
+
+			Apr 05 '22
+
+
+
+
+		The mineral oil eventually wicks up through the braided copper cabling, so be sure to go wireless with your keyboard and mouse lol
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/RedditedYoshi
+
+
+			Apr 05 '22
+
+
+
+
+		Loool! I'm sure I can be a little selective about which bits are submerged. :P actually, wondering if there are any mineral oil builds on this sub anyone's seen?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/RedditedYoshi
+
+
+			Apr 05 '22
+
+
+
+
+		Discord teammates love it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		11
+
+
+
+
+
+				u/SandwichesANDMilk_
+
+
+				 3700x RTX 3060TI FE 32gb DDR4, collector of old & slow
+
+			Apr 05 '22
+
+
+
+
+		I actually tested that awhile ago and I somehow managed to get worse preformance in the system I tested with. I think because the case had good airflow to begin with the box fan messed up the flow and didn't let air flow through the heatsinks. It was using a tower cooler so the airflow was going directly down on the top of the heatsink. Idk since you have an h510 it'd probably be better lol
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/cheeseburgeraddict
+
+
+				 3070ti - 9900k - 32 gigs RAM - Aorus Master Z390
+
+			Apr 05 '22
+
+
+
+
+		If you have a tower cooler, the air is being pushed perpendicular into the top fin, completely bypassing through the hundred other fins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		89
+
+
+
+
+
+				u/The_Racho
+
+
+				 3080Ti Aorus Master | 12700k | 32GB 3600 | 1+2TB NVMEs
+
+			Apr 05 '22
+
+
+
+
+		How to load your case with dust 101
+
+
+
+
+
+
+
+		48
+
+
+
+
+
+				u/Lord_Hugh_Mungus
+
+
+			Apr 05 '22
+
+
+
+
+		20x20 house filter and make it a clean pusher fan.  HEPA  clean.
+
+
+
+
+
+
+
+		79
+
+
+
+
+
+				u/The_Racho
+
+
+				 3080Ti Aorus Master | 12700k | 32GB 3600 | 1+2TB NVMEs
+
+			Apr 05 '22
+
+
+
+
+		Follow for more linus meth tips
+
+
+
+
+
+
+
+		8
+
+
+
+
+
+				u/Lord_Hugh_Mungus
+
+
+			Apr 05 '22
+
+
+
+
+		Never store you flammables  where you cook...until next week, Cook clean, cook profitable!
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/saltyswedishmeatball
+
+
+			Apr 05 '22
+
+
+
+
+		American scientist actually showed this on YouTube, it's rather famous actually.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/AgreeablePossum56
+
+
+			Apr 06 '22
+
+
+
+
+		How to set your house on fire 101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		8
+
+
+
+
+
+				u/pck3
+
+
+			Apr 05 '22
+
+
+
+
+		Is it loading or unloading?
+
+
+
+
+
+
+
+		6
+
+
+
+
+
+				u/We-Want-The-Umph
+
+
+			Apr 05 '22
+
+
+
+
+		Yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		-28
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Nah the fan is freshly cleaned. It's keeping the PC cooled since the aio pump is dead.
+
+
+
+
+
+
+
+		53
+
+
+
+
+
+				u/The_Racho
+
+
+				 3080Ti Aorus Master | 12700k | 32GB 3600 | 1+2TB NVMEs
+
+			Apr 05 '22
+
+
+
+
+		Bro if your aio is dead do not run your pc, go get a new cooler wtf
+
+
+
+
+
+
+
+		-22
+
+
+
+
+
+				u/Brain_Inflater
+
+
+			Apr 05 '22
+			edited Apr 05 '22
+
+
+
+		Their cpu isn't gonna damaged or anything but it'll definitely take a hit in performance
+
+Edit: have you guys not heard of throttling?
+
+
+
+
+
+
+
+		28
+
+
+
+
+
+				u/The_Racho
+
+
+				 3080Ti Aorus Master | 12700k | 32GB 3600 | 1+2TB NVMEs
+
+			Apr 05 '22
+
+
+
+
+		The aio pump can't move liquid away, there is no heatsink. It will thermal throttle at the very least.
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/Alert_Document1862
+
+
+			Apr 05 '22
+
+
+
+
+		...wow
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Chrunchyhobo
+
+
+				PC Master Race
+
+			Apr 06 '22
+
+
+
+
+
+Their cpu isn't gonna damaged or anything
+
+
+Heat reduces lifespan.
+
+Excessive heat, especially to the point of throttling or shutdown will significantly reduce lifespan.
+
+
+
+
+
+
+
+
+
+
+
+		0
+
+
+
+
+
+				u/catkidtv
+
+
+			Apr 06 '22
+
+
+
+
+		Yes, this. The chip, the motherboard and the OS has built-in in safety mechanisms to not fry the CPU nor any other components. He can reddit and YouTube just fine until he finds a new cooler. But tablets or at least a decent Chromebook won't hurt in situations like these.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		8
+
+
+
+
+
+				u/Genotabby
+
+
+			Apr 05 '22
+
+
+
+
+		The pump is not a heat sink in this case. The pump will trap heat. If this was a metal heat sink then there would be fewer issues. You might not even last through a game or boot for long.
+
+
+
+
+
+
+
+		-19
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Might not be the aio then, I've been running games fine and have had it booted for the last few days. New pump and fans are coming in on Wednesday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Chrunchyhobo
+
+
+				PC Master Race
+
+			Apr 06 '22
+
+
+
+
+		If the pump is dead it would thermal shutdown before it even gets to windows.
+
+Source: have had that happen. 96c in the BIOS isn't fun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/2HourCoffeeBreak
+
+
+			Apr 05 '22
+
+
+
+
+		I’m pretty sure chapter 1 starts with “Get yourself a cat.”
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TheRealMrTrueX
+
+
+			Apr 05 '22
+
+
+
+
+		Nah, too much airflow for dust to settle imo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		20
+
+
+
+
+
+				u/Verdreht
+
+
+			Apr 05 '22
+
+
+
+
+		Is your front panel just solid?
+
+
+
+
+
+
+
+		38
+
+
+
+
+
+				u/QlimaxUK
+
+
+			Apr 05 '22
+
+
+
+
+		yeah you need a good solid front panel these days to keep the hackers out
+
+
+
+
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Yes
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kvlopsia
+
+
+			Apr 05 '22
+
+
+
+
+		It looks like that nzxt case, I've had it in the past. Front panel is solid, but the side opposing the glass has vents near the front so that front mounted fans can pull air from the side.
+
+Idk how effective that design is, but thats their solution to no front ventilation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		7
+
+
+
+
+
+				u/Ed_Rock
+
+
+			Apr 05 '22
+
+
+
+
+		I mean, I always thought it would be rad to have an analog dial for my fans
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/shafz047
+
+
+				 i7-12700K / RTX 3080 Ti / 32GB DDR4-3200
+
+			Apr 05 '22
+
+
+
+
+		Put another fan on the other side for a push-pull setup.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		5
+
+
+
+
+
+				u/YoloSwaggity5000
+
+
+			Apr 05 '22
+
+
+
+
+		That shit actually works wonders.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		3
+
+
+
+
+
+				u/marquias89
+
+
+			Apr 05 '22
+
+
+
+
+		Been there
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ThePizzaNoid
+
+
+			Apr 05 '22
+
+
+
+
+		Yup same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		7
+
+
+
+
+
+				u/Vollpfosten
+
+
+			Apr 05 '22
+
+
+
+
+		Aka the basement LAN party emergency solution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/TechAndStocks
+
+
+			Apr 05 '22
+
+
+
+
+		Intake or exhaust?
+
+
+
+
+
+
+
+		7
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Intake all day
+
+
+
+
+
+
+
+		3
+
+
+
+
+
+				u/TechAndStocks
+
+
+			Apr 05 '22
+
+
+
+
+		Love it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/[deleted]
+
+
+			Apr 05 '22
+
+
+
+
+		One would need like 10 of their 3000RPM 140mm fans to match the CFM. Not sure which is better considering the static pressure advantage of the Nocs. Noise levels and frequency, this thing wins. I leave one on for white noise.
+
+
+
+
+
+
+
+		7
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		It is actually beating every estimated metric I had set for this thing. Keeping the nice and cool to the point where I can actually game while using it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ma055
+
+
+			Apr 05 '22
+
+
+
+
+		What is that fan!? Why is it in every house in america? Why youtube is full of american fans like this?
+
+
+
+
+
+
+
+		6
+
+
+
+
+
+				u/ZappyEel
+
+
+			Apr 05 '22
+
+
+
+
+		Just a standard box fan. Is it really just an america thing? My family had several when I was a kid, they were just kind of everywhere, my parents still use them in the summer.
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/ma055
+
+
+			Apr 05 '22
+
+
+
+
+		Never seen in europe. We only have round fans
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/ZappyEel
+
+
+			Apr 05 '22
+
+
+
+
+		Huh interesting. You'll see them typically in windows in the US to bring in fresh air too, thats how we always used them.
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ma055
+
+
+			Apr 05 '22
+
+
+
+
+		We have big air conditioner thingys in europe. Especially here in finland
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TerrorVizyn
+
+
+			Apr 06 '22
+
+
+
+
+		If you're talking about a window A/C unit, we have those as well in the States.
+
+I dont think box fans are popular because of their "performance", but because you can buy one for less than $20 USD at any box store, and they tend to last a couple years.
+
+Their shape is convenient to put in a window, though.
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ma055
+
+
+			Apr 06 '22
+
+
+
+
+		Okay okay. You have box stores there? What other boxy things they sell to you?
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TerrorVizyn
+
+
+			Apr 09 '22
+
+
+
+
+		Well, you could purchase boxes, naturally.
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ma055
+
+
+			Apr 09 '22
+
+
+
+
+		Oh. That was unexpected :0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Just a good ol classic window fan
+
+
+
+
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/ImmortalDabz
+
+
+			Apr 05 '22
+
+
+
+
+		A fan you put in the windows for cool fresh air. They are dust magnets though and get pretty nasty.
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/ma055
+
+
+			Apr 05 '22
+
+
+
+
+		I thought so
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Titanusgamer
+
+
+			Apr 05 '22
+
+
+
+
+		Pro-gamer 200IQ move
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		5head
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/namelesswhiteguy
+
+
+			Apr 05 '22
+
+
+
+
+		Can't wait for someone to take an industrial barn fan and find a way to use it as a PC cooler.
+
+
+
+
+
+
+
+		2
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		I'm sure it would work from a safe distance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/dissident46
+
+
+			Apr 05 '22
+
+
+
+
+		Well...  If it's stupid, but it works...
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		Then it ain't stupid
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ZappyEel
+
+
+			Apr 05 '22
+
+
+
+
+		It's not stupid it's advanced!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Jagerlagerglocke
+
+
+			Apr 05 '22
+
+
+
+
+		It's a modern art piece entitled "Forced Introduction of Dust."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TheJeffChase
+
+
+			Apr 05 '22
+
+
+
+
+		I am a fan of your fandy-work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/savioratharv
+
+
+				 Laptop
+
+			Apr 05 '22
+
+
+
+
+		It’s not a PC part if it doesn’t have RGB………
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/sonicman2k8
+
+
+			Apr 05 '22
+
+
+
+
+		Goku the power draw is over 9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ibracool22
+
+
+			Apr 05 '22
+
+
+
+
+		Well lets be honest this is expected with the h510
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/SconseyCider-FC
+
+
+				 i7-8700 | 2060 Super | 32GB RAM DDR4 3000MHz CL15
+
+			Apr 05 '22
+
+
+
+
+		Someone introduce this person to Corsair.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ImmortalDabz
+
+
+			Apr 05 '22
+
+
+
+
+		I would turn it so it is pulling heat out. Your just loading with dust at that point. Those box fans cause the most dust I have ever seen in my entire 27 years of life.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/mayanksr
+
+
+			Apr 05 '22
+
+
+
+
+		Cabinet fan makers hate him, use this one trick now!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Physical_Durian7753
+
+
+			Apr 05 '22
+
+
+
+
+		Did that on Voodoo Graphics of 3dfx in 1996
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/JeanLucRtard
+
+
+			Apr 05 '22
+
+
+
+
+		One weird trick for massive cooling in your PC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/SirFattyMann
+
+
+			Apr 05 '22
+
+
+
+
+		Deus ex: Human revolution,
+Cyberpunk 2077
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/UnityAnglezz
+
+
+				 Desktop
+
+			Apr 05 '22
+
+
+
+
+		What if you put it the other way around
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/just_v1b3s
+
+
+			Apr 05 '22
+
+
+
+
+		The power of a.... God?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/EnvironmentalAd3385
+
+
+
+
+			Apr 05 '22
+
+
+
+
+		The nzxt 510 the enemy of air flow! Nice upgrade! A thin air filter will help tremendously with dust. Your fan have plenty of power to over come the loss. But curious to know if this will over ramp your exhaust fans.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Brianshoe
+
+
+			Apr 05 '22
+
+
+
+
+		Maximum airfort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Danstroyer1
+
+
+			Apr 05 '22
+
+
+
+
+		Make it exhaust it will stop dust
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/lglizeplease
+
+
+			Apr 05 '22
+
+
+
+
+		That’s how we cooled Cyrix processors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/saltyswedishmeatball
+
+
+			Apr 05 '22
+
+
+
+
+		Reddit: oMg yOu CanT!%$
+
+Reality: Dust dust dust
+
+That's it, dust is the only harm.. I would put a cheap filter on it if you are really doing this and for the love of caitlyn jenner, dust that fan, it's gross.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/AndreiBri
+
+
+				R5 3600 | RTX 3080 | 32GB 3200MHz | RM750
+
+			Apr 05 '22
+
+
+
+
+		This room fan should be included with any Nzxt case
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/advester
+
+
+			Apr 05 '22
+
+
+
+
+		I’ve done this to cool a laptop.  Works well.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Mike_for_all
+
+
+				 Steam Deck
+
+			Apr 05 '22
+
+
+
+
+		Cooling it the chad way
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/angaddeepsingh
+
+
+			Apr 05 '22
+
+
+
+
+		OK so now I'm gonna straight up install an EDF
+
+MAKE THAT 2 EDFs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Vlaphor
+
+
+			Apr 05 '22
+
+
+
+
+		My very first case was too small to hold an 8800gtx without it overheating and shutting down, so I opened the side of the case and pointed a small fan directly at the card.  Did this for about a year before getting a new case.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/NoBallroom4you
+
+
+			Apr 05 '22
+
+
+
+
+		Sheesh... computer fans are getting bigger every day.  I'm gonna wait for the RGB version... because i'm fancy that way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Lead_8e2
+
+
+			Apr 05 '22
+
+
+
+
+		Did this exact thing to my ex-gfs computer, and it stopped overheating and actually ran properly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/obamaprism3
+
+
+				i9 12900k | ddr5 6400mhz cl32 | rtx 3090 | 7TB M.2 | 42TB HDD
+
+			Apr 05 '22
+
+
+
+
+		It seems somewhat counter intuitive but in a case with good airflow (o11 dynamic xl) my temps go up by a few degrees if I do the side panel box fan thing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/L0ngcat
+
+
+				C7H WF | 2700X@4.2 All Cores | 32GB@3406 CL14 | RTX 2080@Modded
+
+			Apr 05 '22
+
+
+
+
+		I've pioneered that over 20 years ago when I had an Athlon Thunderbird.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/MagicOrpheus310
+
+
+			Apr 05 '22
+
+
+
+
+		The science! She has gone too far!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Fatefire
+
+
+				 I5 11600K EVGA 3070TI
+
+			Apr 05 '22
+
+
+
+
+		Cause blowing a ton of dirty air into my case seems like a revolutionary idea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kensei-
+
+
+				3070 i9-10850k
+
+			Apr 05 '22
+
+
+
+
+		I did this and it did not help my 10850k from thermal throttling and shutting itself down while running cinebench.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Diss3k
+
+
+				 i7-9700K | Strix RTX 2070 | 32GB DDR4
+
+			Apr 05 '22
+
+
+
+
+		Ahh finally! Cold fusion has been mastered.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Methodd1021
+
+
+			Apr 05 '22
+
+
+
+
+		I use to do this until I spilled a glass of extra pulp oj into the back and blew chunky oj all over my mobo :(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/LordGlizzard
+
+
+			Apr 05 '22
+
+
+
+
+		In all honesty, if you think about it, if you made a dust filter to fit this setup and eliminate that problem this would be a pretty baller and effective cooling, literally every single component is gunna be getting blasted with air directly ontop of it, change the front, top and back fans to exhaust and boom, that would be pretty good, again assuming a dust filter is in place
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kangarooscarlet
+
+
+			Apr 05 '22
+
+
+
+
+		Just put a bed sheet in front of it to keep dust out its not stupid if it works right
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ttyyuu12345
+
+
+				R7 5800X| RX580|Samsung 980 Pro 1TB
+
+			Apr 05 '22
+
+
+
+
+		I’ve got that same case for both my R7 5800X and i5-10400 builds.
+
+Only drawback is no water cooling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Jordannicoli
+
+
+			Apr 05 '22
+
+
+
+
+		Bye bye heat, hello turbulence...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/PunkersSlave
+
+
+			Apr 05 '22
+
+
+
+
+		This was me for like 10 summers straight with no a/c lol
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/aliensporebomb
+
+
+			Apr 05 '22
+
+
+
+
+		I had something like this that was a HEPA air filter system that did a bang-up job on my old Athlon system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Sad_Doubt4938
+
+
+			Apr 05 '22
+
+
+
+
+		ur pc gonna be full of shit in 1 week watch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Malavero
+
+
+			Apr 05 '22
+
+
+
+
+		awesome xd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/karvus89
+
+
+				i7 7700k @ 4.9GHz (1.35v) | EVGA GTX 1070 FTW 8GB
+
+			Apr 05 '22
+
+
+
+
+		All that crap that's on your box fan is now in your PC.  Congrats OP, you played yourself!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/makinbaconCR
+
+
+			Apr 05 '22
+
+
+
+
+		I would undervolt underclock everything before I would deal with that lol.  The sound!  And one bump it's never gonna overheat again
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Kentucky-Boy
+
+
+			Apr 05 '22
+
+
+
+
+		Will this lead to a case that is made with the entire side panel as a fan?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Arodg25
+
+
+			Apr 05 '22
+
+
+
+
+		I was doing this 20 years ago.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Billy420MaysIt
+
+
+				 PC Master Race
+
+			Apr 05 '22
+
+
+
+
+		My RX580 fans didn’t work, PC would cut off all the time randomly. We tried everything to troubleshoot it. Finally I started up a game and took my front cover off to feel inside and sure enough the fans never spun. I did this same thing to keep my temps down and it worked until it didn’t. Lol. I eventually got it replaced but if it works it works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/HiYa_Dragon
+
+
+			Apr 05 '22
+
+
+
+
+		I have a box fan in my window and my PC sits next to that . It actually helps alot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/OnwardsMrSnippy
+
+
+			Apr 05 '22
+
+
+
+
+		Kid me did this with a Radeon 9250 in ~2002, thought I was overclocking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/JerryWShields
+
+
+			Apr 05 '22
+
+
+
+
+		Big fan brain time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/A_Ferfs
+
+
+			Apr 05 '22
+
+
+
+
+		Ah yes, the Corsair LL 500 prototype
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/agent56289
+
+
+			Apr 05 '22
+
+
+
+
+		Lol I used to have to do this in college, because my apartment in summer would get up to 95° F
+
+And I didn't have AC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/timmmerz916
+
+
+			Apr 05 '22
+
+
+
+
+		Ran my HOT AS !@#$ core 2 quad OC'd with a 360mm AIO and a house fan. Still better then upgrading!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TiltedOwl
+
+
+			Apr 05 '22
+
+
+
+
+		Still backwards
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/D1phenhydramine
+
+
+			Apr 05 '22
+
+
+
+
+		Ah that brings back memories. Are you really PCMR if you've never needed to do this?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/TheRealMrTrueX
+
+
+			Apr 05 '22
+
+
+
+
+		The ole S340 and H510i....such a horrible design.he S510 is their worst and sadly its what I have my main rig in...however I ended up taking the radiator in the front out, used white masking tape on the inside and out of the front panel, ordered this bad boy and just made 2 140mm holes in the front. Cut a piece of womens panty hose from my GF closet and stretched that over the front fans/radiator when I reinstalled it. Temps dropped like 18C. EZ PZ
+
+https://www.amazon.com/LICTOP-Cutting-Cornhole-Plastic-Fiberboard/dp/B07P5BSPPL?th=1
+
+No idea whoat NZXT thought it was a good idea to block off 95% of the front intake and make it a small plastic grill.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Sithil83
+
+
+				Aorus Master 3080 | Ryzen 7 5800X
+
+			Apr 05 '22
+
+
+
+
+		Revolutionary? Was doing this back in 2001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/SD5150
+
+
+			Apr 05 '22
+
+
+
+
+		Why do a 12 fan build when you can do the 1 (bigass) fan build!?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/ravioli_ravioLj
+
+
+			Apr 05 '22
+
+
+
+
+		I AM DOING THE SAME THING cause my gpu fans just won't work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Choppermagic
+
+
+			Apr 05 '22
+
+
+
+
+		No RGB on that fan?  Return it bro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/RunnerLuke357
+
+
+				 i7-10700KF, 32GB 3600, RTX 3080 TUF Gaming
+
+			Apr 05 '22
+
+
+
+
+		NZXT moment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/tarmacchief
+
+
+			Apr 05 '22
+
+
+
+
+		Paint it black then put an led strip on the inside. 🤪👍🏻
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Ultra_frigid
+
+
+			Apr 05 '22
+
+
+
+
+		This is essentially what I do for my laptop. Then again, I have thermoregulatory dysfunction, so a fan's always on me wherever I sit if I can help it. Maybe I'm the one who needs a repaste...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/IdealIdeas
+
+
+				5900x | RTX 2080 | 64GB DDR4 @ 3600 | 10TB SSD Storage
+
+			Apr 05 '22
+
+
+
+
+		Buy a 20"x20" furnace filter and tape it on the back side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Yakatsumi_Wiezzel
+
+
+			Apr 05 '22
+
+
+
+
+		what is the static pressure in there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Longjumping-Impact-4
+
+
+			Apr 06 '22
+
+
+
+
+		Not the 1st time I've had to do that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/RadioMayThrowaway
+
+
+			Apr 06 '22
+
+
+
+
+		We've all done it. I was born poor, 90% of all of my builds ever have been Ghetto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/catkidtv
+
+
+			Apr 06 '22
+
+
+
+
+		Thank you kind sir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/LostBoyz007
+
+
+			Apr 06 '22
+
+
+
+
+		The Blowatron 5483-a has joined the conversation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/zman_007
+
+
+			Apr 06 '22
+
+
+
+
+		Just add a 20x20x1 furnace filter to the intake side of the box fan and you'll be golden.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/Throwawayfabric247
+
+
+			Apr 06 '22
+
+
+
+
+		Is that a case fan or a box fan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/MechaStrizan
+
+
+			Apr 06 '22
+
+
+
+
+		I'm a fan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/But-Y-U-Mad-Tho
+
+
+				I7 11700K | 3070 Founders | 32GB DDR4 | 1TB NVMe
+
+			Apr 06 '22
+
+
+
+
+		I've done that before out of desperation. It's a Band-Aid fix and it won't cure the overheating problem, but itll keep it at bay for a little while longer. Thats my experience anyways.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		0
+
+
+
+
+
+				u/Sultan_of_Swing92
+
+
+			Apr 05 '22
+
+
+
+
+		The disrespect to use that North Carolina photo book as a stand,  cries in Tar Heel
+
+
+
+
+
+
+
+		1
+
+
+
+
+
+				u/kodester1234
+
+
+			Apr 05 '22
+
+
+
+
+		My apologies, if it's any consolation it's not the only book there. I'm also using a book of New Jersey, The White House and Chicago.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		0
+
+
+
+
+
+				u/thatbromatt
+
+
+			Apr 05 '22
+
+
+
+
+		I have a post with that same dusty ass box fan except I was using it for a ghetto grow tent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		0
+
+
+
+
+
+				u/Connerhil
+
+
+			Apr 05 '22
+
+
+
+
+		How to brick a PC with dust. At least put a filter on the fan 🤣
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		0
+
+
+
+
+
+				u/LucaDarioBuetzberger
+
+
+			Apr 05 '22
+
+
+
+
+		Revolutionary? You haven't seen the Corsair LL500 yet, didn't you?

@@ -1,0 +1,739 @@
+
+
+
+  w3schools.com
+  THE WORLD'S LARGEST WEB DEVELOPER SITE
+
+
+
+
+
+
+
+
+
+
+
+
+      HTML
+      CSS
+      JAVASCRIPT
+      SQL
+      PYTHON
+      PHP
+      BOOTSTRAP
+      HOW TO
+      W3.CSS
+      JQUERY
+      XML
+      MORE
+      
+      
+      
+      FORUM
+      EXERCISES
+      REFERENCES
+
+
+      ×
+
+
+          HTML and CSS
+          Learn HTML
+          Learn CSS
+          Learn Bootstrap
+          Learn W3.CSS
+          Learn Colors
+          Learn Icons
+          Learn Graphics
+          Learn SVG
+          Learn Canvas
+          Learn How To
+          Learn Sass
+
+            XML
+            Learn XML
+            Learn XML AJAX
+            Learn XML DOM
+            Learn XML DTD
+            Learn XML Schema
+            Learn XSLT
+            Learn XPath
+            Learn XQuery
+
+
+
+          JavaScript
+          Learn JavaScript
+          Learn jQuery
+          Learn React
+          Learn AngularJS
+          Learn JSON
+          Learn AJAX
+          Learn W3.JS
+          Programming
+          Learn Python
+          Learn Java
+          Learn C++
+          Learn C#
+          Learn Machine Learning
+
+
+
+          Server Side
+          Learn SQL
+          Learn PHP
+          Learn ASP
+          Learn Node.js
+          Learn Raspberry Pi
+          Web Building
+          Web Templates
+          Web Statistics
+          Web Certificates
+          Web Editor
+          Web Development
+
+
+          XML
+          Learn XML
+          Learn XML AJAX
+          Learn XML DOM
+          Learn XML DTD
+          Learn XML Schema
+          Learn XSLT
+          Learn XPath
+          Learn XQuery
+
+
+
+
+
+      ×
+
+
+          HTML
+          HTML Tag Reference
+          HTML Event Reference
+          HTML Color Reference
+          HTML Attribute Reference
+          HTML Canvas Reference
+          HTML SVG Reference
+          HTML Character Sets
+          Google Maps Reference
+          CSS
+          CSS Reference
+          CSS Browser Support
+          CSS Selector Reference
+          Bootstrap 3 Reference
+          Bootstrap 4 Reference
+          W3.CSS Reference
+          Icon Reference
+          Sass Reference
+
+
+          JavaScript
+          JavaScript Reference
+          HTML DOM Reference
+          jQuery Reference
+          AngularJS Reference
+          W3.JS Reference
+          Programming
+          Python Reference
+          Java Reference
+
+
+          Server Side
+          SQL Reference
+          PHP Reference
+          ASP Reference
+          XML
+          XML Reference
+          XML Http Reference
+          XSLT Reference
+          XML Schema Reference
+
+
+          Character Sets
+          HTML Character Sets
+          HTML ASCII
+          HTML ANSI
+          HTML Windows-1252
+          HTML ISO-8859-1
+          HTML Symbols
+          HTML UTF-8
+
+
+
+
+
+      ×
+
+
+          Exercises
+          HTML Exercises
+          CSS Exercises
+          JavaScript Exercises
+          SQL Exercises
+          PHP Exercises
+          Python Exercises
+          jQuery Exercises
+          Java Exercises
+          Bootstrap Exercises
+          C++ Exercises
+          C# Exercises
+
+
+          Quizzes
+          HTML Quiz
+          CSS Quiz
+          JavaScript Quiz
+          SQL Quiz
+          PHP Quiz
+          Python Quiz
+          jQuery Quiz
+          Java Quiz
+          Bootstrap Quiz
+          XML Quiz
+
+
+         Certificates
+         HTML Certificate
+         CSS Certificate
+         JavaScript Certificate
+         SQL Certificate
+         PHP Certificate
+         Python Certificate
+         jQuery Certificate
+         Bootstrap Certificate
+         XML Certificate
+
+
+
+
+
+
+
+
+
+
+
+Python Tutorial
+Python HOME
+Python Intro
+Python Get Started
+Python Syntax
+Python Comments
+Python Variables
+Python Data Types
+Python Numbers
+
+Python Casting
+Python Strings
+Python Booleans
+Python Operators
+Python Lists
+Python Tuples
+Python Sets
+Python Dictionaries
+Python If...Else
+Python While Loops
+Python For Loops
+
+Python Functions
+Python Lambda
+Python Arrays
+Python Classes/Objects
+Python Inheritance
+Python Iterators
+Python Scope
+Python Modules
+Python Dates
+Python JSON
+Python RegEx
+Python PIP
+Python Try...Except
+Python User Input
+Python String Formatting
+
+File Handling
+Python File Handling
+Python Read Files
+Python Write/Create Files
+Python Delete Files
+
+Machine Learning
+Getting Started
+Mean Median Mode
+Standard Deviation
+Percentile
+Data Distribution
+Normal Data Distribution
+Scatter Plot
+Linear Regression
+Polynomial Regression
+Multiple Regression
+Scale
+Train/Test
+Decision Tree
+
+Python MySQL
+MySQL Get Started
+MySQL Create Database
+MySQL Create Table
+MySQL Insert
+MySQL Select
+MySQL Where
+MySQL Order By
+MySQL Delete
+MySQL Drop Table
+MySQL Update
+MySQL Limit
+MySQL Join
+
+Python MongoDB
+MongoDB Get Started
+MongoDB Create Database
+MongoDB Create Collection
+MongoDB Insert
+MongoDB Find
+MongoDB Query
+MongoDB Sort
+MongoDB Delete
+MongoDB Drop Collection
+MongoDB Update
+MongoDB Limit
+
+
+
+Python Reference
+Python Overview
+Python Built-in Functions
+Python String Methods
+Python List Methods
+Python Dictionary Methods
+Python Tuple Methods
+Python Set Methods
+Python File Methods
+Python Keywords
+
+
+Module Reference
+Random Module
+Requests Module
+
+
+Python How To
+Remove List Duplicates
+Reverse a String
+
+
+Python Examples
+Python Examples
+Python Exercises
+Python Quiz
+Python Certificate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Machine Learning - Standard Deviation
+
+❮ Previous
+Next ❯
+
+
+
+What is Standard Deviation?
+
+Standard deviation is a number that describes how spread out the values are.
+
+A low standard deviation means that most of the numbers are close to the mean (average) value.
+
+A high standard deviation means that the values are spread out over a wider range.
+
+Example: This time we have registered the speed of 7 cars:
+
+
+  speed = [86,87,88,86,87,85,86]
+
+
+The standard deviation is:
+
+
+  0.9
+
+
+Meaning that most of the values are within the range of 0.9 from the mean
+value, which is 86.4.
+
+Let us do the same with a selection of numbers with a wider range:
+
+
+  speed = [32,111,138,28,59,77,97]
+
+
+The standard deviation is:
+
+
+  37.85
+
+
+Meaning that most of the values are within the range of 37.85 from the mean
+value, which is 77.4.
+As you can see, a higher standard deviation indicates that the values are
+spread out over a wider range.
+
+The NumPy module has a method to calculate the standard deviation:
+
+
+Example
+Use the NumPy std() method to find the
+standard deviation:
+
+  import numpyspeed = [86,87,88,86,87,85,86]
+  x = numpy.std(speed)print(x)
+Run example »
+
+
+
+Example
+
+  import numpyspeed = [32,111,138,28,59,77,97]
+  x = numpy.std(speed)print(x)
+Run example »
+
+
+
+
+Variance
+
+Variance is another number that indicates how spread out the values are.
+In fact, if you take the square root of the variance, you get the standard
+variation!
+Or the other way around, if you multiply the standard deviation by itself, you get the
+variance!
+To calculate the variance you have to do as follows:
+1. Find the mean:
+
+
+  (32+111+138+28+59+77+97) / 7 = 77.4
+
+
+2. For each value: find the difference from the mean:
+
+
+   32 - 77.4 = -45.4111 - 77.4 =  33.6138
+  - 77.4 =  60.6 28 - 77.4 = -49.4 59 - 77.4 = -18.4 77
+  - 77.4 = - 0.4 97 - 77.4 =  19.6
+
+
+
+3. For each difference: find the square value:
+
+
+
+  (-45.4)2 = 2061.16
+   (33.6)2 = 1128.96
+   (60.6)2 = 3672.36
+  (-49.4)2 = 2440.36
+  (-18.4)2 =  338.56
+  (- 0.4)2 =    0.16
+   (19.6)2 =  384.16
+
+
+
+
+4. The variance is the average number of these squared differences:
+
+
+
+  (2061.16+1128.96+3672.36+2440.36+338.56+0.16+384.16)
+  / 7 = 1432.2
+
+
+
+Luckily, NumPy has a method to calculate the variance:
+
+
+Example
+  Use the NumPy var() method to find the variance:
+
+  import numpyspeed = [32,111,138,28,59,77,97]
+  x = numpy.var(speed)print(x)
+Run example »
+
+
+
+
+Standard Deviation
+
+As we have learned, the formula to find the standard deviation is the square root of the variance:
+
+
+
+  √1432.25 = 37.85
+
+
+
+Or, as in the example from before, use the NumPy to calculate the standard deviation:
+
+Example
+Use the NumPy std() method to find the standard deviation:
+
+  import numpyspeed = [32,111,138,28,59,77,97]
+  x = numpy.std(speed)print(x)
+Run example »
+
+
+
+
+Symbols
+
+Standard Deviation is often represented by the symbol Sigma: σ
+Variance is often represented by the symbol Sigma Square: σ2
+
+
+
+Chapter Summary
+
+The Standard Deviation and Variance are terms that are often used in Machine Learning, so it is important to understand how to get them, and the concept behind them.
+
+
+
+❮ Previous
+Next ❯
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COLOR PICKER
+
+
+
+
+
+
+
+
+
+
+
+    HOW TO
+
+
+    Tabs
+    Dropdowns
+    Accordions
+    Side Navigation
+    Top Navigation
+    Modal Boxes
+    Progress Bars
+    Parallax
+    Login Form
+    HTML Includes
+    Google Maps
+    Range Sliders
+    Tooltips
+    Slideshow
+    Filter List
+    Sort List
+
+
+
+
+SHARE
+
+
+
+
+
+
+
+
+
+
+
+
+CERTIFICATES
+
+HTML
+CSS
+JavaScript
+SQL
+Python
+PHP
+jQuery
+Bootstrap
+XML
+
+Read More »
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REPORT ERROR
+
+
+PRINT PAGE
+
+
+FORUM
+
+
+ABOUT
+
+
+
+
+×
+
+Report Error
+
+If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:
+support@w3schools.com
+
+
+
+
+
+
+×
+Thank You For Helping Us!
+Your message has been sent to W3Schools.
+
+
+
+
+
+Top Tutorials
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+How To Tutorial
+SQL Tutorial
+Python Tutorial
+W3.CSS Tutorial
+Bootstrap Tutorial
+PHP Tutorial
+jQuery Tutorial
+Java Tutorial
+C++ Tutorial
+
+
+
+
+Top References
+HTML Reference
+CSS Reference
+JavaScript Reference
+SQL Reference
+Python Reference
+W3.CSS Reference
+Bootstrap Reference
+PHP Reference
+HTML Colors
+jQuery Reference
+Java Reference
+Angular Reference
+
+
+
+
+Top Examples
+HTML Examples
+CSS Examples
+JavaScript Examples
+How To Examples
+SQL Examples
+Python Examples
+W3.CSS Examples
+Bootstrap Examples
+PHP Examples
+jQuery Examples
+Java Examples
+XML Examples
+
+
+
+
+Web Certificates
+HTML Certificate
+CSS Certificate
+JavaScript Certificate
+SQL Certificate
+Python Certificate
+jQuery Certificate
+PHP Certificate
+Bootstrap Certificate
+XML Certificate
+
+Get Certified »
+
+
+
+
+
+
+
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our terms of use,
+cookie and privacy policy.
+Copyright 1999-2020 by Refsnes Data. All Rights Reserved.
+ Powered by W3.CSS.

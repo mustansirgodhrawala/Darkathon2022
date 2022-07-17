@@ -1,0 +1,864 @@
+
+
+
+    Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  HardenedBSD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Stable release: HardenedBSD-stable 11-STABLE v1100056.11
+
+
+
+
+
+
+
+
+
+
+
+            Submitted by op on Sat, 12/22/2018 - 16:27
+
+
+
+    HardenedBSD-11-STABLE-v1100056.11 - https://github.com/HardenedBSD/hardenedBSD-stable/releases/tag/HardenedB...
+Highlights:
+
+MFC r342030: Plug memory leak for AES_*_NIST_GMAC algorithms. (1ab95dc20c0f79f2d5b347e572904ef355aec886)
+MFC r342227: bootpd: validate hardware type (dc1918c7f951e0c048665e5428f341e1cccad25a) [FreeBSD-SA-18:15.bootpd]
+MFC r339909: Allow changing lagg(4) MTU (d055422cc148b2fffbe4ba2a2fcf0fc887bcddc5)
+Partial MFC of r342125: Fix bugs in plugable CC algorithm and siftr sysctls. (f445d2ac303ef82d01bdb265c7b73f4eed5d8c99) [CVE-candidate]
+MFC r341990: Fix a possible mbuf double free in bwn_dma_tx_start(). (84fc627d53884d2d1a08864a55536699ee3a2f52) [CVE-candidate]
+MFC r341441: Some fixes for LD_BIND_NOW + ifuncs. (65520f2661bfb6e75d862ed693ab66f633a5bc9e)
+MFC r340046, r340050 Add support ps/2 scancodes for NumLock, ScrollLock and numerical keypad keys (c321d531cfeb7c0408fb4160df20b9c1a2b91d40)
+MFC r341375: Allow to create swap zone larger than v_page_count / 2. (61710bbfdf016232e290b03ef4e247bc1cb0b8b8)
+MFC r341008: Fix possible panic during ifnet detach in rtsock. (7a2718d69b304f4e6b9db7b38932cdddcdf12a6f)
+netmap updates
+mlx5* security and feature updates
+infiniband security and feature updates
+linuxkpi updates
+
+Installer images:
+http://installer.hardenedbsd.org/pub/HardenedBSD/releases/amd64/amd64/IS...
+CHECKSUM.SHA512:
+
+SHA512 (HardenedBSD-11-STABLE-v1100056.11-amd64-bootonly.iso) = ae8bf3897c9a3c76da066cde1781abda0a9ea3b413702d96ba60004d8f264edf1151e84b6cd42e4098d933b344cb54f3fc5bde48b55c1839582d965223bdf41d
+SHA512 (HardenedBSD-11-STABLE-v1100056.11-amd64-disc1.iso) = 0b5e100a039300927127ec53e4c28947718435e37056ac23128394e71f67d9c00bd5d4a65110a25d9feadecc074ac85b4b303569ad3c6bca9352e96505fee35d
+SHA512 (HardenedBSD-11-STABLE-v1100056.11-amd64-memstick.img) = a33a946d9671104baa39054321bb4a8f81ed2c3a526c7415253ea35c8cd4aec982ced35c9bd482b1761e87bbaf01eaa819d31d05d5b64abf78f303020ccceed8
+SHA512 (HardenedBSD-11-STABLE-v1100056.11-amd64-mini-memstick.img) = 5c9151bad95f9bbc14dd3107332c388275696b01238dfac4a21b724f3f0652aac0ee85fae334b1f9c3e16cf2bb53a0e067220fdd980e829005d53c83d3c9b624
+
+CHECKSUM.SHA512.asc:
+
+-----BEGIN PGP SIGNATURE-----
+iQIzBAABCAAdFiEEu1M4jTvZiSgVy54wgZsRom/9GI0FAlwcA48ACgkQgZsRom/9
+GI3OtA/+Jt9GA3OSNiX2ZhmKnDEwQLjpqK4R9Gv9O5PmelPoTh6HExywnVvWQSYS
+3M98Oz393HaoZnw0v9uq6ycKJ1+dwrveSJuOV4Nd+TnMxixEGMjIq4rNsvHxbVNl
+tQuJY5MFAgl9s8IaGm7uaDwyxdVDJyA31XocQ38vvaca97s+BxEgGJusEzMvVakV
+Hd6xBW0G6CqNzlVoKJhj0rGrLm8vGsMsWBcvNLjh8WUJiy02y9KhuJ6iHYI3Y5Pi
+D9Ri6vX+rss0L6pF43K78ihoEsYa55LyTKwCd3kUox0g1zwJSM06PZhNJf36h5uH
+oyJNkfqqk7aUsy7bIyEZ5z5UPZtSD9vmpEL6BEFSMd/6f6epfYWE5ghjcMqJ3Vlw
+iV8O3oUh5JY7nZnTD25sRZjIBsjrCR5iyHB9niL0T0ZwQmK7aR6Sy61gyidrRCrz
+hs0E2Wr07hJlz9UwM+FCPQ7v2/iZGsSLTkcGkX5d1q/480DsbMV3Jo4pABw75ozT
+VLFxSdBkiNiAXKJxjeRDXI5scsn2VoUSBRgfycUNQy1iz202tSaiZBwifCgtRW/k
+LERX7o5YJC0Qf5J+Y8BHP5gxra8U5PhpjiziNrUdMNG6Mxkj2qlM6UqQzQfGXBKB
++JxBxLyz4Vf8w/RnnhlZ5PAW+mXTCyJvRwK5K0G7Th2dKgM0jFQ=
+=h1hi
+-----END PGP SIGNATURE-----
+
+
+Changelog:
+
+Oliver Pinter (1):
+
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+
+Oliver Pinter + (36):
+
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+      Merge branch 'freebsd/11-stable/master' into hardened/11-stable/master
+
+
+
+ae (4):
+
+
+
+      MFC r341008:   Fix possible panic during ifnet detach in rtsock.
+
+
+      MFC r341469:   Add assertion to check that named object has correct type.
+
+
+      MFC r341798:   Use correct size for IPv4 address in gethostbyaddr().   When u_long is 8 bytes, it returns EINVAL and 'ipfw -N show' doesn't work.
+
+
+      MFC r342030:   Plug memory leak for AES_*_NIST_GMAC algorithms.
+
+
+
+allanjude (1):
+
+
+
+      MFC: r339289: Resolve a hang in ZFS during vnode reclaimation
+
+
+
+araujo (1):
+
+
+
+      MFC r340046, r340050
+
+
+
+avos (2):
+
+
+
+      MFC r316939: [lib80211] fix a missing cleanup path.
+
+
+      MFC r306173: Add TP-Link Archer T4U (and TPLINK vendor record in usbdevs).
+
+
+
+bapt (1):
+
+
+
+      MFC r340111:
+
+
+
+brooks (1):
+
+
+
+      Partial MFC of r342125:
+
+
+
+cy (7):
+
+
+
+      MFC r341265:
+
+
+      MFC r341280:
+
+
+      MFC r341384:
+
+
+      MFC r341377, r341388 (fixup):
+
+
+      As part of the general cleanup of the ipfilter code, special cases are committed separately to document fixing them separately from the general cleanup. In this case we don't want to hide the utter brokenness of what is being fixed.
+
+
+      MFC r341650:
+
+
+      MFC r342150:
+
+
+
+dab (3):
+
+
+
+      MFC r341820:
+
+
+      MFC r341806:
+
+
+      MFC r341988
+
+
+
+emaste (1):
+
+
+
+      MFC r342227: bootpd: validate hardware type
+
+
+
+eugen (7):
+
+
+
+      MFC r340245: ping(8): improve diagnostics in case of wrong arguments.
+
+
+      MFC r340319: jail(8): introduce new command option -e to exhibit a list of configured non-wildcard jails with their parameters, no matter running or not.
+
+
+      MFC r340321: Move definition of $jail_conf variable to /etc/defaults/rc.conf from jail startup script so it can be successfully queried with the command "sysrc jail_conf".
+
+
+      MFC r340322-r340324,r340327: periodic/etc/weekly/340.noid
+
+
+      MFC r340394: ipfw.8: Fix part of the SYNOPSIS documenting LIST OF RULES AND PREPROCESSING that is still referred as last section of the SYNOPSIS later but was erroneously situated in the section IN-KERNEL NAT.
+
+
+      MFC r341768,r341795: ping(8): remove needless comparision with LONG_MAX after unsigned long ultmp changed to long ltmp in r340245.
+
+
+      MFC r342071: ng_bpf.4: fix EXAMPLES: do not activate promiscuous mode
+
+
+
+gjb (2):
+
+
+
+      Document SA-18:14.
+
+
+      MFC r339873:
+
+
+
+hselasky (72):
+
+
+
+      MFC r341517 and r341592: linuxkpi: implement idr_is_empty() and ida_is_empty().
+
+
+      MFC r341591: Fix build of the atomic long LinuxKPI header file on some platforms.
+
+
+      MFC r341518: linuxkpi: Fix for use-after-free when tearing down character devices.
+
+
+      MFC r341519: linuxkpi: properly implement netif_carrier_ok().
+
+
+      MFC r341520: linuxkpi: Really check if PCI is offline
+
+
+      MFC r341521: ibcore: Make sure GID index variable gets initialized.
+
+
+      MFC r341522: ibcore: Discard unused error codes.
+
+
+      MFC r341523: ibcore: Don't access invalid port.
+
+
+      MFC r341524: ibcore: Add support for IB_SPEED_HDR in sysfs rate printout.
+
+
+      MFC r341525: ibcore: Check ib_find_pkey() return value.
+
+
+      MFC r341526: ibcore: Fix an array index check
+
+
+      MFC r341527: ibcore: Add missing check for failure.
+
+
+      MFC r341528: ibcore: Always check return value from ib_init_ah_from_wc().
+
+
+      MFC r341529: ibcore: Make sure all VNETs are scanned for VLAN interfaces.
+
+
+      MFC r341530: ibcore: Fix loopback with rdma-cm.
+
+
+      MFC r341531: ibcore: Add missing unref of netdevice.
+
+
+      MFC r341532: ibcore: Fix sleeping in atomic when RoCE is used
+
+
+      MFC r341533: ibcore: ip6_dev_find() needs to know the scope ID.
+
+
+      MFC r341534: ibcore: Fix clearing of bound device interface.
+
+
+      MFC r339012: For changing the MTU on tun/tap devices, it should not matter whether it is done via using ifconfig, which uses a SIOCSIFMTU ioctl() command, or doing it using a TUNSIFINFO/TAPSIFINFO ioctl() command. Without this patch, for IPv6 the new MTU is not used when creating routes. Especially, when initiating TCP connections after increasing the MTU, the old MTU is still used to compute the MSS. Thanks to ae@ and bz@ for helping to improve the patch.
+
+
+      MFC r341535: ipoib: correct setting MTU from inside ipoib(4).
+
+
+      MFC r341536: ipoib: Don't do a light flush when MTU is unchanged.
+
+
+      MFC r341537: ipoib: increase the non-cm queue length
+
+
+      MFC r341538: ipoib: Notify on modify QP failure only when relevant
+
+
+      MFC r341539: krping: Fix for memory leak in error case.
+
+
+      MFC r341540: libibverbs: Fix memory leak in ibv_read_sysfs_file().
+
+
+      MFC r341541: opensm: Use precision specifier for scanf
+
+
+      MFC r341542: mlx4core: Avoid multiplication overflow by casting multiplication.
+
+
+      MFC r341543: mlx4: Zero initialize device capabilities to avoid use of uninitialized fields.
+
+
+      MFC r341544: mlx4core: Add checks for invalid port numbers.
+
+
+      MFC r341545: mlx4: Add board identifier and firmware version to sysctl
+
+
+      MFC r341546: mlx4en: Add driver version to sysctl desc
+
+
+      MFC r341547: mlx4en: Remove the DRBR and associated logic in the transmit path.
+
+
+      MFC r341549: mlx4en: Add support for receiving all data using one or more MCLBYTES sized mbufs. Also when the MTU is greater than MCLBYTES.
+
+
+      MFC r341550: mlx4en: Remove duplicate statistics variable assignment.
+
+
+      MFC r341551: mlx4: Make sure default VNET is set when adding a new interface.
+
+
+      MFC r341552: mlx4en: Optimise reception of small packets.
+
+
+      MFC r341553: mlx5: Fix integer overflow while resizing CQ
+
+
+      MFC r341554: mlx5: Raise fatal IB event when sys error occurs
+
+
+      MFC r341555: mlx5: Discard unused return values.
+
+
+      MFC r341556: mlx5: Fix for potential memory leaks.
+
+
+      MFC r341557: mlx5: Add SRQ fixes from Linux
+
+
+      MFC r341558: mlx5: Convert some spaces into tabs and use device_printf() instead of printf().
+
+
+      MFC r341559 and r341645: mlx5: Move hw.mlx5 node definition to mlx5_core.
+
+
+      MFC r341560: mlx5: Fix use-after-free in self-healing flow
+
+
+      MFC r341561: mlx5: Add global control to disable firmware reset, for all mlx5 devices.
+
+
+      MFC r341562: mlx5: Extend vector argument to u64.
+
+
+      MFC r341563: mlx5: Implement support for configuring PCIe packet write ordering via a sysctl.
+
+
+      MFC r341564: mlx5: Add software tx_jumbo_packets counter
+
+
+      MFC r341565: mlx5: Fix wrong size allocation for QoS ETC TC register
+
+
+      MFC r341566: mlx5: Fixes to allow command polling mode to exist alongside event mode.
+
+
+      MFC r341567: mlx5: Fix driver version location
+
+
+      MFC r341568: mlx5ib: Fix sign extension in mlx5_ib_query_device
+
+
+      MFC r341569: mlx5ib: Fix null pointer dereference in mlx5_ib_create_srq
+
+
+      MFC r341570: mlx5ib: Make sure the congestion work timer does not escape the drain procedure.
+
+
+      MFC r341571: mlx5ib: Set default active width and speed when querying port.
+
+
+      MFC r341572 and r341590: mlx5fpga: Initial code import.
+
+
+      MFC r341573 amd r341643: mlx5fpga_tools initial code import.
+
+
+      MFC r341574: mlx5fpga: Support MorseQ board
+
+
+      MFC r341575: mlx5fpga: IOCTL for FPGA temperature measurement
+
+
+      MFC r341576: mlx5fpga: Add set and query connect/disconnect FPGA
+
+
+      MFC r341577: mlx5en: Implement support for bandwidth limiting in by ratio, ETS.
+
+
+      MFC r341578 and r341655: mlx5en: Remove the DRBR and associated logic in the transmit path.
+
+
+      MFC r341579: mlx5en: Fix for inlining issues in transmit path
+
+
+      MFC r341581: mlx5en: Add support for IFM_10G_LR and IFM_40G_ER4 media types.
+
+
+      MFC r341582: mlx5en: Fix race in mlx5e_ethtool_debug_stats().
+
+
+      MFC r341583: mlx5en: Statically allocate and free the channel structure(s).
+
+
+      MFC r341584: mlx5en: Count all transmitted and received bytes.
+
+
+      MFC r341585: mlx5en: Improve configuration of HW LRO.
+
+
+      MFC r341587: mlx4/mlx5: Updated driver version to 3.5.0
+
+
+      MFC r334648: Add support for SIMCom SIM7600E.
+
+
+      MFC r341844: Don't register IOCTLs with capsicum when there is no valid file descriptor. This fixes tcpdump when using mlx5_X devices.
+
+
+
+imp (1):
+
+
+
+      MFC: r334909 | imp
+
+
+
+kevans (1):
+
+
+
+      Fix kenv handling in stable/11 following r337333
+
+
+
+kib (10):
+
+
+
+      MFC r340862: Trivial reduction of the code duplication, reuse the return FALSE code.
+
+
+      MFC r340863: Generalize ELF parse_notes().
+
+
+      MFC r341374: Correct the tunable name in the message.
+
+
+      MFC r341375: Allow to create swap zone larger than v_page_count / 2.
+
+
+      MFC r341397: Correct accuracy of the barrier writes accounting.
+
+
+      MFC r341441: Some fixes for LD_BIND_NOW + ifuncs.
+
+
+      MFC r341439: Provide naive but self-contained implementations of memset(3) and bzero(3) for rtld.
+
+
+      MFC r341447: Improve procstat reporting for the linux cdev file descriptors.
+
+
+      MFC r341448: Print type designator 'D' for the KF_TYPE_DEV files.
+
+
+      MFC r342144: Document new required MI behaviour of pmap_enter(9) for CoW.
+
+
+
+kp (1):
+
+
+
+      pfsync: Performance improvement
+
+
+
+markj (1):
+
+
+
+      MFC r341990: Fix a possible mbuf double free in bwn_dma_tx_start().
+
+
+
+mav (1):
+
+
+
+      MFC r339909: Allow changing lagg(4) MTU.
+
+
+
+mmel (4):
+
+
+
+      MFC r341511,r341512,r341513:
+
+
+      MFC r341679:
+
+
+      MFC r341738:
+
+
+      Fix mismerge caused by r342111. This is a direct commit to stable/11.
+
+
+
+sobomax (2):
+
+
+
+      MFC: r340745, fix CU: output of the --debug-dump=decodedline.
+
+
+      MFC r341257: improve speed of empty block detection.
+
+
+
+tuexen (2):
+
+
+
+      MFC r341335:
+
+
+      MFC r339042:
+
+
+
+vmaffione (5):
+
+
+
+      netmap: fix module Makefile
+
+
+      MFC r341516, r341589
+
+
+      MFC r341624
+
+
+      MFC r341726
+
+
+      MFC r341992
+
+
+
+yuripv (2):
+
+
+
+      MFC r339311, r339313: Restore some of the ctype definitions reported in the PR from pre-CLDR data, namely 0xE000-0xF8FF private use area, and 0xFF00-0xFFF half- and fullwidth punctuation.
+
+
+      MFC r339827: localedef: define characters in "space" class also as "print", except for the known conflicts ("control" characters can't be "print"able). POSIX doesn't explicitly forbid this, and actually includes  character in "print".
+
+
+
+Uploads:  shortlog-HardenedBSD-11-STABLE-v1100056.11.txt CHECKSUM.SHA512.txt CHECKSUM.SHA512.asc_.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Donate to HardenedBSD
+
+
+
+
+
+
+
+
+GitHub Sponsors
+BTC:
+1FmbSRvZK4yC1b6aj
+eZWSvYXV2nmvwdWQq
+BCH:
+1PbGHPPmdNqSmh4L
+3SbvPdaPzSL9kZ5H6f
+ETH:
+0x9Ea8E44736AC8Ed
+806ef57f7F174a14D93689775
+LTC:
+LQsiWawAU9saQi4mK
+AyW8LBY97WXaTPi9m
+
+
+
+      2021 Donation Status
+
+
+
+
+Contributions raised: $19,369.02 out of target of $15,000 USD.
+
+
+
+      Navigation
+
+  HomeAbout HardenedBSDLatest BuildsHardenedBSD InfrastructureMirrorsEasy Feature ComparisonsDonorsHardenedBSD WikiMailing ListsRoadmapMeet The TeamProjectsIn media
+
+
+
+      Search form
+
+  Search
+
+
+
+
+
+
+
+      Links
+
+  HardenedBSD at GitHub
+HardenedBSD at GitLab
+HardenedBSD on Twitter
+HardenedBSD on Mastodon
+HardenedBSD via Tor Onion Service v3
+HardenedBSD on DEF CON Forums
+HardenedBSD on Matrix
+#hardenedbsd at Libera Chat IRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright © 2014-2022 The HardenedBSD Project.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and is used by HardenedBSD with the permission of The FreeBSD Foundation.
+Logo proudly designed by Hyper6.
+SoldierX is a sponsor of the HardenedBSD project.

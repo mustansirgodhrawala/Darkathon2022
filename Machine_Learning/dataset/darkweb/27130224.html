@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   DarkRise: The Darknet doesn't fail.
+  </title>
+  <meta charset="utf-8"/>
+  <link href="https://darkri.se/" rel="canonical"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport"/>
+  <meta content="Learn how to use Tor hidden services safely. Check whether a darknet site is online, View the uptime history of popular darknet sites and their mirrors." name="description"/>
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <style>
+   html{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #212529;
+    background-color:#FCFCFC;
+    padding-bottom: 75px;
+}
+code{
+    font-size:1.3em
+}
+.content {
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: .2em;
+     padding-right: .2em;
+     max-width: 768px;
+}
+a {
+     text-decoration: none;
+     color: #6a9d00;
+}
+h3 {
+    padding-bottom: 25px;
+}
+h3 span {
+     margin-top: 5px;
+     font-size: 12px;
+     font-weight: normal;
+     float: right;
+     text-align: right;
+}
+h4 {
+    color: #444;
+}
+pre{
+    overflow:hidden;
+}
+ ul {
+    list-style: none;
+     padding: 0;
+     margin: 0;
+}
+ .last_seen {
+    font-size: 12px;
+    color: #999;
+}
+.offline li {
+    display: inline;
+     color: #bbb;
+     font-size: 8pt;
+}
+.online a {
+    font-size: 10pt;
+}
+.online li {
+    padding-left: 1em;
+     text-indent: -.7em;
+}
+.online li::before {
+    content: "•";
+    color: yellowgreen;
+     padding-right: .2em;
+}
+li.status2::before {
+     color: #eee;
+}
+ .offline h5 {
+     color: #bbb;
+     margin-bottom: 0px;
+     font-weight: normal;
+}
+.offline ul {
+     margin-top: -19px;
+     margin-left: 64px;
+     max-width: 265px;
+     max-height: 100px;
+     overflow: auto;
+}
+.offline li {
+    padding-right: 10px;
+}
+.more {
+  padding-top: 5px;
+  padding-left: 17px;
+}
+.more a {
+  color: #384a12;
+}
+h4 a {
+  color: #444;
+}
+h4 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #cdcdcd;
+}
+
+
+.active_success {
+    color: #fff;
+    background-color: #7ddf7c;
+    font-family: 'Source Sans Pro',sans-serif;
+    border-radius: .5em;
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 12px;
+    width: auto;
+    margin-top: -15px;
+}
+
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #3CB4D2;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 20px;
+  line-height: 21px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  font-size: 14px;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 7px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+
+
+.cattag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 20px;
+  line-height: 21px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.cattag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 7px;
+}
+
+.cattag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  input {display:none;}
+  label {display:inline-block; padding:15px;}
+  input:checked + label {background-color:#bf1d1d; color:#fff;}
+  .panels-container {display:block;}
+  .panel {display:none; }
+
+  #tab1:checked ~ .panels-container .panel1,
+  #tab2:checked ~ .panels-container .panel2,
+  #tab3:checked ~ .panels-container .panel3,
+  #tab4:checked ~ .panels-container .panel4,
+  #tab5:checked ~ .panels-container .panel5 {
+    display: block;
+  }
+
+#working {
+background-color: #179912;
+font-size: 14px;
+border-radius: 10%;
+}
+
+#notworking {
+background-color: #ca1b1b;
+font-size: 14px;
+border-radius: 10%;
+}
+
+
+.notworking a {
+     text-decoration: none;
+     color: #ca1b1b;
+}
+
+.working a {
+     text-decoration: none;
+     color: #179912;
+}
+  </style>
+ </head>
+ <body>
+  <div class="content">
+   <a href="/" style="text-decoration: none; color: #000;">
+    <h3>
+     <center>
+      DarkRise:
+      <br/>
+      The darknet doesn't fail.
+     </center>
+    </h3>
+   </a>
+   <h2>
+    Archetyp Market
+    <a class="cattag">
+     Marketplace - Escrow
+    </a>
+   </h2>
+   <p>
+    Is Archetyp Market Online?
+    <b>
+     Yes
+    </b>
+   </p>
+   <h4>
+    Archetyp Market: Links
+   </h4>
+   <div class="urls">
+    <code>
+     <div class="working">
+      <p>
+       <a href="http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion/enter" target="_blank">
+        http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion/enter
+       </a>
+       <br/>
+      </p>
+     </div>
+    </code>
+   </div>
+   <h4>
+    Last Online URL Detected:
+   </h4>
+   <div class="urls">
+    <code>
+     <div class="working">
+      <p>
+       <a href="http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion/enter" target="_blank">
+        http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion/enter
+       </a>
+      </p>
+     </div>
+    </code>
+   </div>
+   <hr/>
+   <h4>
+    About Archetyp Market:
+   </h4>
+   <p>
+    Worldwide market, XMR only, Drugs only and 5% Comission
+   </p>
+   <hr/>
+   <style type="text/css">
+    .s__c {
+  display: grid;
+  grid-gap: 1em;
+  max-width: 900px;
+}
+details[open] > summary {
+  color: gray;
+}
+
+.u__s {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+pre {
+  background: var(--ay);
+  padding: 1em;
+  white-space: pre-line;
+  font-size: .8em;
+  height: 350px;
+}
+figure, pre {
+  overflow: auto;
+}
+   </style>
+  </div>
+ </body>
+</html>

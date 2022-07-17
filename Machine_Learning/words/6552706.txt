@@ -1,0 +1,327 @@
+
+
+
+LTEFrom The Hidden WikiRevision as of 06:38, 13 February 2016 by Onionsope (talk | contribs) (Created page with "{{redirect|Long-term evolution|the biological concept|Evolution|and|E. coli long-term evolution experiment}} {{merge from|LTE timeline|discuss=Talk:LTE (telecommunication)#Pro...")(diff) ← Older revision | Latest revision (diff) | Newer revision → (diff)Jump to navigationJump to searchTemplate:Merge from
+
+File:3GPP Long Term Evolution Country Map.svg  Adoption of LTE technology as of December 7, 2014 Template:Legend Template:Legend Template:Legend
+File:Lte signal android.png  LTE signal indicator in Android
+LTE (Long-Term Evolution, commonly marketed as 4G LTE) is a standard for wireless communication of high-speed data for mobile phones and data terminals. It is based on the GSM/EDGE and UMTS/HSPA network technologies, increasing the capacity and speed using a different radio interface together with core network improvements.<ref>Template:Cite web</ref><ref>Template:Cite web</ref> The standard is developed by the 3GPP (3rd Generation Partnership Project) and is specified in its Release 8 document series, with minor enhancements described in Release 9.
+LTE is the natural upgrade path for carriers with both GSM/UMTS networks and CDMA2000 networks. The different LTE frequencies and bands used in different countries will mean that only multi-band phones will be able to use LTE in all countries where it is supported.
+Although marketed as a 4G wireless service, LTE (as specified in the 3GPP Release 8 and 9 document series) does not satisfy the technical requirements the 3GPP consortium has adopted for its new LTE Advanced standard.  The requirements were originally set forth by the ITU-R organization in its IMT Advanced specification. However, due to marketing pressures and the significant advancements that WiMAX, Evolved HSPA and LTE bring to the original 3G technologies, ITU later decided that LTE together with the aforementioned technologies can be called 4G technologies.<ref>Template:Cite web</ref> The LTE Advanced standard formally satisfies the ITU-R requirements to be considered IMT-Advanced.<ref>Template:Cite web</ref> To differentiate LTE Advanced and WiMAX-Advanced from current 4G technologies, ITU has defined them as "True 4G".<ref>Template:Cite web</ref><ref>Template:Cite web</ref>
+
+Contents
+
+1 Overview
+
+1.1 LTE Direct
+
+
+2 Features
+3 Voice calls
+
+3.1 Enhanced voice quality
+
+
+4 Frequency bands
+5 Patents
+6 See also
+7 References
+8 Further reading
+9 External links
+
+9.1 White papers and other technical information
+
+
+
+
+
+Overview
+File:Samsung 4G LTE modem-4.jpg  Telia-branded Samsung LTE modem
+File:HTC Thunderbolt.jpg  HTC ThunderBolt, the second commercially available LTE smartphone
+LTE stands for Long Term Evolution<ref>ETSI Long Term Evolution page</ref> and is a registered trademark owned by ETSI (European Telecommunications Standards Institute) for the wireless data communications technology and a development of the GSM/UMTS standards. However other nations and companies do play an active role in the LTE project.  The goal of LTE was to increase the capacity and speed of wireless data networks using new DSP (digital signal processing) techniques and modulations that were developed around the turn of the millennium. A further goal was the redesign and simplification of the network architecture to an IP-based system with significantly reduced transfer latency compared to the 3G architecture. The LTE wireless interface is incompatible with 2G and 3G networks, so that it must be operated on a separate radio spectrum.
+LTE was first proposed by NTT DoCoMo of Japan in 2004, and studies on the new standard officially commenced in 2005.<ref name="rel8wp">Template:Cite web</ref> In May 2007, the LTE/SAE Trial Initiative (LSTI) alliance was founded as a global collaboration between vendors and operators with the goal of verifying and promoting the new standard in order to ensure the global introduction of the technology as quickly as possible.<ref name="lsti-3gpp">Template:Cite web</ref><ref>Template:Cite web</ref> The LTE standard was finalized in December 2008, and the first publicly available LTE service was launched by TeliaSonera in Oslo and Stockholm on December 14, 2009 as a data connection with a USB modem. The LTE services were launched by major North American carriers as well, with the Samsung SCH-r900 being the world’s first LTE Mobile phone starting on September 21, 2010<ref>Template:Cite web</ref><ref>Template:Cite web</ref> and Samsung Galaxy Indulge being the world’s first LTE smartphone starting on February 10, 2011<ref>Template:Cite web</ref><ref>Template:Cite web</ref> both offered by MetroPCS and HTC ThunderBolt offered by Verizon starting on March 17 being the second LTE smartphone to be sold commercially.<ref>Template:Cite web</ref><ref>Template:Cite web</ref>  In Canada, Rogers Wireless was the first to launch LTE network on July 7, 2011 offering the Sierra Wireless AirCard® 313U USB mobile broadband modem, known as the "LTE Rocket™ stick" then followed closely by mobile devices from both HTC and Samsung.<ref>Template:Cite web</ref> Initially, CDMA operators planned to upgrade to rival standards called UMB and WiMAX, but all the major CDMA operators (such as Verizon, Sprint and MetroPCS in the United States, Bell and Telus in Canada, au by KDDI in Japan, SK Telecom in South Korea and China Telecom/China Unicom in China) have announced that they intend to migrate to LTE after all. The evolution of LTE is LTE Advanced, which was standardized in March 2011.<ref name="LTE End-to-End System Description">Template:Cite book</ref> Services are expected to commence in 2013.<ref>Template:Cite web</ref>
+The LTE specification provides downlink peak rates of 300 Mbit/s, uplink peak rates of 75 Mbit/s and QoS provisions permitting a transfer latency of less than 5 ms in the radio access network. LTE has the ability to manage fast-moving mobiles and supports multi-cast and broadcast streams. LTE supports scalable carrier bandwidths, from 1.4 MHz to 20 MHz and supports both frequency division duplexing (FDD) and time-division duplexing (TDD). The IP-based network architecture, called the Evolved Packet Core (EPC) designed to replace the GPRS Core Network, supports seamless handovers for both voice and data to cell towers with older network technology such as GSM, UMTS and CDMA2000.<ref name=EricssonWhitePaper>Template:Cite book</ref> The simpler architecture results in lower operating costs (for example, each E-UTRA cell will support up to four times the data and voice capacity supported by HSPA<ref name="Motorola White Paper: Long Term Evolution (LTE)">Template:Cite web</ref>).
+
+LTE Direct
+A new LTE protocol named LTE Direct works as an innovative device-to-device technology enabling the discovery of thousands of devices in the proximity of approximately 500 meters.<ref>Template:Cite web</ref> Pioneered by Qualcomm, the company has been leading the standardization of this new technology along with other 3GPP participants. LTE Direct offers several advantages over existing proximity solutions including but not limited to Wi-Fi or Bluetooth. One of the most popular use cases for this technology was developed by a New York City based company called Compass.to. The core feature of proximal discovery among devices included a targeted discount voucher to a nearby device which matched specific interests.<ref>Template:Cite web</ref> The Compass.to use case was featured at global conferences and events such as CES 2015, MWC 2015, and said to be extended to many other scenarios including film festivals, theme parks and sporting events. “You can think of LTE Direct as a sixth sense that is always aware of the environment around you,” said Mahesh Makhijani, technical marketing director at Qualcomm, at a session on the technology. Additionally, the protocol offers less battery drainage and extended range when compared to other proximity solutions.
+Below is a list of countries by 4G LTE penetration as measured by OpenSignal.com in June 2015.<ref>http://opensignal.com/reports/2015/09/state-of-lte-q3-2015/</ref>
+
+
+
+
+Rank
+Country/Territory
+Penetration
+
+
+1
+Template:Flagcountry
+97%
+
+
+2
+Template:Flagcountry
+90%
+
+
+3
+Template:Flagcountry
+86%
+
+
+4
+Template:Flagcountry
+86%
+
+
+5
+Template:Flagcountry
+84%
+
+
+6
+Template:Flagcountry
+84%
+
+
+7
+Template:Flagcountry
+81%
+
+
+8
+Template:Flagcountry
+80%
+
+
+9
+Template:Flagcountry
+79%
+
+
+10
+Template:Flagcountry
+78%
+
+
+11
+Template:Flagcountry
+78%
+
+
+12
+Template:Flagcountry
+76%
+
+
+13
+Template:Flagcountry
+75%
+
+
+14
+Template:Flagcountry
+74%
+
+
+15
+Template:Flagcountry
+74%
+
+
+Features
+Much of the LTE standard addresses the upgrading of 3G UMTS to what will eventually be 4G mobile communications technology. A large amount of the work is aimed at simplifying the architecture of the system, as it transitions from the existing UMTS circuit + packet switching combined network, to an all-IP flat architecture system. E-UTRA is the air interface of LTE. Its main features are:
+
+Peak download rates up to 299.6 Mbit/s and upload rates up to 75.4 Mbit/s depending on the user equipment category (with 4×4 antennas using 20 MHz of spectrum). Five different terminal classes have been defined from a voice centric class up to a high end terminal that supports the peak data rates. All terminals will be able to process 20 MHz bandwidth.
+Low data transfer latencies (sub-5 ms latency for small IP packets in optimal conditions), lower latencies for handover and connection setup time than with previous radio access technologies.
+Improved support for mobility, exemplified by support for terminals moving at up to Template:Convert or Template:Convert depending on the frequency band.<ref>Sesia, Toufik, Baker: LTETemplate:Spaced ndashThe UMTS Long Term Evolution; From Theory to Practice, page 11. Wiley, 2009.</ref>
+Orthogonal frequency-division multiple access for the downlink, Single-carrier FDMA for the uplink to conserve power.
+Support for both FDD and TDD communication systems as well as half-duplex FDD with the same radio access technology.
+Support for all frequency bands currently used by IMT systems by ITU-R.
+Increased spectrum flexibility: 1.4 MHz, 3 MHz, 5 MHz, 10 MHz, 15 MHz and 20 MHz wide cells are standardized. (W-CDMA has no option for other than 5 MHz slices, leading to some problems rolling-out in countries where 5 MHz is a commonly allocated width of spectrum so would frequently already be in use with legacy standards such as 2G GSM and cdmaOne.)
+Support for cell sizes from tens of metres radius (femto and picocells) up to Template:Convert radius macrocells.  In the lower frequency bands to be used in rural areas, Template:Convert is the optimal cell size, Template:Convert having reasonable performance, and up to 100 km cell sizes supported with acceptable performance. In city and urban areas, higher frequency bands (such as 2.6 GHz in EU) are used to support high speed mobile broadband. In this case, cell sizes may be Template:Convert or even less.
+Supports at least 200 active data clients in every 5 MHz cell.<ref>Template:Cite web</ref>
+Simplified architecture: The network side of E-UTRAN is composed only of eNode Bs.
+Support for inter-operation and co-existence with legacy standards (e.g., GSM/EDGE, UMTS and CDMA2000). Users can start a call or transfer of data in an area using an LTE standard, and, should coverage be unavailable, continue the operation without any action on their part using GSM/GPRS or W-CDMA-based UMTS or even 3GPP2 networks such as cdmaOne or CDMA2000.
+Packet switched radio interface.
+Support for MBSFN (Multicast-broadcast single-frequency network). This feature can deliver services such as Mobile TV using the LTE infrastructure, and is a competitor for DVB-H-based TV broadcast.
+Voice calls
+File:LTE-CSFB-E-UTRAN-UTRAN-GERAN-Interfaces.svg  cs domLTE CSFB to GSM/UMTS network interconnects
+The LTE standard supports only packet switching with its all-IP network. Voice calls in GSM, UMTS and CDMA2000 are circuit switched, so with the adoption of LTE, carriers will have to re-engineer their voice call network.<ref>"Voice and SMS in LTE Technology White Paper, Rohde & Schwarz, 2011"</ref> Three different approaches sprang up:
+
+Voice over LTE (VoLTE)
+Template:Main
+Circuit-switched fallback (CSFB)
+In this approach, LTE just provides data services, and when a voice call is to be initiated or received, it will fall back to the circuit-switched domain. When using this solution, operators just need to upgrade the MSC instead of deploying the IMS, and therefore, can provide services quickly. However, the disadvantage is longer call setup delay.
+Simultaneous voice and LTE (SVLTE)
+In this approach, the handset works simultaneously in the LTE and circuit switched modes, with the LTE mode providing data services and the circuit switched mode providing the voice service. This is a solution solely based on the handset, which does not have special requirements on the network and does not require the deployment of IMS either. The disadvantage of this solution is that the phone can become expensive with high power consumption.
+One additional approach which is not initiated by operators is the usage of over-the-top content (OTT) services, using applications like Skype and Google Talk to provide LTE voice service.<ref>[1] Huawei Communicate Magazine, Issue 61, September 2011.</ref>
+Most major backers of LTE preferred and promoted VoLTE from the beginning. The lack of software support in initial LTE devices as well as core network devices however led to a number of carriers promoting VoLGA (Voice over LTE Generic Access) as an interim solution.<ref>VoLGA whitepaper</ref> The idea was to use the same principles as GAN (Generic Access Network, also known as UMA or Unlicensed Mobile Access), which defines the protocols through which a mobile handset can perform voice calls over a customer's private Internet connection, usually over wireless LAN. VoLGA however never gained much support, because VoLTE (IMS) promises much more flexible services, albeit at the cost of having to upgrade the entire voice call infrastructure. VoLTE will also require Single Radio Voice Call Continuity (SRVCC) in order to be able to smoothly perform a handover to a 3G network in case of poor LTE signal quality.<ref>Qualcomm Chipset Powers First Successful VoIP-Over-LTE Call With Single Radio Voice Call Continuity</ref>
+While the industry has seemingly standardized on VoLTE for the future, the demand for voice calls today has led LTE carriers to introduce CSFB as a stopgap measure. When placing or receiving a voice call, LTE handsets will fall back to old 2G or 3G networks for the duration of the call.
+
+Enhanced voice quality
+To ensure compatibility, 3GPP demands at least AMR-NB codec (narrow band), but the recommended speech codec for VoLTE is  Adaptive Multi-Rate Wideband, also known as HD Voice. This codec is mandated in 3GPP networks that support 16 kHz sampling.<ref>Erricsson - LTE delivers superior voice, too</ref>
+Fraunhofer IIS has proposed and demonstrated "Full-HD Voice", an implementation of the AAC-ELD (Advanced Audio CodingTemplate:Spaced ndashEnhanced Low Delay) codec for LTE handsets.<ref>Fraunhofer IIS Demos Full-HD Voice Over LTE On Android Handsets</ref> Where previous cell phone voice codecs only supported frequencies up to 3.5 kHz and upcoming wideband audio services branded as HD Voice up to 7 kHz, Full-HD Voice supports the entire bandwidth range from 20 Hz to 20 kHz. For end-to-end Full-HD Voice calls to succeed however, both the caller and recipient's handsets as well as networks have to support the feature.<ref>"Firm Set to Demo HD Voice over LTE"</ref>
+
+Frequency bands
+The LTE standard covers a range of many different bands, each of which is designated by both a frequency and a band number. In North America, 700, 750, 800, 850, 1900, 1700/2100 (AWS), 2500 and 2600 MHz (Rogers Communications, Bell Canada) are used (bands 2, 4, 7, 12, 13, 17, 25, 26, 41); 2500 MHz in South America; 700, 800, 900, 1800, 2600 MHz in Europe (bands 3, 7, 20);<ref>Template:Cite web</ref><ref>Template:Cite web</ref> 800, 1800 and 2600 MHz in Asia (bands 1, 3, 5, 7, 8, 11, 13, 40)<ref>CSL begins dual-band 1800/2600 LTE rollout</ref><ref>Oredoo - The Technology</ref> and 1800 MHz and 2300 MHz in Australia<ref>Telstra switches on first LTE network on 1800MHz in Australia</ref><ref>Optus still evaluating LTE</ref> and New Zealand (bands 3, 40).<ref>Sexo</ref> As a result, phones from one country may not work in other countries. Users will need a multi-band capable phone for roaming internationally.
+
+Patents
+According to the European Telecommunications Standards Institute's (ETSI) intellectual property rights (IPR) database, about 50 companies have declared, as of March 2012, holding essential patents covering the LTE standard.<ref name="ipeg-6-03-2012">Template:Cite web</ref> The ETSI has made no investigation on the correctness of the declarations however,<ref name="ipeg-6-03-2012"/> so that "any analysis of essential LTE patents should take into account more than ETSI declarations."<ref>Template:Cite web Second comment by the author: "Thus, any analysis of essential LTE patents should take into account more than ETSI declarations."</ref>
+The table below shows the available LTE royalty:
+
+
+Announced royalty rates for LTE patents
+
+
+Company
+
+Royalty rate
+
+
+Alcatel-Lucent
+
+2.00%
+
+
+Ericsson
+
+1.50%
+
+
+Huawei Technologies Co., Ltd.
+
+1.50%
+
+
+InterDigital Inc.
+
+2.50%
+
+
+Motorola Inc.
+
+2.25%
+
+
+Motorola Mobility Inc.
+
+2.25%
+
+
+Nokia Corporation
+
+1.50%
+
+
+Nokia Siemens Networks
+
+0.80%
+
+
+Nortel Networks Ltd
+
+1.00%
+
+
+Qualcomm Incorporated
+
+3.25%
+
+
+Samsung Electronics Co., Ltd.
+
+2.40%
+
+
+ZTE Corporation
+
+1.00%
+
+
+See also
+4G-LTE filter
+Comparison of wireless data standards
+E-UTRATemplate:Spaced ndashthe radio access network used in LTE
+eMBMSTemplate:Spaced ndashMulticast Broadcast Multimedia Services (MBMS) enhanced for LTE
+Flat IPTemplate:Spaced ndashflat IP architectures in mobile networks
+HSPA+Template:Spaced ndashan enhancement of the 3GPP HSPA standard
+LTE AdvancedTemplate:Spaced ndashthe successor to LTE
+LTE in unlicensed spectrum
+Next-generation network
+QoS Class Identifier (QCI) - the mechanism used in LTE networks to allocate proper Quality of Service to bearer traffic
+System architecture evolutionTemplate:Spaced ndashthe re-architecturing of core networks in LTE
+TD-LTE (LTE TDD)Template:Spaced ndashan alternative LTE standard developed by China
+UMBTemplate:Spaced ndasha proposed competitor to LTE, never commercialized
+WiMAXTemplate:Spaced ndasha competitor to LTE
+Zadoff–Chu sequence
+References
+ 1 }}
+     | references-column-width
+     | references-column-count references-column-count-{{#if:1|{{{1}}}}} }}
+   | {{#if: 30em
+     | references-column-width }} }}" style="{{#if:
+   | {{#iferror: {{#ifexpr: 1 > 1 }}
+     | Template:Column-width
+     | Template:Column-count }}
+   | {{#if: 30em
+     | Template:Column-width }} }} list-style-type: {{#switch:
+   | upper-alpha
+   | upper-roman
+   | lower-alpha
+   | lower-greek
+   | lower-roman = {{{group}}}
+   | #default = decimal}};">
+
+<references group=""></references>
+Further reading
+Gautam Siwach, Dr. Amir Esmailpour "LTE Security Potential Vulnerability and Algorithm Enhancements", IEEE Canadian Conference on Electrical and Computer Engineering," IEEE CCECE, Toronto, Canada, May 2014
+Erik Dahlman, Stefan Parkvall, Johan Sköld "4GTemplate:Spaced ndashLTE/LTE-Advanced for Mobile Broadband", Academic Press, 2011, ISBN 978-0-12-385489-6
+Stefania Sesia, Issam Toufik, and Matthew Baker, "LTETemplate:Spaced ndashThe UMTS Long Term EvolutionTemplate:Spaced ndashFrom Theory to Practice", Second Edition including Release 10 for LTE-Advanced, John Wiley & Sons, 2011, ISBN 978-0-470-66025-6
+Chris Johnson, "LTE in BULLETS", CreateSpace, 2010, ISBN 978-1-4528-3464-1
+Erik Dahlman, Stefan Parkvall, Johan Sköld, Per Beming, "3G EvolutionTemplate:Spaced ndashHSPA and LTE for Mobile Broadband", 2nd edition, Academic Press, 2008, ISBN 978-0-12-374538-5
+Borko Furht, Syed A. Ahson, "Long Term Evolution: 3GPP LTE Radio And Cellular Technology", Crc Press, 2009, ISBN 978-1-4200-7210-5
+F. Khan, "LTE for 4G Mobile BroadbandTemplate:Spaced ndashAir Interface Technologies and Performance", Cambridge University Press, 2009
+Mustafa Ergen, "Mobile BroadbandTemplate:Spaced ndashIncluding WiMAX and LTE", Springer, NY, 2009
+H. Ekström, A. Furuskär, J. Karlsson, M. Meyer, S. Parkvall, J. Torsner, and M. Wahlqvist, "Technical Solutions for the 3G Long-Term Evolution," IEEE Commun. Mag., vol. 44, no. 3, March 2006, pp. 38–45
+E. Dahlman, H. Ekström, A. Furuskär, Y. Jading, J. Karlsson, M. Lundevall, and S. Parkvall, "The 3G Long-Term EvolutionTemplate:Spaced ndashRadio Interface Concepts and Performance Evaluation," IEEE Vehicular Technology Conference (VTC) 2006 Spring, Melbourne, Australia, May 2006
+K. Fazel and S. Kaiser, Multi-Carrier and Spread Spectrum Systems: From OFDM and MC-CDMA to LTE and WiMAX, 2nd Edition, John Wiley & Sons, 2008, ISBN 978-0-470-99821-2
+Agilent Technologies, "LTE and the Evolution to 4G Wireless: Design and Measurement Challenges", John Wiley & Sons, 2009 ISBN 978-0-470-68261-6
+Sajal K. Das, John Wiley & Sons (April 2010): "Mobile Handset Design", ISBN 978-0-470-82467-2 .
+Beaver, Paul, "What is TD-LTE?", RF&Microwave Designline, September 2011.
+Dan Forsberg, Günther Horn, Wolf-Dietrich Moeller, Valtteri Niemi, "LTE Security", Second Edition, John Wiley & Sons Ltd, Chichester 2013, ISBN 978-1-118-35558-9
+SeungJune Yi, SungDuck Chun, YoungDae lee, SungJun Park, SungHoon Jung, "Radio Protocols for LTE and LTE-Advanced", Wiley, 2012, ISBN 978-1-118-18853-8
+External links
+Template:Sister project links
+
+LTE homepage from the 3GPP website
+LTE A-Z Description 3GPP LTE Encyclopedia
+4G/LTE community website
+LTE Frequently Asked Questions
+LTE Deployment Map
+White papers and other technical information
+Template:Div col
+
+LTE Technology Overview and Tutorial Series including Webinars and Video presentations
+"The Long Term Evolution of 3G" on Ericsson Review, no. 2, 2005
+LTE technology introduction
+"3G Long-Term Evolution" by Dr. Erik Dahlman at Ericsson Research
+"Long-Term 3G EvolutionTemplate:Spaced ndashRadio Access" by Dr. Stefan Parkvall at Ericsson Research
+"3GPP Long-Term Evolution / System Architecture Evolution: Overview" by Ulrich Barth at Alcatel
+The 3G Long-Term EvolutionTemplate:Spaced ndashRadio Interface Concepts and Performance Evaluation
+LTE and the Evolution to 4G Wireless Design and Measurement ChallengesTemplate:Spaced ndash"LTE Security"
+Role of Crypto in Mobile Communications "LTE Security"
+Dr. Maode Ma "Security Investigation in 4G LTE Wireless Networks", 2012.
+LTE Uplink Interference Modeling
+Template:Div col end
+Template:Mobile telecommunications standards
+Template:Wireless video
+Template:Telecommunications
+
+
+
+
+
+
+Retrieved from "http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php?title=LTE&oldid=445361"
+Categories: Pages with broken file links3GPP standardsInternet ProtocolLTE (telecommunication)Mobile technologyMobile telecommunicationsNavigation menuPage actionsPageDiscussionView sourceHistoryPage actionsPageDiscussionMoreToolsPersonal toolsCreate accountLog inNavigationMain pageRecent changesRandom pageRules of the siteSearch  ToolsWhat links hereRelated changesSpecial pagesPrintable versionPermanent linkPage information This page was last edited on 13 February 2016, at 06:38.Privacy policyAbout The Hidden WikiDisclaimers

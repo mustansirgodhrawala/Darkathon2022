@@ -1,0 +1,374 @@
+
+
+
+
+
+
+
+				Send BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Home
+
+
+
+							About
+
+
+
+							Blog
+
+
+
+
+
+
+
+
+
+
+
+
+								Home
+
+
+
+								About
+
+
+
+								Blog
+
+
+
+								Send BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			                	MAY 13
+
+
+
+		                	Is Bitcoin anonymous? A common myth worth debunking
+
+
+		                		Bitcoin is used for buying drugs. Bitcoin is only used by criminals to finance terrorism, child abuse, or money laundering. Nerds use Bitcoin for shady or illicit activities. All these sentences are very common and accuse Bitcoin of something that is not true at all.
+
+
+
+	                		                						            	Yet, all of them have the power to dominate mainstream media. But they all come back to misunderstanding the answer to a straightforward question. Is Bitcoin anonymous?
+Is Bitcoin anonymous?
+If anyone wanted to facilitate any of the activities mentioned above, such as money laundering or terrorism financing, they would probably choose an anonymous tool or platform since it stops governments or law-enforcement organizations from preventing or punishing them for doing so. Thus, it makes sense for them to use tools that would lead to the privacy of transactions.
+Sadly for them, and luckily for everyone else, Bitcoin is not anonymous. 
+Contrary to what mainstream media will say, Bitcoin does not hide all the information about transactions that would lead to complete privacy. On the contrary, Bitcoin has a publicly opened ledger called blockchain, where every single transaction that happened on-chain ever since the inception of Bitcoin in 2009 is recorded.
+With blockchain, all the transactions occurring will forever be written in an immutable ledger and thus, cannot be changed. This simply means that if the transaction happens and is written in the blockchain, it cannot be changed or deleted. Once it happens, the transacted amount, the fee, the sending and receiving addresses will be imprinted on the blockchain, where they will stay forever.
+DoJ and the Bitfinex hack
+Probably the most recent example that shows best that Bitcoin and crypto as such are not as anonymous as many claims, is a fairly recent arrest made by the Department of Justice of the United States. Only a few weeks ago, DoJ seized bitcoins worth over 5 billion dollars that were traced back to Ilya Lichtenstein and Heather Morgan.
+
+
+
+
+
+
+													Ilya Lichtenstein and Heather Morgan, the aleged Bitfinex hackers
+
+
+
+
+				            	                		                						            	This couple is said to be behind the hack of almost 120 000 BTC from Bitfinex that took place in 2016 and at that time was worth about 72 million dollars. Since then, the couple was able to run from justice for almost six years, yet, it caught up with them. DoJ was able to trace some of their transactions back to the couple, and thanks to that, also got their hands on more than 94 000 BTC that were stolen in the previous hack. What does this tell us about Bitcoin?
+Bitcoin is traceable, thus pseudonymous
+Thus, Bitcoin is not anonymous because it leaves behind these little “breadcrumbs” of information about transactions that occurred. Bitcoin is mainly referred to as pseudonymous, which means that it does not provide complete privacy of the transaction, yet, it does not reveal the owner’s entity. It only shows the sending address, which is created from the strings of numbers and letters, and the receiving address, where the same logic applies. 
+However, if the real-world identity is ever connected to the address of a wallet, the transactions will become traceable, and all the activity that is connected to the wallet, such as sending or receiving bitcoins, will be connected to the owner.
+What you should know about KYC? 
+Thus, contrary to popular opinion, Bitcoin is traceable. Especially if the user uses any form of KYC services (Know-Your-Customer). What this means is that if any exchange, service, or platform that offers any cryptocurrency services asks for the identification in the form of a passport, ID, or even a bank statement, it can connect the real-world identity with the cryptocurrency wallet.
+If that happens, every single transaction that occurs from or to that address or the available wallet is then connected to the owner’s identity. And while this is not a problem for some people, some would like to protect their financial privacy. Not because they would be doing something illicit, just because having financial privacy should be the same as having any other type of privacy.
+The fact that someone does not want to share their financial situation does not mean that they are automatically doing something illicit. If any stranger asked you on the street how much money you have in your bank account, would you be willing to answer that question honestly? If not, you just showed that having the right to have your financial state private to yourself is important.
+Ben Weiss, CEO of a CoinFlip, a Bitcoin ATM operator, has, for instance, stated the following with regards to the Bitcoin and traceability:
+
+“Bitcoin transactions are more traceable than cash, and it would be stupid to launder dirty money using Bitcoin.”
+
+In fact, many Bitcoin experts are pointing out that Bitcoin is far less anonymous than cash. In the case of physical cash transactions, there are no traces of it ever happening. Whereas in the case of Bitcoin transactions, some information is always made public, making it possible to trace.
+Lightning Network and anonymity
+Yet, there are different ways to keep the wallets relatively anonymous. While some of them can be rather complicated and technical, and we will talk about them in the future, other tools are relatively simple. One of them is, for instance, a Bitcoin ATM, which in some cases still offers a chance to buy or sell Bitcoin anonymously. Usually, it is only to some amount, such as 1 000 dollars, but it can still provide an opportunity to get some bitcoins or satoshis without KYC.
+
+
+
+
+
+
+
+													Bitcoin ATM, source VancouverIsAwesome.com
+
+
+
+
+
+				            	                		                						            	Another, probably more straightforward option is the usage of Lightning Network (LN). Lightning Network is a layer-2 solution where transactions do not go directly to the blockchain. Without going too deep into the LN technicalities, LN can offer a simple way to move around some pocket money without any need for KYC or complicated skills. The only thing that is needed is any LN wallet such as Blue Wallet, Muun Wallet, Phoenix wallet, or countless others that are easy to download.
+Yet, it needs to be stated that Lightning Network is still relatively new and can be subject to faulty transactions. Sometimes, some transactions will not go through, or there is not enough liquidity to move the capital around, which is a reason why as of now, it is only recommended to only send a few hundred dollars worth of transactions at most.
+Conclusion
+Without any doubt, stating that Bitcoin is anonymous is a false statement. Yes, it offers some kind of privacy, especially if the users are careful. However, mainstream crypto usage through centralized exchanges will almost certainly go through a KYC process, where any form of privacy is immediately compromised. Whether that is positive or negative is only up to you and what you believe in.
+
+
+
+						                    														Lack bitcoin anonymity?
+Send bitcoin privately with whir.
+
+
+												SEND BTC
+
+
+
+
+	                			                		                						            	Disclaimer: This article does not serve as a piece of financial advice or encouragement and inducement for the usage of Bitcoin and other cryptocurrencies. Its primary role is informative, explanatory, and educational. The readers have to decide themselves whether to use or not to use these types of services.
+
+
+		                GET STARTED NOW - SEND BTC PRIVATELY
+
+
+
+
+
+
+
+
+
+
+						WHIR
+
+
+
+
+											About
+
+
+
+								Affiliates
+
+
+
+								Blog
+
+
+
+
+
+							USE CASES
+
+
+
+
+											Bitcoin privacy for adults
+
+
+
+											Bitcoin privacy for activists
+
+
+
+											Bitcoin privacy for journalists
+
+
+
+											Bitcoin privacy for libertarians
+
+
+
+											Bitcoin privacy for cillionaires
+
+
+
+											Bitcoin for privacy extremists
+
+
+
+											Bitcoin privacy for adult content creators
+
+
+
+											Bitcoin privacy for sugardaddies
+
+
+
+
+
+						SUPPORT
+
+
+
+
+											FAQ
+
+
+
+											API
+
+
+
+											Crypto payment processors
+
+
+
+
+									Transaction check
+
+
+
+
+								Help center
+
+
+
+
+
+							FORMALITIES
+
+
+
+
+											Terms
+
+
+
+											Privacy policy
+
+
+
+											Bitcoin white paper
+
+
+
+
+
+
+
+								You agree that you won't commit, encourage, or support use of the whir service or website for any other purposes other than those expressly provided by our Terms and Privacy Policy. Additionally, you agree that you won't commit, encourage, or support any illegal or fraudulent activity, as well as the use of the whir to legalize illegal income, financing of terrorism, participation in schemes of phishing, forgery or other such falsification or manipulation. For the full disclosure, please read our Terms and Privacy Policy provided at the links above.
+
+
+
+
+							© mmxxii whir
+
+															.onion
+
+
+
+
+									FOLLOW
+
+
+
+
+
+									US
+
+
+
+
+
+
+
+
+
+
+
+
+                        By using whir, you agree to Privacy policy.
+
+
+
+                        Okay
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Send bitcoin privately
+
+					Hide your bitcoin balance and previous transactions from the recipient.
+
+
+
+
+
+
+									RECIPIENT BTC ADDRESS
+
+
+
+
+									BTC AMOUNT
+
+
+								Continue
+
+
+
+
+
+
+							Sending the payment to a cryptoprocessor? Read this first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Transaction check
+
+
+
+
+
+
+									Transaction ID or Deposit BTC address
+
+
+								Check

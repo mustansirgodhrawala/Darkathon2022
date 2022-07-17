@@ -1,0 +1,98 @@
+          home about research        Signs an Intel CPU May Be an Engineering Sample Published Dec 3, 2021 — 11 mins read    Occasionally floating around on the secondhand market are Engineering Sample (ES) CPUs from major CPU manufacturers. Due to either their market dominance or longstanding corporate security issues - possibly both - “ES CPU” is generally associated with Intel’s engineering samples. As of writing, there are 97 listings for “intel engineering sample” compared to a mere 11 listings for “amd engineering sample.” The ES CPU I had was Intel as well, so they’ll be the focus of this discussion. As described by Intel, ES CPUs are:  … pre-production processors Intel loans to original equipment manufacturers (OEMs), original device manufacturers (ODMs), and independent software vendors (ISVs) to be used in the product design cycle before product launch. … ES processors:  Produced by Intel are the sole property of Intel. Produced by Intel are Intel Confidential. Are provided by Intel under nondisclosure and/or special loan agreement terms with restrictions on the recipient’s handling and use. …   It would be accurate to think of these as “beta” processors, and may have unpredictable behavior or performance. From a discussion on r/homelab, the experiences that people report with ES CPUs range from near-retail to completely unusable. Despite this, they otherwise appear physically and operationally similar to their retail counterparts. ES CPUs in the Secondhand Market Given that CPUs are extremely high-cost - especially server CPUs - over time, many ES CPUs “go missing” from the vendors that receive them on loan, and find their way on to the secondhand market.1 While they’re still expensive, ES CPUs are often sold for well below market rate for the CPU they are most similar to because of the aforementioned unpredictability and questionable legality. Looking at the secondhand price of Intel Xeon 5218 CPUs on eBay over the past three months, we see that the two ES CPUs sold have commanded well under the minimum sale price of any retail CPU sold during that timeframe:2                                                                While my experience with the secondhand market has been near-universally positive throughout my homelabbing career (special shout-out to r/homelabsales), there are occasionally bad actors who see this price discrepancy and try to take advantage of it. You don’t have to look hard to find evidence of buyers returning CPUs which they’ve swapped out for ES CPUs,3 or sellers misrepresenting ES CPUs as retail.4 While I clearly don’t recommend buying an ES or QS CPU,5 I think it’s deplorable that people would try to make a quick buck by duping others who participate in or supply the homelabbing community. Improving Identification of ES CPUs So, what should you do if you suspect you have received an ES CPU and didn’t plan to? On Intel’s support page under “How do I identify engineering sample processors produced by Intel?” they only recommend that you should check the markings on the top side of the CPU. While this is generally reliable, a more capable bad actor could forge this with limited access to machinery - and not all CPUs (ex. embedded CPUs in NUCs) are easy to access to check the topside markings. Before shipping my CPU off to Intel, I jotted down some of the odd traits I observed about the CPU which were visible in software, without needing to disassemble my computer, such as missing or incorrect data that the CPU reported. Oddly, the CPU never actually reports6 that it is an “Engineering Sample” or “Qualification Sample” CPU, and you have to compare it to another CPU or prior knowledge in order to figure out that it’s not a retail chip. To be clear, this isn’t a guide to identifying an Engineering Sample CPU - it’s just picking apart some discrepancies that I could find by comparing my ES CPU to a similar CPU in an instance I rented on AWS. It’s also not foolproof - with deeper technical expertise, someone could try modifying the CPU itself to make the incorrect information I noted appear correct - or even identical to retail chips. These are edited for brevity - since repeating the same per-core information or the same flags isn’t a value add.7 cat /proc/cpuinfo processor        : 0
+vendor_id        : GenuineIntel
+cpu family       : 6
+model            : 85
+model name       : 06/55
+stepping         : 2
+microcode        : 0x80000037
+cpu MHz          : 2200.000
+cache size       : 33792 KB
+physical id      : 0
+siblings         : 48
+core id          : 0
+cpu cores        : 24
+apicid           : 0
+initial apicid   : 0
+fpu              : yes
+fpu_exception    : yes
+cpuid level      : 22
+wp               : yes
+flags            : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin mba tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke
+vmx flags        : vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs             : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa itlb_multihit
+bogomips         : 3600.00
+clflush size     : 64
+cache_alignment  : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management :
+
+[ other threads omitted as duplicates ]
+ Abnormalities:  The model name is incorrect. Instead of “6/55” you should expect to see a specific, recognizable model like “Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz.” The reported microcode is known to be associated with engineering samples. If you search for “0x80000037 microcode” online, several forum threads about Xeon Scalable Engineering Sample CPU threads are found, but no threads about retail processors.  dmidecode -t processor # dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.1.1 present.
+
+Handle 0x0039, DMI type 4, 48 bytes
+Processor Information
+    Socket Designation: CPU
+    Type: Central Processor
+    Family: Xeon
+    Manufacturer: Intel(R) Corporation
+    ID: 52 06 05 00 FF FB EB BF
+    Signature: Type 0, Family 6, Model 85, Stepping 2
+    Flags:
+        [ covered by cpuinfo ]
+    Version: Intel(R) Genuine processor
+    Voltage: 1.6 V
+    External Clock: 100 MHz
+    Max Speed: 4500 MHz
+    Current Speed: 1800 MHz
+    Status: Populated, Enabled
+    Upgrade: Other
+    L1 Cache Handle: 0x0036
+    L2 Cache Handle: 0x0037
+    L3 Cache Handle: 0x0038
+    Serial Number: Not Specified
+    Asset Tag: UNKNOWN
+    Part Number: Not Specified
+    Core Count: 24
+    Core Enabled: 24
+    Thread Count: 48
+    Characteristics:
+        [ omitted as not interesting ]
+ Abnormalities:  The Version is incorrect. Very similar issue to what you should expect from /proc/cpuinfo - instead of “Intel(R) Genuine processor” a genuine processor should have recognizable model information. The Max Speed is incorrect. This CPU (and any CPU in its family) cannot turbo by default to 4.5 GHz. The Upgrade field is incorrect. This CPU uses Socket LGA3647, and the c5.large instance showed “Socket LGA3647-1” in this field - “Other” is not a socket.  Notes:  The lack of Serial Number, Asset Tag, and Part Number seemed damning, but checking the c5.large instance I rented, I saw “Not Specified” for all three of these. Maybe that’s a privacy feature and this data is intentionally hidden in KVM. Either way, I can’t tell for sure - so the only weirdness to point to is that the asset tag is “UNKNOWN” instead of “Not Specified.”  lscpu Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   46 bits physical, 48 bits virtual
+CPU(s):                          48
+On-line CPU(s) list:             0-47
+Thread(s) per core:              2
+Core(s) per socket:              24
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           85
+Model name:                      06/55
+Stepping:                        2
+CPU MHz:                         1359.531
+CPU max MHz:                     3200.0000
+CPU min MHz:                     1000.0000
+BogoMIPS:                        3600.00
+Virtualization:                  VT-x
+L1d cache:                       768 KiB
+L1i cache:                       768 KiB
+L2 cache:                        24 MiB
+L3 cache:                        33 MiB
+NUMA node0 CPU(s):               0-47
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX vulnerable
+Vulnerability Mds:               Vulnerable; SMT vulnerable
+Vulnerability Meltdown:          Vulnerable
+Vulnerability Spec store bypass: Vulnerable
+Vulnerability Spectre v1:        Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:        Vulnerable, STIBP: disabled
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Vulnerable
+Flags:                           [ covered by cpuinfo ]
+ Abnormalities:  The “Model name” field is incorrect. This presents exactly the same as /proc/cpuinfo.  Notes:
+lscpu seems to have the correct current/max/minimum clock speed, even though dmidecode does not. This CPU is vulnerable to Spectre/Meltdown and all mitigations were intentionally disabled by me for reasons I cover in my next article about ES CPUs. Spectre/Meltdown mitigations do still work on ES CPUs.  Identification Quick Tips When looking to see if a CPU is an Engineering Sample, topside markings should still be your first choice. I searched for a while and could only find one example of these being tampered with. If you are looking digitally though, booting Windows and checking with CPU-Z is easiest. If you can’t (or won’t) boot Windows, looking at the CPU’s model name in Linux is an easy tip-off, as is the microcode if you can clearly see it’s associated with ES CPUs during searching. Though again, none of these are foolproof, and the occurrence rate of people duping others with ES CPUs to make a buck is pretty rare. If you just have a buggy or abnormally-behaving system and are wondering if an ES CPU could be causing it, it’s honestly not likely to be an ES CPU. Computers are so much worse than most of us know, and it’s a miracle they work at all. It’s also not likely that a bad actor would spend the time hacking CPUs and sanding and laser engraving, just to make an extra couple hundred dollars. You should consider the methods I put forward insurance against someone doing one or two of those three. Appendix    I reached out to Intel proactively and surrendered the CPU in my posession once I discovered what it was - I am not admitting to committing a crime (see NY Penal Law § 165.40 - one must knowingly posess stolen property), nor am I encouraging others to purchase these CPUs. I am not currently publishing details beyond this publicly. ↩   A qualification sample or “QS” processor is closer to a “gamma” stage CPU. It’s still an Engineering Sample CPU, but as I understand it they’re “closer-to-retail” batches. Still owned by Intel and shouldn’t be counted on to be retail-like, though. ↩   Example eBay community thread about a bad buyer. ↩   Example forum thread about a bad seller. ↩   I genuinely don’t recommend buying ES or QS CPUs. Legal issues aside, you may pay for them tenfold with your time debugging. I know I did - very frustrating issues to deal with, and I hope Intel shreds the CPU that I’ve surrendered to them. ↩   In Windows programs like CPU-Z, it seems like they do some more intelligent analysis of the CPU’s reported data to gauge if it’s an ES chip. However in Linux, cpuinfo/dmidecode/etc. don’t seem to augment the data reported by the CPU about itself. ↩   For those interested, I uploaded less-redacted pastes for both the c5.large (here) and Engineering Sample (here) if you want to poke around more. ↩        Recent Posts   Jun 5, 2022 — Cross-Certificates in Practice: HARICA's Root CA 2021 Transition  HARICA - the only non-DigiCert certificate authority offering .onion certificates (for Tor hidden services) - has recently switched over to signing new certificates with their 2021 CAs. Here are some cliff notes on how to use HARICA's cross-certificates in your trust chain if that becomes a problem for you or your website viewers. Read more    Mar 10, 2022 — How I'm Avoiding Your Unsolicited Calls  It's pretty sad that I'm paying money for a phone number to post online, specifically to get it pulled into the tools used by the multi-hundred-billion-dollar talent and marketing industries, just to have some peace and quiet during the day. In case you want to do the same, here's what I do and what (little) it took. Read more    Jan 18, 2022 — On Digital Resurrection  Digital preservation is incredibly important, and if you have the means or energy to support it, I can't recommend it enough. Tangentially, I stumbled on to some dead links, and through preserved materials I easily recreated a now-defunct unitasking site about IPv6 ULAs. That's a small but neat example of how sites can provide value even after the original developer loses interest or funds to run them - as long as we're funding preservation of them. Read more  Want more? Go back to the index!     © Chris Partridge 2022 RSS  This page is also available on the regular internet.  This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

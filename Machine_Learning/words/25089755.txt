@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Home
+
+
+
+
+        Guides
+
+
+
+
+        Links
+
+
+
+
+        Markets
+
+
+
+
+        Shops
+
+
+
+
+        Donations
+
+
+
+
+        Changelog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Market list
+Markets in Tor network offers various things. Not always legal. So be careful, you can end up in jail for illegal products when you don't take care of your operational security. Read recommended guides to be sure you are doing it correctly.
+
+Always buy from trusted sellers with good reputation, always use escrow, do not hold cryptocurrency/founds on the market wallet longer than the duration of the transaction and before you buy something read news about markets, maybe one of them is actually an exit scam or preparing to be an exit scam! By following these four simple rules, you reduce the likelihood of being cheated. If someone urges you to omission escrow, know that they are most likely planning to rob and cheat you.
+
+
+We also provide referral links to the markets. If you want to support our work, register using "ref link" It cost you nothing and we can gain some extra coins to cover server maintenance. Thanks!
+
+
+If market or shop from the list below have a Sub Dread or Recon link, please visit it and read opinions, comments and other information before you buy. Markets with public and external community are more trusted and if one of them is going to be exit scam, you will get that info really fast in compare to the one not having public form of communication. We are updating market links ASAP, but our actions are also based on publicly available information and can be delayed.
+
+Before you buy
+Check news, exit scam info and reputation about markets and vendors.
+Darknetlive - http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/
+Dark Eye - http://darkeyepxw7cuu2cppnjlgqaav6j42gyt43clcn4vjjf7llfyly5cxid.onion/
+Dark Net Trust - http://dntrustmuq5ccf3lygrnhsprpdliakq7r2ljsspczmdsslj5wl4teeid.onion/
+Recon - http://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion/
+Dread - http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/
+Tor Taxi - http://tortaxi7axhn2fv4j475a6blv7vwjtpieokolfnojwvkhsnj7sgctkqd.onion/
+Dead Markets
+Check list of dead, retired and seized markets and markets that vanished with stolen funds.
+Live Markets
+List of markets (sorted alphabetically) with addresses, mirrors and reflinks. Additional information like description, features, vendor bond and Dread thread etc. Everything that can be useful for buyers and sellers.
+Abacus
+Vendor bond: 100 USD
+Commission: 5%
+Address:
+http://abacuseeettcn3n2zxo7tqy5vsxhqpha2jtjqs7cgdjzl2jascr4liad.onion/
+Mirrors: n/a
+Dread Sub: /d/AbacusMarket
+Recon: Not Listed
+Referral System: Yes - Link, Invite Code - 2t421hcn9b
+Alien Market
+Vendor bond: 120 USD
+Commission: 3 USD
+Address:
+http://alienum6t4u47pdn34io5xpvkihfgm5qh5vamqy6cldmsvecx6raddqd.onion/
+Mirrors:
+http://alienyenlkwu4lr67ude3ygxgwwsalxdf2tths7bpusypmutcsj36nyd.onion/
+http://alienzpnta4ac76sfk2kxoi4ak3u42mdkwofw5cukntee4nqpyla6aqd.onion/
+Dread Sub: No Dread
+Recon: Not Listed
+Referral System: No
+AlphaBay
+Vendor bond: 250 USD
+Commission: n/a
+Address:
+http://alphabay522szl32u4ci5e3iokdsyth56ei7rwngr2wm7i5jo54j2eid.onion/
+Mirrors: n/a
+Dread Sub: /d/alphabay
+Recon: alphabay
+Referral System: Yes - Link
+Ares
+Vendor bond: 499 USD
+Commission: n/a
+Address:
+http://sn2sfdqay6cxztroslaxa36covrhoowe6a5xug6wlm6ek7nmeiujgvad.onion/
+Mirrors:
+http://bj6b5mers333ubzkiqla3majrifv5fzuznjmhbivwjdqt7q7ckyhykad.onion
+http://gtlohc26hgbbmdrj7lvu2qyspzdoiludz2yestoktbqqeifxr3eusqad.onion
+Dread Sub: /d/Ares
+Recon: Not Listed
+Referral System: Yes - Link
+Archetyp
+Vendor bond: n/a
+Commission: n/a
+Address:
+http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion/
+Mirrors: n/a
+Dread Sub: /d/Archetyp
+Recon: archetyp
+Referral System: Yes - Link
+ASAP
+Vendor bond: 400 USD
+Commission: 3%
+Address:
+http://asap2u4pvplnkzl7ecle45wajojnftja45wvovl3jrvhangeyq67ziid.onion/
+Mirrors:
+http://asap4u2ihsunfdsumm66pmado3mt3lemdiu3fbx5b7wj5hb3xpgmwkqd.onion/
+http://asap4u7rq4tyakf5gdahmj2c77blwc4noxnsppp5lzlhk7x34x2e22yd.onion/
+Dread Sub: /d/ASAP
+Recon: asap-market
+Referral System: No
+Bohemia
+Vendor bond: 200 USD
+Commission: n/a
+Address:
+http://bohemiaobko4cecexkj5xmlaove6yn726dstp5wfw4pojjwp6762paqd.onion
+Mirror:
+http://bohemiaobbpsjvkexpdpnekqai2ebi32xgr6sbhdpapipv547rm6jhad.onion
+Dread: /d/Bohemia
+Recon: bohemia
+Referral System: Yes - Link
+CannaHome
+Vendor bond: You must be active vendor in other market.
+Commission: n/a
+Address:
+http://cannabmgae3mkekotfzsyrx5lqg7lj7hgcn6t4rumqqs5vnvmuzsmfqd.onion/
+Mirrors: n/a
+Dread Sub: /d/CannaHome
+Recon: cannahome-market
+Referral System: Yes - Invite Code
+
+eir4cwss69
+h4nrklrwq2
+sthnrbevhn
+
+Cypher
+Vendor bond: 250 USD
+Commission: n/a
+Address:
+http://6c5qaeiibh6ggmobsrv6vuilgb5uzjejpt2n3inoz2kv2sgzocymdvyd.onion/
+Mirrors: n/a
+Dread Sub: /d/Cypher
+Recon: cyphermarket
+Referral System: Yes - Link
+Dark Fox
+Vendor bond: 150 USD
+Commission: 4-5%
+Address:
+http://57d5j6hfzfpsfev6c7f5ltney5xahudevvttfmw4lrtkt42iqdrkxmqd.onion/
+Mirrors:
+http://p5eg3xsssjglu6tvwfazp2nqqwfpah55wr3ljil2bezp5shix5ruqsqd.onion/
+Dread Sub: /d/DarkFoxMarket
+Recon: darkfox-market
+Referral System: Yes - Link
+Evil Corp
+Vendor bond: 300 USD
+Commission: 5%
+Address:
+http://castlee5janmtc5h6jiorit7lzdhgfuy43po4oddgi3qpm52ljyljyyd.onion/
+Mirrors: n/a
+Dread Sub: n/a
+Recon: Not Listed
+Referral System: Yes - Link
+Incognito
+Vendor bond: 250 USD
+Commission: n/a
+Address:
+http://incognito2sjotqmbkys7wivkpq7d4a4tkpweoiqefk7mpf7uvyfalad.onion/
+Mirrors:
+http://incognito75yd2w2qylg7xadz2rd7o2peqt5gcvmd2irxqbqj7c6exid.onion/
+Dread Sub: /d/Incognito
+Recon: Incognito
+Referral System: No
+Majestic Garden
+Vendor bond: n/a
+Commission: n/a
+Address:
+http://garden2b7zwrjskh2y3f4pkscgg2waogjp2ilax2mvikjlzmamylznad.onion/
+Mirrors:
+http://garden4vzvrzyp4tks7llcwlynykllpq7qmm6jvuzf3dgsg5jowzenad.onion/
+http://gardendk7zczucz2shdjqhyas567p4nvvoq24tvtyno27jf2fqyd3kyd.onion/
+http://gardeneouxlmnvhobm3ymc3eaghy4l22cubmio7viug6kfbuxwypdfqd.onion/
+http://gardenl24irkr6abfh7s3s5r4mmmw5cthl3lknhd5izd6jjvubtsl3yd.onion/
+http://gardenq54zkgtqkrug63e4ospwcpu2ex7seojcadjua5jiyhew7e6oad.onion/
+http://garden65isqgoyf5vh54fmax52o63osajx6loeoou4wvcyy7loydp7ad.onion/
+http://gardenid673dxcaeqd3aztd3anpbceqfxaatz6j33t4xulyh4trmmgyd.onion/
+http://gardenp6z3nwzk36b7wdic7ydjfmcyg3c723ew7cfzyzzv6dfj2oaiqd.onion/
+http://gardenwdjxv6epp25ge77mfjnwnp4tq3y3x63bg2gx4aai43bk4ztlid.onion/
+Dread Sub: /d/themajesticgarden
+Recon: Not Listed
+Referral System: No
+Revolution
+Vendor bond: 250 USD
+Commission: n/a
+Address:
+http://2b4z3y7fq45kafqy4ygweaz5k4culbbwj6nwfvgdutltlxelurxhd6yd.onion/
+Mirrors:
+http://vkd4tfr424by3fqnwt4uch3b2x5fgacjxqllosrpei7j3d5nktd2slyd.onion/
+http://j6hraom2nsmsansar3d2vhgowvcyqw73jqamqzdnoqbzvwbjbgn7xvad.onion/
+Dread Sub: /d/revolutionmarket
+Recon: Not Listed
+Referral System: No
+Royal Market
+Vendor bond: 150 USD
+Commission: 3%
+Address:
+http://royalrnpvfbodtt5altnnzano6hquvn2d5qy55oofc2zyqciogcevrad.onion/
+Mirrors: n/a
+Dread Sub: /d/RoyalMarket
+Recon: Not Listed
+Referral System: Yes - Link
+Tor2door
+Vendor bond: 150 USD
+Commission: 5%
+Address:
+http://qgma4evyuxoqw6zolgk3y5nsjnd7mbzmuqvajlwop3jbakghe34puuad.onion/
+Mirrors:
+http://yzrrne3pveltulbavydr2kiashvlnysdwclwmklo6cyjuqpxi7ku4xqd.onion/
+http://2m2kr247bkvqxo6e5negq6jkfh7bshunaqdbnofufngwmcrx4ut7wiyd.onion/
+Dread Sub: /d/tor2doormarket
+Recon: tor2door
+Referral System: Yes - Link
+Tor Market
+Vendor bond: 280 USD
+Commission: 5%
+Address:
+http://rrlm2f22lpqgfhyydqkxxzv6snwo5qvc2krjt2q557l7z4te7fsvhbid.onion/
+Mirrors: n/a
+Dread Sub: No Dread
+Recon: Not Listed
+Referral System: No
+WeTheNorth
+Vendor bond: 100 USD
+Commission: n/a
+Address:
+http://hn2paw7zaahbikbejiv6h22zwtijlam65y2c77xj2ypbilm2xs4bnbid.onion/
+Mirrors: n/a
+Dread Sub: /d/wethenorthmarket
+Recon: Not Listed
+Referral System: Yes - Link
+Vice City
+Vendor bond: 150 USD
+Commission: n/a
+Address:
+http://vice2e3gr3pmaikukidllstulxvkb7a247gkguihzvyk3gqwdpolqead.onion/
+Mirrors:
+http://viceagrs476vms3hlgotcimao4lwnpz2ffpvgbdnbeqwu74g47z4usyd.onion/
+Dread Sub: /d/vicecity
+Recon: Not Listed
+Referral System: No
+
+
+
+
+
+
+
+
+
+        HST was  with  by  and .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Home
+
+
+
+
+        Guides
+
+
+
+
+        Links
+
+
+
+
+        Markets
+
+
+
+
+        Shops
+
+
+
+
+        Donations
+
+
+
+
+        Changelog

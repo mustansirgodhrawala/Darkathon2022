@@ -1,0 +1,4075 @@
+
+
+
+
+
+
+
+
+<div margin='auto' width='50%' position='fixed' top='0px'>
+<img src='img/start.png' alt='Image not displayed' height='600' width='800'>
+</div>
+<div style='position:absolute;top:20px;left:30%'>
+<%
+s.ver = 1000;
+
+if(localStorage.getItem('daisySaveAuto') !== null){
+  %>[[Load Game]]
+<%
+}
+%>[[New Game]]
+<a href="http://jennysambition.wordpress.com" target="_blank">Visit Homepage</a>
+[[Instructions|MainInstruct]]
+</div>
+v1.0
+<%
+s.sLink = function(display, target, script){
+return "<a onclick='" + script + "' href='javascript:void(0)' data-passage=" + target + ">" + display + "</a>"
+}
+
+s.setStatBounds = function() {
+  if(s.d.inno<0) s.d.inno = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(s.d.npc[i].inno<0) s.d.npc[i].inno = 0;
+  }
+}
+
+s.inno = function() {
+  return Math.max(s.d.npc[s.d.curNpc].inno,s.d.inno);
+}
+
+s.innoSub = function(amnt) {
+  s.d.inno--;
+  s.d.npc[s.d.curNpc].inno -= amnt;
+}
+//ORAL FUNC
+s.oral = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f'))) {
+	  temSex +=s.d.npc[i].oral;
+	}
+  }
+  return temSex;
+}
+s.oralNum = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if((((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f')))&&(s.d.npc[i].oral>0)) temSex++;
+  }
+  return temSex;
+}
+s.oralToday = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f'))) {
+	  temSex +=s.d.npc[i].oralToday;
+	}
+  }
+  return temSex;
+}
+s.oralNumToday = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if((((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f')))&&(s.d.npc[i].oralToday>0)) temSex++;
+  }
+  return temSex;
+}
+s.addOral = function(unit) {
+  s.d.npc[unit].oral++;
+  s.d.npc[unit].oralToday++;
+  s.d.npc[unit].inno -= 2;
+  s.d.inno -= 1;
+  s.d.sexp += 1;
+  for(var i=0;i<s.d.npc.length;i++) {
+    s.d.npc[i].inno -= s.d.innoSexSub/2;
+  }
+}
+//SEX FUNC
+s.sex = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f'))) {
+	  temSex +=s.d.npc[i].sex;
+	}
+  }
+  return temSex;
+}
+s.sexNum = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if((((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f')))&&(s.d.npc[i].sex>0)) temSex++;
+  }
+  return temSex;
+}
+s.sexToday = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f'))) {
+	  temSex +=s.d.npc[i].sexToday;
+	}
+  }
+  return temSex;
+}
+s.sexNumToday = function(gender) {
+  var temSex = 0;
+  for(var i=0;i<s.d.npc.length;i++) {
+    if((((s.d.npc[i].male)&&(gender==='m'))||((!s.d.npc[i].male)&&(gender==='f')))&&(s.d.npc[i].sexToday>0)) temSex++;
+  }
+  return temSex;
+}
+s.addSex = function(unit) {
+  s.d.npc[unit].sex++;
+  s.d.npc[unit].sexToday++;
+  s.d.npc[unit].inno -= 3;
+  s.d.inno -= 1;
+  s.d.sexp += 2;
+  if(s.d.virgin) s.d.inno -= 4;
+  for(var i=0;i<s.d.npc.length;i++) {
+    s.d.npc[i].inno -= s.d.innoSexSub;
+  }
+}
+
+%>
+
+
+
+
+<%
+s.d = {
+  name:'Daisy',
+  beauty: 60,
+  inno: 100,
+  sexp: 0,
+  cash: 0,
+  actions: 8,
+  actionsMax: 8,
+  day: 0,
+  virgin: true,
+  virginTaker: '',
+  oral: 0,//times received oral
+  TotalPartners: 0,
+  TotalFemalePartners: 0,
+  ver: s.ver
+};
+
+s.d.ends = [false,false,false,false,false,false,false,false];
+s.d.gloryCount = 0;
+s.d.curNpc = 0;
+s.d.curArea = 0;
+s.d.winType = 'none';
+s.d.innoSexSub = 0.5;
+
+s.d.events = ['Cops','Stalker','Subway','Japanese guy'];
+
+function areaClass(name, image) {
+  this.name = name;
+  this.image = image;
+  this.room = [];
+}
+function roomClass(name,found,visited) {
+  this.name = name;
+  this.visited = visited;
+  this.found = found;
+  this.prog = 0;
+}
+
+s.d.area = [];
+s.d.area[0] = new areaClass('Home','img/home/start.png');
+s.d.area[0].room = [
+  new roomClass('Nothing',false,false),
+  new roomClass('Bedroom',false,false),
+  new roomClass('Livingroom',false,false),
+  new roomClass('Kitchen',false,false),
+  new roomClass('Brothers room',false,false),
+  new roomClass('Find dad',true,true),
+  new roomClass('Mothers room',true,true)
+];
+s.d.area[1] = new areaClass('School','img/school/start.png');
+s.d.area[1].room = [
+  new roomClass('Nothing',false,false),
+  new roomClass('Class',true,false),
+  new roomClass('Lounge',false,false),
+  new roomClass('Gym',false,false),
+  new roomClass('Shower Gloryhole',true,true),
+  new roomClass('Monster Cock Search',true,true)
+];
+s.d.classEvents = ['Note','StayAfterClass','UpSkirt'];
+
+s.d.area[2] = new areaClass('Church','img/church/start.png');
+s.d.area[2].room = [
+  new roomClass('Nothing',false,false),
+  new roomClass('Confession',true,false),
+  new roomClass('Podium',false,false),
+  new roomClass('FatherTeds bedroom',false,false),
+  new roomClass('Secluded corner',false,false),
+  new roomClass('Mother Superiors den',false,false)
+];
+
+s.d.area[3] = new areaClass('Park','img/park/start.png');
+s.d.area[3].room = [
+  new roomClass('Nothing',false,false),
+  new roomClass('Go Jogging',true,false),
+  new roomClass('Playground',false,false),
+  new roomClass('Dog Park',false,false),
+  new roomClass('Shady Guy',false,false),
+  new roomClass('Hobo',false,false)
+];
+
+s.d.area[4] = new areaClass('Bar','img/bar/start.png');
+s.d.area[4].room = [
+  new roomClass('Nothing',false,false),
+  new roomClass('Drink',true,false),
+  new roomClass('Frat boys',false,false),
+  new roomClass('Stan',true,true),
+  new roomClass('Dance',false,false),
+  new roomClass('Sam',false,false)
+];
+
+function skillClass(name, desc) {
+  this.name = name;
+  this.level = 0;
+  this.desc = desc;
+}
+s.d.skill = [];
+s.d.skill[s.d.skill.length] = new skillClass('Virgin',
+'Daisy has never had sex.');//0
+s.d.skill[0].level = 1;
+s.d.skill[s.d.skill.length] = new skillClass('Bisexual',
+'Daisy likes clam and sausage.');//1
+s.d.skill[s.d.skill.length] = new skillClass('Incest',
+'Daisy loves her family.');//2
+s.d.skill[s.d.skill.length] = new skillClass('Jungle Fever',
+'Daisy must find that giant cock again. She wants to feel that thing go off inside her.');//3
+s.d.skill[s.d.skill.length] = new skillClass('Blackmail Pics',
+'Nice family photos of dad drilling his daughter.');//4
+s.d.skill[s.d.skill.length] = new skillClass('Likes Rainbows',
+'Daisy is gay friendly. If one dick is good, how can two be bad?');//5
+s.d.skill[s.d.skill.length] = new skillClass('Escort',
+'Daisy is an experienced prostitute.');//6
+s.d.skill[s.d.skill.length] = new skillClass('Fake ID',
+'Daisy can get into bars with this.');//7
+s.d.skill[s.d.skill.length] = new skillClass('Got Green',
+'Daisy has a bag of quality pot.');//8
+s.d.skill[s.d.skill.length] = new skillClass('Exhibitionist',
+'Daisy likes to be watched while having sex.');//9
+s.d.skill[s.d.skill.length] = new skillClass('Dildo',
+'Daisy has her mothers dildo.');//9
+
+function npcClass(name, looks, male, inno, desc) {
+  this.name = name;
+  this.male = male;
+  this.inno = inno;
+  this.desc = desc;
+  this.beauty = looks;
+  this.visited = false;
+  this.prog = 0;
+  this.oral = 0;
+  this.oralToday = 0;
+  this.sex = 0;
+  this.sexToday = 0;
+  this.skill = [];
+  this.track = true;
+}
+s.d.npc = [
+ new npcClass('Brittney',79, false, 60, 'my sister'),//0
+ new npcClass('Doug',68, true,  65, 'my brother'),//1
+ new npcClass('June',83, false, 68, 'my mother'),//2
+ new npcClass('George',75, true,  75, 'my father'),//3
+ new npcClass('Jake',78,true,80,'my brothers best friend'),//4
+ new npcClass('Pete', 65, true,  73, 'my brothers friend'),//5
+ new npcClass('Herb',68, true,  80, 'a timid school-mate'),//6
+ new npcClass('Tyrone',52, true,  25, 'the school bully'),//7
+ new npcClass('MrDurand',69,true,100,'the biology teacher'),//8
+ new npcClass('MsAbell',90, false, 70, 'the gym teacher'),//9
+ new npcClass('Chan', 64, true,  26, 'the class clown'),//10
+ new npcClass('Maggie', 47, false, 75, 'a jock chick'),//11
+ new npcClass('Joe',85, true, 80, 'the black student'),//12
+ new npcClass('Stew',94, true, 87, 'a guy in gym class'),//13
+ new npcClass('Louie', 56, true, 58, 'a student'),//14
+ new npcClass('Riya', 84, false, 84, 'the Indian chick'),//15
+ new npcClass('Niven',   36, true,  21, 'the janitor'),//16
+ new npcClass('Father Ted',87,true,100,'the town priest'),//17
+ new npcClass('Sister Clair',94,false,100, 'a young nun'),//18
+ new npcClass('Mother Superior',80,false,26,'the church matriarch'),//19
+new npcClass('Bdsm Guy',55,true,26,'Mother Superiors toy'),//20
+ new npcClass('Choir Boy',74,true,100,'a kid with a beautiful voice'),//21
+ new npcClass('Bryce',  68, true,  66, 'a gay jogger'),//22
+ new npcClass('Jayson',55, true,76, 'another gay jogger'),//23
+ new npcClass('James',79, true,  75, 'a guy at the park'),//24
+ new npcClass('Jill',74, false,  10, 'James\'s daughter'),//25
+ new npcClass('Shady Guy',27,true,5,'a shady looking guy'),//26
+ new npcClass('Chief', 27, true,  75, 'a large man'),//27
+new npcClass('Frank',67,true,0,'Jills friend at the park'),//28
+ new npcClass('Ned', 42, true,  0, 'Jills other friend'),//29
+ new npcClass('Stan', 42, true,  0, 'a creepy stalker'),//30
+ new npcClass('Kyle',78,true,0,'the swinger guy with the camera'),//31
+ new npcClass('Julie',96,false,0,'Kyles hot swinger wife'),//32
+ new npcClass('John',71, true,0, 'a guy at the dog park'),//33
+ new npcClass('Steve',54, true,  0, 'a dog walker'),//34
+ new npcClass('Mac', 42, true,  0, 'a guy at the park'),//35
+ new npcClass('Coco', 42, false,  0, 'a street whore'),//36
+ new npcClass('Brian',57, true,0, 'from the jogging path'),//37
+ new npcClass('Chester',80, true,0,'a fratboy at the bar'),//38
+ new npcClass('Marty',77,true,10, 'a fratboy at the bar'),//39
+ new npcClass('Brian',68, true,10, 'a fratboy at the bar'),//40
+ new npcClass('Conner',55, true,20,'a fratboy at the bar'),//41
+ new npcClass('Sam', 65, true,  60, 'the blind date'),//42
+ new npcClass('Officer Kruk',  74, true,  20, 'a cop'),//43
+ new npcClass('Officer Hank', 55, true,  21, 'a cop'),//44
+ new npcClass('Wendy', 55, false,  21, 'the waitress'),//45
+ new npcClass('Inmate 317', 37, true,  1, 'a prisoner'),//46
+ new npcClass('The subway guy',52,true,66,'a stranger'),//47
+ new npcClass('The subway girl', 74,false,46,'a stranger'),//48
+new npcClass('Amy',74,false,46,'a schoolmates girlfriend'),//49
+ new npcClass('Patches',58,true,30,'an old hobo'),//50
+ new npcClass('Sir Tinfoil',45, true,43,'a homeless guy'),//51
+ new npcClass('Jeb',38, true,  11, 'a bum'),//52
+ new npcClass('Tyler',22, true,  21, 'a hobo')//53
+];
+s.d.npc[14].track = false;
+s.d.npc[20].track = false;
+s.d.npc[21].track = false;
+
+for(var i=0;i<s.d.npc.length;i++) {
+  if((s.d.npc[i].track)&&(s.d.npc[i].male)) {
+    s.d.TotalPartners++;
+  }
+  if((s.d.npc[i].track)&&(!s.d.npc[i].male)) {
+    s.d.TotalFemalePartners++;
+  }
+}
+%>New game created.
+
+Daisy woke up at her usual time for school. But she wasn't going.
+
+It was her birthday, and she had plans. Daisy had always been the "good girl". She was the daughter of the church organ player. Her family was very devout, and strict.
+
+But today she was officially the legal age of consent. Now she can do what, or who, she wants. She wasn't going to go crazy though. Just one day to taste the freedom. After today she would go back to being "the good daughter".
+
+[[Start Day]]
+
+
+
+
+
+
+<%
+s.d.curArea=0;
+localStorage.setItem('daisySaveAuto', JSON.stringify(window.story.state.d));
+s.d.day++;
+%>Day 1
+<%
+if(s.d.day>1) {
+  %>(Again)
+Attempt <%=s.d.day%>
+<%
+}
+%>
+
+Daisy wakes up in her bedroom.
+
+<%= story.passage('Bedroom').render() %>
+
+
+<%
+//hook for day menu. rnd events happen here.
+var rnd = Math.floor(Math.random()*100);
+if(rnd<35) {
+  rnd = Math.floor(Math.random()*s.d.events.length);
+  %><%= story.passage(s.d.events[rnd]).render() %>
+<%
+} else {
+  %><%= story.passage('Menu').render() %>
+<%
+}
+%>
+<div class='sideBar'>Daisy
+Actions: <%= s.d.actions %>
+Beauty: <%= s.d.beauty %>
+<%
+if(s.d.inno>0) {
+  %>Innocence: <%= s.d.inno %>
+<%
+}
+if(s.d.sexp>0) {
+  %>seXP: <%= s.d.sexp %>
+<%
+}
+if(s.d.cash>0) {
+  %>Cash: <%= s.d.cash %>
+<%
+}
+for(var x=0;x<s.d.skill.length;x++) {
+  if(s.d.skill[x].level>0) {
+    %><abbr title='<%= s.d.skill[x].desc %>'><%= s.d.skill[x].name %></abbr>
+<%
+  }
+}
+%>
+<img src='img/profiles/daisy.png' alt='Image not displayed' height='450' width='150'>
+</div>
+
+
+<%= story.passage('Stats').render() %>
+City Menu
+
+<%
+s.setStatBounds();
+if(s.d.actions>0) {
+  %><%= s.sLink('Home', 'AreaMenu', 'window.story.state.d.curArea=0;') %>
+<%= s.sLink('School', 'AreaMenu', 'window.story.state.d.curArea=1;') %>
+<%= s.sLink('Church', 'AreaMenu', 'window.story.state.d.curArea=2;') %>
+<%= s.sLink('Park', 'AreaMenu', 'window.story.state.d.curArea=3;') %>
+<%
+  if(s.d.skill[7].level>0) {
+    %><%= s.sLink('Bar', 'AreaMenu', 'window.story.state.d.curArea=4;') %>
+<%
+  }
+  %><%= story.passage('Endings').render() %>
+<%
+}
+%>
+[[To Do List]]
+[[System]]
+[[End Day]]
+
+
+<%
+s.setStatBounds();
+if(s.d.actions>0) {
+  %><%=s.d.area[s.d.curArea].name%> Menu
+<%= story.passage('Stats').render() %>
+<img src=<%=s.d.area[s.d.curArea].image%> alt='Image not displayed' height='480' width='800'>
+
+[[Leave|Top]]
+<%
+
+var keepLooking = 0;
+for(var i=0;i<s.d.area[s.d.curArea].room.length;i++) {
+  if(s.d.area[s.d.curArea].room[i].found) {
+    if(!s.d.area[s.d.curArea].room[i].visited) {
+    %>[[<%=s.d.area[s.d.curArea].room[i].name%>]]
+<%
+    }
+  } else {
+    keepLooking++;
+  }
+}
+if(keepLooking>1) {
+  %>[[Take a look around]]
+<%
+}
+} else {
+  %><%= story.passage('End Day').render() %>
+<%
+
+}
+%>
+"Your time is up", an unearthly voice booms.
+
+"Try again".
+
+<%= story.passage('Times Up Explanation').render() %>
+
+Daisys vision blurs, then fades to darkness.
+
+Today: (Number of times/Number of People)
+<span style='color:green'><%=s.sexToday('m')%>/<%=s.sexNumToday('m')%></span> - Sex
+<span style='color:green'><%=s.oralToday('m')%>/<%=s.oralNumToday('m')%></span> - Blowjobs Given
+<span style='color:green'><%=s.oralToday('f')%>/<%=s.oralNumToday('f')%></span> - Lesbian Encounters
+
+Total: (Number of times/Number of People)
+<span style='color:blue'><%=s.sex('m')%>/<%=s.sexNum('m')%></span> - Sex
+<span style='color:blue'><%=s.oral('m')%>/<%=s.oralNum('m')%></span> - Blowjobs Given
+<span style='color:blue'><%=s.oral('f')%>/<%=s.oralNum('f')%></span> - Lesbian Encounters
+
+[[Start Day]]
+<%
+s.setStatBounds();
+s.d.actions = s.d.actionsMax;
+for(var i=0;i<s.d.area.length;i++) {
+  for(var ii=0;ii<s.d.area[i].room.length;ii++) {
+    s.d.area[i].room[ii].visited = false;
+  }
+}
+for(var i=0;i<s.d.npc.length;i++) {
+  s.d.npc[i].prog = 0;
+  s.d.npc[i].sexToday = 0;
+  s.d.npc[i].oralToday = 0;
+}
+s.d.area[0].room[2].prog = 0;//kitchen
+s.d.area[0].room[6].visited = true;//mom room
+s.d.area[1].room[1].prog = 0;//class
+if(s.d.npc[3].sex<1) s.d.area[0].room[5].visited = true;//find dad
+if(s.d.area[1].room[4].prog === 0) s.d.area[1].room[4].visited = true;//gloryhole
+if((s.d.skill[3].level<1)&&(s.d.area[1].room[5].prog<1)) s.d.area[1].room[5].visited=true;// monster
+//if(s.d.npc[29].prog<1) s.d.area[3].room[1].visited = true;//jogging
+s.d.area[4].room[1].prog = 0;//drinking
+if(s.d.npc[30].sex===0) s.d.area[4].room[3].visited=true;//stalker stan
+%>
+
+<%
+var pool = [];
+for(var i=0;i<s.d.area[s.d.curArea].room.length;i++) {
+  if(!s.d.area[s.d.curArea].room[i].found) {
+    pool.push(i);
+  }
+}
+if(pool.length>0) {
+  var rnd = Math.floor(Math.random()*pool.length);
+  %><%= story.passage(s.d.area[s.d.curArea].room[pool[rnd]].name).render() %>
+<%
+
+}
+%>
+
+
+
+<%
+s.d.curNpc = 4;
+s.innoSub(2);
+s.d.area[0].room[3].found = true;
+s.d.area[0].room[3].visited = true;
+s.d.actions--;
+%>Daisy sits down in the kitchen to eat breakfast. Some of her brothers friends show up to wait for him while she is eating.
+
+><img src='img/home/breakfast1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy catches them trying to get a look down her top.
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<95) {
+  %>[[Daisy Shows Off]]
+<%
+}
+if(s.inno()<75) {
+  %>[[Lure one into the bathroom]]
+<%
+}
+if(s.inno()<45) {
+  %>[[Lure two]]
+<%
+}
+if(s.inno()<1) {
+  %>[[On kitchen table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%
+if(s.d.actions>0) {
+s.d.area[0].room[1].found = true;
+//s.d.actions--;
+%><%= story.passage('Stats').render() %>
+<img src='img/home/bedroom1.png' alt='Image not displayed' height='480' width='800'>
+
+In the bedroom
+
+[[Back|AreaMenu]]
+<%
+if(s.d.inno<76) {
+  %>[[Masturbate]]
+<%
+}
+if(s.d.skill[2].level>0) {
+  %>[[Masturbate with the door open]]
+<%
+}
+if(s.d.skill[10].level>0) {
+  %>[[Use dildo]]
+<%
+}
+
+if(s.d.npc[36].prog>0) {
+  %>[[Play with Coco]]
+<%
+}
+
+} else {
+  %><%= story.passage('End Day').render() %>
+<%
+}
+%>
+<%
+if(s.d.actions>0) {
+s.d.curNpc = 0;
+s.d.area[0].room[2].found = true;
+s.d.area[0].room[2].prog++;
+if(s.d.area[0].room[2].prog>1) {
+  s.d.area[0].room[2].visited = true;
+  s.d.area[0].room[2].prog = 0;
+}
+%>Brittney is in the living room. She is Daisys adopted older sister. At least that's what they tell her. But, Brittney does look a lot like their mother.
+
+<img src='img/home/livingroom1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+[[Watch TV]]
+<%
+if(s.inno() <76) {
+  %>[[Flirt with Brittney]]
+<%
+}
+if(s.inno() <51) {
+  %>[[Talk]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+} else {
+  %><%= story.passage('End Day').render() %>
+<%
+}
+%>
+Double-click this passage to edit it.
+<%
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+Nothing interesting found.
+
+[[Back|AreaMenu]]
+
+
+Daisy leans forward to give them a better view. When one looks up and knows he's been caught, she just smiles at him and pushes her chest out a bit more.
+
+<img src='img/home/breakfast2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.innoSub(3);
+if(s.inno()<75) {
+  %>[[Lure one into the bathroom]]
+<%
+}
+if(s.inno()<45) {
+  %>[[Lure two]]
+<%
+}
+if(s.inno()<1) {
+  %>[[On kitchen table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%
+s.addOral(4);
+s.innoSub(3);
+%>Daisy asks one of them to help her with a necklace. He agrees and she leads him into the bathroom.
+
+After she closes the door she opens her top.
+"You know what a pearl necklace is right? I've always wanted to try one on. I'll go down on you first ok"?
+
+Jake didn't argue.
+
+<img src='img/home/breakfast3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<45) {
+  %>[[Daisy Calls The Other In|Lure two]]
+<%
+}
+if(s.inno()<1) {
+  %>[[On kitchen table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+<%
+s.addSex(4);
+s.addSex(5);
+%><%= story.passage('Stats').render() %>
+Daisy takes them both into the washroom.
+
+<img src='img/home/breakfast5.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+[[Back|AreaMenu]]
+
+<%
+if(s.d.npc[s.d.curNpc].inno<0) s.d.npc[s.d.curNpc].inno = 0;
+%>
+<div class='otherSideBar'><abbr title='<%= s.d.npc[s.d.curNpc].desc %>'><%= s.d.npc[s.d.curNpc].name %></abbr>
+<abbr title='A rating of how physically attractive they are.'>Beauty: <%= s.d.npc[s.d.curNpc].beauty %></abbr>
+<abbr title='A low innocence allows lewd activities.'>Innocence <%=Math.floor(s.d.npc[s.d.curNpc].inno)%></abbr>
+<%
+for(var x=0;x<s.d.npc[s.d.curNpc].skill.length;x++) {
+  if(s.d.npc[s.d.curNpc].skill[x].level>0) {
+    %><abbr title='<%= s.d.npc[s.d.curNpc].skill[x].desc %>'><%= s.d.npc[s.d.curNpc].skill[x].name %></abbr>
+<%
+  }
+}
+%>
+<img src='img/profiles/<%= s.d.npc[s.d.curNpc].name %>.png' alt='Image not displayed' height='450' width='150'>
+</div>
+
+
+
+<%
+//s.d.area[1].room[3].prog++;
+//if(s.d.area[1].room[3].prog>2) {
+  s.d.area[1].room[3].visited = true;
+//  s.d.area[1].room[3].prog = 0;
+//}
+s.d.area[1].room[3].found = true;
+s.d.actions--;
+s.d.beauty++;
+var rnd = Math.floor((Math.random()*10)+6);
+s.d.npc[rnd].inno--;
+%>
+
+<img src='img/school/gym.png' alt='Image not displayed' height='480' width='800'>
+Daisy exercises.
+Daisy catches <%=s.d.npc[rnd].name%> watching her chest bounce when she runs.
+
+
+[[Flirt with Ms.Abell]]
+[[Shower and change]]
+[[Back|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%
+s.d.area[1].room[2].found = true;
+if(s.d.npc[9].prog===0) {
+  %><img src='img/school/lounge1.png' alt='Image not displayed' height='480' width='800'>
+Mr.Durand and Ms.Abell are in the teachers lounge when Daisy enters.
+
+[[Back|AreaMenu]]
+<%
+  s.d.curNpc = 9;
+  if((s.inno() < 51)&&(s.d.skill[1].level>0)) {
+    %>[[Lure Ms.Abell]]
+<%
+  }
+  if((s.inno() < 26)&&(s.d.npc[9].oral>0)&&(s.d.npc[8].sex>0)) {
+    %>[[Teacher threesome]]
+<%
+  }
+} else {
+  %><img src='img/school/lounge2.png' alt='Image not displayed' height='480' width='800'>
+  Mr.Durand is alone in the teachers lounge when Daisy enters.
+
+[[Back|AreaMenu]]
+<%
+  s.d.curNpc = 8;
+  if(s.inno() < 51) {
+    %>[[Seduce Mr.Durand]]
+<%
+  }
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+//Give Lesson
+var rnd = Math.floor(Math.random()*2);
+if(rnd===0) {
+  %><img src='img/school/start.png' alt='Image not displayed' height='480' width='800'>
+Daisy goes to biology class and everyone learns about how nature works.
+<%
+  s.d.inno--;
+  for(var i=0;i<10;i++) {
+    s.d.npc[(6+i)].inno--;
+  }
+} else {
+   %><img src='img/school/gym.png' alt='Image not displayed' height='480' width='800'>
+Daisy goes to gym class. Being fit makes her attractive.
+<%
+  s.d.beauty++;
+}
+//End Lesson
+//show event
+if(s.d.classEvents.indexOf('Note')<0) {
+  %>[[Receive a note|Meet him]]
+<%
+}
+if(s.d.classEvents.indexOf('StayAfterClass')<0) {
+  %>[[Stay after class|Meet teacher]]
+<%
+}
+if(s.d.classEvents.indexOf('UpSkirt')<0) {
+  %>[[Boys look up her skirt|Show more]]
+<%
+}
+if(s.d.classEvents.length>0) {
+  rnd = Math.floor(Math.random()*(s.d.classEvents.length+1));
+  if(rnd<s.d.classEvents.length) {
+    %><%= story.passage(s.d.classEvents[rnd]).render() %>
+<%
+  }
+}
+//end event
+s.d.area[1].room[1].prog++;
+if(s.d.area[1].room[1].prog>2) {
+  s.d.area[1].room[1].visited = true;
+  s.d.area[1].room[1].prog = 0;
+}
+s.d.actions--;
+%>[[Back|AreaMenu]]
+<%= story.passage('Stats').render() %>
+
+
+The podium.
+This is where the father stands when he gives a sermon. It is a permanent structure and has a cupboard inside to keep things.
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 17;
+if(s.inno()<41) {
+  %>[[Daisy gets an idea]]
+<%
+}
+s.d.area[2].room[2].found = true;
+s.d.area[2].room[2].visited = true;
+
+%><%= story.passage('Stats').render() %>
+
+Daisy enters the confessional booth.
+
+"Forgive me Father for I have sinned."
+<%
+if(s.sexNum('m')>1) {
+  %>"I had sex with
+<%
+  for(var i=0;i<s.d.npc.length;i++) {
+    if(s.d.npc[i].sex>0) {
+	  %><%=s.d.npc[i].name%>, <%=s.d.npc[i].desc%>, and
+<%
+	}
+  }
+  %>I guess that's it."
+
+<%
+  if(s.oralNum('m')>2) {
+    %>"Oh and I also sucked <%=s.oralNum('m')%> dicks".
+
+<%
+  }
+  if(s.sexNum('m')>=s.d.TotalPartners) {
+    s.d.npc[17].prog = 1;
+	%>The priest is silent for a while. Stunned.
+"Uh.. That's going to require some thought. Nobody has ever done that in a single day before".
+"Meet with me later, and we will discuss your penance".
+
+[[Done|Menu]]
+<%
+  } else {
+    %>[[Back|AreaMenu]]
+<%
+  }
+} else {
+  %>"Ok, well.. I haven't really done much yet. But I'm planning to be a bad girl".
+
+"How bad"?
+
+"Naughty. Very very naughty, and indecent".
+
+"Go on"..
+
+[[Back|AreaMenu]]
+<%
+}
+s.d.area[2].room[1].found = true;
+s.d.actions--;
+s.d.inno++;
+%><%= story.passage('Stats').render() %>
+
+
+
+
+0-Brittney, older sister.
+1-Doug, brother
+2-June, mother
+3-George, father
+
+4-Jake, bros friend1
+5-Pete, bros friend2
+6-HerbTimid, student
+7-Tyrone, alpha, student
+8-Mr.Durand, biology, teacher
+9-Ms.Abell, gym, teacher
+10-Chen, student
+11-Maggie, student, showergirl
+12-joe student, black male, shower scene
+13-Stew student, male for shower scene/no sex option
+14- 3rd blackguy
+15-indian schoolgirl
+16-Niven, gloryshower,janitor, jungle quest
+17-Father Ted
+18-Sister C;air
+19-Mother Superior
+20-sm church guy
+21-choir boy
+22-gay jogger,park
+23-gay jogger
+24-james playground dad
+25-jill playground daughter
+26-shady guy, park
+27-chief, bar, washroom
+28-Frank, park guy, jills friend good looking one
+29-Ned, park guy, jills other friend
+30-Stan, stalker, bar, rnd encounter
+31-Kyle, park swinger cam-guy
+32-Julie, park swinger hotwife
+33-John, swing1
+34-Steve, swing2
+35-Mac, swing3
+36-Coco, shady girl
+37-Brian, bad jogger
+38-bar, frat guy 1
+39-bar, frat guy 2
+40-bar, frat guy 3
+41-bar, frat guy 4
+<%
+s.d.actions--;
+s.innoSub(1);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/livingroom2.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy sits down and watches TV with her older sister. An erotic lesbian scene comes on. Daisy is aroused by it and glances at her sister. Her sister is looking back, but her smile shows she is not uncomfortable.
+
+[[Back|AreaMenu]]
+
+<%
+
+s.d.actions--;
+s.innoSub(2);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy flirts with her older sister.
+
+<img src='img/home/livingroom3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+
+<%
+s.d.actions--;
+%><img src='img/home/livingroom2.png' alt='Image not displayed' height='480' width='800'>
+<%
+if(s.d.npc[0].prog>1) {
+  %>That wasn't so bad. Dad's talented.
+
+[[Back|Livingroom]]
+<%
+} else if(s.d.npc[0].prog===1) {
+  %>Brittney is back in the livingroom.
+  "I'd say I owe you one for what you did with dad, but you really seemed to enjoy that. Dads got some moves eh? You gonna do him again? I know you liked it".
+
+"Dads been practicing for longer than I've been alive. Ya he's got moves. But you still owe me. A car and college. You owe me big".
+
+"What do you want"?
+
+[[Nothing|AreaMenu]]
+[[Cash]]
+<%
+  if(s.d.skill[1].level>0) {
+    %>[[You]]
+<%
+  }
+  s.d.npc[0].prog = 3;
+} else {
+  %>Brittney wants to talk. She tells Daisy that she is from the same mother, but a different father.
+
+Daisys father was there, in a threesome with June and another guy. June got pregnant
+
+Daisys dad had recently started flirting with Brittney. He said they would pay for her school and get her a car if she would "show some love".
+
+She's considering it.
+
+[[Discourage her]]
+<%
+  if(s.inno() <51) {
+    %>[[Encourage her]]
+<%
+  }
+  if((s.d.inno <16)&&(s.d.skill[2].level>0)) {
+    %>[[Offer to take her place]]
+<%
+  }
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+s.innoSub(4);
+s.d.npc[0].prog = 2;
+s.d.skill[4].level = 1;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy encourages her sister to have sex with their father.
+"After all, he's not actually a blood relative of yours".
+
+She sneaks into the room after her older sister and watches them.
+
+<img src='img/home/britchat1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy takes a couple pictures with her phone.
+<span style='color:green'>Blackmail pictures obtained</span>
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy tells Brittney to not do it.
+"That's sick. He's your father. Doesn't matter if you're adopted, it's still sick"!
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 3;
+s.innoSub(4);
+s.addSex(s.d.curNpc);
+%>Daisy tells her to get him to agree "If he can have sex with his daughter, then Brittney will get her school and a car paid for. He must also agree to having the lights out.
+
+Dad agrees. Brittney leads him into the dark bedroom then climbs on one side of bed, then quietly off the other. She sneaks over to the side and watches as her step-father climbs onto his daughter and makes love to her.
+
+<%= story.passage('VirginityLoss').render() %>
+<img src='img/home/britchat2.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy notices that Brittney has begun to finger herself while watching.
+
+[[Daisy cries out during orgasm]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.npc[0].prog = 1;
+%>George stops mid stroke. That was his daughters voice that cried out. Not his step-daughters, but his full daughter, Daisy.
+
+"Please Dad, don't stop now, I'm cumming", Daisy whimpered.
+
+George paused for another moment before deciding. Then he gave his daughter the best that he had.
+
+<img src='img/home/britchat2.png' alt='Image not displayed' height='480' width='800'>
+
+After, they talk for a while. George tells his daughter that he has lusted after her ever since puberty took a hold. But he never planned to act on it. He was going to try for Brittney because she was not a blood relative, so he thought he could pull it off.
+
+But he liked this a lot better.
+
+Brittney was still watching. The look on her face made her seem part aroused, part jealous.
+
+[[Next|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Brittney gives her sister $200.
+
+[[Back|AreaMenu]]
+<%
+s.d.cash += 200;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy holds up a cucumber.
+"I bet I can make you cum with this".
+
+Brittney still doesn't seem to understand, or believe, what Daisy wants to do. She seems surprised when Daisy begins to push the cucumber inside her sister.
+
+Brittney does not object, and then begins to enjoy it.
+<img src='img/home/livingroom4.png' alt='Image not displayed' height='480' width='800'>
+The cucumber is dripping with her sisters juices when Daisy pulls it out. She licks it mostly clean, then returns it to the fridge.
+
+[[Done|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.virgin) {
+%>
+When the mans cock presses against Daisys cherry it feels good, at first.
+
+But when he thrusts and breaks through it sends a spike of pain through her. Slowly the pain recedes, and is replaced with pleasure.
+
+<span style='color:green'>Daisy is no longer a virgin.</span>
+
+<%
+  s.d.virgin = false;
+  s.d.virginTaker = s.d.npc[s.d.curNpc].name;
+  s.d.skill[0].level = 0;
+}
+%>
+<%
+s.d.curNpc = 10;
+s.innoSub(2);
+if(s.d.npc[s.d.curNpc].prog===0) {
+  %>During one of her classes, Daisy notices a couple of the boys keep looking back at her. She realizes that they are trying to see up her skirt.
+
+<img src='img/school/upskirt1.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+  if(s.inno() <76) {
+    %>[[Show more]]
+<%
+  }
+}
+%>
+
+Mr. Durand asks Daisy to stay after class for a bit, if she has time.
+
+<%
+s.d.curNpc = 8;
+s.innoSub(2);
+if(s.d.npc[s.d.curNpc].sex>0) {
+  %>[[Meet him|Bj teacher]]
+<%
+} else if((s.d.npc[s.d.curNpc].prog===1)&&(s.inno() <76)) {
+  %>[[Meet him|Kiss teacher]]
+<%
+} else {
+  %>[[Meet him|Meet teacher]]
+<%
+}
+%>
+
+
+<%
+s.d.curNpc = 6;
+if(s.d.npc[s.d.curNpc].prog===0) {
+  %>During the class another girl passes Daisy a note. It is from one of the other students in the class. He wants Daisy to meet him in the cafeteria after class.
+
+[[Meet him]]
+<%
+} else if(s.d.npc[s.d.curNpc].prog===1) {
+  %>During the class a girl passes Daisy a note, again. It is from Herb again. He wants Daisy to meet him in the Library this time.
+
+[[Meet him|MeetLibrary]]
+<%
+} else if(s.d.npc[s.d.curNpc].prog===2) {
+  %>During the class a girl passes Daisy a note, again. This time it is from a different guy. He wants Daisy to meet him in the washroom after class.
+
+[[Meet him|MeetWashroom]]
+<%
+}
+%>
+
+
+<%
+s.d.curNpc = 6;
+if(s.d.npc[s.d.curNpc].prog===0) {
+  %><img src='img/school/note1.png' alt='Image not displayed' height='480' width='800'>
+<%
+  if(s.d.classEvents.indexOf('Note')> -1) s.d.classEvents.splice(s.d.classEvents.indexOf('Note'),1);
+  s.innoSub(3);
+  if(s.inno() >71) {
+    %>Herb meets with Daisy in cafeteria. He nervously tells her that he is in love with her. Then becomes embarrassed, and runs off.
+<%
+  } else {
+    %>Herb meets with Daisy in cafeteria. Daisy knows he is just going to chicken out again, so she pulls him into a storage room and helps him relax.
+
+<img src='img/school/note0.png' alt='Image not displayed' height='480' width='800'>
+<%
+    s.d.npc[s.d.curNpc].prog = 1;
+	s.addOral(s.d.curNpc);
+  }
+%>
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+} else if(s.d.npc[s.d.curNpc].prog===1) {
+  %><%= story.passage('MeetLibrary').render() %>
+<%
+
+} else if(s.d.npc[s.d.curNpc].prog===2) {
+  %><%= story.passage('MeetWashroom').render() %>
+<%
+}
+%>
+During the class a girl passes Daisy a note, again. It is from the same guy. He wants Daisy to meet him in the Library this time.
+
+<%
+s.innoSub(3);
+if(s.inno() >51) {
+%>When Daisy meets with the boy, he tries to work up the courage to ask her something, but gets embarrassed again, and runs away.
+<%
+} else {
+  %>When Daisy meets with the boy. He leads her to the back, and boldly reaches under her skirt to removes her panties. Daisy is surprised at his new courage and rewards it by letting him have his way.
+
+<img src='img/school/note2.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+<%
+  s.d.npc[s.d.curNpc].prog = 2;
+  s.addSex(s.d.curNpc);
+}
+%>
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+During the class a girl passes Daisy a note, again. It is from a different guy. He wants Daisy to meet him in the washroom after class.
+<%
+s.d.curNpc = 7;
+s.innoSub(2);
+if(s.inno() >26) {
+%>Daisy meets with the boy. He tells her to get inside, and get naked.
+
+Daisy slaps him and begins to walk away.
+
+[[She leaves|AreaMenu]]
+<%
+} else {
+  %>Daisy meets with the boy. He doesn't need to say anything. Daisy pushes him into the washroom and begins pulling off clothing.
+
+<img src='img/school/note3.png' alt='Image not displayed' height='480' width='800'>
+<%
+  if(s.inno()<20) {
+    %>Another student walks after they have started. He stops and stares. After a few moments he moves forward and pulls his dick free.
+
+<img src='img/school/note4.png' alt='Image not displayed' height='480' width='800'>
+<%
+  s.addOral(10);
+  }
+  %>"They told me you were a slut. But I didn't expect you'd be that much of a whore. God bless you", the boy says as he zips up and walks out.
+
+[[Done|AreaMenu]]
+<%
+  s.addSex(s.d.curNpc);
+}
+%>
+
+
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.curNpc = 8;
+if(s.d.npc[s.d.curNpc].sex>0) {
+  %><%= story.passage('Bj teacher').render() %>
+<%
+} else {
+if(s.d.npc[s.d.curNpc].prog===0) {
+  %>Mr.Durand begins going over some assignments with Daisy. She leans down and puts her elbows on the desk while listening.
+
+<img src='img/school/stay1.png' alt='Image not displayed' height='480' width='800'>
+<%
+  if(s.d.classEvents.indexOf('StayAfterClass')> -1) s.d.classEvents.splice(s.d.classEvents.indexOf('StayAfterClass'),1);
+  s.innoSub(2);
+  if(s.inno() >76) {
+    %>Mr.Durands face turns red as he stares down Daisys top. He abruptly makes excuses and leaves.
+
+<%
+  } else {
+    %>Mr.Durand stares down Daisys top as he discusses the work.
+"It's always a pleasure to see you, Daisy".
+<%
+    s.d.npc[s.d.curNpc].prog = 1;
+  }
+%>
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+} else {
+  %><%= story.passage('Kiss teacher').render() %>
+<%
+}
+}
+%>
+
+<%
+s.innoSub(3);
+%>Daisy visits Mr.Durand after class again. This time she sits beside him and leans close.
+
+When she is sure he has been looking at her breasts for a while, Daisy looks up quickly and catches him staring.
+
+Mr.Durand starts to apologize but Daisy silences him by kissing him on the lips.
+
+Just a quick one. With only a hint of tongue. But it is enough to leave Mr.Durand speechless.
+
+<img src='img/school/stay2.png' alt='Image not displayed' height='480' width='800'>
+
+He doesn't recover until after Daisy is gone.
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy asks MsAbell if they can talk alone. MsAbell takes her to her to the gym lounge, since it is closed right now.
+
+<img src='img/school/abell2.png' alt='Image not displayed' height='480' width='800'>
+
+MsAbell is worn out and lies down for a rest after.
+Maybe MrDurand is alone now?
+
+[[Done|AreaMenu]]
+<%
+s.d.actions--;
+s.d.curNpc = 9;
+s.d.npc[s.d.curNpc].prog = 1;
+s.addOral(s.d.curNpc);
+s.d.oral++;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy walks in and sits down beside MrDurand.
+She looks at him for a moment then reaches out and pushes her hand into his pants.
+
+"I thought so. Already hard. Lets do something with it then", she says and climbs onto him.
+
+<img src='img/school/lounge3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.d.actions--;
+s.d.curNpc = 8;
+s.addSex(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy walks in and sits down between them.
+She looks at them for a moment then reaches out and pushes one hand into MrDurands pants, and the other up MsAbells top.
+
+"I thought so. Both already hard. Lets do something with them then", she says and climbs onto him.
+
+<img src='img/school/lounge4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.d.actions--;
+s.addSex(8);
+s.addOral(9);
+%><%= story.passage('Stats').render() %>
+
+<%
+s.d.curNpc = 9;
+s.innoSub(2);
+%>
+<img src='img/school/abell1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+if((s.d.npc[s.d.curNpc].oral>0)&&(s.inno() <26)) {
+  %>[[Suggest Sex]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy heads for the showers. Left is the womens shower, right is the mens, and straight ahead is a smaller room with a single private shower.
+
+[[Go straight]]
+<%
+if(s.d.inno<96) {
+  %>[[Womens showers]]
+<%
+}
+if((s.d.inno<56)&&(s.d.skill[9].level>0)) {
+  %>[[Mens showers]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+Daisy uses the private shower. As she finishes she spots a flicker of light from a crack in the wall. When she looks closer she can see someone is spying on her.
+
+<img src='img/school/singleshower1.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+var pool =[6,7,8,10,12,13,14];
+var rnd = pool[(Math.floor(Math.random()*pool.length))];
+s.d.curNpc = rnd;
+s.innoSub(2);
+if(s.d.inno<41) {
+  %>Daisy decides to show off for them.
+
+<img src='img/school/singleshower2.png' alt='Image not displayed' height='480' width='800'>
+<%
+s.innoSub(2);
+}
+if(s.d.inno<26) {
+  %>When she is done, Daisy hears a voice from the other side.
+"C'mere. I'll show you something now".
+
+<%= story.passage('Shower Gloryhole').render() %>
+<%
+  s.innoSub(4);
+  if(s.d.area[1].room[4].prog<1) s.d.area[1].room[4].prog = 1;
+}  else {
+  %>[[Back|AreaMenu]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+
+Daisy gets in the shower. There is another girl there. She seems to be sneaking looks at Daisys body.
+
+<img src='img/school/shower1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 11;
+s.innoSub(2);
+if(s.inno() <71) {
+  %>[[Masturbate in the shower]]
+<%
+}
+if((s.inno() <61)&&(s.d.skill[1].level>0)) {
+  %>[[Seduce her|Shower Les]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy snuck into the boys shower. It doesn't take long for some to notice, and soon a crowd watches her. Their hurry to change into street clothes and leave was replaced with a desire to hang around a bit longer.
+
+<img src='img/school/boyshower1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 12;
+s.innoSub(2);
+for(var i=0;i<10;i++) {
+  if(s.d.npc[(6+i)].male) s.d.npc[(6+i)].inno--;
+}
+if(s.inno() <46) {
+  %>[[Daisy Shows off|Shower Showoff]]
+<%
+}
+if(s.inno() <26) {
+  %>[[A couple boys join her]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+Daisy spreads her legs so they can get a clear view.
+
+<img src='img/school/upskirt2.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+s.d.curNpc = 10;
+if(s.d.classEvents.indexOf('UpSkirt')> -1) s.d.classEvents.splice(s.d.classEvents.indexOf('UpSkirt'),1);
+if(s.inno() < 46) {
+  %>She then pulls her panties to the side and lets them watch as she inserts a couple fingers.
+
+<img src='img/school/upskirt3.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+}
+%>[[Back|AreaMenu]]
+<%
+if(s.inno() < 26) {
+  %>[[Daisy leaves the room, and the boys follow|UpskirtSex]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+Daisy heads to the changeroom and the boys follow her.
+
+<img src='img/school/upskirt4.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+"Dude, you licked my dick!"
+
+"Maybe, but you came when I did".
+
+"Good point. Do we need to talk about this"?
+
+[[Daisy leaves them|AreaMenu]]
+[[Daisy encourages them to explore their sexuality|Upskirt Bi]]
+
+<%
+s.addSex(10);
+s.d.oral++;
+%>
+
+<%= story.passage('Stats').render() %>
+
+
+Daisy watches them experiment. They seem to like it.
+
+<img src='img/school/upskirt5.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+<span style='color:green'>Trait gained: Likes Rainbows</span>
+
+[[Done|AreaMenu]]
+<%
+s.innoSub(4);
+s.d.skill[5].level = 1;
+%>
+
+<%= story.passage('Stats').render() %>
+
+Daisy begins to play with herself. The other girl stops sneaking glances, and openly watches now.
+
+<img src='img/school/shower2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.innoSub(2);
+if(s.inno()<61) {
+  %>[[Seduce her|Shower Les]]
+<%
+}
+
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/school/shower3.png' alt='Image not displayed' height='480' width='800'>
+
+<span style='color:green'>Trait gained: Bisexual</span>
+
+[[Done|AreaMenu]]
+<%
+if(s.d.skill[1].level <1) s.d.skill[1].level = 1;
+s.innoSub(2);
+s.addOral(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/school/boyshower3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(7);
+s.addSex(s.d.curNpc);
+for(var i=0;i<10;i++) {
+  if(s.d.npc[(6+i)].male) s.d.npc[(6+i)].inno -= 2;
+}
+%><%= story.passage('Stats').render() %>
+Daisy shows off her body to the gathering crowd.
+
+<img src='img/school/boyshower2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.innoSub(2);
+for(var i=0;i<10;i++) {
+  if(s.d.npc[(6+i)].male) s.d.npc[(6+i)].inno--;
+}
+if(s.inno() <26) {
+  %>[[A couple boys join her]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+"But there's still another student here", MsAbell says.
+
+"No problem", Daisy replies, "We'll just include him.
+
+<img src='img/school/abell3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(13);//stew
+s.addOral(9);//msAbell
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.actions>0) {
+s.d.area[1].room[4].visited = true;
+
+if(s.d.area[1].room[4].prog===4) {
+  %>A huge black cock struggles to squeeze through the hole.
+
+[[Back|AreaMenu]]
+[[Suck it|Suck BBC]]
+<%
+} else {
+  %>Daisy stands in front of the hole and watches as a dick slides out.
+
+[[Back|AreaMenu]]
+[[Suck it|Glorysuck]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%
+} else {
+  %><%= story.passage('End Day').render() %>
+<%
+}
+
+%>
+<img src='img/school/glory4.png' alt='Image not displayed' height='480' width='800'>
+
+When it cums, it is in volumes that Daisy never thought possible.
+She tried to swallow it all, but couldn't. The rest covered her face and chest.
+
+Daisy is amazed. She didn't know that much cum was possible. She felt she had to find this guy. She needed to feel that thing go off inside her.
+
+There were not many black men at the school. This shouldn't be too hard.
+
+<span style='color:green'>Quest gained: Jungle Fever</span>
+
+[[Next|Shower Gloryhole]]
+<%
+s.d.actions--;
+s.d.skill[3].level = 1;
+s.d.area[1].room[4].prog++;
+s.addOral(16);
+%><%= story.passage('Stats').render() %>
+<%
+s.d.actions--;
+var pool =[6,7,8,10,12,13,14];
+var rnd = Math.floor(Math.random()*pool.length);
+s.addOral(pool[rnd]);
+s.d.gloryCount++;
+if(s.d.gloryCount>3) s.d.gloryCount = 1;
+%><img src='img/school/glory<%=s.d.gloryCount%>.png' alt='Image not displayed' height='480' width='800'>
+<%
+s.d.area[1].room[4].prog++;
+%>[[Next|Shower Gloryhole]]
+<%= story.passage('Stats').render() %>
+<%
+s.addOral(5);
+s.addSex(4);
+s.innoSub(2)
+%>Daisy takes them both into the washroom.
+
+<img src='img/home/breakfast4.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<1) {
+  %>[[Orgy In Kitchen|On kitchen table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%
+s.d.area[1].room[5].prog++;
+s.d.area[1].room[5].visited=true;
+s.d.actions--;
+if(s.d.area[1].room[5].prog===1) {
+  s.d.curNpc = 7;
+  s.addOral(7);
+  %>There are not many black kids at the school. Tyrone is one of them. Daisy knows him from English class. She thinks he's an alpha-douche. But if he has a dick like that, she wouldn't care anymore.
+
+Daisy finds him in the library
+She tries the direct approach.
+"If you show me your dick, I'll suck it for you".
+
+<img src='img/school/bbc1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy is disappointed. Tyrone is not a small guy, but he's not the monster that she saw in the shower.
+<%
+} else if(s.d.area[1].room[5].prog===2) {
+  %><%= story.passage('Joe').render() %>
+<%
+} else if(s.d.area[1].room[5].prog===3) {
+  s.d.curNpc = 14;
+  s.addOral(14);
+  %>The only other black student at the school was a math nerd. Daisy had a hard time imagining him with a package like that. But, he was the only one left, so she went and found him.
+
+<img src='img/school/bbc4.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy was able to easily seduce him. But again, it was not the guy she was looking for.
+
+But there were no others Or was there?
+<%
+} else if(s.d.area[1].room[5].prog>3) {
+  s.d.curNpc = 16;
+  %>Daisy thought of another black guy at school.
+The old Hindu janitor.
+
+Could it be him, Daisy wondered. It might not have been a black man. It could have been an Indian.
+
+Daisy goes to find him.
+
+[[Look inside the custodial room]]
+<%
+  if((s.d.npc[16].sex>0)&&(s.d.skill[1].level>0)&&(s.d.inno<46)) {
+    %>[[Revisit Joe|Joe]]
+<%
+  }
+}
+%>
+[[Back|AreaMenu]]
+<%= story.passage('Stats').render() %>
+
+Double-click this passage to edit it.
+<%
+if(localStorage.getItem('daisySave1') !== null) {
+  %>[[Load Game from slot 1]]
+<%
+}
+if(localStorage.getItem('daisySave2') !== null) {
+  %>[[Load Game from slot 2]]
+<%
+}
+if(localStorage.getItem('daisySave3') !== null) {
+  %>[[Load Game from slot 3]]
+<%
+}
+if(localStorage.getItem('daisySaveAuto') !== null) {
+  %>[[Load Game from auto-save]]
+<%
+}
+%>
+[[Save game in slot 1]]
+[[Save game in slot 2]]
+[[Save game in slot 3]]
+
+[[Instructions|InstructionsSysInstruct]]
+[[Quit to start menu|Game Start Menu]]
+
+[[Back|Menu]]
+<%
+s.d = JSON.parse(localStorage.getItem('daisySave1'));
+if(((typeof s.d.ver) != 'number')||(s.d.ver < s.ver)) {
+  %>Sorry, but saves from older versions break with the new version. You'll have to use a newer save, or start over.
+
+[[Back|Game Start Menu]]
+<%
+} else {
+%>
+Game One Loaded.
+Attempt <%=s.d.day%>
+
+[[Start|Menu]]
+<%
+}
+%>
+<%
+s.d = JSON.parse(localStorage.getItem('daisySave2'));
+if(((typeof s.d.ver) != 'number')||(s.d.ver < s.ver)) {
+  %>Sorry, but saves from older versions break with the new version. You'll have to use a newer save, or start over.
+
+[[Back|Game Start Menu]]
+<%
+} else {
+%>
+Game Two Loaded.
+Attempt <%=s.d.day%>
+
+[[Start|Menu]]
+<%
+}
+%>
+<%
+s.d = JSON.parse(localStorage.getItem('daisySave3'));
+if(((typeof s.d.ver) != 'number')||(s.d.ver < s.ver)) {
+  %>Sorry, but saves from older versions break with the new version. You'll have to use a newer save, or start over.
+
+[[Back|Game Start Menu]]
+<%
+} else {
+%>
+Game Three Loaded.
+Attempt <%=s.d.day%>
+
+[[Start|Menu]]
+<%
+}
+%>
+<%
+s.d = JSON.parse(localStorage.getItem('daisySaveAuto'));
+if(((typeof s.d.ver) != 'number')||(s.d.ver < s.ver)) {
+  %>Sorry, but saves from older versions break with the new version. You'll have to use a newer save, or start over.
+
+[[Back|Game Start Menu]]
+<%
+} else {
+%>
+Auto-save Loaded.
+Attempt <%=(s.d.day+1)%>
+
+[[Start|Start Day]]
+<%
+}
+%>
+<%
+localStorage.setItem('daisySave1', JSON.stringify(window.story.state.d));
+%>
+[[Game One Saved|Menu]]
+<%
+localStorage.setItem('daisySave2', JSON.stringify(window.story.state.d));
+%>
+[[Game Two Saved|Menu]]
+<%
+localStorage.setItem('daisySave3', JSON.stringify(window.story.state.d));
+%>
+[[Game Three Saved|Menu]]
+<span style='color:blue'>*Instructions:*</span>
+Explore the town and find as many intimate encounters as possible.
+When Daisy runs out of actions, the day ends and time warps.
+Daisy then starts the day from the beginning again.
+
+<span style='color:blue'>*Victory Conditions:*</span>
+-Easy Mode: Daisy has an intimate encounter of some type with every available male.
+-Normal Mode: Daisy has sex with every available male.
+-Hardcore Mode: Daisy has sex with every male and is intimate with every female.
+
+<span style='color:blue'>*Details:*</span>
+-All character/story progress is lost at the end of each day.
+-Items, personal stats, and discovered locations/events, stay.
+-Many options will not appear in the menu unless the characters innocence is low enough.
+-**Both** Daisys innocence, and the targets innocence must be low enough for an action to appear.
+-Most people can only be visited once per day. Some areas can only be visited a limited number of times.
+-In each area there is a set number of rooms/events that can be found by exploring. Once one is found, it will show in the menu for repeat visits. Once everything has been found, the explore option disappears.
+-*Sexual energy* is released each time Daisy becomes intimate with someone. It slightly *lowers the innocence of everyone*.
+
+<span style='color:blue'>*Tips:*</span>
+-If the only option is "Back", then there is probably more options on that screen that have not been unlocked yet. Check back later.
+-If the last option is "Done", then there are no additional options to unlock for that screen.
+-You shouldn't need to "grind". If you can't get any further in an area, go to another area. Later when you return, there will likely be new options available.
+-The endings get longer when finished on higher difficulty.
+
+[[Detailed Information]] - Warning, some spoiler like information.
+<%= story.passage('Instructions').render() %>
+
+[[Back|Game Start Menu]]
+<%= story.passage('Instructions').render() %>
+
+[[Back|System]]
+The guy may be small, but he is good with his hands. With his girl helping out Daisy came many times.
+
+<img src='img/school/bbc3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(49);
+%><%= story.passage('Stats').render() %>
+
+Daisy was surprised at what she found. The janitor was buried in the ass of a young Indian girl.
+
+<img src='img/school/bbc5.png' alt='Image not displayed' height='480' width='800'>
+
+It was him. That was the cock she had been searching for.
+The girl is startled when she sees Daisy and runs off.
+
+"Shit, now look what you've done!", says the man angrily.
+"I was almost there".
+
+[[Back|AreaMenu]]
+Daisy says:
+[[I can help with that]]
+[[Lets get her back then]]
+<%
+s.d.skill[3].level = 0;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/school/bbc6b.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy isn't sure it is going to fit.
+Then pop.
+<img src='img/school/bbc6.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(16);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/school/bbc7.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(15);
+s.addSex(16);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy makes a mental list of all the men in town, and if she has had sex with them.
+
+Sex/Oral Name - Desc
+<%
+for(var i=0;i<s.d.npc.length;i++) {
+  if((s.d.npc[i].track)&&(s.d.npc[i].male)) {
+    if(s.d.npc[i].sex>0) {
+      %><span style='color:green'>☑</span>
+<%
+    } else {
+	  %>☐
+<%
+	}
+	if(s.d.npc[i].oral>0) {
+        %><span style='color:green'>☑</span>
+<%
+    } else {
+	  %>☐
+<%
+    }
+	%><span style='color:blue'><%=s.d.npc[i].name%></span> - <%=s.d.npc[i].desc%>
+<%
+  }
+}
+  %>
+Total: <%=s.d.TotalPartners%>
+
+Women:
+<%
+var tm = 0;
+for(var i=0;i<s.d.npc.length;i++) {
+  if((s.d.npc[i].track)&&(!s.d.npc[i].male)) {
+    tm++;
+    if(s.d.npc[i].oral>0) {
+      %><span style='color:green'>☑</span>
+<%
+    } else {
+      %>☐
+<%
+	}
+	%><span style='color:blue'><%=s.d.npc[i].name%></span> - <%=s.d.npc[i].desc%>
+<%
+  }
+}
+%>
+Total: <%=tm%>
+
+[[Back|Menu]]
+<%
+s.d.curNpc = 19;
+s.innoSub(2);
+s.d.area[2].room[5].found = true;
+s.d.area[2].room[5].visited = true;
+s.d.actions--;
+%>Daisy finds Mother Superiors private area. The door is closed, but she can hear people inside. It sounds like moaning.
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<66) {
+  %>[[Open door|see mother superior]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.curNpc = 17;
+s.innoSub(3);
+s.d.area[2].room[4].found = true;
+s.d.area[2].room[4].visited = true;
+s.d.actions--;
+%>Daisy sees Father Ted head to the back with one of the choir boys.
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<66) {
+  %>[[Move closer|see ted and choirboy]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.curNpc = 17;
+s.innoSub(2);
+s.d.area[2].room[3].found = true;
+s.d.area[2].room[3].visited = true;
+s.d.actions--;
+%>Daisy finds Father Teds private area. The door is closed, but she can hear people inside. It sounds like moaning.
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<66) {
+  %>[[Open door|see ted and clair]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy enters the room.
+<img src='img/church/clair1.png' alt='Image not displayed' height='480' width='800'>
+
+Sister Clair lets out a surprised cry, but Father Ted is too focused to notice Daisy.
+
+[[Leave|AreaMenu]]
+[[Scold them]]
+<%
+if((s.d.skill[1].level>0)&&(s.inno()<41)) {
+  %>[[Join them|daisy clair ted]]
+<%
+}
+s.innoSub(3);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy follows them.
+<img src='img/church/choir1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Leave|AreaMenu]]
+<%
+s.innoSub(3);
+if((s.inno()<41)&&(s.d.skill[5].level>0)) {
+  %>[[Join them|daisy choirboy ted]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy opens the door and is shocked. It is a den filled with books, and sex toys. There is a man cuffed to the wall and Mother Superior is paddling him.
+
+<img src='img/church/super1.png' alt='Image not displayed' height='480' width='800'>
+
+Mother Superior stops.
+"I see you there. Come forward this instant".
+
+[[Run|AreaMenu]]
+<%
+if(s.inno()<61) {
+  %>[[Step forward|daisy superior]]
+<%
+}
+s.innoSub(3);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy acts concerned and tells them they should be ashamed of themselves.
+
+Sister Clair begins to cry and runs off.
+
+Daisy is now alone with a naked aroused Father Ted.
+In his bedroom.
+
+[[Leave|AreaMenu]]
+<%
+if(s.inno()<51) {
+  %>[[Seduce Father Ted]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/church/clair3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(17);
+s.addOral(18);
+s.d.oral++;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/church/clair2.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(17);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/church/choir2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(17);
+s.addOral(13);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy stands in front of the nun.
+
+"Snooping on us were you? That is sinful behavior, and will not be tolerated. Do you understand"?
+
+"Yes, Mother", Daisy responds.
+
+"To be sure you understand, you will pay penance before you go. Bend over in front of this man with your mouth open. Put your mouth just in front of his cock, then hold still".
+
+"What"?
+
+"Just do as you're told"!
+
+When Daisy obeys, Mother Superior swings the paddle to her backside. It causes Daisy to lurch forward, and the mans cock slid down her throat.
+
+<img src='img/church/super2.png' alt='Image not displayed' height='480' width='800'>
+
+As Daisy would pull back, another swing would send her forward again. This went on until the man erupted and Daisy began to choke on the cum.
+
+"You can go now".
+
+[[Back|AreaMenu]]
+<%
+if(s.inno()<41) {
+  %>[["But Mother, I've been such a dirty whore. I need to be punished more"|Mother daisy]]
+<%
+}
+s.innoSub(3);
+s.addOral(19);//mother s
+s.addOral(20);//bdsm guy
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"As you wish"
+
+<img src='img/church/super3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(19);
+s.d.inno--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy removes the adjustable shelves from the podium and crawls inside.
+
+Soon people begin to fill the room. The Father comes out and begins a sermon. When he is a few minutes into it, Daisy strokes his balls.
+
+The sermon stops, for a moment, then the Father continues as if nothing had happened.
+
+Daisy opens his pants and gets his dick out.
+
+<img src='img/church/podium.png' alt='Image not displayed' height='480' width='800'>
+
+When the Father closes the sermon he cries out "Amen", as he cums in Daisys mouth.
+
+[[Done|AreaMenu]]
+<%
+s.addOral(17);
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.area[3].room[3].found = true;
+s.d.area[3].room[3].visited = true;
+s.d.actions--;
+s.d.curNpc = 31;
+%>
+There is a fenced in area for dogs, and beside it is a dense patch of bushes.
+Daisy notices that occasionally a man would head into the bushes.
+
+
+[[Back|AreaMenu]]
+<%
+if(s.d.inno<77) {
+  %>[[Take a look]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+Daisy talks to a man sitting on the table.
+
+<img src='img/park/play1.png' alt='Image not displayed' height='480' width='800'>
+
+They chat for a bit and he mentions that he is here with his daughter. She is off playing.
+
+[[Back|AreaMenu]]
+<%
+s.d.area[3].room[2].found = true;
+s.d.area[3].room[2].visited = true;
+s.d.actions--;
+s.d.curNpc = 24;
+s.innoSub(1);
+if(s.inno()<86) {
+  %>[[Flirt with him|Flirt james]]
+<%
+}
+if(s.inno()<71) {
+  %>[[She gives him a blowjob|Oral james]]
+<%
+}
+if(s.d.npc[24].sex>0) {
+  %>[[Have sex with him|Sex james]]
+<%
+}
+if(s.d.npc[24].sex>0) {
+  %>[[Look for Jill|Find Jill]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+s.d.area[3].room[1].visited = true;
+s.d.actions--;
+if(s.d.area[3].room[1].prog === 1) {
+  s.d.area[3].room[1].prog = 0;
+  %><%= story.passage('Gay Joggers').render() %>
+<%
+} else {
+  s.d.area[3].room[1].prog = 1;
+  %><%= story.passage('Rap').render() %>
+<%
+}
+//s.d.area[3].room[1].prog++;
+%>
+
+<img src='img/park/gjog1.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Back|AreaMenu]]
+<%
+s.addSex(s.d.curNpc);
+s.addOral(23);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.actions<1) {
+  %><%= story.passage('End Day').render() %>
+<%
+} else {
+
+
+if((s.d.skill[6].level>0)&&(s.d.skill[1].level>0)&&(s.d.npc[36].prog===0)) {//bi and escort
+  %><img src='img/park/shady2.png' alt='Image not displayed' height='480' width='800'>
+<%
+} else {
+  %><img src='img/park/shady1.png' alt='Image not displayed' height='480' width='800'>
+<%
+}
+%>"Hey sweety. What you buying? Or are you selling"? A shady looking guy says to Daisy.
+
+[[Back|AreaMenu]]
+<%
+s.d.area[3].room[4].found = true;
+s.d.curNpc = 26;
+if(s.d.skill[8].level===0) {
+  %>[[Buy drugs]]
+<%
+}
+if(s.d.skill[7].level===0) {
+  %>[[Buy Fake ID]]
+<%
+}
+if((s.d.skill[6].level>0)||((s.d.skill[7].level>0)&&(s.d.inno<26))) {
+  %>[[Work as a prostitute|Take another client]]
+<%
+}
+if((s.d.skill[6].level>0)&&(s.d.skill[1].level>0)&&(s.d.npc[36].prog===0)) {
+  %>[[Ask about the girl]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+}
+%>
+
+<%
+if(s.d.cash>99) {
+  %>"That will be $100".
+
+<span style='color:green'>Daisy has obtained Weed</span>
+
+<%
+s.d.actions--;
+s.d.cash -= 100;
+s.d.skill[8].level = 1;
+} else {
+  %>"With what cash? You're broke chick. Get some money, then come back.
+If you need to earn some cake, just let me know. I always know a few guys that would pay for some quality time with a babe like you".
+
+<%
+  if(s.d.inno<41) {
+    %>[[Work for him|Take another client]]
+  <%
+  }
+}
+%>[[Back|Shady Guy]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.cash>49) {
+  %>"That will be $50".
+
+<span style='color:green'>Daisy has obtained fake ID</span>
+
+<%
+s.d.actions--;
+s.d.skill[7].level = 1;
+s.d.cash -= 50;
+} else {
+  %>"With what cash? You're broke chick. Get some money, then come back.
+If you need to earn some cake, just let me know. I always know a few guys that would pay for some quality time with a babe like you".
+
+<%
+  if(s.d.inno<41) {
+    %>[[Work for him|Take another client]]
+  <%
+  }
+}
+%>[[Back|Shady Guy]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.actions < 1) {
+  %><%= story.passage('End Day').render() %>
+<%
+} else {
+s.d.skill[6].level = 1;
+s.d.npc[26].prog++;
+s.d.actions--;
+var cash = Math.floor(Math.random()*(s.d.beauty-60))*10;
+s.d.cash += cash;
+var pool = [];
+for(var i=4;i<s.d.npc.length;i++) {
+  if((s.d.npc[i].inno<41)&&(s.d.npc[i].male)) {
+    pool.push(i);
+  }
+}
+s.d.curNpc = pool[(Math.floor(Math.random()*pool.length))];
+s.addOral(s.d.curNpc);
+var tpic = 'img/park/pro2.png';
+if(s.d.actions%2===0) tpic = 'img/park/pro1.png';
+%><img src=<%=tpic%> alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+Daisy makes $<%=cash%>.
+
+[[Done|Shady Guy]]
+<%
+if(s.d.actions>0) {
+  %>[[Take another client]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+}
+%>
+<img src='img/park/play2.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy flirts with him.
+
+[[Back|AreaMenu]]
+<%
+s.innoSub(4);
+if(s.inno()<71) {
+  %>[[She gives him a blowjob|Oral james]]
+<%
+}
+if(s.inno()<51) {
+  %>[[Have sex with him|Sex james]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+James bends her over the table and takes her from behind.
+
+<img src='img/park/play3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+A woman walks up and watches them.
+Daisy doesn't mind, and James doesn't notice.
+
+[[Back|AreaMenu]]
+<%
+s.addSex(24);
+s.innoSub(3);
+if((s.d.skill[1].level>0)&&(s.inno()<31)) {
+  %>[[Invite her to join]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy stands and has James lie on the bench. She squats over his face, and he begins licking.
+Daisy motions for the girl to come closer.
+
+The girl walks up. Stands still for a moment considering, then mounts James.
+
+<img src='img/park/play4.png' alt='Image not displayed' height='480' width='800'>
+
+When Daisys last orgasm dissipates, she gets off James. He looks up and sees the woman still on his dick.
+"Jill!", he shouts,"You can't do that"!
+
+"But dad, you have to admit it felt good".
+
+"But you're my daughter! Fuck. We can't do this".
+
+"You say that. But you're still inside me, and hock hard".
+
+James continues to slow fuck his daughter for a while as he thinks it over.
+
+<span style='color:green'>Daisy has learned Incest</span>
+
+[[Done|AreaMenu]]
+<%
+s.d.skill[2].level = 1;
+s.innoSub(7);
+s.addOral(25);
+s.d.oral++;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.area[4].room[1].found = true;
+s.d.actions--;
+s.d.area[4].room[1].prog++;
+if(s.d.area[4].room[1].prog===1) {
+  %>Daisy goes to the bar and gets a drink.
+
+[[Back|AreaMenu]]
+<%
+} else if(s.d.area[4].room[1].prog===2) {
+  %>Daisy gets another drink from the bar.
+She's feeling tipsy now.
+
+[[Back|AreaMenu]]
+<%
+} else if(s.d.area[4].room[1].prog===3) {
+  %>Daisy has another drink, and is now drunk. Probably shouldn't have another.
+
+[[Back|AreaMenu]]
+<%
+} else if(s.d.area[4].room[1].prog>3) {
+  %>Daisy never finishes the last drink. When she is about half way, she feels very sick and runs for the washroom.
+
+Daisy puked in the toilet, then passed out in the washroom.
+When she awoke she was being shaken.
+
+There was someone on her. In her!
+
+<img src='img/bar/drunk1.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+Daisy opens her eyes and sees an ugly man, balls deep inside her, going at a frantic pace.
+Another man approaches from the side.
+
+[[Daisy tells the man to get off her]]
+[[Daisy enjoys herself]]
+
+<%
+  s.addSex(26);
+}
+s.d.inno--;
+%><%= story.passage('Stats').render() %>
+
+<img src='img/bar/dance.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy spends some time dancing.
+More than a few eyes follow her as she tries her best to appear sexy.
+
+[[Back|AreaMenu]]
+<%
+var pool =[6,7,8,10,12,13,14];
+for(var i=0;i<pool.length;i++) {
+  s.d.npc[(pool[i])].inno -= 2;
+}
+s.d.area[4].room[4].found = true;
+//s.d.area[4].room[4].visited = true;
+s.d.actions--;
+s.d.beauty++;
+%><%= story.passage('Stats').render() %>
+"You must be Stacy. Have a seat".
+
+[[Nope, not Stacy|AreaMenu]]
+[[Take a seat]]
+
+<%
+s.d.curNpc = 30;
+s.d.area[4].room[5].found = true;
+s.d.area[4].room[5].visited = true;
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy shouts, "Get off"!
+
+"I'm trying", the ugly man replies and keeps going.
+
+"The lady said get off", booms the approaching man. He grabs the ugly guy by the neck and drags him off Daisy.
+
+[[Back|AreaMenu]]
+[[Reward him]]
+<%
+s.d.curNpc = 27;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<img src='img/bar/drunk3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(27);
+%><%= story.passage('Stats').render() %>
+<img src='img/bar/drunk2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(27);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/jill1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 25;
+if(s.d.inno<36) {
+  %>[[Replace Jill]]
+<%
+}
+if((s.d.skill[1].level>0)&&(s.d.inno<46)) {
+  %>[[Join Jill]]
+<%
+}
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/jill2.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Back|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.addSex(28);
+s.addOral(25);
+%>
+Daisy tells Jill that her father needs her. She looks disappointed, but stops and gets dressed.
+
+Once she has left, Daisy slides her panties off and looks at the guys.
+"She had to go, but that doesn't mean you guys are done does it"?
+
+<img src='img/park/jill3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%
+s.addSex(29);
+s.addOral(28);
+s.addOral(29);
+%>
+The voice explains to her that she has been given the opportunity, and obligation, to have a "perfect" day. Because she did not achieve as much as she could have, she was going to have to try again.
+
+Time would be reset to this morning. Daisy would keep her memories, and possessions, but everyone and everything else would be reset to where it was.
+Except, nobody regains any innocence.
+
+Daisy is going to have to relive this day over and over, until she "got it right".
+
+
+<img src='img/park/swing1.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+[[Watch them]]
+<%
+s.d.inno -= 2;
+if((s.d.inno<36)&&(s.d.skill[1].level>0)) {
+  %>[[Join them|Join swingers]]
+<%
+}
+if(s.d.npc[31].sex>0) {
+  %>[[Perform for them]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+Sam starts talking and just keeps going. Daisy just listens and picks up that he came here for a blind date. She had been late, and he was about to give up waiting, but then Daisy got there.
+
+[[Back|AreaMenu]]
+[[Flirt with him|Flirt with Sam]]
+<%
+s.d.curNpc = 42;
+if(s.d.skill[1].level>0) {
+  %>[[Duck under the table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy ends up jogging beside an older man. They talk a little as they go.
+
+"Hey, I could use a rest for a moment. Do you want to sit with me?", the man asks.
+
+"Sure".
+
+He leads Daisy a bit off the path then the sit in the grass.
+"You know what I could use on a day like this?", he asks.
+
+"What"?
+
+"A good blowjob from a pretty girl".
+
+<%
+s.d.curNpc = 37;
+if(s.d.inno<46) {
+  %>[[Daisy gives him one]]
+<%
+}
+%>[[Daisy refuses]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/jog2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+[[The man lets it go]]
+[[The man doesn't take no for an answer]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy meets two other joggers. A couple good looking guy in their thirtys.
+After shamelessly flirting with them for a bit she realizes they are more interested in each other, than her.
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 22;
+s.innoSub(2);
+if(s.d.skill[5].level>0) {
+  if(s.d.npc[s.d.curNpc].sex===0) {
+    %>[[Talk them into a threesome]]
+<%
+  } else {
+    %>[[Talk them into another threesome]]
+<%
+  }
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"Well, can't blame me for asking".
+They rest a few more moments. Then..
+
+[[Leave|AreaMenu]]
+<%
+if(s.d.inno<46) {
+  %>[[Reward him for being a nice guy]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/jog1.png' alt='Image not displayed' height='480' width='800'>
+[[Back|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+s.d.inno -= 3;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/jog3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Back|AreaMenu]]
+<%
+s.addSex(s.d.curNpc);
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy gets stopped by a cop.
+
+<img src='img/rnd/cop1.png' alt='Image not displayed' height='480' width='800'>
+
+"Turn around, and put your hands on the wall".
+
+[[Run|Run from cops]]
+[[Argue]]
+[[Cooperate]]
+<%
+s.d.curNpc = 43;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+if((!s.d.virgin)&&(s.d.skill[7].level>0)) {
+  %>As Daisy is walking down the street, she hears footsteps behind her. The person is traveling faster than her. Just when he is about to pass, he grabs Daisy and throws her to the ground.
+
+He dives on her.
+
+<img src='img/rnd/stalk1.png' alt='Image not displayed' height='480' width='800'>
+
+When he is done he runs off quickly, leaving Daisy lying in the street.
+
+[[Done|Menu]]
+<%
+s.addSex(30);
+} else {
+  %><%= story.passage('Menu').render() %>
+<%
+}
+%>
+Daisy recognizes this man. He was the one who raped her in the street.
+She walks up to him and introduces herself, pretending she doesn't know him.
+
+[[Back|AreaMenu]]
+[[Get revenge]]
+[[Seduce him]]
+<%
+s.d.curNpc = 30;
+s.d.area[4].room[3].found = true;
+s.d.area[4].room[3].visited = true;
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"Her? Never mind her. She's just paying off some debt".
+
+<%
+if(s.d.cash>200) {
+  %>"So she has to do whatever you ask until the debt is settled?", asks Daisy".
+
+"Yeah".
+
+"Can I buy the debt from you"?
+
+"Hold up a sec", shouts the woman, "You want to buy my debt, so you can control me? You want to buy the black woman"?!
+
+[["Yeah"|Buy slave]]
+[["When you put it like that.. No".|Shady Guy]]
+<%
+} else {
+  %>[[Back|Shady Guy]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy pays off Cocos debt and asks her to meet her back at Daisys house.
+
+[[Back|Shady Guy]]
+<%
+s.d.actions--;
+s.d.npc[36].prog = 1;
+//s.d.area[3].room[4].prog = 1;
+s.d.cash -= 200;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<img src='img/park/swing2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.d.inno -= 2;
+if((s.d.inno<36)&&(s.d.skill[1].level>0)) {
+  %>[[Join them|Join swingers]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+<img src='img/park/swing3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+<span style='color:green'>Daisy has become an Exhibitionist</span>
+
+[[Back|AreaMenu]]
+<%
+if(s.d.npc[31].sex>1) {
+  %>[[Perform for them]]
+<%
+}
+s.d.skill[9].level = 1;
+s.addSex(31);
+s.addSex(35);
+s.addOral(32);
+%><%= story.passage('Stats').render() %>
+
+<img src='img/park/swing4.png' alt='Image not displayed' height='480' width='800'>
+
+<img src='img/park/swing5.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.addSex(33);
+s.addSex(34);
+s.addOral(35);
+s.addOral(33);
+if(s.d.inno<1) {
+  %>[[Do an oral scene]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+
+Daisy flirts with him for a bit, then invites him for some fun in the washroom.
+
+When they step inside Daisy convinces him to let her tie him up.
+She says it will be "sexy".
+Then Daisy leaves the washroom. Stan is confused until she comes back in a few minutes later.
+
+Daisy is not alone.
+"Go ahead. Do what you want with him".
+
+Daisy watches her rapist get raped, and takes satisfaction in it.
+
+<img src='img/bar/stan1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy had to pay the Shady guy with a blowjob, but it was worth it.
+
+[[Back|AreaMenu]]
+<%
+s.addOral(26);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy flirts with him throughout the night.
+Eventually Stan invites her back to his place and Daisy accepts.
+
+When they step inside his house he roughly grabs her and drags her into the basement.
+
+"That was easy. Welcome to my dungeon".
+Stans basement has been converted into an S&M dungeon. There is already a woman here chained to the wall.
+
+Stan alternates between the two girls as he punishes and rapes them.
+"You two will be my slaves forever"!
+
+<img src='img/bar/stan2.png' alt='Image not displayed' height='480' width='800'>
+
+After what seems like an eternity, night arrives and Daisy is saved by the time reset.
+
+[[End Day]]
+<%
+s.addSex(s.d.curNpc);
+s.addSex(s.d.curNpc);
+s.addSex(s.d.curNpc);
+s.addSex(s.d.curNpc);
+s.addOral(s.d.curNpc);
+s.addOral(s.d.curNpc);
+s.addOral(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<%
+s.d.area[0].room[4].found = true;
+s.d.curNpc = 1;
+if((s.d.skill[10].level>0)&&(s.d.npc[s.d.curNpc].sexToday>0)) {
+  %><%= story.passage('Mother Brother').render() %>
+<%
+} else {
+%><img src='img/home/bro1.png' alt='Image not displayed' height='480' width='800'>
+Daisy enters her brothers room.
+Doug has not woken up yet and lies in his bed still.
+
+[[Back|AreaMenu]]
+<%
+if(s.d.skill[2].level>0) {
+  %>[[Take a closer look]]
+<%
+}
+if(s.d.area[0].room[4].prog === 1) {
+  %>[[Doesn't believe it]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+}
+%>
+Daisys brother is growing into a man. She has not seen him naked since he was a child, and she knows that he is a heavy sleeper, so she pulls back his blankets.
+
+<img src='img/home/bro2.png' alt='Image not displayed' height='480' width='800'>
+
+"Not bad", she says softly.
+
+"What's not bad?", her brother asks.
+
+Daisy jumps. He was only faking sleep.
+"Nothing".
+
+"Hey are you looking at my junk"?
+
+[[Back|AreaMenu]]
+<%
+s.d.actions--;
+s.d.area[0].room[4].prog = 1;
+s.d.area[0].room[4].visited = true;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bro3.png' alt='Image not displayed' height='480' width='800'>
+Daisy knows her brother is not really sleeping. She decides to see how far she can take things before he will stop her.
+
+She pulls the blankets back.
+He doesn't move.
+
+She touches his chest.
+He doesn't move.
+
+She caresses down his chest and stomach, toward his groin.
+His cock twitches as it inflates. Looks like her brother is enjoying this.
+
+[[Back|AreaMenu]]
+<%
+s.d.area[0].room[4].visited = true;
+s.d.actions--;
+s.innoSub(3);
+if(s.inno()<46) {
+  %>[[Daisy goes down on her brother]]
+<%
+}
+if(s.inno()<26) {
+  %>[[Daisy mounts her brother]]
+<%
+}
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bro4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Finish brother]]
+<%
+if(s.inno()<26) {
+  %>[[Daisy mounts her brother]]
+<%
+}
+%>
+<%
+s.addOral(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bro5.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy thinks she see's some movement, but when she focuses in that direction, whatever it was is gone.
+
+[[Next|Finish brother]]
+<%
+s.addSex(s.d.curNpc);
+if(s.d.skill[10].level===0) {
+  s.d.area[0].room[6].visited = false;//mom room
+} else {
+  s.d.area[0].room[4].visited = false;//bro room
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"You can stop pretending to sleep now. I know you've been awake the whole time", Daisy says when she leaves.
+
+[[Done|AreaMenu]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+
+<img src='img/bar/frat1.png' alt='Image not displayed' height='480' width='800'>
+
+There is a group of frat-boys playing pool.
+
+[[Back|AreaMenu]]
+[[Flirt with them|Flirt fratboys]]
+<%
+s.d.curNpc = 38;
+if((s.inno()<46)&&(s.d.area[4].room[2].prog>0)) {
+  %>[[Take one to washroom]]
+<%
+}
+if((s.inno()<36)&&(s.d.area[4].room[2].prog>1)) {
+  %>[[Give them a show]]
+<%
+}
+if((s.inno()<26)&&(s.d.area[4].room[2].prog>2)) {
+  %>[[Take a break outside]]
+<%
+}
+s.d.area[4].room[2].found = true;
+s.d.area[4].room[2].visited = true;
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+
+Daisy is feeling energized, and aroused. She heads to the bar.
+
+Daisy walks on to the dance floor and begins a sultry dance.
+The cute waitress puts her tray down and joins Daisy. The dancing becomes more erotic, and a crowd starts to gather and watch.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/pornstar1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+if(s.d.winType!='Easy') {
+  %>There is an intense sexual energy in the air. Daisy is not sure if she stripped, or if someone else stripped her, but she is naked now.
+Daisy does not resist any of her urges. She loses track of how many people had sex with her.
+
+<img src='img/end/pornstar2.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+}
+%>
+There were many camera out that night, and the videos were spread wide on the Internet just hours later.
+
+The next morning Daisy woke up and realized that it really was a new day. Time had not reset.
+
+She learned later that day that she was now famous. Everyone had seen her videos from the bar. Everyone wanted her.
+
+Daisy went into a lucrative porn career.
+She was very successful.
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[0] = true;
+%>
+<img src='img/home/bedroom2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Bedroom]]
+<%
+s.d.actions--;
+s.d.inno -= 2;
+%><%= story.passage('Stats').render() %>
+<img src='img/home/bedroom4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Bedroom]]
+<%
+s.d.actions--;
+s.d.curNpc = 3;
+s.innoSub(4);
+s.d.inno--;
+if((s.d.npc[1].sex>0)&&(s.d.npc[2].oral>0)) {
+  %>[[Her father is overcome by lust]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(s.d.actions>0) {
+  %><img src='img/home/dadroom1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy looks for her father.
+
+[[Back|AreaMenu]]
+<%
+if((s.d.npc[3].sexToday<1)&&(s.d.npc[3].oralToday<1)) {
+  %>[[Wake him with a blowjob]]
+<%
+}
+if((s.d.npc[3].sexToday>0)||(s.d.npc[3].oralToday>0)) {
+  %>[[Seduce father]]
+<%
+}
+if((s.d.npc[3].sexToday>0)&&(s.d.winType !== 'none')) {
+  %>[[Tell him to let mom have sex with Dougs friends]]
+<%
+}
+if(s.d.npc[36].prog>0) {
+  %>[[Tell Coco to seduce her father]]
+<%
+}
+s.d.curNpc = 3;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+} else {
+  %><%= story.passage('End Day').render() %>
+<%
+}
+%>
+Daisy heads to the washroom. She give one a wink as she leaves.
+When she finishes and steps out of the washroom the fratboy is standing there, waiting.
+
+He takes her by the arm and leads her in.
+
+<img src='img/bar/frat3.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Back|AreaMenu]]
+<%
+s.addSex(38);
+if((s.inno()<36)&&(s.d.area[4].room[2].prog>1)) {
+  %>[[Give them a show]]
+<%
+}
+if((s.inno()<26)&&(s.d.area[4].room[2].prog>2)) {
+  %>[[Take a break outside]]
+<%
+}
+if(s.d.area[4].room[2].prog<2) s.d.area[4].room[2].prog = 2;
+%><%= story.passage('Stats').render() %>
+Daisy asks if she can play with a queue stick. The guys say "Sure", and hand her one. Daisy climbs on a table and pulls her skirt up.
+
+This is not what they were expecting, but everyone watched.
+
+<img src='img/bar/frat4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+if((s.inno()<26)&&(s.d.area[4].room[2].prog>2)) {
+  %>[[Take a break outside]]
+<%
+}
+if(s.d.area[4].room[2].prog<3) s.d.area[4].room[2].prog = 3;
+%><%= story.passage('Stats').render() %>
+
+<img src='img/bar/frat2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.innoSub(2);
+if((s.inno()<46)&&(s.d.area[4].room[2].prog>0)) {
+  %>[[Take one to washroom]]
+<%
+}
+if((s.inno()<36)&&(s.d.area[4].room[2].prog>1)) {
+  %>[[Give them a show]]
+<%
+}
+if((s.inno()<26)&&(s.d.area[4].room[2].prog>2)) {
+  %>[[Take a break outside]]
+<%
+}
+if(s.d.area[4].room[2].prog<1) s.d.area[4].room[2].prog = 1;
+%><%= story.passage('Stats').render() %>
+
+Daisy tells the guys that she is going to step out back for a smoke.
+"Anyone want to join me"?
+
+They all follow.
+
+<img src='img/bar/frat5.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(38);
+s.addOral(39);
+s.addOral(40);
+s.addOral(41);
+s.addSex(38);
+s.addSex(39);
+s.addSex(40);
+s.addSex(41);
+%>
+<%= story.passage('Stats').render() %>
+
+<img src='img/home/bedroom3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Bedroom]]
+<%
+s.d.actions--;
+s.d.curNpc = 1;
+s.innoSub(4);
+s.d.inno--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/dadroom2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Find dad]]
+<%
+s.d.actions--;
+s.addSex(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+
+Daisy tells her father that she wants to see her mother gangbang Dougs friends.
+
+"I'm not going to ask your mother to do that, Daisy".
+
+[[Back|Find dad]]
+<%
+s.d.actions--;
+if(s.d.skill[4].level>0) {
+  %>[[Blackmail him with the pictures]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"If you don't ask her, I might have to show her these", Daisy says and tosses some pictures to her father.
+
+They show him cheating on his wife.
+
+"Ok. I'll ask. But it's a long-shot. She will never agree".
+
+[[Done|Menu]]
+<%
+s.d.npc[3].prog = 1;
+s.d.area[0].room[5].visited = true;
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.innoSub(4);
+s.d.skill[4].level = 1;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy watches as Coco goes to work on her father.
+Daisy takes a few pictures of her father having sex with Coco.
+
+<img src='img/home/dadroom3.png' alt='Image not displayed' height='480' width='800'>
+
+<span style='color:green'>Blackmail pictures obtained</span>
+
+[[Done|Find dad]]
+<%
+s.d.actions--;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy spends some time getting to know Sam.
+He seems to like her
+
+[[Back|AreaMenu]]
+<%
+if(s.d.skill[1].level>0) {
+  %>[[Duck under the table]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/bar/sam1.png' alt='Image not displayed' height='480' width='800'>
+
+The waitress comes by while Daisy is under the table.
+
+[[Back|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+if(s.inno()<36) {
+  %>[[Daisy mounts him and teases the waitress|Waitress Sam]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Double-click this passage to edit it.
+<img src='img/bar/sam2.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addSex(s.d.curNpc);
+s.addOral(45);
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+if(localStorage.getItem('daisySave1') !== null) {
+  %>[[Load Game from slot 1]]
+<%
+}
+if(localStorage.getItem('daisySave2') !== null) {
+  %>[[Load Game from slot 2]]
+<%
+}
+if(localStorage.getItem('daisySave3') !== null) {
+  %>[[Load Game from slot 3]]
+<%
+}
+if(localStorage.getItem('daisySaveAuto') !== null) {
+  %>[[Load Game from auto-save]]
+<%
+}
+%>
+
+[[Back|Game Start Menu]]
+Daisy makes a run for it.
+But she doesn't get very far before she is caught. The officer cuffs her, puts her in the car and takes her to the station.
+
+[[Next|Jail]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"I know my rights", Daisy begins yelling at him.
+
+"Ya, you've got the right to shut the fuck up", he replys.
+The cop forces Daisy to her knees as she screams at him.
+"If you won't stop moving those lips, I'm going to put them to use".
+
+<img src='img/rnd/cop3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|Menu]]
+<%
+s.addOral(s.d.curNpc);
+%>
+<img src='img/rnd/cop2.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy leans against the wall as the cop pats her down.
+The cops hand moves between her legs and starts rubbing Daisy through her panties.
+
+[[Leave|Menu]]
+[[Seduce Cop]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+"You'd better call for backup. I don't think you can handle this alone".
+
+The cop presses the button down on his mic, "All units, all units. Code 69 in progress. Requesting backup".
+
+<img src='img/rnd/cop4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|Menu]]<%
+s.addOral(s.d.curNpc);
+s.addSex(44);
+s.addOral(44);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisys mother is not in her room.
+
+[[Back|AreaMenu]]
+<%
+s.d.curNpc = 2;
+s.d.area[0].room[6].visited = true;
+s.d.actions--;
+if(s.d.skill[10].level===0) {
+  %>[[Snoop around]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy searches through her mothers belongings. She finds a long blue vibrating dildo in the panty drawer.
+
+Daisy hears some noise coming from her brothers room. She quickly leaves her mothers room so she doesn't get caught.
+
+Daisy takes her mothers dildo with her.
+<span style='color:green'>Dildo obtained</span>
+
+[[Back|AreaMenu]]
+<%
+s.d.skill[10].level = 1;
+s.d.area[0].room[4].visited = false;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy is surprised to find her mother on top of her brother, riding him passionately.
+
+<img src='img/home/bro6.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+[[Join them|DaiyBroMom]]
+<%
+s.d.area[0].room[4].visited = true;
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bro7.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(2);//mom
+s.addOral(1);//bro
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisys father becomes so aroused that he feels he must have his daughter, no matter the consequences.
+He strides up to her as he removes his clothing and grabs her by the ankle.
+
+He looks her in the eyes as he pushes her back and wordlessly enters her.
+
+<img src='img/home/bedroom5.png' alt='Image not displayed' height='480' width='800'>
+
+Much to Georges relief, Daisy gives him a kiss and hug when they are finished.
+"Thanks Dad", she says.
+
+George doesn't seem to be in trouble.
+
+[[Done|AreaMenu]]
+<%
+s.addSex(3);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bedroom6.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Bedroom]]
+<%
+s.d.actions--;
+s.d.curNpc = 36;
+s.addOral(s.d.curNpc);
+if((s.d.npc[1].sex>0)&&(s.d.npc[2].oral>0)) {
+  %>[[Doug joins in]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/home/bedroom7.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|Bedroom]]
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/rnd/cop7.png' alt='Image not displayed' height='480' width='800'>
+
+[[Wait until night|End Day]]
+<%
+if(s.d.inno<11) {
+  %>[[Seduce the other prisoner]]
+<%
+if(s.d.npc[46].prog>0) {
+  %>[[Seduce the cop]]
+<%
+  }
+}
+%><%= story.passage('Stats').render() %>
+
+<img src='img/rnd/cop5.png' alt='Image not displayed' height='480' width='800'>
+
+[[Wait until night|End Day]]
+[[Seduce the cop]]
+<%
+s.addSex(46);
+%><%= story.passage('Stats').render() %>
+<img src='img/rnd/cop6.png' alt='Image not displayed' height='480' width='800'>
+
+[[Wait until night|End Day]]
+<%
+s.addSex(s.d.curNpc);
+s.addOral(46);
+%><%= story.passage('Stats').render() %>
+<%
+var partnerCount = 0;
+var sexCount = 0;
+var lesCount = 0;
+var bjCount = 0;
+for(var i=0;i<s.d.npc.length;i++) {
+  if((s.d.npc[i].track)&&(s.d.npc[i].male)) {
+    if((s.d.npc[i].sex>0)||(s.d.npc[i].oral>0)) partnerCount++;
+    if(s.d.npc[i].sex>0) sexCount++;
+	if(s.d.npc[i].oral>0) bjCount++;
+  }
+  if((s.d.npc[i].track)&&(!s.d.npc[i].male)) {
+    if(s.d.npc[i].oral>0) lesCount++;
+  }
+}
+if(partnerCount >= s.d.TotalPartners) {
+  s.d.winType = 'Easy';
+  if((sexCount >= s.d.TotalPartners)&&(lesCount >= s.d.TotalFemalePartners)) {
+    s.d.winType = 'Hardcore';
+	if(bjCount >= s.d.TotalPartners) {
+	  s.d.winType = 'Perfect Win';
+	}
+  } else if(sexCount >= s.d.TotalPartners) {
+    s.d.winType = 'Normal';
+  }
+  %>
+
+Ends:
+[[<span style='color:blue'>Mr.Durand falls in love with Daisy</span>|Mr.Durand falls in love with Daisy]]
+<%
+  if(s.d.npc[3].prog>0) {
+    %><span style='color:blue'>[[<span style='color:blue'>Family Favorite</span>|Family Favorite]]</span>
+<%
+  }
+  if(s.d.skill[8].level>0) {
+    %><span style='color:blue'>[[<span style='color:blue'>Hippy chick</span>|Hippy chick]]</span>
+<%
+  }
+  if(s.d.beauty>85) {
+    %><span style='color:blue'>[[<span style='color:blue'>Porn star</span>|Porn star]]</span>
+<%
+  }
+  if(s.d.npc[26].prog>5) {
+    %><span style='color:blue'>[[<span style='color:blue'>Escort life</span>|Escort life]]</span>
+<%
+  }
+  if(s.d.npc[17].prog>0) {
+    %><span style='color:blue'>[[<span style='color:blue'>Convent</span>|Convent]]</span>
+<%
+  }
+  if(lesCount >= s.d.TotalFemalePartners) {
+    %><span style='color:blue'>[[<span style='color:blue'>Girls club</span>|Girls club]]</span>
+<%
+  }
+  if(s.d.area[1].room[4].prog>9) {
+    %><span style='color:blue'>[[<span style='color:blue'>Glory queen</span>|Glory Queen]]</span>
+<%
+  }
+
+  if(s.d.winType === 'Perfect Win') {
+    var endsTotal = 0;
+    for(var i=0;i<s.d.ends.length;i++) {
+	  if(s.d.ends[i]) endsTotal++;
+	}
+    if(endsTotal >= s.d.ends.length) {
+      %><span style='color:green'>[[<span style='color:green'>Perfect game!</span>|Perfect game]]</span>
+<%
+    }
+	%>Achieved ends:<%=endsTotal%>/<%=s.d.ends.length%>
+<%
+  }
+}
+%>
+
+George is surprised when his wife quickly agrees to have sex with other men.
+June didn't even ask who, or how many. Just asked when they could start.
+
+George was not sure if he should be disappointed, or excited.
+He watched as his sons friends took turns inside his wife.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/fam1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/fam2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+When the last boy came in his wife, George looked up and saw that his son and daughter were watching the show.
+
+<%
+if(s.d.winType!=='Easy') {
+  %>Then his daughter got involved. Then his son. So George joined in as well.
+
+<video style="float: left; width: 50%;" width="400" height="668" autoplay loop>
+  <source src="img/end/fam3l.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+<video style="float: left; width: 50%;" width="400" height="668" autoplay loop>
+  <source src="img/end/fam3r.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+<p style="clear: both;">
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>The orgy lasted for hours. More and more people showed up as the rumors spread.
+The family serviced each other, and everyone who stopped by.
+
+<img src='img/end/fam4.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+  }
+}
+%>Daisy woke up the next day. It was a new day, she was free from the time loop. She thought about what she had learned from the experience.
+
+Daisy loves her family. And they love her.
+
+She realized that nobody will ever love her, and know her, as much as they do. And her dad found her g-spot, so nobody could top that.
+
+She decided to start a family, with her family, and eventually had two children. One by her brother, one by her father.
+
+They lived happily on a farm, away from prying eyes. On Daisys daughter/sisters birthday, when the girl became a woman, Daisy proudly watched as her father and brother took their daughter/grand-daughters virginity.
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[1] = true;
+%>
+Daisy takes a walk in the park. She runs into the swinger couple that she'd had fun with before.
+
+On a whim, Daisy asks them if they would like to smoke some pot.
+They agree.
+
+<img src='img/end/hippy1.png' alt='Image not displayed' height='480' width='800'>
+
+While stoned they talk about life, and daisy learns about their "free love philosophy".
+
+<%
+if(s.d.winType!=='Easy') {
+  %>They hear some yelling from nearby. Sounds like some people are angry.
+
+"Now is my chance to show you what I mean. Follow me Daisy", Julie says, then runs toward the shouting.
+
+When Daisy catches up, Julie is in between two groups of rough looking men.
+
+"Don't fight, boys. I'm sure we can think of something better to do with our energy", Julie pleads with them.
+Julie pulls up her skirt with one hand and puts her other down one mans pants.
+
+The guys get the idea.
+
+<video style="float: left; width: 37.5%;" width="300" height="668" autoplay loop>
+  <source src="img/end/hippy2l.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+<video style="float: left; width: 62.5%;" width="500" height="668" autoplay loop>
+  <source src="img/end/hippy2r.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+<p style="clear: both;">
+
+<%
+  if (s.d.winType!=='Normal') {
+    %>Daisy steps in to help.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/hippy3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  }
+  %>When they are done, Julie tells Daisy how they transformed hate, into love.
+
+<%
+}
+%>Daisy is convinced when she wakes up the next morning, and it really is a new day. The time loop is broken. She is free to move forward.
+
+She devotes her life to a hippy like existence, sharing love, and sex, with any who need it.
+
+Daisy coasts through life on her looks and promiscuity. But she really does brighten the day of almost all she meets.
+
+A noble life, of a sort.
+
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[2] = true;
+%>
+MrDurand asks to speak with Daisy.
+When they are alone he confesses his true love for her.
+
+Daisy is excited by this. A mature adult man of his age being in love with her was validating, and a boost to her ego.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/mrdurand1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+She agrees to "date" him and see what happens.
+The next morning Daisy wakes to find it really is a new day. The time loop has ended.
+
+Daisy follows through and begins dating her teacher. At first just for fun, but after a while she noticed that the better the sex got, the better her report card was.
+Even if she didn't do any assignments.
+
+Daisy graduates highschool on the honor roll.
+
+<%
+if(s.d.winType!='Easy') {
+  %>She worked hard (on her back) for the straight As she got.
+Later, as she was getting plowed by a college professor, she realized she owed MrDurand a lot for showing her how to do well in school.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/mrdurand2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+Daisy also graduated college on the honor roll.
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>After she fucked her way through college, Daisy returned to her hometown, and married her high-school sweetheart, her former biology teacher.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/mrdurand3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+She took a job at the local highschool as a teacher. She gave the students a hands-on sex-ed class that quickly became the most popular class in the school. She also became a local legend.
+
+<%
+  }
+}
+%><span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[3] = true;
+%>
+<img src='img/rnd/subway1.png' alt='Image not displayed' height='480' width='800'>
+
+As Daisy is waiting to get on a train, the crowd grows.
+She feels a man behind her being pressed into her.
+
+[[Ignore him|Menu]]
+<%
+s.d.curNpc = 47;
+if(s.d.inno < 50) {
+  %>[[Press back]]
+<%
+  if(s.d.skill[9]) {
+    %>[[Blowjob|Bj Subway crowd]]
+<%
+    if(s.d.inno < 1) {
+      %>[[Threesome in subway]]
+<%
+    }
+  }
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/rnd/subway2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Menu]]
+<%
+s.innoSub(5);
+
+  if(s.d.skill[9]) {
+    %>[[Blowjob|Bj Subway crowd]]
+<%
+    if(s.d.inno < 1) {
+      %>[[Threesome in subway]]
+<%
+  }
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+
+
+<img src='img/rnd/subway3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|Menu]]
+<%
+s.addOral(s.d.curNpc);
+if(s.d.inno < 1) {
+  %>[[Threesome in subway]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/rnd/subway4.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|Menu]]
+<%
+s.addSex(s.d.curNpc);
+s.addOral(48);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+A Japanese man appears before Daisy.
+
+"Hi. I am wanting to buy your panties please".
+
+"What"?
+
+"I pay, I pay", he says and holds out some bills, "You give panties".
+
+[[Walk away|Menu]]
+<%
+if(s.d.inno < 76) {
+  %>[[Sell her underwear]]
+<%
+if(s.d.inno < 16) {
+  %>[[Ask for more|Offer more]]
+<%
+}
+}
+%><%= story.passage('Stats').render() %>
+
+Daisy gets $50 for her used underwear.
+
+[[Back|Menu]]
+<%
+s.d.cash += 50;
+if(s.d.inno < 16) {
+  %>[[Offer more]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+Daisy asks the man if he will pay more.
+
+"Hi, yes. You pee. I pay 100".
+
+Daisy thinks it's strange, but worth the cash.
+It gets even stranger when the man lies down, expecting her to pee on him.
+
+<img src='img/rnd/pee1.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy gets $100.
+
+[[Back|Menu]]
+<%
+s.d.cash += 100;
+%><%= story.passage('Stats').render() %>
+Daisy decides to go home with a John to pass time while waiting for the reset.
+
+A car pulls up after only a few moments standing at the corner.
+Daisy leans in to find <%=s.d.virginTaker%>, the man who took her virginity. He looks surprised, then smiles as Daisy jumps in.
+
+They go back to his place for a marathon of sex.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/escort1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  if(s.d.winType!=='Easy') {
+    %>There is a knock on door. <%=s.d.virginTaker%> gets up and answers. He comes back and asks if a friend can get some too. He will pay extra.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/escort2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+}
+%>Daisy falls asleep after. When she wakes she is still there. It really is a new day. No time reset.
+
+Daisy knows this must be a sign. She knew what she was destined to do with her life.
+
+Daisy began a career as an escort. It was exciting, enjoyable, and well paying for her.
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>Daisy became one of the highest paid professionals. She earned cash so quickly from it, that she was able to retire by the time she was 20.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/escort3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+But she didn't retire. Daisy loved her job.
+
+<%
+}
+%>
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[4] = true;
+%>
+Daisy wanders into a hobo camp. One asks her to have a seat and join them for a bit.
+
+The old hobo seems warm and friendly, so Daisy sits down with them. He starts telling her stories about some of his adventures. Part way through, Daisy feels his hand on her leg.
+
+<img src='img/park/hobo1.png' alt='Image not displayed' height='480' width='800'>
+
+She doesn't think much  of it until later when she looks down and sees that he has pulled out his dick, and is stroking it while talking to her.
+
+[[Leave quick|AreaMenu]]
+<%
+s.d.area[3].room[5].found = true;
+s.d.area[3].room[5].visited = true;
+s.d.actions--;
+s.d.inno--;
+s.d.curNpc = 50;
+if(s.d.inno<66) {
+  %>[[Pretend she doesn't notice]]
+<%
+}
+if(s.d.inno<41) {
+  %>[[Seduce him|Seduce Hobo]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+The old hobo tells a story about how they once found a girl who fantasized about being gang-raped.She would go alone into vagrant camps, and pass up any opportunity to escape. But when she stayed long enough, they would give in to their temptation and rape her.
+
+"I think it's time for me to go", Daisy says and stands up.
+
+"Oh it's already too late for that".
+
+Another hobo grabs Daisy by the wrist. "It'll be easier on you if you just relax, and don't fight it. Just imagine yourself somewhere else", he says as they pull Daisy to the ground.
+
+[[Lie back and accept it]]
+<%
+if(s.d.inno<1) {
+  %>[[Take charge]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy asks him if they go go somewhere private. He leads her into a tent. The hobo needs no invitation when Daisy kneels and bends over. He wordlessly plunges into her.
+
+<img src='img/park/hobo2.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+Another hobo watches through the open tent screen.
+
+[[Back|AreaMenu]]
+<%
+if(s.d.inno<16) {
+  %>[[Take the spectator also]]
+<%
+}
+s.addSex(50);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/hobo5.png' alt='Image not displayed' height='480' width='800'>
+<%= story.passage('VirginityLoss').render() %>
+
+Daisy takes the mans advice and lies limp while they use her. Despite their stench, and her disgust, Daisy cums multiple times.
+
+[[Done|AreaMenu]]
+<%
+s.addOral(51);
+s.addOral(52);
+s.addSex(50);
+s.addSex(51);
+s.addSex(52);
+s.addSex(53);
+%><%= story.passage('Stats').render() %>
+
+<img src='img/park/hobo4.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy turns things around on them.
+"This is going to be fun", she says as she mounts the first one. The rest move in on her, and Daisy does her best to satisfy all of them.
+
+The hobos are a little puzzled by her enthusiasm, but are happy to take advantage of it.
+
+<%= story.passage('VirginityLoss').render() %>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(51);
+s.addOral(52);
+s.addOral(53);
+s.addSex(50);
+s.addSex(51);
+s.addSex(52);
+s.addSex(53);
+%><%= story.passage('Stats').render() %>
+<img src='img/park/hobo3.png' alt='Image not displayed' height='480' width='800'>
+
+Daisy invites the spectator to join them.
+
+[[Done|AreaMenu]]
+<%
+s.addOral(50);
+s.addSex(51);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+Daisy seeks Father Ted, to find out what her penance should be.
+The priest tells her that the only way she can atone for a day like that, would be to devote the rest of her life to god.
+
+Daisy considers it for a few moments, then offers to join the convent. That would put her back in gods good books, and thanks to the time loop, she would never have to follow through.
+
+"Win, win", she thought, until she woke up the next morning.
+She was still at the convent, and it really was a new day.
+
+<img src='img/end/nun1.png' alt='Image not displayed' height='480' width='800'>
+
+<%
+if(s.d.winType!='Easy') {
+  %>Daisy is unsure about her new life until that night.
+Father Ted enters her room after the evening meal and begins to undress.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/nun1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>Daisy quickly became the most popular nun in the convent.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/nun2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  }
+}
+%>Daisy lives the rest of her life as a happy, horny, nun.
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[5] = true;
+%>
+Daisy goes to the bar again, but it's empty. She chats with the waitress while waiting for the place to liven up.
+
+After a while Daisy realizes the waitress is flirting with her.
+Daisy had always though she preferred men, but there was something about Wendy that made her wet.
+
+Daisy goes home with Wendy at the end of her shift.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/les1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+The next morning when Daisy woke up, she was still feeling a warm happy glow from her time with Wendy.
+She has never felt so good the morning after.
+
+When Daisy notices that it really is a new day, she understands what lesson she was supposed to learn from all this.
+She was a lesbian.
+
+It was a new day, and a new Daisy. From that day on, she only dated women.
+
+<%
+if(s.d.winType!='Easy') {
+  %>Daisy didn't entirely give up on men though. They still had a use as flesh-toys for her and her lovers.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/les2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>But most of the time, women were the most fun.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/les3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  }
+}
+%>Daisy lives the rest of her life as a (mostly) lesbian.
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[6] = true;
+%>
+<img src='img/park/gjog2.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.addSex(23);
+s.addOral(s.d.curNpc);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<img src='img/park/swing6.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+
+<%
+s.addOral(31);
+s.addOral(34);
+%><%= story.passage('Stats').render() %>
+Daisy sneaks into her fathers room while he is still sleeping. She pulls back his covers and begins to stroke his dick.
+
+When Daisys takes his growing cock into her mouth, her fathers moans.
+"Oh June", he mumbles with his eyes shut.
+
+<img src='img/home/dadroom0.png' alt='Image not displayed' height='480' width='800'>
+
+George opens his eyes as he cums.
+He sees his daughters beautiful eyes looking up at him as he comes down her throat.
+
+"Surprised", would be an understatement. But so would "Pleased".
+
+[[Done|Find dad]]
+<%
+s.addOral(3);
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+
+<img src='img/park/play0.png' alt='Image not displayed' height='480' width='800'>
+
+[[Back|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+if(s.inno()<51) {
+  %>[[Have sex with him|Sex james]]
+<%
+}
+%><%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+You've managed to unlock everything in the game.
+
+Congratulations.
+You found Daisy as a sweet innocent.
+<img src='img/end/perfect1.png' alt='Image not displayed' height='659' width='800'>
+
+But when you left, she was an experienced cum-slut.
+
+[[End game|Game Start Menu]]
+[[Continue anyway|Menu]]
+<img src='img/school/stay3.png' alt='Image not displayed' height='480' width='800'>
+
+[[Done|AreaMenu]]
+<%
+s.addOral(s.d.curNpc);
+%>
+<%= story.passage('Stats').render() %>
+<%= story.passage('NpcStats').render() %>
+<%
+s.d.curNpc = 12;
+s.addOral(12);
+%>Daisy has seen another black guy that hangs out in the a lot. She finds him and begins flirting with him. Daisy doesn't have to initiate things any more than that. Minutes later the boy is taking Daisys top off.
+
+<img src='img/school/bbc2.png' alt='Image not displayed' height='480' width='800'>
+
+This time Daisy is really disappointed. This guy was tiny, and fast. The opposite of what she was searching for.
+
+<%
+  if((s.d.skill[1].level>0)&&(s.d.inno<46)) {
+    %>"Hey, my girlfriend would really like you. Why don't you join us for a threesome"?
+
+[[Daisy does|Blackguy threesome]]
+<%
+}
+%>
+Daisy hangs a sign above the mens side of the gloryhole.
+
+"Insert cock for mediocre blowjob
+Insert some cash, then cock, for best blowjob of your life".
+
+She then went back to her side and waited. At first a five or ten would get dropped through the hole occasionally. But after she delivered some earth shattering oral to the few that paid, word began to spread of her legendary skills.
+
+The money became constant, and in larger amounts.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/gloryqueen1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+Daisy realized that she had effectively created the most profitable vending machine.
+
+<%
+if(s.d.winType!='Easy') {
+  %>It got so busy that Daisy decided to bring in some help. She found that she enjoyed training the new girl. They practiced together often.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/gloryqueen2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  if(s.d.winType!=='Normal') {
+    %>When it continued to gain popularity, Daisy decided to make a franchise out of it. "Gloryhole vending machines" were started at new locations. The park, the bar, the subway station, and the church were the first expansions.
+
+<video width="800" height="674" autoplay loop>
+  <source src="img/end/gloryqueen3.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<%
+  }
+}
+%>Daisy became very wealthy.
+
+<span style='color:green'>Game Won!
+Difficulty: <%=s.d.winType%></span>
+
+[[End game|Game Start Menu]]
+[[Continue game|Menu]]
+<%
+s.d.ends[7] = true;
+%>
+The biology class slightly lowers the innocence of everyone in the school.
+The gym class raises Daisys beauty by one.
+
+<span style='color:blue'>*The endings:*</span>
+Pornstar        – Over 85 Beauty
+Family Favorite – Blackmail George.
+Hippy Chick     – Buy weed.
+Mr.Durand       – Always available.
+Escort Life     – Work as a whore more than 6 times in the same day.
+Convent         – Confess a very long list.
+Girls Club      – Be intimate with every woman.
+Glory Queen	- Use the gloryhole at least 10 times.
+
+[[Back|Instructions]]

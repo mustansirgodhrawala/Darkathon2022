@@ -1,0 +1,42 @@
+
+
+
+
+
+				32-bit is still good, you freaks
+				published: 2020-02-01
+
+
+
+				Node.js? More like... Nad.jiss! HA HA HAHA HA HAHA PENIS JOKE - You, probably
+				I'm back in college again. I've been taking classes for about a month now. It's a hell of a lot nicer than the old one, because:
+
+					it's not a residential college, which means that, after financial aid, I only have to pay about $200/semester; and
+					all but one of my classes are online, and the one day a week I need to be on campus I can schedule a bus to take me there, so I'm not dependent on my father or anyone else's goodwill.
+
+				That one class on campus is a "tech support" class. "Tech support" in quotes because very little actual support ever gets done. There are two boys in the back who are desperately trying to diagnose why someone's beefy 64-gigabytes-of-ram server only shows up as 48 gigabytes, and another boy who's trying to build their own desktop tower but is missing half the pieces, and a geriatric boomer with one leg who doesn't seem to grasp the concept that repeatedly clicking the login button on a page with autofill enabled will only ever log him into that specific account being autofilled.
+				But I somehow convinced my grandma to let me fix the broken desktop computer sitting in her den, the one that I wrote The Samhain Files and part of The White Line Fever on before the sudden move an hour away separated me from it. It was a faulty power supply, just like I'd always known, like I'd told my father in hopes that he would do something about it. He didn't do shit, just let it languish.
+				And now, since she's in the market for a laptop, the desktop is mine since I'm the one who fixed it.
+				So I did what I naturally do when I steal receive old electronics from my family members: I wiped the hard drive and installed Linux on it. But almost all of the distros I wanted to test on it either refused to recognize the Ethernet port in the back of the case (there's no wireless card installed), didn't support full-disk encryption in the default installer (I'm not spending all day fucking around with /etc/crypttab and GRUB), or... only supported 64-bit processors.
+				It's a Dell Inspiron 530. A 300 gigabyte hard drive and two gigabytes of RAM. (EDIT 2020-05-29: And apparently 64-bit, and I only figured it out just now, but my point still stands.) The processor's speed is a few hundredths of a gigahertz less than the ThinkPad I'm typing this on right now, and the speed is barely noticable (in fact, it actually feels more responsive). Its only weakness is having one lonely compute core, which the OEM Windows Vista install absolutely swamped but Linux Mint handles just fine.
+				Here's where things actually get relevant to the title. I spent all of the last day of January's morning setting up the desktop and configuring all my dotfiles and toolchain just the way I like them.
+				Install Syncthing, and a few clicks away, and I can get files onto the clearnet, Tor, and I2P versions.
+				Throw my main ZeroNet install in a Syncthing folder, and I can sign changes to the zite as well.
+				Everything works just as it does on all my other systems.
+				Except for Beaker Browser. Because it only distributes 64-bit AppImages. And you can't run it from source, either, because Node.js dropped support for 32-bit in the 10.x series. And I can't use an alternative client to update the Dat mirrors of my websites, because those are written in Node.js too!
+				There is no technical reason I can think of why Node.js can't support 32-bit anymore. The most information I've found to absolve their decision is one Github issue where an incompatible CentOS dependency is cited as the reason why they can no longer support... all the Linux distros they used to be able to. There is an unofficial build page where there appear to be 32-bit binaries, but there's little to no quality testing to ensure that the binaries actually... work.
+				"But why can't you just update the Dat mirror when you're on a 64-bit machine?" I hear a strawman say. And the answer is twofold: executive dysfunction, and because I shouldn't have to.
+				Executive dysfunction is a bitch. It's hard enough to keep my focus to remember to manually copy everything over to the ZeroNet mirror every time I update something on my site or add something new. It's part of why I killed the Gopher mirror. Having to remember to go onto my ThinkPad after every time I shut down the desktop, boot that machine up, and then copy everything over is a bunch of undue mental strain that disincentivizes me from updating the website at all.
+				And, frankly, it's quite ridiculous that my 32-bit machine is capable of fulfilling all the tasks that my 64-bit machines are, and yet it can't. It's not for security reasons, as the only major non-Windows-specific difference between 32- and 64-bit security-wise I've been able to find is the implementation of address space layout randomization.
+				"But what about the aging machines you decried a month ago? Isn't this the same situation, where you were left out in the cold because your machine was too old?" I hear another strawman say. And the answer to that: these two situations are nothing alike.
+				In the Gopher situation, these were machines that couldn't participate in the modern internet. Either they couldn't handle the modern encryption ciphers, or they didn't have the resources to run anything but the most lightweight of browsers, or they simply didn't understand the concept of a protocol more advanced than plain Gopher. The experience of using one of these machines would be vastly different than using one of my own devices. Either they couldn't be updated, in which case there's no point in continuing support, or they could and the owners refused to for the sake of the "retro experience", in which case they're not entitled to support just for their sole enjoyment.
+				In this situation, this is a computer that is perfectly capable of everything that I normally do day-to-day (except for the aforementioned Dat clients). I can use the exact same interfaces and commands and software (given that the software is compiled for i386). Everything is up-to-date. Other than the architecture difference, it is essentially the same exact system.
+				One could make the argument that we are already heading towards a future where 32-bit machines will be shut out defacto like the aging Gopher machines- in that programs are becoming, thanks to Electron and related frameworks favoring flashy interfaces over performance, too bloated to fit in 32-bit's four gigabyte maximum RAM address space. But that wouldn't be 32-bit's fault. What about all the 64-bit machines with less than eight gigabytes of RAM? Already I've had to switch multiple programs I used to use to lightweight yet modern equivalents because they grew too bloated for my ThinkPad (with six gigabytes of RAM) to handle and stay snappy. Like Cinnamon (the DE) to i3, or Firefox to Falkon, or Nemo (the file explorer) to PCManFM, or Tilix to lxterminal...
+				And those lightweight equivalents would continue to exist, if not thrive and expand in number because of more and more people pushed out from minimum RAM requirements.
+				Like gamer Eloi and disgruntled Morlocks lurking underground in resentment.
+				And as an addendum before I forget: I find it ironic that "solarpunk" and "green thinking" is in vogue in tech circles nowadays from the climate change scare, and yet Linux distros seem to be dropping 32-bit support left and right. Wouldn't you want to keep old hardware useful and out of landfills? And what about the people with low incomes who can't afford to upgrade their hardware? Either they have to cripple themselves in the bank to stay "up-to-date", or in computing power as they pick up a Chromebook or other cloud-dependent device and hand all their data and control over to Daddy Google.
+				And heaven knows we hate Daddy Google.
+
+
+
+				CC BY-NC-SA 4.0 © Vane Vander

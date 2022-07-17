@@ -14,7 +14,15 @@ def processor(topic, links):
     cursor = database.cursor()
     # print(links)
     for link in links:
-        cursor.execute(f'INSERT INTO {topic}_ingress(links) VALUES ("{link}")')
+        try:
+            sql = f"INSERT INTO {topic}_ingress(links) VALUES (%s)"
+            cursor.execute(sql, (link,))
+        except Exception as e:
+            rprint(
+                f"\t\t[red]Problem with ingress on {link} and type is {type(link)}[/red]"
+            )
+            logging.critical(e)
+        # cursor.execute(f'INSERT INTO {topic}_ingress(links) VALUES ("{link}")')
     database.commit()
     if len(links) > 0:
         rprint(f"[green]\t\tIngress finished for {topic}, with { len(links) }[/green]")

@@ -1,0 +1,349 @@
+
+
+
+
+
+
+                Privacy Policy
+                Terms of Service
+                Use Policy
+
+
+                Facebook
+                Twitter
+                |
+
+                    Client Login
+
+
+
+
+
+
+
+
+      PacketPoint
+
+
+
+
+
+
+
+            Hosting
+
+
+
+              Storage Servers
+
+
+
+
+
+        About Us
+        Contact Us
+
+
+
+
+
+
+
+
+
+
+
+
+					Affordable & CustomizableCanadian VPS Hosting!Pay With
+					Get a virtual server in minutes with dedicated resources and full root access in multiple Canadian locations. Pay using your favorite cryptocurrencies without your personal information required.This is the VPS host you've been looking for!
+
+
+
+
+						We don't ask for any personal information
+
+
+						View Plans
+						Contact Sales
+
+
+
+
+
+							Create a Packet Point Account,Get hosting in minutes.
+
+
+
+
+									Email address
+
+
+
+									Password
+
+
+
+									Confirm Password
+
+								Create My Account
+								By creating an account you agree to the terms of service and our acceptable use policy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+              We respect your privacy and anonymity
+              We believe anonymity and privacy are universal rights for everyone; this is why we chose not to implement KYC in our company. We don’t ask for your personal information when buying services from us; we only accept cryptocurrencies for payment, such as Bitcoin, Dash, and Monero.
+
+
+
+
+
+
+
+
+
+
+              Fully customize your resources
+              Most virtual server hosts force you to choose hosting packages that don’t fit your needs, and you end up paying for resources you don’t need. Packet Point allows you to fully customize your resources to build a custom plan that works precisely for your hosting needs.
+
+
+
+
+              Take full control of your server
+              We use Virtualizor to manage your VPS because it allows you to take complete control of your server. With Virtualizor, you can install your own operating systems, manage your server via HTML KVM, make and restore backups, and remotely control your VPS with its full-featured API.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Canadian VPS Hosting Plans
+            Fully customize your plan and get your server in minutes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Looking for mass storage hosting?
+          Solid-state storage is excellent for high IOP applications such as data analysis and high-traffic websites but is expensive if you need mass storage. For clients that need mass redundant storage, we now offer storage virtual servers with gigabit ports and large hard drives in RAID 10.
+          View storage plans
+
+
+          Need a custom hosting solution?
+          Packet Point offers custom hosting solutions for your business at any scale, from small e-commerce websites to entire server racks and cage installations; we will deliver a solution that suits your needs. Contact our sales team for a custom quote in less than 48 hours.
+          Contact sales
+
+
+
+
+
+
+
+
+
+
+							Anonymous Hosting
+							We are joining the new privacy trend in the industry by allowing you to buy virtual server hosting without asking for your personal information or requiring intrusive verification.
+
+
+							Pay With Crypto
+							We believe Cryptocurrencies will be the future of online payments, and this is why we only accept Bitcoin, Monero, Dash, and Dogecoin as payment methods for our services.
+
+
+							Solid State Storage
+							All our virtual server nodes use NVME or SSD storage, ensuring you get the best performance and high IOPs for your applications.
+
+
+							Encrypted Servers
+							For your security, we use full disk encryption on all our servers. This ensures that your data is still safe if our systems fall into the wrong hands.
+
+
+							Full Virtulization
+							Your VPS is fully virtualized using KVM virtualization, meaning you can run any kernel version you want, including FreeBSD and Windows.
+
+
+							Unmetered Bandwidth
+							Your bandwidth is unmetered, and don't hard cap you on how much bandwidth you can use per month, and it is a fair use policy.
+
+
+							Virtualizor Panel
+							With Virtualizor, you can take complete control of your VPS with the ability to reinstall at any time, take backups, and recover your server via HTML KVM.
+
+
+							HTML5 KVM Access
+							With the HTML5 KVM built into Virtulizor, you can control your server like you have a keyboard and monitor directly attached, allowing you to recover and install custom OSs.
+
+
+
+
+
+
+
+
+
+
+
+					Frequent Questions
+					Still have questions? Feel free to contact us.
+
+
+
+
+
+    What payment methods do you accept?
+
+        We accept many cryptocurrencies including Bitcoin, Monero, and Dash but also accept credit cards via Stripe. For your anonymity, we strongly recommend using Monero for payment. If you would like to pay using another method please contact us about it.
+
+
+
+
+
+
+
+    Do I get a dedicated IP address?
+
+        All VPS plans come with a dedicated IPv4 address, and you may purchase more if needed. A dedicated IP address is not shared with anyone else, and you have access to all ports.
+
+
+
+
+
+
+
+    What operating systems can I run?
+
+        When you order a virtual server from us, you have the choice of multiple Linux distros: Debian, Ubuntu, and Centos. You may also upload your ISOs and install them via Virtualizor's HTML5 KVM; if you require Windows to be installed, please get in touch with support because the Windows ISO file will be too large to upload.
+
+
+
+
+
+
+
+    Do you backup my VPS?
+
+        We do not automatically back up your virtual servers because the process of doing so is resources intensive and will slow down your server. It is your responsibility to keep backups of your important files.
+
+
+
+
+
+
+
+    Is Packet Point a bullet proof host?
+
+        Bulletproof hosting means you can do and host anything you want, including pirated movies, cracked software, illegal darknet sites, and much worse, without the web host taking your server offline. Packet Point is not a bulletproof web host and requires you to follow Canadian law; we will suspend your server if you engage in illegal activity.
+
+
+
+
+
+
+
+    Will you install and configure my VPS for me?
+
+        We will not install and configure software for you. It is your responsibility to manage your virtual server.
+
+
+
+
+
+
+
+    Do you encrypt your servers? Is my data safe?
+
+        All of our virtual server nodes are fully encrypted, meaning if the disks fall into the wrong hands, it will take an astronomical amount of computing resources and time for anyone to access the data on them. Your data is relatively safe on our servers; if you need absolute data security, don't hesitate to contact support for a solution that works for you.
+
+
+
+
+
+
+
+    Can I host hidden services or Tor relays here?
+
+        You may host Tor hidden services (onion websites) on your VPS if they aren't hosting illegal content or breaking Canadian law. We do not allow you to run a Tor exit node because it generates too many abuse reports, but Tor relays are OK if you limit the speed to 20Mbps.
+
+
+
+
+
+
+
+    If I don't like my VPS can I get a refund?
+
+        If you're not happy with our services, you can request a full refund within 15 days.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Packet Point
+        Packet Point is a Canadian-based virtual server provider with data centers in Quebec and Ontario. We believe in privacy, accept every major cryptocurrency, and don’t ask for your personal information. We are your anonymous hosting provider.
+
+
+        Services
+        VPS Hosting
+        Storage VPS
+
+
+        Company
+        About Us
+        Contact Us
+        Use Policy
+        Privacy Policy
+
+
+        Payment Methods
+
+
+          Credit/Debit
+
+
+          Bitcoin
+
+
+          Monero
+
+          + More
+
+
+    © 2022 Packet Point INC

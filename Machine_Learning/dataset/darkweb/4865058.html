@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="/favicon.png" rel="icon" type="image/png"/>
+  <link href="/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="/css/base.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/md/base_page.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/jquery.contextmenu.min.css" rel="stylesheet"/>
+  <title>
+   Neboard X
+  </title>
+ </head>
+ <body>
+  <header class="navigation_panel" data-image-viewer="popup" data-site-name="Neboard X">
+   <a class="link" href="/">
+    Neboard X
+   </a>
+   <a href="/search/">
+    search
+   </a>
+   ,
+   <a href="/feed/">
+    feed
+   </a>
+   <a class="right-link link" href="/settings/">
+    Settings
+   </a>
+  </header>
+  <script src="/js/3rdparty/jquery-3.4.1.min.js">
+  </script>
+  <script src="/js/3rdparty/jquery.form.min.js">
+  </script>
+  <script src="/js/3rdparty/jquery-ui.min.js">
+  </script>
+  <script src="/js/3rdparty/jquery.mousewheel.js">
+  </script>
+  <script src="/js/3rdparty/jquery.contextmenu.min.js">
+  </script>
+  <script src="/js/3rdparty/jquery.ui.position.min.js">
+  </script>
+  <script src="/js/image.js">
+  </script>
+  <div class="page_link">
+   <a data-options="openButton threadCounters" data-page-link="true" href="#" id="previous-page-url">
+    &lt;&lt; Previous page &lt;&lt;
+   </a>
+  </div>
+  <div data-async="/api/tags/vr/" data-options="" data-pageable="false" data-template="tag-info">
+  </div>
+  <div data-async="/api/post/active-threads/vr" data-options="" data-pageable="false" data-template="active-threads">
+  </div>
+  <div data-async="/api/post/tag/vr/" data-options="openButton threadCounters" data-pageable="true">
+  </div>
+  <div data-async="/api/post/form/?title=Create thread&amp;action=/api/post/&amp;tags=true" data-options="" data-pageable="false" data-template="form">
+  </div>
+  <div class="page_link">
+   <a data-options="openButton threadCounters" data-page-link="true" href="#" id="next-page-url">
+    &gt;&gt; Next page &gt;&gt;
+   </a>
+  </div>
+  <template id="template-post">
+   <div class="{{ class }}" data-opening="{{ opening }}" data-uuid="{{ uuid }}" id="{{ id }}">
+    <div class="post-info">
+     <a class="post_id" href="{{ url }}">
+      #{{ id }}
+     </a>
+     <span class="title">
+      {{ title }}
+     </span>
+     <span class="pub_time">
+      {{ pubTime }}
+     </span>
+     {{#if admin}}
+     <a class="admin-post-context-menu" href="/feed/?address={{ posterAddress }}" style="color:#{{ posterAddressColor }}" title="{{ posterAddress }}">
+      ⬤
+     </a>
+     {{/if}}
+
+                    {{#if tripcode}}
+     <a class="tripcode" href="/feed/?tripcode={{ tripcode }}" style="border: solid 2px #{{ tripcodeColor }}; border-left: solid 1ex #{{ tripcodeColor }};" title="{{ tripcode }}">
+      {{ tripcodeColor }}
+     </a>
+     {{/if}}
+
+                    {{#if threadUrl}}
+                    in
+     <b>
+      <a href="/thread/{{ threadId }}">
+       &gt;&gt;{{ threadId }}
+      </a>
+      <span class="title">
+       {{threadTitle}}
+      </span>
+     </b>
+     {{/if}}
+
+
+                    {{#if active}}
+                    {{#if replyButton}}
+     <a class="quick-reply" href="#form">
+      Reply
+     </a>
+     {{/if}}
+                    {{/if}}
+                    {{#if opening}}
+                    {{#if openButton}}
+     <a href="{{ url }}#form">
+      Open
+     </a>
+     {{/if}}
+                    {{/if}}
+    </div>
+    {{#each attachments}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+    <div class="message">
+     {{{ text }}}
+    </div>
+    {{#if opening}}
+    <div class="metadata">
+     {{{ metadata }}}
+    </div>
+    {{/if}}
+
+                {{#if replies }}
+    <div class="refmap">
+     Replies:  {{{ refmap }}}
+    </div>
+    {{/if}}
+   </div>
+  </template>
+  <template id="template-tag">
+   <div class="post">
+    <div class="message">
+     <div>
+      <a class="tag" href="/tag/{{ name }}">
+       {{ name }}
+      </a>
+     </div>
+    </div>
+   </div>
+  </template>
+  <template id="template-thread-preview">
+   <div class="thread">
+    {{#with openingPost}}
+                    {{#render ../options}}{{/render}}
+                {{/with}}
+                {{#if skippedReplies }}
+    <div class="skipped_replies" data-only="skipped-replies">
+     <a href="/thread/{{ threadId }}">
+      <span>
+       Skipped posts:
+      </span>
+      {{ skippedReplies }}
+     </a>
+    </div>
+    {{/if}}
+                {{#if lastPosts }}
+    <div class="last-replies" data-only="last-replies">
+     {{#each lastPosts}}
+                    {{#render ../options}}{{/render}}
+                    {{/each}}
+    </div>
+    {{/if}}
+   </div>
+  </template>
+  <template id="template-thread">
+   <div class="tag_info">
+    <h2>
+     {{ title }}
+    </h2>
+    <a data-thread-status="{{ status }}" href="/?fromId={{ id }}#form" id="rollover-link">
+     Rollover thread
+    </a>
+   </div>
+   <div class="image-mode-tab">
+    <a href="/thread/{{ id }}">
+     Thread
+    </a>
+    /
+    <a href="/thread/{{ id }}/gallery">
+     Gallery
+    </a>
+   </div>
+   <button id="quote-button">
+    Quote
+   </button>
+   <div class="bar-bg">
+    <div class="bar-value" id="bumplimit_progress" style="width: {{ emptyness }}%">
+    </div>
+   </div>
+   <div class="thread">
+    {{#each posts}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+   </div>
+  </template>
+  <template id="template-tag-info">
+   <div class="tag_info">
+    <div class="tag_text_data">
+     <h2>
+      /
+      <a class="tag" href="/tags/{{ name }}/">
+       {{ name }}
+      </a>
+      /
+     </h2>
+     <div class="post-button-form">
+      {{#if favorite }}
+      <button class="fav" data-url="/api/tags/{{ name }}/remove-favorite">
+       👍 Remove from favorites
+      </button>
+      {{else}}
+      <button class="not_fav" data-url="/api/tags/{{ name }}/add-favorite">
+       👍 Add to favorites
+      </button>
+      {{/if}}
+                        {{#if hidden }}
+      <button class="fav" data-url="/api/tags/{{ name }}/remove-hidden">
+       👎 Remove from hidden
+      </button>
+      {{else}}
+      <button class="not_fav" data-url="/api/tags/{{ name }}/add-hidden">
+       👎 Hide
+      </button>
+      {{/if}}
+     </div>
+    </div>
+   </div>
+  </template>
+  <template id="template-active-threads">
+   {{#if models}}
+   <div class="post">
+    <div class="post-info">
+     Active today
+    </div>
+    <div class="message">
+     {{#each models}}
+     <div>
+      <b>
+       <a href="{{url}}">
+        &gt;&gt;{{id}}
+       </a>
+      </b>
+      {{title}}
+     </div>
+     {{/each}}
+    </div>
+   </div>
+   {{/if}}
+  </template>
+  <template id="template-form">
+   <div class="post-form-w">
+    <div id="overlay">
+    </div>
+    <div class="post-form" data-form-type="post">
+     {{#if formTitle}}
+     <div class="form-title">
+      {{{formTitle}}}
+     </div>
+     {{/if}}
+     <div class="swappable-form-full">
+      <form action="{{action}}" data-line-breaks="1" enctype="multipart/form-data" id="form" method="post">
+       <div class="form-row">
+        <div class="form-label">
+         <label for="title">
+          Title
+         </label>
+        </div>
+        <div class="form-input">
+         <input maxlength="200" name="title" placeholder="Title" type="text" value="{{title}}"/>
+        </div>
+       </div>
+       <div class="form-row">
+       </div>
+       {{#unless edit}}
+       <div class="form-row">
+        <div class="form-label">
+         <label for="tripcode">
+          Tripcode
+         </label>
+        </div>
+        <div class="form-input">
+         <input maxlength="200" name="tripcode" placeholder="Tripcode" type="text"/>
+        </div>
+       </div>
+       <div class="form-row">
+       </div>
+       {{/unless}}
+       <div class="form-row">
+        <div class="form-label">
+         <label for="text">
+          Text
+         </label>
+        </div>
+        <div class="form-input">
+         <div id="mark-panel">
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[quote]" data-tag-right="[/quote]">
+           <span class="quote">
+            &gt;q
+           </span>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[spoiler]" data-tag-right="[/spoiler]">
+           <span class="spoiler">
+            spoiler
+           </span>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[i]" data-tag-right="[/i]">
+           <i>
+            i
+           </i>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[b]" data-tag-right="[/b]">
+           <b>
+            b
+           </b>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[comment]" data-tag-right="[/comment]">
+           <span class="comment">
+            // c
+           </span>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[s]" data-tag-right="[/s]">
+           <span class="strikethrough">
+            s
+           </span>
+          </span>
+          <span class="mark_btn" data-input-hint="null" data-needs-input="false" data-tag-left="[code]" data-tag-right="[/code]">
+           <code>
+            code
+           </code>
+          </span>
+          <span class="mark_btn" data-input-hint="Enter tooltip text" data-needs-input="true" data-tag-left="[hint=$input]" data-tag-right="[/hint]">
+           <span class="hint">
+            hint
+           </span>
+          </span>
+          <span class="mark_btn" data-input-hint="Enter html-style color (e.g. #ccc or yellow)" data-needs-input="true" data-tag-left="[color=$input]" data-tag-right="[/color]">
+           <span style="color:yellow;">
+            color
+           </span>
+          </span>
+         </div>
+         <textarea cols="40" name="text" placeholder="Message text" rows="4">{{text}}</textarea>
+        </div>
+       </div>
+       {{#unless edit}}
+       <div class="form-row">
+        <div class="form-label">
+         <label for="attachments">
+          Attachments
+         </label>
+        </div>
+        <div class="form-input">
+         <textarea cols="40" name="attachment_urls" placeholder="Links" rows="2"></textarea>
+         <input multiple="" name="attachments" type="file"/>
+         <div class="pasted-images">
+         </div>
+         {{/unless}}
+        </div>
+       </div>
+       <div class="form-row">
+       </div>
+       {{#if tagsEnabled}}
+       <div class="form-row">
+        <div class="form-label">
+         <label for="tags">
+          Tags
+         </label>
+        </div>
+        <div class="form-input">
+         <input maxlength="100" name="tags" placeholder="anime board music" required="" type="text" value="{{tags}}"/>
+        </div>
+       </div>
+       <div class="form-row">
+       </div>
+       {{/if}}
+       <div class="form-submit">
+        <button class="icon-floppy" type="submit">
+         Submit
+        </button>
+        <button class="file-picker icon-attach" type="button">
+         Add file(s)
+        </button>
+        <button class="icon-keyboard" id="preview-button" onclick="return false;" type="button">
+         Preview
+        </button>
+        {{#unless edit}}
+        <button class="icon-cancel" onclick="resetForm(); return false;">
+         Reset form
+        </button>
+        {{/unless}}
+       </div>
+       <div class="form-errors">
+       </div>
+       <div class="preview-text">
+       </div>
+      </form>
+      <div>
+       Maximum number of attachments: 5
+      </div>
+      <div>
+       Maximum total files size: 19 MB
+      </div>
+      <div>
+       Paste images anywhere
+      </div>
+     </div>
+    </div>
+   </div>
+  </template>
+  <template id="template-loading">
+   <div class="post flashing">
+    Loading...
+   </div>
+  </template>
+  <template id="template-feed-criteria">
+   <div class="post">
+    {{key}}: {{value}}
+   </div>
+  </template>
+  <template id="template-search-form">
+   <div class="post-form-w">
+    <div class="post-form">
+     <div class="swappable-form-full">
+      <form action="" method="get">
+       <div class="form-row">
+        <div class="form-label">
+         <label for="query">
+          Search query
+         </label>
+        </div>
+        <div class="form-input">
+         <input maxlength="200" name="query" type="text" value="{{query}}"/>
+        </div>
+       </div>
+       <div class="form-row">
+       </div>
+       <div class="form-submit">
+        <input type="submit" value="Submit"/>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+   {{#if admin}}
+                {{#if query}}
+   <div class="post">
+    <div class="message post-button-form">
+     <button data-confirm="Delete all posts and ban authors?" data-url="/api/admin/cleanup/{{query}}">
+      Mass delete
+     </button>
+    </div>
+   </div>
+   {{/if}}
+            {{/if}}
+  </template>
+  <template id="template-gallery">
+   <div class="image-mode-tab">
+    <a href="/thread/{{ id }}">
+     Thread
+    </a>
+    /
+    <a href="/thread/{{ id }}/gallery">
+     Gallery
+    </a>
+   </div>
+   <div class="post gallery">
+    {{#each attachments}}
+                    {{#render ../options}}{{/render}}
+                {{/each}}
+   </div>
+  </template>
+  <template id="template-attachment">
+   {{{content}}}
+  </template>
+  <footer class="navigation_panel">
+   <b>
+    <a href="https://bitbucket.org/neko259/neboard5/">
+     7.1.0 Demon Heart
+    </a>
+   </b>
+   <span id="paginator">
+   </span>
+   <span>
+    Speed: 9.71
+   </span>
+   [
+   <a href="/actuator/info">
+    Health Report
+   </a>
+   ]
+   <a class="link" href="#top" id="up">
+    Up
+   </a>
+   <script src="/js/refpopup.js">
+   </script>
+   <script src="/js/3rdparty/handlebars.min-v4.7.6.js">
+   </script>
+   <script src="/js/form.js">
+   </script>
+   <script src="/js/main.js">
+   </script>
+   <script src="/js/thread.js">
+   </script>
+   <script src="/js/thread_update.js">
+   </script>
+  </footer>
+ </body>
+</html>

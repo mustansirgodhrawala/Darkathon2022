@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Quickly buy Bitcoin Postage for USPS, Canada Post and more Anonymously!" name="description"/>
+  <title>
+   EZPostage | Buy Postage with Bitcoin!
+  </title>
+  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/css/style2.css" rel="stylesheet"/>
+  <style>
+   progress {
+			border: 0;
+			height: 24px;
+			border-radius: 9px;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.failed {
+			color: white;
+			background: #a82e2e;
+		}
+
+		.processed {
+			color: white;
+			background: #4b8869;
+		}
+
+		.processing {
+			background: #dddddd;
+		}
+  </style>
+ </head>
+ <body id="page-top">
+  <header>
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
+    <div class="container-fluid">
+     <a class="navbar-brand js-scroll-trigger" href="/">
+      <img class="logo" src="/img/logo.png"/>
+     </a>
+     <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+      Menu
+      <i class="fa fa-bars">
+      </i>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="/">
+         Enter Shipping Information
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link active" href="/csv">
+         CSV Upload
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/cart">
+         Cart
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/tracking">
+         Tracking
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/faq">
+         FAQ
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <section id="hero">
+   <div class="container-fluid">
+    <div class="row justify-content-center">
+     <div class="col-12 font-weight-bold text-center">
+      <h1 class="font-weight-bold">
+       CSV Upload
+      </h1>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="carriers">
+   <div class="container-fluid">
+    <div class="row justify-content-center">
+     <div class="col-lg-10 text-center">
+      <div class="row">
+       <div class="col align-self-center my-2">
+        <img src="/img/united-states-postal-logo.png"/>
+       </div>
+       <div class="col align-self-center my-2">
+        <img src="/img/fedex-logo.png"/>
+       </div>
+       <div class="col align-self-center my-2">
+        <img src="/img/canada-post-logo.png"/>
+       </div>
+       <div class="col align-self-center my-2">
+        <img src="/img/dhl-logo.png"/>
+       </div>
+       <div class="col-1 align-self-center my-2">
+        <img src="/img/ups-logo.png"/>
+       </div>
+       <div class="col align-self-center my-2">
+        <img src="/img/fastway-logo.png"/>
+       </div>
+       <div class="col align-self-center my-2">
+        <img src="/img/sendle-logo.png"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="main">
+   <div class="container-fluid">
+    <form action="/csv" class="row justify-content-center" enctype="multipart/form-data" method="POST">
+     <input name="_token" type="hidden" value="w14kZSvu8gCYIp4hCAVPCqB1ivYii45pcvRMpaem"/>
+     <div class="col-lg-9 col-md-11 px-3">
+      <div class="content-box csv">
+       <h3 style="color:green;">
+        BITCOIN POSTAGE CSV ONLINE
+       </h3>
+       <p>
+        Using CSV is the most efficient way to generate bitcoin postage quickly on EZPostage.
+       </p>
+       <p>
+        Download our CSV Template
+        <a href="/sample.csv">
+         (link)
+        </a>
+       </p>
+       <p>
+        If you encounter any issues contact
+        <b>
+         support@ezpostage.io
+        </b>
+       </p>
+       <br/>
+       <h4>
+        Format
+       </h4>
+       <style>
+        <style>
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+
+
+th {
+  border: 1px solid black;
+
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+tbody tr:first-child td {
+  padding-top: 15px;
+}
+       </style>
+       <table>
+        <tbody>
+         <tr>
+          <th>
+           Carrier
+          </th>
+          <th>
+           Service
+          </th>
+          <th>
+           Length
+          </th>
+          <th>
+           Width
+          </th>
+          <th>
+           Height
+          </th>
+          <th>
+           Weight(Lbs)
+          </th>
+          <th>
+           Weight(Oz)
+          </th>
+          <th>
+           Package Type
+          </th>
+         </tr>
+         <tr>
+          <td>
+           usps
+          </td>
+          <td>
+           priority, express, etc
+          </td>
+          <td>
+           in inches
+          </td>
+          <td>
+           in inches
+          </td>
+          <td>
+           in inches
+          </td>
+          <td>
+           in lbs
+          </td>
+          <td>
+           in oz
+          </td>
+          <td>
+           parcel, letter, etc
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+       <h5>
+        Services Types
+       </h5>
+       <b>
+        USPS
+       </b>
+       <p style="margin-left: 20px;">
+        first
+        <br/>
+        priority * Most Common
+        <br/>
+        express
+        <br/>
+        parcelselect
+        <br/>
+        mediamail
+        <br/>
+       </p>
+       <br/>
+       <h5>
+        Package Types
+       </h5>
+       <b>
+        USPS
+       </b>
+       <p style="margin-left: 20px;">
+        flatrateenvelope (Flat Rate Envelope)
+        <br/>
+        flatratelegalenvelope (Flat Rate Legal Envelope)
+        <br/>
+        flatratepaddedenvelope (Flat Rate Padded Envelope)
+        <br/>
+        flatrategiftcardenvelope (Flat Rate Gift Card Envelope)
+        <br/>
+        flatratewindowenvelope (Flat Rate Window Envelope)
+        <br/>
+        flatratecardboardenvelope (Flat Cardboard Envelope)
+        <br/>
+        smallflatratebox (Flat Rate Box – Small)
+        <br/>
+        mediumflatratebox (Flat Rate Box – Medium)
+        <br/>
+        largeflatratebox (Flat Rate Box – Large)
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <input id="file" name="file" type="file"/>
+        <button class="btn btn-blue w-100 mt-3" type="submit">
+         Proceed
+        </button>
+       </p>
+      </div>
+     </div>
+    </form>
+   </div>
+  </section>
+  <footer>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-12 text-center">
+      <img height="40" src="/img/logo.png"/>
+      <p>
+       © 2019 EZPOSTAGE
+      </p>
+      <p class="font-weight-bold">
+       support@ezpostage.io
+      </p>
+      <p>
+       bgpyrxjs2dfs6663pvrcsctbd3ynt4bd6gjfylqxvznbr2unejgiwcyd.onion
+      </p>
+      <p class="font-weight-bold">
+       Cheapest Bitcoin Postage Since 2019
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-latest.min.js">
+  </script>
+  <script async="" src="/js/bootstrap.bundle.min.js">
+  </script>
+  <script async="" src="/js/smoothscroll.min.js">
+  </script>
+  <script async="" src="/js/app2.js">
+  </script>
+  <script async="" type="text/javascript">
+   (function(){
+            var sitehelp_s = document.createElement('script');
+            sitehelp_s.type = 'text/javascript';
+            sitehelp_s.async = true;
+            sitehelp_s.src = 'https://c.sitehelp.im/code.cgi?c=5819&ssl=1&rnd=' + Math.random();
+            document.body.appendChild(sitehelp_s);
+        })();
+  </script>
+ </body>
+</html>

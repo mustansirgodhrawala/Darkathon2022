@@ -1,0 +1,137 @@
+Buy Millionaire Stolen Bitcoin Wallets!Be rich with a paltry investment compared to the amount you will receive.Buy now!We accept Monero payments only.Trade your Monero for a wallet with alot Bitcoins!@ Who we are?People (crackers/hackers) who enjoy stealing and breaking passwords into
+ someone else's wallets. We then
+ offer these wallets for
+ sale. The whole sale is completely anonymous. We do not store any information. Contact:
+ stolenwallets@dnmx.org@ Why are wallets so cheap?1) Stolen wallets cannot be sold at full price. The maximum price can be set to 10% of
+ the
+ wallet balance. We can hardly sell high-volume wallets for dozens of BTCs. Therefore, the price can
+ reach a
+ minimum of 0.1%. The bigger the wallet, the less it costs. Attention. we only talk about stolen wallets!
+ 2) We need to get rid of our wallets quickly. We own them for too long and due to the
+ high
+ balance it is not good for us. Split wallets into smaller parts is inefficient for us. The new owner can
+ do
+ that.3) Due to the high price of BTC, we can afford to sell wallets so cheaply. It is
+ possible
+ that in the future we will raise the price to 1% if the price of BTC falls rapidly.4) The goal of selling stolen wallets is not to make money, but to get rid of them
+ (change
+ the owner) for at least some profit. Theft is more fun for us.@ Can I send all the amount to an exchange or another Wallet?Yes, but it is recommended that you use the Mixer or Coinjoin from Wasabi Wallet function before sending to any exchange, such as Binance, KuCoin and others.@ Why can't we use these wallets ourselves?Due to the fact that we have illegally acquired them, we run the risk of suspected theft.
+ Therefore, it is better for us to simply sell them for some symbolic price. Moreover, in our country, it
+ is
+ extremely illegal and it is not realistic to convert such a large amount into our currency. We recommend
+ the
+ future owner to use a stock market or mixer or both before transferring them to their own wallet.@ Do you have telegram or qTox or any other way to direct communication?No.
+ I made this site fully automated for the purchase, so you don't need to contact me directly,
+ but if after payment the button "Show Password" to extract the wallet is not unlocked,
+ send me your Bitcoin payment hash ID(TX ID) and the address of the wallet you purchased via email: stolenwallets@dnmx.org
+ I will reply the password to extract.
+ @ Do you accept Escrow?Yes.
+ We currently support Escrow contracts from this service only: The Escrow
+ Start an Escrow contract at: escrowsdk2kxf2lrdgviuuuxkdw6yxs3ivlenonhi3j5f5mycxtx57qd.onion
+ Send us the "Invoice ID" of your contract after payment to stolenwallets@dnmx.org
+ After you receive the password to extract wallet and recover it, you need to release payment to us.
+ @ Can I have the wallet and then pay?Obviously not.
+ You won't get anything for free, pay directly or use escrow.
+ @ Do you have less expensive wallets?No.
+ We don't work with low values, we only have these wallets with large amounts of Bitcoin for these prices.
+ @ Available Wallets:Wallet with 307.87
+ BTC1FTdPSvcTvr8658KnsYWVX2zg5PetvKLqQBuy wallet for
+ 47 Monero
+ Private key: L1acy3wmydzwgsCVw**********************************Wallet with 274.65
+ BTC1ESGu131jkhgUcYk8sFWWUfPpTNrfGgAmSBuy wallet for
+ 42 Monero
+ Private key: 5HGSirXoIoM340bZZ**********************************Wallet with 197.59
+ BTC1AqxgjEwTvUoCirk2prBPckmzx8NnbUugBBuy wallet for
+ 30 Monero
+ Private key: 5HwjoxK8rP44DJVGG**********************************Wallet with 420
+ BTC1CoYHPiwmPTrpPRehPgaQyZzPFvPkPM6JoBuy wallet for
+ 64 Monero
+ Private key: L2j8R2ky2TQPESjJh**********************************Wallet with 109.69
+ BTC1F9nZjq9RhvEK8Qiq2EJpuzn9yThicJGQJSOLD-OUT BY 16 MoneroWallet with 2998
+ BTC1KpwMa1w9DTUCB5asCgUdLRA22hto1QgqvBuy wallet for
+ 152 Monero
+ Private key: 5HzU9MztxKgMKbCHe**********************************@ 2998 BTC Wallet Video Proof - If you want a video proof, here it is:@ Support and breakthrough-  If you like our work and effort, we will be happy for your support. So just send us
+ some
+ BTC to this
+ address: 3C55xsUsbPnEb8P3sv3zmFzcosvvJohmr9- If you have a wallet address that you do not have access to and you want to crack it,
+ we
+ will do so for a 1% wallet balance. Payment before is 0.5% and the remainder after breaking.
+ Breakthrough
+ time can vary from days (usually several days to a week) to weeks depending on the difficulty. So
+ contact
+ us: stolenwallets@dnmx.org@ YOUR PGP PUBLIC KEY: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+ Version: Keybase OpenPGP v1.0.0
+
+ Comment: https://keybase.io/crypto
+
+
+
+ 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
+ PjkRO8ooP/ISYs8T1qaPgCiFw9zadA==
+ =xo1c
+
+-----END PGP PUBLIC KEY BLOCK-----
+
+ Wallet: ×
+ Download the ".rar" file that contains the password, private key and "wallet.dat" for recover the wallet.
+
+ Download
+ Buy the password to extract:
+ Acquire the password to extract the wallet, sending exactly:
+  Monero
+ To Address:
+ Copy address to clipboard  After 1 confirmation, wait 5-10 minutes for the "Show Password" button to be unlocked.
+ Waiting for Transaction...
+
+ Show Password
+
+ © 2022 Copyright:
+ Millionaire Stolen Bitcoin WalletsPlease Enable JavaScript in your Browser.

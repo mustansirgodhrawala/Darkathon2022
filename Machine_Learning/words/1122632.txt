@@ -1,0 +1,58 @@
+
+
+
+
+
+
+    cryptostorm
+
+
+
+
+  Multihopping VPNs (on Linux)
+  "Multihop", also known as "cascading" or "chaining", would be connecting to one VPN, then using that tunnel to connect to another, etc.
+  Basically:
+
+  To do something like the pic above, first download this script and save it to wherever your OpenVPN configs are, /etc/openvpn/multihop.sh for example.
+  Open up a Terminal and `su -` to get root, then do `cd /etc/openvpn/; chmod +x multihop.sh` to get to /etc/openvpn/ and make the script is executable.
+  In this example, we'll first connect to our ECC Paris UDP node for the first hop using the command:
+  openvpn --config France-Paris_UDP.ovpn --script-security 2 --route remote_host --persist-tun --up multihop.sh --down multihop.sh --route-noexec
+  Enter your token for the username if your config isn't setup to automatically fill that in.
+  In the OpenVPN output, you'll see something like this towards the end:
+  Fri Mar 29 04:14:00 2019 multihop.sh tun0 1500 1553 10.66.74.11 255.255.255.0 init
+
+MULTIHOP HINT:
+For the next hop, start openvpn with:
+
+openvpn --config <config.ovpn> --script-security 2 --route remote_host --persist-tun --up multihop.sh --down multihop.sh --route-noexec --setenv prevdns 212.129.46.32 --setenv hopid 2 --setenv prevgw 10.66.74.1 --lport 1195
+
+DNS Leak Protection: Enabled
+Fri Mar 29 04:14:00 2019 Initialization Sequence Completed
+
+Like it says in the hint, copy/paste that entire long command, being sure to change the "<config.ovpn>" to whatever config you want to use for the next hop.
+We'll use our ECC Frankfurt UDP server for hop #2 in this example:
+openvpn --config DE-Frankfurt_UDP.ovpn --script-security 2 --route remote_host --persist-tun --up multihop.sh --down multihop.sh --route-noexec --setenv prevdns 212.129.46.32 --setenv hopid 2 --setenv prevgw 10.66.74.1 --lport 1195
+That will connect you to our Frankfurt server, but using the first Paris tunnel.
+Your internet traffic will now be "double hopped" past those two VPN nodes before it reaches the internet.
+You could stop here, or you could do more hops.
+As with the first hop, this Frankfurt one also shows a "MULTIHOP HINT":
+Fri Mar 29 04:14:29 2019 multihop.sh tun1 1500 1553 10.66.122.139 255.255.255.0 init
+
+MULTIHOP HINT:
+For the next hop, start openvpn with:
+
+openvpn --config <config.ovpn> --script-security 2 --route remote_host --persist-tun --up multihop.sh --down multihop.sh --route-noexec --setenv prevdns 212.129.46.32 --setenv hopid 3 --setenv prevgw 10.66.122.1 --lport 1196
+
+DNS Leak Protection: Enabled
+Fri Mar 29 04:14:30 2019 Initialization Sequence Completed
+
+Same as before, copy/paste the long command, changing "<config.ovpn>" to whatever config you want to use for the next hop.
+If you want to add more hops, just keep following the hints.
+Keep in mind though, your speed will decrease with each hop, and your routing table will increase exponentially.
+The maximum number of hops possible would vary depending on your computer/connection, but we recommend staying within 3-5 hops.
+For an extra layer of anonymity, you could also chain together configs from different VPN providers, so long as they support OpenVPN.
+Since OpenVPN supports SOCKS proxies, you could also add Tor into the mix fairly easily.
+Just start up Tor Browser, which by default starts a SOCKS proxy on 127.0.0.1 on port 9150, then tell OpenVPN to use that by adding to the above commands:
+ --socks-proxy 127.0.0.1 9150
+That would tell OpenVPN to first connect to Tor, then to the VPN server.
+However, that would only work with TCP OpenVPN servers.

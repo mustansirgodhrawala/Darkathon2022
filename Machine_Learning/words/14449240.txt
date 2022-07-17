@@ -1,0 +1,161 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+en
+menu
+
+
+        Catalog
+        Blog
+
+        Tor Relay
+
+
+        Jabber
+        One-Time notes
+        Temp Email
+
+
+        What is TOR?
+        We are in tor
+
+
+
+
+
+
+                    English
+
+
+
+
+                    Deutsch
+
+
+
+
+                    Español
+
+
+
+
+                    Português
+
+
+
+
+                    Français
+
+
+
+
+
+
+
+            Cloudflare started experimenting with proof-of-stake networks
+            1 month ago · 0 comments
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Create your jabber account onour server
+
+    Use one-time notes to maximizeanonymity level
+
+    Create temporaryEmail addressDownload TORTemporary emailOne-time notesD2W Jabber server
+
+    We strongly recommend downloading the TOR browser exclusively from the official Tor Project website.
+            Download TOR
+
+
+
+            2 hours ago
+             The black cat is getting bolder: the BlackCat group demands more money from the victims
+
+
+
+
+            3 days ago
+             Hackers stole $1.4M from Omni NFT platform
+
+
+
+
+            2 days ago
+             The National Security Committee of Kazakhstan liquidated the drug syndicate
+
+
+
+
+        1 192 visitors today57 online
+
+
+
+        Jabber: feedback@dw.liveContact us
+
+
+
+
+                                        One of the world's largest content delivery and DDoS protection companies, Cloudflare, continues to experiment with Web3. This time, the proof-of-stake network was chosen as the object for new experiments, and the company will start with Ethereum. Cloudflare will launch Ethereum validation nodes on its global network over the next few months, according to a company blog post. These nodes will act as a testing ground for research into energy efficiency, network integrity and speed management. Cloudflare believes that blockchain technologies will go down in the history of the Internet in the long term and help make such networks decentralized. “Launching validation nodes in the Ethereum ecosystem on our network allows us to offer even more geographic decentralization in places like EMEA, LATAM and APJC, while adding infrastructural decentralization to the network,” the company blog says. Experiments will continue until the so-called "Merge" - a change in the consensus mechanism in the Ethereum network, which will take place this year. Cloudflare fully supports the concept of proof-of-stake networks due to their lower power consumption compared to proof-of-work networks. According to the company, “to ensure the operation of the validation node in the proof-of-stake network, several times less electricity is required than for the miner in the proof-of-work network.” According to the company, proof-of-work networks like Bitcoin consume too many resources, since proof-of-work consensus mechanisms require large amounts of electricity. Cloudflare itself has never launched and will not launch a proof-of-work infrastructure on its network. In addition to experimenting with Ethereum validators, the company also mentioned another consensus mechanism called proof-of-spacetime. This consensus is used by the Filecoin decentralized storage network. It is possible that Cloudflare intends to include the network in their future experiments. Proof-of-stake is a way to protect in cryptocurrencies. It lies in the fact that the probability of the formation of the next block in the blockchain by the participant is proportional to the share that the units of account of this cryptocurrency belonging to him form from their total number. This method is an alternative to the proof of work (PoW) method, in which the probability of creating the next block is higher for the owner of more powerful equipment. 
+
+                        Comment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Send
+
+
+
+
+
+
+
+    © 2022 DeepWeb
+
+            en
+
+                                en
+                                de
+                                es
+                                pt
+                                fr

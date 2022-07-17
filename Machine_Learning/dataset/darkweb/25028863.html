@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Mix/Clean Coins
+  </title>
+  <link href="styles/style1.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div style="background-color: #f2f2f7;display:table;width:100%">
+   <div style="display:table-cell; width:5% ">
+   </div>
+   <!-- Begin Container -->
+   <div id="container" style="display:table-cell; width:65%">
+    <br/>
+    <!-- Begin Masthead -->
+    <div id="masthead">
+     <p style=" font-size:1.4em; font-weight:bold">
+      Mix/Clean
+      <img alt="" src="mixer.png" style="vertical-align:middle" width="140"/>
+      Coins
+     </p>
+    </div>
+    <!-- End Masthead -->
+    <!-- Begin Content -->
+    <div id="content">
+     <br/>
+     <form action="payment.php" id="form1" method="post">
+      <table id="table1" style="overflow: auto; border-collapse:collapse;  background-color:white; width: 90%; margin:0 auto; border:3px solid #dfdfdf;">
+       <tbody>
+        <tr>
+         <td colspan="2">
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="font-weight:bold">
+          Why it is necessary
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          Using Bitcoins does not protect your anonymity.
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          From the moment you buy your coins to the moment you cash it out
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          anybody anywhere can see and follow every transaction you ever made
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          Mixing your coins breaks the link between your identity and your transactions,
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          breaking the chain.
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          <strong>
+           Calculator
+          </strong>
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td align="right" style="white-space:nowrap; width:50% ">
+          Amount sent
+         </td>
+         <td align="left" style="white-space:nowrap; ">
+          Amount received
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td align="center" colspan="2" id="td1" style="white-space:nowrap; ">
+          <input id="amwith" maxlength="30" name="amwith" oninput="calcul();" size="30" step="0.00000001" style="text-align:center" type="number" value="1.00"/>
+          <input id="amwithout" maxlength="30" readonly="" size="30" style="text-align:center" type="number" value="0.99"/>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          Min amount for mixing €150=฿0.00712, Fee 1% but not less than 0.0001 btc
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          <strong>
+           How to proceed
+          </strong>
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td colspan="2" style="white-space:nowrap; ">
+          Fill in the required information
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td align="right" style="white-space:nowrap; width:30%">
+          Your BTC  address:
+         </td>
+         <td align="left" style="white-space:nowrap;">
+          <input autofocus="" maxlength="55" name="btcaddr" pattern="[0-9A-Za-z]{20,55}" required="" size="55" style="text-align: center" type="text"/>
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td align="right" style="white-space:nowrap;">
+          Amount for mixing:
+         </td>
+         <td align="left" style="white-space:nowrap;">
+          <input max="99999" maxlength="16" min="0.00712" name="amount" required="" size="16" step="0.00000001" style="text-align: center" type="number" value="0.5"/>
+         </td>
+        </tr>
+        <tr style="white-space:nowrap" valign="bottom">
+         <td align="right" style="white-space:nowrap;">
+          Passphrase:
+         </td>
+         <td align="left" style="white-space:nowrap;">
+          <input maxlength="55" name="passphrase" required="" size="55" style="text-align: center" type="password"/>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+         </td>
+        </tr>
+        <tr style="white-space:nowrap">
+         <td colspan="2" style="white-space:nowrap">
+          <button name="go" type="submit">
+           Mix coins
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <br/>
+      <br/>
+     </form>
+     <script type="text/javascript">
+      function calcul()
+     {
+      var amount = document.getElementById('amwith').value;
+          minbtc="0.00712";
+      if (!isNaN(amount) && (amount > minbtc) ) {
+       result=Math.min(amount*0.99,amount-0.0001);
+       document.getElementById('amwithout').value=result.toFixed(8);
+      }
+      else{
+       document.getElementById('amwithout').value=0;
+      }
+    }
+     </script>
+    </div>
+    <!-- End Content -->
+    <!-- Begin Footer -->
+    <div id="footer">
+     <p>
+      <a href="mailto: mixer@bitemail.net">
+       mixer@bitemail.net
+      </a>
+     </p>
+     <p>
+      mixerablhhujhyyainmaiw4hgyl6r2oikylb7yeqh2tqpjpfujjlhdyd.onion.onion © All Rights Reserved
+     </p>
+    </div>
+    <br/>
+    <br/>
+    <!-- End Footer -->
+   </div>
+   <!-- End Container -->
+   <div style="display:table-cell;vertical-align:top;">
+    <p align="center" style="font-size: 1.3em">
+     Chat
+    </p>
+    <table align="center" style="width: 90%">
+     <tbody>
+      <tr>
+       <td>
+        <iframe align="bottom" height="600px" src="/chat/chat.php" width="100%">
+         &lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;/div&gt;
+
+ &lt;/div&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </iframe>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

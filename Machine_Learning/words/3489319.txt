@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+					Home
+					Register
+					Login
+					FAQ
+					Contact
+
+
+Why should I use this wallet instead of a clearnet wallet?
+Your transactions on our site are not trackable, while clearnet wallets are trackable. We will mix the ethereum for you, for no fee.
+
+
+Is there a smartphone app or something?
+Not yet, but you can simply pay using our site.
+
+
+How does it work?
+Simply create a free account. After that, you will get a new ethereum adress. To pay securely, you need to send ethereums to that address, after you have a positive balance, you can use these ethereums to pay on other darknet services securely (CP, Drugs, Guns).
+
+
+What happens if I lose my password?
+Don't lose your password! We don't have password recovery functions for security reasons. (Accounts are much more likely to be compromised if there is an account password recovery function)
+We recommend you write down your password and username on a piece of paper and store it in a safe place.
+
+
+Can I get a new ethereum address?
+To keep it simple we only support one address per account, but if you need more, you can always open more accounts.
+
+
+Are there any fees on Ethereum Wallet?
+We don't charge any fees except for the transaction fees on the ethereum network.
+
+
+
+			Ethereum Wallet - umqwnzrshtejatvzacuiz7nsq4hdrtvfiwvey3nv2nefq4pktzoz3bqd.onion

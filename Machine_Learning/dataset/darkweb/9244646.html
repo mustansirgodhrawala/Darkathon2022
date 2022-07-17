@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link href="/opensearch.xml" rel="search" title="DANEX DarkNet Search" type="application/opensearchdescription+xml"/>
+  <link href="static/img/favicon1.png" rel="icon" type="image/png"/>
+  <meta content="width=device-width" name="viewport"/>
+  <style>
+   body {
+            margin: 0;
+        }
+        .flex-container {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 85%;
+            display: flex;
+            flex-flow: row wrap;
+            word-wrap: break-word;
+        }
+
+        @media all and (min-width: 600px) {
+            .serp {
+                flex: 1;
+            }
+
+            div.logo {
+                margin: 33px 0 0 0px;
+                padding-left: 12px;
+            }
+
+            div.serp {
+                max-width: 700px;
+            }
+
+            div.logo a {
+                margin: 30px 0 0 0px;
+                text-decoration: none;
+                color: #222;
+            }
+        }
+
+        .logo {
+            font-size: 1.5em;
+            margin: 16px 0 0 24px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        em {
+            font-style: normal;
+            font-weight: normal;
+            color: #e54;
+        }
+
+        .serp {
+            max-width: 500px;
+            padding-bottom: 32px;
+        }
+
+        a.titles {
+            font-size: 1.15em;
+            margin: 0 1.304em;
+            display: inline-block;
+            text-decoration: none;
+            transition: color .15s ease-out;
+            color: #00c;
+        }
+
+        a.titles:hover,
+        .titles:visited:hover {
+            color: #d00 !important;
+        }
+
+        a.pagelink {
+
+            text-decoration: none;
+
+        }
+
+        .page {
+            font-size: 1.15em;
+            text-align: center;
+            border-radius: 19px;
+            margin: 0.2em;
+            display: inline-block;
+            line-height: 38px;
+            min-width: 38px;
+            background-color: #fea;
+        }
+
+        .pages {
+            margin: 0 1em;
+        }
+
+        .webUrl {
+            margin: 0 1.5em;
+            color: green
+        }
+
+        .counter {
+            margin: 0 0 1em 1.5em;
+            color: #777
+        }
+
+        .snippet {
+            margin: 0 1.5em;
+        }
+
+        .satd {
+            margin: 0.25em 0 1.25em 1.5em;
+            display: inline-block;
+        }
+
+        .sat {
+            text-decoration: none;
+            color: #00c;
+            transition: color .15s ease-out;
+        }
+
+        .formLine {
+            overflow: hidden;
+            padding: 0.125em;
+            margin: 1.5em;
+
+        }
+
+        .formLine input {
+            width: 100%;
+            height: 1.5em;
+            padding: 0.5em 0.5em;
+            font-weight: bold;
+            font-size: 0.9375em;
+            border: 0;
+        }
+
+        .formLine input:focus {
+            outline: 0;
+            background: #fff;
+        }
+
+        .formLine span {
+            display: block;
+            overflow: hidden;
+        }
+
+        .formLine button {
+
+            float: right;
+             cursor: pointer;
+            background-color: #e7e7e7;
+  border: none;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 0 auto;
+    display: block;
+    margin-left: 10px;
+        }
+
+        .formLine button:hover {
+
+            background: #d2d0d0;
+
+        }
+.navbutton{
+ cursor: pointer;
+            background-color: #e7e7e7;
+  border: none;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 0 auto;
+    display: block;
+    margin-left: 10px;
+}
+.navbutton:hover {
+    background-color: #d2d0d0;
+}
+
+#input_span{
+            border: 2px solid black;
+        }
+
+#previous {
+    float: left;
+}
+#top-bar-first {
+    background: #E0FFFF;
+}
+#top-bar-second {
+    background: #FFF8DC;
+    margin-bottom: 1em;
+}
+
+#top-bar-first, #top-bar-second {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+  </style>
+  <title>
+   market â€“ DANEX Search
+  </title>
+ </head>
+ <body>
+  <div class="flex-container">
+   <div class="logo">
+    <a href="/">
+     <img src="static/img/danexio_120x26.png"/>
+    </a>
+   </div>
+   <div class="serp">
+    <form action="search" class="formLine">
+     <button type="submit">
+      <letter style="color: blue;">
+       S
+      </letter>
+      EARC
+      <letter style="color: red;">
+       H!
+      </letter>
+     </button>
+     <span id="input_span">
+      <input maxlength="400" name="q" required="" type="text" value=""/>
+     </span>
+    </form>
+    <div class="counter">
+     1193 links found for query
+     <strong>
+      "market"
+     </strong>
+     in 0.19 seconds
+    </div>
+    <div class="top_bar" style="display:none;">
+     <div id="top-bar-first">
+      <a class="titles" href="/redir?url=https://link.webropolsurveys.com/S/8A07773150E3D599&amp;name=Help us to help you" target="blank">
+       Help us to help you. Take few minutes to answer this questionnaire.
+      </a>
+      <br/>
+      <div class="webUrl">
+       https://link.webropolsurveys.com/S/8A07773150E3D599
+      </div>
+      <p class="snippet">
+       Questionnaire which aims at developing a self-help program intended for people who are worried about their sexual interest, thoughts, feelings or actions concerning children.
+      </p>
+     </div>
+     <div id="top-bar-second">
+      <a class="titles" href="/redir?url=https://link.webropolsurveys.com/S/808867687BE8AECA&amp;name=No need for help" target="blank">
+       No need for help.
+      </a>
+      <br/>
+      <div class="webUrl">
+       https://link.webropolsurveys.com/S/808867687BE8AECA
+      </div>
+      <p class="snippet">
+       I don't need any help. Would you like to tell us the reason for this?
+      </p>
+     </div>
+    </div>
+    <a class="titles" href="/redir?q=market&amp;url=http://ly75dbzixy7hlp663j32xo4dtoiikm6bxb53jvivqkpo6jwppptx3sad.onion/index.php?route=product/category&amp;path=118_120&amp;name=Market&amp;pos=0" target="blank">
+     Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://ly75dbzixy7hlp663j32xo4dtoiikm6bxb53jvivqkpo6jwppptx3sad.onion/index.php?route=product/category&amp;path=118_120
+    </div>
+    <p class="snippet">
+     Market
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://covid35fc774e3y2hapsm2z4cez22uz52fk5fynbsusg5yzj7xb676qd.onion/&amp;name=Covid Market&amp;pos=1" target="blank">
+     Covid Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://covid35fc774e3y2hapsm2z4cez22uz52fk5fynbsusg5yzj7xb676qd.onion/
+    </div>
+    <p class="snippet">
+     Covid Market at http://covid35fc774e3y2hapsm2z4cez22uz52fk5fynbsusg5yzj7xb676qd.onion/
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://secrlfgkzc7cgmzvjvscdccj6gqkdisfan7slrrwicribmbxo6v6uwid.onion/index.php?route=common/home&amp;name=The Secret Market&amp;pos=2" target="blank">
+     The Secret Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://secrlfgkzc7cgmzvjvscdccj6gqkdisfan7slrrwicribmbxo6v6uwid.onion/index.php?route=common/home
+    </div>
+    <p class="snippet">
+     The Secret Market
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://vh4b3qhpcnqlnen2ssagefopvktscv5s6stxwswlemv4xwidrr22v2yd.onion&amp;name=Porn Market&amp;pos=3" target="blank">
+     Porn Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://vh4b3qhpcnqlnen2ssagefopvktscv5s6stxwswlemv4xwidrr22v2yd.onion
+    </div>
+    <p class="snippet">
+     Porn and Erotic - Porn Market
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://deepmexzsejpzqid3k7knaas2p73dko6kxgpou7oey7vqtmrhopjyqyd.onion/&amp;name=Deep Market&amp;pos=4" target="blank">
+     Deep Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://deepmexzsejpzqid3k7knaas2p73dko6kxgpou7oey7vqtmrhopjyqyd.onion/
+    </div>
+    <p class="snippet">
+     Deep Market
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://deepmart5rrv4goqlstfa62gevyhpcgnq3hqfxcuae5ervcgk5bo5tad.onion&amp;name=Deep Market&amp;pos=5" target="blank">
+     Deep Market
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://deepmart5rrv4goqlstfa62gevyhpcgnq3hqfxcuae5ervcgk5bo5tad.onion
+    </div>
+    <p class="snippet">
+     Deep Market
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://3leeykd7mioddlejmk5glua5ti73ku5vae62gq7qw2adxegag5tqysid.onion/contact&amp;name=Market counterfeits&amp;pos=6" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://3leeykd7mioddlejmk5glua5ti73ku5vae62gq7qw2adxegag5tqysid.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://4xxq35mbt6v4vuipjc5w3mjari6t7sgsdu5bgkgyo6dlnm4xylj57uqd.onion/contact&amp;name=Market counterfeits&amp;pos=7" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://4xxq35mbt6v4vuipjc5w3mjari6t7sgsdu5bgkgyo6dlnm4xylj57uqd.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://clgqlj3afxmonxilo2dtsmin4ogkeliac34f5k7ynftgfmvxkw7nzzad.onion/contact&amp;name=Market counterfeits&amp;pos=8" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://clgqlj3afxmonxilo2dtsmin4ogkeliac34f5k7ynftgfmvxkw7nzzad.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://eaqikhjemejgxuiwb5fapp4mpzh7o7smmgqbieaxt6qfpjyqesgbeyid.onion/contact&amp;name=Market counterfeits&amp;pos=9" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://eaqikhjemejgxuiwb5fapp4mpzh7o7smmgqbieaxt6qfpjyqesgbeyid.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://fmzawawo7mzf3mhi4wdk2oanvfntef3akmemxrlz5giuphcltk35kvad.onion/contact&amp;name=Market counterfeits&amp;pos=10" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://fmzawawo7mzf3mhi4wdk2oanvfntef3akmemxrlz5giuphcltk35kvad.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://iblwls2spfjf5xncsrhkq3zcam66o3xaxq3twfecb2ymqdsi6vwitpid.onion/contact&amp;name=Market counterfeits&amp;pos=11" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://iblwls2spfjf5xncsrhkq3zcam66o3xaxq3twfecb2ymqdsi6vwitpid.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://mdsiiaps2vky23gtokmgudc555ppqmunsiy5wj6gbk4nlhk3aev52lad.onion/contact&amp;name=Market counterfeits&amp;pos=12" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://mdsiiaps2vky23gtokmgudc555ppqmunsiy5wj6gbk4nlhk3aev52lad.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://vs7oh3rvq5hs7l6n6hn7n4xssyvcyr55tiicw37svw7fkkzwxdly5uqd.onion/contact&amp;name=Market counterfeits&amp;pos=13" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://vs7oh3rvq5hs7l6n6hn7n4xssyvcyr55tiicw37svw7fkkzwxdly5uqd.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <a class="titles" href="/redir?q=market&amp;url=http://xe6jrlmyu776frz6vcehbileyyy4kz52vih7ugudaiwxhx7dharinjyd.onion/contact&amp;name=Market counterfeits&amp;pos=14" target="blank">
+     Market counterfeits
+    </a>
+    <br/>
+    <div class="webUrl">
+     http://xe6jrlmyu776frz6vcehbileyyy4kz52vih7ugudaiwxhx7dharinjyd.onion/contact
+    </div>
+    <p class="snippet">
+     Market buy counterfeits money.
+    </p>
+    <!--p7-->
+    <br/>
+    <!-- <div class="pages"><a class="pagelink" href=""><button class="navbutton"> next &rarr; </button></a></div> -->
+    <form action="search" class="page_button" style="display:none;">
+     <button class="navbutton" id="previous">
+      ← previous
+     </button>
+     <input maxlength="400" name="q" required="" type="hidden" value="market"/>
+     <input maxlength="400" name="page" required="" type="hidden" value="None"/>
+    </form>
+    <form action="search" class="page_button">
+     <button class="navbutton" id="next">
+      next →
+     </button>
+     <input maxlength="400" name="q" required="" type="hidden" value="market"/>
+     <input maxlength="400" name="page" required="" type="hidden" value="2"/>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

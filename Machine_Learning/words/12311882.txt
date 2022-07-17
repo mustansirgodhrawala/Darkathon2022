@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+SerHack Security Research
+
+
+
+About
+Blog
+Books
+
+
+
+
+
+
+Publications
+List of projects, publications, articles, books I developed in 4 years. If you wish to speed up any development, donate me.
+Books
+
+
+Mastering Monero – “Mastering Monero: The future of private transactions” is your guide through the world of Monero, a leading cryptocurrency with a focus on private and censorship-resistant transactions. This book contains everything you need to know to start using Monero in your business or day-to-day life, even if you’ve never understood or interacted with cryptocurrencies before.
+
+
+Breaking Cryptocurrencies – “Breaking cryptocurrencies” is the resource for learning more information about possible attack vectors applied to the blockchain field. Through a simple approach, the reader will understand how a cryptocurrency works and what are the minimal requirements for defying a blockchain. After understanding the techniques needed to analyze and monitor their own cryptocurrency project, the readers will know what the most common attacks are and ways to prevent them.
+
+
+Articles
+Some external articles:
+
+Securing Your Monitoring Infrastructure
+Monitoring your own infrastructure with open-source Graphite and Grafana
+The Eternal Password Riddle
+How I broke Envato Search field
+Anti-DDoS Amazon Web Services Infrastructure
+Entrare nella community di Envato? Difficile ma si può!
+
+
+
+
+
+
+
+SerHack Security Research
+
+
+
+About
+Blog
+Books
+Courses

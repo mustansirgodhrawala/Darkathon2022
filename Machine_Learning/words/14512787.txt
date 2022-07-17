@@ -1,0 +1,656 @@
+
+
+
+
+
+
+
+                	Please help the site by white listing it in your Ad-Blocker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    User log in
+
+
+
+
+                                User registration
+
+
+                                                                    Registrations are open Click here to register
+
+
+
+
+
+
+
+
+                        Email:
+
+
+
+
+                            forgotten email?
+
+
+
+
+                        Password:
+
+
+
+
+
+                        lost pass?
+
+
+
+                     
+
+
+
+
+
+                        Resend activation email
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Home
+
+                                    Torrents
+
+                                    Top torrents
+
+                                    Upload a torrent
+
+                                    FAQ
+
+                                    Forums
+
+                                    Chat
+
+
+
+
+
+
+
+
+
+
+	Get VPN Now for FREE!
+	Get VPN Now for FREE!
+
+	Protect your privacy! Use a VPN When Downloading Torrents
+
+    Your IP Address is . Location is .
+
+    Your Internet Provider is tracking your torrent activity! Hide your IP ADDRESS with a VPN!
+
+    We strongly recommend using Trust Zone VPN to anonymize your torrenting. It's FREE!
+
+
+    	 Also, while you are using
+        Tb948487rusf63dacet td48934Zone VPN
+        you get No Ads on Demonoid site
+
+    Get f63daceVPN Nf63daceow!
+
+
+
+
+
+
+
+
+
+
+                                        JavaScript must be enabled in order to use all of the site's
+                                        features. Please enable JavaScript in your browser and refresh the
+                                        page.
+
+
+
+
+
+        Frequently Asked Questions
+
+
+
+
+
+
+            Terminology
+
+            Tutorials
+
+                Create and upload a torrent using uTorrent
+
+
+            Site Information
+
+                Terms & ConditionsWhat is this "IRC" everyone keeps talking about?
+                Do you have an RSS feed?
+                How can I contact the site staff?
+                Do you have a banner I could use to link to you?
+                How do I sort the torrent list by seeds, leeches, etc?
+
+
+            User Information
+
+                Why is the registration closed periodically?
+                I registered my account, how come I didn't get the confirmation E-Mail?
+                I've forgotten my password, what do I do?
+                Can I invite my friend to Demonoid?
+                Can you delete my account?
+                I don't like my user name, can you change it for me?
+                I can't seem to log in, what do I do? (Also known as the Log-In of Death)
+                What is an avatar and signature, and how do I add one to my profile?
+                I have been warned, can you tell me the reason?
+
+
+            BitTorrent
+
+                What is BitTorrent?
+                What is the required software and where can I get it?
+                Seed? Leech? Peer?  What are you talking about? (Terminology)
+                What is this "*.torrent" file?
+
+
+             Downloading / Using Torrents
+
+                How do I start Downloading files?
+                My client says I've only downloaded X% but the file is the correct size what gives?
+
+                Why is the torrent offered as a txt file too?
+                Why is my download stuck at 99.9%?
+                Why am I getting " Urlopen error - (7, ' getaddrinfo failed')" error?
+                Why am I getting "Problem connecting to tracker: HTTP Error -1" error?
+                Why am I getting "Problem connecting with tracker - (10054,'Connection reset by peer')" error?
+                Why am I getting "Problem connecting with tracker - (10060, 'Operation timed out')" error?
+                Why am I getting " urlopen error (10061, 'Connection refused')" error?
+                Why am I getting "Problem connecting to tracker - urlopen error (10065,'no route to host')" error?
+                Why am I getting "Problem getting response info - [ Errno 2]" error?
+                Why am I getting "Problem connecting to tracker. HTTP error 503: service unavailable" error ?
+                Why am I getting "connecting to peers" error?
+                Why am I getting "windows cannot find " c :documents and settings/owner/local settings/temporaryinternet/filescontent.ie5....." error?
+                Why am I getting "No space left on device" error?
+                Why am I getting "temporary internet files content 1.5 xxx don't exist" error?
+                Why am I getting "( IOError - [Errno13] Permission denied)" error?
+                Why am I getting "Piece XXX failed hash check" error?
+                Why am I getting " urlopen error unknown url type: udp" error?
+                Why am I getting "Problem Connecting to tracker - [ errno http error ]403 'Forbidden (client banned)" error?
+                Why am I getting " Errno 24 (Too many open files)" error?
+                My torrent is 100MB, why does my client say I have downloaded 120MB?
+                Can I resume a previously broken torrent?
+                Why did an active torrent suddenly disappear?
+                Why am I downloading so slowly?
+                How do I fix this NAT error?
+                Which port should I use?
+                What is this "Go to Demonoid" error I keep getting?
+                What is this "Torrent Rating System" and how does it work?
+
+
+            Creating / Uploading Torrents
+
+                I want to share my stuff, how do I make a torrent?
+                Are there any guidelines I must follow when uploading a torrent?
+                Why is a torrent uploaded not listed?
+                I uploaded a torrent, why does it appear to have been deleted?
+                What is this "Torrent not in pool yet" error I keep getting?
+                Am I allowed to upload my torrent tracked by Demonoid to other sites?
+                What is "normal seeding mode" and what is "super-seeding mode"?
+
+
+             Stats
+
+                What is this "ratio"?
+
+                What is a good ratio?
+                How is the ratio calculated?
+                My ratio is getting too low, am I going to be banned?
+                Why isn't my ratio being reported properly?
+                What are the best practices for ensuring my ratio is updated correctly?
+                Why doesn't Demonoid use a "live tracker"?
+
+
+            Torrents
+
+                What am I not allowed to say in a comment?
+                How do I report a torrent?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Frequently Asked Questions
+
+
+
+
+
+
+             Site Information
+
+    Terms & Conditions
+        Click here to read the site's Terms & Conditions
+        Back to top
+    What is this "IRC" everyone keeps talking about?
+        IRC stands for Internet Relay Chat.  It's a place for ‘ noiders to gather and chat outside of the sites.  It's a great place for asking questions about pretty much anything.  There is always at least one site staff member on IRC so it's a good place to catch one.  To get in Demonoid's channel, all you have to do is click the link "Chat" at the top frame of the site.  This will take you to a page with instructions on how to access the chat room.
+        Back to top
+    Do you have an RSS feed?
+        Yes we do. For a full list of the currently available feeds, please visit this link.
+        Back to top
+    How can I contact the site staff?
+        Our contact addresses can be found by clicking here.
+        Back to top
+    Do you have a banner I could use to link to you?
+        Yes we do. The list of banners is available by clicking here.
+        Back to top
+    How do I sort the torrent list by seeds, leeches, etc?
+        To sort the torrent list, search for a keyword. The sorting options will appear on the upper-right corner of the torrent list.
+        Back to top
+
+
+
+
+ User Information
+
+    Why is the registration closed periodically?
+        We only open registrations when our resources permit.  A tracker/site of a large scale such as this, needs to close registration for periods of time.  The only way to register while registration is closed, is to be invited. . Also, try asking some of your friends, it is likely that some of them have a Demonoid account already.
+        Back to top
+    I registered my account, how come I didn't get the confirmation E-Mail?
+        Have you registered with the correct E-Mail address? 
+        If you have, did you checked your SPAM folder? 
+        Sometimes, the registration E-Mail has been filtered from your inbox and ends up in your spam folder.  If still you don't receive the confirmation E-Mail, please try registering again, using a different E-Mail address
+        Back to top
+    I've forgotten my password, what do I do?
+        There's no need to worry.  There is a link called " Lost Pass" right near the text box where you log in.  Click that and verify some information.  A link to reset your password will be E-Mailed to the address which is registered with the site.  	Back to top
+    Can I invite my friend to Demonoid?
+        You sure can!  You can access the "invite" feature under your control panel. The link is on the upper right corner of every page ..  This will generate a code that the receiver will have to input when they register.  There is a set number of invites so use them wisely.	Back to top
+    Can you delete my account?
+        No. But you can stop using it and the site will automatically set it as inactive after some time.Back to top
+    I don't like my user name, can you change it for me?
+        We apologize, but we do not change user names.Back to top
+    I can't seem to log in, what do I do? (Also known as the Log-In of Death)
+        If you can't log in and your sign in information is correct, try deleting your cookies and restarting your browser.  You should now be able to log in properly.  This is usually an error when dealing with Microsoft Internet Explorer	Back to top
+    What is an avatar and signature, and how do I add one to my profile?
+        An avatar is a small image which is displayed under your user name.  As long as the image in question is within the scope of the site rules, there is no limitation to what this image can be.  Adding an avatar is simple.  You must first host it on an internet image hosting site and place the image URL in the "Avatar URL" section of "Account Settings".  A signature is the equivalent to a "signature" of a letter.  It's something that will be posted after every post you make.  It can be text (like a quote) and/or an image (as long as it's in the scope of the site rules).  Displaying images in the signature is a little different than the avatar.  These must be place in between [ img]image URL here[ / img] BB tags.	Back to top
+    I have been warned, can you tell me the reason?
+        We do not notify the users or give the reason of the warnings to avoid giving the moderators the extra work of arguing with the warned users. If you received a warning, it means you broke the site rules in one of the comment posts, private messages or in one of your uploads. All the site rules can be found on this page.
+        Back to top
+
+    BitTorrent
+
+    What is BitTorrent?
+        BitTorrent is a peer-to-peer protocol which allows users to connect directly to each other to send and receive parts of a file through a central server called a "tracker".  The tracker itself does not contain or transmit any information pertaining to the actual content.  It only coordinates and manages connections between peers.
+        Back to top
+    What is the required software and where can I get it?
+        In order to connect to the tracker and get the files the .torrent file points to, you will need to have installed a BitTorrent Client. Please do not use BitComet, BitLord and its derivatives. They cause your ratio to be misreported, and cause transfer troubles.
+
+ Windows Clients
+
+
+
+            ABC (Yet Another BitTorrent Client)
+            BitBuddy (Formerly known as BTvampire)
+            BitTornado (TheShad0w's Experimental)
+            The Original BitTorrent Client (By Bram Cohen)
+            uTorrent
+
+
+
+
+     Linux Clients
+
+
+
+             ABC (Yet Another BitTorrent Client)
+             BitTornado (TheShad0w's Experimental)
+             The Original BitTorrent Client (By Bram Cohen)
+
+
+
+
+     Macintosh Clients
+
+
+
+             Bits on Wheels
+             The Original BitTorrent Client (By Bram Cohen)
+             Tomato Torrent
+
+
+
+
+     Java Clients
+
+
+
+             Azureus
+             BT Queue
+
+
+
+
+    There are many clients available, but it's recommended to use one from the list we just provided.Back to top
+
+    Seed( er)? Leech( er)? Peer?  What are you talking about? (Terminology)
+        These words are BitTorrent terminology.  A seed or seeder is a person who has a full copy of the content in this torrent.   They are either the original distributor or someone who has completed the download and is just uploading.  A leecher is a person who has begun downloading this torrent and does not have a full copy as of yet.  Also referred to as a peer.  A hit-and-runner is a leecher who completes the download, but doesn't seed until they reach a ratio of 1.0.  Of course, this is frowned upon. These hit-and-run users are often called leechers, as in the parasite, the blood-sucker that lives in the tropics. Although the same word is used as someone who hasn't finished downloading, it is also used as a derogatory term.  Back to top
+
+
+    What is this "*.torrent" file?
+        A .torrent file is basically a small text file containing necessary information required to start your download/upload.  Such necessary information would include, file sizes, file names, tracker URLs, comments, hashes, etcBack to top
+
+Downloading / Using Torrents
+
+    How do I start Downloading files?
+        After choosing a suitable client read the FAQ on the client homepage for any configuration tips, install (restarting your browser may be required), find files you are interested in, click the link and start downloading.
+        Back to top
+    My client says I've only downloaded X% but the file is the correct size, what gives?
+        Unless otherwise configured clients pre-allocated the file size of the torrent which is "filled" with the data as it is downloaded.Back to top
+
+    Why is the torrent offered as a txt file too?
+        There are some firewalls and internet filters that disallow the download of torrent files. Because of that, we also offer the same torrent files with a .txt extension for download. If you are having trouble getting the torrent, try downloading it using the "download as text file" link, change the extension from .txt to .torrent, and open it with your torrent client.Back to top
+
+    Why is my download stuck at 99.9%?
+        There are actually a few factors which may contribute to this problem.  Though 99.9% is the most common, it actually happens with percentages in the high 90s (96%, 97%, 98% and anything in between).Back to top
+
+        There may be an anti-leech protection in effect limiting transfers to you.  Many clients does have this feature to ensure peers give back what they have taken to the swarm.
+        The final piece(s) may be something changeable.  Check to see what is left on the download.  If the file(s) in question are ". DS_Store," " Thumbs.db," or "desktop.ini," you may select these files and choose to omit them from the download.  If the seeder's version of these files changed, then they will fail the hash check, preventing anyone from getting the original.  Similarly, if on your side, these [hidden] files are "read only" and/or protected, your client will keep downloading and discarding that which cannot be replaced.
+        There may be a physical problem preventing you from completing the download.  Try stopping the torrent, run scandisk, and restarting the torrent.  This will fix any errors on your harddrive.
+        The more pieces you have, the harder it becomes to find people who have the pieces you need. That's why downloads sometimes slow down or even stop completely. Just be patient and you will get the remaining pieces.
+
+
+
+
+    Why am I getting " Urlopen error - (7, ' getaddrinfo failed')" error?
+        The tracker is overloaded, just leave it and it will be fine.Back to top
+    Why am I getting "Problem connecting to tracker: HTTP Error -1" error?
+        Leave your client running as it keeps checking the tracker and it should resume as normal.Back to top
+    Why am I getting "Problem connecting with tracker - (10054,'Connection reset by peer')" error?
+        The connection to a tracker or another computer is prematurely terminated, similar to a timeout error, again just wait.Back to top
+    Why am I getting "Problem connecting with tracker - (10060, 'Operation timed out')" error?
+        There was no response to a request sent to a peer or tracker normally a result of the tracker/server being to busy to process your request at that time, just leave it open.Back to top
+    Why am I getting " urlopen error (10061, 'Connection refused')" error?
+        This could be a symptom for a range of problems resulting in you not being able to connect to the tracker, you internet connection going down, firewall/router interfering with your connection, server/tracker being busy or even being banned from a tracker, most commonly this error will resolve itself or you could try restarting your client. Back to top
+    Why am I getting "Problem connecting to tracker - urlopen error (10065,'no route to host')" error?
+        Normally the result of a blocklist application ( PeerGuardian/Protowall/SafePeer) or firewall with specific IP blocking function, in the case of a blocklist application try updating the blocklist or in the case of a firewall verify your exemption settings.Back to top
+    Why am I getting "Problem getting response info - [ Errno 2]" error?
+        This error is is caused by Internet Explorer failing to save the .torrent file correctly in its temporary directory when the download link is left clicked, try right clicking on the link and choose "Save As" directing the path to a directory specifically for .torrent files or just use a different browser.Back to top
+    Why am I getting "Problem connecting to tracker. HTTP error 503: service unavailable" error ?
+        The tracker is down. Please try again later.Back to top
+    Why am I getting "connecting to peers" error?
+        There may be no peers to connect to or a firewall/router is interfering with the connection.Back to top
+    Why am I getting "windows cannot find " c :documents and settings/owner/local settings/temporaryinternet/filescontent.ie5....." error?
+        Right click and save the .torrent file to your HD and open the torrent from there.Back to top
+    Why am I getting "No space left on device" error?
+        Unless configured no to do so Bit Torrent client allocate the space required to store files on the hard drive when the torrent is started, this error occurs when there is insufficient space or when the hard drive is in FAT32 format and the file exceeds the 4GB limit in this case convert your hard drive to NTFS. Back to top
+    Why am I getting "temporary internet files content 1.5 xxx don't exist" error?
+        XP compresses the temporary internet files after a certain point which causes this error, either clear your temp files or save the .torrent directly to you hard drive and launch it from there.Back to top
+    Why am I getting "( IOError - [Errno13] Permission denied)" error?
+        Sometime bittorrent still runs in the background, and if you start more than one gui (the same torrent) it will give you permission denied, go to Task manager and close down all bt-gui processes.Back to top
+    Why am I getting "Piece XXX failed hash check" error?
+        This message can generally be ignored it just means that a piece that you have downloaded didn't check out correctly and will be redownloaded.Back to top
+    Why am I getting " urlopen error unknown url type: udp" error?
+        You client doesn't support the UDP protocol, some torrents are multitracker torrents which may include a UDP tracker announce.
+    Why am I getting "Problem Connecting to tracker - [ errno http error ]403 'Forbidden (client banned)" error?
+        The tracker for the torrent has banned the client that you are using try a different one.Back to top
+    Why am I getting " Errno 24 (Too many open files)" error?
+        Unless configured otherwise some clients will keep all the files in a torrent open during the downloading process. This error occurs with some of the larger multi-file torrents, which can have hundreds or thousands of component files. When the number exceeds the OS limit, the OS refuses to allow them all to be opened, preventing the client from accessing them. To resolve the problem either   limit the number of files the client will have open at any one time or increase the OS limit for the number of open files.Back to top
+    My torrent is 100MB, why does my client say I have downloaded 120MB?
+        See "Why am I getting "Piece XXX failed hash check" error?" ( above), the extra data is the redownloaded data from the failed hash check.Back to top
+    Can I resume a previously broken torrent?
+        Yes you can. To resume simply open the .torrent file as you would to download and choose the save location as where you have the completed files.Back to top
+    Why did an active torrent suddenly disappear?
+        The main reasons for this are:
+           1. The torrent may have been out-of-sync with the site rules.
+           2. The torrent was not seeded. Torrents expire after 5 days without a seed.
+           3. It was a bad release. A replacement will probably be uploaded to take its place.
+           4. The torrent expired. Older torrents are sometimes automatically deleted when the peer count gets high to avoid running out of RAM and killing the server. Back to top
+    Why am I downloading so slowly?
+        There are many factors which may affect your transfer speeds.Back to top
+
+        There aren't enough peers/seeds.
+            Most think just seeds are enough for a quick download, but leechers also affect transfer speeds.  You may download the pieces they have already acquired.  However, if there are too many leechers, they may already be taking all the speed.
+        You are behind a firewall.
+            If you are behind a firewall, then this will limit the number of peers you are able to connect to.  Although you can make outgoing connections to peers, they cannot make any connections to you.  Forward the ports your client is using and you noticed you'll get more connections.
+        You are saturating your bandwith.
+            Although uploading is a good thing, if you are maxing out your upload stream, you will saturate your bandwith, thus lowering your download speed, as well as slowing down any other internet action(s).  How TCP/IP works, is when you download a packet, you must reply to the sender saying you received it.  This will prompt the sender to send another packet.  If you are at max on uploads, it may take a while for your reply to get to it's destination, which prevents you from getting the next packet.  The best way to battle this, is to limit your uploads to 80% of your maximum speed. IE: If you have a maximum upload rate of 40 kilobytes per second, limit that to 32 kilobytes per second.  The 8 kilobytes is enough buffer for replies and even browsing the web.
+        You're not uploading enough.
+            Remember, bittorrent is a sharing protocol.  If you're being stingy with the uploads, other clients won't transfer to you.  Many clients even tell you that your download rate is proportional to your upload rate.  This does seem to be the case in small to medium swarms, but sometimes doesn't apply to large swarms.  In any case, be sure to upload as much as you can.
+
+
+Whatever the problem may be, be sure to give it some time.  Sometimes it just takes time to connect to the right peers.  Bittorrent is the best sharing protocol out there and is designed to more often than not, max out your download speed.
+
+    How do I fix this NAT error?
+        The majority of NAT errors are a result of incorrectly configured firewalls or routers, open the listening port that your client is using in your firewall and/or router, if your client uses a port range try to limit this to around 10 ports any more is unnecessary and could pose a security risk. If you don't know how to open ports check any documentation that you may have or the "makers" support/help. Portforward.com is very informative on this subject and remember Google is your friend.Back to top
+    Which port should I use?
+        Some ISP's throttle the connection on the known default Bit Torrent ports 6881 - 6889 so changing the listening port of your client will help avoid the affects of this traffic restriction, some care should be taken when selecting a port see  Here for known port nasties.Back to top
+    What is this " Go to demonoid" error I keep getting?
+        It means the torrent is not being tracked by Demonoid anymore, because it was deleted by its owner of by a site moderator. Please try using the torrent search to find a similar torrent.Back to top
+    What is this "Torrent Rating System" and how does it work?
+        The torrent rating goes from 1 to 10, 1 being the worst rating, and 10 the best.  When a torrent has not been rated yet, it will have a "n/a" instead of the score.  Please remember this is a rating system on the   quality  of the torrent content, not how much you liked it or disliked it.Back to top
+
+ Creating / Uploading Torrents
+
+    I want to share my stuff, how do I make a torrent?
+        Making a torrent is not as difficult one would think.  All that the torrent making software does is hash the files of content (which makes the torrent identifiable), add the announce URL (so those who download it can connect to the tracker) and add the various file information (such as file names, size, etc.).  There are various programs/clients that are able to create torrents.Back to top
+
+          Torrent creation tutorial (uTorrent)
+
+
+
+
+    Are there any guidelines I must follow when uploading a torrent?
+        Yes, there are guidelines.  Displayed before you upload torrents, are the list of rules you must abide by.Back to top
+
+These rules are:
+
+
+         Include  this info file inside the torrent
+            This is a simple text file that says this torrent is tracked by demonoid.  If you fail to add this to your torrent, then the site will reject it.
+        No adult material allowed
+            Demonoid has a strict policy against pornographic material.  Any content depicting a sexual act will be deleted.  There are countless sources to distribute this type of material and Demonoid is not one of them.
+        No spam (make quick money / Win an iPod / online poker / pyramid schemes, etc.)
+            Get rich quick schemes, money pyramids, free stuff and the likes do not benefit anyone.  Torrents such as these will be deleted on sight.
+        No hate inducing material of any kind.
+        No passworded archives.
+            Passworded archives (. rar, .zip, .ace, .tar, .7z, etc.) are not allowed.  Forcing people to go to other site to acquire a password is a nuisance on the community.  Torrents which are reported for violating this rule are immediately deleted.
+        No torrents from private trackers
+            Torrents from trackers that require registration on a site to download are not allowed.
+        No duplicate material
+            Please search before uploading to check if the material is already on the site
+        No trojans or virus infected archives
+            No infected torrents are allowed.  Torrents infected with trojans, virii, adware, spyware, malware, etc. will be deleted.
+        No hacking tools (reading material related to this subject is ok)
+         Try to make sure your torrents are well-seeded for at least 24 hours or until there are some seeds to replace you.   
+                 
+
+    Why is a torrent I uploaded not listed?
+        The site updates the torrent listing every few minutes.If more than ten minutes passes since you uploaded it, and it's still not there, try uploading it again. Also, you need to seed the torrent in order for it to apper on the list.  A non-seeded torrent is immediately labled as a "dead" or inactive torrent.  You may search for your torrent applying the filter [dead torrents] or [dead and active torrents].  Once you begin seeding your torrent, it will automatically be made visible by the site.Back to top
+    I uploaded a torrent, why does it appear to have been deleted?
+        Are you sure your torrent was in sync with the rules?  The torrent Moderators are constantly browsing the site, looking for torrents that break the rules.  Even if your torrent barely stays within the scope of the rules, if it receives too many complaints, it will be deleted.Back to top
+    What is this " Torrent not in pool yet" error I keep getting?
+        This means the tracker has not had the time to read the database yet. The tracker reads the database every 3 minutes or so, and then adds the new torrents to it's torrent pool. You need to wait for the torrent to be on the pool to be able to seed it.  If you get this error, stop the transfer, wait 3 minutes (usually it takes less, but make it 3 to be sure), and then restart it.Back to top
+    Am I allowed to upload my torrent tracked by Demonoid to other sites?
+        Yes you are. It's your torrent, as long as the torrent is in sync with  the site rules, you may do with it whatever you want. 
+
+        It may actually be wise to add your torrent to other sites.  This will undoubtedly increase your traffic.  More traffic means a faster distribution of the torrent.Back to top
+    What is "normal seeding mode" and what is "super-seeding mode"?
+        Seeding mode is the regular way a client seeds.  A peer who requests a piece from you will get that piece.  Super-seeding mode is slightly different.  In super-seed mode, you will transfer a single piece only once.  This means you will not transfer any piece more than once.  This speeds the   initial  distribution of the torrent, by ensuring that when you have uploaded 100% of your torrent, there will be one full distributed copy among all your peers.  However, please remember that super-seed mode is only useful for the initial distribution.  Afterwards, seeding will be quicker on normal mode. Back to top
+
+ Stats
+
+    What is this "ratio"?
+        The upload to download ratio is just that: a ratio.  BitTorrent is a sharing protocol.  So obviously, sharing is expected.  The ratio system was introduced to allow you to monitor your transfer amount.  A ratio of 1.0 means you've uploaded as much as you've downloaded, but it's encouraged to give more than you takeBack to top
+    What is a good ratio?
+        1.0 or above.  This means you have upload more than you have downloaded.  This mentality is vital to the sharing community.  Although sometimes it is difficult to seed what you have downloaded, please just try to make an effort.Back to top
+    How is the ratio calculated?
+        Every member starts off with 0 kilobytes downloaded and 0 kilobytes uploaded, giving them a ratio of 1.0.  Every kilobyte/megabyte/gigabyte transfered afterwards begins to effect your ratio.  The simple equation for the ratio calculation is uploaded/downloaded.  In example: You've uploaded 50 megabytes and downloaded 150 megabytes, your ratio will be: 50/150=0.33.  Or if you've uploaded 200 megabytes and downloaded 150 megabytes, your ratio will be: 200/150=1.33.  Obviously, the latter is the preferrable ratio.  Please pay attention to your ratio and seed accordingly. 
+        Only data transfered via the Demonoid tracker will count toward your ratio.Back to top
+    My ratio is getting too low, am I going to be banned?
+        The ratio system is purely statistical and somewhat innacurate for the ones with shared or dynamic ips. Besides what other users may think of you for not sharing, there is no punishment for having a low ratio.
+        Back to top
+    Why isn't my ratio being reported properly?
+        There are a few reasons your ratio isn't updating properly.  If the server is unresponsive, slow, or overloaded, the "event=stopped" message which is required to update your stats may become lost.  Similarly, a faulty, experimental, or beta testing a client, may also cause your stats to be misreported.  Another possibility is the site may have a different IP associated with your account than the one you sent the "event=stopped" message with. If your client supports DHT and it is enabled any data transfered via these means will not count toward your ratio.Back to top
+    What are the best practices for ensuring my ratio is updated correctly?
+        There are a few things you may try to ensure a proper ratio update.Back to top
+
+		Be sure you are using a compatible client.  Many clients do not follow the bittorrent protocol properly.  Use experimental and beta versions at your own risk.  If you're not sure what is compatible or not, be sure to check out   this  forum thread.  It's a pretty coherent list of clients which have been through a battery of tests.
+    	If you have dynamic IP and/or sign in from multiple locations, the site may have the wrong IP address associated with your account.  The best way to remedy this is to sign out of the main site (torrent side), sign back in, and browse the site for a bit.  This should refresh your IP. 
+
+
+
+
+    Why doesn't Demonoid use a "live tracker"?
+        Demonoid tracks too many peers, and live-tracking would put too much of a strain on our server.Back to top
+
+  Torrents
+
+    What am I not allowed to say in a comment?
+        There are some simple rules that you must follow:
+
+        Use your common sense
+        Any form of jokes, slurs, attacks and/or disrespect against another member's race or religion, or are hate inducing in any way, will not be tolerated.  This rule is strictly enforced.  Any member violating this rule will be banned, no questions asked.
+
+        Flaming is    NOT  tolerated.  If violated in excess, you will be warned and if you persist, you will be banned.
+
+        Although profanity is   not  against site rules, please use in moderation.  We have many members, many of which are underage.  So please keep this in mind when posting.
+
+        Torrent comments are for discussions on the torrent.
+            Please stay on topic.  Off topic comments are rude and disrespectful towards the torrent owner.
+
+        Please do not repeat any complaints, if it has already been mentioned.
+            If the problem has yet to be resolved, take it through the PM system.
+
+
+        Do not ask for or post keygens, hacks, cracks, serials, patches, passwords, etc, in the comments. 
+            Comments containing requests or information on where to adquire such things will get you a warning from a moderator.
+        No rapidshare or similar links 
+            If you want to share something, please use a torrent
+
+
+
+    Back to top
+
+
+    How do I report a torrent?
+        On the details page above the torrent comments there is a "Report this torrent" box, fill in the text field with the reason for reporting the torrent and submit.
+        Note: If you are reporting a duplicate torrent please include a link to the original torrent.Back to top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Disclaimer: None of the files shown here are actually hosted or transmitted by this server. The links are provided solely by this site's users. The site moderation is also a service provided by the site's users. The administrator of this site (demonoid.is) cannot be held responsible for what its users post, or any other actions of its users. You may not use this site to distribute or download any material when you do not have the legal rights to do so. It is your own responsibility to adhere to these terms.
+
+            By using this site you indicate your agreement to our terms and conditions
+
+
+
+         
+
+         
+
+
+Link to us | Contact us | API | Feeds/RSS  | DMCA
+
+This site and the Demonoid logo are Copyright © Demonoid. All rights reserved.
+
+Show Demonoid some love with  1DNoidyJgB159bLJT5hDnCkZ4uQrhkfBVk

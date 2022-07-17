@@ -109,6 +109,8 @@ class Docker_Images:
 
 def create_topics_kafka(topics):
     topics.append("markets")
+    topics.append("drugs")
+    topics.append("notdrugs")
     logging.info("Creating kafka topics")
     try:
         admin_client = KafkaAdminClient(

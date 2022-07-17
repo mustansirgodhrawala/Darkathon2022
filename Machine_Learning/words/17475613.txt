@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+
+
+
+
+                Menu
+
+
+
+
+
+                        Enter Shipping Information
+
+
+
+                        CSV Upload
+
+
+
+                        Cart
+
+
+
+                        Tracking
+
+
+
+                        FAQ
+
+
+
+
+
+
+
+
+
+
+
+                CSV Upload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+												BITCOIN POSTAGE CSV ONLINE
+
+						Using CSV is the most efficient way to generate bitcoin postage quickly on EZPostage.
+
+						Download our CSV Template (link)
+						If you encounter any issues contact support@ezpostage.io
+
+
+						Format
+
+
+
+							Carrier
+							Service
+							Length
+							Width
+							Height
+							Weight(Lbs)
+							Weight(Oz)
+							Package Type
+
+
+							usps
+							priority, express, etc
+							in inches
+							in inches
+							in inches
+							in lbs
+							in oz
+							parcel, letter, etc
+
+
+
+
+						Services Types
+
+							  USPS
+
+								first
+								priority * Most Common
+								express
+								parcelselect
+								mediamail
+
+
+
+						Package Types
+
+
+						USPS
+
+						flatrateenvelope (Flat Rate Envelope)
+						flatratelegalenvelope (Flat Rate Legal Envelope)
+						flatratepaddedenvelope (Flat Rate Padded Envelope)
+						flatrategiftcardenvelope (Flat Rate Gift Card Envelope)
+						flatratewindowenvelope (Flat Rate Window Envelope)
+						flatratecardboardenvelope (Flat Cardboard Envelope)
+						smallflatratebox (Flat Rate Box – Small)
+						mediumflatratebox (Flat Rate Box – Medium)
+						largeflatratebox (Flat Rate Box – Large)
+
+
+
+
+						Proceed
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2019 EZPOSTAGE
+                support@ezpostage.io
+                bgpyrxjs2dfs6663pvrcsctbd3ynt4bd6gjfylqxvznbr2unejgiwcyd.onion
+                Cheapest Bitcoin Postage Since 2019

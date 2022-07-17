@@ -1,0 +1,37 @@
+
+
+
+
+
+    signpost.directory
+
+
+        Home
+        Discover
+        Submit new link
+        About
+
+
+
+
+        MEGATor
+
+                        files
+                        data
+                        file-share
+
+
+    Service
+    http://crqkllx7afomrokwx6f2sjcnl2do2i3i77hjjb4eqetlgq3cths3o6ad.onion
+    MEGAtor is a free and anonymous file-sharing platform. You can store and share all types content (files, images, music, videos etc...). There is no limit, you download at the maximum speed of your connection and everything is free.
+
+
+
+
+
+            Our mission:
+            To help make hidden services discoverable.
+
+
+            Easy access:
+            https://signpost.directory

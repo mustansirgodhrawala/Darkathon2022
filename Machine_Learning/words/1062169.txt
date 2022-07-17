@@ -1,0 +1,389 @@
+
+
+
+
+
+
+
+				Send BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Home
+
+
+
+							About
+
+
+
+							Blog
+
+
+
+
+
+
+
+
+
+
+
+
+								Home
+
+
+
+								About
+
+
+
+								Blog
+
+
+
+								Send BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			                	MAY 30
+
+
+
+		                	Top 5 most anonymous cryptocurrencies out there
+
+
+		                		All of our articles so far were somehow connected to Bitcoin and different privacy tools and features that can help with its anonymity and privacy. Bitcoin was, however, not designed to be inherently anonymous.
+
+
+
+	                		                						            	But there are cryptocurrencies that were explicitly created or forked with privacy and anonymity as their key characteristic and most important feature. Thus, this article will briefly introduce some of those cryptocurrencies that are trying to protect the privacy of its users.
+Cash-like anonymity
+Protecting the privacy of the users in the digital age is extremely difficult. Anything that person does in the online world will almost certainly leave some trace, unless they are a professional hacker or IT specialist. To have this kind of traceability in the digital world means that unless taken very carefully all the transactions and financial activities of individuals can be traced back to them.
+However, there are people who would want to protect their right to financial privacy. To do so, they can use different cryptocurrencies that were designed to hide or obscure transactions to help the senders or receivers keep all the information connected to the transaction to themselves. Through this, some of these cryptocurrencies are trying to bring back the anonymity of the physical cash transactions. Which cryptocurrencies are doing this?
+Monero (XMR) - the privacy God
+Writing an article about anonymous cryptocurrencies and not starting with Monero (XMR) would be like writing an article about cryptocurrencies and not starting with Bitcoin. Monero is by far the best-known anonymous cryptocurrency. It was created in 2014 as a fork of Bytecoin, another anonymous cryptocurrency, with the name of Bitmonero. This was however soon changed only to Monero, which in Esperanto means “coin.”
+
+
+
+
+
+
+
+				            	                		                						            	Monero was the first privacy coin that actually gained attention, which was as far back as 2014. This was due to the fact that unlike all the other cryptocurrencies at that time, Monero’s privacy was a default feature. Through cryptography Monero not only hides the identities of the users, but also the amount transacted. Only the receiver and the sender can see the amount transacted, which means that unlike Bitcoin, the ledger of Monero with transactions is not readable.
+While this article will not deep dive into the technical features of Monero (or any other cryptocurrency), few of them will be listed for those, who would want to explore the features more. Monero uses for instance ring signatures and stealth addresses, which are helpful especially in hiding the identity of the sender and receiver. It also uses Ring Confidential Transaction, RingCT, which obscures the amount being transacted. These are just a few advanced usages of cryptography in Monero that help with its privacy and anonymity. 
+Zcash (ZEC) - choose your privacy
+For a long time, Zcash (ZEC) was perceived as one of the biggest competitors of Monero. Some even called it the Monero killer. And while that did not happen, Zcash was still able to gain enough traction and community to be successful.
+
+“If Bitcoin is like http for money, Zcash is https.”
+
+This quote simply portrays that Zcash uses enhanced security and privacy features. One of those tools is for instance Zero-Knowledge Proof, which grants participants an option to shield their transactions as well the amount being sent. 
+
+
+
+
+
+
+
+				            	                		                						            	To be a bit more precise, Zcash uses “zk-SNARKs,” which is short for zero-knowledge succinct non-interactive arguments of knowledge. Very complicated name for a very complicated technology, which simply allows one party to prove to another party that something is true without revealing specific information. For Zcash this means that the sender does not need to reveal its identity to the receiver and vice versa.
+Unlike Monero, where privacy is set by default, for Zcash, privacy is not default. It provides four different types of transactions that vary based on level of privacy. This is not only a pro, but also a con, since it can confuse newcomers or non-technical people. Yet, Zcash has its stable place in the category of anonymous cryptocurrencies.
+Dash (DASH) - privacy with speed
+Another old-timer in the field of anonymous cryptocurrencies is Dash (DASH), since it was created in 2014. The name of this coin was created by combining two words together: digital cash, hence dash. Dash allows users to choose a feature called PrivateSend, which not only increases anonymity by obscuring the origins of the funds, but also slightly increases the transaction fee.
+
+
+
+
+
+
+
+				            	                		                						            	To increase the privacy of the sender, Dash uses something called “masternodes.” Masternodes are servers that use a mixing protocol and receive approximately 45 % of all the mining rewards from Dash. This is obviously due to the fact that they provide essential functions to the network such as privacy or speed. The transactions of Dash have the potential to be processed in seconds and for less than a penny. Yet, some argue that due to the masternodes, Dash is more centralized than other privacy cryptocurrencies.
+Beam (BEAM) - privacy with a twist
+Beam is one of the newer cryptocurrencies in the sector of anonymous coins. It is based on a MimbleWimble protocol that provides one key solution to the privacy-oriented cryptocurrencies, scalability. Thanks to this feature and also something called LelantusMW, Beam (BEAM) allows users to stay anonymous in the digital world.
+
+
+
+
+
+
+
+				            	                		                						            	Like Monero, Beam is private by default, which means that the transactions over Beam do not leave any trace, since they are not stored on the blockchain. In a way, Beam works a bit similar to Bitcoin, through the usage of Unspent Transaction Outputs (UTXOs), but to keep everything private, it encrypts them by so-called “blinding factors,” improving the privacy of this coin. 
+Beam also claims that it has superior scalability due to its compact blockchain size, online as well as offline transactions, atomic swaps or an integration with a hardware wallet. These are indeed pretty interesting features for privacy coins, but they are definitely not unique.
+PirateChain (ARRR) - new privacy coin in town
+While most of the coins in our list are pretty well-known, our last one might be a bit of a surprise or unknown for some. PirateChain (ARRR) is one of the newcomers in the world of privacy of cryptos, but that does not mean that it has nothing to offer. On the contrary, ARRR claims to use a privacy protocol that cannot be compromised by other users’ activity on the network. Just like Zcash, it uses zk-Snarks to shield all the information about transactions on the blockchain, thus improving anonymity and privacy.
+
+
+
+
+
+
+
+				            	                		                						            	It also uses a so-called Delayed Proof of Work (dPoW), which protects the blockchain of PirateChain from damages against double spending and 51% attacks. This is done through backup of ARRR, which is attached to the Litecoin blockchain, which means that to attack ARRR, the attacker would first need to go after Litecoin.
+Other privacy coins
+There are obviously countless other coins and tokens that are trying to improve the privacy and anonymity of its users. The list of five coins that we explored was just a balanced overview of the best known and a bit more interesting options that our readers should know about.
+
+
+
+						                    														Would you like bitcoin with higher privacy?
+No problem. Send bitcoin privately with whir and hide your balance and previous transactions from the recipient.
+
+
+												SEND BTC
+
+
+
+
+	                			                		                						            	However, if you want to explore other options here are just other possibilities that you can look at: Pivx (PIVX), Decred (DCR), Horizen (ZEN), Verge (XVG), Dero (DERO), Grin (GRIN) or Wownero (WOW). If you want to go even deeper, feel free to use this link.
+Conclusion
+Privacy is without any doubt very important in the cryptocurrency world. And while Bitcoin might struggle to provide the best or simplest options of how to achieve it, there are different cryptocurrencies that have put privacy right at the center of its priorities, giving solid options for those who would want to use them.
+Disclaimer: This article does not serve as a piece of financial advice or encouragement and inducement for the usage of anonymous cryptocurrencies. Its primary role is informative, explanatory, and educational. The readers have to decide themselves whether to use or not to use these types of services.
+
+
+		                GET STARTED NOW - SEND BTC PRIVATELY
+
+
+
+
+
+
+
+
+
+
+						WHIR
+
+
+
+
+											About
+
+
+
+								Affiliates
+
+
+
+								Blog
+
+
+
+
+
+							USE CASES
+
+
+
+
+											Bitcoin privacy for adults
+
+
+
+											Bitcoin privacy for activists
+
+
+
+											Bitcoin privacy for journalists
+
+
+
+											Bitcoin privacy for libertarians
+
+
+
+											Bitcoin privacy for cillionaires
+
+
+
+											Bitcoin for privacy extremists
+
+
+
+											Bitcoin privacy for adult content creators
+
+
+
+											Bitcoin privacy for sugardaddies
+
+
+
+
+
+						SUPPORT
+
+
+
+
+											FAQ
+
+
+
+											API
+
+
+
+											Crypto payment processors
+
+
+
+
+									Transaction check
+
+
+
+
+								Help center
+
+
+
+
+
+							FORMALITIES
+
+
+
+
+											Terms
+
+
+
+											Privacy policy
+
+
+
+											Bitcoin white paper
+
+
+
+
+
+
+
+								You agree that you won't commit, encourage, or support use of the whir service or website for any other purposes other than those expressly provided by our Terms and Privacy Policy. Additionally, you agree that you won't commit, encourage, or support any illegal or fraudulent activity, as well as the use of the whir to legalize illegal income, financing of terrorism, participation in schemes of phishing, forgery or other such falsification or manipulation. For the full disclosure, please read our Terms and Privacy Policy provided at the links above.
+
+
+
+
+							© mmxxii whir
+
+															.onion
+
+
+
+
+									FOLLOW
+
+
+
+
+
+									US
+
+
+
+
+
+
+
+
+
+
+
+
+                        By using whir, you agree to Privacy policy.
+
+
+
+                        Okay
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Send bitcoin privately
+
+					Hide your bitcoin balance and previous transactions from the recipient.
+
+
+
+
+
+
+									RECIPIENT BTC ADDRESS
+
+
+
+
+									BTC AMOUNT
+
+
+								Continue
+
+
+
+
+
+
+							Sending the payment to a cryptoprocessor? Read this first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Transaction check
+
+
+
+
+
+
+									Transaction ID or Deposit BTC address
+
+
+								Check

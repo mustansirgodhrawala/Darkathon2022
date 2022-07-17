@@ -1,0 +1,81 @@
+
+
+
+
+
+        CryptostampsBETA
+
+      CSV Bulk Postage Order
+
+  Cryptostamps makes it easy to order bulk postage by importing a spreadsheet in CSV format.
+
+
+
+  When editing in LibreOffice or Excel remember to save it as CSV. We do not support any other format.
+  Our support team is available 24/7 to assist. support@cryptostamps.biz
+
+
+
+Download example CSV file
+
+
+Upload CSV Bulk Postage Order
+
+
+
+
+
+    Maximum rows: 75 per upload.
+
+
+    Upload CSV and Add to Cart
+
+
+
+
+  View Cart (0 shipments)
+
+
+Valid Values
+These are the valid values for the "package_type" and "service" columns in the CSV file.
+All values are case sensitive.
+
+  USPS: Services
+
+      First
+      Priority
+      Express
+      ParcelSelect
+      LibraryMail
+      MediaMail
+      FirstClassMailInternational
+      FirstClassPackageInternationalService
+      PriorityMailInternational
+      ExpressMailInternational
+
+  USPS: Package Types
+
+      Parcel
+      Letter
+      Flat
+      FlatRateEnvelope
+      SmallFlatRateEnvelope
+      FlatRatePaddedEnvelope
+      FlatRateLegalEnvelope
+      SmallFlatRateBox
+      MediumFlatRateBox
+      LargeFlatRateBox
+
+
+
+
+
+
+        24/7 Support Email: support@cryptostamps.biz (ProtonMail Plus)
+
+
+        © 2022 Cryptostamps -
+        PGP Key -
+          Clearnet Mirror -
+        dark.fail/cryptostamps -
+        DarknetLive

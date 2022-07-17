@@ -1,0 +1,525 @@
+
+
+
+
+    ShadowForums
+based
+
+
+
+
+
+
+
+
+
+          (Default)
+          mobile
+Wasp
+
+
+
+
+
+
+      Login
+          Register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    attire
+meta
+politics
+shadowiki
+spyware
+tech
+
+
+
+  Categories
+  Threads
+
+
+
+
+
+EMAIL Comment Section
+
+
+
+shadowikitech
+
+
+
+
+
+      shadow
+
+
+
+      Posts: 105
+
+
+
+
+
+        #123
+        Created 05.01.2022, read: 2392 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://abrx6wcpzkfpwxb5eb2wsra2wnkrv2macdtkpnrepswodz5jxd4schyd.onion/email.xhtml
+
+http://63gxkfc4hlcbxrdoepw2i2hyxai5qkxmi636ag3y7sf5tq3imoya.b32.i2p/email.xhtml
+
+Planned:
+Not really anything.  Probably some updates could be useful, or even more providers, or a self-hosting guide, or more info about the various clients, but I'm mostly focused on the other pages.  If someone has something to add, let me know.
+
+
+
+
+
+
+
+
+
+
+
+      cypherpunks
+
+
+
+      Posts: 3
+
+
+
+
+
+        #195
+        Last edited: 09.03.2022 by cypherpunks, read: 1971 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://hashbang.sh. Shell provider. Assumed to give free email addresses.
+
+OnionMail seems to have a valid certificate on its website now.
+
+Don't fall for Let's Encrypt please. They will start censoring the web later by revoking certificates and enforcing HSTS (https://hstspreload.org/#tld) for all the web, so you can't host a website without a certificate issued by a CA (self-signed won't pass!).
+
+
+
+
+
+
+
+
+
+
+
+      shadow
+
+
+
+      Posts: 105
+
+
+
+
+
+        #197
+        Last edited: 10.03.2022 by shadow, read: 1962 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cypherpunkshttps://hashbang.sh. Shell provider. Assumed to give free email addresses.
+
+OnionMail seems to have a valid certificate on its website now.
+
+Don't fall for Let's Encrypt please. They will start censoring the web later by revoking certificates and enforcing HSTS (https://hstspreload.org/#tld) for all the web, so you can't host a website without a certificate issued by a CA (self-signed won't pass!).
+
+
+Thanks, I'll check them out.  I'll also check OnionMail, thank you for noticing.
+
+What do you suggest in place of Let's Encrypt?  AFAIK all other cert providers are paid.  Self-signed brings up a huge error message that will likely prevent any normal person from visiting one's site.
+
+
+
+
+
+
+
+
+
+
+
+
+      cypherpunks
+
+
+
+      Posts: 3
+
+
+
+
+
+        #201
+        Last edited: 11.03.2022 by cypherpunks, read: 1932 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shadowWhat do you suggest in place of Let's Encrypt?  AFAIK all other cert providers are paid.  Self-signed brings up a huge error message that will likely prevent any normal person from visiting one's site.
+
+Yes, people who don't participate in the evil CA system get attacked by corporations. These "errors" are warnings actually, but fucking HSTS turns them into "critical errors" so the users can't access stuff at all unless it is approved by the Internet police called CA. Don't dislike ones who try reject this system and use self-signed certificates. Normal people are stuck to a few big email providers anyway, and I don't think there are issues sending mails to servers not participating in the evil system.
+
+(other ACME CA name here) IS NOT AN ALTERNATIVE.
+
+
+
+
+
+
+
+
+
+
+
+      shadow
+
+
+
+      Posts: 105
+
+
+
+
+
+        #211
+        Created 15.03.2022, read: 1874 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cypherpunks
+Yes, people who don't participate in the evil CA system get attacked by corporations. These "errors" are warnings actually, but fucking HSTS turns them into "critical errors" so the users can't access stuff at all unless it is approved by the Internet police called CA. Don't dislike ones who try reject this system and use self-signed certificates. Normal people are stuck to a few big email providers anyway, and I don't think there are issues sending mails to servers not participating in the evil system.
+
+(other ACME CA name here) IS NOT AN ALTERNATIVE.
+
+
+Interesting take, it sounds like a similar issue to that of WHATWG and browsers.  However, from a practicality standpoint, and trying to get "normal people" aboard this seems like a rather large hurtle to overcome, as you would have to explain this to every person and hope that they would follow through.
+
+
+So I was taking a look at Hashbang (were they inspired by Crunchbang, the Linux distro at all?), the first thing they seem to suggest is trusting them to run a script on your computer.  Kinda odd but the simplicity at least is interesting (yeah I know and will download it first before running obviously).
+
+
+
+
+
+
+
+
+
+
+
+      cypherpunks
+
+
+
+      Posts: 3
+
+
+
+
+
+        #220
+        Last edited: 17.03.2022 by cypherpunks, read: 1840 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dear spambot, get off ProtonMail. Get off Telegram either. Giving one's registered phone number to get illegal services?
+
+Anyway, seems a case of CA censorship: https://www.eff.org/deeplinks/2022/03/you-should-not-trust-russias-new-trusted-root-ca
+
+
+
+
+
+
+
+
+
+
+
+      shadow
+
+
+
+      Posts: 105
+
+
+
+
+
+        #221
+        Created 18.03.2022, read: 1817 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cypherpunksDear spambot, get off ProtonMail. Get off Telegram either. Giving one's registered phone number to get illegal services?
+
+Anyway, seems a case of CA censorship: https://www.eff.org/deeplinks/2022/03/you-should-not-trust-russias-new-trusted-root-ca
+
+Yeah, the spambots are so inane I assume they must honeypots or something.
+
+AIUI that's Russia basically making it's own semi-mandatory CA to censor/control with, but I suppose they have been pushed into it as well.
+
+I guess there's no easy solution to this one.
+
+
+
+
+
+
+
+
+
+
+
+      hulk25
+
+
+
+      Posts: 2
+
+
+
+
+
+        #298
+        Created 19.04.2022, read: 1347 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anyone wanna enlighten me on where to find a marketplace that I can actually sell and buy on here on the dark web?
+
+
+
+
+
+
+
+
+
+
+
+      shadow
+
+
+
+      Posts: 105
+
+
+
+
+
+        #302
+        Last edited: 21.04.2022 by shadow, read: 1327 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hulk25Anyone wanna enlighten me on where to find a marketplace that I can actually sell and buy on here on the dark web?
+
+There's the Bisq exchange, and that one place that sells Mullvad passcodes.  But beyond that I've only heard of illegal crap, nothing like Amazon, Ebay or whatever.
+
+
+Also this is the wrong topic.
+
+
+
+
+
+
+
+
+
+  Categories
+  Threads
+
+
+
+
+
+EMAIL Comment Section
+
+
+
+shadowikitech
+
+Online now: 1 guest
+
+
+
+This forum contains 222 posts in 15 threads.
+We have 583 registered users.
+The latest registered user is: Castropestro
+In the last 24h there was 1 visitor on the forum.
+
+
+
+Page processing time: 6.934 ms
+
+
+  AsmBB v2.8 (check-in: e9a1aa146ae9b319); SQLite v3.31.1 (check-in: 3bfa9cc97da10598);
+  ©2016..2020 John Found; Licensed under EUPL.
+  Powered by Assembly language
+  Created with Fresh IDE
+
+  Icons are made by Egor Rumyantsev,
+                    vaadin and
+                    icomoon from
+                    www.flaticon.com

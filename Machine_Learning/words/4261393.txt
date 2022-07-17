@@ -1,0 +1,2161 @@
+
+
+
+
+
+        Consensus Health
+
+        This page shows statistics about the current consensus and votes to facilitate debugging of the directory consensus process.This is the abbreviated page. The detailed page which includes the (large) relay info table is also available.
+
+
+
+
+Valid-after time
+
+Consensus was published 2022-07-16 16:00:00 UTC. Note that it takes up to 15 minutes to learn about new consensus and votes and process them.
+Unusual Authorities:
+
+
+
+
+
+
+    tor26
+    Consensus could not be retrieved
+
+
+
+    gabelmoo
+    Consensus could not be retrieved
+
+
+
+    dannenberg
+    Consensus could not be retrieved
+
+
+
+    bastet
+    Consensus could not be retrieved
+
+
+
+
+
+
+
+Signatures
+
+
+
+
+
+
+
+    moria1
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+    tor26
+    consensus (microdesc) vote descriptors
+
+
+
+    dizum
+    consensus (microdesc) vote descriptors
+
+
+
+    gabelmoo
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+    dannenberg
+    consensus (microdesc) vote descriptors
+    Missing Signature, and dannenberg does not have a consensus available
+
+
+    maatuska
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+    faravahar
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+    longclaw
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+    bastet
+    consensus (microdesc) vote descriptors bandwidth file
+
+
+
+
+
+
+
+Known flags
+
+
+
+
+
+
+
+    moria1
+    known-flags Authority BadExit Exit Fast Guard HSDir Running Stable StaleDesc V2Dir Valid FallbackDir Unmeasured DescriptorMismatch
+
+
+    tor26
+    known-flags Authority BadExit Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+    dizum
+    known-flags Authority Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid FallbackDir Unmeasured DescriptorMismatch
+
+
+    gabelmoo
+    known-flags Authority BadExit Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    known-flags Authority Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+    faravahar
+    known-flags Authority BadExit Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+    longclaw
+    known-flags Authority BadExit Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid FallbackDir Unmeasured DescriptorMismatch
+
+
+    bastet
+    known-flags Authority Exit Fast Guard HSDir Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+    consensus
+    known-flags Authority BadExit Exit Fast Guard HSDir NoEdConsensus Running Stable StaleDesc Sybil V2Dir Valid ReachableIPv6 NoIPv6Consensus FallbackDir Unmeasured DescriptorMismatch
+
+
+
+
+
+
+Flag Thresholds
+
+
+
+
+
+
+
+    moria1
+    flag-thresholds stable-uptime=727494 stable-mtbf=65556185 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=10000000 guard-bw-exc-exits=10000000 hsdir-wfu=0.98 hsdir-tk=841424 enough-mtbf=1 ignoring-advertised-bws=0
+
+
+    tor26
+    flag-thresholds stable-uptime=702849 stable-mtbf=2132989 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=10000000 guard-bw-exc-exits=10000000 enough-mtbf=1 ignoring-advertised-bws=0
+
+
+    dizum
+    flag-thresholds stable-uptime=768941 stable-mtbf=2759211 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=10000000 guard-bw-exc-exits=10000000 enough-mtbf=1 ignoring-advertised-bws=0
+
+
+    gabelmoo
+    flag-thresholds stable-uptime=706039 stable-mtbf=2639082 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=29000000 guard-bw-exc-exits=24000000 enough-mtbf=1 ignoring-advertised-bws=1
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    flag-thresholds stable-uptime=700794 stable-mtbf=2559723 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=28000000 guard-bw-exc-exits=25000000 enough-mtbf=1 ignoring-advertised-bws=1
+
+
+    faravahar
+    flag-thresholds stable-uptime=713087 stable-mtbf=2521199 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=20000000 guard-bw-exc-exits=19000000 enough-mtbf=1 ignoring-advertised-bws=1
+
+
+    longclaw
+    flag-thresholds stable-uptime=713087 stable-mtbf=2558814 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=27000000 guard-bw-exc-exits=24000000 enough-mtbf=1 ignoring-advertised-bws=1
+
+
+    bastet
+    flag-thresholds stable-uptime=706688 stable-mtbf=2456247 fast-speed=102000 guard-wfu=0.98 guard-tk=691200 guard-bw-inc-exits=25000000 guard-bw-exc-exits=23000000 enough-mtbf=1 ignoring-advertised-bws=1
+
+
+
+
+
+
+Number of relays voted about
+
+  You can also view historical voting graphs.
+
+
+
+
+
+
+
+
+    moria1
+    7459 total
+    6819 Running
+
+
+    tor26
+    7003 total
+    6672 Running
+
+
+    dizum
+    7300 total
+    7029 Running
+
+
+    gabelmoo
+    7004 total
+    6704 Running
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    7004 total
+    6650 Running
+
+
+    faravahar
+    7002 total
+    6666 Running
+
+
+    longclaw
+    7003 total
+    6733 Running
+
+
+    bastet
+    7004 total
+    6697 Running
+
+
+    consensus
+
+    6716 Running
+
+
+
+
+
+
+IPv6 Statistics
+
+Percentages are of total number of relays in the vote or cosensus, and then percentage of bandwidth weight.
+
+When a DirAuth reports 0 relays with an IPv6 ORPort, the DirAuth itself lacks IPv6. When the second percentage (bw weight) is missing, the DirAuth does not have a bwauth.
+
+
+
+
+
+
+
+
+
+
+    DirAuth    IPv6 ORPort    Partial Reachability Support    Full Reachability Support
+
+    moria1
+          0 (0.0%)
+          7113 (95.36%)
+          7060 (94.65%)
+
+
+    tor26
+          3027 (43.22%)
+          7003 (100.0%)
+          7003 (100.0%)
+
+
+    dizum
+          0 (0.0%)
+          7300 (100.0%)
+          7300 (100.0%)
+
+
+    gabelmoo
+          3031 (43.28%, 54.98%)
+          7004 (100.0%, 100.0%)
+          7004 (100.0%, 100.0%)
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+          3026 (43.2%, 53.06%)
+          7004 (100.0%, 100.0%)
+          7004 (100.0%, 100.0%)
+
+
+    faravahar
+          3026 (43.22%, 60.94%)
+          7002 (100.0%, 100.0%)
+          7002 (100.0%, 100.0%)
+
+
+    longclaw
+          0 (0.0%, 0.0%)
+          7003 (100.0%, 100.0%)
+          7003 (100.0%, 100.0%)
+
+
+    bastet
+          3029 (43.25%, 50.49%)
+          7004 (100.0%, 100.0%)
+          7004 (100.0%, 100.0%)
+
+
+    consensus
+          3018 (44.94%, 54.37%)
+          6716 (100.0%, 100.0%)
+          6716 (100.0%, 100.0%)
+
+
+
+
+
+
+Consensus methods
+
+
+
+
+
+
+
+    moria1
+    consensus-methods 28 29 30 31 32
+
+
+    tor26
+    consensus-methods 28 29 30 31 32
+
+
+    dizum
+    consensus-methods 28 29 30 31 32
+
+
+    gabelmoo
+    consensus-methods 28 29 30 31 32
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    consensus-methods 28 29 30 31 32
+
+
+    faravahar
+    consensus-methods 28 29 30 31 32
+
+
+    longclaw
+    consensus-methods 28 29 30 31 32
+
+
+    bastet
+    consensus-methods 28 29 30 31 32
+
+
+    consensus
+    consensus-method 32
+
+
+
+
+
+
+Recommended versions
+
+
+
+
+
+
+
+    moria1
+    client-versions 0.4.5.1-alpha, 0.4.5.2-alpha, 0.4.5.3-rc, 0.4.5.4-rc, 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    moria1
+    server-versions 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    tor26
+    client-versions 0.4.5.1-alpha, 0.4.5.2-alpha, 0.4.5.3-rc, 0.4.5.4-rc, 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    tor26
+    server-versions 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    gabelmoo
+    client-versions 0.4.5.1-alpha, 0.4.5.2-alpha, 0.4.5.3-rc, 0.4.5.4-rc, 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    gabelmoo
+    server-versions 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    consensus
+    client-versions 0.4.5.1-alpha, 0.4.5.2-alpha, 0.4.5.3-rc, 0.4.5.4-rc, 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+
+    server-versions 0.4.5.5-rc, 0.4.5.6, 0.4.5.7, 0.4.5.8, 0.4.5.9, 0.4.5.10, 0.4.5.11, 0.4.5.12, 0.4.6.1-alpha, 0.4.6.2-alpha, 0.4.6.3-rc, 0.4.6.4-rc, 0.4.6.5, 0.4.6.6, 0.4.6.7, 0.4.6.8, 0.4.6.9, 0.4.6.10, 0.4.7.1-alpha, 0.4.7.2-alpha, 0.4.7.3-alpha, 0.4.7.4-alpha, 0.4.7.5-alpha, 0.4.7.6-rc, 0.4.7.7, 0.4.7.8
+
+
+
+
+
+
+Consensus parameters
+
+
+
+
+
+
+
+    moria1
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 circ_max_cell_queue_size=8000 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    tor26
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    dizum
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 NumDirectoryGuards=3 NumEntryGuards=1 NumNTorsPerTAP=100 Support022HiddenServices=0 UseNTorHandshake=1 UseOptimisticData=1 bwauthpid=1 cbttestfreq=10 cc_alg=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 pb_disablepct=0 sendme_emit_min_version=1 usecreatefast=0
+
+
+    gabelmoo
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    faravahar
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    longclaw
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    bastet
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+    consensus
+    params CircuitPriorityHalflifeMsec=30000 DoSCircuitCreationBurst=60 DoSCircuitCreationEnabled=1 DoSCircuitCreationMinConnections=2 DoSCircuitCreationRate=2 DoSConnectionEnabled=1 DoSConnectionMaxConcurrentCount=50 DoSRefuseSingleHopClientRendezvous=1 ExtendByEd25519ID=1 KISTSchedRunInterval=2 NumNTorsPerTAP=100 UseOptimisticData=1 bwauthpid=1 bwscanner_cc=1 cbttestfreq=10 cc_alg=2 guard-n-primary-dir-guards-to-use=3 guard-n-primary-guards-to-use=2 hs_service_max_rdv_failures=1 hsdir_spread_store=4 overload_onionskin_ntor_period_secs=10800 overload_onionskin_ntor_scale_percent=500 sendme_emit_min_version=1
+
+
+
+
+
+
+Authority keys
+
+
+
+
+
+
+
+
+
+    Name
+    Expiry
+    Identity Key Len.
+    Signing Key Len.
+
+
+    moria1
+    2022-09-06 18:42:41
+    3072
+    2048
+
+
+    tor26
+    2022-08-01 00:00:00
+    3072
+    3072
+
+
+    dizum
+    2023-05-09 19:16:37
+    3072
+    2048
+
+
+    gabelmoo
+    2023-03-26 08:14:07
+    3072
+    2048
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    2022-08-15 17:10:26
+    3072
+    2048
+
+
+    faravahar
+    2023-02-08 17:14:26
+    3072
+    2048
+
+
+    longclaw
+    2022-09-18 16:07:20
+    3072
+    2048
+
+
+    bastet
+    2023-02-17 02:28:13
+    3072
+    2048
+
+
+
+All times UTC. Note that expiration dates of any legacy keys are not included in votes and therefore not listed here!
+
+
+
+
+Authority Clock Skew
+
+
+
+
+
+
+
+    Name
+    Approximate Clock Skew
+
+
+    moria1
+    -0.747099 seconds
+
+
+    tor26
+    Could not query authority
+
+
+    dizum
+    7.116701 seconds
+
+
+    gabelmoo
+    Could not query authority
+
+
+    dannenberg
+    9.721211 seconds
+
+
+    maatuska
+    -0.806635 seconds
+
+
+    faravahar
+    0.044695 seconds
+
+
+    longclaw
+    -0.786629 seconds
+
+
+    bastet
+    Could not query authority
+
+
+
+Times are roughly accurate, anything below a couple seconds should be fine. Please use this table as a guide rather than an authoritative source.
+
+
+
+
+Shared Random
+
+
+
+
+
+
+
+
+    moria1
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    tor26
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    dizum
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    gabelmoo
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    faravahar
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    longclaw
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    bastet
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+    Commitments
+    [V:1 A:sha3-256 C:AAAAAGLR/4Al8ppt+dV/luOPPzCFuHw1GAB8urkW61uKLN5deYfyBA==R:AAAAAGLR/4DMOv7XivEaqAMvLMq9nItStcL2qQqoBf6ngeOZjDJamw==], [V:1 A:sha3-256 C:AAAAAGLR/4BHhZpGWll9t2XlrP6rgbrfZLgfKeKVxYcMNud2otENKw==R:AAAAAGLR/4CGZLROANqcu3tfkYByA8YTkNFlmR0LjDgjHuXwm7mydw==], [V:1 A:sha3-256 C:AAAAAGLR/4CHoGsQfsz0WoXJmZyq+rz3kCHd/FB/9Sh9onm8ENty+g==R:AAAAAGLR/4CxgU8q4CgVCmNqXjjVTR+pUk7379P8KHEshXRWj53VXQ==], [V:1 A:sha3-256 C:AAAAAGLR/4BcoOwMPMsMDxAEurihcTL74Ceg3U2Qc7iZ7+UD+LBRTw==R:AAAAAGLR/4BgKdeOv6ZGBo8Z49X2916Pd7u5zOmtZJVHZE4uMAO0hA==], [V:1 A:sha3-256 C:AAAAAGLR/4Dzl4XzvtOOpFF3oxyaZipLRHtiaQ0QiUInMxxK5s+jyg==R:AAAAAGLR/4A23D7dz4qFog4pqtE749t5+wbRYZUg2VigEIczwFzo5A==], [V:1 A:sha3-256 C:AAAAAGLR/4DcyoVzvluLQcoISUO5iOXZ122YjUmInACZR+v8vDis6A==R:AAAAAGLR/4DcbhMIrjEQK0N++FYo65fzF27U/1lHYV2RYg9+6V48mw==], [V:1 A:sha3-256 C:AAAAAGLR/4BXonAhf0t0XYwAMoOVfLHWvWXmvoL0Tkr33HKmghD3YA==R:AAAAAGLR/4A87I63R2xoSM3km622uTmqkFuphLjfGPCUZaTzlqPSMA==], [V:1 A:sha3-256 C:AAAAAGLR/4AESvEZEQlSEdB2kPKJuMr47Q/+laDlry3tVHRSc5d9dA==R:AAAAAGLR/4CSczSxGIZ9i78tUkwExL/qoDBC9MejriKq55TUKRGAsA==], [V:1 A:sha3-256 C:AAAAAGLR/4A3MRC8tbXJw5sWsizAh8zipaofQAI6IgQhmLD3VF6vnw==R:AAAAAGLR/4AcZLp2DEo4rMmgw1AEEOdIuEbMlBtgdq2S4UZheDje3w==]
+
+
+    consensus
+    Previous
+    9 De7Tl3ngntA9wfirjASHVe/rmWnrAZcNpuCHOtA4CJg=
+
+
+
+    Current
+    9 d/7ekMtqk1mHFKxwU3N5pdwEvw8bzAvX5un9940ZNQk=
+
+
+
+
+
+
+Protocols
+
+
+
+
+
+
+
+
+    moria1
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    tor26
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    dizum
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    gabelmoo
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    faravahar
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    longclaw
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    bastet
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+    consensus
+    Recommended Client
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Required Client
+    Cons=2 Desc=2 DirCache=(none) HSDir=(none) HSIntro=(none) HSRend=(none) Link=4 LinkAuth=(none) Microdesc=2 Relay=2
+
+
+
+    Recommended Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+    Required Relay
+    Cons=2 Desc=2 DirCache=2 HSDir=2 HSIntro=4 HSRend=2 Link=4,5 LinkAuth=3 Microdesc=2 Relay=2
+
+
+
+
+
+
+Bandwidth Scanner Weights
+
+
+
+
+
+
+
+
+    consensus
+    Guard-flagged nodes in the guard position
+    6939
+
+
+
+    non-flagged nodes in the guard Position
+    6939
+
+
+
+    Guard+Exit-flagged nodes in the guard Position
+    0
+
+
+
+    Guard-flagged nodes in the middle Position
+    3061
+
+
+
+    non-flagged nodes in the middle Position
+    10000
+
+
+
+    Exit-flagged nodes in the middle Position
+    0
+
+
+
+    Guard+Exit flagged nodes in the middle Position
+    0
+
+
+
+    Guard flagged nodes in the exit Position
+    10000
+
+
+
+    non-flagged nodes in the exit Position
+    10000
+
+
+
+    Exit-flagged nodes in the exit Position
+    10000
+
+
+
+    Guard+Exit-flagged nodes in the exit Position
+    10000
+
+
+
+    BEGIN_DIR-supporting Guard-flagged nodes
+    10000
+
+
+
+    BEGIN_DIR-supporting non-flagged nodes
+    10000
+
+
+
+    BEGIN_DIR-supporting Exit-flagged nodes
+    10000
+
+
+
+    BEGIN_DIR-supporting Guard+Exit-flagged nodes
+    10000
+
+
+
+    Guard flagged nodes for BEGIN_DIR requests
+    3061
+
+
+
+    non-flagged nodes for BEGIN_DIR requests
+    10000
+
+
+
+    Exit-flagged nodes for BEGIN_DIR requests
+    0
+
+
+
+    Guard+Exit-flagged nodes for BEGIN_DIR requests
+    0
+
+
+
+
+
+
+Bandwidth scanner status
+
+  You can also view historical Bandwidth Authority graphs.
+
+
+
+
+
+
+
+    moria1
+    Missing bwauth values in vote
+
+
+    gabelmoo
+    6924 Measured values in w lines
+
+
+    maatuska
+    6920 Measured values in w lines
+
+
+    faravahar
+    6875 Measured values in w lines
+
+
+    longclaw
+    6921 Measured values in w lines
+
+
+    bastet
+    6919 Measured values in w lines
+
+
+
+
+
+
+Bandwidth scanner information
+
+
+
+
+
+
+    moria1
+
+
+
+    gabelmoo
+    timestamp=1657986083 (2022-07-16 15:41:23) version=1.5.0 destinations_countries=DE earliest_bandwidth=2022-06-18T15:41:51 file_created=2022-07-16T15:41:34 generator_started=2022-07-11T00:11:25 latest_bandwidth=2022-07-16T15:41:23 minimum_number_eligible_relays=4032 minimum_percent_eligible_relays=60 number_consensus_relays=6720 number_eligible_relays=8298 percent_eligible_relays=123 recent_consensus_count=120 recent_measurements_excluded_error_count=174 recent_measurements_excluded_few_count=0 recent_measurements_excluded_near_count=0 recent_measurements_excluded_old_count=0 recent_priority_list_count=75 recent_priority_relay_count=25603 scanner_country=DE software=sbws software_version=1.5.2 time_to_report_half_network=979563 (272.1 hours) tor_version=0.4.7.8 sha256=fgDv7rd5JrnBa0vIjikjBCGhp+6EEvRwqDyKjM6NWLc
+
+
+    maatuska
+    timestamp=1657982916 (2022-07-16 14:48:36) version=1.5.0 destinations_countries=US,US earliest_bandwidth=2022-06-18T14:49:14 file_created=2022-07-16T14:49:07 generator_started=2022-07-04T10:54:03 latest_bandwidth=2022-07-16T14:48:36 minimum_number_eligible_relays=4031 minimum_percent_eligible_relays=60 number_consensus_relays=6719 number_eligible_relays=8291 percent_eligible_relays=123 recent_consensus_count=120 recent_measurements_excluded_error_count=188 recent_measurements_excluded_few_count=0 recent_measurements_excluded_near_count=0 recent_measurements_excluded_old_count=0 recent_priority_list_count=68 recent_priority_relay_count=23226 scanner_country=SE software=sbws software_version=1.5.2 time_to_report_half_network=980241 (272.29 hours) tor_version=0.4.7.7 sha256=XLroTOhtbjzyCOSynHMJqAMm7o6PzpD06txAcZOFZiw
+
+
+    faravahar
+    timestamp=1657985829 (2022-07-16 15:37:09) version=1.5.0 destinations_countries=ZZ earliest_bandwidth=2022-06-18T15:37:19 file_created=2022-07-16T15:37:14 generator_started=2022-06-06T20:17:44 latest_bandwidth=2022-07-16T15:37:09 minimum_number_eligible_relays=4032 minimum_percent_eligible_relays=60 number_consensus_relays=6720 number_eligible_relays=8233 percent_eligible_relays=123 recent_consensus_count=120 recent_measurements_excluded_error_count=246 recent_measurements_excluded_few_count=0 recent_measurements_excluded_near_count=0 recent_measurements_excluded_old_count=0 recent_priority_list_count=72 recent_priority_relay_count=24569 scanner_country=SG software=sbws software_version=1.5.2 time_to_report_half_network=987305 (274.25 hours) tor_version=0.4.7.7 sha256=shzBDs+u3Z3NpTzsUJjUi+3+BIsbpsatEdV7frNRhpQ
+
+
+    longclaw
+    timestamp=1657985331 (2022-07-16 15:28:51) version=1.5.0 destinations_countries=US,US earliest_bandwidth=2022-06-18T15:29:31 file_created=2022-07-16T15:29:16 generator_started=2022-05-30T16:25:18 latest_bandwidth=2022-07-16T15:28:51 minimum_number_eligible_relays=4032 minimum_percent_eligible_relays=60 number_consensus_relays=6720 number_eligible_relays=8298 percent_eligible_relays=123 recent_consensus_count=120 recent_measurements_excluded_error_count=181 recent_measurements_excluded_few_count=0 recent_measurements_excluded_near_count=0 recent_measurements_excluded_old_count=0 recent_priority_list_count=68 recent_priority_relay_count=23213 scanner_country=US software=sbws software_version=1.5.1+4.gdc06bbdc time_to_report_half_network=979559 (272.1 hours) tor_version=0.4.7.7 sha256=ub5KIs9z/GL6fZ8ULdvBKBAiK2RztIBwDRhCqNAuTpc
+
+
+    bastet
+    timestamp=1657985799 (2022-07-16 15:36:39) version=1.5.0 destinations_countries=US,US earliest_bandwidth=2022-06-18T15:37:22 file_created=2022-07-16T15:37:08 generator_started=2022-06-29T02:56:46 latest_bandwidth=2022-07-16T15:36:39 minimum_number_eligible_relays=4032 minimum_percent_eligible_relays=60 number_consensus_relays=6720 number_eligible_relays=8274 percent_eligible_relays=123 recent_consensus_count=120 recent_measurements_excluded_error_count=194 recent_measurements_excluded_few_count=0 recent_measurements_excluded_near_count=0 recent_measurements_excluded_old_count=0 recent_priority_list_count=68 recent_priority_relay_count=23217 scanner_country=US software=sbws software_version=1.5.2+1.g0be4ad1.dirty time_to_report_half_network=982399 (272.89 hours) tor_version=0.4.7.8 sha256=EjjCmTfbJ7JbMOovchU37rC6IvwdFnyn5FDLYdBPhyo
+
+
+
+
+
+
+Fallback Directory status
+
+  You can also view historical Fallback Directory graphs.
+
+
+
+
+
+
+
+    Running
+    164
+
+
+    Not Running
+    0
+
+
+    Missing
+    34
+
+
+
+
+
+
+Authority versions
+
+
+
+
+
+
+
+    bastet
+    0.4.7.8
+
+
+    longclaw
+    0.4.7.8
+
+
+    tor26
+    0.4.7.8
+
+
+    moria1
+    0.4.6.0-alpha-dev
+
+
+    serge
+    0.4.7.8
+
+
+    maatuska
+    0.4.7.8
+
+
+    faravahar
+    0.4.7.7
+
+
+    gabelmoo
+    0.4.7.8
+
+
+
+Note that this list of relays with the Authority flag may be different from the list of v3 directory authorities!
+
+
+
+
+Consensus download statistics
+
+The following table contains statistics on consensus download times in milliseconds over the last 7 days:
+
+
+
+
+
+
+
+
+
+
+  Authority
+    Minimum
+    1st Quartile
+    Median
+    3rd Quartile
+    Maximum
+    Timeouts
+
+
+    moria1
+    1073
+    1247
+    1322
+    1391
+    1879
+    0
+
+
+    tor26
+    768
+    1809
+    3100
+    4784
+    21200
+    45
+
+
+    dizum
+    365
+    459
+    493
+    558
+    26589
+    2
+
+
+    gabelmoo
+    354
+    371
+    393
+    427
+    7643
+    20
+
+
+    dannenberg
+    397
+    420
+    441
+    494
+    29796
+    35
+
+
+    maatuska
+    483
+    569
+    595
+    637
+    1577
+    0
+
+
+    faravahar
+    1010
+    1042
+    1114
+    1291
+    7713
+    2
+
+
+    longclaw
+    973
+    1070
+    1093
+    1139
+    3179
+    29
+
+
+    bastet
+    1373
+    1403
+    1420
+    1465
+    4587
+    38
+
+
+
+
+
+
+Overlap between votes and consensus
+
+The semantics of columns is as follows:
+
+  In vote and consensus: Flag in vote matches flag in consensus, or relay is not listed in consensus (because it doesn't have the Running flag)
+  Only in vote: Flag in vote, but missing in the consensus, because there was no majority for the flag or the flag was invalidated (e.g., Named gets invalidated by Unnamed)
+  Only in consensus: Flag in consensus, but missing in a vote of a directory authority voting on this flag.
+
+
+
+
+
+
+
+
+
+
+
+    Only in vote    In vote and consensus    Only in consensus
+
+    moria1
+
+    10 Authority
+
+
+
+
+
+    16 BadExit
+
+
+
+
+
+    1669 Exit
+
+
+
+
+     329 Fast
+    6626 Fast
+    !8 Fast
+
+
+
+     303 Guard
+    3255 Guard
+    !650 Guard
+
+
+
+     321 HSDir
+    748 HSDir
+    !2490 HSDir
+
+
+
+
+    6819 Running
+    !360 Running
+
+
+
+     932 Stable
+    6348 Stable
+    !52 Stable
+
+
+
+     78 StaleDesc
+    36 StaleDesc
+    !4 StaleDesc
+
+
+
+
+    6829 V2Dir
+    !1 V2Dir
+
+
+
+
+    7457 Valid
+    !1 Valid
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    21 Unmeasured
+
+
+
+
+     105 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    tor26
+
+    10 Authority
+
+
+
+
+
+    16 BadExit
+
+
+
+
+
+    1644 Exit
+
+
+
+
+     328 Fast
+    6535 Fast
+    !6 Fast
+
+
+
+     237 Guard
+    3840 Guard
+    !60 Guard
+
+
+
+     251 HSDir
+    3165 HSDir
+    !73 HSDir
+
+
+
+
+    6672 Running
+    !47 Running
+
+
+
+     114 Stable
+    5679 Stable
+    !97 Stable
+
+
+
+     6 StaleDesc
+    37 StaleDesc
+
+
+
+
+
+    6 Sybil
+
+
+
+
+
+    6440 V2Dir
+
+
+
+
+
+    6997 Valid
+
+
+
+
+
+    3027 ReachableIPv6
+    !5 ReachableIPv6
+
+
+
+
+    0 NoIPv6Consensus
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    21 Unmeasured
+
+
+
+
+     18 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    dizum
+
+    9 Authority
+    !1 Authority
+
+
+
+
+    1711 Exit
+
+
+
+
+     329 Fast
+    6600 Fast
+    !6 Fast
+
+
+
+     254 Guard
+    3881 Guard
+    !33 Guard
+
+
+
+     310 HSDir
+    3208 HSDir
+    !57 HSDir
+
+
+
+
+    7029 Running
+    !11 Running
+
+
+
+     160 Stable
+    6011 Stable
+    !51 Stable
+
+
+
+     4 StaleDesc
+    35 StaleDesc
+    !3 StaleDesc
+
+
+
+
+    6 Sybil
+
+
+
+
+
+    6715 V2Dir
+
+
+
+
+
+    7294 Valid
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    21 Unmeasured
+
+
+
+
+     17 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    gabelmoo
+
+    10 Authority
+
+
+
+
+
+    16 BadExit
+
+
+
+
+
+    1644 Exit
+
+
+
+
+     5 Fast
+    6383 Fast
+    !134 Fast
+
+
+
+     81 Guard
+    3625 Guard
+    !274 Guard
+
+
+
+     39 HSDir
+    3113 HSDir
+    !124 HSDir
+
+
+
+
+    6704 Running
+    !22 Running
+
+
+
+     69 Stable
+    5708 Stable
+    !78 Stable
+
+
+
+     1 StaleDesc
+    37 StaleDesc
+
+
+
+
+     1 Sybil
+    5 Sybil
+
+
+
+
+
+    6440 V2Dir
+    !1 V2Dir
+
+
+
+
+    6998 Valid
+    !1 Valid
+
+
+
+
+    3031 ReachableIPv6
+    !5 ReachableIPv6
+
+
+
+
+    0 NoIPv6Consensus
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    16 Unmeasured
+    !5 Unmeasured
+
+
+
+     7 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    dannenberg
+    Vote could not be retrieved
+
+
+    maatuska
+
+    10 Authority
+
+
+
+
+
+    1644 Exit
+
+
+
+
+     5 Fast
+    6443 Fast
+    !78 Fast
+
+
+
+     75 Guard
+    3679 Guard
+    !221 Guard
+
+
+
+     53 HSDir
+    3118 HSDir
+    !120 HSDir
+
+
+
+
+    6650 Running
+    !72 Running
+
+
+
+     70 Stable
+    5630 Stable
+    !152 Stable
+
+
+
+     4 StaleDesc
+    37 StaleDesc
+    !1 StaleDesc
+
+
+
+     1 Sybil
+    5 Sybil
+
+
+
+
+
+    6440 V2Dir
+    !1 V2Dir
+
+
+
+
+    6998 Valid
+    !1 Valid
+
+
+
+
+    3026 ReachableIPv6
+    !6 ReachableIPv6
+
+
+
+
+    0 NoIPv6Consensus
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    18 Unmeasured
+    !3 Unmeasured
+
+
+
+     9 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    faravahar
+
+    10 Authority
+
+
+
+
+
+    16 BadExit
+
+
+
+
+
+    1644 Exit
+
+
+
+
+
+    6430 Fast
+    !77 Fast
+
+
+
+     72 Guard
+    3631 Guard
+    !266 Guard
+
+
+
+     43 HSDir
+    3120 HSDir
+    !114 HSDir
+
+
+
+
+    6666 Running
+    !61 Running
+
+
+
+     58 Stable
+    5660 Stable
+    !117 Stable
+
+
+
+     1 StaleDesc
+    38 StaleDesc
+
+
+
+
+
+    6 Sybil
+
+
+
+
+
+    6438 V2Dir
+
+
+
+
+
+    6996 Valid
+
+
+
+
+
+    3026 ReachableIPv6
+    !8 ReachableIPv6
+
+
+
+
+    0 NoIPv6Consensus
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    19 Unmeasured
+    !2 Unmeasured
+
+
+
+     16 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    longclaw
+
+    10 Authority
+
+
+
+
+
+    16 BadExit
+
+
+
+
+
+    1644 Exit
+
+
+
+
+     4 Fast
+    6448 Fast
+    !65 Fast
+
+
+
+     128 Guard
+    3755 Guard
+    !146 Guard
+
+
+
+     281 HSDir
+    3222 HSDir
+    !20 HSDir
+
+
+
+
+    6733 Running
+    !9 Running
+
+
+
+     135 Stable
+    5719 Stable
+    !72 Stable
+
+
+
+
+    35 StaleDesc
+    !2 StaleDesc
+
+
+
+
+    6 Sybil
+
+
+
+
+
+    6439 V2Dir
+
+
+
+
+
+    6997 Valid
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    16 Unmeasured
+    !5 Unmeasured
+
+
+
+     10 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+    bastet
+
+    10 Authority
+
+
+
+
+
+    1644 Exit
+
+
+
+
+     3 Fast
+    6480 Fast
+    !38 Fast
+
+
+
+     85 Guard
+    3743 Guard
+    !155 Guard
+
+
+
+     222 HSDir
+    3206 HSDir
+    !30 HSDir
+
+
+
+
+    6697 Running
+    !33 Running
+
+
+
+     63 Stable
+    5669 Stable
+    !111 Stable
+
+
+
+     2 StaleDesc
+    37 StaleDesc
+    !1 StaleDesc
+
+
+
+
+    6 Sybil
+
+
+
+
+
+    6440 V2Dir
+
+
+
+
+
+    6998 Valid
+
+
+
+
+
+    3029 ReachableIPv6
+    !8 ReachableIPv6
+
+
+
+
+    0 NoIPv6Consensus
+
+
+
+
+
+    166 FallbackDir
+
+
+
+
+
+    20 Unmeasured
+    !1 Unmeasured
+
+
+
+     4 DescriptorMismatch
+    0 DescriptorMismatch
+
+
+
+
+
+
+
+Relay info
+
+Looking for the (huge) relay info table? It's been moved to the detailed page to speed up this page.
+
+If you enable javascript, you will be able to add individual relays from the current consensus to this page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Fingerprint
+    Nickname
+    moria1
+    tor26
+    dizum
+    gabel.
+    maatu.
+    farav.
+    longc.
+    bastet
+    consensus
+
+
+
+
+
+This page was generated with depictor version b'4567fb3\n' and stem version b'63a47605\n'"Tor" and the "Onion Logo" are registered trademarks of The Tor Project, Inc.

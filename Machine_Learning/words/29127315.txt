@@ -1,0 +1,186 @@
+
+
+
+
+      Your order is accepted
+      Price order is accepted
+
+
+          Enter your Email
+            Apply
+
+
+            Thank you! Your submission has been received!
+
+
+            Oops! Something went wrong while submitting the form.
+
+
+
+
+        Your Email is:
+        hgkdfolsdio
+
+          Transfer $200 to Bitcoin (BTC) address:
+          1PcMXZP6msX2LK2qxhwwPsjeJjCueip4CS
+          As soon as the payment is completed, we will send the information to your e-mail @fdd.
+
+            I paid
+
+
+
+
+
+        Proccessing time: about 10 minutes
+        Working hours for this direction: 8:00 - 0:00 New York time.
+        The Service will wait for 1 (one) sent by the User confirmation of the Cryptocurrency transaction in the blockchain systÐµm at a fixed rate for no more than 120 minutes. After expiration of this time, the Service reserves the right to updÐ°te the rate.
+
+
+
+
+
+
+
+	Bulk BTC Wallet Generator
+
+	Welcome to bulk BTC Wallet Generator
+	What we do?
+	We create (a lot of) bulk BTC Wallets for very little amount of BTC
+	How we do that?
+	We use Bitcoin's official algorithms to create BTC Wallets. Our application runs bitcoin's private key generator algorithms to create wallets. We generate public key, wallet address informations from generated private key.
+        You can send/receive BTC to/from these wallets anonymously
+        Anyone can use your wallets?
+        No. We generate new wallets for every new customer. Your wallets are only dedicated to you.
+        Can your wallets contain balances?
+        It is low probability but our algorithm can create a private key which already exists. If it happen, your wallets can have balance. But as we say, it is very very low probability like 1/2260
+	Pricing Table
+
+
+
+			Number Of Wallets
+			Price
+			Order
+
+
+
+
+
+				100
+
+
+				0.00001 BTC
+
+
+				Buy
+
+
+
+
+				1000
+
+
+				0.0001 BTC
+
+
+				Buy
+
+
+
+
+				5000
+
+
+				0.0002 BTC
+
+
+				Buy
+
+
+
+
+				25.000
+
+
+				0.0007 BTC
+
+
+				Buy
+
+
+
+
+				50.000
+
+
+				0.0012 BTC
+
+
+				Buy
+
+
+
+
+				100.000
+
+
+				0.0018 BTC
+
+
+				Buy
+
+
+
+
+				250.000
+
+
+				0.0028 BTC
+
+
+				Buy
+
+
+
+
+				500.000
+
+
+				0.0040 BTC
+
+
+				Buy
+
+
+
+
+				1.000.000
+
+
+				0.0070 BTC
+
+
+				Buy
+
+
+
+
+
+
+	How to order?
+	Contact us via this mail to order
+
+	Example file:
+
+
+
+			Public Key Private Key Wallet Addr Legacy Wallet Addr Segwit Wallet Addr Segwit P2SH
+			039f486303b6c75ec9988de3c99c13a0a5b5c0e9ef48dce772981c3eeca30cad72L2EnRNHaxUosW3uGZm9qRdJ3AGuLdhqmg1GqdzkUDA1cFJqZLyrE13oDcM2UzGvteWCCwSmLeBG7JMcGqjzYWVbc1qr6k7jhezw6fdxtrnghc5amwumtxslk4397507f3FSHJy4TH5TeuCGdoh5jKvNJnGiB4MkwfL
+			028a6475ffaf7a0d6212ba05aa2b28f39ecabdf6677c43b059d91e8e1dcc63a682L1AL86m9QRfHyo7ukv1GsDcfkYPiSYQCEEjdDeQ51rhSzBTP2dZa146JBV7EHJxJzx7XnLDVFUVd9JrbEiypHwbc1qy85vepue7gm44ya37sf3qjndzzxam38p62wgnj33HPD6LDiV3sjs4RHaAYYbZAZVQJUxztvE
+			033ee1584e75ee4806993a769aeb8d1a8dbfb22441d09a3e5603e12081bd578e2eL389oJCatRgUK1tToWQVKWvyE9TonQ6bkR3uZ9QhxjEVW44y4pwE133uyLC3Z9qcDmhEsX6t2WnWPPGdDA9Q7rbc1qze756wzd2smq6v45k59azjs4pv9nzcjmzn6cyy3BQXWBbk6G4vzD3goaMp4x2wzfTZKsKaeF
+			029f41b7e190d335e0c57e57f7232f815ee51fd17cae6ecce923f188e9aba5b3a5KwX4jkGsmvzs2Kgx3wT9SXfZYe8oNjGmj9Evwr9f6EkmEuZXhDoh1HsXLqQATGVKsBrptGVFtFfXuAEdnGpTTJbc1qhygz8z5l6kfmwgp0lpepvc5qjqssplrlq9rrtm3B1AyMMXh3QMnLveq1V18VRp9i5L9LSEg3
+			023a79b77844a555590cc3183376f06c63d167d93a453408edc72c7c23c7e24b3fKx9PADxd3FTCw3hktKKN6DtayXyzRjndA1anzFvbhZsBmKkXigXu1J86t5QDKBswSUpuCbQoyHfgkV7fnSGbkybc1qh0gl2ldmy4v44tdtgqfvz3r0zlmq0xj20p68n33DZ48TuVHc6LadCnsh4XEAjsTqh4HKhe61
+			0254bebfb19d6ada008c50ccc4c0e54f824ded16ce4a7ce80810493d482e06900eL3kQdmnbzWGeQdRKamYcHnQU9yng7eAdjxMwUiAYgs7s4gNsoLNL17U4uJ7kpwoZjrW9RBucGDaNHNfjLC8BKibc1qgmhnuxkrl4p5t7lltex8kq7ka67qn5t9w2g56e3KgqT3nxAtP5hgMws9NPK7P7ZBqqYrK9EP
+			03aef5e708ffe669a84e4baa120d4053fb95b651090e6f8877da08532a5bbbcc59Kwva6DX9twNbHyiP9dsfq6Pm9K5M68MbiWKLWndSE65T1ZtroUiA1LLzeGP3gwjaRAUoaHfXd5opuhn2Susrccbc1q6sexjgl8t2u8z3yjj0ep95hgpxvajgqyuh8x5234kqKwLfC5WBBMMMcNs9T2dZ836CB8to7j
+			03cba6c52368c754ad95f4098dc5c76210b261118b707a330f637d0b1805eeda8aKxDDLaAK5xUCC6fU7PfjrvwCWEcPFvhCAvuoGUjUZqr4d94gsWsY1EzCfL2PFcGrQM9F6uAuKKL3fWc81rqmHcbc1qn943gwqyqwzcg42g99xey9dfelepvvpleqyn6u39mHWNx8dQUjQ7k6WnBYJJ1o6CA2Ujxh5T
+			02bd7baf140c7f3034dd6772b7870be539c43db14d9fee112484e74aa9ef9fec93KzrEqJ6TMX2S7nEVP8jMHjbHnkBo9RU5k2XUTgJhfNh6WrMt6mzG1FjYn5B5vB31V7fEjVxpQRqXJd66cVSoZNbc1q5xwurm6te9s9zphn3qe7zp99q6t5lckczte3ld3GzwPL5CeQfHwBtzCrRimXWsYw37MUvmYZ
+			032d63db84a8b3889c90c0148a86e8da9ff9384f8e14603aa6f1cca4b263e0f375L5bRyHfeceixudCB8Sb9LB6Mh4b6BEFbi1xGAPEE2cDnFNchgngC17EBbXm9NSiWEW41akQDU4FYMfs2pdvCzKbc1qg38srwhljgggnc9s35u7n0rgjf4m4sjuppnwtj33xR8syotwZ6kgRaeZFuyGtKdt2TEr8TUw

@@ -1,0 +1,355 @@
+
+
+
+
+
+
+
+			Wiki Links | Tor .onion urls directories
+			Deep Web – Hidden Wiki – Tor Wiki – Onion Urls and Links  – Add site
+
+
+
+
+
+
+
+
+
+
+
+			HOME
+			Dark Wiki onion Urls Tor Link Directory
+Add link | Contact Us
+
+
+
+
+
+
+
+
+
+					Top links .onion dark web
+
+
+
+
+
+
+
+
+
+
+             1)
+
+            http://rznvg5sjacavz5kpshrq4.onion/ - Dark social network
+
+
+
+             2)
+
+            http://juhanurmihxlp77nkq76.onion/ - Ahima - Search Tor Hidden Services
+
+
+
+             3)
+
+            http://zuxkms43g54nzhkk37nmd.onion/  - CLONED CARDS / WU / Paypal
+
+
+
+             4)
+
+            http://3mbry5hhhk3jfbx7muc.onion/ -  E-Shopper - Credit Cards PayPal Western Union Transfers
+
+
+
+             5)
+
+            https://xmail.net/ - DNMX - Anonymous Email Provider
+
+
+
+             6)
+
+            http://7ujyftk5wduotfefgeqa4.onion/ - Porn gif pictures online sex animated
+
+
+
+             7)
+
+            http://blockchainbdgpzk.onion/  - Blockchain - Bitcoin Block Explorer
+
+
+
+             8)
+
+            http://oiswwblhcp7tv5pgdsm7thvn.onion/  - APPLE SHOP - store of stolen electronics
+
+
+
+             9)
+
+            http://bnkgnccepweowy5oqxuop2w57.onion/ - DRUGS - Cocaine, Ecstasy, LSD, Meth, Cannabis
+
+
+
+             10)
+
+            https://www.facebookcorewwwi.onion/ - Facebook -  Facebook’s Onion
+
+
+
+
+
+
+
+
+
+  
+Hidden Services – Other Protocols
+Volunteers last verified that all services in this section were up, or marked as DOWN, on: 2011-06-08
+For configuration and service/uptime testing, all services in this section MUST list the active port in their address. Exception: HTTP on 80, HTTPS on 443.
+For help with configuration, see the TorifyHOWTO and End-to-end connectivity issues.
+P2P FileSharing
+Running P2P protocols within Tor requires OnionCat. Therefore, see the OnionCat section for those P2P services.
+IMPORTANT: It is possible to use Tor for P2P. However, if you do, the right thing must also be done by giving back the bandwidth used. Otherwise, if this is not done, Tor will be crushed taking everyone along with it.
+Chat centric services
+Some people and their usual server hangouts may be found in the Contact Directory.
+IRC
+
+
+
+Below is a list of DEAD irc servers from Anonet:
+
+AnoNet – Each server is on its own network and connects to a chat cloud
+
+irc1.srn.ano, clearnet
+elef7kcrczguvamt.onion:15783 – Direct access to the AnoNet chat cloud. Use an IRC server to connect.
+irc3.srn.ano
+irc2.srn.ano, clearnet – Still connects to the old AnoNet chat cloud; that will soon change.
+irc4.srn.ano
+irc.cananon.ano Web Chat Version join #Anonet
+
+
+
+
+
+
+
+ 
+
+OFTC IRC – OFTC – IRC server
+
+
+running on: (various).oftc.net, ports:: plaintext: 6667 ssl: 6697
+
+
+Federation: OnionNet – IRC network comprised of:
+
+Circle IRC – Circle IRC server.
+FTW IRC – FTW IRC server.
+Nissehult IRC – Nissehult IRC server.
+Renko IRC – Renko IRC Server.
+
+
+OpenSource, info – Drug chat
+Dark Tunnel Irc2p gateway – Gateway to the Irc2p IRC network on I2P.
+
+
+running on: unknown, ports:: plaintext: 6668, ssl: none
+
+
+Chi’s Tunnel to Irc2p – New Gateway to the Irc2p IRC network (old one was down)
+WANNABE: Federation OnionNet :
+New Ngircd – Yep this is a new ircd in OnionLands looking for peering in OnionNet
+freenode IRC – freenode IRC server
+
+
+running on: (various).freenode.net, ports:: plaintext: 6667 ssl: 6697/7070
+
+
+NeoturbineNET IRC – NeoturbineNET IRC server
+
+
+running on: kropotkin.computersforpeace.net, ports:: plaintext: none ssl: 6697
+
+
+FREEFOR – hackint – hackint is a communication network for the hacker community.
+
+
+running on: lechuck.darmstadt.ccc.de, ports:: plaintext: none ssl: 6697
+
+
+Agora Anonymous – Agorist IRC server
+HeavyCrypto – HeavyCrypto IRC
+
+
+running on: unknown, ports:: ssl: 6697
+
+
+Anonimowy IRC – Anonimowy IRC (Polish anonymous IRC server)
+
+
+running on: unknown, ports:: plaintext: 6667, ssl: 6697
+
+
+prooops.eu IRC – prooops.eu IRC (Clearnet http://irc.prooops.eu/)
+
+
+running on: unknown, ports:: plaintext: 6667, ssl: 6697
+
+
+Team Mondial IRC – Port: 6667 SSL: 6697 == New onion anonymous webmail service (URSSMail) / Escrow Expertz
+KeratNet – Kerat – Ports 6667, ssl:6697
+
+SILC
+
+fxb4654tpptq255w.onion:706 – SILCroad, public server. [discuss/support]
+kissonmbczqxgebw.onion:10000 – KISS.onion – Keep It Simple and Safe – ditch the web browser, use SILC to communicate securely (using Pidgin with OTR)
+
+XMPP (formerly Jabber)
+
+xmpp:tortureregex47xf.onion:5222 – Public XMPP with MUC (multi user chat) enabled. No Child Porn and racism here, any breach will result in a ban. Maintained by Creative Hack
+xmpp:okj7xc6j2szr2y75.onion:5222 – xmpp:jabber.ccc.de:5222 as a hidden service
+xmpp:3vnjj7h6c6vw2yh5.onion:5222 – instant messager for Liberty’s Hackers – chat room for Liberty’s Hackers and french users – chat room for international sharing – No CP and no Racism please.
+xmpp:cyjabr4pfzupo7pg.onion:5222 – CYRUSERV Community Jabber, a public server ran by CYRUSERV.
+
+TorChat Addresses
+Humans are listed in the above contact directory. Bots are listed below.
+
+7oj5u53estwg2pvu.onion:11009 – TorChat InfoServ #2nd, by ACS.
+gfxvz7ff3bzrtmu4.onion:11009 – TorChat InfoServ #1st, by ACS.
+
+SFTP – SSH File Transfer Protocol
+These SFTP clients work with Tor: WinScp, FileZilla. Set proxy to SOCKS5, host 127.0.0.1, port 9150 (Windows,Mac) or 9050 (Linux). Encrypt your sensitive files using GnuPG before uploading them to any server.
+
+kissonmbczqxgebw.onion:10001 – KISS.onion – SFTP file exchange service (username “sftp.anon”, password “anon”)
+
+OnionCat Addresses
+List of only the Tor-backed fd87:d87e:eb43::/48 address space, sorted by onion. There are instructions for using OnionCat, , BitTorrent Client, and BitTorrent Tracker.
+
+62bwjldt7fq2zgqa.onion:8060
+
+fd87:d87e:eb43:f683:64ac:73f9:61ac:9a00 – ICMPv6 Echo Reply
+
+
+a5ccbdkubbr2jlcp.onion:8060 – mail.onion.aio
+
+fd87:d87e:eb43:0744:208d:5408:63a4:ac4f – ICMPv6 Echo Reply
+
+
+ce2irrcozpei33e6.onion:8060 – bank-killah
+
+fd87:d87e:eb43:1134:88c4:4ecb:c88d:ec9e – ICMPv6 Echo Reply
+[fd87:d87e:eb43:1134:88c4:4ecb:c88d:ec9e]:8333 – Bitcoin Seed Node
+
+
+taswebqlseworuhc.onion:8060 – Best onion sites – DOWN 2011-09-08
+
+fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2 – ICMPv6 Echo Reply
+http://[fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2]/
+gopher://[fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2]:70/
+
+
+vso3r6cmjoomhhgg.onion:8060 – echelon
+
+fd87:d87e:eb43:ac9d:b8f8:4c4b:9cc3:9cc6 – ICMPv6 Echo Reply
+
+
+
+Bitcoin Seeding
+Instructions
+
+xqzfakpeuvrobvpj.onion:8333
+z6ouhybzcv4zg7q3.onion:8333
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			  MAKE A DONATION  1NXjbzhVCm2WrJzuur9PkY3aVo54jJx3sJ
+
+
+
+
+
+				Сategory
+
+Search engines
+Wikis | Link Lists | Urls
+Financial Services
+Commercial Services | Shops
+
+Drugs
+Social networks
+Forums | Boards | Chans
+Adult | Porn | Sex
+ Email | Messaging
+Hacking | Virus | Crack
+Carding | CC
+Hosting | File image video
+Blogs
+Political
+Security
+Gambling
+Library | Books
+Warez
+Non-English
+ - - Finnish | Suomi
+ - - French | Français
+ - - German | Deutsch
+ - - Italian | Italiano
+ - - Japanese | 日本語
+ - - Korean | 한국어
+ - - Chinese | 中国語
+ - - Polish | Polski
+ - - Portuguese | Português
+ - - Russian | Русский
+ - - Spanish | Español
+ - - Swedish | Svenska
+ - - Turkish | Türk
+Hidden Services | Other Protocols
+P2P FileSharing
+Chat centric services
+ - - IRC
+ - - SILC
+ - - XMPP (formerly Jabber)
+ - - TorChat Addresses
+SFTP - SSH File Transfer Protocol
+ - - OnionCat Addresses
+ - - Bitcoin Seeding
+ Top sites TOR
+
+
+
+
+
+
+
+
+
+
+
+
+			Terms Of Service and Privacy Policy - Contact Us */\* All sites
+
+
+		                                                                                                                                                              here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here here

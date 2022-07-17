@@ -1,0 +1,365 @@
+
+AnonymousNot logged inLog inTorWikiSearchNavigationNavigationMain pageRecent changesRandom pageHelpWiki toolsWiki toolsSpecial pagesPage toolsPage toolsUserpage toolsMoreWhat links hereRelated changesPermanent linkPage informationPage logs
+
+Difference between revisions of "Main Page"NamespacesMain pageDiscussionPage actionsViewView sourceHistoryMore
+
+
+
+
+
+
+
+				Revision as of 01:29, 21 August 2021 (view source)Admin (talk | contribs)← Older edit
+				Revision as of 07:17, 7 January 2022 (view source) Admin (talk | contribs) Newer edit →
+				Line 1:
+Line 1:
+−<html><div class="bnrrrss"><a class="bnrrr" style="margin-left:10px; display:inline-block;  max-width:400px; width:40%; height:auto;" href="http://legalisezzsbmrou.onion"><img style="" src="bannertw.png" /></a><a class="bnrrr" style="margin-left:10px; display:inline-block; max-width:400px; width:40%; height:auto;" href="http://5zkfuvtrpotg2nzd.onion/"><img style="" src="bnr4.gif" /></a></div></html>+<html><div class="bnrrrss"><a class="bnrrr" style="margin-left:10px; display:inline-block;  max-width:400px; width:40%; height:auto;" href="http://legalist7w4pm2j3xs6fuxprkwwvxoio326rzbnubgfdjtzqc3s4nhqd.onion"><img style="" src="bannertw.png" /></a><a class="bnrrr" style="margin-left:10px; display:inline-block; max-width:400px; width:40%; height:auto;" href="http://executbilsygr2ovfdcnwqvn3dng7iskl24karrxto7um4s5aw27xbid.onion/"><img style="" src="bnr4.gif" /></a></div></html>
+ <div style="float: right; margin-left: 12px">__TOC__</div> <div style="float: right; margin-left: 12px">__TOC__</div>
+ <div style="color:red; font-size:20px; padding-left:5px; overflow:hidden; max-width:700px; border:1px solid red;">Due to the transition of the Tor network to v3 domain names, we are also forced to change the domain from torwikignoueupfm.onion to [http://torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion/ torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion] Please write down our new domain and distribute it if possible. A [https://blog.torproject.org/v2-deprecation-timeline link] to the official TorProject blog is attached.</div>   <div style="color:red; font-size:20px; padding-left:5px; overflow:hidden; max-width:700px; border:1px solid red;">Due to the transition of the Tor network to v3 domain names, we are also forced to change the domain from torwikignoueupfm.onion to [http://torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion/ torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion] Please write down our new domain and distribute it if possible. A [https://blog.torproject.org/v2-deprecation-timeline link] to the official TorProject blog is attached.</div>  
+Line 57:
+Line 57:
+  
+ ===Arms Trade=== ===Arms Trade===
+−* [http://5zkfuvtrpotg2nzd.onion/ Executive Outcomes]{{1}} - The largest website selling weapons in TOR network.+* [http://executbilsygr2ovfdcnwqvn3dng7iskl24karrxto7um4s5aw27xbid.onion/ Executive Outcomes]{{1}} - The largest website selling weapons in TOR network.
+ * [http://5xxqhn7qbtug7cag.onion/ Guns Dark Market]{{3}} Guns market to buy guns, full auto assault rifles, pistols, grenade launchers, etc. * [http://5xxqhn7qbtug7cag.onion/ Guns Dark Market]{{3}} Guns market to buy guns, full auto assault rifles, pistols, grenade launchers, etc.
+ * [http://tuu66yxvrnn3of7l.onion/ UK Guns and Ammo]{{3}} - Selling Guns and Ammo from the UK for Bitcoins. * [http://tuu66yxvrnn3of7l.onion/ UK Guns and Ammo]{{3}} - Selling Guns and Ammo from the UK for Bitcoins.
+Line 72:
+Line 72:
+  
+ ===Drugs=== ===Drugs===
+−* [http://legalisezzsbmrou.onion/ Legalise]{{1}} - One of the oldest stores, working since 2014. Ships goods from US all over the world.+* [http://legalist7w4pm2j3xs6fuxprkwwvxoio326rzbnubgfdjtzqc3s4nhqd.onion/ Legalise]{{1}} - One of the oldest stores, working since 2014. Ships goods from US all over the world.
+ * [http://pushingtabu7itqj.onion/ Gammagoblin - pushing taboo]{{1}} - Vendor of psychedelic substances since SR1. Star rated by LSD Avengers community. * [http://pushingtabu7itqj.onion/ Gammagoblin - pushing taboo]{{1}} - Vendor of psychedelic substances since SR1. Star rated by LSD Avengers community.
+ * [http://abyssopyps3z4xof.onion/ The French Connection]{{1}} - Vendor shop from Mr Nice Guy or Nucleus – Selling H, XTC , Meth etc.. * [http://abyssopyps3z4xof.onion/ The French Connection]{{1}} - Vendor shop from Mr Nice Guy or Nucleus – Selling H, XTC , Meth etc..
+
+		Revision as of 07:17, 7 January 2022
+
+
+Contents
+
+1 Introduction Points
+2 Marketplace
+
+2.1 Financial Services
+2.2 Arms Trade
+2.3 Documents
+2.4 Drugs
+2.5 Electronics
+2.6 Other
+
+
+3 Blogs / Essays / Social Networks
+4 Hosting / Web / File / Image
+5 Forums / Boards / Chans
+6 Email / Messaging
+7 Political Advocacy
+8 Whistleblowing
+9 H/P/A/W/V/C
+10 Audio - Music / Streams
+11 Video - Movies / TV
+12 Books
+13 Adult
+
+13.1 Noncommercial (E)
+13.2 Commercial
+13.3 Paraphilias
+
+
+14 Uncategorized
+15 Non-English
+
+15.1 French / Français
+15.2 Finnish / Suomi
+15.3 German / Deutsch
+15.4 Italiano / Italian
+15.5 Swedish / Svenska
+15.6 Spanish / Español
+15.7 Portuguese / Português
+15.8 Polish / Polski
+15.9 Russian / Русский
+15.10 Japanese / 日本語
+15.11 Korean / 한국어
+15.12 Chinese / 中国語
+
+
+
+
+
+Due to the transition of the Tor network to v3 domain names, we are also forced to change the domain from torwikignoueupfm.onion to torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion Please write down our new domain and distribute it if possible. A link to the official TorProject blog is attached.
+We created this project for fast navigation on the TOR network and for network development generally. We carefully track a moderation of articles and we hope for reliability of information provided by us. If you want to add new references or articles or edit existing, please write to administration in the Contacts section.
+
+Introduction Points
+OnionLand link indexes and search engines:
+
+Ahmia - Search engine for Tor Hidden Services.
+TORCH - Tor Search Engine. Claims to index around 1.1 Million pages.
+Not Evil - is a Tor search engine which only indexes hidden services on Tor.
+
+
+Marketplace
+You will be able to find a great number of references to marketplaces and private offers on this page. Be careful of offers over the Tor network, as anyone can host a hidden service, among them are scammers. Checked trade offers are designated as VERIFIED. Precarious offers are designated as CAUTION. Proven swindlers are designated as SCAM.
+
+Empire Market - Empire Market.
+Cannazon - Market for cannabis products only, By this it want to distance this marketplace explicitly from illegal and highly dangerous drugs. For non US buyers and sellers.
+Financial Services
+Currencies, banks, financial services, clearing houses, and exchangers:
+
+The Paypal CentCAUTION Paypal accounts with good balances - buy some, and fix your financial situation for awhile.
+netAuthCAUTION Automatic system to buy Paypal accounts and credit cards instantly in your e-mail. Socks5 included.
+Paypal Baazar CAUTION - paypal accounts for sale
+Global MarketplaceCAUTION  Verified Vendors - Western Union, Moneygram, PayPal, Zelle, Amazon, Wire Transfers, CreditCards, & More...
+KryptoPayPalCAUTION - PayPal Cashout Service. Get the account balance back in Bitcoin.
+Helix LightSCAM - Bitcoins Mixer, Completely Anonymize Your Bitcoins Before You Purchase. Since 2011.
+Premium CardsSCAM Oldest cc vendor, Top quality Us & Eu credit cards!
+Financial OasisSCAM A slew of products from a darker side of finance.
+DreamWeaversSCAM Offering high quality prepaid products for a great deal
+Hidden WalletSCAM - Tor Anonymous Hidden Bitcoin Wallet
+Cash MachineSCAM - Phished PayPal, Neteller, Skrill, BoA, Wells fargo bank Accounts, Paysafecard's, US & EU Credit cards are available here.
+Shadow WalletSCAM - An Anonymous User Friendly Bitcoin Wallet/Mixer
+BitcardsSCAM - The most trusted credit cards store in darknet with returning customers.
+BankorsSCAM - Cloned/Prepaid Credit Cards and Money Transfers via PayPal or Western Union Service Since 2015
+Amazon GC 4 BitcoinsSCAM - Bring Your dreams to life with these amazing Amazon gift cards half of the price.
+Queen Of CardsSCAM - Best Female Carding Forum Since 2011. Dumps,Western Union, MoneyGram, Bank Transfers, PayPal, Credit Cards & More.
+Credit CardsSCAM - Credit Cards, from the most Trusted Vendor in the union.Fast shipping.
+Your C.Card ShopSCAM - Physical credit cards with High balance available to order. Paypal or bitcoins as payment method.
+Clone CC CrewSCAM - No.1 Trusted onion site for Cloned Credit Card. $2000/$5000 balance available.
+EasyCoinSCAM - Bitcoin Wallet with free Bitcoin Mixer.
+Guttenbergs PrintSCAM - Finest USD/EUR bills on market. Passes all known tests. Random serials. Only top-notch currency.
+Black&White CardsSCAM - Black&White Cards - High Quality Pre-Paid Debit Cards with PIN. Good Customer Service. Best Deals
+Queens CashSCAM - Buy Pre-Shredded USD & EURO Currency for a fraction of the value. WE SELL REAL CASH
+The Cards WorldSCAM - Get your Financial Freedom Today.
+Zenith CCSCAM - Credit cards and money transfer cy
+PP&CC Money PileSCAM - Fully automated PayPal & Credit card market site. Fresh stock every 2 days. Best deals.
+Skimmed CardsSCAM - Oldest seller on old HW. Fresh stock. 99.9% safe. Worldwide cashout! Express shipping. Escrow.
+CardsSCAM - Credit cards with high balance.
+HQERSCAM - High quality euro bills replicas / counterfeits.
+USD CounterfeitsSCAM - High quality USD counterfeits.
+SOL's Euro CounterfeitsSCAM - 50€ Counterfeit notes. Quality + Best Prices.
+USJUD CounterfeitsSCAM - 20 EUR || 20 USD Counterfeit money. High Quality, any trusted (clearnet) escrow accepted.
+ccPal CCs, CVV2s, Ebay, Paypals and moreSCAM - ccPal - stolen creditcards, ebay and paypal accounts for bitcoins.
+Bitiply!SCAM Multiply Your Bitcoins Through Bitcoin Malleability Exploit!
+Double Your BitcoinsSCAM - Service that doubles your bitcoins.
+OnionWalletSCAM - Anonymous Bitcoin Wallet and Bitcoin Laundry.
+The Green Machine!SCAM Forum type marketplace with some of the oldest and most experienced vendors around. Get your paypals, CCs, etc
+Arms Trade
+Executive OutcomesVERIFIED - The largest website selling weapons in TOR network.
+Guns Dark MarketSCAM Guns market to buy guns, full auto assault rifles, pistols, grenade launchers, etc.
+UK Guns and AmmoSCAM - Selling Guns and Ammo from the UK for Bitcoins.
+EuroGunsSCAM - Your #1 european arms dealer.
+Documents
+USfakeIDsSCAM - High quality USA Fake Drivers Licenses.
+Counterfeiting CenterSCAM A Store to buy passports, idcards, credit cards, offshore bank accounts, counterfeits money
+Fake Passport ID saleSCAM - Website selling qualitative EU/US/AUS/CAN fake passports, ID cards and driver's licenses.
+UK PassportsSCAM - Original UK Passports.
+USA CitizenshipSCAM - Become a citizen of the USA, real USA passport.
+Onion Identity ServicesSCAM - Selling Passports and ID-Cards for Bitcoins.
+United States CitizenshipSCAM Become a True US Citizen - Selling Citizenship.
+Drugs
+LegaliseVERIFIED - One of the oldest stores, working since 2014. Ships goods from US all over the world.
+Gammagoblin - pushing tabooVERIFIED - Vendor of psychedelic substances since SR1. Star rated by LSD Avengers community.
+The French ConnectionVERIFIED - Vendor shop from Mr Nice Guy or Nucleus – Selling H, XTC , Meth etc..
+CharlieUKVERIFIED - UK Darknet cocaine vendor.
+ToYouTeamVERIFIED - Old time vendor since 2012 selling multiple products.
+The Church (JoR)VERIFIED - The Private vendor shop of JesusOfRave – Old time vendor selling LSD & MDMA.
+RechardSportVERIFIED - RechardSport is professional wholesaler in China, specialized in sportwear. With rapid growth, we are expanding our business to luxury merchandise. We are one-stop-shop now!
+Dutch MagicVERIFIED - Old vendor from Silk Road 1, 2 , Agora, Evolution, Abraxas, Middle Earth & Valhalla – We welcome everyone to the largest online coffeshop in the world.
+DutchDrugzVERIFIED - Old time vendor active on several markets selling Psychedelics & Others.
+DrugMarket - Your deepnet source for high quality drugs - Your #1 Onion drugstore
+mushcanada - Stealth Shipping Magic Mushrooms Worldwide
+BitPharmaSCAM - Bitpharma - Cocaine for Bitcoins, Psychedelics for Bitcoins, Prescriptions for Bitcoins, Viagra for Bitcoins.
+BrainmagicSCAM - Brainmagic - your #1 source for psychedelics on the deep web - Buy LSD for Bitcoins.
+Peoples Drug StoreSCAM - Peoples drug store, the number one deep web drug vendor. Buy drugs with Bitcoin.
+Electronics
+CStore - The original CardedStoreSCAM - Electronics purchased with carded giftcards, Everything Brand new. Full escrow accepted
+SamsungstoreSCAM Samsung tablets, smartphones, notebooks with escrow.
+Apple PalaceSCAM low priced Apple Products!
+Apple WorldSCAM - Carded iPhones, iPads, Macbooks, iMacs and consoles shipping worldwide.
+Apples4BitcoinSCAM - Cheap Apple products for Bitcoin.
+Mobile StoreSCAM - Factory unlocked iphones and other smartphones.
+DARK ELECTRONICSSCAM DARK ELECTRONICS.
+Other
+Hidden BetCoinCAUTION - Proven fair bitcoin game, bet and win, double your coins! Proven fair trusted game.
+Football MoneySCAM - Fixed football games info.
+Gold & DiamondsSCAM Genuine Gold, Diamonds and Rhino Horn shipped from Germany and USA.
+Rent-A-HackerSCAM - Hacking, DDOS, Social Engeneering, Espionage, Ruining people.
+Kamagra for BitcoinSCAM - Same as Viagra but cheaper!
+HackingTeamSCAM - Hacking as a Service Team.
+Blogs / Essays / Social Networks
+Darknet Live - Deep web news site.
+FacebookVERIFIED - The real Facebook's Onion domain. Claim not to keep logs. Trust them at your peril.
+Tor Metrics - Welcome to Tor Metrics, the primary place to learn interesting facts about the Tor network, the largest deployed anonymity network to date. If something can be measured safely, you'll find it here.
+Deep Dot Web - News website about darknet, drug, and privacy related news.
+Superkuh - Much information about spectrogram, wireless, and radio.
+Beneath VT - Exploring Virginia Tech's steam tunnels and beyond.
+Tor Against CP! - Free and clean Tor - Tor users against CP!
+flickr, imgur - Fuck the day traders, take Bitcoin back to its roots.
+Galaxy3 - Galaxy3 is a new, Social Networking experience for the darknet!
+Hosting / Web / File / Image
+TorShops - Get your own .onion store with full bitcoin integration.
+OnionName - Choose your desired domain name prefix, and order the .onion domain, starting from 0.45 mBTC for 8 letters.
+pad.riseup.net - This is an etherpad service hosted by Riseup.
+HomeHosting Be your own Onion VPS, hire an expert to do this for you! The safest way to host things.
+Forums / Boards / Chans
+DNM Avengers - Darknet drug forum with reviews and marketplace discussion.
+Dread - Dread is a darknet forum built in the likeness of Reddit.
+Envoy Forum - Envoy Forum.
+Kilos - Index machine of forum posts, onion vendors, listings and reviews.
+The Hub Forum - The Hub Forum.
+Torum - Cyber Security Forum.
+The Stock Insiders - How to Beat Wall Street. The community for exchanging Insider Information about Publicly Traded Companies.
+The Intel Exchange - Know or need to know something? Ask and share at this underground intelligence gathering network.
+OnionLand - Discussion forum about all the Darkweb markets related topics.
+Hidden Answers - A site for asking questions and receiving answers on Tor.
+Torduckin0 #1st - Citadel BBS with chat and IM to support Torduckin.
+Torduckin0 #2nd - Citadel BBS with chat and IM to support Torduckin.
+Torduckin0 #3rd - Citadel BBS with chat and IM to support Torduckin.
+Torduckin0 #4th - Citadel BBS with chat and IM to support Torduckin.
+Torchan - /b/, /i/, programming, revolution, tons of other boards.
+Thunder's Place - Thunder's Place Penis Enlargement and Male Sexual Health Forum.
+Email / Messaging
+secMail.pro -  Complete mail service that allows you to send and receive mails without violating your privacy.
+Mail2Tor - Mail2Tor is a free anonymous e-mail service made to protect your privacy.
+Elude.in - Elude.in is a privacy based email service and a Bitcoin/Monero exchange.
+TorBox - This is a hidden mailbox service only accessible from TOR without connection with public internet.
+BitMessage - Connects bitmessage and e-mail services. Registration only available using the clearweb link.
+Protonmail - Swiss based e-mail service, encrypts e-mails locally on your browser. Free and paid accounts.
+TorGuerrillaMail - Disposable Temporary E-Mail Address.
+Chat with strangers Talk to random users anonymously.
+CTemplar - First ever high end fully encrypted tor email service
+GPF AnonymousWebservices, clearnet - Proxies for I2P, mail, news, tor, web. By: GermanPrivacyFoundation
+Political Advocacy
+BuggedPlanet.Info - Information on Telecommunication Interception Companies & Installations
+Neutering NOT Org, clearnet - Why Non-Human Beings Should NOT Be Castrated. Has WolfHowl.Org mirror.
+paraZite #1st, clearnet 301 redirector - paraZite: Illicit activities advocacy and censored information archive.
+Whistleblowing
+WikiLeaks DeepWeb mirror of the famous Wikileaks website
+SecureDrop - The open-source whistleblower submission system managed by Freedom of the Press Foundation.
+Active at Darknet Markets? - Onion set up by the Police and the Judicial Authorities of the Netherlands, listing Active, identified, and arrested Darknet Market operators.
+Cryptome - Archive Government Leaks. Documents for publication that are prohibited by governments worldwide, in particular material on freedom of expression, privacy, cryptology, dual-use technologies, national security, intelligence, and secret governance -- open, secret and classified documents -- but not limited to those
+SecureDrop - An open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
+H/P/A/W/V/C
+Hack, Phreak, Anarchy (internet), Warez, Virus, Crack.
+
+HeLL Forum - HeLL Reloaded is back!
+RelateList - New era of intelligence.
+CODE: GREEN - Ethical hacktivism for a better world. Join us and participate in modern world protests!
+Hack Canada - America is a joke and Canada is the punchline. Old-ish hacking site, hosts a few archives.
+Hacker Place - Site with several books and resources on software development, pentesting and hacking.
+WE fight censorship - a Reporters Without Borders project that aims to combat censorship and promote the flow of news and information.
+Fake ID Generator - Fake Identity Name, SSN, Driver's License, and Credit Card Numbers Generator
+BrowsInfo - Check your anonymity and browser traceability
+DeepSec, clearnet - An annual European two-day in-depth conference on computer, network, and application security.
+keys open doors - Mirror of geohot's PS3 hacking tools (censored on the clearnet by a Sony lawsuit)
+Dear PayPal, (clearnet) - AntiSec's message
+Audio - Music / Streams
+Deepweb Radio - RadioService operating over TOR.
+Lossless Audio Files - Mostly WavPack, some FLAC, Ape, ogg, etc. Has index generating links.
+Video - Movies / TV
+The Pirate Bay - Deepweb version of the famous torrent site.
+Books
+Example rendezvous points page - Thomas Paine's Common Sense and The Federalist papers
+Traum library mirror. 60GB of Russian and English books - This is mirror of latest Traum ISO. FB2, HTML and plain TXT.
+ParaZite - Collection of forbidden files and howto's (pdf, txt, etc.).
+Jotunbane's Reading Club "All your ebooks belong to us!"
+Liberated Books and Papers A small collection of hard to find books.
+Clockwise Library A collection of art and science books.
+The Last of PAPYREFB2 A collection of mostly Spanish books.
+Paul Dreyer's eBook Library - DRM-Free Growing eBook Library, mostly in ePub format.
+BB Compendium  - A collection of chemistry, drugs, explosives, fireworks, pyrotechnics, science, and weapons related documents.
+The Incorrect Library - 1100 books (and counting...) Beautifully prepared in E-Pub format, with a focus on publishing politically incorrect books
+Comic Book Library - Collection of comic books, largely independent.
+Imperial Library of Trantor - A link to over 50,000 free ebooks.
+Books on Hinduism - Around 800 free canonical & quality books on Hinduism.
+Traum library mirror - 60GB of Russian and English books. A mirror of the latest Traum ISO. Covers, search and downloads in FB2, HTML and plain TXT
+Radical Militant Library "Upholding the Readers Bill of Rights since 2010"
+Liberated Books and Papers A small collection of hard to find books.
+Clockwise Library A collection of art and science books.
+Hotel Tor A large collection of books. Direct Link Click Here
+Unsorted Computer programming books.
+Моята библиотека Bulgarian books
+Example rendezvous points page Thomas Paine's Common Sense and The Federalist papers
+Paul Dreyer's eBook Library - DRM-Free Growing eBook Library, mostly in ePub format
+LIBRERÍA HISPANA Mostly Spanish books. Clone library from former clearnet website PapyreFB2.com (defunct since 01/01/'15 because of Spaniard new laws) . Require JavaScript so be careful.
+The Library Not a whole lot of info, but a lot of books.
+The Hidden Library A mirror of the Interational Journal of PoC||GTFO.
+Negima A manga collection.
+Adult
+Noncommercial (E)
+Darkscandals Real rape, humiliation, forced videos and much more extreme videos! (Pack 8 is out! More than 1800 video files in the packs).
+TeenPorn The best selection of amateur teen porn videos from the deep web
+Commercial
+Hijab FUCK Girls - Young Hijab FUCK Girls.
+Youngest Girls - Teen Videos Porn Pictures.
+Paraphilias
+VOR-COM Archive - Archive of the VOR-COM. Contains vore!
+The Secret Story Archive #1st - Big cat zoophile stories, artwork, links and forum.
+The Secret Story Archive #2nd - Mirror of #1st.
+Male animal genitalia gallery, clearnet - Unofficial mirror of Makloo's famous web gallery.
+Uncategorized
+Services that defy categorization, or that have not yet been sorted.
+
+IIT Underground - Information on and photos of the steam tunnels and roofs at the Illinois Institute of Technology.
+Non-English
+French / Français
+Liberty's Hackers
+Liberty's Hackers Board
+webclient for the chat xmpp of libertyhackers
+xmpp adress of the libertyhackers chat
+french deep web - board of the french community
+fdwmarket - market dedicate to the french deep web community, work in progress
+omega project - shop of a LH donator, escrow certified
+Trollodrôme - Forum non modéré.
+Le Conseil de la Vouivre - Mysterious French website
+Finnish / Suomi
+SilkkitieSCAM - Silkkitie.
+Thorlauta - Thorlauta.
+German / Deutsch
+konkret - das linke Magazin: Archiv.
+MadIRC - Deutscher IRC-Channel.
+Italiano / Italian
+IDC Reloaded - Italian DarkNet Community - Canale IRC
+BlackHost - A small website developed by an Italian programmer.
+New System Disorder - Italian Hackers Community - Stay Tuned!
+Swedish / Svenska
+Moral.Nu, clearnet - Vad är moral?
+KognitionsKyrkan, clearnet - Spiritual stuff.
+ZG Projektet, clearnet - ZG Projektet.
+Spanish / Español
+CebollaChan 3.0 - CebollaChan, el tor-chan en Castellano.
+TorPez - Foro de seguridad informatica entre otras cosas.
+Hidden Answers es - Hidden Answers for Spanish-speakers.
+Portuguese / Português
+Tudo Sobre Magia e Ocultismo - Site sobre Magia,Ocultismo,Esoterismo e Mitologia.
+Hidden Answers pt - Respostas Ocultas - Hidden Answers for Portuguese-speakers.
+Polish / Polski
+Fundacja Panoptykon, clearnet - Strona fundacji przeciwstawiającej się coraz powszechniejszej inwigilacji oraz tendencjom nasilania nadzoru i kontroli nad społeczeństwem.
+Cebulka Najstarsze działające polskie forum.
+Dimension X Ukryta baza w sieci Tor!
+Russian / Русский
+Зеркало библиотеки Траума - Бесплатная библиотека. Обложки, поиск и возможность скачивать в форматах FB2, HTML и TXT.
+РосПравосудие - крупнейшая картотека юристов, адвокатов, судей и судебных решений (50+ миллионов документов, 35+ тысяч судей, 65+ тысяч адвокатов, сотни тысяч юристов, прокуроры). «РосПравосудие» - аполитичный и независимый проект.
+China Market - китайский маркет. Всегда свежие поставки из Китая: каннабиноиды, MDMA кристаллы, экстази, LSD. Доставка без пересечения границы, есть представители в России, Украине и Казахстане. Автоматическое оформление, оплата и получение заказа. Методы оплаты: Bitcoin, Qiwi, Приват24, наличкой через терминалы.
+Скрытые Ответы Russian Hidden Answers.
+Rutor - главный форум черного рынка.
+Схоронил! Архив magnet-ссылок.
+Флибуста - Библиотека
+Japanese / 日本語
+Onionちゃんねる - Onion Channel, a system similar to 2channel.
+Japan Hidden Wiki - Links to Japan onions.
+Korean / 한국어
+Chinese / 中国語
+中文论坛 - 中文论坛
+
+
+
+
+
+
+
+
+DOWN
+
+
+
+
+Retrieved from "http://torwikiehdh663hyidiqr57kss5emjgzkm66rdpue664dtolhwg7ayyd.onion/index.php?title=Main_Page&oldid=339"
+Privacy policyAbout TorWikiDisclaimers

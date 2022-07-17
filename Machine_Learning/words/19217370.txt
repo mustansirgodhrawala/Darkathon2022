@@ -1,0 +1,438 @@
+
+
+
+
+
+
+
+Debian Package of the Day (static archived copy)
+
+
+
+
+Home
+
+About this site
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  Archives
+
+
+	November 2009
+	September 2009
+	August 2009
+	July 2009
+	June 2009
+	May 2009
+	April 2009
+	March 2009
+	February 2009
+	January 2009
+	December 2008
+	November 2008
+	October 2008
+	September 2008
+	August 2008
+	July 2008
+	June 2008
+	May 2008
+	April 2008
+	March 2008
+	February 2008
+	January 2008
+	December 2007
+	November 2007
+	October 2007
+	September 2007
+	August 2007
+	July 2007
+	June 2007
+	May 2007
+	April 2007
+	March 2007
+	February 2007
+	January 2007
+	December 2006
+
+
+
+
+
+
+
+
+
+ Meta:
+
+
+
+RSS
+
+Comments RSS
+
+Valid XHTML
+
+XFN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Blogroll
+
+
+
+Debian
+Debian News
+DPOTD по-русски (DPOTD in Russian)
+Planet Debian
+Planet Ubuntu
+Ubuntu
+
+
+
+
+
+
+
+
+
+
+Recent Posts
+
+
+
+About this sitetmpreaper: keep your temp files under controllbzip2: parallel bzip2 utilityBackupninja: the ultimate data defenderleafpad: a graphical text editor that starts really fasttimeout: send a signal to a process after some timeyeahconsole: a dropdown terminal emulator wrapper for XSite indexfcheck: easy-to-use file integrity checkerlogcheck: brilliantly simple log monitoring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aria2: high speed command line download utility
+
+July 16th, 2008 edited by Tincho
+
+
+
+Bonus article this week, submitted by Anthony Bryan and Tatsuhiro Tsujikawa.
+If you’re a frequent downloader and comfortable on the command line, then you need to try out aria2. aria2 is a cross platform download utility, similar to graphical download managers except that it uses less system resources.
+aria2 has a number of invaluable features such as download resuming, BitTorrent and Metalink support, segmented downloading, downloading a single file from one or multiple servers (including integrated BitTorrent and HTTP/FTP transfers), downloading many files at the same time, automatic error recovery/repair (BitTorrent and Metalink downloads only), etc.
+aria2 is a command line application, but don’t let that scare you off. You can use aria2fe, a graphical front end, if that makes you more comfortable.
+Keep in mind that aria2 is more for heavy downloading, and if you want a webspider then wget would be a better choice.
+How to use it
+The easiest way to invoke aria2 is by typing aria2c URL/fileName
+$ aria2c http://host/image.iso
+The URL can be either a regular URL to a file, a URL to a .torrent file, or a URL to a .metalink file. For BitTorrent and Metalink downloads, there are extra options available such as throttling upload speed, only downloading selected files, changing listening ports, and seed time and ratio. To pause a download, press Ctrl-C. You can resume the transfer by running aria2c with the same argument in the same directory.
+Downloading identical files from multiple sources
+aria2 supports multiple URLs for the same file. You can specify them on the command line (space separated) and aria2 will download from multiple URLs at the same time.
+$ aria2c http://host/image.iso http://mirror/image.iso
+This command will split the download between multiple servers. aria2 can even download the same file from BitTorrent and FTP/HTTP at the same time, while the data downloaded from FTP/HTTP is uploaded to the BitTorrent swarm.
+Repairing damaged downloads
+aria2 can repair downloads with errors by using the information in .torrent or .metalink files.
+$ aria2c -M test.metalink --check-integrity=true
+The -M option specifies a local file called test.metalink to get the information to repair the download.
+Parameterized URLs
+You can specify set of parts. The following command will download part of the same file from 3 servers, don’t forget to escape the parameter to avoid shell expansion.
+$ aria2c -P 'http://{host1,host2,host3}/file.iso'
+You can specify numeric sequence using []. This command will download image000.png through image100.png from the same server.
+$ aria2c -Z -P 'http://host/image[000-100].png’
+The -Z option is required if the all URIs don’t point to the same file, such as the above example.
+Other options
+aria2 has a lot more options, you can for instance use:
+
+-T filename.torrent to specify a local .torrent file.
+-M filename.metalink to specify a local .metalink file.
+-i textfile will download all the URLs listed in a textfile.
+-s  for example -s2 will download a file using 2 connections.
+-j  for example -j5 will download 5 files concurrently.
+
+aria2 has many other options. To read the man page, type:
+$ man aria2c
+Availability
+aria2 is available on most Linux distributions. Official Debian and Ubuntu package are available:
+
+Debian: stable, testing and unstable
+Ubuntu: feisty, gutsy, and hardy.
+
+Community & developers
+aria2 is actively maintained and developed by Tatsuhiro Tsujikawa. Bug reports, feature requests, and forums are found on SourceForge.
+Links
+
+aria2 Homepage
+Download page for source, Mac OS X and Windows binaries
+SourceForge: aria2 bug reports and feature requests
+SourceForge: aria2 forums
+aria2 on Wikipedia
+Metalink Homepage
+
+
+
+
+
+Posted in Debian,  Ubuntu |
+
+
+
+
+
+
+ 16 Responses
+
+
+
+
+
+   Simon Says:
+
+   July 16th, 2008 at 3:11 pm
+
+   Been using this fine piece of software for a while, it’s really good. Give it a shot :)
+
+
+
+
+
+
+   Farhan Mannan Says:
+
+   July 16th, 2008 at 10:23 pm
+
+   It’s great
+
+
+
+
+
+
+   fliker-09 Says:
+
+   July 17th, 2008 at 4:04 pm
+
+   Aria 1.0.0 is better ;) !
+
+
+
+
+
+
+   Herbert Says:
+
+   July 18th, 2008 at 1:31 pm
+
+   “axel” also does the job
+
+
+
+
+
+
+   Jason Says:
+
+   July 19th, 2008 at 5:05 pm
+
+   how does this compare with wget?  looks like a pretty cool tool and I will add it to my tool belt.  thanks.
+
+
+
+
+
+
+   Al Says:
+
+   July 20th, 2008 at 1:40 pm
+
+   > how does this compare with wget?
+aria2 is able to work with torrents, that’s the main difference from my point of view.
+If you need just a FTP/HTTP downloader with download resuming, then wget is enough.
+
+
+
+
+
+
+   UrNaturalNightingale Says:
+
+   July 26th, 2008 at 12:03 am
+
+   aria2 is actually really good and easy to use once you get used to it
+
+
+
+
+
+
+   Juanmi Says:
+
+   July 26th, 2008 at 8:07 am
+
+   Thanks !!!
+I try it ;-)
+
+
+
+
+
+
+   dannybuntu Says:
+
+   August 8th, 2008 at 11:58 pm
+
+   Very good. It has some problems though with paths/files which have special characters in them - like ( %
+
+
+
+
+
+
+   Gringo Says:
+
+   August 9th, 2008 at 11:26 pm
+
+   “Aria 1.0.0 is better ;) !”
+Well.. Aria2 supports more protocols, so I’ll stick with that. I like using a single tool for multiple tasks, especially if it’s a CLI tool.
+
+
+
+
+
+
+   Alejandro Says:
+
+   August 12th, 2008 at 1:41 am
+
+   It looks very cool, but the thing is: while it’s cool that it can download torrents, but how can you manage torrents? ;)
+sounds very good thou =)
+
+
+
+
+
+
+   Sebastian Says:
+
+   August 19th, 2008 at 12:01 am
+
+   Thanks guys, just at the right time.
+
+
+
+
+
+
+   Nathan Says:
+
+   August 19th, 2008 at 2:11 pm
+
+   How does aria2 compared to curl?
+
+
+
+
+
+
+   ttt Says:
+
+   January 11th, 2009 at 1:38 pm
+
+   How does it compare to wget?
+To my knowledge, wget can’t do simultaneous downloads of file fragments.
+aria2 can do that and on my UMTS connection speed improvements are very visible. (sometimes even 5x)
+
+
+
+
+
+
+   Affowcach Says:
+
+   April 7th, 2009 at 3:36 pm
+
+   emm… interesting
+
+
+
+
+
+
+   david a thompson Says:
+
+   April 14th, 2009 at 3:43 am
+
+   LFTP packs quite a bit of power under the hood…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Theme Ported to Wordpress by  Kaushal Sheth . Original Design by Gurpartap Singh
+      This work may be distributed only subject to the terms and conditions set forth in the Open Publication License, Draft v1.0 or later.

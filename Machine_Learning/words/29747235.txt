@@ -1,0 +1,48 @@
+
+
+
+
+
+      Phpizza
+      Minimal is good
+
+
+    Blog
+
+
+
+    About
+
+
+
+    Archive
+
+
+
+    Portfolio
+
+
+
+    Resume
+
+
+
+
+
+
+
+
+
+
+    Web Performance Tricks
+    31 Mar 2014
+
+
+    This CSS one-liner will speed up any website instantly!
+
+img {display: none !important;}
+
+
+For an even bigger speed boost, add this!
+
+* {background-image: none !important;}

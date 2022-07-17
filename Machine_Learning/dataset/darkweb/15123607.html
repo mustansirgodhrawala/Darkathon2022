@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BUY Methamphetamine - PasteBox
+  </title>
+  <meta content="PasteBox is a public paste platform where people can share or store information." name="description"/>
+  <meta content="PasteBox, paste, public paste" name="keywords"/>
+  <link href="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/img/favicon.ico" rel="shortcut icon"/>
+  <link href="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/css/paste.css" rel="stylesheet" type="text/css"/>
+  <style>
+  </style>
+ </head>
+ <body>
+  <div class="clearfix" id="top">
+   <!-- Start App Logo -->
+   <div class="applogo">
+    <a class="logo" href="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion">
+     PasteBox
+    </a>
+   </div>
+   <!-- End App Logo -->
+   <!-- Not yet implemented
+    <form class="searchform">
+      <input type="text" class="searchbox" id="searchbox" placeholder="Search">
+      <span class="searchbutton"><i class="fa fa-search"></i></span>
+    </form>
+	//-->
+   <!-- Start Top Menu -->
+   <ul class="topmenu">
+    <li>
+     <a href="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/archive.php">
+      View Older Pastes
+     </a>
+    </li>
+   </ul>
+   <!-- End Top Menu -->
+   <!-- Start Top Right -->
+   <ul class="top-right">
+    <li class="dropdown link">
+     <a class="dropdown-toggle profilebox" data-toggle="dropdown" href="#">
+      <b>
+       Guest
+      </b>
+      <span class="caret">
+      </span>
+     </a>
+     <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
+      <li>
+       <a data-target="#signin" data-toggle="modal" href="#">
+        Login
+       </a>
+      </li>
+      <li>
+       <a data-target="#signup" data-toggle="modal" href="#">
+        Register
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+   <!-- End Top Right -->
+  </div>
+  <!-- END TOP -->
+  <!-- Sign in -->
+  <div aria-hidden="true" class="modal fade" id="signin" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+      <h4 class="modal-title">
+       Login
+      </h4>
+     </div>
+     <div class="modal-body">
+      <form action="login.php?login" method="POST">
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-user">
+         </i>
+        </div>
+        <input class="form-control" name="username" placeholder="Username" type="text"/>
+       </div>
+       <br/>
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-key">
+         </i>
+        </div>
+        <input class="form-control" name="password" placeholder="Password" type="password"/>
+       </div>
+       <!-- Captcha -->
+       <div class="form-group pull-left captcha">
+        <div class="col-md-12 col-lg-3">
+         <div class="control-group">
+          <div class="controls">
+           <div class="input-prepend input-group">
+            <span class="add-on">
+             <img alt="CAPTCHA" class="imagever" src=""/>
+            </span>
+            <input class="form-control" name="scode" placeholder="Enter Captcha" style="height: 35px;" type="text" value=""/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="checkbox checkbox-primary">
+        <input checked="" id="rememberme" name="rememberme" type="checkbox"/>
+        <label for="rememberme">
+         Keep me signed in.
+        </label>
+       </div>
+       <button class="btn btn-default btn-block" type="submit">
+        Login
+       </button>
+       <input name="signin" type="hidden" value="bbb3700667635817646655058fba8175"/>
+      </form>
+      <br/>
+      <!-- Oauth -->
+      <!-- // -->
+      <!--
+			  <div class="footer-links row">
+			  </div>
+			  -->
+     </div>
+     <div class="modal-footer">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Sign up -->
+  <div aria-hidden="true" class="modal fade" id="signup" role="dialog" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+      <h4 class="modal-title">
+       Register
+      </h4>
+     </div>
+     <div class="modal-body">
+      <form action="login.php?register" method="POST">
+       <div class="form-area">
+        <div class="input-group">
+         <div class="input-group-addon">
+          <i class="fa fa-user">
+          </i>
+         </div>
+         <input class="form-control" name="username" placeholder="Username" type="text"/>
+        </div>
+        <br/>
+        <div class="input-group">
+         <div class="input-group-addon">
+          <i class="fa fa-user-plus">
+          </i>
+         </div>
+         <input class="form-control" name="full" placeholder="Your Name" type="text"/>
+        </div>
+        <br/>
+        <div class="input-group">
+         <div class="input-group-addon">
+          <i class="fa fa-envelope">
+          </i>
+         </div>
+         <input class="form-control" name="email" placeholder="Email" type="text"/>
+        </div>
+        <br/>
+        <div class="input-group">
+         <div class="input-group-addon">
+          <i class="fa fa-key">
+          </i>
+         </div>
+         <input class="form-control" name="password" placeholder="Password" type="password"/>
+        </div>
+        <br/>
+        <!-- Captcha -->
+        <div class="form-group pull-left captcha">
+         <div class="col-md-12 col-lg-3">
+          <div class="control-group">
+           <div class="controls">
+            <div class="input-prepend input-group">
+             <span class="add-on">
+              <img alt="CAPTCHA" class="imagever" src=""/>
+             </span>
+             <input class="form-control" name="scode" placeholder="Enter Captcha" style="height: 35px;" type="text" value=""/>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <button class="btn btn-default btn-block" type="submit">
+         Register
+        </button>
+       </div>
+       <input name="signup" type="hidden" value="bbb3700667635817646655058fba8175"/>
+      </form>
+      <br/>
+      <!-- Oauth -->
+      <!-- // -->
+      <!--
+			  <div class="footer-links row">
+			  </div>
+			  -->
+     </div>
+     <div class="modal-footer">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="content">
+   <!-- START CONTAINER -->
+   <div class="container-padding">
+    <!-- Start Row -->
+    <div class="row">
+     <!-- Start Panel -->
+     <div class="col-md-9 col-lg-10">
+      <div class="panel panel-default">
+       <div class="panel-title">
+        <span class="badge">
+         <i aria-hidden="true" class="fa fa-code fa-lg">
+         </i>
+        </span>
+        <span class="badge">
+         <i aria-hidden="true" class="fa fa-eye fa-lg">
+         </i>
+         31
+        </span>
+        <h6 style="text-align: center;">
+         BUY Methamphetamine
+         <small>
+          Guest							on 23rd June 2022 10:02:47 AM
+         </small>
+        </h6>
+        <ul class="panel-tools">
+         <li>
+          <a class="icon" href="javascript:togglev();">
+           <i class="fa fa-list-ol fa-lg" title="Toggle Line Numbers">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a class="icon" href="#" onmouseover="selectText('paste');">
+           <i class="fa fa-clipboard fa-lg" title="Select Text">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a class="icon embed-tool">
+           <i class="fa fa-file-code-o fa-lg" title="Embed This Paste">
+           </i>
+          </a>
+         </li>
+         <!-- <li><a class="icon search-tool"><i class="fa fa-search fa-lg" title="Search"></i></a></li> -->
+         <li>
+          <a class="icon expand-tool">
+           <i class="fa fa-expand fa-lg" title="Full Screen">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="panel-embed col-xs-3" style="display:none; float:right;">
+        <input class="form-control" readonly="" type="text" value='&lt;script src="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?embed&amp;id=17822"&gt;&lt;/script&gt;'/>
+       </div>
+       <div class="clear" style="clear:both;">
+       </div>
+       <!--
+					<div class="panel-search" style="display: none;">
+					  <form>
+						<input type="text" class="form-control" placeholder="Search this paste">
+						<i class="fa fa-search icon"></i>
+					  </form>
+					</div>
+                    -->
+       <div class="panel-body" style="display: block;">
+        <div id="paste">
+         <div class="">
+          <ol>
+           <li class="li1">
+            <div class="de1">
+             BUY Methamphetamine
+            </div>
+           </li>
+           <li class="li2">
+            <div class="de2">
+             We specialize in the following products: COCAINE - LSD - MDMA - METH
+            </div>
+           </li>
+           <li class="li1">
+            <div class="de1">
+             FREE DELIVERY WORLDWIDE!!!
+            </div>
+           </li>
+           <li class="li2">
+            <div class="de2">
+             http://xrvdjuk74luiuwx7ziep5wnr6grzqbk5zhwum4kg4o2qyqyttpijm3ad.onion
+            </div>
+           </li>
+          </ol>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End Panel -->
+     <div class="col-md-3 col-lg-2">
+      <!-- Guest message -->
+      <div class="widget guestmsg" style="background:#1E2933;">
+       <p class="text">
+        PasteBox is a public paste platform.
+       </p>
+       <p class="text-body">
+        <a data-target="#signin" data-toggle="modal" href="#">
+         Login
+        </a>
+        or
+        <a data-target="#signup" data-toggle="modal" href="#">
+         Register
+        </a>
+        to edit, delete and keep track of your pastes and more.
+       </p>
+      </div>
+      <!-- End message -->
+      <!-- Recent Public Pastes -->
+      <div class="panel panel-default">
+       <div class="panel-title">
+        <u>
+         <a href="/archive.php" style="color: red">
+          Recent Pastes
+         </a>
+        </u>
+       </div>
+       <div class="panel-body">
+        <div class="list-widget pagination-content">
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19173" title="Darknet Trusted[...]">
+           Darknet Trusted[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 15:13:07" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19172" title="Telegram:[...]">
+           Telegram:[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:45:24" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19171" title="Telegram:[...]">
+           Telegram:[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:39:53" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19170" title="- Buy a Driving[...]">
+           - Buy a Driving[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:37:57" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19169" title="Finally found a[...]">
+           Finally found a[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:37:27" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19168" title="Buy Passports,[...]">
+           Buy Passports,[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:34:16" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19167" title="Buy[...]">
+           Buy[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:33:17" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19166" title=".digital NHS[...]">
+           .digital NHS[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:31:17" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19165" title="Buy High Grade[...]">
+           Buy High Grade[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:30:15" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+         <p class="no-margin">
+          <a href="http://pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/paste.php?id=19164" title="Buy EU Driving[...]">
+           Buy EU Driving[...]
+          </a>
+          <button class="btn-light pull-right" data-container="body" data-content="07/16/2022 14:26:49" data-original-title="" data-placement="left" data-toggle="popover" data-trigger="focus" title="" type="button">
+           <i aria-hidden="true" class="fa fa-clock-o fa-lg">
+           </i>
+          </button>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End Panel -->
+     <div style="text-align:center;">
+     </div>
+    </div>
+    <!-- FOR COMMENTS SECTION -->
+    <div class="row">
+     <div class="col-md-9 col-lg-10">
+      <form action="" method="POST">
+       <input name="uid" type="hidden" value="Anonymous"/>
+       <input name="date" type="hidden" value="2022-07-16 16:43:39"/>
+       <textarea name="message" placeholder="Add a comment here"></textarea>
+       <br/>
+       <button name="commentSubmit" style="background-color:#AEB6BF; float: right; top:2px" type="submit">
+        Comment
+       </button>
+      </form>
+      <br/>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-md-9 col-lg-10">
+     </div>
+    </div>
+    <div class="row">
+     <!-- Guests -->
+     <div class="col-md-12 col-lg-12">
+      <div class="panel panel-default" style="padding-bottom: 100px;">
+       <div class="panel-title">
+        Raw Paste
+       </div>
+       <div class="panel-body">
+        <!-- Raw data -->
+        <div class="form-group">
+         <div class="col-md-12">
+          <textarea class="form-control" id="code" name="paste_data" onkeydown="return catchTab(this,event)" placeholder="helloworld" rows="15">BUY Methamphetamine
+We specialize in the following products: COCAINE - LSD - MDMA - METH
+FREE DELIVERY WORLDWIDE!!!
+http://xrvdjuk74luiuwx7ziep5wnr6grzqbk5zhwum4kg4o2qyqyttpijm3ad.onion</textarea>
+         </div>
+        </div>
+       </div>
+       <div class="error-pages">
+        <p>
+         <a class="btn btn-default" data-target="#signin" data-toggle="modal" href="#">
+          Login
+         </a>
+         or
+         <a class="btn btn-default" data-target="#signup" data-toggle="modal" href="#">
+          Register
+         </a>
+         . It's free.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- Start Footer -->
+    <div class="row footer">
+     <div class="col-md-6 text-left">
+      <a href="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/faqs.php">
+       FAQS
+      </a>
+      <br/>
+      Copyright © 2022
+      <a href="" target="_blank">
+       PasteBox
+      </a>
+      . All rights reserved.
+     </div>
+    </div>
+    <div style="text-align:center;">
+    </div>
+    <!-- End Footer -->
+   </div>
+   <!-- End content -->
+   <!-- Additional Scripts -->
+   <!-- Scripts -->
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/jquery.min.js" type="text/javascript">
+   </script>
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/bootstrap.min.js" type="text/javascript">
+   </script>
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/paste.js" type="text/javascript">
+   </script>
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/bootstrap-select.js" type="text/javascript">
+   </script>
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/jquery-ui.min.js" type="text/javascript">
+   </script>
+   <script src="//pasteboxx44wtzbm3ldjkcncls6uggi7mipmdwef5zza6wjqrqrtxdid.onion/theme/clean/js/datatables.min.js" type="text/javascript">
+   </script>
+   <script>
+    $(document).ready(function() {
+	 //$('#archive').DataTable();
+     $('#archive').DataTable( {
+        "order": [[ 1, "desc" ]] // Paste Time
+    } );
+} );
+   </script>
+  </div>
+ </body>
+</html>

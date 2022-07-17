@@ -1,0 +1,259 @@
+
+
+
+
+
+
+        Menu
+
+            Close
+
+
+            Home
+
+            Newsletter
+
+
+            About
+
+
+            Archives
+
+
+            Tags
+
+
+            Photography
+
+
+            Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Menu
+
+
+
+                    Kushal Das
+                    FOSS and life. Kushal Das talks here.
+                    kushal76uaid62oup5774umh654scnu5dwzh4u2534qxhcbi4wbab3ad.onion
+
+
+            Scroll
+                    Down
+
+
+
+
+
+
+                    Tunir, a simple CI with less pain
+
+                        2015-03-24T12:16:10+05:30 on
+
+                        Fedora
+
+                        Python
+
+                        Tunir
+
+
+
+
+
+
+One of my job requirement is to keep testing the latest Fedora cloud images. We
+have a list of tests from Fedora QA team. But the biggest problem is that I
+don't like doing these manually. I was looking for a way to run these
+automatically. We can do this by the normal CI systems, but there are two
+problems in that.
+
+Most CI systems cannot handle cloud images, unless there is a real cloud running somewhere.
+Maintaining the CI system & the cloud is a pain in my standard.
+
+Tunir came out as a solution to these problems. It is a simple system, which
+can run predefined set of commands in a fresh cloud instance, or in a remote
+system. Btw, did I mention that you don't need a cloud to run these cloud
+instances in your local system? This is possible thanks to the code from Mike
+Ruckman.
+Each job in Tunir requires two files, jobname.json and jobname.txt. The json
+file contains the details of the Cloud image (if any), or the remote system
+details, ram required for the vm etc. The .txt file contains the shell commands
+to run in the system. For now it has two unique commands for Tunir. You can
+write @@ in front of any command to mark that this command will return non zero
+exit code. We also have a SLEEP NUMBER_OF_SECONDS option, we use it when we
+reboot the system, and want Tunir to wait before executing the next command.
+Tunir has a stateless mode, I use that all the time :) In stateless mode, it will not
+save the results in any database. It will directly print the result in the terminal.
+$ tunir --job fedora --stateless
+
+Tunir uses redis to store some configuration information, like available ports.
+Remember to execute createports.py to fill the configuration with available ports.
+You can install Tunir using pip, a review request is also up for Fedora. If you
+are on Fedora 21, you can just test with my package.
+I am currently using unittest for the Cloud testcases, they are available at my
+github. You can use fedora.json and
+fedora.txt from the same repo to execute the tests. Example of tests running inside
+Tunir is below (I am using this in the Fedora Cloud tests).
+curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+tar -xzvf tunirtests.tar.gz
+python -m unittest tunirtests.cloudtests
+sudo systemctl stop crond.service
+@@ sudo systemctl disable crond.service
+@@ sudo reboot
+SLEEP 30
+sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+@@ sudo reboot
+SLEEP 30
+sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+
+UPDATE: Adding the output from Tunir for test mentioned above.
+sudo ./tunir --job fedora --stateless
+[sudo] password for kdas:
+Got port: 2229
+cleaning and creating dirs...
+Creating meta-data...
+downloading new image...
+Local downloads will be stored in /tmp/tmpZrnJsA.
+Downloading file:///home/Fedora-Cloud-Base-20141203-21.x86_64.qcow2 (158443520 bytes)
+Succeeded at downloading Fedora-Cloud-Base-20141203-21.x86_64.qcow2
+download: /boot/vmlinuz-3.17.4-301.fc21.x86_64 -> ./vmlinuz-3.17.4-301.fc21.x86_64
+download: /boot/initramfs-3.17.4-301.fc21.x86_64.img -> ./initramfs-3.17.4-301.fc21.x86_64.img
+/usr/bin/qemu-kvm -m 2048 -drive file=/tmp/tmpZrnJsA/Fedora-Cloud-Base-20141203-21.x86_64.qcow2,if=virtio -drive file=/tmp/tmpZrnJsA/seed.img,if=virtio -redir tcp:2229::22 -kernel /tmp/tmpZrnJsA/vmlinuz-3.17.4-301.fc21.x86_64 -initrd /tmp/tmpZrnJsA/initramfs-3.17.4-301.fc21.x86_64.img -append root=/dev/vda1 ro ds=nocloud-net -nographic
+Successfully booted your local cloud image!
+PID: 11880
+Starting a stateless job.
+Executing command: curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+Executing command: tar -xzvf tunirtests.tar.gz
+Executing command: python -m unittest tunirtests.cloudtests
+Executing command: sudo systemctl stop crond.service
+Executing command: @@ sudo systemctl disable crond.service
+Executing command: @@ sudo reboot
+Sleeping for 30.
+Executing command: sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+Executing command: @@ sudo reboot
+Sleeping for 30.
+Executing command: sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+
+
+Job status: True
+
+
+command: curl -O https://kushal.fedorapeople.org/tunirtests.tar.gz
+status: True
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8019  100  8019    0     0   4222      0  0:00:01  0:00:01 --:--:--  4224
+
+
+
+command: tar -xzvf tunirtests.tar.gz
+status: True
+
+tunirtests/
+tunirtests/cloudservice.py
+tunirtests/LICENSE
+tunirtests/testutils.py
+tunirtests/__init__.py
+tunirtests/cloudtests.py
+
+
+
+command: python -m unittest tunirtests.cloudtests
+status: True
+
+.suu
+----------------------------------------------------------------------
+Ran 4 tests in 0.036s
+
+OK (skipped=1, unexpected successes=2)
+
+
+
+command: sudo systemctl stop crond.service
+status: True
+
+
+
+
+command: @@ sudo systemctl disable crond.service
+status: True
+
+Removed symlink /etc/systemd/system/multi-user.target.wants/crond.service.
+
+
+
+command: @@ sudo reboot
+status: True
+
+
+
+
+command: sudo python -m unittest tunirtests.cloudservice.TestServiceManipulation
+status: True
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.282s
+
+OK
+
+
+
+command: sudo python -m unittest tunirtests.cloudservice.TestServiceAfter
+status: True
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.070s
+
+OK
+
+
+
+
+
+
+
+
+                        Kushal Das's Picture
+
+
+
+                        Kushal Das
+
+                        Learning to talk to a computer.
+
+                            India
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Kushal Das © 2004 - 2020
+        Proudly published with Khata

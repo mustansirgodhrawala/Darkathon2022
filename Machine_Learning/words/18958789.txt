@@ -1,0 +1,1177 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Quick links
+
+
+
+
+
+
+
+
+									Unanswered topics
+
+
+
+
+									Active topics
+
+
+
+
+
+									Search
+
+
+
+
+
+
+
+
+
+
+
+				FAQ
+
+
+
+
+
+				Login
+
+
+
+
+					Register
+
+
+
+
+
+
+
+
+
+
+
+				cryptostorm's community forum
+				there is madness to our methods
+				Skip to content
+
+
+
+
+
+
+
+						Search
+
+
+						Advanced search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							cryptostorm.ch
+										cryptostorm forum
+
+
+
+
+
+
+					Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Speeds
+
+cryptofree: full-bore cryptostorm protection... for free! Capped to 1 megabit down / 500kb up, it's a great way to use cryptostorm in a pinch. Play nice & be safe, ok?
+
+
+
+
+
+							Locked
+
+
+
+
+
+
+
+
+
+
+
+
+						Email topic
+
+
+
+
+						Print view
+
+
+
+
+
+
+
+
+
+
+
+					Search
+
+
+					Advanced search
+
+
+
+
+
+
+
+
+
+
+			13 posts
+							• Page 1 of 1
+
+
+
+
+
+
+
+
+
+
+
+
+								Cryptofree user
+
+
+
+
+
+
+
+
+
+
+
+						Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by Cryptofree user » Mon Sep 03, 2018 2:33 pm
+
+
+
+
+			Hello, for the past week or so I've been using the cryptofree service. Up until just a few hours ago it had been working great. But for some reason the speeds I've been getting torrenting have plummeted from about 100/80 to 15/30 bytes (yes, bytes) in/out. Somwhere I've seen said cryptofree is limited to around 160kbps in and 130kbps out. Is this in bytes or bits? If it is bits as the capitalization suggests then is it weird I've been getting higher speeds? I have tried with another vpn and I've been getting 400/100 on average easy.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Tue Sep 04, 2018 5:49 am
+
+
+
+
+			@OP
+
+If I remember rightly, Cryptofree is limited to 1Mb/s download speed (can't remember what the upload is).
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								Cryptofree user
+
+
+
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by Cryptofree user » Tue Sep 04, 2018 6:04 am
+
+
+
+
+			parityboy wrote:@OP
+
+If I remember rightly, Cryptofree is limited to 1Mb/s download speed (can't remember what the upload is).
+
+Any idea why my speeds dropped so much then? I can't re-test right now to see if it's sorted itself out, but I'll do that later today.
+
+Just if I wasn't clear enough; I was getting about 15KB/s in, when I should (assuming 1mb/s cap) be getting more like 125KB/s.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Wed Sep 05, 2018 3:26 pm
+
+
+
+
+			@OP
+
+I've just done a speed test using Cryptofree to grab a test file on CacheFly's CDN. I'm getting around 40-45KB/s (320-360Kbit/s).  This is on an 8Mb/1Mb ADSL connection.
+
+Could it be that Cryptofree is choking, or maybe mis-configured?
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								bentbanana223
+
+
+		Posts: 2		Joined: Tue Sep 04, 2018 6:12 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by bentbanana223 » Fri Sep 07, 2018 2:31 pm
+
+
+
+
+			Really sorry for the late reply. I've got an account now. By choking I assume you mean being limited by my bandwidth speed. If so then it's possible, but unlikely (using wifi with decent speed, just significant distance from modem). I've done some more tests and I really have no idea what's going on. I connect, test out torrenting get up to about 60/30 KB/s in/out, then I disconnect and reconnect again and it doesn't get past 20/15 KB/s in/out. Maybe I'm not leaving it long enough? I don't know. I'm using the Windows widget, what settings would you recommend?
+
+Also, some unlikely things that might be messing it up could possibly be my client (Tixati), which does display some weird behavior occasionally even with the other VPNs I've tested... Or it could possibly be something to do with port forwarding, as it was just around the time when I first tried enabling it that stuff went weird. I'll probably test again with qBittorrent soon. Thanks for your time.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Fri Sep 07, 2018 5:40 pm
+
+
+
+
+			@bentbanana223
+
+Just out of interest, why are you torrenting over Cryptofree?  Cryptofree is really a taster service and is useful for low bandwidth services such as IRC, instant messaging and email (depending on email content, obviously).
+
+It also serves as a backup if your token has just run out; tokens are dirt cheap so again, why torrent over Cryptofree?
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								bentbanana223
+
+
+		Posts: 2		Joined: Tue Sep 04, 2018 6:12 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by bentbanana223 » Sat Sep 08, 2018 9:34 am
+
+
+
+
+			I'm using it to test speeds, and since I torrent a fair bit I'm wondering why it's only getting really poor speeds at times, and if that would carry on with an actual token.
+
+Also I have tested with qBittorent and the speeds were the same.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								blurb
+
+
+		Posts: 24		Joined: Fri Dec 29, 2017 4:42 pm
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by blurb » Thu Sep 13, 2018 2:33 am
+
+
+
+
+			bentbanana223 wrote:I'm using it to test speeds, and since I torrent a fair bit I'm wondering why it's only getting really poor speeds at times, and if that would carry on with an actual token.
+
+Also I have tested with qBittorent and the speeds were the same.
+
+Torrents (well seeded ones) download as fast as the processor on my router allows. They aren't throttled or anything.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Fri Sep 14, 2018 7:14 am
+
+
+
+
+			blurb wrote:bentbanana223 wrote:I'm using it to test speeds, and since I torrent a fair bit I'm wondering why it's only getting really poor speeds at times, and if that would carry on with an actual token.
+
+Also I have tested with qBittorent and the speeds were the same.
+
+Torrents (well seeded ones) download as fast as the processor on my router allows. They aren't throttled or anything.
+
+A good test is to download a copy of Linux Mint via BitTorrent from here.
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								blurb
+
+
+		Posts: 24		Joined: Fri Dec 29, 2017 4:42 pm
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by blurb » Tue Sep 25, 2018 2:36 pm
+
+
+
+
+			parityboy wrote:blurb wrote:bentbanana223 wrote:I'm using it to test speeds, and since I torrent a fair bit I'm wondering why it's only getting really poor speeds at times, and if that would carry on with an actual token.
+
+Also I have tested with qBittorent and the speeds were the same.
+
+Torrents (well seeded ones) download as fast as the processor on my router allows. They aren't throttled or anything.
+
+A good test is to download a copy of Linux Mint via BitTorrent from here.
+
+Now that was satisfying, you're not wrong!
+
+Consistently over 4MB/s (4.25 peak) on a Asus AC68U (over clocked to 1200 MHz) on a 40Mbit connection. I don't see that often!
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Thu Sep 27, 2018 5:09 am
+
+
+
+
+			@blurb
+
+Is the VPN connection on your router or your desktop?  If it's on your router, that's pretty bloody impressive!
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								blurb
+
+
+		Posts: 24		Joined: Fri Dec 29, 2017 4:42 pm
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by blurb » Fri Sep 28, 2018 9:09 pm
+
+
+
+
+			@parityboy
+
+That's the router  (laptop connected via ethernet). Over-clocked as mentioned, and running Tomato (Kille72 fork).
+
+It's been running over clocked for a few years now without issue. When the kids are here it's continuously pushed as hard as it will go and is steady as a rock.
+
+
+
+
+
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+								parityboy
+
+						Site Admin
+		Posts: 1271		Joined: Wed Feb 05, 2014 3:47 am
+
+
+
+
+
+
+
+
+						Re: Speeds
+
+
+
+
+								Report
+
+
+
+
+
+
+						Post
+
+								by parityboy » Tue Oct 02, 2018 7:11 am
+
+
+
+
+			@blurb
+
+That sounds good.
+
+Is your connection cable, fiber or xDSL (including hybrid fiber)?  Also, would you be kind enough to document your experience in the Speed Test thread?
+
+
+
+
+									Cryptostorm Token Checker
+Cryptostorm Exit Node Status
+Cryptostorm Speed Test Thread
+Cryptostorm Client Configuration Files
+
+
+
+
+
+
+
+				Top
+
+
+
+
+
+
+
+
+
+
+
+
+							Locked
+
+
+
+
+
+
+
+
+
+
+
+
+						Email topic
+
+
+
+
+						Print view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							Display: All posts1 day7 days2 weeks1 month3 months6 months1 year
+								Sort by: AuthorPost timeSubject
+				Direction: AscendingDescending
+
+
+
+
+
+
+
+
+
+
+
+			13 posts
+							• Page 1 of 1
+
+
+
+
+
+
+
+			Return to “cryptofree: no-cost cryptostorm network access”
+
+
+
+
+
+				Jump to
+
+
+
+
+
+																				  join cryptostorm ~ network access tokens available here
+																  cryptofree: no-cost cryptostorm network access
+																  independent cryptostorm token resellers, & tokens 101
+																  member support & tech assistance
+																 ↳   guides, HOWTOs & tutorials
+																  general chat, suggestions, industry news
+																 ↳   crypto, VPN & security news
+																  cryptostorm in-depth: announcements, how it works, what it is
+																  cryptostorm reborn: voodoo networking, stormtokens, PostVPN exotic netsecurity
+																  DeepDNS - cryptostorm's no-compromise DNS resolver framework
+																  #cleanVPN  ∴ encouraging transparency & clean code in network privacy service
+																  miscl.
+																 ↳   Dumping_Ground
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				All times are UTC+05:00
+
+
+					Delete cookies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
+
+
+
+
+
+
+		 

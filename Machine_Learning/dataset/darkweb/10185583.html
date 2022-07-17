@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head data-turbolinks-eval="false">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dcrdata, an original Decred block explorer powered by Go" name="description"/>
+  <meta content="The Decred developers" name="author"/>
+  <meta content="dcrdata - The Decred Block Explorer" name="application-name"/>
+  <meta content="dcrdata - The Decred Block Explorer" name="apple-mobile-web-app-title"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="dcrdata - The Decred Block Explorer" name="twitter:title"/>
+  <meta content="Politeia Proposal - Educational Video series for Decred in the Indian Market" name="twitter:description"/>
+  <meta content="http://dcrdata5oppwcotlxkrlsp6afncnxvw54sw6jqftc4bjytm4rn27j3ad.onion/images/dcrdata400x348.png" name="twitter:image"/>
+  <meta content="dcrdata" property="og:site_name"/>
+  <meta content="dcrdata - The Decred Block Explorer" property="og:title"/>
+  <meta content="Politeia Proposal - Educational Video series for Decred in the Indian Market" property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="http://dcrdata5oppwcotlxkrlsp6afncnxvw54sw6jqftc4bjytm4rn27j3ad.onion/proposal/150cf811432b0b7d" property="og:url"/>
+  <meta content="http://dcrdata5oppwcotlxkrlsp6afncnxvw54sw6jqftc4bjytm4rn27j3ad.onion/images/dcrdata400x348.png" property="og:image"/>
+  <link href="/images/favicon/apple-touch-icon-57x57.png?v=yHh3NA" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/images/favicon/apple-touch-icon-60x60.png?v=yHh3NA" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="/images/favicon/apple-touch-icon-72x72.png?v=yHh3NA" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="/images/favicon/apple-touch-icon-76x76.png?v=yHh3NA" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/images/favicon/apple-touch-icon-114x114.png?v=yHh3NA" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/images/favicon/apple-touch-icon-120x120.png?v=yHh3NA" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/images/favicon/apple-touch-icon-144x144.png?v=yHh3NA" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="/images/favicon/apple-touch-icon-152x152.png?v=yHh3NA" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/images/favicon/apple-touch-icon-180x180.png?v=yHh3NA" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/images/favicon/favicon.ico?v=yHh3NA" rel="icon"/>
+  <link href="/images/favicon/favicon-32x32.png?v=yHh3NA" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/images/favicon/favicon-16x16.png?v=yHh3NA" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/images/favicon/site.webmanifest?v=yHh3NA" rel="manifest"/>
+  <link color="#091440" href="/images/favicon/safari-pinned-tab.svg?v=yHh3NA" rel="mask-icon"/>
+  <meta content="#091440" name="msapplication-TileColor"/>
+  <meta content="/images/favicon/mstile-144x144.png?v=65tv3" name="msapplication-TileImage"/>
+  <meta content="/images/favicon/browserconfig.xml?v=65tv3" name="msapplication-config"/>
+  <meta content="no-cache" name="turbolinks-cache-control"/>
+  <title>
+   Politeia Proposal - Educational Video series for Decred in the Indian Market
+  </title>
+  <link as="font" crossorigin="anonymous" href="/fonts/icomoon.ttf?g003m6" rel="preload" type="font/ttf"/>
+  <link as="font" crossorigin="anonymous" href="/fonts/inconsolata-v15-latin-regular.woff?x=65tv3" rel="preload" type="font/woff"/>
+  <link as="font" crossorigin="anonymous" href="/fonts/source-sans-pro-v9-latin-regular.woff?x=65tv3" rel="preload" type="font/woff"/>
+  <link as="font" crossorigin="anonymous" href="/fonts/source-sans-pro-semibold.woff?x=65tv3" rel="preload" type="font/woff"/>
+  <link as="image" href="/images/connecting.svg?x=65tv3" rel="preload" type="image/svg+xml"/>
+  <link as="image" href="/images/themes/light/logo.svg?x=65tv3" rel="preload" type="image/svg+xml"/>
+  <link as="image" href="/images/connected.svg?x=65tv3" rel="preload" type="image/svg+xml"/>
+  <link as="image" href="/images/disconnected.svg?x=65tv3" rel="preload" type="image/svg+xml"/>
+  <link href="/dist/css/style.7bf49834e62f5f4c.css" rel="stylesheet"/>
+  <script src="/js/vendor/turbolinks.min.js?v=65tv3">
+  </script>
+ </head>
+ <body class="theme-mainnet">
+  <header class="top-nav d-flex align-items-center" data-blocktime="300" id="navBar">
+   <div class="container d-flex justify-content-between align-items-center">
+    <a class="no-underline d-block home-link dcrdata-logo" href="/">
+    </a>
+    <form action="/search" class="search-form" data-action="submit-&gt;search#execute" data-controller="search" id="search-form" role="search">
+     <input autocomplete="off" class="top-search mousetrap" id="search" name="search" placeholder="Search for blocks, addresses, transactions or proposal tokens" spellcheck="false" tabindex="0" type="text"/>
+     <button class="search-bttn" type="submit">
+      <span class="dcricon-search">
+      </span>
+     </button>
+    </form>
+    <nav data-controller="menu" data-turbolinks-permanent="" id="hamburger-menu">
+     <div id="menu-toggle">
+      <input data-action="change-&gt;menu#toggle" data-menu-target="toggle" type="checkbox"/>
+      <span class="patty">
+      </span>
+      <span class="patty">
+      </span>
+      <span class="patty short">
+      </span>
+      <div id="menu">
+       <a class="menu-item" data-keynav-skip="" href="/" title="Home">
+        Home
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/blocks" title="Decred blocks">
+        Blocks
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/mempool" title="Decred mempool">
+        Mempool
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/ticketpool" title="Decred ticket pool">
+        Ticket Pool
+       </a>
+       <a class="menu-item jsonly" data-keynav-skip="" href="/charts" title="Decred charts">
+        Charts
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/agendas" title="Agendas">
+        Agendas
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/proposals" title="Proposals">
+        Proposals
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/market" title="Market">
+        Market
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/attack-cost" title="Decred Attack Cost">
+        Attack Cost
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/parameters" title="Chain Parameters">
+        Parameters
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/treasury" title="Decred Treasury">
+        Treasury
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="/decodetx" title="Decode or send a raw transaction">
+        Decode/Broadcast Tx
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="https://testnet.dcrdata.org/" title="Home">
+        Switch To Testnet
+       </a>
+       <form action="/set" class="menu-form" data-menu-target="form" method="post">
+        <input name="darkmode" type="hidden" value="darkmode"/>
+        <input name="requestURI" type="hidden" value="/proposal/150cf811432b0b7d"/>
+        <button class="menu-submit text-start w-100 p-0" data-action="click-&gt;menu#onSunClick" data-keynav-skip="" type="submit">
+         <div class="menu-item">
+          <span class="dcricon-sun-fill no-underline pe-2" id="sun-icon">
+          </span>
+          Night Mode
+         </div>
+        </button>
+       </form>
+       <a class="menu-item jsonly" data-keynav-skip="" data-turbolinks="false" href="#" id="keynav-toggle">
+        <span class="text">
+         Enable Hot Keys
+        </span>
+        <span class="keys-hint">
+         (
+         <span class="arrows">
+          ←
+          <br/>
+          →
+         </span>
+         enter  \  =  )
+        </span>
+       </a>
+       <a class="menu-item" data-keynav-skip="" href="https://github.com/decred/dcrdata#apis" rel="noopener noreferrer" target="_blank" title="API Endpoints">
+        JSON API Docs
+       </a>
+      </div>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <div class="container pb-4" data-controller="proposal">
+   <div class="row pt-2 px-2">
+    <div class="col-24 col-xl-11 bg-white px-2 px-xl-5 py-3 position-relative d-flex flex-column justify-content-between align-items-start">
+     <div class="fs22">
+      Educational Video series for Decred in the Indian Market
+     </div>
+     <div>
+      <span class="fs18 lh1rem">
+       Voting complete
+      </span>
+      –
+      <span class="text-danger">
+       rejected
+      </span>
+     </div>
+     <div class="d-flex w-100 justify-content-start p-2 my-2 secondary-card rounded">
+      <div class="col-auto lilbox px-2">
+       <div class="meter text-center js-only lil arch" data-proposal-target="approvalMeter" data-threshold="0.6" data-value="0.45111677">
+        45.1%
+       </div>
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-between ps-3">
+       <span class="fs17 lh1em">
+        <span class="fs22 medium-sans">
+         45.1%
+        </span>
+        approval of 31,340 votes (77% turnout)
+       </span>
+       <div class="d-flex align-items-center">
+        <span class="fs20 dcricon-affirm me-2">
+        </span>
+        <span class="lh1em pb-1">
+         Quorum achieved
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="d-flex justify-content-between w-100 pb-1 fs-17">
+      <a class="d-block" href="https://proposals.decred.org/record/150cf81">
+       <span class="dcricon-discussion me-2 pt-1">
+       </span>
+       Discussion
+      </a>
+      <a class="d-block" href="/proposals">
+       <span class="dcricon-back me-2 pt-1">
+       </span>
+       Proposals
+      </a>
+     </div>
+    </div>
+    <div class="col-24 col-xl-13 secondary-card px-3 position-relative d-flex justify-content-center align-items-center">
+     <table class="fs14 my-3 text-start d-flex">
+      <tbody>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Author:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         @finstreet21
+        </td>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Status:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         vetted / public
+        </td>
+       </tr>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Yes:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         14138 votes (45.1%)
+        </td>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         No:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         17202 votes (54.9%)
+        </td>
+       </tr>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Eligible:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         40853 tickets
+        </td>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Voting Period:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         <a href="/block/587291">
+          587291
+         </a>
+         –
+         <a href="/block/589563">
+          589563
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Discussion:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         9 comments
+        </td>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Updated:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         2021-08-28 15:52:53 UTC
+        </td>
+       </tr>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Version:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         v1
+        </td>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Published:
+        </td>
+        <td class="text-start py-1 text-secondary">
+         2021-08-28 15:52:53 UTC
+        </td>
+       </tr>
+       <tr>
+        <td class="text-end medium-sans text-nowrap pe-2 py-2">
+         Token:
+        </td>
+        <td class="text-start py-1 text-secondary break-word lh1rem" colspan="3">
+         150cf811432b0b7d
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+   <div class="pt-2 proposal-charts" data-hash="150cf811432b0b7d" data-proposal-target="token">
+    <div class="d-flex position-relative">
+     <div class="proposal-chart-align w-100" data-proposal-target="approval">
+     </div>
+     <div class="text-nowrap proposal-chart-legend" data-proposal-target="approvalLegend">
+     </div>
+    </div>
+    <div class="d-flex position-relative">
+     <div class="proposal-chart-align w-100 pt-1" data-proposal-target="cumulative">
+     </div>
+     <div class="text-nowrap proposal-chart-legend" data-proposal-target="cumulativeLegend">
+     </div>
+    </div>
+    <div class="d-flex position-relative">
+     <div class="proposal-chart-align w-100 pt-1" data-proposal-target="log">
+     </div>
+     <div class="text-nowrap proposal-chart-legend" data-proposal-target="logLegend">
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="navbar-fixed-bottom">
+   <div class="container d-flex justify-content-between align-items-center">
+    <span>
+     <span data-controller="time" data-stamp="1657992332" data-time-target="blocktime">
+     </span>
+     <span class="d-none d-sm-inline">
+      since last block
+     </span>
+    </span>
+    <span>
+     <a class="text-nowrap d-none d-md-inline-block pe-3" href="https://github.com/decred/dcrdata" rel="noopener noreferrer" target="_blank" title="dcrdata on GitHub">
+      dcrdata v6.1.0-pre+dev
+     </a>
+     <a class="text-nowrap" href="https://github.com/decred/dcrdata/blob/master/LICENSE" rel="noopener noreferrer" target="_blank">
+      © 2022 The Decred developers (ISC)
+     </a>
+    </span>
+    <span class="text-nowrap align-items-center clickable d-inline-block" data-action="click-&gt;connection#requestNotifyPermission" data-connection-target="indicator" data-controller="connection" data-turbolinks-permanent="" id="connection" title="While connected, you will receive live page updates and, if enabled, desktop notifications (click to enable).">
+     <span class="d-none d-sm-inline" data-connection-target="status">
+      Connecting
+      <span class="d-none d-md-inline-block">
+       to WebSocket...
+      </span>
+     </span>
+     <div>
+     </div>
+    </span>
+   </div>
+   <script data-turbolinks-eval="false" data-turbolinks-suppress-warning="" src="/dist/js/4.fde58724e0449b33.bundle.js">
+   </script>
+   <script data-turbolinks-eval="false" data-turbolinks-suppress-warning="" src="/dist/js/app.e6da7543efb726f4.bundle.js">
+   </script>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,1135 @@
+
+
+
+
+			index
+
+			/g/
+
+			/meta/
+
+			/prog/
+
+
+
+
+
+
+
+
+
+
+
+	/prog/ - Programming
+	A board dedicated solely to programming, the reason why this exists.
+
+
+[Index] [Catalog]
+
+Create a new post
+
+
+		Replying to thread 270
+		[X]
+
+
+
+
+			Name:
+			 [detach]
+
+
+			Subject:
+
+
+
+			Content:
+
+
+
+
+			Captcha
+
+
+
+
+
+
+
+
+
+
+Posts
+34 posts, 6 posters.
+
+
+
+
+
+
+
+
+
+
+		#270
+		Anonymous@fchan.xyz
+		Decentralised archive
+		07/11/21(Sun)01:00:15
+		+
+
+			[report]
+
+
+
+
+
+
+
+		Alright /prog/champs, here is a project for this year:
+>>https://fchan.xyz/b/GT4KLZ21#QMFCOQ9L
+We need to come up with a plan to achieve this utopia.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#271
+		Anonymous@fchan.xyz
+
+		07/11/21(Sun)02:00:53
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+ipfs you actual nigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#272
+		Anonymous@penchan.xyz
+
+		07/11/21(Sun)04:33:12
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>271
+>InterPlanetary File System
+wat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#273
+		Anonymous@fchan.xyz
+
+		07/11/21(Sun)06:16:45
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+apparently threads can be replies too
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#274
+		Anonymous@2hu-ch.org
+
+		07/11/21(Sun)11:04:10
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>271
+ipfs sucks shit my dude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#275
+		Anonymous@fchan.xyz
+
+		07/11/21(Sun)12:43:25
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+Seems like it shouldn't be too hard. We could probably fork an existing project, the issue is: how are we going to structure it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#276
+		Anonymous@penchan.xyz
+
+		07/11/21(Sun)13:33:20
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>273
+wow fchannel is a broken mess
+
+>>275
+>Seems like it shouldn't be too hard.
+famous last words
+>how are we going to structure it?
+i am not even sure how this sort of thing is structured
+we should do it like fchan, initially:
+some anons create an instance with what they feel is missing on the network (like how jockanon created fitchan) and them expand on that
+i bet this place is full of weebs, so anime and roms will be easy to come by at the start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#277
+		Anonymous@2hu-ch.org
+
+		07/12/21(Mon)15:58:28
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>272
+its just glorified torrent. lets you back up websites and shit like that so that they become censorship-tolerant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#278
+		Anonymous@2hu-ch.org
+
+		07/12/21(Mon)15:58:41
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>274
+what then you faggot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#279
+		Anonymous@2hu-ch.org
+
+		07/12/21(Mon)15:58:54
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>276
+ipfs you actual retard nigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#280
+		Anonymous@2hu-ch.org
+
+		07/12/21(Mon)21:03:55
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>278
+bittorrent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#281
+		Anonymous@fchan.xyz
+
+		07/12/21(Mon)21:10:03
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>280
+litearlly the same thing but ipfs is distributed better, fucking off yourself
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#282
+		Anonymous@2hu-ch.org
+
+		07/12/21(Mon)22:18:48
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>281
+>ipfs
+>better distributed than bittorrent
+lol no, not even close.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#283
+		Anonymous@penchan.xyz
+
+		07/13/21(Tue)01:53:01
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>282
+explain how nodes with random data are somehow less distributed than singular torrents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#284
+		Anonymous@2hu-ch.org
+
+		07/13/21(Tue)08:55:23
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>283
+because they don't contain random data, they just do DHT routing of requests. bittorrent swarms are far more diverse as they all have different content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#285
+		Anonymous@2hu-ch.org
+
+		07/13/21(Tue)15:00:56
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>284
+i'm not talking about diversity of data you retarded faggot i'm talking about distribution. a bunch of torrents with different things is never going to be as tolerant as an ipfs where everyone's backing up a piece of the archive that OP is talking about. fucking kill yourself
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#286
+		Anonymous@fchan.xyz
+
+		07/13/21(Tue)20:23:31
+		+
+
+			[report]
+
+
+
+
+
+
+
+		some mathfag needs to make an algo that will be used to determine how important it is for some data to be backed up
+so that all the available space on this hydra-backup thing doesn't get used for storing over9000 copies of same shit
+but that would have to take the reliability of nodes into account
+that way Sonic OC fanart goes to some shitty Raspberry Pi node that some rando set up while copy of WikiLeaks goes to a VPS that is located in proper datacanter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#287
+		Anonymous@fchan.xyz
+
+		07/16/21(Fri)03:01:03
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>286
+that would be entirely subjective wouldn't it? how would an algorithm determine what is valuable content and what is garbage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#288
+		Anonymous@fchan.xyz
+
+		07/16/21(Fri)03:03:54
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+also would this be P2P? would we implement a way to obfuscate your IP address without using a VPN or would we build off of a bittorrent style system?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#289
+		Anonymous@fchan.xyz
+
+		07/19/21(Mon)12:11:30
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>287
+yes, subjective to the user who is running the node
+and therefore user would have control over what gets stored on the node
+I imagine some sort of UI that has list of all the shit that is already archived, maybe even sorted into categories
+that way user who is donating their storage can select specifically and/or generally what they are interested in seeing preserved. algo takes that as an input, checks which of the selected shit is the most appropriate to be downloaded and starts downloading
+and maybe have a "fuck my shit up" option, that gives control of the node's content to the public, or copies content settings from some other random node
+and this UI would also have to allow user to upload new shit into the archive
+>>288
+make it optional
+brave dudes can go expose themselves with their bare IP while careful dudes can go through Tor/Lokinet/some custom VPN
+I hope that we are not re-inventing Kademilla network or similar protocol
+It might be similar to other file-sharing protocols, but from what I understand, none of those protocols were designed for preservation of the content
+if shit was popular, it was available on the network, but none of the protocols made sure that file stays available.
+Except, now that I think about it, PeerTube does that for videos.
+PeerTube is basically torrents for videos, but there is always at least one seed for the file. The server that is hosting it. So regardless of how popular video is, it is always accessible as long as server stays up. More popularity just means more peers and therefore faster transfer speed for you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#290
+		Anonymous@fchan.xyz
+
+		07/19/21(Mon)14:23:38
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>289
+hmm do you think we're better off forking something like that and modifying it slightly?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#291
+		Anonymous@fchan.xyz
+
+		07/20/21(Tue)17:10:38
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>290
+fuck do I know, someone smarter than me should be the authority on how to start such project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#292
+		sageman_@fchan.xyz!!pEAstp03m0
+
+		07/20/21(Tue)19:01:59
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+Existing technology like BitTorrent can be utilized to its maximum effect, provided the right setup.
+First, make sure that a node on the network is a tracker and it keeps "tracker agreement"s with other nodes, i.e. if one of the parties in an agreement receives an upload, then both of them will keep track of the seeds. If a new tracker joins in to track a torrent, then the torrent and magnet will be updated on the Download page and the tracker immediately gets to track it. The only problem with this approach is that while the same data is being shared, each torrent file has a drastically different set of trackers. This means that if a few key trackers gets taken down, then potentially all the seeds can be taken down from the network.
+The way data gets uploaded is by a few different ways: either you are an admin, and you have decided that you want to upload something, or you send a request to the admin in a website form with the data already uploaded to the server which the admin then decide if he wants or not. If the admin does not want random trash to be uploaded to its server, then it can opt for an alternative method: first, the user submits a form which describes the data that he would send, if the admin is interested, then he will notify the user and then the data would be sent over and be uploaded to the node. Once the data is on the node, word gets around with all the nodes which the node that just got the data uploaded to has an agreement with it, and they start tracking it.
+This plan is like the evil genius's ultimate plan to destroy the internet once for all, but that's also the reason why I don't think this would work: it looks too good on paper to work properly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#293
+		Anonymous@2hu-ch.org
+
+		07/20/21(Tue)22:54:32
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>292
+listen tripfaggot ipfs already solves all of this kys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#294
+		Anonymous@2hu-ch.org
+
+		07/20/21(Tue)23:55:58
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>293
+>ipfs
+>solves anything
+lol
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#295
+		Anonymous@fchan.xyz
+
+		07/21/21(Wed)15:18:07
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>292
+>This plan is like the evil genius's ultimate plan to destroy the internet once for all, but that's also the reason why I don't think this would work: it looks too good on paper to work properly.
+It's merely a way of providing a more sustainable method of archival, as opposed to relying on a central (or handful of different) servers to archive everything online. Right now theres like the wayback machine, archive.md, etc but those are super unreliable if it were to go to censorship requests. A federated archival site would be literally perfect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#296
+		Anonymous@fchan.xyz
+
+		07/21/21(Wed)20:18:38
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>293
+>t.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#297
+		Anonymous@2hu-ch.org
+
+		07/22/21(Thu)16:49:59
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>294
+dial8 faggot you make absolultely 0 sense with every post you make try actually saying something rather than babbling like a nigger next time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#298
+		Anonymous@fedorachan.vip
+
+		07/25/21(Sun)23:34:35
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>286
+A home-hosted server is more secure for politically sensitive content than a GPS running on hardware and in a location you don't usually trust
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#299
+		Anonymous@fchan.xyz
+
+		07/29/21(Thu)06:16:18
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+s/jews//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#300
+		Anonymous@kyogi7dxn3mr...bpid.onion
+
+		02/14/22(Mon)16:07:34
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>270 (OP)
+guys what anime is that?
+looks interesting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#301
+		Anonymous@fchan.xyz
+
+		02/15/22(Tue)02:46:39
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>300
+cereal experiments lain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#302
+		Anonymous@fchan.xyz
+
+		02/21/22(Mon)18:28:06
+		+
+
+			[report]
+
+
+
+
+
+
+
+		>>300
+honestly s.e.l was pretty boring
+its like reading philosophy but worse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#303
+		Anonymous@fchan.xyz
+
+		04/16/22(Sat)13:40:32
+		+
+
+			[report]
+
+
+
+
+
+
+
+		everybody wants decentralization but nobody wants to share some GiB of memory and network.
+
+
+
+
+
+
+
+
+
+
+
+
+				Javascript required here!
+
+
+			Theme:
+
+
+				default
+
+				gruvbox

@@ -1,0 +1,1590 @@
+
+
+
+
+
+
+
+        Main Page
+
+
+            From The Hidden Wiki
+
+
+          Jump to navigationJump to search
+
+
+
+
+
+
+                    Contents
+
+
+
+                      1 Editor's picks
+
+
+                      2 Volunteer
+
+
+                      3 Introduction Points
+
+
+                      4 Financial Services
+
+
+                      5 Commercial Services
+
+
+                      6 Domain Services
+
+
+                      7 Anonymity & Security
+
+
+                      8 Darknet versions of popular sites
+
+
+                      9 Blogs / Essays / Wikis
+
+
+                      10 Email / Messaging
+
+
+                      11 Social Networks
+
+
+                      12 Forums / Boards / Chans
+
+
+                      13 Whistleblowing
+
+
+                      14 H/P/A/W/V/C
+
+
+                      15 Hosting, website developing
+
+
+                      16 File Uploaders
+
+
+                      17 Audio - Music / Streams
+
+
+                      18 Video - Movies / TV
+
+
+                      19 Books
+
+
+                      20 Drugs
+
+
+                      21 Erotica
+
+
+                          21.1 Noncommercial (E)
+
+
+                          21.2 Commercial (E)
+
+
+
+
+                      22 Uncategorized
+
+
+                      23 Non-English
+
+
+                          23.1 Belarussian / Белорусский
+
+
+                          23.2 Finnish / Suomi
+
+
+                          23.3 French / Français
+
+
+                          23.4 German / Deutsch
+
+
+                          23.5 Greek / ελληνικά
+
+
+                          23.6 Italian / Italiano
+
+
+                          23.7 Japanese / 日本語
+
+
+                          23.8 Korean / 한국어
+
+
+                          23.9 Chinese / 中国語
+
+
+                          23.10 Polish / Polski
+
+
+                          23.11 Russian / Русский
+
+
+                          23.12 Spanish / Español
+
+
+                          23.13 Portuguese / Português
+
+
+                          23.14 Swedish / Svenska
+
+
+                          23.15 Turkish / Türk
+
+
+
+
+                      24 Hidden Services - Other Protocols
+
+
+                      25 P2P FileSharing
+
+
+                          25.1 Chat centric services
+
+
+                              25.1.1 IRC
+
+
+                              25.1.2 SILC
+
+
+                              25.1.3 XMPP (formerly Jabber)
+
+
+                              25.1.4 TorChat Addresses
+
+
+
+
+
+
+                      26 SFTP - SSH File Transfer Protocol
+
+
+                          26.1 OnionCat Addresses
+
+
+                          26.2 Bitcoin Seeding
+
+
+
+
+                      27 Dead Hidden Services
+
+
+
+
+              Welcome to The Hidden Wiki! Our official Hidden Wiki v3 url in 2021 is: http://iyptqjjxwrinw2wxheags6cknm3ix5nhc222xdab2dtimym4huqmyaqd.onion/
+              Add it to bookmarks and spread it!!!!
+
+
+
+                Attention: Tor clients will stop supporting v2 onion domains from October 15th. Please use our v3 domain from now on, and if you link the v2 address of the Hidden Wiki on your site, we kindly ask you to update it to our v3 address. Thank you!
+
+
+
+              Editor's picks
+              Pick a random page from the article index and replace one of these slots with it:
+
+
+                  The Matrix - Very nice to read.
+
+
+                  How to Exit the Matrix - Learn how to Protect yourself and your rights, online and off.
+
+
+                  Verifying PGP signatures - A short and simple how-to guide.
+
+
+                  In Praise Of Hawala - Anonymous informal value transfer system.
+
+
+                  Terrific Strategies To Apply A Social media Marketing Approach - Great tips for the internet marketer
+
+
+              Volunteer
+              Here are the six different things that you can help us out with:
+
+                Plunder other hidden service lists for links and place them here!
+                File the SnapBBSIndex links wherever they go
+
+                Set external links to HTTPS where available, good certificate, and same content.
+                Care to start recording onionland's history? Check out Onionland's Museum.
+
+                Perform Dead Services Duties
+                Remove CP shitness.
+
+              Introduction Points
+
+
+                  Ahmia.fi - Clearnet search engine for Tor Hidden Services.
+
+
+                  DuckDuckGo - A Hidden Service that searches the clearnet.
+
+
+                  Torlinks - TorLinks is a moderated replacement for The Hidden Wiki.
+
+
+                  Torch - Tor Search Engine. Claims to index around 1.1 Million pages.
+
+
+                  OnionLinks - A good link collection, calls itself the Hidden Wiki mirror.
+
+
+                  The Hidden Wiki - A mirror of the Hidden Wiki. 2 days old users can edit the main page. [redirect]
+
+
+                  Not Evil is a Tor search engine which only indexes hidden services on Tor.
+
+
+                  Self-defense Surveillance Guide Tips, Tools and How-tos for Safer Online Communications (clearnet).
+
+
+              Financial Services
+              Currencies, banks, money markets, clearing houses, exchangers:
+
+
+                  The Green Machine! Forum type marketplace with some of the oldest and most experienced vendors around. Get your paypals, CCs, etc.
+
+
+                  Fish'n'Pal place Paypal accounts with good balances - buy some, and fix your financial situation for awhile.
+
+
+                  Premium Cards Oldest cc vendor, Top quality Us & Eu credit cards!
+
+
+                  Financial Oasis A slew of products from a darker side of finance.
+
+
+                  netAuth Automatic system to buy Paypal accounts and credit cards instantly in your e-mail. Socks5 included.
+
+
+                  Save Yourself Digital financial products for sale.
+
+
+                  Hidden Wallet - Tor Anonymous Hidden Bitcoin Wallet.
+
+
+                  Paypal Baazar - paypal accounts for sale.
+
+
+                  Cash Machine - Phished PayPal, Neteller, Skrill, BoA, Wells fargo bank Accounts, Paysafecard's, US & EU Credit cards are available here.
+
+
+                  Shadow Wallet - An Anonymous User Friendly Bitcoin Wallet/Mixer.
+
+
+                  Covid Market - Escrow Accepted + CashApp, Western Union, Moneygram, Paypal, Bank & Credit Card Services.
+
+
+                  King Cashout Store - Fastest Money Transfers Since 2009! Buy Reliable CashApp, Paypal, Google Pay, Apple Pay, Skrill Transfers.
+
+
+                  Bitcards - The most trusted credit cards store in darknet with returning customers.
+
+
+                  OnionWallet - Anonymous Bitcoin Wallet and Bitcoin Laundry.
+
+
+                  KryptoPayPal - PayPal Cashout Service. Get the account balance back in Bitcoin.
+
+
+                  TOP Cards - Credit Cards, from the most Trusted Vendor in the union. Express shipping.
+
+
+                  Your C.Card Shop - Physical credit cards with High balance available to order. Paypal or bitcoins as payment method.
+
+
+                  USJUD Counterfeits - EUR || USD Western Union, counterfeits, any trusted escrow accepted, the most trusted seller.
+
+
+                  Financial Market - Prepaid cards (VISA/MasterCard). Cloned Cards. Gift Cards (VISA/Amazon/PayPal). PayPal/Western Union Transfers. Escrow Accepted!
+
+
+                  EasyCoin - Bitcoin Wallet with free Bitcoin Mixer.
+
+
+
+
+                  Black&White Cards - Black&White Cards - High Quality Pre-Paid Debit Cards with PIN. Good Customer Service. Best Deals.
+
+
+                  Real currency - Finest bills on market. Passes all known tests. Random serials. Only top-notch currency.
+
+
+                  The Cards World - Get your Financial Freedom Today.
+
+
+                  PP&CC Money vault - 24/7 automated PayPal & Credit card shop. New stock every day. Safe cashout.
+
+
+                  Cash Cards - Oldest seller on old HW. Fresh stock. 99.9% safe. Worldwide cashout! Express shipping. Escrow.
+
+
+                  Horizon Store - Automated carding store.Fast replies. 90% cards are valid.
+
+
+                  Black Store - Bank cards store with fresh stock and instant delivery. Every deal protected by Escrow service.
+
+
+                  Gemini Virtual Cards - Shop Online & Pay Bills With Virtual Credit Cards. Loaded VCC Visa & Mastercard works on all online stores.
+
+
+                  CashApp Mafia - Manipulate Cashapp transfers with CashApp Mafia v3.7 web interface. We are the best! 6 years and counting!
+
+
+                  Queens Cash - Buy Pre-Shredded USD & EURO Currency for a fraction of the value. We sell real cash.
+
+
+              Commercial Services
+
+
+                  Guns Dark Market Guns market to buy guns, full auto assault rifles, pistols, grenade launchers, etc.
+
+
+                  Counterfeiting Center A Store to buy passports, idcards, credit cards, offshore bank accounts, counterfeits money
+
+
+                  Cstore - The original CardedStore - Electronics purchased with carded giftcards, Everything Brand new. Full escrow accepted
+
+
+                  Apple Palace low priced Apple Products!
+
+
+                  Gold & Diamonds Genuine Gold, Diamonds and Rhino Horn shipped from Germany and USA.
+
+
+                  Football Money - Fixed football games info.
+
+
+                  Darknet Hacking Services - Hacker-for-hire collective providing a vast network of professional hacking services.
+
+
+                  EuroGuns - Your #1 european arms dealer.
+
+
+                  USfakeIDs - High quality USA Fake Drivers Licenses.
+
+
+                  Fake Passport ID sale - Website selling qualitative EU/US/AUS/CAN fake passports, ID cards and driver's licenses.
+
+
+                  Storex Samsung All kinds of products with escrow.
+
+
+                  Cardshop - Usa cvv know balance & Worldwide cc & cvv.
+
+
+                  Rent-A-Hacker – Hire a hacker for every job you can imagine.
+
+
+                  Kamagra for Bitcoin - Same as Viagra but cheaper!
+
+
+                  Apples4Bitcoin - Cheap Apple products for Bitcoin.
+
+
+                  Onion Identity Services - Selling Passports and ID-Cards for Bitcoins.
+
+
+                  Apple World - Carded iPhones, iPads, Macbooks, iMacs and Apple Watches shipping worldwide.
+
+
+                  TorBuy - Cloned/Prepaid Credit Cards and Money Transfers via PayPal or Western Union.Buy gift codes for Amazon, Asos, Ebay, App Store. Service Since 2015
+
+
+                  EasyPayPal - Trusted PayPal onion shop with big history. Good prices.
+
+
+                  Hidden cards - Bring dreams to reality with these amazing deals.
+
+
+                  Mobile Store - Factory unlocked iphones and other smartphones.
+
+
+                  Cards - Credit cards with high balance
+
+
+                  Low Balance CC's Get cheap low balance cards
+
+
+
+                  Bitcoin Fortune Buy New Bitcoin Miners at a discount
+
+
+                  Goldman - Fast and secure money transfers
+
+
+                  Onion shop - Specialized risk-free credit card, Western union and Paypal shop.
+
+
+                  Buy Real Money - Buy best quality cash in multiple currencies: usd, euro and gbp.
+
+
+                  Empire Market - Most popular and favorite dark web market. Everything you need. Guaranteed, stealth shipping worldwide.
+
+
+                  Light Money - Discount service of Prepaid Cards, Money Transfers and Gift Cards.
+
+
+                  Millionaire Private Club - Credit cards, PayPal, CC Fullz, Western Union,Escrow Accept
+
+
+                  Hidden paypal place - Zero-risk paypal with cashout guide. Fresh stock only.
+
+
+                  Skimmer Service - Atm skimming devices and cloned cards.
+
+
+                  Protonix Market Place - Best dark web link to buy Credit Cards, PayPal transfer, WU and Bank accounts!
+
+
+
+              Got some new sites to recommend? Click here to propose it to the Hidden Wiki.
+              Domain Services
+
+
+                  OnionName - Choose your desired domain name prefix, and order the .onion domain, starting from 0.45 mBTC for 8 letters.
+
+
+              Anonymity & Security
+
+
+                  Fake ID Generator - Fake Identity Name, SSN, Driver's License, and Credit Card Numbers Generator.
+
+
+                  BrowsInfo - Check your anonymity and browser traceability.
+
+
+              Read more:
+
+
+                  Anonymity
+
+
+                  Security
+
+
+                  Privacy
+
+
+              Darknet versions of popular sites
+
+
+                  The New York Times - Official website of the New York Times
+
+
+                  Deutsche Welle - Official website of Deutsche Welle
+
+
+                  BBC - Official website of the BBC
+
+
+                  Protonmail - Onion version of ProtonMail
+
+
+                  PornHub - The Onion version of the popular porn site
+
+
+                  The Tor Project - Official Onion website of the Tor Project
+
+
+                  The Pirate Bay - Onion version of the Pirate Bay torrent site
+
+
+                  The Pirate Bay Forum - Onion version of the popular bittorrent site's forums
+
+
+                  LocalMonero.co - You can buy and sell Monero here, via it's .onion domain
+
+
+                  The CIA - The CIA's Official Onion Site
+
+
+              Blogs / Essays / Wikis
+
+
+                  Darknet Live - Popular news site about Darknet matters
+
+
+                  Tor Metrics - Welcome to Tor Metrics, the primary place to learn interesting facts about the Tor network, the largest deployed anonymity network to date. If something can be measured safely, you'll find it here.
+
+
+                  Superkuh - Much information about spectrogram, wireless, and radio.
+
+
+                  Beneath VT - Exploring Virginia Tech's steam tunnels and beyond.
+
+
+                  Tor Against CP! - Free and clean Tor - Tor users against CP!
+
+
+                  Go Beyond A blog about politics, potatoes, technology, Tor, etc.
+
+
+                  S-Config - Blog about tech, rants, articles.
+
+
+                  ProRepublica - Investigative Journalism and News.
+
+
+                  Coarse Enigma - A Privacy and Cybersecurity Blog.
+
+
+                  TheYosh.nl - Free information for everybody.
+
+
+                  Dig Deeper - Security advices.
+
+
+              Email / Messaging
+              See also: The compendium of clear net Email providers.
+
+
+                  secMail.pro - Complete mail service that allows you to send and receive mails without violating your privacy.
+
+
+                  Mail2Tor - Mail2Tor is a free anonymous e-mail service made to protect your privacy.
+
+
+                  Elude.in - Elude.in is a privacy based email service and a Bitcoin/Monero exchange.
+
+
+                  TorBox - This is a hidden mailbox service only accessible from TOR without connection with public internet.
+
+
+                  Protonmail - Swiss based e-mail service, encrypts e-mails locally on your browser. Free and paid accounts.
+
+
+                  CTemplar - First ever high end fully encrypted tor email service.
+
+
+                  TorGuerrillaMail - Disposable Temporary E-Mail Address.
+
+
+                  Chat with strangers Talk to random users anonymously.
+
+
+                  Shielded - Security-focused mailbox hosting with customizable .ONION domain name. Payment by smart escrow (multi-sig contracts or Lightning Network transactions).
+
+
+                  Ableonion - Random chat with other tor users.
+
+
+                  TorMail - Free and secured anonymity mail service.
+
+
+                  AltAddress - A free, disposable email provider.
+
+
+                  KeyBase - Keybase is secure messaging and file-sharing.
+
+
+                  Black Hat Chat - Chat platform.
+
+
+                  GoTor Messenger - Tor-only Open-source Peer-to-peer-encrypted messenger with simi-federated network.
+
+
+              Social Networks
+
+
+                  Connect - Connect is a collective that recognizes and promotes anticapitalism, antiracism, antifascism, antisexism, antimililtarism, and anti-what-the-fuck-ever and the refusal of authoritarianism and hierarchies.
+
+
+                  Galaxy3 - Galaxy3 is a new, Social Networking experience for the darknet!
+
+
+                  Torbook 2.0 - The Facebook of Tor. Share your memories, connect with others and make friends.
+
+
+                  Facebook - The real Facebook's Onion domain. Claim not to keep logs. Trust them at your peril.
+
+
+                  Nitter - Similar to Twitter.
+
+
+              Forums / Boards / Chans
+
+
+                  The Stock Insiders - The Oldest and the Largest Insider Trading Forum. The community for exchanging Insider Information about the Publicly Traded Companies.
+
+
+                  The Intel Exchange - Know or need to know something? Ask and share at this underground intelligence gathering network.
+
+
+                  DNM Avengers - Darknet drug forum with reviews and marketplace discussion.
+
+
+                  OnionLand - Discussion forum about all the Darkweb markets related topics.
+
+
+                  Dread - ,,Reddit like website.
+
+
+                  SKYNET anonymous internet ecology forum - Blockchain technology based anonymous internet ecology. Help tor users avoid snooping Tor nodes track location.
+
+
+                  Recon - Market forum.
+
+
+                  8chan.moe - the infinitely expanding imageboard!
+
+
+                  Endchan - The imageboard at the end of the universe.
+
+
+              Whistleblowing
+
+
+                  WikiLeaks DeepWeb mirror of the famous Wikileaks website.
+
+
+                  Doxbin - A pastebin for personally identifiable information.
+
+
+                  SecureDrop - The open-source whistleblower submission system managed by Freedom of the Press Foundation.
+
+
+                  Active at Darknet Markets? - Onion set up by the Police and the Judicial Authorities of the Netherlands, listing Active, identified, and arrested Darknet Market operators.
+
+
+                  Cryptome - Archive Government Leaks. Documents for publication that are prohibited by governments worldwide, in particular material on freedom of expression, privacy, cryptology, dual-use technologies, national security, intelligence, and secret governance -- open, secret and classified documents -- but not limited to those.
+
+
+                  SecureDrop - An open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
+
+
+              H/P/A/W/V/C
+              Hack, Phreak, Anarchy (internet), Warez, Virus, Crack
+
+
+                  HeLL Forum - HeLL Reloaded is back!
+
+
+                  RelateList - New era of intelligence.
+
+
+                  CODE: GREEN - Ethical hacktivism for a better world. Join us and participate in modern world protests!
+
+
+                  Hack Canada - America is a joke and Canada is the punchline. Old-ish hacking site, hosts a few archives.
+
+
+                  Hacker Place - Site with several books and resources on software development, pentesting and hacking.
+
+
+                  WE fight censorship - a Reporters Without Borders project that aims to combat censorship and promote the flow of news and information.
+
+
+                  Ransomware Group Sites - A very slight and simple website listing active leak sites of ransomware groups.
+
+
+                  Anarchist Books - Free library of anarchist books in PDF.
+
+
+              Hosting, website developing
+
+
+                  TorVPS Shells - Free torified shell accounts, can be used for .onion hosting, IRC, etc.
+
+
+                  SporeStack API-driven VPS hosting for Bitcoin. Clearnet and hidden Tor hosting.
+
+
+                  HomeHosting - A system administrator who can set up your private home server.
+
+
+                  Prometheus_Hidden_Services - Payed hosting, provides Virtual Private Server (VPS) with Linux.
+
+
+                  darknet design — web design (HTML, CSS, PHP) plus graphics design and a few other things.
+
+
+                  Daniel's Hosting - Free hosting solution only for a non-commercial personal project.
+
+
+              File Uploaders
+
+
+                  SecureDrop - Share and accept documents securely.
+
+
+                  Stronghold Paste - Simple pastebin.
+
+
+                  Paste.onion - A pastebin launched and developed for coding communitity especially.
+
+
+                  Etherpad - Online text editor.
+
+
+                  EtherCalc - Edit uploaded documents.
+
+
+                  Just upload stuff - Upload files up to 300MB.
+
+
+                  ZeroBin - ZeroBin is a minimalist, opensource online pastebin where the server has zero knowledge of pasted data.
+
+
+                  Felixxx - Felixxx Image Uploader & Pastebin.
+
+
+                  Image Hosting - Upload your images/photos to our free image hosting.
+
+
+                  Image Upload - Multiple file formats accepted.
+
+
+                  Matrix - Image Uploader&PasteBin.
+
+
+              Audio - Music / Streams
+
+
+                  Deepweb Radio - RadioService operating over TOR.
+
+
+                  No Tone - Tunes.
+
+
+              Video - Movies / TV
+
+
+                  The Pirate Bay - Deepweb version of the famous torrent site.
+
+
+                  TGx - The torrent galaxy.
+
+
+              Books
+
+
+                  Imperial Library of Trantor - Close to one million books.
+
+
+                  Comic Book Library - Total Comics: 2484.
+
+
+                  Bible4u - uncensored Bible for Darknet.
+
+
+                  Example rendezvous points page - Thomas Paine's Common Sense and The Federalist papers.
+
+
+                  Traum library mirror - 60GB of Russian and English books. A mirror of the latest Traum ISO. Covers, search and downloads in FB2, HTML and plain TXT.
+
+
+                  ParaZite - Collection of forbidden files and howto's (pdf, txt, etc.).
+
+
+                  Jotunbane's Reading Club "All your ebooks belong to us!".
+
+
+                  Liberated Books and Papers A small collection of hard to find books.
+
+
+                  Clockwise Library A collection of art and science books.
+
+
+                  The Last of PAPYREFB2 A collection of mostly Spanish books.
+
+
+                  Paul Dreyer's eBook Library - DRM-Free Growing eBook Library, mostly in ePub format.
+
+
+                  BB Compendium - A collection of chemistry, drugs, explosives, fireworks, pyrotechnics, science, and weapons related documents.
+
+
+                  The Incorrect Library - 1100 books (and counting...) Beautifully prepared in E-Pub format, with a focus on publishing politically incorrect books.
+
+
+                  Comic Book Library - Collection of comic books, largely independent.
+
+
+                  The Library A collection of hard to find books.
+
+
+                  Bible - several links for downloading versions of the Bible.
+
+
+                  Libraries A more complete list.
+
+
+              Drugs
+
+
+                  Drug Market - Anonymous marketplace for all kinds of drugs.
+
+
+                  Greenroad - Biggest marketplace with full working escrow.
+
+
+                  Weed&Co - Weed / Cigarettes ... Prix Bas / Low Price ... weed / cigarette
+
+
+                  EuCanna - 'First Class Cannabis Healthcare' - Medical Grade Cannabis Buds, Rick Simpson Oil, Ointments and
+
+
+                  Peoples Drug Store - The Darkweb's Best Online Drug Supplier
+
+
+                  Smokeables - Finest Organic Cannabis shipped from the USA
+
+
+                  CannabisUK - UK Wholesale Cannabis Supplier
+
+
+                  DeDope - German Weed and Hash shop (Bitcoin)
+
+
+                  BitPharma - EU vendor for cocaine, speed, mdma, psychedelics and subscriptions
+
+
+                  Brainmagic - Best psychedelics on the darknet
+
+
+                  NLGrowers - Coffee Shop grade Cannabis from the netherlands
+
+
+                  The Pot Shop - Weed and Pot Shop Trading for longer than a year now! (Bitcoin) -UPGRADED DOMAIN-
+
+
+                  Steroid King - All the steroids you need. (Bitcoin)
+
+
+                  Wacky Weed - Hi Quality Green at Wacky Prices
+
+
+                  Midland City - Weed, hash, benzos, ketamine, heroine, mdma, digital goods. Best price/quality
+
+
+              Erotica
+              Noncommercial (E)
+
+
+                  Fappening Onion Compilation - Leaked celebrity nudes.
+
+
+                  Semen alert - The last time I ejaculated was...
+
+
+              Commercial (E)
+
+
+                  Darkscandals Real rape, humiliation, forced videos and much more extreme videos! (Pack 8 is out! More than 1800 video files in the packs).
+
+
+                  TeenPorn The best selection of amateur teen porn videos from the deep web
+
+
+              Uncategorized
+
+
+                  Bibliogram - Bibliogram is a website that takes data from Instagram's public profile views and puts it into a friendlier page that loads faster, gives downloadable images.
+
+
+                  TorStatus - Connection stats.
+
+
+                  Darktea - A git server.
+
+
+              Services that defy categorization, or that have not yet been sorted.
+
+
+                  IIT Underground - Information on and photos of the steam tunnels and roofs at the Illinois Institute of Technology.
+
+
+                  Creepy doge token - Creepy doge token
+
+
+              Non-English
+              Belarussian / Белорусский
+              Finnish / Suomi
+
+
+                  Thorlauta - Thorlauta.
+
+
+                  Silkkitie - Silkkitie.
+
+
+              French / Français
+
+
+                  French Freedom Zone - Malwares, Hacking, Dev, Esotérisme | Elitisme & Aristocratie.
+
+
+                  FrChan - FrChan est un système de forum où vous pouvez communiquer rapidement et librement.
+
+
+                  French World - French forum.
+
+
+                  Cyberdéfenseur - Dernières actualités juridiques & informatiques. Collectif d'informaticiens et de juristes.
+
+
+                  Hommage à Napoleon - Place in memory of Napoleon, the architect of most of the french deepweb.
+
+
+                  Démocratie Participative - Uncensored french news website
+
+
+                  Liberty's Hackers - Liberty's Hackers & French Deep Web Wiki - sharing everything.
+
+
+                  French Deep Web - an administered and moderate French board (1er forum francophone).
+
+
+                  Trollodrôme - Forum non modéré.
+
+
+                  Le Conseil de la Vouivre - Mysterious French website
+
+
+                  Le Tesseract - Club occulte, de retour après quelques années de silence!
+
+
+              German / Deutsch
+
+
+                  Deutschland - Informationskontrolle, nein Danke!
+
+
+                  Tagesschau - German News website.
+
+
+                  konkret - das linke Magazin: Archiv.
+
+
+                  MadIRC - Deutscher IRC-Channel.
+
+
+              Greek / ελληνικά
+              Italian / Italiano
+
+
+                  BlackHost - A small website developed by an Italian programmer.
+
+
+                  New System Disorder - Italian Hackers Community - Stay Tuned!
+
+
+                  IDC Reloaded - Italian DarkNet Community - Canale IRC
+
+
+              Japanese / 日本語
+
+
+                  OnionChannel - Onion Channel, a system similar to 2channel.
+
+
+                  Japan Hidden Wiki - Links to Japan onions.
+
+
+              Korean / 한국어
+
+
+                  Korean Hidden Wiki - 한국어 히든 위키 페이지입니다. [internal link]
+
+
+              Chinese / 中国語
+              Polish / Polski
+
+
+                  Teczkohen - powrót obrazkowego forum o tematyce stalking.
+
+
+                  Polska Ukryta Wiki - polski odpowiednik THW.
+
+
+                  Cebulka Najstarsze działające polskie forum.
+
+
+                  Dimension X Ukryta baza Krang w sieci Tor!
+
+
+              Russian / Русский
+
+
+                  Verified - Russian multi forum.
+
+
+                  Ros - Russian news website and more.
+
+
+                  Runion Wiki - Russian Wiki/Русский OnionLand.
+
+
+                  Зеркало библиотеки Траума - Бесплатная библиотека. Обложки, поиск и возможность скачивать в форматах FB2, HTML и TXT.
+
+
+                  РосПравосудие - крупнейшая картотека юристов, адвокатов, судей и судебных решений (50+ миллионов документов, 35+ тысяч судей, 65+ тысяч адвокатов, сотни тысяч юристов, прокуроры). «РосПравосудие» - аполитичный и независимый проект.
+
+
+                  China Market - китайский маркет. Всегда свежие поставки из Китая: каннабиноиды, MDMA кристаллы, экстази, LSD. Доставка без пересечения границы, есть представители в России, Украине и Казахстане. Автоматическое оформление, оплата и получение заказа. Методы оплаты: Bitcoin, Qiwi, Приват24, наличкой через терминалы.
+
+
+                  Rutor - главный форум черного рынка.
+
+
+                  Схоронил! Архив magnet-ссылок.
+
+
+                  Флибуста - Библиотека.
+
+
+              Spanish / Español
+
+
+                  El Chat de Eliza - Chat anónimo en español. Publica tu experiencia con El Cannabis de Eliza o lo que te apetezca.
+
+
+                  CebollaChan 3.0 - CebollaChan, el tor-chan en Castellano.
+
+
+                  TorPez - Foro de seguridad informatica entre otras cosas.
+
+
+              Portuguese / Português
+
+
+                  Tudo Sobre Magia e Ocultismo - Site sobre Magia,Ocultismo,Esoterismo e Mitologia.
+
+
+                  [1] - Terminal Internet Livre - Internet Freedom for Portuguese-speakers.
+
+
+              Swedish / Svenska
+
+
+                  KognitionsKyrkan, clearnet - Spiritual stuff.
+
+
+                  Moral.Nu, clearnet - Vad r moral?
+
+
+              Turkish / Türk
+
+
+                  Deep Web Türkçe İndex - Turkish website indexer.
+
+
+              Hidden Services - Other Protocols
+              Volunteers last verified that all services in this section were up, or marked as DOWN, on: 2011-06-08 For configuration and service/uptime testing, all services in this section MUST list the active port in their address. Exception: HTTP on 80, HTTPS on 443. For help with configuration, see the TorifyHOWTO and End-to-end connectivity issues.
+              P2P FileSharing
+              Running P2P protocols within Tor requires OnionCat. Therefore, see the OnionCat section for those P2P services. IMPORTANT: It is possible to use Tor for P2P. However, if you do, the right thing must also be done by giving back the bandwidth used. Otherwise, if this is not done, Tor will be crushed taking everyone along with it.
+
+
+                  The Pirate Bay - The Pirate Bay.
+
+
+              Chat centric services
+              Some people and their usual server hangouts may be found in the Contact Directory.
+              IRC
+              Use e.g. ChatZilla add-on for the IRC protocol (the Tor Project does not suggest installing browser addons unless you understand the risks), or a standalone client such as HexChat. Tails comes with Pidgin, which will work for IRC as well.
+
+
+                  Agora Anonymous - Agorist IRC server
+
+
+
+                plaintext ports: 6667
+
+
+
+                  ANYChat
+
+
+
+
+                  plaintext ports: 6667; ssl: 6697
+
+
+
+
+                  DeepIRC
+
+
+
+                plaintext ports: 6667
+
+
+                Federation: OnionNet - IRC network comprised of:
+
+                    onionirczesfffux.onion:6667 Juppi IRC - Juppi's IRC server.
+
+                    onionirccaaakegi.onion:6667 Juppi IRC (old ___) - Juppi's other IRC server.
+
+                    onionirc2udqrqpo.onion:6667 YankeeGuy IRC - YankeeGuy's IRC server.
+
+
+                FreedomIRC - gopher or http
+
+
+                      irc.freedom.net (alt link)
+                      plaintext ports: 6667
+
+
+
+
+                  FREEFOR - FREEdom FORces - see Political Advocacy
+
+
+                  hackint - hackint is a communication network for the hacker community.
+
+
+
+                running on lechuck.hackint.org; ssl ports: 9999; no plaintext ports
+
+
+
+                  HeavyCrypto - HeavyCrypto IRC
+
+
+
+                ssl ports: 6697; no plaintext ports
+
+
+
+                  KeratNet - Kerat
+
+
+
+
+                  plaintext ports: 6667; ssl: 6697
+
+
+
+
+                  KillYourIRC - onion for irc.killyourtv.i2p
+
+
+
+
+                  plaintext ports: 6667; ssl: 9999
+
+
+
+
+                  Nazgul - free for all IRC network
+
+
+
+
+                  plaintext ports: nazgul3zxuzvrgg6.onion:6667
+
+
+                  ssl ports: irc.nazgul.io:6697 __undefined__ (SSL)
+
+
+
+
+                  OnionIRC - New, censorship-free IRC server.
+
+
+
+                plaintext ports: 6668
+
+
+
+                  OpenSource, info - Drug chat
+
+
+                  public.ronsor-router.lan - Freelinking server owned by Ronsor
+
+
+
+
+                  plaintext ports: 6667; SSL ports: 6697
+
+
+
+
+                  Smokey's Grill - General chat IRC. Doesn't allow plotting the abuse of other people.
+
+
+
+                plaintext ports: 6667
+
+
+
+                  Volatile - we back
+
+
+                      irc.krustykrab.restaurant - owned by wowaname
+                      plaintext ports: 6667, 7777; ssl: 6697, 9999.
+
+
+                      kitsune6uv4dtdve.onion - owned by wowaname
+                      plaintext ports: 6667, 7777; ssl: 6697, 9999.
+
+
+
+
+
+
+
+                  Anonimowy IRC - Anonimowy IRC (Polish anonymous IRC server) __undefined__
+
+
+
+                plaintext ports: 6667; ssl:6697
+
+
+
+                  hackint - Old hidden service?
+
+                irc2p onion gateways:
+
+
+                      irc.echelon.i2p - Gateway provided by chisquare / psi of All You're Base
+
+
+                      irc.postman.i2p
+
+
+
+
+                  NeoturbineNET IRC - NeoturbineNET IRC server
+
+
+
+                running on kropotkin.computersforpeace.net; ssl ports: 6697; no plaintext ports
+
+
+
+                  OFTC IRC - OFTC - unofficial hidden service for OFTC
+
+
+
+                running on: (various).oftc.net, ports:: plaintext: 6667 ssl: 6697
+
+
+
+                  prooops.eu IRC - prooops.eu IRC (Clearnet http://irc.prooops.eu/)
+
+
+
+                plaintext ports: 6667; ssl: 6697
+
+
+                WANNABE: Federation OnionNet :
+
+
+                      New Ngircd - Yep this is a new ircd in OnionLands looking for peering in OnionNet
+
+
+
+
+                  freenode IRC - requires SASL authentication to an already existing NickServ account
+
+
+                      2hktdmgt6bg2hjuc.onion
+
+
+                      frxleqtzgvwkv7oz.onion
+
+
+                      l4wvhvf666nifnpg.onion
+
+
+                      p4fsi4ockecnea7l.onion
+
+
+                      p567hbjdstqvg7xw.onion
+
+
+                      vgh6tbfjk65zj5ep.onion
+
+
+
+
+
+                All of these direct to zelazny.freenode.net and allow plaintext port 6667 as well as SSL ports 6697, 7000, and 7070.
+
+
+
+
+
+
+
+                      Below is a list of DEAD irc servers from Anonet:
+
+
+                          AnoNet - Each server is on its own network and connects to a chat cloud
+
+
+                              irc1.srn.ano, clearnet
+
+                            elef7kcrczguvamt.onion:15783 - Direct access to the AnoNet chat cloud. Use an IRC server to connect.
+
+                              irc3.srn.ano
+
+
+                              irc2.srn.ano, clearnet - Still connects to the old AnoNet chat cloud; that will soon change.
+
+
+                              irc4.srn.ano
+
+
+                              irc.cananon.ano Web Chat Version join #Anonet
+
+
+
+
+
+
+
+
+              SILC
+
+                fxb4654tpptq255w.onion:706 - SILCroad, public server. [discuss/support]
+
+                <protect>Silkroad 2.0 - The new silkroad. Biggest marketplace for drugs on the Darknet. (Bitcoin)</protect>
+
+                kissonmbczqxgebw.onion:10000 - KISS.onion - Keep It Simple and Safe - ditch the web browser, use SILC to communicate securely (using Pidgin with OTR)
+
+
+              XMPP (formerly Jabber)
+
+
+                  xmpp:tortureregex47xf.onion:5222 - Public XMPP with MUC (multi user chat) enabled. No Child Porn and racism here, any breach will result in a ban. Maintained by Creative Hack
+
+
+                  xmpp:okj7xc6j2szr2y75.onion:5222 - xmpp:jabber.ccc.de:5222 as a hidden service
+
+
+                  xmpp:libertygb2nyeyay.onion:5222 - instant messager for Liberty's Hackers - chat room for Liberty's Hackers and french users - chat room for international sharing - Create your own public or private MUC - federation onion activated - No CP and no Racism please - web clients : https://libertygb2nyeyay.onion:5281/candy http://libertyy56ecbupa.onion/im/jappix/
+
+
+                  xmpp:cyjabr4pfzupo7pg.onion:5222 - CYRUSERV Community Jabber, a public server ran by CYRUSERV.
+
+
+              TorChat Addresses
+              Humans are listed in the above contact directory. Bots are listed below.
+
+                7oj5u53estwg2pvu.onion:11009 - TorChat InfoServ #2nd, by ACS.
+
+                gfxvz7ff3bzrtmu4.onion:11009 - TorChat InfoServ #1st, by ACS...
+
+
+              SFTP - SSH File Transfer Protocol
+              These SFTP clients work with Tor: WinScp, FileZilla. Set proxy to SOCKS5, host 127.0.0.1, port 9150 (Windows,Mac) or 9050 (Linux). Encrypt your sensitive files using GnuPG before uploading them to any server.
+
+                kissonmbczqxgebw.onion:10001 - KISS.onion - SFTP file exchange service (username "sftp.anon", password "anon")
+
+              OnionCat Addresses
+              List of only the Tor-backed fd87:d87e:eb43::/48 address space, sorted by onion. There are instructions for using OnionCat, Gnutella, BitTorrent Client, and BitTorrent Tracker.
+
+                62bwjldt7fq2zgqa.onion:8060
+
+                    fd87:d87e:eb43:f683:64ac:73f9:61ac:9a00 - ICMPv6 Echo Reply
+
+
+                a5ccbdkubbr2jlcp.onion:8060 - mail.onion.aio
+
+                    fd87:d87e:eb43:0744:208d:5408:63a4:ac4f - ICMPv6 Echo Reply
+
+
+                ce2irrcozpei33e6.onion:8060 - bank-killah
+
+                    fd87:d87e:eb43:1134:88c4:4ecb:c88d:ec9e - ICMPv6 Echo Reply
+                    [fd87:d87e:eb43:1134:88c4:4ecb:c88d:ec9e]:8333 - Bitcoin Seed Node
+
+
+                taswebqlseworuhc.onion:8060 - TasWeb - DOWN 2011-09-08
+
+                    fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2 - ICMPv6 Echo Reply
+                    http://[fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2]/
+                    gopher://[fd87:d87e:eb43:9825:6206:0b91:2ce8:d0e2]:70/
+
+
+                vso3r6cmjoomhhgg.onion:8060 - echelon
+
+                    fd87:d87e:eb43:ac9d:b8f8:4c4b:9cc3:9cc6 - ICMPv6 Echo Reply
+
+
+
+              Bitcoin Seeding
+              Instructions
+
+                xqzfakpeuvrobvpj.onion:8333
+                z6ouhybzcv4zg7q3.onion:8333
+
+              Dead Hidden Services
+              Do not simply remove services that appear to be offline from the above list! Services can go down temporarily, so we keep track of when they do and maintain a list of dead hidden services.
+
+                In addition to an onion simply being gone (Tor cannot resolve the onion), sites that display 404 (and use a known onion/URL based hosting service) are the only other thing that is considered truly DOWN. Presumably the account is gone.
+
+
+                If a service has been down for a while, tag it with ' - DOWN YYYY-MM-DD' (your guess as to when it went down).
+                If a tagged service on the above list of live hidden services has come back up, remove the DOWN tag.
+                If a tagged service is still down after a month, please move it (along with the DOWN tag) to the list of dead hidden services.
+
+
+                The general idea of the remaining four service states below is that, if the Hidden Service Descriptor is available, and something is responding behind it... the service is considered up, and we track that fact on the Main Page. If any of these subsequently go offline, append the DOWN tag and handle as above.
+
+
+                Hello world's / statements, minimal sites, services with low user activity, etc (while boring)... are listed as usual.
+                Broken services are those that display 404 (and do not use a known hosting service), PHP or other errors (or they fail silently)... any of which prevent the use of the service as intended. They also include blank pages, empty dirs and neglected status notes. Presumably the operator is in limbo. Broken services are tagged with ' (reason) - Broken YYYY-MM-DD' (your guess as to when it went broken)
+                Services that automatically redirect to another service (such as by HTTP protocol or script), have their redirection destinations noted in their descriptions. These are tagged with ' - Redir YYYY-MM-DD' (your guess as to when it went redir)
+                Sites that are formally closed via announcement are tagged with ' - Closed YYYY-MM-DD' (your guess as to when it went closed.
+
+
+                Is Online that HiddenService? This service is very useful in determining whether onions are up or not. It also gives a reason why they are down.
+
+              Sites on this list that have no chance of coming back (LE takedowns, dead for some time) should be archived to page dead services just in case they should ever be needed.
+
+
+
+
+            Retrieved from "http://iyptqjjxwrinw2wxheags6cknm3ix5nhc222xdab2dtimym4huqmyaqd.onion//wiki/index.php?title=Main_Page&oldid=494525"
+
+
+
+
+
+
+
+      Navigation menu
+
+        Page actions
+
+
+
+              Main page
+
+
+              Discussion
+
+
+              View source
+
+
+              History
+
+
+
+
+
+        Page actions
+
+
+
+              Main page
+
+
+              Discussion
+
+
+              More
+
+
+              Tools
+
+
+
+
+
+        Personal tools
+
+
+
+              Create account
+
+
+              Log in
+
+
+
+
+
+
+
+
+
+          Navigation
+
+
+
+                Main page
+
+
+                Recent changes
+
+
+                Random page
+
+
+                Rules of the site
+
+
+
+
+
+          Search
+
+
+               
+
+
+
+
+          Tools
+
+
+
+                What links here
+
+
+                Related changes
+
+
+                Special pages
+
+
+                Printable version
+
+
+                Permanent link
+
+
+                Page information
+
+
+
+
+
+
+
+
+
+
+
+
+        This page was last edited on 17 July 2021, at 10:44.
+
+          Privacy policy
+
+
+          About The Hidden Wiki
+
+
+          Disclaimers

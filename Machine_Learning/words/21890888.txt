@@ -1,0 +1,171 @@
+
+
+
+
+
+
+
+
+					https://blendbit.net
+					https://blendbit.top
+					http://treoijk4ht2if4ghwk7h6qjy2klxfqoewxsfp3dip4wkxppyuizdw5qd.onion
+
+
+
+
+
+
+					Blenderio
+
+
+
+
+
+
+
+
+
+								EN
+
+									EN
+									RU
+
+
+
+								FAQ
+								Service fees
+								News
+								Madeamaze
+
+
+								Blender Wallet
+
+
+
+							© 2022 Blenderio
+
+								Protecting your anonymity since 2017
+								Service address: 15PggTG7YhJKiE6B16vkKzA1YDTZipXEX4
+
+
+								Bitcointalk
+								Telegram english
+								Telegram russian
+
+
+								[email protected]
+								E-mail for advertisement questions:[email protected]
+
+
+					https://blendbit.net
+					https://blendbit.top
+					http://treoijk4ht2if4ghwk7h6qjy2klxfqoewxsfp3dip4wkxppyuizdw5qd.onion
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    FAQ
+
+
+                        Why do I need a bitcoin mixer?
+                        Mixer breaks the connection between your transactions before and after using it. You send bitcoins from your address to the mixer address. After that the mixer sends you bitcoins from its premixed reserve. Bitcoins in this reserve have no connection to your addersses. An observer, analyzing the chain of transations in the blockchain, is unaware of the change in ownership of bitcoins, therefore any following bitcoins passed through the mixer is no longer practical. This way the mixer ensures the anonymity of your transaction in blockchain.
+                        The service does not guarantee that the result of the mixing will have low risk score after the AML check. Therefore it is not recommended to send the coins you receive from mixing straight to the exchanges.
+
+                        What is the difference between mixer fees?
+
+
+                                The higher the service fee you use, the higher the network fee the mixer will send you the result with.
+                                All fee values are dynamic, except for the minimum - it is fixed.
+                                Higher fees increase anonymity, as they are less common and less obvious to the analysis based on comparing transaction amounts.
+
+
+                        Based on all this, it's usually recommended to use a fee above the minimum, and to choose from the rest according to your own needs.
+
+                        What is the mixing code?
+                        After your first mixing you will get the mixing code. You can use this code in next operations to be ensured that you will not receive the coins you've previously sent to Blenderio.
+
+                        What to do in case the bitcoins are not arrived?
+                        You can read about it here.
+
+                        Common mixing mistakes
+                        You can read about it here.
+
+                        I closed the browser window. Where can I see the status of my mixing?
+                        Сopy the transaction hash, the mixer’s address or address you sent the funds from and paste it to the search bar of any blockchain explorer. In case the transaction sent to the mixer doesn’t have three confirmations, it means the mixer hasn't got the funds yet. Wait for three confirmations.
+                        The result of mixing is sent after three confirmations are received and after the delay time is passed (the countdown starts after the third confirmation is received). Furthermore, in order to improve privacy the service can set an additional randomized delay with a duration of several minutes.
+
+                        I sent a transaction to the mixer but it does not get confirmed for a long time. What can I do?
+                        If your transfer stays unconfirmed for a long time, this means that you or the service from which you've sent bitcoins has set too low network fee for the transaction. In this case, the following solutions to the problem are possible:
+
+                            You can keep waiting for the transaction to confirm. Sometimes, it can take up to several days, but do not worry - the mixer will wait for the confirmation of the transaction and process your mixing;
+                            You can also speed up the transaction with a Replace-by-fee if your wallet supports this. The service correctly processes transactions re-issued with Replace-by-fee. Note! Do not use Replace-by-fee to speed up a mixer transaction if the mixer address has expired. The mixer may lose your payment and then the mixing will not be processed. In this case, you will have to contact the support and wait for the refund to be made, if technically possible.
+
+
+                        Does the mixer clean bitcoins?
+                        No. The mixer neither cleans bitcoins nor guarantees that the mixing result will have a low scoring risk and will not be blocked by an exchange. Sometimes the mixing result has a low scoring risk; however, it is not guaranteed and achieving a low risk is not the mixer’s primary function. The main goal of the mixer is to anonymize bitcoins by breaking the link between your transactions before and after the mixing.
+
+                        Does Blenderio store logs?
+                        Blenderio does not store any information about transactions completed within the service. All information is deleted after the result is successfully sent to the destination address.
+
+                        What is the minimum amount for mixing and how is it calculated?
+                        The minimum mixing amount for a destination address is 0.001 BTC. But in some cases, when you create a mixing with several destinations, this amount may be bigger. Please pay attention to the minimum amount when creating a mixing. It is located on the result page below the mixing address.
+
+                        What is the maximum mixing amount?
+                        This depends on the amount of coins in our reserve at the moment of mixing. The actual amount can be seen when you create a mixing. It is given on the last page, next to the mixer’s address.
+
+                        I sent bitcoins to the mixer. The transaction was waiting for confirmation for a long time. After that, the period of validity of mixer’s address elapsed (after 24 hours), however, the transaction was not confirmed. Will I lose my bitcoins?
+                        No. 24 hours is the period of time during which the mixer awaits your transaction in the network. After that the mixer will wait for confirmations until the transaction is processed or rejected by network. The mixing will be successfully completed after your transaction gets three confirmations.
+
+                        I sent bitcoins to the mixer after the period of validity of mixer’s address elapsed (after 24 hours).
+                        Contact the support and explain the situation. The support will make a refund if possible. If you have the Letter of Guarantee at hand, please attach it.
+
+                        The amount I sent to the mixer is less than the minimum.
+                        Contact the support and explain the situation. The support will make a refund if possible. If you have the Letter of Guarantee at hand, please attach it.
+
+                        How does the mixer work?
+                        Blenderio is a service that receives coins from you and gives you back other coins that not relate to you. By doing so, the mixer breaks the link between your operations before and after the use of mixer.
+                        The coins you send get to the mixer reserve where they are mixed with other coins in several stages. The recipients you specify will get mixed coins from the reserve; those coins will not relate to you.
+                        The mixer’s goal is to anonymize your transaction and break any links between your address (the sender’s) and the destination address.
+
+                        How to use the mixer?
+                        To transfer funds, on the main page, you need to specify one or more recipient addresses (also notice that a fee will be charged for each address), specify the delay and the distribution of funds between destination addresses. Then download a guarantee letter(this is important) and send funds to the address provided by the mixer. Pay attention to the minimum amount the mixer can process.
+
+                        Can I trust Blenderio large amounts of bitcoins?
+                        Our mixing model is properly tested and works perfectly. However, you can mix small coins portions if you have any doubts, to ensure step by step that everything is crystal clear.
+
+
+
+
+
+
+
+
+
+
+
+							© 2022 Blenderio
+
+
+							Protecting your anonymity since 2017
+							Service address: 15PggTG7YhJKiE6B16vkKzA1YDTZipXEX4
+
+
+
+
+							Bitcointalk
+							Telegram english
+							Telegram russian
+							Telegram bot
+
+
+							[email protected]
+							E-mail for advertisement questions:[email protected]

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="https://schema.org/ItemPage" lang="en-US" prefix="og: http://ogp.me/ns# article: https://ogp.me/ns/article# twitter: https://api.twitter.com/#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+  <title>
+   Set up distributed compilation with Icecream in Fedora Linux | Ctrl blog
+  </title>
+  <meta content="Set up distributed compilation with Icecream in Fedora Linux" itemprop="https://schema.org/name" name="title" property="og:title"/>
+  <meta content="Set up distributed compilation with Icecream in Fedora Linux" property="og:title"/>
+  <meta content="How to speed up compilation time with Icrecream/icecc by setting up distributed compilation using all PCs available to you." itemprop="https://schema.org/description" name="description"/>
+  <meta content="How to speed up compilation time with Icrecream/icecc by setting up distributed compilation using all PCs available to you." property="og:description"/>
+  <meta content="light dark" name="color-scheme"/>
+  <style>
+   .hero-image .u-featured{background-color:#121a26}
+    .entry-content a[rel~='sponsored']{text-decoration-color:#b56770}
+    .entry-content a[rel~='sponsored'][href^='https://www.amazon.com/']{text-decoration-color:#f3b600}
+  </style>
+  <link href="../assets/css/site-f01d5.css" rel="stylesheet"/>
+  <link href="../assets/css/site-wide-4092e.css" media="(min-width:564px)" rel="stylesheet"/>
+  <link href="../assets/css/entry-5607d.css" rel="stylesheet"/>
+  <link href="../assets/css/figure-code-e46e2.css" rel="stylesheet"/>
+  <link href="../assets/css/entry-wide-5af71.css" media="(min-width:564px)" rel="stylesheet"/>
+  <link href="../assets/logo/logo-square.svg" itemprop="https://schema.org/image" rel="icon" sizes="any" type="image/svg+xml"/>
+  <link href="https://feed.ctrl.blog/latest.atom" rel="alternate" title="Ctrl blog" type="application/atom+xml"/>
+  <link href="https://comment.ctrl.blog/discussion/how-to-icecc-distributed-compiler" itemprop="https://schema.org/discussionUrl" rel="webmention"/>
+  <link href="https://www.ctrl.blog/entry/how-to-icecc-distributed-compiler.html" itemprop="https://schema.org/url" rel="canonical"/>
+  <meta content="https://www.ctrl.blog/entry/how-to-icecc-distributed-compiler.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="https://www.ctrl.blog/media/hero/pyramid-stacked-ice-cubes.1y1.jpeg" name="twitter:image"/>
+  <meta content="https://www.ctrl.blog/media/hero/pyramid-stacked-ice-cubes.1280x720.jpeg" property="og:image"/>
+  <meta content="1280" property="og:image:width"/>
+  <meta content="720" property="og:image:height"/>
+  <meta content="https://www.ctrl.blog/media/hero/pyramid-stacked-ice-cubes.4y3.jpeg" property="og:image"/>
+  <meta content="960" property="og:image:width"/>
+  <meta content="720" property="og:image:height"/>
+  <meta content="https://www.ctrl.blog/media/hero/pyramid-stacked-ice-cubes.1y1.jpeg" property="og:image"/>
+  <meta content="720" property="og:image:width"/>
+  <meta content="720" property="og:image:height"/>
+  <meta content="@CtrlBlog" property="twitter:site"/>
+  <meta content="Ctrl blog" name="publisher"/>
+  <meta content="Daniel Aleksandersen" name="author"/>
+  <meta content="https://www.daniel.priv.no/" property="article:author"/>
+  <link href="https://www.daniel.priv.no/" rel="author"/>
+  <link href="https://www.buymeacoffee.com/aleksandersen" rel="payment"/>
+  <meta content="$ilp.uphold.com/KFZHFfGBYnxK" name="monetization"/>
+  <meta content="z7eled" name="flattr:id"/>
+  <meta content="DaAleksandersen" property="twitter:creator"/>
+  <meta content="index,max-image-preview:large,max-snippet:340" name="robots"/>
+ </head>
+ <body>
+  <header class="cont" id="head">
+   <div class="masthead" itemid="https://www.ctrl.blog/" itemprop="https://schema.org/isPartOf https://schema.org/publisher" itemscope="" itemtype="https://schema.org/Blog https://schema.org/Organization https://schema.org/WebSite">
+    <link href="https://www.ctrl.blog/entry/how-to-icecc-distributed-compiler.html" itemprop="https://schema.org/blogPost"/>
+    <link href="https://www.ctrl.blog/" itemprop="https://schema.org/url"/>
+    <link href="https://www.ctrl.blog/assets/logo/logo-rect.svg" itemprop="https://schema.org/logo" sizes="any" type="image/svg+xml"/>
+    <hgroup>
+     <h1 itemprop="https://schema.org/name">
+      <a class="logo-link" href="../" rel="home">
+       <span class="logo-ctrl">
+        Ctrl
+       </span>
+       .
+       <span class="logo-blog">
+        blog
+       </span>
+      </a>
+     </h1>
+     <h2 class="icon-onion onion-edition">
+      Onion Edition
+     </h2>
+    </hgroup>
+    <nav class="skip-main">
+     <a class="bttn" href="#main">
+      Skip to main content
+     </a>
+    </nav>
+    <div aria-label="author info box" class="h-card mastauthor" itemid="https://www.daniel.priv.no/" itemscope="" itemtype="https://schema.org/Person">
+     <a class="p-name u-url" href="https://www.daniel.priv.no/" itemprop="https://schema.org/url" rel="author external">
+      <link href="https://www.ctrl.blog/media/people/daniel.jpeg" itemprop="https://schema.org/image" sizes="350x350" type="image/jpeg"/>
+      <img alt="" class="u-photo" fetchpriority="low" height="34" loading="lazy" sizes="(min-width: 564px) 54px, 34px" src="../media/people/daniel.54x54.jpeg" srcset="../media/people/daniel.54x54.jpeg 54w, ../media/people/daniel.81x81.jpeg 81w, ../media/people/daniel.108x108.jpeg 108w" width="34"/>
+      <span class="fn" itemprop="https://schema.org/name">
+       <span itemprop="https://schema.org/givenName">
+        Daniel
+       </span>
+       <span itemprop="https://schema.org/familyName">
+        Aleksandersen
+       </span>
+      </span>
+     </a>
+    </div>
+   </div>
+   <nav aria-label="site navigation" class="headnav">
+    <ul class="nav">
+     <li class="sn-home">
+      <a href="../">
+       Latest
+      </a>
+     </li>
+     <li class="sn-follow">
+      <a href="../follow.html">
+       Newsletter
+      </a>
+     </li>
+     <li class="sn-topics">
+      <a href="../topic/">
+       Topics
+      </a>
+     </li>
+     <li class="sn-tipjar">
+      <a href="../about/tip-jar.html">
+       Patrons
+      </a>
+     </li>
+     <li class="sn-about">
+      <a href="../about/">
+       About
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="cont" id="main">
+   <article class="h-entry" itemid="https://www.ctrl.blog/entry/how-to-icecc-distributed-compiler.html" itemprop="https://schema.org/mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <link href="https://www.ctrl.blog/" itemprop="https://schema.org/publisher"/>
+    <div class="hero-image" itemid="https://www.ctrl.blog/media/hero/pyramid-stacked-ice-cubes.jpeg" itemprop="https://schema.org/image" itemscope="" itemtype="https://schema.org/ImageObject">
+     <meta content="True" itemprop="https://schema.org/representativeOfPage"/>
+     <link href="../media/hero/pyramid-stacked-ice-cubes.jpeg" itemprop="https://schema.org/contentUrl https://schema.org/url" type="image/jpeg"/>
+     <picture>
+      <source media="(max-width:560px)" sizes="100vw" srcset="../media/hero/pyramid-stacked-ice-cubes.384x216.avif 384w, ../media/hero/pyramid-stacked-ice-cubes.448x252.avif 448w, ../media/hero/pyramid-stacked-ice-cubes.544x306.avif 544w, ../media/hero/pyramid-stacked-ice-cubes.688x387.avif 688w, ../media/hero/pyramid-stacked-ice-cubes.720x405.avif 720w, ../media/hero/pyramid-stacked-ice-cubes.816x459.avif 816w" type="image/avif"/>
+      <source sizes="544px" srcset="../media/hero/pyramid-stacked-ice-cubes.384x216.avif 384w, ../media/hero/pyramid-stacked-ice-cubes.448x252.avif 448w, ../media/hero/pyramid-stacked-ice-cubes.544x306.avif 544w, ../media/hero/pyramid-stacked-ice-cubes.688x387.avif 688w, ../media/hero/pyramid-stacked-ice-cubes.720x405.avif 720w, ../media/hero/pyramid-stacked-ice-cubes.816x459.avif 816w, ../media/hero/pyramid-stacked-ice-cubes.1088x612.avif 1088w, ../media/hero/pyramid-stacked-ice-cubes.1280x720.avif 1280w" type="image/avif"/>
+      <source media="(max-width:560px)" sizes="100vw" srcset="../media/hero/pyramid-stacked-ice-cubes.384x216.webp 384w, ../media/hero/pyramid-stacked-ice-cubes.448x252.webp 448w, ../media/hero/pyramid-stacked-ice-cubes.544x306.webp 544w, ../media/hero/pyramid-stacked-ice-cubes.688x387.webp 688w, ../media/hero/pyramid-stacked-ice-cubes.720x405.webp 720w, ../media/hero/pyramid-stacked-ice-cubes.816x459.webp 816w" type="image/webp"/>
+      <source sizes="544px" srcset="../media/hero/pyramid-stacked-ice-cubes.384x216.webp 384w, ../media/hero/pyramid-stacked-ice-cubes.448x252.webp 448w, ../media/hero/pyramid-stacked-ice-cubes.544x306.webp 544w, ../media/hero/pyramid-stacked-ice-cubes.688x387.webp 688w, ../media/hero/pyramid-stacked-ice-cubes.720x405.webp 720w, ../media/hero/pyramid-stacked-ice-cubes.816x459.webp 816w, ../media/hero/pyramid-stacked-ice-cubes.1088x612.webp 1088w, ../media/hero/pyramid-stacked-ice-cubes.1280x720.webp 1280w" type="image/webp"/>
+      <img alt="" class="u-featured" fetchpriority="high" height="306" sizes="(min-width:564px) 544px, 100vw" src="../media/hero/pyramid-stacked-ice-cubes.544x306.jpeg" width="544"/>
+     </picture>
+    </div>
+    <header class="entry-header">
+     <h2 class="entry-title p-name" itemprop="https://schema.org/headline https://schema.org/name">
+      Set up distributed compilation with Icecream in Fedora Linux
+     </h2>
+    </header>
+    <div class="entry-infobar">
+     <ul class="entry-meta">
+      <li class="author byline h-card p-author" itemid="https://www.daniel.priv.no/" itemprop="https://schema.org/author https://schema.org/creator" itemscope="" itemtype="https://schema.org/Person">
+       <a class="p-name u-url" href="https://www.daniel.priv.no/" itemprop="https://schema.org/url" rel="author external" tabindex="-1">
+        <span class="byline-name fn" itemprop="https://schema.org/name">
+         Daniel Aleksandersen
+        </span>
+       </a>
+      </li>
+      <li class="time-published">
+       <time class="dateline dt-published entry-date published" datetime="2016-12-12T16:02:00Z" itemprop="https://schema.org/dateCreated https://schema.org/datePublished" title="2016-12-12 16:02 UTC">
+        2016-12-12
+       </time>
+      </li>
+      <li>
+       <time datetime="PT9M" itemprop="https://schema.org/timeRequired">
+        9 minute
+       </time>
+       read
+      </li>
+      <li>
+       Includes a promotional link.
+      </li>
+     </ul>
+     <ul class="entry-buttns">
+      <li class="tweet" itemprop="https://schema.org/potentialAction" itemscope="" itemtype="https://schema.org/ShareAction">
+       <a class="bttn icon-twitter" href="https://twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion/intent/tweet?url=https%3A%2F%2Fwww.ctrl.blog%2Fentry%2Fhow-to-icecc-distributed-compiler.html&amp;text=Set%20up%20distributed%20compilation%20with%20Icecream%20in%20Fedora%20Linux&amp;via=CtrlBlog&amp;related=DaAleksandersen" itemprop="https://schema.org/url" rel="external nofollow noopener" target="_blank" title="Share article on Twitter (Onion link)">
+        Tweet
+       </a>
+      </li>
+      <li class="mozpocket" itemprop="https://schema.org/potentialAction" itemscope="" itemtype="https://schema.org/BookmarkAction">
+       <a class="bttn" href="https://widgets.getpocket.com/v1/popup?url=https%3A%2F%2Fwww.ctrl.blog%2Fentry%2Fhow-to-icecc-distributed-compiler.html" itemprop="https://schema.org/url" rel="external nofollow noopener" target="_blank" title="Save article for later with Pocket">
+        Save
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="e-content entry-content" itemprop="https://schema.org/articleBody">
+     <p>
+      Icecream (
+      <code class="notranslate" translate="no">
+       icecc
+      </code>
+      ) is a network-distributed C and C++ compiler for Clang and GCC. Icecream lets you tap into any available computer resources on the same network to speed up your code compilation. Here is how you create a distributed build cluster with Icecream in Fedora Linux.
+     </p>
+     <p>
+      Depending on the source code you want to compile, obviously, compilation often takes place on many small files. For most projects, these can be compiled in parallel as separate jobs: usually one per processor core. With a distributed compiler setup, each of these jobs can be distributed out among all the available processor cores on the local network.
+     </p>
+     <p>
+      Icecream consists of two parts: one or more daemon computers that will offer up their resources for building (the build machines), and a scheduler which coordinates, distributes tasks, and collect the work from the build machines on your network. You’ll need at least one scheduler, and two or more build machines.
+     </p>
+     <p>
+      Only need one scheduler will be used in your network at the time, but you can configure multiple schedulers for redundancy. I recommend you configure the scheduler on any computer you’ll use to start builds. This way, there will always be a scheduler available when you want to compile something. Note that you’ll need to run both the daemon and the scheduler service on a PC for it to both coordinate other machines and contribute to the build process.
+     </p>
+     <section>
+      <h3>
+       Configuring the daemon service on build machines
+      </h3>
+      <p>
+       Before we begin, I’ll just like to mention that you should make sure to install Icecream version 1.1 or newer. Earlier versions distributed with Fedora Linux have a few issues that prevent it from working properly without additional configuration.
+      </p>
+      <p>
+       The build machines require very little setup. You’ll only need to install a few packages, configure the firewall, and start the service. Let us begin by installing the required packages:
+      </p>
+      <ol>
+       <li>
+        Install the required packages by issuing the following command:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code1" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">dnf install icecream @c-development clang</code></pre>
+        </figure>
+       </li>
+      </ol>
+      <p>
+       Next, for the firewall setup. Before you proceed, be absolutely sure that you’ve
+       <a href="how-to-firewalld-zone-by-ip.html" title="“Tutorial: Configuring zones bound by source IPs in FirewallD”">
+        configured a trust firewall zone
+       </a>
+       that
+       <strong>
+        is limited to your local network
+       </strong>
+       . The below example use the default trusted zone, but
+       <em>
+        this isn’t automagically configured for you
+       </em>
+       . You don’t want to expose your compiler or PC to the public internet.
+      </p>
+      <ol start="2">
+       <li>
+        Adopt the zone name to match your configuration, and then issue the following commands:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code2" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">firewall-cmd --reload
+firewall-cmd --permanent --zone<span class="o">=</span><span class="s2">"trusted"</span> --add-service<span class="o">=</span><span class="s2">"icecream"</span>
+firewall-cmd --reload</code></pre>
+        </figure>
+       </li>
+      </ol>
+      <p>
+       firewalld’s configuration needs to be reloaded twice: the first time to load in the newly installed icecream.service definition, and the second time to actualize the new rich-rule.
+      </p>
+      <p>
+       Lastly, you need to start the service and then enable it. Enabling a service means it will run by default then next time your computer starts without recurring you to start the service before each time you want to use it.
+      </p>
+      <ol start="3">
+       <li>
+        Start and enable the Icecream service at boot by issuing the following commands:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code3" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">systemctl <span class="nb">enable</span> --now iceccd</code></pre>
+        </figure>
+       </li>
+      </ol>
+      <p>
+       Repeat this setup on any and all computers that you want to contribute with the build. You can use pretty much any system, the scheduler will work out which jobs goes to which system based on available resources. Fedora Linux sets a high process “niceness” on the build service by default, meaning you can set up the build service on all your computers and they’ll only contribute to building when they’re otherwise idle.
+      </p>
+     </section>
+     <section>
+      <h3>
+       Configuring the scheduler service
+      </h3>
+      <p>
+       Assuming you’ve already setup the computer as a build machine (daemon), you’ll already have all the required packages installed.
+      </p>
+      <p>
+       A scheduler will need an additional firewalld rule installed. The command should be exactly the same, but the service name will be different. This should be set up in addition to the firewall rules for the builder service.
+      </p>
+      <ol start="2">
+       <li>
+        Adopt the zone name to match your configuration, and then issue the following commands:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code4" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">firewall-cmd --reload
+firewall-cmd --zone<span class="o">=</span><span class="s2">"trusted"</span> --add-service<span class="o">=</span><span class="s2">"icecream-scheduler"</span>
+firewall-cmd --reload</code></pre>
+        </figure>
+       </li>
+      </ol>
+      <p>
+       Again, you need to make sure that you’ve set up and
+       <a href="how-to-firewalld-zone-by-ip.html" title="“Tutorial: Configuring zones bound by source IPs in FirewallD”">
+        configured a trust firewall zone
+       </a>
+       which is limited to your local network.
+      </p>
+      <p>
+       firewalld’s configuration needs to be reloaded twice: the first time to load in the newly installed icecream.service definition, and the second time to actualize the new rich-rule.
+      </p>
+      <p>
+       Lastly, you need to start the service and then enable it. Enabling a service means it will run by default then next time your computer starts without recurring you to start the service before each time you want to use it.
+      </p>
+      <ol start="3">
+       <li>
+        Start and enable the Icecream service at boot by issuing the following commands:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code5" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">systemctl <span class="nb">enable</span> --now icecc-scheduler</code></pre>
+        </figure>
+       </li>
+      </ol>
+      <p>
+       Please note that the firewalld service definition and the systemd service definitions use different names (in bold in the examples for emphasis) for the scheduler service. Because of reasons.
+      </p>
+     </section>
+     <p>
+      By this point, you should be all setup and can proceed to start a build.
+     </p>
+     <section>
+      <h3>
+       Working in parallel
+      </h3>
+      <p>
+       Icecream is quite smart in the way it starts builds. You don’t need to change anything about your normal workflow, but you should learn just a tad about how it all works before proceeding. (Yeah, now that you’ve already invested and have installed and configured the software I spring the
+       <em>
+        learning
+       </em>
+       card on you! Ha!)
+      </p>
+      <p>
+       As mentioned earlier, building most projects of any complexity starts many small sub-jobs that are compiled separately. By default, only one job is done at the time; to do more in parallel: the build system needs to be told how many tasks to perform in parallel. A common recommendation is to configure a allow as many parallel jobs to run as the number of processor cores on the local system plus one. The one extra job is to allow for the preparation of the next job while other jobs are compiling.
+      </p>
+      <p>
+       This also holds true for distributed builds, but you need to account for the number of available processors on the network build cluster. The only difference is that you may want to increase the number of extra jobs by one per roughly 15 additional build processor core. You can use the
+       <a href="https://github.com/icecc/icemon" rel="external" title="icemon project website on GitHub">
+        Icecream Monitor
+       </a>
+       utility to see the available number of processors in your cluster at any given time.
+      </p>
+      <ol>
+       <li>
+        In Fedora Linux 27 and later, you can install Icemon by issuing the following command:
+        <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code6" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+         <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+         <pre><code class="language-shell notranslate" translate="no">dnf install icemon</code></pre>
+        </figure>
+       </li>
+       <li>
+        Start Icemon from your application launcher to observe your build servers.
+       </li>
+      </ol>
+      <p>
+       For projects that are using
+       <code class="notranslate" translate="no">
+        autotools
+       </code>
+       or
+       <code class="notranslate" translate="no">
+        make
+       </code>
+       , you specify the number of jobs with the
+       <code class="notranslate" translate="no">
+        -j
+       </code>
+       argument. For other build systems, please refer to their manual for how you configure parallel compilation.
+      </p>
+      <p>
+       If you’re compiling the same project over and over again, you should experiment a bit with the number of jobs you allow to optimize build speeds. The optimal number of jobs will vary with hardware and the code to be compiled.
+      </p>
+      <section>
+       <h3>
+        Starting a distributed build
+       </h3>
+       <p>
+        To compile a project with Icecream, all you’ve to do is replace your regular C compiler with one of Icecream’s C-compiler wrappers. You can either specify this manually each time you compile something, or you can place the paths to Icecream’s wrappers at the front of your
+        <code class="notranslate" translate="no">
+         PATH
+        </code>
+        environmental variable so all build scripts and systems will pick it up automatically:
+       </p>
+       <figure class="code" itemid="#article-how-to-icecc-distributed-compiler-source-code7" itemprop="https://schema.org/hasPart" itemscope="" itemtype="http://creativecommons.org/ns#Work https://schema.org/SoftwareSourceCode">
+        <meta content="shell" itemprop="https://schema.org/programmingLanguage"/>
+        <pre><code class="language-shell notranslate" translate="no"><span class="nb">echo</span> <span class="s1">'PATH="/usr/libexec/icecc/bin:$PATH"'</span> &gt;&gt; ~/.profile</code></pre>
+       </figure>
+       <p>
+        And that’s all there’s to it. Build scripts should call their preferred compiler, and get Icecream instead of the compiler they expected to. The wrapper will auto-discover and communicate with the scheduler on the local network, which in turn will communicate with all the build machines. Your local system will prepare the given number of jobs and Icecream will distribute the jobs among the available builders.
+       </p>
+      </section>
+      <p>
+       You can open up the Icecream Monitor utility to see all the builds that are going on in the local network. It’s rather fascinating to watch.
+      </p>
+     </section>
+     <section>
+      <h3>
+       A word about network latency
+      </h3>
+      <p>
+       Distributed compilation, and Icecream is no exception, is quite sensitive to high network latency. It can be quite damaging to the total compilation time if even one of the build machines has high network latency.
+      </p>
+      <p>
+       If your build machines are connected over Wi-Fi, you should either invest in
+       <a href="https://www.amazon.com/s?k=Ethernet+adapter&amp;tag=ctrltxt-20" rel="external sponsored" title="Amazon Affiliate Partner link">
+        Ethernet adapters and cabling
+       </a>
+       , or try to reduce the effect of
+       <a href="linux-wifi-dpm-latency.html" title="“Manage Wi-Fi latency and dynamic power-savings on Linux”">
+        dynamic power savings on Wi-Fi latency
+       </a>
+       .
+      </p>
+      <p class="last-p">
+       If you’re having trouble with any builder dropping out or having a hard time to discover the scheduler, high latency could very well be a problem. (“
+       <samp class="notranslate" translate="no">
+        icecc: scheduler not yet found
+       </samp>
+       ”.) Try pinging back and forth between your computers with a long delay (
+       <code class="notranslate" translate="no">
+        ping -4 -i5 builder2
+       </code>
+       ) and confirm that your ping is below 1.5 ms.
+      </p>
+     </section>
+    </div>
+    <footer class="entry-footer">
+     <div class="entry-footer-buttns">
+      <p class="coffee">
+       <a class="bttn" href="https://www.buymeacoffee.com/aleksandersen" id="coffee-bttn" rel="external me noopener" target="_blank">
+        Buy Me A Coffee
+       </a>
+      </p>
+      <p class="comments">
+       <a class="bttn" href="https://comment.ctrl.blog/discussion/how-to-icecc-distributed-compiler" id="comment-bttn" itemprop="https://schema.org/discussionUrl" rel="external noopener replies" target="_blank">
+        Post a comment
+       </a>
+      </p>
+     </div>
+     <ul class="entry-footer-topics" itemprop="https://schema.org/keywords">
+      <li>
+       <a class="p-category" href="../topic/linux.html" rel="tag">
+        Linux
+       </a>
+      </li>
+     </ul>
+    </footer>
+   </article>
+  </main>
+  <div class="cont" id="related">
+  </div>
+  <footer class="cont" id="foot">
+   <div class="follow-cont follow-cta-email">
+    <div class="follow-cta icon-email">
+     <div>
+      <h6>
+       Get the weekly Ctrl blog newsletter
+      </h6>
+      <form action="https://email.ctrl.blog/?subscribe" method="post">
+       <input name="sub" type="hidden" value="marine"/>
+       <input aria-label="Leave this field empty" disabled="" name="name" placeholder="Name" type="text" value=""/>
+       <label>
+        Email:
+        <input name="email" placeholder="you@example.email" required="required" type="email"/>
+       </label>
+       <button class="bttn" type="submit">
+        Follow
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+   <nav>
+    <ul class="nav">
+     <li class="sn-about">
+      <a href="../about/">
+       About
+      </a>
+     </li>
+     <li class="sn-privacy">
+      <a href="../about/privacy-policy.html">
+       Privacy Policy
+      </a>
+     </li>
+     <li class="sn-colophon">
+      <a href="../about/colophon.html">
+       Colophon
+      </a>
+     </li>
+     <li class="sn-license">
+      <a href="../about/license.html">
+       Licensing
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div aria-label="copyright notes" class="small-print" role="contentinfo">
+    <div itemid="https://www.ctrl.blog/entry/how-to-icecc-distributed-compiler.html" itemscope="" itemtype="http://creativecommons.org/ns#Work">
+     <span itemprop="https://schema.org/copyrightNotice https://schema.org/creditText">
+      Ctrl blog by ©
+      <time datetime="2022" itemprop="https://schema.org/copyrightYear">
+       2022
+      </time>
+      <span itemid="https://www.daniel.priv.no/" itemprop="https://schema.org/copyrightHolder" itemscope="" itemtype="https://schema.org/Person">
+       <a href="https://www.daniel.priv.no/" itemprop="https://schema.org/url" rel="external">
+        <span itemprop="https://schema.org/name">
+         Daniel Aleksandersen
+        </span>
+       </a>
+       .
+      </span>
+     </span>
+    </div>
+   </div>
+   <aside>
+    <p>
+     <small>
+      Hosting by
+      <a href="https://hetzner.cloud/?ref=zVX7QZtzKyRP" rel="external nofollow sponsored">
+       Hetzner
+      </a>
+      and
+      <a href="https://www.linode.com/?r=bded785ca36b951af61a1af005c7d4a947298f76" rel="external nofollow sponsored">
+       Linode
+      </a>
+      . CDN by
+      <a href="https://bunny.net/?ref=tihdxrlzmd" rel="external nofollow sponsored">
+       Bunny
+      </a>
+      .
+     </small>
+    </p>
+   </aside>
+  </footer>
+  <script defer="" src="../assets/script/entry-3e201.js">
+  </script>
+  <script defer="" src="../assets/script/page-7b087.js">
+  </script>
+  <script defer="" src="../assets/script/log-d36d8.js">
+  </script>
+ </body>
+</html>

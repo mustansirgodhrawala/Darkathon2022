@@ -1,0 +1,134 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Sponsors
+
+
+
+
+
+
+
+
+
+
+
+
+
+Want to sponsor DebConf4?
+
+
+
+
+
+
+
+
+
+
+
+          About Brazil
+
+           Submitted by macan on Saturday, December 20, 2003 - 12:58
+
+
+
+          In this space, we're going to try to introduce Brazil and it's culture and produce a simple guide to the foreigners who are planning to come to debconf4 in Porto Alegre, you can help to build this up, by sending your doubts about Brazil to debconf4@debconf.org, they'll be answered via e-mail and the information gathered added to this page.
+First of all, some Geography
+Brazil is the largest country in South America, with an estimated population of more than 178 million inhabitants and an area of more than 8.5 million Km2. It spawns 4 timezones and it's climate ranges from temperate to tropicalIf you want to know more about Brazilian
+phisical and geographical characteristics, you should visit the IBGE site IBGE stands for Brazilian Geography and Statistics Institute, they are the official source of this kind of information.
+
+
+Communicating in Brazil
+We're a latin american country, but we're colonized by the Portuguese so we speak Portuguese and not Spanish.
+Portuguese and Spanish share most of their roots. If you speak Spanish it will be easy for you to be understood,
+just speak clear and calmly (and maybe have a little patience).
+In the larger cities (like Porto Alegre) or in touristic places it's easy to find someone who speaks some English
+but don't expect this someone to be the Taxi driver, the guy who sells the tickets in the bus, or the clerk in a restaurant. My personal suggestion is to form a small group and invite a Brazilian debconf atendee to go with you when you go for a ride. We, Brazilians, are well known to be very gentle and willing to help, we try to do our best to make our visitors feel at home. Helping a Debian fellow will be a pleasure.
+Brazilian People
+
+
+There are some countries where the majority of people are alike: almost all black, almost all white, almost all asian,  almost all with blue eyes. There are others who have all kinds of people living together, but still apart: there are blacks, asians, latinos and whites, but almost no "half-white-half-black", or "half-indian-half-latino", or "one-third-indian-one-third-black-one-third-white". Guess what!? Brazil is different!
+
+We have people of all kinds, and the mixture of all these kinds. In fact, it's pretty hard to ask a brazilian about his "race": most will not even know how many mixtures they've had in the past generations (and you'll not find many that would care anyway).
+
+In Rio Grande do Sul (Porto Alegre's state) one can still find an almost all german town, or an italian village, or a strong-rooted portuguese location. But that is just because its colonization begun later (and most of the europeans that came here found non-occupied locations). That is changing gradually and, nowadays, most parts of the state are already just like the rest of Brazil.
+
+Brazilian Currency and Economy
+Please see this page.
+
+Common Myths about Brazil
+Yet to be written, don't forget to come back later
+
+
+
+
+
+
+      About DebConf What is DebConf
+Schedule
+Debian-NP Mini-Conf
+
+Keysigning party
+Floor map
+News
+
+Staff
+
+Update your registration
+Photo Galleries
+
+Attendees world map
+
+Final Report
+
+
+
+      Getting to Porto Alegre, Brazil About Brazil
+
+About Porto Alegre
+Visa
+Flights
+Travel Agency
+Vaccination
+About SESC
+
+Getting to SESC
+
+
+
+      Living in Porto Alegre, Brazil Find your bedroom
+Climate
+Eletricity
+Mobile phone roaming
+Tipping, Taxes and Prices
+Currency - Cash and Credit Cards
+Taxis, Buses and Trains
+Car Rental and Driver's License
+Emergency Numbers
+English - Portuguese vocabulary
+
+
+
+      Contact DebConf4 Mailing List: debconf4@listas.softwarelivre.org
+To subscribe:
+debconf4-request@listas.softwarelivre.org
+IRC Channel: irc.freenode.net #debconf4

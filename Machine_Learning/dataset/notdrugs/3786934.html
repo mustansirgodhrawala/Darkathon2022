@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   YaCy 'xkek': Crawl Start
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <meta content="English, Englisch" name="Content-Language"/>
+  <meta content="YaCy HTTP search engine spider indexer java network open free download Mac Windows Linux Software development" name="keywords"/>
+  <meta content="Software HTTP Freeware Home Page" name="description"/>
+  <meta content="Michael Christen et al." name="copyright"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <!-- Ensure proper rendering and touch zooming on mobile devices -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Bootstrap core CSS -->
+  <link href="env/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="env/bootstrap/css/bootstrap-switch.min.css" rel="stylesheet"/>
+  <script>
+   /*
+@licstart  The following is the entire license notice for the
+JavaScript code in this page.
+
+Copyright (C) 2005-2016 by Michael Peter Christen; mc@yacy.net, Frankfurt a. M., Germany
+and other YaCy developers (see https://yacy.net/en/Join.html)
+first published 07.04.2005 on https://yacy.net
+
+The JavaScript code in this page is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this page.
+*/
+  </script>
+  <script src="env/bootstrap/js/jquery.min.js">
+  </script>
+  <script src="env/bootstrap/js/bootstrap.min.js">
+  </script>
+  <script src="env/bootstrap/js/bootstrap-switch.min.js">
+  </script>
+  <!-- Custom styles for this template, i.e. navigation (move this to base.css) -->
+  <link href="env/bootstrap-base.css" rel="stylesheet"/>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="env/bootstrap/js/html5shiv.min.js"></script>
+    <script src="env/bootstrap/js/respond.min.js"></script>
+  <![endif]-->
+  <!-- old css styles -->
+  <link href="env/base.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="env/style.css" media="screen" rel="stylesheet" type="text/css"/>
+  <!--[if lt IE 6]>
+   <link rel="stylesheet" type="text/css" media="screen" href="env/oldie.css" />
+  <![endif]-->
+  <!--[if lte IE 6.0]>
+   <link rel="stylesheet" type="text/css" media="screen" href="env/ie6.css" />
+  <![endif]-->
+  <!--[if lte IE 7.0]>
+   <link rel="stylesheet" type="text/css" media="screen" href="env/ie7.css" />
+  <![endif]-->
+  <!-- (C), Architecture: Michael Peter Christen; Contact: mc <at> yacy.net -->
+  <script src="js/ajax.js" type="text/javascript">
+  </script>
+  <script src="js/IndexCreate.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function check(key){
+            document.getElementById(key).checked = 'checked';
+        }
+  </script>
+  <style type="text/css">
+   .nobr {
+    		white-space: nowrap;
+    	}
+  </style>
+ </head>
+ <body id="IndexCreate">
+  <!-- top navigation -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+    <div class="collapse navbar-collapse navbar-header">
+     <a class="navbar-brand" href="./" id="navbar-brand">
+      <span>
+       <img alt="YaCy" class="yacylogo" id="header-greeting-icon" src="env/grafics/yacy.png"/>
+      </span>
+      <span>
+       Administration
+      </span>
+     </a>
+    </div>
+    <div class="navbar-header">
+     <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+     <form accept-charset="UTF-8" action="yacysearch.html" class="navbar-form" id="header-search-form" method="get">
+      <input class="form-control" maxlength="200" name="query" placeholder="Search..." size="21" type="text" value=""/>
+      <input name="resource" type="hidden" value="global"/>
+      <input name="urlmaskfilter" type="hidden" value=".*"/>
+      <input name="prefermaskfilter" type="hidden" value=""/>
+      <input name="nav" type="hidden" value="all"/>
+     </form>
+    </div>
+    <script type="text/javascript">
+     /**
+	    * Request the server for a valid transaction token and then send a steering request
+	    * @param tokenInputId HTML identifier of the transaction token input field
+	    * @param formId identifier of the form
+	    */
+		function sendSteeringRequest(tokenInputId, formId) {
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == XMLHttpRequest.DONE) {
+					if(xhr.status != 200) {
+						if(xhr.status == 401) {
+							alert("Please authenticate with administrator credentials.");
+						} else {
+							alert("The server rejected the request or is not responding!");
+						}
+					} else {
+						var requestSent = false;
+						var transactionTokenInput = document.getElementById(tokenInputId);
+						if(transactionTokenInput) {
+							transactionTokenInput.value = xhr.getResponseHeader("X-YaCy-Transaction-Token")
+							var restartForm = document.getElementById(formId);
+							if(restartForm) {
+								requestSent = true;
+								restartForm.submit();
+							}
+						}
+						if(!requestSent) {
+							alert("Could not send the request to the server!");
+						}
+					}
+				}
+			};
+			xhr.open("get", "Steering.html", true);
+			xhr.send();
+		}
+
+		/** Trigger the server restart after asking for user confirm */
+		function confirmRestart() {
+			if(confirm('Confirm Re-Start')) {
+				sendSteeringRequest("restartTransactionToken", "restartForm");
+			}
+		}
+
+		/** Trigger the server restart after asking for user confirm */
+		function confirmShutdown() {
+			if(confirm('Confirm Shutdown')) {
+				sendSteeringRequest("shutdownTransactionToken", "shutdownForm");
+			}
+		}
+    </script>
+    <div class="navbar-collapse collapse">
+     <ul class="nav navbar-nav navbar-right">
+      <li id="header_restart">
+       <form action="Steering.html" id="restartForm" method="post">
+        <input id="restartTransactionToken" name="transactionToken" type="hidden" value=""/>
+        <input name="restart" type="hidden" value=""/>
+       </form>
+       <form action="Steering.html" method="get">
+        <button accesskey="s" class="btn btn-inverse navbar-btn label-warning" onclick="confirmRestart(); return false;" title="Restart" type="submit">
+         <span class="glyphicon glyphicon-fire">
+         </span>
+         <span class="hidden-sm">
+          Re-Start
+         </span>
+        </button>
+       </form>
+      </li>
+      <li>
+      </li>
+      <li id="header_shutdown">
+       <form action="Steering.html" id="shutdownForm" method="post">
+        <input id="shutdownTransactionToken" name="transactionToken" type="hidden" value=""/>
+        <input name="shutdown" type="hidden" value=""/>
+       </form>
+       <form action="Steering.html" method="get">
+        <button accesskey="h" class="btn btn-inverse navbar-btn label-danger" onclick="confirmShutdown(); return false;" title="Shutdown" type="submit">
+         <span class="glyphicon glyphicon-off">
+         </span>
+         <span class="hidden-sm">
+          Shutdown
+         </span>
+        </button>
+       </form>
+      </li>
+      <li>
+      </li>
+      <li id="header_community">
+       <form action="https://community.searchlab.eu" method="get" target="_blank">
+        <button accesskey="f" class="btn btn-inverse navbar-btn label-info" title="Community" type="submit">
+         <span class="glyphicon glyphicon-user">
+         </span>
+         <span class="hidden-sm">
+          Forum
+         </span>
+        </button>
+       </form>
+      </li>
+      <li>
+      </li>
+      <li class="dropdown" id="header_help">
+       <div aria-expanded="false" aria-haspopup="true" aria-label="Help" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+        <form action="#" method="get">
+         <button accesskey="f" class="btn btn-inverse navbar-btn label-success" title="Help" type="submit">
+          <span class="glyphicon glyphicon-question-sign">
+          </span>
+          <span class="hidden-sm">
+           Help
+          </span>
+         </button>
+        </form>
+       </div>
+       <ul class="dropdown-menu">
+        <li id="header_profile">
+         <a href="ViewProfile.html?hash=localhash">
+          About This Page
+         </a>
+        </li>
+        <li id="header_jslicense">
+         <a data-jslicense="1" href="jslicense.html">
+          JavaScript information
+         </a>
+        </li>
+        <li class="divider" role="separator">
+        </li>
+        <li id="header_tutorial">
+         <a href="https://www.youtube.com/user/YaCyTutorials/videos" target="_blank">
+          <i>
+           external
+          </i>
+          YaCy Tutorials
+         </a>
+        </li>
+        <li id="header_download">
+         <a href="https://yacy.net" target="_blank">
+          <i>
+           external
+          </i>
+          Download YaCy
+         </a>
+        </li>
+        <li id="header_community">
+         <a href="https://community.searchlab.eu" target="_blank">
+          <i>
+           external
+          </i>
+          Community (Web Forums)
+         </a>
+        </li>
+        <li id="header_git">
+         <a href="https://github.com/yacy/yacy_search_server" target="_blank">
+          <i>
+           external
+          </i>
+          Git Repository
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+      </li>
+      <li class="dropdown" id="header_sponsor">
+       <div aria-expanded="false" aria-haspopup="true" aria-label="Help" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+        <form action="#" method="get">
+         <button accesskey="f" class="btn btn-inverse navbar-btn label-warning" title="Help" type="submit">
+          <span class="glyphicon glyphicon-heart">
+          </span>
+          <span class="hidden-sm">
+           Sponsor
+          </span>
+         </button>
+        </form>
+       </div>
+       <ul class="dropdown-menu">
+        <li>
+         <a href="#">
+          YaCy is free software, so we need the help of many to support the development.
+          <br/>
+          <b>
+           You
+          </b>
+          can help by joining a sponsoring plan:
+         </a>
+        </li>
+        <li>
+         <a href="https://github.com/users/Orbiter/sponsorship" target="_blank">
+          <i>
+           external
+          </i>
+          <b>
+           become a Github Sponsor
+          </b>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.patreon.com/bePatron?u=185903" target="_blank">
+          <i>
+           external
+          </i>
+          <b>
+           become a YaCy Patreon
+          </b>
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Please help! We need financial help to move on with the development!
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+      </li>
+      <li id="header_administration">
+       <form action="index.html" method="get">
+        <button accesskey="s" class="btn btn-inverse navbar-btn label-primary" title="Search" type="submit">
+         <span class="glyphicon glyphicon-search">
+         </span>
+         <span class="hidden-sm">
+          Search
+         </span>
+        </button>
+       </form>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <!-- left navigation -->
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+     <ul class="nav nav-sidebar menugroup" data-container="body" data-content="As a first-time-user you see only basic functions. Set a use case or name your peer to see more options. Start a first web crawl to see all monitoring options." data-original-title="You just started a YaCy peer!" data-placement="right" data-trigger="hover" id="first-steps">
+      <li>
+       <h3>
+        First Steps
+       </h3>
+      </li>
+      <li>
+       <a class="MenuItemLink" href="ConfigBasic.html">
+        Use Case &amp; Account
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink" href="CrawlStartSite.html">
+        Load Web Pages, Crawler
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Performance_p.html">
+        RAM/Disk Usage &amp; Updates
+       </a>
+      </li>
+     </ul>
+     <ul class="nav nav-sidebar menugroup" data-container="body" data-content="You do not see all monitoring options here, because some belong to crawl result monitoring. Start a web crawl to see that!" data-original-title="You did not yet start a web crawl!" data-placement="right" data-trigger="hover" id="monitoring">
+      <li>
+       <h3>
+        Monitoring
+       </h3>
+      </li>
+      <li>
+       <a class="MenuItemLink" href="Status.html?noforward=">
+        System Status
+       </a>
+      </li>
+      <li>
+       <a accesskey="w" class="MenuItemLink" href="Network.html">
+        Peer-to-Peer Network
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="IndexBrowser_p.html?admin=true&amp;hosts=">
+        Index Browser
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="AccessGrid_p.html">
+        Network Access
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Crawler_p.html">
+        Crawler Monitor
+       </a>
+      </li>
+      <!-- <li><a href="terminal_p.html" accesskey="t" class="MenuItemLink lock">Terminal</a></li> -->
+     </ul>
+     <ul class="nav nav-sidebar menugroup">
+      <li>
+       <h3>
+        Production
+       </h3>
+      </li>
+      <li>
+       <a class="MenuItemLink" href="CrawlStartExpert.html">
+        Advanced Crawler
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="IndexExport_p.html">
+        Index Export/Import
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Vocabulary_p.html">
+        Content Semantic
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="CrawlCheck_p.html">
+        Target Analysis
+       </a>
+      </li>
+     </ul>
+     <ul class="nav nav-sidebar menugroup">
+      <li>
+       <h3>
+        Administration
+       </h3>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="IndexControlURLs_p.html">
+        Index Administration
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Settings_p.html">
+        System Administration
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Blacklist_p.html">
+        Filter &amp; Blacklists
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="Table_API_p.html">
+        Process Scheduler
+       </a>
+      </li>
+     </ul>
+     <ul class="nav nav-sidebar menugroup">
+      <li>
+       <h3>
+        Search Portal Integration
+       </h3>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="ConfigPortal_p.html">
+        Portal Configuration
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="ConfigAppearance_p.html">
+        Portal Design
+       </a>
+      </li>
+      <li>
+       <a class="MenuItemLink lock" href="RankingSolr_p.html">
+        Ranking and Heuristics
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     <div class="SubMenu">
+      <h3>
+       Load Web Pages
+      </h3>
+      <ul class="SubMenu">
+       <li>
+        <a class="MenuItemLink" href="CrawlStartSite.html">
+         Site Crawling
+        </a>
+       </li>
+       <li>
+        <a class="MenuItemLink lock" href="ConfigParser_p.html">
+         Parser Configuration
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="api">
+     </div>
+     <h2>
+      Site Crawling
+     </h2>
+     <p id="startCrawling">
+      <strong>
+       Site Crawler:
+      </strong>
+      Download all web pages from a given domain or base URL.
+     </p>
+     <fieldset>
+      <legend>
+       Site Crawl Start
+      </legend>
+      <form accept-charset="UTF-8" action="Crawler_p.html" enctype="multipart/form-data" id="Crawler" method="post">
+       <dl>
+        <dt>
+         <label>
+          Site
+         </label>
+        </dt>
+        <dd>
+         <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+           <tr valign="top">
+            <td valign="top">
+             <input checked="checked" id="url" name="crawlingMode" onmousedown="document.getElementById('rangeDomain').disabled=false;document.getElementById('rangeSubpath').disabled=false;document.getElementById('crawlingDomMaxCheck').disabled=false;document.getElementById('crawlingDomMaxPages').disabled=false;" type="radio" value="url"/>
+             Start URL (must start with
+             <br/>
+             http:// https:// ftp:// smb:// file://)
+            </td>
+            <td valign="top">
+             <input id="crawlingURL" maxlength="256" name="crawlingURL" onfocus="check('url')" onkeydown="changed()" size="50" style="font-size:16px" type="text" value=""/>
+             <br/>
+             <input id="bookmarkTitle" maxlength="256" name="bookmarkTitle" readonly="readonly" size="50" style="background:transparent; border:0px" type="text" value=""/>
+            </td>
+            <td>
+             <span id="robotsOK">
+             </span>
+             <img alt="empty" id="ajax" src="env/grafics/empty.gif" style="vertical-align: top;"/>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <input disabled="disabled" id="sitelist" name="crawlingMode" type="radio" value="sitelist"/>
+             Link-List of URL
+            </td>
+            <td>
+             <div id="sitelistURLs">
+             </div>
+             <button class="btn btn-default btn-xs" id="expandSiteListBtn" onclick="this.disabled = true;loadInfos(true);" style="visibility:hidden" title="Show all links" type="button">
+              <span class="glyphicon glyphicon-option-horizontal">
+              </span>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <input disabled="disabled" id="sitemap" name="crawlingMode" onmousedown="document.getElementById('rangeDomain').disabled=true;document.getElementById('rangeSubpath').disabled=true;document.getElementById('crawlingDomMaxCheck').disabled=true;document.getElementById('crawlingDomMaxPages').disabled=true;" type="radio" value="sitemap"/>
+             Sitemap URL
+            </td>
+            <td>
+             <input maxlength="256" name="sitemapURL" readonly="readonly" size="41" style="background:transparent; border:0px" type="text" value=""/>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <br/>
+         <input id="crawlingDepth" name="crawlingDepth" type="hidden" value="99"/>
+        </dd>
+        <dt>
+         <label>
+          Path
+         </label>
+        </dt>
+        <dd>
+         <input checked="checked" id="rangeDomain" name="range" type="radio" value="domain"/>
+         load all files in domain
+         <br/>
+         <input id="rangeSubpath" name="range" type="radio" value="subpath"/>
+         load only files in a sub-path of given url
+         <input id="deleteold" name="deleteold" type="hidden" value="on"/>
+         <input id="mustnotmatch" name="mustnotmatch" type="hidden" value=""/>
+         <input id="crawlingDomFilterCheck" name="crawlingDomFilterCheck" type="hidden" value="off"/>
+        </dd>
+        <dt>
+         <label>
+          Limitation
+         </label>
+        </dt>
+        <dd>
+         <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+           <tr valign="top">
+            <td valign="top">
+             <input id="crawlingDomMaxCheck" name="crawlingDomMaxCheck" type="checkbox"/>
+             not more than
+            </td>
+            <td valign="top">
+             <input id="crawlingDomMaxPages" maxlength="6" name="crawlingDomMaxPages" size="6" type="text" value="10000"/>
+            </td>
+            <td valign="top">
+             documents
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </dd>
+        <dt>
+         <label>
+          Collection
+         </label>
+        </dt>
+        <dd>
+         <input id="collection" maxlength="100" name="collection" size="60" type="text" value="user"/>
+        </dd>
+        <dt>
+         <label>
+          Start
+         </label>
+        </dt>
+        <dd>
+         <input id="directDocByURL" name="directDocByURL" type="hidden" value="off"/>
+         <input id="recrawl" name="recrawl" type="hidden" value="reload"/>
+         <input id="reloadIfOlderNumber" name="reloadIfOlderNumber" type="hidden" value="3"/>
+         <input id="reloadIfOlderUnit" name="reloadIfOlderUnit" type="hidden" value="day"/>
+         <input id="cleanSearchCache" name="cleanSearchCache" type="hidden" value="on"/>
+         <input id="deleteold" name="deleteold" type="hidden" value="on"/>
+         <input id="storeHTCache" name="storeHTCache" type="hidden" value="on"/>
+         <input id="cachePolicy" name="cachePolicy" type="hidden" value="iffresh"/>
+         <input id="crawlingQ" name="crawlingQ" type="hidden" value="on"/>
+         <input id="followFrames" name="followFrames" type="hidden" value="on"/>
+         <input id="obeyHtmlRobotsNoindex" name="obeyHtmlRobotsNoindex" type="hidden" value="on"/>
+         <input id="indexText" name="indexText" type="hidden" value="on"/>
+         <input id="indexMedia" name="indexMedia" type="hidden" value="on"/>
+         <input id="intention" name="intention" type="hidden" value=""/>
+         <input id="timezoneOffset" name="timezoneOffset" type="hidden" value=""/>
+         <script>
+          document.getElementById("timezoneOffset").value = new Date().getTimezoneOffset();
+         </script>
+         <input class="btn btn-primary" name="crawlingstart" type="submit" value="Start New Crawl"/>
+        </dd>
+       </dl>
+      </form>
+     </fieldset>
+     <h3>
+      Hints
+     </h3>
+     <ul>
+      <li>
+       <h4>
+        Crawl Speed Limitation
+       </h4>
+       No more that four pages are loaded from the same host in one second (not more that 120 document per minute) to limit the load on the target server.
+      </li>
+      <li>
+       <h4>
+        Target Balancer
+       </h4>
+       A second crawl for a different host increases the throughput to a maximum of 240 documents per minute since the crawler balances the load over all hosts.
+      </li>
+      <li>
+       <h4>
+        High Speed Crawling
+       </h4>
+       A 'shallow crawl' which is not limited to a single host (or site)
+    can extend the pages per minute (ppm) rate to unlimited documents per minute when the number of target hosts is high.
+    This can be done using the
+       <a href="CrawlStartExpert.html">
+        Expert Crawl Start
+       </a>
+       servlet.
+      </li>
+      <li>
+       <h4>
+        Scheduler Steering
+       </h4>
+       The scheduler on crawls can be changed or removed using the
+       <a href="Table_API_p.html">
+        API Steering
+       </a>
+       .
+      </li>
+     </ul>
+    </div>
+    <!-- End of main page content -->
+   </div>
+   <!-- End of main row container (navigators + content) -->
+  </div>
+  <!-- End of main container (navigators + content) -->
+ </body>
+</html>

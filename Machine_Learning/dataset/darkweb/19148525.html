@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <meta content="no-cache, no-store, must-revalidate, max-age=0" http-equiv="Cache-Control"/>
+  <meta content="0" http-equiv="expires"/>
+  <meta content="no-referrer" name="referrer"/>
+  <title>
+   Le Chat
+  </title>
+  <style type="text/css">
+   body{background-color:#000000;color:#FFFFFF;font-size:14px;text-align:center;} a:visited{color:#B33CB4;} a:active{color:#FF0033;} a:link{color:#0000FF;} #messages{word-wrap:break-word;} input,select,textarea{color:#FFFFFF;background-color:#000000;} .messages a img{width:15%} .messages a:hover img{width:35%} .error{color:#FF0033;text-align:left;} .delbutton{background-color:#660000;} .backbutton{background-color:#004400;} #exitbutton{background-color:#AA0000;} .setup table table,.admin table table,.profile table table{width:100%;text-align:left} .alogin table,.init table,.destroy_chat table,.delete_account table,.sessions table,.filter table,.linkfilter table,.notes table,.approve_waiting table,.del_confirm table,.profile table,.admin table,.backup table,.setup table{margin-left:auto;margin-right:auto;} .setup table table table,.admin table table table,.profile table table table{border-spacing:0px;margin-left:auto;margin-right:unset;width:unset;} .setup table table td,.backup #restoresubmit,.backup #backupsubmit,.admin table table td,.profile table table td,.login td+td,.alogin td+td{text-align:right;} .init td,.backup #restorecheck td,.admin #clean td,.admin #regnew td,.session td,.messages,.inbox,.approve_waiting td,.choose_messages,.greeting,.help,.login td,.alogin td{text-align:left;} .messages #chatters{max-height:100px;overflow-y:auto;} .messages #chatters a{text-decoration-line:none;} .messages #chatters table{border-spacing:0px;} .messages #chatters th,.messages #chatters td,.post #firstline{vertical-align:top;} .approve_waiting #action td:only-child,.help #backcredit,.login td:only-child,.alogin td:only-child,.init td:only-child{text-align:center;} .sessions td,.sessions th,.approve_waiting td,.approve_waiting th{padding: 5px;} .sessions td td{padding: 1px;} .messages #bottom_link{position:fixed;top:0.5em;right:0.5em;} .messages #top_link{position:fixed;bottom:0.5em;right:0.5em;} .post table,.controls table,.login table{border-spacing:0px;margin-left:auto;margin-right:auto;} .login table{border:2px solid;} .controls{overflow-y:none;} #manualrefresh{display:block;position:fixed;text-align:center;left:25%;width:50%;top:-200%;animation:timeout_messages 160s forwards;z-index:2;background-color:#500000;border:2px solid #ff0000;} @keyframes timeout_messages{0%{top:-200%;} 99%{top:-200%;} 100%{top:0%;}} .notes textarea{height:80vh;width:80%;}
+  </style>
+  <style type="text/css">
+   body{background-color:#000000;color:#56ff00;}
+  </style>
+ </head>
+ <body class="login">
+  <h1 id="chatname">
+   Le Chat
+  </h1>
+  <h3 id="chatname">
+   <b>
+    Connexion invité:
+   </b>
+   <br/>
+   Entrer un pseudo et un password (temporaire)
+   <br/>
+   Répéter le password pour vous enregistrer.
+  </h3>
+  <form action="/index.php" enctype="multipart/form-data" method="post" target="_parent">
+   <input name="lang" type="hidden" value="fr"/>
+   <input name="nc" type="hidden" value="992734"/>
+   <input name="action" type="hidden" value="login"/>
+   <table>
+    <tbody>
+     <tr>
+      <td>
+       Pseudo:
+      </td>
+      <td>
+       <input autofocus="" name="nick" size="15" type="text"/>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Mot de passe:
+      </td>
+      <td>
+       <input name="pass" size="15" type="password"/>
+      </td>
+     </tr>
+     <tr id="captcha">
+      <td>
+       Copie:
+       <br/>
+       <img height="44" src="data:image/gif;base64,R0lGODdhNwAYAIAAAAQCBPz+/CwAAAAANwAYAAACnoSPqcvtD6M8YaLaMLVMc+4toTJumWkEpaOm7id5qzWHM5zceKyOLenr5YQAG/H3SyEpRKXzmez0pq3pEIqpVGW6KNX6DF+y5IiwWdR+w2Vm9HHOpsfKtZcsL8K5dOZ47afm0+ekgcTn8kWVUWYYdAe0mIbmxgXmVyl5eXIBI7mj9wFoFghRotj50lFKiPKpAyrympMYWysIG6MKB1AAADs=" width="75"/>
+      </td>
+      <td>
+       <input name="challenge" type="hidden" value="1685368963"/>
+       <input autocomplete="off" name="captcha" size="15" type="text"/>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Repeat password
+       <br/>
+       to register
+      </td>
+      <td>
+       <input name="regpass" placeholder="(optional)" size="15" type="password"/>
+      </td>
+     </tr>
+     <tr>
+      <td colspan="2">
+       Invité, choisir une couleur:
+       <br/>
+       <select name="colour">
+        <option value="">
+         * Couleur aléatoire *
+        </option>
+        <option style="color:#F5F5DC;" value="F5F5DC">
+         Beige
+        </option>
+        <option style="color:#8A2BE2;" value="8A2BE2">
+         Blue violet
+        </option>
+        <option style="color:#A52A2A;" value="A52A2A">
+         Brun
+        </option>
+        <option style="color:#00FFFF;" value="00FFFF">
+         Cyan
+        </option>
+        <option style="color:#00BFFF;" value="00BFFF">
+         Bleu ciel
+        </option>
+        <option style="color:#FFD700;" value="FFD700">
+         Or
+        </option>
+        <option style="color:#808080;" value="808080">
+         Gris
+        </option>
+        <option style="color:#008000;" value="008000">
+         Vert
+        </option>
+        <option style="color:#FF69B4;" value="FF69B4">
+         Rose indien
+        </option>
+        <option style="color:#ADD8E6;" value="ADD8E6">
+         Bleu Pâle
+        </option>
+        <option style="color:#90EE90;" value="90EE90">
+         Vert pâle
+        </option>
+        <option style="color:#32CD32;" value="32CD32">
+         Vert lime
+        </option>
+        <option style="color:#FF00FF;" value="FF00FF">
+         Magenta
+        </option>
+        <option style="color:#808000;" value="808000">
+         Olive
+        </option>
+        <option style="color:#FFA500;" value="FFA500">
+         Orange
+        </option>
+        <option style="color:#FF4500;" value="FF4500">
+         Rouge orangé
+        </option>
+        <option style="color:#FF0000;" value="FF0000">
+         Rouge
+        </option>
+        <option style="color:#4169E1;" value="4169E1">
+         Bleu royal
+        </option>
+        <option style="color:#2E8B57;" value="2E8B57">
+         Vert océan
+        </option>
+        <option style="color:#A0522D;" value="A0522D">
+         Sienna
+        </option>
+        <option style="color:#C0C0C0;" value="C0C0C0">
+         Argent
+        </option>
+        <option style="color:#D2B48C;" value="D2B48C">
+         Beige
+        </option>
+        <option style="color:#008080;" value="008080">
+         Bleu-vert foncé
+        </option>
+        <option style="color:#EE82EE;" value="EE82EE">
+         Violet
+        </option>
+        <option style="color:#FFFFFF;" value="FFFFFF">
+         Blanc
+        </option>
+        <option style="color:#FFFF00;" value="FFFF00">
+         Jaune
+        </option>
+        <option style="color:#9ACD32;" value="9ACD32">
+         Jaune-verdâtre
+        </option>
+       </select>
+      </td>
+     </tr>
+     <tr>
+      <td colspan="2">
+       <input type="submit" value="Entrer"/>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </form>
+  <div id="chatters">
+   Actuellement il y a 9 chatteur(s) dans le salon:
+   <br/>
+   <span style="color:#00FFFF;">
+    narasime
+   </span>
+   <span style="color:#4251DE;">
+    nep
+   </span>
+   <span style="color:#FFD700;">
+    tortuga
+   </span>
+   <span style="color:#0E9C49;">
+    fodao
+   </span>
+   <span style="color:#ABCF2A;">
+    bloobz
+   </span>
+   <span style="color:#B83456;">
+    hodold
+   </span>
+   <span style="color:#626C21;">
+    ash
+   </span>
+   <span style="color:#454CB2;">
+    falkooo
+   </span>
+   <span style="color:#F2CD19;">
+    golrez
+   </span>
+  </div>
+  <br/>
+  <div id="topic">
+   Crypto Challeng 2022:  http://eil3tzaq7glxifm43zyrgigbmobuuapa2cezd66up6ttkcigqychltqd.onion/
+  </div>
+  <div id="rules">
+   <h2>
+    Informations &amp; Régles
+   </h2>
+   <b>
+    -= No CP, Zoophilia, other Pornography =-
+   </b>
+  </div>
+  <p id="changelang">
+   Changer la langue:
+   <a href="/index.php?lang=bg">
+    Български
+   </a>
+   <a href="/index.php?lang=cz">
+    čeština
+   </a>
+   <a href="/index.php?lang=de">
+    Deutsch
+   </a>
+   <a href="/index.php?lang=en">
+    English
+   </a>
+   <a href="/index.php?lang=es">
+    Español
+   </a>
+   <a href="/index.php?lang=fr">
+    Français
+   </a>
+   <a href="/index.php?lang=id">
+    Bahasa Indonesia
+   </a>
+   <a href="/index.php?lang=it">
+    Italiano
+   </a>
+   <a href="/index.php?lang=ru">
+    Русский
+   </a>
+   <a href="/index.php?lang=uk">
+    Українська
+   </a>
+   <a href="/index.php?lang=zh_CN">
+    简体中文
+   </a>
+  </p>
+  <small>
+   <br/>
+   <br/>
+   <a href="http://http://us63c5r2z5mvk4mxfa3heejezqaj5wh4ivq6zr2mxs2uymbaslg4ctad.onion/" target="_blank">
+    LE CHAT-PHP - 1.23.7 Powerd By Open Onion Directory
+   </a>
+  </small>
+ </body>
+</html>

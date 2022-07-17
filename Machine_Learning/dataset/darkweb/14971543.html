@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Horizon - Order status
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+  <link href="css/main.min.css" rel="stylesheet"/>
+  <link href="img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+ </head>
+ <body>
+  <header class="header navbar navbar-expand-lg fixed-top">
+   <div class="container">
+    <div class="header__logo navbar-brand">
+     Horizon
+    </div>
+    <nav class="menu __menu collapse navbar-collapse">
+     <ul class="list menu__list navbar-nav ml-auto">
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#home">
+        Home
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#features">
+        Features
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#services">
+        Services
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#faq">
+        FAQ
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#options">
+        Prices
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="index.php#testimonials">
+        Testimonials
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link" href="order-status.php">
+        Status
+       </a>
+      </li>
+      <li class="list__item nav-item">
+       <a class="nav-link contact-btn" href="index.php#contact-us">
+        Contact us
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <input class="nav-burger__checkbox" id="burger" type="checkbox"/>
+    <label class="nav-burger" for="burger">
+     Menu
+    </label>
+    <nav class="nav-m">
+     <a class="nav-m__item" href="index.php#home">
+      Home
+     </a>
+     <a class="nav-m__item" href="index.php#features">
+      Features
+     </a>
+     <a class="nav-m__item" href="index.php#services">
+      Services
+     </a>
+     <a class="nav-m__item" href="index.php#faq">
+      FAQ
+     </a>
+     <a class="nav-m__item" href="index.php#options">
+      Prices
+     </a>
+     <a class="nav-m__item" href="index.php#testimonials">
+      Testimonials
+     </a>
+     <a class="nav-m__item" href="order-status.php">
+      Status
+     </a>
+     <a class="nav-m__item" href="index.php#contact-us">
+      Contact Us
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="main">
+   <section class="heading-section" id="home">
+    <div class="heading-section-overlay">
+    </div>
+    <div class="container">
+     <div class="row">
+      <div class="col-md-7">
+       <h1 class="heading-section__title">
+        Welcome to Horizon, The Most Friendly Store in Tor
+       </h1>
+       <p class="heading-section__text">
+        We sell plastic and online cards
+       </p>
+       <ul class="heading-benefits">
+        <li class="heading-benefits__item">
+         <i class="fa fa-check">
+         </i>
+         JavaScript free for your security
+        </li>
+        <li class="heading-benefits__item">
+         <i class="fa fa-check">
+         </i>
+         Real history of orders
+        </li>
+        <li class="heading-benefits__item">
+         <i class="fa fa-check">
+         </i>
+         Fast email reply
+        </li>
+        <li class="heading-benefits__item">
+         <i class="fa fa-check">
+         </i>
+         Order tracking
+        </li>
+       </ul>
+       <div class="check-domain" style="display:none;">
+        <img src="img/onionlink.png" style="border-radius: 5px;"/>
+        <ul class="check-domain__list">
+         <li class="check-domain__address">
+          <i class="fa fa-warning">
+          </i>
+          We have many fake clones that steal your money. Make sure that you connected to original onion above!
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-5">
+       <div class="fastorder-block">
+        <h3 class="fastorder-block__title">
+         Fast order
+        </h3>
+        <div class="fastorder-form fastorder-block__form">
+         <div class="fastorder-form__status">
+          <i class="fa fa-circle">
+          </i>
+          We are online right now
+         </div>
+         <div class="fastorder-form__title">
+          Don't waste your time,
+         </div>
+         <div class="fastorder-form__text">
+          Leave your email and we'll contact you.
+          <br/>
+          <b>
+           protonmail.com - best choice
+          </b>
+         </div>
+         <form action="leave-email.php" class="fastorder-formblock" method="post">
+          <input class="fastorder-formblock__input field" name="email" placeholder="example@protonmail.com" required="" type="email"/>
+          <input class="form-btn fastorder-formblock__btn" type="submit" value="Leave my email"/>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="ordering-section">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-8 center">
+       <div class="ordering-block">
+        <h4 class="ordering-section__title">
+         Check the status of your order
+        </h4>
+        <div class="title-order">
+         Enter your order id
+        </div>
+        <form action="to-status.php" class="order-status-form ordering-block__form" method="post">
+         <input class="order-status-form__input field-order" name="order-status" placeholder="Order id"/>
+         <input class="order-status-form__submit submit-order" type="submit" value="Check my order"/>
+        </form>
+        <div class="order-result-block ordering-block__order-result-block" style="display: none;">
+         <div class="result-id order-result-block__result-id">
+          <div class="result-id__title title-order">
+           Order ID
+          </div>
+          <div class="result-id__id orderid-block__id">
+          </div>
+         </div>
+         <div class="result-info order-result-block__result-info">
+          <div class="result-info__title ordering-section__title">
+           Order status
+          </div>
+          <div class="result-info__text title-order status">
+           <i class="fa fa-circle">
+           </i>
+          </div>
+         </div>
+         <div class="order-result-tx" style="display: block;">
+          <div class="tx-table order-result-tx__tx-table">
+           <div class="tx-row tx-table__tx-row">
+            <div class="tx-row__tx-val">
+             Time
+            </div>
+            <div class="tx-row__tx-val">
+             Amount
+            </div>
+            <div class="tx-row__tx-val">
+             Transaction ID (txid)
+            </div>
+            <div class="tx-row__tx-val">
+             Confirmations
+            </div>
+           </div>
+           <div class="tx-row tx-table__tx-row">
+            <div class="tx-row__tx-val">
+             -
+            </div>
+            <div class="tx-row__tx-val">
+             -
+            </div>
+            <div class="tx-row__tx-val">
+             -
+            </div>
+            <div class="tx-row__tx-val">
+             -
+            </div>
+           </div>
+          </div>
+          <div class="ordering-notify">
+           <div class="text-order">
+            <i class="fa fa-exclamation-circle">
+            </i>
+            Send your order ID and txid of bitcoin payment to
+            <a href="#contact-us">
+             our email
+            </a>
+            after payment
+           </div>
+          </div>
+         </div>
+         <div class="tracknum-block order-result-block__tracknum-block" style="display: none;">
+          <div class="tracknum-block__title title-order">
+           Your tracking number :
+          </div>
+          <div class="tracknum-block__text text-order">
+           - - -
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="contact-section" id="contact-us">
+    <div class="container">
+     <div class="row">
+      <div class="title-section contact-section__title col-md-12">
+       <div class="title-section__img">
+       </div>
+       <h2 class="title-section__title">
+        Contact us
+       </h2>
+       <div class="title-section__text">
+       </div>
+      </div>
+      <div class="col-md-12">
+       <div class="contact-block">
+        <div class="contact-block__text">
+         We strongly recommend you to use protonmail.com
+         <br/>
+         It will save your time and make safe connection between us
+        </div>
+        <div class="contact-block__email">
+         Email: horizonstore@tutanota.de
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <div class="footer__copyright">
+       © 2022 Horizon Store
+      </div>
+      <div class="footer__email">
+       horizonstore@tutanota.de
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="seo" style="display: none;">
+    magazine fashion, magazine fashion issue, ls magazine issue, ls dreams, agora, abraxas, market, xxx, videos, video, drugs, cannabis, money, tor, torch, ahmia, game, paypal, cc, ccv, credit, cards, ramp, RAMP, outlaw, The Hidden Wiki, hw, wiki, i2p, sex, pgp, gpg, socks5, vpn, buy, sell, vendor, shop, vbv, paypal, financials services, zqktlwi4fecvo6ri.onion, zqktlwi4fecvo6ri, amazon, g2a, guns, apple, hacking, hack, cannabis, atm, visa, mastercard, darknet, reddit, sigaint, jabber,
+   </div>
+  </footer>
+ </body>
+</html>

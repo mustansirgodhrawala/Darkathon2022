@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   SCPL
+  </title>
+  <style type="text/css">
+   body{
+margin:40pxauto;
+max-width:650px;
+line-height:1.6;
+padding:100px;
+font-size:18px;
+color:#444;
+background-color:#eee;
+}
+  </style>
+ </head>
+ <body>
+  <header>
+   <center>
+    <h1>
+     Secure Computing Practices Links
+    </h1>
+    <h3>
+     Contribute on
+     <a href="http://s6424n4x4bsmqs27.onion/tech/">
+      Endchan
+     </a>
+    </h3>
+    <aside>
+     Last update: 22 november 2017
+    </aside>
+   </center>
+  </header>
+  <br/>
+  <center>
+   <h2>
+    Hardware
+   </h2>
+  </center>
+  <h3>
+   x86
+  </h3>
+  <li>
+   Any platform supported by
+   <a href="https://libreboot.org/docs/hardware/">
+    Libreboot
+   </a>
+  </li>
+  <blockquote>
+   Use Thinkpad x60 or x200 if you can.
+It's stable and clean. The wifi 802.11 card (require closed embedded firmware), modem card, bluetooth card, infra-red and microphone
+   <strong>
+    should be removed
+   </strong>
+   . Speakers should
+also be removed (see side-channel attacks bellow). The dockstation input should be removed (Direct Memory Access). Some blobs still remain, as in the case of the Embedded Controller (use external keyboard for mitigation).
+  </blockquote>
+  <li>
+   You can also achieve good security on some boards using
+   <a href="https://coreboot.org">
+    Coreboot
+   </a>
+   ,
+   <a href="https://github.com/corna/me_cleaner">
+    ME_Cleaner
+   </a>
+   and tested with
+   <a href="https://github.com/xoreaxeaxeax/sandsifter">
+    Sandsifter
+   </a>
+   and
+   <a href="https://github.com/chipsec/chipsec">
+    CHIPSEC
+   </a>
+   .
+Good examples are the
+   <a href="https://minnowboard.org/">
+    Minnowboard Max
+   </a>
+   and
+   <a href="http://www.pcengines.ch/apu2.htm">
+    APU2
+   </a>
+   .
+  </li>
+  <blockquote>
+   <em>
+    Be aware that x86
+    <a href="https://www.blackhat.com/docs/us-17/thursday/us-17-Domas-Breaking-The-x86-Instruction-Set-wp.pdf">
+     cannot
+    </a>
+    be
+    <a href="https://www.iacr.org/archive/ches2009/57470383/57470383.pdf">
+     trusted
+    </a>
+    .
+   </em>
+  </blockquote>
+  <br/>
+  <h3>
+   ARM
+  </h3>
+  <li>
+   <a href="https://boundarydevices.com/product/sabre-lite-imx6-sbc/">
+    SabreLite
+   </a>
+  </li>
+  <li>
+   <a href="https://beagleboard.org/black">
+    BeagleBone Black
+   </a>
+  </li>
+  <p>
+   If you need something with more computational power:
+  </p>
+  <li>
+   <a href="http://wiki.radxa.com/Rock/specification">
+    Radxa
+   </a>
+  </li>
+  <li>
+   <a href="http://inversepath.com/usbarmory.html">
+    USB Armory
+   </a>
+   (see
+   <a href="https://genode.org/documentation/articles/usb_armory">
+    Genode TrustZone
+   </a>
+   )
+  </li>
+  <li>
+   <a href="http://www.hardkernel.com/main/products/prdt_info.php?g_code=G143703355573">
+    ODROID-C1
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: Reflash uBoot to make sure it's
+not altered.
+   </em>
+  </blockquote>
+  <br/>
+  <h3>
+   POWER
+  </h3>
+  <li>
+   <a href="https://www.raptorengineering.com/TALOS">
+    TALOS Workstation
+   </a>
+  </li>
+  <br/>
+  <h3>
+   MIPS
+  </h3>
+  <li>
+   <a href="http://lemote.kd85.com/">
+    Lemote Yeeloong
+   </a>
+  </li>
+  <br/>
+  <h3>
+   SPARC64
+  </h3>
+  <li>
+   <a href="http://www.oracle.com/technetwork/systems/opensparc/index.html">
+    OpenSPARC
+   </a>
+   supported platforms
+  </li>
+  <br/>
+  <h3>
+   RISC-V
+  </h3>
+  <li>
+   <a href="https://www.sifive.com/products/hifive1/">
+    HiFive1
+   </a>
+  </li>
+  <li>
+   Looking hopefully to
+   <a href="https://lowrisc.org">
+    LowRISC
+   </a>
+  </li>
+  <br/>
+  <h3>
+   Wireless connection
+  </h3>
+  <li>
+   Ralink devices from
+   <a href="https://man.openbsd.org/rum">
+    here
+   </a>
+  </li>
+  <li>
+   <a href="https://store.vikings.net/accessories/atheros450">
+    Atheros9K
+   </a>
+  </li>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/DASH7">
+    DASH7
+   </a>
+  </li>
+  <br/>
+  <h3>
+   Keyboard
+  </h3>
+  <li>
+   <a href="http://blog.komar.be/projects/gh60-programmable-keyboard/">
+    GH60
+   </a>
+  </li>
+  <br/>
+  <h3>
+   Storage
+  </h3>
+  <li>
+   <a href="http://openssd-project.org/">
+    OpenSSD
+   </a>
+  </li>
+  <li>
+   <a href="https://wiki.odroid.com/accessory/emmc/reference_chart">
+    ODROID eMMC module
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: flash memory is
+    <a href="http://www.bunniestudios.com/blog/?p=3554">
+     not a good storage at all
+    </a>
+    , according with bunnie. HDD is not a secure alternative too, see side-channel attacks.
+   </em>
+  </blockquote>
+  <li>
+   Write-once medias, such as optical discs (although
+   <a href="https://github.com/scanlime/coastermelt/">
+    not fully secure
+   </a>
+   ).
+  </li>
+  <br/>
+  <h3>
+   Display
+  </h3>
+  <li>
+   <a href="http://hdmipi.com/">
+    HDMIPi
+   </a>
+  </li>
+  <li>
+   <a href="http://www.hardkernel.com/main/products/prdt_info.php?g_code=G144549683088">
+    ODROID-VU7
+   </a>
+  </li>
+  <br/>
+  <h3>
+   Audio
+  </h3>
+  <li>
+   <a href="http://www.hardkernel.com/main/products/prdt_info.php?g_code=G144549683088">
+    HiFiBerry
+   </a>
+  </li>
+  <br/>
+  <h3>
+   GPU
+  </h3>
+  <li>
+   <a href="https://github.com/asicguy/gplgpu">
+    GPLGPU
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: The project failed. It's a good idea,
+though.
+   </em>
+  </blockquote>
+  <br/>
+  <h3>
+   One-Time Passphrase Device
+  </h3>
+  <li>
+   <a href="https://www.nitrokey.com/">
+    Nitrokey
+   </a>
+  </li>
+  <br/>
+  <h3>
+   RNG Device
+  </h3>
+  <li>
+   <a href="http://onerng.info/">
+    OneRNG
+   </a>
+  </li>
+  <li>
+   <a href="http://www.openrandom.org/">
+    Z1FFER
+   </a>
+  </li>
+  <li>
+   <a href="https://store.vikings.net/accessories/chaoskey">
+    ChaosKey
+   </a>
+  </li>
+  <blockquote>
+   Though they are open hardware, don't fully trust these or any hardware-based crypto/rng.
+  </blockquote>
+  <br/>
+  <h3>
+   Misc
+  </h3>
+  <li>
+   <a href="https://trezor.io/">
+    TREZOR Bitcoin Wallet
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Side-Channel Attacks and Physical Security
+   </h2>
+  </center>
+  <br/>
+  <p>
+   <strong>
+    <a href="https://en.wikipedia.org/wiki/TEMPEST">
+     TEMPEST
+    </a>
+    attacks:
+   </strong>
+  </p>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Faraday_cage">
+    Faraday cages
+   </a>
+  </li>
+  <li>
+   <a href="http://www.ladyada.net/make/wavebubble/index.html">
+    WaveBubble
+   </a>
+  </li>
+  <br/>
+  <p>
+   <strong>
+    <a href="https://en.wikipedia.org/wiki/Acoustic_cryptanalysis">
+     Accoustic
+    </a>
+    Analysis:
+   </strong>
+  </p>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/White_noise_machine">
+    White noise generator machine
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: It has to be stochastic. Digital white-noise
+players won't work.
+   </em>
+  </blockquote>
+  <li>
+   <a href="https://github.com/ortegaalfredo/kscope">
+    Kscope
+   </a>
+   (HDD turned into a microphone). The author provides
+   <a href="https://raw.githubusercontent.com/ortegaalfredo/kscope/master/hdd-killer/hdd-killer.py">
+    this
+   </a>
+   solution. I suppose a white noise machine would also work (if it's close enough to the machine to interfere with the vibrations).
+  </li>
+  <br/>
+  <p>
+   <strong>
+    <a href="https://crypto.stanford.edu/powerspy/">
+     Power
+    </a>
+    Analysis:
+   </strong>
+  </p>
+  <li>
+   Use DC power (battery)
+  </li>
+  <br/>
+  <p>
+   <strong>
+    Shoulder Surfing and CCTV:
+   </strong>
+  </p>
+  <li>
+   <a href="http://www.3m.co.uk/3M/en_GB/privacy-protection-UK/products/privacy-filters/">
+    Display Privacy Filter
+   </a>
+  </li>
+  <li>
+   Changing
+   <a href="http://mkweb.bcgsc.ca/carpalx/?full_optimization">
+    keyboard layout
+   </a>
+   might help with shoulder surfing or security cameras recording you.
+  </li>
+  <li>
+   <a href="https://cvdazzle.com/">
+    CV Dazzle
+   </a>
+   (it looks stupid, we know)
+  </li>
+  <li>
+   Don't use stickies. They can identify you or at least profile you. Remove serial number stickies too if your hardware have it.
+  </li>
+  <li>
+   Don't go on public thinking you're such a "hacker", opening terminals and compiling stuff. People will call security guards. If you want to use public wifi, be stealth.
+  </li>
+  <br/>
+  <p>
+   <strong>
+    Hardware manipulation:
+   </strong>
+  </p>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Cold_boot_attack">
+    Coldboot attack
+   </a>
+   (DDR2 only), EPROM reflashing, Direct-Memory Access attacks (such as
+   <a href="https://github.com/ufrisk/pcileech/">
+    PCILeech
+   </a>
+   - your system should encrypt your memory anyway), all can be prevented if you have good physical security practices. For laptops, for example,
+   <a href="http://www.pelican.com/us/en/products/cases/">
+    Pelican
+   </a>
+   has some rugged cases that can be adapted for it and
+   <a href="http://www.evva.at/products/mechanical-locking-systems/mcs-locking-system/technology/en/">
+    Evva MCS
+   </a>
+   is a very hard lock to pick.
+  </li>
+  <br/>
+  <li>
+   Storage firmware exploits, such as
+   <a href="http://spritesmods.com/?art=hddhack">
+    HDD hack
+   </a>
+   and
+   <a href="https://srlabs.de/bites/usb-peripherals-turn/">
+    BadUSB
+   </a>
+   . No solution yet, although you can debug and dump your firmware with the specific tools. See
+   <a href="https://github.com/brandonlw/Psychson">
+    Psychson
+   </a>
+   .
+  </li>
+  <br/>
+  <li>
+   <a href="http://web.archive.org/web/20171122030330/https://www.schneier.com/blog/archives/2009/10/evil_maid_attac.html">
+    Evil Made attack
+   </a>
+   . Solutions are addressed
+   <a href="https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html">
+    here
+   </a>
+   .
+  </li>
+  <br/>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Row_hammer">
+    Row Hammer
+   </a>
+   . No widespread software solution. You can
+   <a href="https://github.com/google/rowhammer-test/">
+    test
+   </a>
+   if you're vulnerable.
+  </li>
+  <br/>
+  <li>
+   Printer
+   <a href="https://www.eff.org/issues/printers">
+    tracking dots
+   </a>
+   . Buy a printer
+   <a href="https://www.eff.org/pages/list-printers-which-do-or-do-not-display-tracking-dots">
+    without it
+   </a>
+   . Or don't use paper at all.
+  </li>
+  <br/>
+  <li>
+   Jamming. Although there's a
+   <a href="http://gpsworld.com/combat-jamming-with-adaptive-notch-filtering-or-wavelet-mitigation-a-comparison/">
+    extensive
+   </a>
+   military and academic research on this area, no solution seems to be in production (that we know of). Most of it use
+   <a href="https://en.wikipedia.org/wiki/Band-stop_filter">
+    notch filtering
+   </a>
+   . If you have more information about it, contact us on endchan.
+  </li>
+  <br/>
+  <li>
+   <a href="https://www.iacr.org/archive/ches2009/57470383/57470383.pdf">
+    Hardware Trojan
+   </a>
+   (manufacturer instruction set manipulation). Although there's some academic hypothesis about a solution, we can't do nothing about it now.
+  </li>
+  <br/>
+  <li>
+   About package shipping, be aware of
+   <a href="https://en.wikipedia.org/wiki/Interdiction">
+    Interdiction
+   </a>
+   (shipping interception). We can't do nothing about it. You can pay in cash for a locked
+   <a href="https://en.wikipedia.org/wiki/Post-office_box">
+    PO Box
+   </a>
+   to prevent seller identification of your location, but we can't prevent interception. If you buy a open hardware, check if the product match the schematics provided and always reflash your firmware.
+  </li>
+  <br/>
+  <p>
+   <strong>
+    Natural language analysis:
+   </strong>
+  </p>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Stylometry">
+    Stylometrics
+   </a>
+   analysis can be mitigated with
+   <a href="https://github.com/psal/anonymouth">
+    Anonymouth
+   </a>
+   (caution, it uses Java). A coded language or a constructed language (see
+   <a href="https://en.wikipedia.org/wiki/Lojban">
+    Lojban
+   </a>
+   ) might help with that.
+  </li>
+  <br/>
+  <center>
+   <h4>
+    And finally: have a gun with you. Nothing will help you if they use
+    <a href="https://en.wikipedia.org/wiki/Rubber_hose_cryptanalysis">
+     Rubberhose attack
+    </a>
+    .
+   </h4>
+  </center>
+  <br/>
+  <center>
+   <h2>
+    Firmware
+   </h2>
+  </center>
+  <li>
+   <a href="https://coreboot.org">
+    Coreboot
+   </a>
+   - Check
+   <a href="https://github.com/corna/me_cleaner">
+    ME_Cleaner
+   </a>
+  </li>
+  <li>
+   <a href="https://libreboot.org">
+    Libreboot
+   </a>
+  </li>
+  <li>
+   <a href="http://www.denx.de/wiki/U-Boot">
+    uBoot
+   </a>
+  </li>
+  <li>
+   <a href="https://chromium.googlesource.com/chromiumos/platform/ec/">
+    OpenEC
+   </a>
+   <strong>
+    (Caution, Google link)
+   </strong>
+  </li>
+  <li>
+   <a href="https://www.openfirmware.info/">
+    OpenBIOS
+   </a>
+  </li>
+  <li>
+   <a href="https://github.com/open-power/skiboot">
+    OPAL firmware
+   </a>
+  </li>
+  <li>
+   <a href="https://magiclantern.fm/">
+    Magic Lantern
+   </a>
+  </li>
+  <li>
+   <a href="https://www.rockbox.org/">
+    Rockbox
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Operating Systems
+   </h2>
+  </center>
+  <li>
+   <a href="http://openbsd.org">
+    OpenBSD
+   </a>
+   (set
+   <a href="https://www.openbsd.org/faq/faq14.html#softraidFDE">
+    fulldisk encryption
+   </a>
+   , also, if you're paranoid,
+you can mount the root filesystem to read-only and disable single-user mode)
+  </li>
+  <li>
+   <a href="https://github.com/osresearch/heads">
+    Heads
+   </a>
+  </li>
+  <li>
+   <a href="https://alpinelinux.org/">
+    Alpine Linux
+   </a>
+   (with
+   <a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">
+    LUKS
+   </a>
+   for FDE)
+  </li>
+  <br/>
+  <center>
+   <h2>
+    VPS and Dedicated Servers
+   </h2>
+  </center>
+  <p>
+   You
+   <strong>
+    SHOULD NOT
+   </strong>
+   trust these companies. Use with
+caution and anonymize yourself.
+  </p>
+  <li>
+   <a href="https://vikings.net/">
+    Vikings
+   </a>
+  </li>
+  <li>
+   <a href="https://www.netcup.de/">
+    Netcup
+   </a>
+  </li>
+  <li>
+   <a href="http://1984.is">
+    1984host
+   </a>
+  </li>
+  <li>
+   <a href="https://flokinet.is/en/">
+    FlokiNET
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    VPN
+   </h2>
+  </center>
+  <p>
+   Get a VPS and do your own VPN:
+  </p>
+  <li>
+   <a href="http://www.openiked.org/">
+    OpenIKED
+   </a>
+  </li>
+  <li>
+   Look for
+   <a href="https;//wireguard.io">
+    WireGuard
+   </a>
+   in future.
+  </li>
+  <br/>
+  <center>
+   <h2>
+    SSH software
+   </h2>
+  </center>
+  <li>
+   <a href="https://www.openssh.com/">
+    OpenSSH
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: no need to use fail2ban on OpenBSD. You can use the
+    <a href="https://www.openbsd.org/faq/pf/filter.html">
+     option
+    </a>
+    <code>
+     max-src-conn
+    </code>
+    from the OpenBSD packet filter. Alternatively, see
+    <a href="https://github.com/simple-evcorr/sec/">
+     SEC
+    </a>
+    and
+    <a href="http://openports.se/security/sshguard">
+     SSHGuard
+    </a>
+    .
+   </em>
+  </blockquote>
+  <br/>
+  <center>
+   <h2>
+    Email
+   </h2>
+  </center>
+  <p>
+   Set your own server using
+   <a href="https://www.opensmtpd.org/">
+    OpenSMTPD
+   </a>
+   . Use
+   <a href="http://www.mutt.org/">
+    mutt
+   </a>
+   client.
+  </p>
+  <br/>
+  <center>
+   <h2>
+    HTTP server
+   </h2>
+  </center>
+  <li>
+   OpenBSD's
+   <a href="https://man.openbsd.org/httpd.8">
+    httpd(8)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.nazgul.ch/dev_nostromo.html">
+    Nostromo
+   </a>
+  </li>
+  <li>
+   <a href="https://unix4lyfe.org/darkhttpd/">
+    darkhttpd
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Firewall
+   </h2>
+  </center>
+  <li>
+   <a href="https://www.openbsd.org/faq/pf/">
+    pf(4)
+   </a>
+  </li>
+  <li>
+   <a href="https://man.openbsd.org/unbound.8">
+    Unbound
+   </a>
+  </li>
+  <blockquote>
+   Use
+   <a href="https://rules.emergingthreats.net/fwrules/emerging-PF-ALL.rules">
+    emerging threats rules
+   </a>
+   on pf. The most used dns blocklists are
+   <a href="http://abuse.ch">
+    Abuse.ch
+   </a>
+   ,
+   <a href="https://www.spamhaus.org/zen/">
+    Spamhaus
+   </a>
+   ,
+   <a href="http://www.wizcrafts.net/">
+    Wizcrafts
+   </a>
+   and
+   <a href="https://secure.dshield.org/">
+    Dshield
+   </a>
+   . There's others
+   <a href="https://github.com/firehol/blocklist-ipsets/">
+    here
+   </a>
+   . You should definetly be blocking these autonomous systems if you want privacy:
+   <br/>
+   <br/>
+   <li>
+    AS16509 (Amazon data mining)
+   </li>
+   <li>
+    AS15169 (Google)
+   </li>
+   <li>
+    AS21342 (Akamai/Facebook)
+   </li>
+   <li>
+    AS14618 (Amazon)
+   </li>
+   <li>
+    AS32934 (Facebook)
+   </li>
+   <li>
+    AS54113 (Fastly data mining)
+   </li>
+   <br/>
+   To block it, use this command to transform AS to IP:
+   <br/>
+   <br/>
+   <code>
+    $ whois -h whois.radb.net -- '-i origin ASxxxxx' | grep ^route
+   </code>
+   <br/>
+   <br/>
+   Then, transform the range of IP's to CIDR. There's many ways to do it, just search. The range of CIDR should be used on pf(4) to block all traffic.
+After that, put the
+   <a href="https://man.openbsd.org/securelevel.7">
+    securelevel(7)
+   </a>
+   to 2 and configure files the pf rule with
+   <a href="https://man.openbsd.org/chflags.1">
+    chflags
+   </a>
+   so it become immutable.
+  </blockquote>
+  <br/>
+  <center>
+   <h2>
+    DNS
+   </h2>
+  </center>
+  <li>
+   <a href="https://man.openbsd.org/nsd.8">
+    NSD
+   </a>
+   (your own authoritative server) or just use
+   <a href="https://opennicproject.org">
+    OpenNIC Project
+   </a>
+  </li>
+  <blockquote>
+   The
+   <a href="https://twitter.com/as250">
+    AS250.net
+   </a>
+   also has a good DNS server with adblocking: 194.150.168.169
+  </blockquote>
+  <li>
+   <a href="https://man.openbsd.org/unbound.8">
+    Unbound
+   </a>
+  </li>
+  <li>
+   <a href="https://www.dnscrypt.org/">
+    DNScrypt
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Terminal Emulator
+   </h2>
+  </center>
+  <li>
+   <a href="https://man.openbsd.org/tmux.1">
+    tmux
+   </a>
+  </li>
+  <li>
+   <a href="http://st.suckless.org/">
+    st
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Document Encryption
+   </h2>
+  </center>
+  <li>
+   <a href="http://ports.su/security/reop">
+    reop
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    File signing
+   </h2>
+  </center>
+  <li>
+   <a href="https://www.openbsd.org/papers/bsdcan-signify.html">
+    signify
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    TLS encryption
+   </h2>
+  </center>
+  <li>
+   Let's Encrypt with
+   <a href="https://man.openbsd.org/acme-client.1">
+    acme-client
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Blog
+   </h2>
+  </center>
+  <li>
+   <a href="https://learnbchs.org/">
+    BCHS
+   </a>
+  </li>
+  <li>
+   <a href="https://jekyllrb.com/">
+    Jekyll
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Repository
+   </h2>
+  </center>
+  <li>
+   <a href="https://pijul.org/faq/">
+    Pijul
+   </a>
+  </li>
+  <li>
+   <a href="http://git.2f30.org/stagit/">
+    stagit
+   </a>
+  </li>
+  <li>
+   <a href="https://man.openbsd.org/cvs">
+    CVS
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Anonymous Networks
+   </h2>
+  </center>
+  <li>
+   <a href="https://torproject.org">
+    Tor
+   </a>
+  </li>
+  <blockquote>
+   Note: you have to setup
+   <a href="https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy">
+    Transparent Proxy
+   </a>
+   on your system. Use sysctl to stop
+recording
+   <a href="https://www.whonix.org/wiki/Time_Attacks#Mitigation">
+    TCP timestamps
+   </a>
+   . Disable ICMP service, since it can leak host time. Don't run tor as root. Configure resolv.conf to localhost, so you don't leak DNS (needs DNSPort). Put
+   <a href="https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot">
+    Tor on chroot
+   </a>
+   . And
+   <a href="http://web.archive.org/web/20171031011743/http://pestilenz.org/~bauerm/tor-openbsd-howto.html">
+    compile it
+   </a>
+   yourself.
+   <p>
+    Write this to your torrc:
+   </p>
+   <code>
+    Sandbox 1
+    <br/>
+    SafeSocks 1
+    <br/>
+    SocksPort IsolateClientProtocol, IsolateDestPort, IsolateDestAddr IsolateSOCKSAuth
+    <br/>
+    DNSPort 5555
+    <br/>
+    StrictNodes 1
+    <br/>
+    ExcludeNodes {US},{CA},{UK},{GB},{CN},{RU},{HK},{TW},{VN},{EG},{??},{AE},{AF},{AS},{AU},{BD},{BG},{BO},{BT},{CO},{CR},{CU},{CZ},{EC},{EE},{EH},{ES},{FM},{FR},{GF},{IE},{IL},{IN},{IO},{IQ},{IR},{IT},{JE},{JP},{KG},{KH},{KP},{KR},{KZ},{LA},{LB},{LR},{LT},{LU},{LY},{MX},{NZ},{PF},{PK},{PT},{RS},{SA},{SD},{SG},{SI},{SK},{SS},{SY},{TD},{TF},{TH},{TJ},{TK},{TM},{TN},{TR},{UA},{UG},{UM},{UZ},{VE}
+    <br/>
+    ExitNodes {IS},{FO},{CH},{DK},{SE},{DE},{EE},{NL},{NO},{AT},{BE},{FI},{MC},{PL},{RO}, {GL}
+    <br/>
+   </code>
+   <p>
+    This configuration will exclude countries that you probably don't want to route your traffic and ensure exitnodes to better places (such as Iceland). It may break your connections, though. Use at your own risk.
+   </p>
+  </blockquote>
+  <br/>
+  <center>
+   <h2>
+    Mesh Networks
+   </h2>
+  </center>
+  <li>
+   <a href="https://www.open-mesh.org/projects/open-mesh/wiki">
+    B.A.T.M.A.N.
+   </a>
+   (Better Approach To Mobile Ad-hoc Networking)
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Application Filtering
+   </h2>
+  </center>
+  <li>
+   <a href="https://man.openbsd.org/relayd.8">
+    relayd
+   </a>
+  </li>
+  <li>
+   <a href="http://jvauzb4sb3bwlsnc.onion/">
+    Privoxy
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Traffic Analysis
+   </h2>
+  </center>
+  <li>
+   <a href="https://man.openbsd.org/tcpdump.8">
+    tcpdump
+   </a>
+  </li>
+  <li>
+   <a href="https://man.openbsd.org/traceroute">
+    traceroute
+   </a>
+  </li>
+  <li>
+   <a href="https://man.openbsd.org/nslookup.1">
+    nslookup
+   </a>
+  </li>
+  <li>
+   <a href="https://man.openbsd.org/whois">
+    whois
+   </a>
+  </li>
+  <li>
+   <a href="https://github.com/marcelscode/glasnost">
+    GLASNOST
+   </a>
+   (Traffic shaping and Deep Packet Inspection)
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Cryptocoins
+   </h2>
+  </center>
+  <li>
+   <a href="http://dashcoin.info/">
+    Dashcoin
+   </a>
+  </li>
+  <li>
+   <a href="https://getmonero.org/">
+    Monero
+   </a>
+  </li>
+  <li>
+   <a href="https://z.cash">
+    Zcash
+   </a>
+  </li>
+  <blockquote>
+   <em>
+    Note: check also
+    <a href="https://advcash.com/">
+     ADVcash
+    </a>
+    or similar for bitcoin cards.
+Always buy bitcoin using money, and then use a BT Mixer (like
+    <a href="http://penguinsmbshtgmf.onion/">
+     this
+    </a>
+    or
+    <a href="https://en.wikipedia.org/wiki/CoinJoin">
+     coinjoin
+    </a>
+    ),
+through Tor. As always:
+    <strong>
+     bitcoin is not anonymous, be
+careful.
+    </strong>
+    That's why we're suggesting Dashcoin
+instead.
+   </em>
+  </blockquote>
+  <br/>
+  <center>
+   <h2>
+    Passphrase Manager
+   </h2>
+  </center>
+  <li>
+   If you can't or don't want to buy a Nitrokey, use this command:
+   <br/>
+   <br/>
+   <code>
+    $ head -c 10 /dev/random | base64 &gt; passphrase
+   </code>
+   <br/>
+   <br/>
+   Use the file generated as your passphrase and further encrypt it using
+   <a href="http://ports.su/security/reop">
+    reop
+   </a>
+  </li>
+  <br/>
+  <li>
+   Alternatively, use
+   <a href="http://www.passwordstore.org/">
+    pass
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    MAC Address Spoofing
+   </h2>
+  </center>
+  <p>
+   In case you are using a public wifi, it is a good practice.
+  </p>
+  <li>
+   For OpenBSD, use
+   <a href="http://man.openbsd.org/ifconfig#lladdr">
+    ifconfig
+   </a>
+  </li>
+  <li>
+   <a href="https://github.com/EtiennePerot/macchiato">
+    macchiato
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Instant Communication
+   </h2>
+  </center>
+  <li>
+   <a href="https://ricochet.im">
+    Ricochet
+   </a>
+  </li>
+  <li>
+   <a href="http://briarproject.org">
+    Briar
+   </a>
+   (currenly in beta)
+  </li>
+  <li>
+   <a href="https://jitsi.org">
+    Jitsi
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    File Sharing
+   </h2>
+  </center>
+  <p>
+   You have to route through Tor for anonymity
+  </p>
+  <li>
+   <a href="https://tahoe-lafs.org/">
+    Tahoe-LAFS
+   </a>
+  </li>
+  <li>
+   <a href="https://ipfs.io/">
+    IPFS
+   </a>
+  </li>
+  <li>
+   <a href="http://retroshare.net/">
+    Retroshare
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    RSS Readers
+   </h2>
+  </center>
+  <li>
+   <a href="http://www.newsbeuter.org/">
+    Newsbeuter
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Web Browsers
+   </h2>
+  </center>
+  <li>
+   <a href="http://links.twibright.com/">
+    Links2
+   </a>
+  </li>
+  <li>
+   <a href="http://ports.su/www/lynx">
+    lynx
+   </a>
+   from OpenBSD ports
+  </li>
+  <blockquote>
+   <em>
+    <strong>
+     Never
+    </strong>
+    use ECMAScript.
+    <strong>
+     Never.
+    </strong>
+   </em>
+  </blockquote>
+  <br/>
+  <center>
+   <h2>
+    Media Players
+   </h2>
+  </center>
+  <li>
+   <a href="http://ports.su/graphics/ffmpeg">
+    ffplay
+   </a>
+  </li>
+  <li>
+   <a href="https://mpv.io">
+    mpv
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    PDF Reader
+   </h2>
+  </center>
+  <li>
+   <a href="https://mupdf.com/">
+    mupdf
+   </a>
+   from command line, without javascript decoding
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Window Manager
+   </h2>
+  </center>
+  <li>
+   <a href="https://man.openbsd.org/cwm">
+    CWM
+   </a>
+   (use
+   <a href="https://man.openbsd.org/pledge.2">
+    pledge(2)
+   </a>
+   by default)
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Search Engines
+   </h2>
+  </center>
+  <li>
+   Host your own instance of
+   <a href="https://asciimoo.github.io/searx/">
+    Searx
+   </a>
+   (disable Google crawling).
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Psychology
+   </h2>
+  </center>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Cognitive_bias_mitigation">
+    Cognitive Bias Mitigation
+   </a>
+  </li>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/List_of_fallacies">
+    List of fallacies
+   </a>
+  </li>
+  <li>
+   <a href="https://en.wikipedia.org/wiki/Cognitive_traps_for_intelligence_analysis">
+    Intel analysis
+   </a>
+  </li>
+  <li>
+   Be aware of
+   <a href="https://en.wikipedia.org/wiki/Social_engineering_(security)#Techniques_and_terms">
+    Social Engineering Techniques
+   </a>
+   and
+   <a href="https://en.wikipedia.org/wiki/Astroturfing">
+    Astroturfing
+   </a>
+   . See for example the
+   <a href="https://en.wikipedia.org/wiki/Operation_Earnest_Voice">
+    Operation Earnest Voice
+   </a>
+   and
+   <a href="https://en.wikipedia.org/wiki/Trolls_from_Olgino">
+    IRA
+   </a>
+   .
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Misc
+   </h2>
+  </center>
+  <li>
+   Remove metadata from all files you post online.
+   <a href="https://mat.boum.org/">
+    MAT
+   </a>
+   works well. Rename your files using a random string. For videos, use ffmpeg to strip metadata:
+   <br/>
+   <br/>
+   <code>
+    $ ffmpeg -metadata title="" -acodec copy -vcodec copy -i original.avi new.avi
+   </code>
+   <br/>
+   <br/>
+  </li>
+  <li>
+   Always remove files securely using the command
+   <code>
+    rm -rfP
+   </code>
+   on OpenBSD or
+   <code>
+    shred
+   </code>
+   on other unix-like systems
+  </li>
+  <br/>
+  <li>
+   When possible, don't use X windowing system. It's a mess. Even Xenocara (OpenBSD fork of X). When you have no alternative, always init the session using tmux:
+   <br/>
+   <br/>
+   <code>
+    $ tmux
+   </code>
+   <br/>
+   <br/>
+   Then type this command inside it:
+   <br/>
+   <br/>
+   <code>
+    $ startx &amp; lock -np
+   </code>
+   <br/>
+   <br/>
+   Go back to tmux, close the session (using control+b) and
+   <code>
+    exit
+   </code>
+   the user. This is a good way to prevent someone that has physical access to the machine from just pressing Ctrl+C on the tty and exit your X session (gaining complete shell access).
+  </li>
+  <br/>
+  <li>
+   Use
+   <a href="https://tools.suckless.org/slock/">
+    slock
+   </a>
+   instead of xlock (simple code)
+  </li>
+  <br/>
+  <center>
+   <h2>
+    News
+   </h2>
+  </center>
+  <p>
+   Use your RSS reader and get news from:
+  </p>
+  <li>
+   <a href="https://lobste.rs">
+    Lobsters
+   </a>
+   and
+   <a href="http://7rmath4ro2of2a42.onion/">
+    SoylentNews
+   </a>
+  </li>
+  <li>
+   <a href="http://cve.mitre.org/">
+    CVE
+   </a>
+  </li>
+  <li>
+   <a href="https://www.eff.org/">
+    EFF
+   </a>
+   ,
+   <a href="https://cdt.org/">
+    CDT
+   </a>
+   ,
+   <a href="https://cryptome.org">
+    Cryptome
+   </a>
+   and
+   <a href="http://www.theblackvault.com/documentarchive/intellipedia-entries/">
+    Intellipedia
+   </a>
+  </li>
+  <li>
+   <a href="http://undeadly.org">
+    Undeadly
+   </a>
+  </li>
+  <li>
+   <a href="https://www.librecores.org/planet/">
+    LibreCores
+   </a>
+   and
+   <a href="https://firmwaresecurity.com/">
+    FirmwareSecurity
+   </a>
+   (hardware and firmware)
+  </li>
+  <li>
+   <a href="http://lambda-the-ultimate.org">
+    Lambda the Utimate
+   </a>
+   (proglangs)
+  </li>
+  <p>
+   Interesting projects:
+  </p>
+  <li>
+   <a href="https://robigalia.org">
+    Robigalia
+   </a>
+   and
+   <a href="https://sel4.systems">
+    seL4
+   </a>
+  </li>
+  <li>
+   <a href="https://muen.codelabs.ch/">
+    Muen
+   </a>
+  </li>
+  <li>
+   <a href="https://genode.org/">
+    Genode
+   </a>
+  </li>
+  <li>
+   <a href="https://galois.com/">
+    Galois
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Mailing Lists
+   </h2>
+  </center>
+  <li>
+   <a href="https://marc.info/?l=openbsd-misc">
+    OpenBSD-misc
+   </a>
+   and
+   <a href="https://marc.info/?l=openbsd-tech">
+    OpenBSD-tech
+   </a>
+   .
+  </li>
+  <li>
+   <a href="http://seclists.org/">
+    SecLists
+   </a>
+  </li>
+  <li>
+   <a href="http://www.metzdowd.com/pipermail/cryptography/">
+    Metzdowd
+   </a>
+   and
+   <a href="https://moderncrypto.org/">
+    ModernCrypto
+   </a>
+  </li>
+  <br/>
+  <center>
+   <h2>
+    Basic Tips
+   </h2>
+  </center>
+  <li>
+   Make sure to do your own router using OpenBSD and a SoC board
+  </li>
+  <li>
+   Don't use hardware-based cryptography
+  </li>
+  <li>
+   If you can, don't use wireless connections
+  </li>
+  <li>
+   Don't use social media and don't expose your personal life on the internet.
+  </li>
+  <li>
+   Smartphones are a government tool. Don't even try.
+  </li>
+  <br/>
+  <center>
+   <h3>
+    TODO
+   </h3>
+  </center>
+  <li>
+   Show how to get Tor transparent proxy working on OpenBSD
+  </li>
+  <br/>
+  <li>
+   See more on traffic shaping and deep packet inspection. See
+   <a href="https://github.com/ValdikSS/GoodbyeDPI">
+    this
+   </a>
+  </li>
+  <br/>
+  <li>
+   Put
+   <a href="http://wiki.kiwix.org/wiki/Special:MyLanguage/Content_in_all_languages">
+    Wikipedia Snapshots
+   </a>
+   on Searx, so you don't need to request the page everytime. See if plato.stanford.edu has a public snapshot.
+  </li>
+  <br/>
+  <li>
+   Show how to disable all protocols but TCP/IPv4 and Close all ports, allow only Tor (generally 9050 and 5555). Disable WoL (Wake on LAN) and INET6 using ifconfig.
+  </li>
+  <br/>
+  <li>
+   Show how to compile Links2 from ports. Disable cookies and iframe support. Add pledge privsep.
+  </li>
+  <br/>
+  <li>
+   Show how to mount the system as read-only and put everything on RAM, through MFS  - nosuid, nodev, noexec. [?]
+  </li>
+  <br/>
+  <li>
+   See if it's possible to adapt
+   <a href="https://www.coreboot.org/Security/From_trustworthy_flash_to_trustworthy_OS">
+    this
+   </a>
+   or
+   <a href="https://www.coreboot.org/GRUB2#Security">
+    this
+   </a>
+   to OpenBSD
+  </li>
+  <br/>
+  <br/>
+  <center>
+   <h3>
+    Disclaimer
+   </h3>
+   <p>
+    <em>
+     No disclaimer needed. You know you should use anything listed here at your own risk.
+    </em>
+   </p>
+  </center>
+ </body>
+</html>

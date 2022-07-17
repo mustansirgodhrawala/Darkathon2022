@@ -1,0 +1,821 @@
+
+
+
+
+
+
+
+
+
+
+
+
+                        Invidious
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Log in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Nvidia, I’m Sorry. GTX 1660 Ti Review
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Watch on YouTube
+                (Embed)
+
+
+
+                Switch Invidious Instance
+
+
+
+                Embed Link
+
+
+
+
+                        Show annotations
+
+
+
+
+
+
+
+
+
+
+		Download as:
+
+			144p - video/3gpp
+			360p - video/mp4
+			720p - video/mp4
+			144p - video/mp4 @ 30fps - video only
+			144p - video/webm @ 30fps - video only
+			144p - video/mp4 @ 30fps - video only
+			240p - video/mp4 @ 30fps - video only
+			240p - video/webm @ 30fps - video only
+			240p - video/mp4 @ 30fps - video only
+			360p - video/mp4 @ 30fps - video only
+			360p - video/webm @ 30fps - video only
+			360p - video/mp4 @ 30fps - video only
+			480p - video/mp4 @ 30fps - video only
+			480p - video/webm @ 30fps - video only
+			480p - video/mp4 @ 30fps - video only
+			720p - video/mp4 @ 30fps - video only
+			720p - video/webm @ 30fps - video only
+			720p - video/mp4 @ 30fps - video only
+			1080p - video/mp4 @ 30fps - video only
+			1080p - video/webm @ 30fps - video only
+			1080p - video/mp4 @ 30fps - video only
+			1440p - video/webm @ 30fps - video only
+			1440p - video/mp4 @ 30fps - video only
+			2160p - video/webm @ 30fps - video only
+			2160p - video/mp4 @ 30fps - video only
+			audio/mp4 @ 50.282k - audio only
+			audio/mp4 @ 130.807k - audio only
+			audio/webm @ 57.906k - audio only
+			audio/webm @ 73.205k - audio only
+			audio/webm @ 137.936k - audio only
+			Subtitles - English (.vtt)
+
+
+
+		Download
+
+
+
+
+             4,597,904
+             118,925
+
+            Genre:
+
+                    Science & Technology
+
+
+
+            Family friendly? Yes
+            Wilson score: 1.0
+
+            Engagement: 2.5865%
+
+
+
+
+
+
+
+
+
+
+
+                    Linus Tech Tips 
+
+
+
+
+
+
+
+            Subscribe | 14.7M
+
+
+
+
+
+
+
+                    Shared February 23, 2019
+
+
+
+
+
+
+                    Check out the Thermaltake A500 mid-tower case on Amazon at lmg.gg/a500
+
+Win a OnePlus 6T Smartphone through our giveaway at lmg.gg/6tgiveaway
+
+We said the GTX 1660 Ti would come, and here it is – But it’s not quite what we had in mind. Can it perform well enough for a recommendation?
+
+Buy a GTX 1660 Ti:
+On Amazon: geni.us/tOE6
+On Newegg: lmg.gg/8KVww
+On Best Buy (PAID LINK): shop-links.co/1728222798363011773
+
+Buy an RTX 2060:
+On Amazon: geni.us/BXF2
+On Newegg: lmg.gg/8KVwh
+On Best Buy (PAID LINK): shop-links.co/1728222825292772343
+
+Buy an RX 590:
+On Amazon: geni.us/fKq5Ip
+On Newegg: lmg.gg/8KVwX
+On Best Buy (PAID LINK): shop-links.co/1728222876795574907
+
+Discuss on the forum: linustechtips.com/main/topic/1037183-nvidia-im-sor…
+
+Our Affiliates, Referral Programs, and Sponsors: linustechtips.com/main/topic/75969-linus-tech-tips…
+Get Private Internet Access today at geni.us/7lLuafK
+
+Linus Tech Tips merchandise at www.lttstore.com/?utm_medium=product_shelf&utm_sou…
+Linus Tech Tips posters at crowdmade.com/linustechtips
+Our Test Benches on Amazon: www.amazon.com/shop/linustechtips
+Our production gear: geni.us/cvOS
+
+Twitter - twitter.com/linustech
+Facebook - www.facebook.com/LinusTech
+Instagram - www.instagram.com/linustech
+Twitch - www.twitch.tv/linustech
+
+Intro Screen Music Credit:
+Title: Laszlo - Supernova
+Video Link: https://www.youtube.com/watch?v=PKfxm...
+iTunes Download Link: itunes.apple.com/us/album/supernova/id936805712
+Artist Link: soundcloud.com/laszlomusic
+
+Outro Screen Music Credit: Approaching Nirvana - Sugar High youtube.com/approachingnirvana
+
+
+
+
+
+
+
+
+
+
+
+
+                            Hi! Looks like you have JavaScript turned off. Click here to view comments, keep in mind they may take a bit longer to load.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Play next by default:
+
+
+
+
+
+
+
+
+
+
+
+
+                                        15:10
+
+
+                                Is RTX a Total Waste of Money?? - Can we even tell when it's on?
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    2.9M views
+
+
+
+
+
+
+
+
+
+                                        10:58
+
+
+                                DON'T Buy a Used Mining GPU! - $h!t Manufacturers Say
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    3M views
+
+
+
+
+
+
+
+
+
+                                        8:45
+
+
+                                6 REALLY UNUSUAL VIDEO CARDS!
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    4M views
+
+
+
+
+
+
+
+
+
+                                        21:27
+
+
+                                Cheap vs. Expensive Gaming!?
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    7.3M views
+
+
+
+
+
+
+
+
+
+                                        11:55
+
+
+                                Can you game WITHOUT driver updates?
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    1.7M views
+
+
+
+
+
+
+
+
+
+                                        16:51
+
+
+                                today's video was a disaster...
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    173K views
+
+
+
+
+
+
+
+
+
+                                        14:00
+
+
+                                Why you shouldn't water cool your PC
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    8.3M views
+
+
+
+
+
+
+
+
+
+                                        15:52
+
+
+                                Making Nvidia’s CEO mad - RTX 3090 Review
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    4.1M views
+
+
+
+
+
+
+
+
+
+                                        16:13
+
+
+                                Trying TikTok Computer Hacks...
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    6.8M views
+
+
+
+
+
+
+
+
+
+                                        17:57
+
+
+                                Are Walmart Gaming PCs actually THAT bad?
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    14M views
+
+
+
+
+
+
+
+
+
+                                        17:54
+
+
+                                The Herd Mentality PC
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    4.4M views
+
+
+
+
+
+
+
+
+
+                                        15:57
+
+
+                                This is a GAMING PC!?!?!
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    6.1M views
+
+
+
+
+
+
+
+
+
+                                        17:15
+
+
+                                NVIDIA Thinks These GPUs Are Worthless
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    2.2M views
+
+
+
+
+
+
+
+
+
+                                        18:11
+
+
+                                Can ANY graphics card REALLY Game at 8K??
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    3.1M views
+
+
+
+
+
+
+
+
+
+                                        17:03
+
+
+                                Blacksmith Rates 9 Forging Scenes From Movies And TV | How Real Is It? | Insider
+
+
+
+
+                                        Insider 
+
+
+
+
+                                    1.2M views
+
+
+
+
+
+
+
+
+
+                                        27:30
+
+
+                                Maybe Building Your Own PC is a BAD Idea
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    4.7M views
+
+
+
+
+
+
+
+
+
+                                        8:52
+
+
+                                Gaming at Max Settings is Really Dumb
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    1.9M views
+
+
+
+
+
+
+
+
+
+                                        11:24
+
+
+                                The MOST AVERAGE Gaming PC
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    5.2M views
+
+
+
+
+
+
+
+
+
+                                        12:42
+
+
+                                I Can't Believe Intel is Selling This.
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    1.2M views
+
+
+
+
+
+
+
+
+
+                                        13:27
+
+
+                                How bad is this $20 SSD??
+
+
+
+
+                                        Linus Tech Tips 
+
+
+
+
+                                    3.9M views
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Original source code /
+                            Modified Source code
+
+
+
+
+                            Documentation
+
+
+
+
+
+                            Released under the AGPLv3 on GitHub.
+
+
+
+                            View JavaScript license information.
+
+
+
+                            View privacy policy.
+
+
+
+
+
+
+                            Donate
+
+                        Current version:  2022.07.03-240b6af @ master

@@ -1,0 +1,280 @@
+
+
+
+RANIN - Better & Cheapest FUD Ransomware + Darknet C2 + NO Fees
+BUY - FAQ -
+REVIEWS - SCREENS - CONTACT
+We provide an already configured and compiled FUD Ransomware + Decrypter
+We are the only that provide a FREE Anonymous C2 Dashboard via Onion to manage your Clients
+We also provide additional FREE Customizations and take NO FEES from your Clients
+
+DISCLAIMER: Our Products are for EDUCATIONAL PURPOSES ONLY.
+Don't use them for illegal activities. You are the only responsable for your actions!
+Our Products/Services are sold with NO WARRANTY and AS ARE.
+*** THE ONLY ORIGINAL ONE (v3): s6ucwk4gmkoufqyfwnavrbfumfer3wtu65kg7q55d743zyenx5sipqid.onion ***
+
+Version: 1.21
+
+
+
+
+-= NEWS =-
+
+
+- 2021/01 : RANION v1.16 released (re-FUD)
+- 2021/02 : RANION v1.17 released (re-FUD)
+- 2021/03 : RANION v1.18 released (re-FUD)
+- 2021/04 : RANION v1.19 released (re-FUD)
+- 2021/06 : RANION v1.20 released (re-FUD)
+- 2021/07 : RANION v1.21 released (re-FUD)
+
+
+
+
+
+
+-= CHOOSE YOUR PACKAGE =-
+
+
+
+[PACKAGE #ELITE] - 12-MONTH C2 Dashboard (RaaS) - Price: 1900 USD
+
+C# FUD Ransomware (AES 256 Encryption with a 64 chars long uncrackable key)
+C# Decrypter
+Stub Size: 250kb (unique exe for each buyer)
+Stub #: 6 x 100% private FUD stubs
+Platform: Windows (both x86 and x64)
+Duration: 12 Months access to Darknet C2 Dashboard (to receive the AES keys from Clients)
+Fees: We take NO FEES from your Clients
+Features: Delayed Start, Delayed Encryption, Mutex, Task Manager/Registry Editor Disabler, UAC Bypass, Desktop Wallpaper Changer
+IP Tracking: Yes
+Offline Encryption: Yes
+Support: Yes
+Real-Time Client Manager: Yes
+Paid Add-On (Dropper): Execute your own exe (backdoor, implant, etc.) (FREE)
+Paid Add-On (Clone): A fresh FUD RANION copy with the same setup information (FREE)
+Paid Add-On (FUD+): Additional Crypter/Obfuscator to improve FUD ratio (FREE)
+Paid Add-On (Unkillable Process): Unkillable Process aka BSOD (FREE)
+Free Add-On: optional file types to encrypt (for all encrypted file types see FAQ)
+Free Add-On: optional Client's sub-banner in your language (already present en, ru, de, fr, es, it, nl, fas, za)
+
+
+
+
+
+[PACKAGE #PREMIUM] - 12-MONTH C2 Dashboard (RaaS) - Price: 900 USD
+
+C# FUD Ransomware (AES 256 Encryption with a 64 chars long uncrackable key)
+C# Decrypter
+Stub Size: 250kb (unique exe for each buyer)
+Stub #: 2 x 100% private FUD stubs (the second one after 6 months)
+Platform: Windows (both x86 and x64)
+Duration: 12 Months access to Darknet C2 Dashboard (to receive the AES keys from Clients)
+Fees: We take NO FEES from your Clients
+Features: Delayed Start, Delayed Encryption, Mutex, Task Manager/Registry Editor Disabler, UAC Bypass, Desktop Wallpaper Changer
+IP Tracking: Yes
+Offline Encryption: Yes
+Support: Yes
+Real-Time Client Manager: Yes
+Paid Add-On (Dropper): Execute your own exe (backdoor, implant, etc.) (FREE)
+Paid Add-On (Clone): A fresh FUD RANION copy with the same setup information (+90 USD)
+Paid Add-On (FUD+): Additional Crypter/Obfuscator to improve FUD ratio (+300 USD)
+Paid Add-On (Unkillable Process): Unkillable Process aka BSOD (+90 USD)
+Free Add-On: optional file types to encrypt (for all encrypted file types see FAQ)
+Free Add-On: optional Client's sub-banner in your language (already present en, ru, de, fr, es, it, nl, fas, za)
+
+
+
+
+
+[PACKAGE #STANDARD] - 6-MONTH C2 Dashboard (RaaS) - Price: 490 USD
+
+C# FUD Ransomware (AES 256 Encryption with a 64 chars long uncrackable key)
+C# Decrypter
+Stub Size: 250kb (unique exe for each buyer)
+Stub #: 1 x 100% private FUD stub
+Platform: Windows (both x86 and x64)
+Duration: 6 Months access to Darknet C2 Dashboard (to receive the AES keys from Clients)
+Fees: We take NO FEES from your Clients
+Features: Delayed Start, Delayed Encryption, Mutex, Task Manager/Registry Editor Disabler, UAC Bypass, Desktop Wallpaper Changer
+IP Tracking: Yes
+Offline Encryption: Yes
+Support: Yes
+Real-Time Client Manager: Yes
+Paid Add-On (Dropper): Execute your own exe (backdoor, implant, etc.) (+90 USD)
+Paid Add-On (Clone): A fresh FUD RANION copy with the same setup information (+90 USD)
+Paid Add-On (FUD+): Additional Crypter/Obfuscator to improve FUD ratio (+300 USD)
+Paid Add-On (Unkillable Process): Unkillable Process aka BSOD (+90 USD)
+Free Add-On: optional file types to encrypt (for all encrypted file types see FAQ)
+Free Add-On: optional Client's sub-banner in your language (already present en, ru, de, fr, es, it, nl, fas, za)
+
+
+
+
+[PACKAGE #TEST] - 1-MONTH C2 Dashboard (RaaS) - Price: 120 USD
+
+
+C# FUD Ransomware (AES 256 Encryption with a 64 chars long uncrackable key)
+C# Decrypter
+Stub Size: 250kb (unique exe for each buyer)
+Stub #: 1 x FUD stub
+Platform: Windows (both x86 and x64)
+Duration: 1 Month access to Darknet C2 Dashboard (to receive the AES keys from Clients)
+Fees: We take NO FEES from your Clients
+Features: Delayed Start, Delayed Encryption, Mutex, Task Manager Disabler, UAC Bypass, Desktop Wallpaper Changer
+IP Tracking: Yes
+Offline Encryption: No
+Support: No
+Real-Time Client Manager: No
+Paid Add-On (Dropper): Execute your own exe (backdoor, implant, etc.) (NOT AVAILABLE)
+Paid Add-On (Clone): A fresh FUD RANION copy with the same setup information (NOT AVAILABLE)
+Paid Add-On (FUD+): Additional Crypter/Obfuscator to improve FUD ratio (+300 USD)
+Paid Add-On (Unkillable Process): Unkillable Process aka BSOD (NOT AVAILABLE)
+Free Add-On: optional file types to encrypt (for all encrypted file types see FAQ)
+Free Add-On: optional Client's sub-banner in your language (already present en, ru, de, fr, es, it, nl, fas, za)
+Intended to Test our Service
+
+
+
+
+
+
+
+-= PACKAGES COMPARISON =-
+
+
+
+Package #TEST
+Package #STANDARD
+Package #PREMIUM
+Package #ELITE
+
+
+
+Subscription
+1 Month
+6 Months
+12 Months
+12 Months
+
+
+
+Darknet C2 Dashboard
+Yes
+Yes
+Yes
+Yes
+
+
+
+Features: Delayed Start, Delayed Encryption, Mutex, Task Manager/Registry Editor Disabler, UAC Bypass, Desktop Wallpaper Changer
+Yes
+Yes
+Yes
+Yes
+
+
+
+Offline Encryption
+No
+Yes
+Yes
+Yes
+
+
+
+Support
+No
+Yes
+Yes
+Yes
+
+
+
+Real-Time Client Manager
+No
+Yes
+Yes
+Yes
+
+
+
+Add-On: Dropper (+90 USD)
+No
+Buy
+Yes
+Yes
+
+
+
+Add-On: Clone (+90 USD)
+No
+Buy
+Buy
+Yes
+
+
+
+Add-On: FUD+ (+300 USD)
+Buy
+Buy
+Buy
+Yes
+
+
+
+Add-On: Unkillable Process (+90 USD)
+No
+Buy
+Buy
+Yes
+
+
+
+
+FUD Stub #
+1
+1 (100% private FUD stub)
+2 (100% private FUD stub)
+6 (100% private FUD stub)
+
+
+
+Price
+120 USD
+490 USD
+900 USD
+1900 USD
+
+
+
+
+
+
+
+
+
+-= HOW TO BUY =-
+
+Carefully read our FAQ and after use following procedure:
+Send the
+Package's price to following Bitcoin address:
+16MG8qtREyBhiHwJ8vAyK1NxPkKUfECCQW
+Write us an email to prohacking@asapmail.me telling us:- Chosen package-
+Your Bitcoin address used to send us money- Your own Bitcoin/Monero address to receive money from your
+Clients- Your price to receive from your Clients (ie. 0.20 btc/xmr)- Your email address to get contacted from your
+Clients- If you want to keep track of IPs of your Clients (enabled by default)- Chosen paid add-ons- Chosen optional free add-ons
+Wait until we check your payment
+You will receive an email with 2 links:
+- The first one with your files (Ransomware + Decrypter)
+- The second one with your C2 Dashboard
+
+Any setup information must be sent with payment email.
+No further customization can be put in place if your own RANION copy is in production.
+
+
+
+
+Your satisfaction is important! Contact us for any
+need. 
+Copyright (c) 2016-2022 - RANION (RaaS)

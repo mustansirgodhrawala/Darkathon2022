@@ -1,0 +1,314 @@
+
+
+
+
+    Tor
+
+
+        Home
+About Tor
+Documentation
+Press
+Blog
+Newsletter
+Contact
+
+
+
+
+
+          Download
+Volunteer
+Donate
+
+
+
+
+
+
+
+    Home »
+    Documentation
+
+
+
+
+
+        This website is an online archive and it's outdated!
+
+
+        Some resources you will find here are outdated. We are currently working on a new developer portal.
+        You can find updated and maintained resources about Tor Browser Manual, User Support, Relay Operations and Onion Services. If you have any questions or need help, please contact us.
+
+
+
+
+
+
+
+
+    Getting up to speed on Tor's past,
+    present, and future
+
+
+    First, read the overview page to get a
+    basic idea of how Tor works, what it's for, and who uses it.
+
+
+    Install Tor Browser and try it out.
+    Be sure to read the
+    list of warnings about ways you
+    can screw up your anonymity. Look through the Tor
+    Browser Design Document.
+
+
+    Our FAQ
+    covers all sorts of topics, including questions about setting up a client
+    or relay, concerns about anonymity attacks, why we didn't build Tor in
+    other ways, etc.
+    There's a separate Abuse FAQ to answer
+    common questions from or for relay operators.
+    The Tor Legal FAQ is written by
+    EFF lawyers, and aims to give you an overview of some of the legal issues
+    that arise from The Tor Project in the US.
+
+    Check out the Tor
+    Stack Exchange Q&A Site, and help us make the questions and
+    answers better.
+    The manual
+    lists all the possible entries you can put in your torrc
+    file. We also provide a manual for
+    the development version of Tor.
+    If you have questions, we have an IRC channel at
+    #tor on irc.oftc.net (you can
+    join via Tor as well). Developers work
+    in #tor-dev and relay operators
+    help each other in #tor-relays,
+    read this fine article by
+
+    Tor's Relay Advocate. If you have a bug, especially a crash bug, read
+    how to report a Tor bug
+    first and then tell us as much information about it as you can in
+    our bugtracker.
+    (If your bug is
+    with your browser or some other application, please don't put
+    it in our bugtracker.) The
+    tor-talk mailing list can also be useful.
+
+
+    Tor has a blog.
+    We try to keep it updated every week or two with the latest news.
+
+
+    Download and watch Roger's Tor
+    overview talk from Internet Days in Sweden (video,
+    slides,
+    youtube),
+    which provides good background on how Tor works and what it's for.
+
+
+    Learn about our censorship circumvention side: watch our 28C3
+    talk in December 2011 on how governments have tried to block Tor (video,
+    youtube, slides),
+    an overview
+    of what to look for in a circumvention tool,
+    and the original "blocking-resistance and
+    circumvention" talk from 23C3 in December 2006 (video,
+    slides, abstract,
+    design
+    paper).
+
+    Learn about the wide diversity of projects in
+    the Tor ecosystem that need your help. Watch the 29c3
+    video on the Tor software ecosystem to learn more.
+
+
+    Look through Tor's Design
+    Documents. Notice that we have RFC-style specs to tell you exactly
+    how Tor is built.
+    Learn about the Tor
+    proposal process for changing our design, and look over the existing proposals.
+
+
+    Our sponsor TODO list starts with a
+    timeline for external promises — things our
+    sponsors have paid to see done. It also lists many other tasks
+    and topics we'd like to tackle next.
+
+
+    Once you're up to speed, things will continue to change surprisingly fast.
+    The tor-dev mailing list is where the complex
+    discussion happens, and the #tor and #tor-dev IRC channels
+    are where the rest of the discussion happens.
+
+
+
+    Mailing List Information
+    Tor runs many
+    mailing lists. New users will be most interested in:
+
+    tor-announce
+    is a low volume list for announcements of new releases and critical
+    security updates. Everybody should be on this list. There is also
+    an RSS
+    feed.
+    tor-talk
+    is where a lot of discussion happens, and is where we send
+    notifications of prerelease versions and release candidates.
+    tor-relays
+    list is for discussions about running, configuring, and handling
+    your tor relay or bridge. If you currently run a relay or bridge,
+    or are thinking about doing so, this is the list for you.
+    tor-onions
+    is like tor-relays but for onion
+    services.
+    tor-dev
+    is for posting by developers only, and is very low traffic.
+
+
+    Design Documents
+
+    The design document (published at Usenix Security 2004)
+    gives our justifications and security analysis for the Tor design:
+    PDF and
+    HTML
+    versions available.
+    Thirteen key design changes since the original 2004 paper:
+    part one,
+    part two,
+    part three.
+
+    Our preliminary design to make it harder for large firewalls to
+    prevent access to the Tor network is described in
+    design of a blocking-resistant anonymity system:
+    PDF draft and
+    HTML draft.
+    Want to help us build it?
+    The specifications aim to give
+    developers enough information to build a compatible version of Tor:
+
+    Main Tor specification
+    Tor
+    version 3 directory server specification (and older version 2 directory
+    specification)
+    Tor control protocol
+    specification
+    Tor rendezvous specification: version 2 and version 3
+    Tor path selection
+    specification
+    Special hostnames in
+    Tor
+    Tor's SOCKS support
+    and extensions
+    How Tor version numbers
+    work
+    In-progress drafts of
+    new specifications and proposed changes
+
+
+
+    Neat Links
+
+    The Tor
+    wiki provides a plethora of helpful contributions from Tor
+    users. Check it out!
+    A
+    list of supporting programs you might want to use in association with
+    Tor.
+    The
+    Tor detector tries to guess if you're using Tor or not.
+    Check out Tor network status information using Relay Search.
+    Remember that these lists may not be as accurate as what your Tor
+    client uses, because your client fetches its own directory information and
+    examines it locally.
+    Read these
+    papers (especially the ones in boxes) to get up to speed on the field
+    of anonymous communication systems.
+
+
+    For Developers
+      Browse the Tor source repository:
+
+        Browse the repository's source tree directly
+        Git and SVN access:
+
+            git clone https://git.torproject.org/git/tor
+            svn checkout https://svn.torproject.org/svn/website/trunk website
+
+
+        Basic instructions for using Git to contribute to Tor software.
+
+
+
+
+
+
+
+Documentation Overview
+Install Tor Browser
+Tor on Android
+Other Tor software
+Expert guides
+Manuals
+Tor Wiki
+General FAQ
+Abuse FAQ
+Trademark FAQ
+Tor Legal FAQ
+
+
+
+
+
+
+
+    Tor Tip
+    Tor is written for and supported by people like you. Donate today!
+
+
+
+
+
+
+
+
+
+
+
+    Trademark, copyright notices, and rules for use by third parties can be found
+    in our FAQ.
+    We offer an onion service
+       for this site: expyuzz4wqqyqhjn.onion/.
+       See https://onion.torproject.org for all
+       torproject.org onion addresses.
+
+
+
+
+       About Tor
+
+          What Tor Does
+          Users of Tor
+          Core Tor People
+          Sponsors
+          Contact Us
+
+
+
+
+        Get Involved
+
+          Donate
+          Mailing Lists
+          Onion Services
+          Translations
+
+
+
+
+        Documentation
+
+          Manuals
+          Installation Guides
+          Tor Wiki
+          General Tor FAQ

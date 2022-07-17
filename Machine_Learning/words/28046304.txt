@@ -1,0 +1,1533 @@
+http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/Darknet Market News, Links, and Other Information About Crypto Markets, Privacy, Harm Reduction, and Cryptocurrencyhttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/cover.png1441551440enemail@darknetlive.com (DarknetLive)email@darknetlive.com (DarknetLive)Copyright 2020 Darknetlivehttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/Fri, 15 Jul 2022 19:31:02 -0400email@darknetlive.com (DarknetLive)According to Italian law enforcement, a man from the Province of Treviso attempted to hire a hitman on the darkweb to kill his romantic rival.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    This image was part of the police's media release
+
+
+The Federal Bureau of Investigation in the United States notified law enforcement agencies in Italy that someone had targeted a 45-year-old man from Conegliano through a murder-for-hire site on the darkweb. Local authorities discretely alerted the intended victim of the hit.
+By tracing the payment, investigators with the Postal and Communications Police identified the person responsible for paying for the hit. They â€œtracked the movemenent of cryptocurrencies from the virtual wallet of the suspect to the administrator of the site.â€� The investigation resulted in the identification of a 34-year-old man from the province of Treviso as the suspect.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    What is the blurred website?
+
+
+The suspect allegedly wanted to â€œfreely courtâ€� the intended victimâ€™s girlfriend, with whom the suspect was â€œsecretly in love.â€� By eliminating the competition, the suspect believed he would have a chance with the woman.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dread?
+
+
+Police referred the information to prosecutors. According to the police, the case is an example of Italian law enforcementâ€™s â€œmodern investigative techniques.â€�
+
+â€œThe whole judicial affair is characterized by some novel aspects that deserve to be highlighted. The successful identification of a user operating on the darkweb testifies that the non-indexed part of the internet, where illicit goods and services are freely offered, hitherto considered impenetrable by the Police, is no longer so. Indeed, modern investigative techniques used by the Postal and Communications Police, particularly those for tracking cryptocurrency payments, make it possible, as in this case, to trace cryptocurrency wallet holders.â€�
+
+
+LA POLIZIA DI STATO IDENTIFICA IL MANDANTE DI UN OMICIDIO SUL DARKWEB | archive.is, archive.org, commissariatodips.it (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/Murder-for-hirehttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/chainalysis-report-about-mixer-use-increasing/Thu, 14 Jul 2022 19:39:06 -0400email@darknetlive.com (DarknetLive)Cryptocurrency mixer use has reached an all-time high in 2022, according to a report from the blockchain analysis firm Chainalysis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Mixers may soon become obsolete as Chainalysis continues to refine the ability to demix certain mixing transactions and see usersâ€™ original source of funds.
+
+
+Chainalysis, a member of the World Economic Forumâ€™s (WEF) Global Innovators community, is a leader in the blockchain analytics industry. The company is an extension of governments, providing services to law enforcement agencies and hiring former feds and FinCEN employees.
+Mixers are receiving record amounts of cryptocurrency in 2022, according to a Chainalysis report published on July 14, 2022. On April 19, 2022, mixers received â€œan all-time high of $51.8 million worth of cryptocurrency.â€� A chart provided by Chainalysis reveals that mixers received roughly $24 million worth of cryptocurrency on the same day in 2021.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+â€œAre Mixers Compliant?â€�
+
+
+In the report, Chainalysis laments that mixers are legal â€œdespite their utility for criminals.â€� FinCEN, the Financial Crimes Enforcement Network, clarified in 2020 that cryptocurrency mixers are considered money transmitters under the Bank Secrecy Act (BSA) and must comply with the same regulations as other money transmitters. These regulations include maintaining an anti-money laundering compliance program and following â€œKnow Your Customerâ€� (KYC) rules for Money Services Businesses (MSBs).
+
+â€œGiven that increased privacy is the whole point of using a mixer, it seems unlikely that one could implement those compliance procedures and retain its user base. â€œ
+
+Types of Transactions
+
+
+So far, in 2022, 23% of funds sent to mixers came from a cryptocurrency address associated with illicit activity. Illicit transactions accounted for just 12% of mixer activity in 2021.
+Chainalysis tracked several categories of illicit activity.
+
+Terrorism financing
+Stolen Funds
+Scam
+Sanctions
+Ransomware
+Cybercriminal administrator
+Fraud shop
+Darknet market
+Child sex abuse material
+
+
+â€œWhat stands out most is the huge volume of funds moving to mixers from addresses associated with sanctioned entities, especially in Q2 2022.â€�
+
+In April 2022 (Q2), the U.S. Treasuryâ€™s Office of Foreign Assets Control (OFAC) sanctioned Hydra Market. Transactions from addresses linked to Hydra Market accounted for 50.4% of all funds moving to mixers from sanctioned entities in 2022.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lazarus Group is a hacking group purportedly connected to the Democratic Peopleâ€™s Republic of Korea (DPRK). In 2022, Lazarus Group hackers stole roughly $1 billion in cryptocurrency from DeFi projects. Funds sent from addresses associated with the Lazarus Group and Blender.io accounted for nearly all of the remaining transactions in the same category.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blender.io is the first cryptocurrency mixer sanctioned by OFAC. OFAC sanctioned the mixer for allegedly processing $20.5 million in stolen cryptocurrency, some of which came from the Lazarus Group.
+â€œBalancing privacy with safety.â€�
+
+
+Chainalysis, which is a neutral source when it comes to discussions about financial privacy, believes that mixers â€œpresent a difficult questionâ€� to â€œmembers of the cryptocurrency community.â€�
+
+â€œVirtually everyone would acknowledge that financial privacy is valuable, and that in a vacuum, thereâ€™s no reason services like mixers shouldnâ€™t be able to provide it. However, the data shows that mixers currently pose a significant money laundering riskâ€¦â€�
+
+
+Mixer Usage Reaches All-time Highs in 2022 With Nation State Actors and Cybercriminals Contributing Significant Volume | archive.is, archive.org, chainalysis.com (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/chainalysis-report-about-mixer-use-increasing/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/chainalysis-report-about-mixer-use-increasing/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/chainalysis-report-about-mixer-use-increasing/Cryptocurrencyhttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/Tue, 12 Jul 2022 17:53:11 -0400email@darknetlive.com (DarknetLive)A drug dealer who sold counterfeit Adderall pills on the darkweb under the username â€œaddy4cheapâ€� was sentenced to 52 months in prison.
+According to an announcement from the U.S. Attorneyâ€™s Office for the Eastern District of Virginia, a District Court judge sentenced Tyler Pham, 39, to 52 months in prison for conspiring to distribute between 15 and 45 kilograms of pills containing methamphetamine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Tyler Pham
+
+
+Court documents revealed that Pham and six co-conspirators sold counterfeit Adderall pills on the darkweb from May 2019 through December 2019. Investigators linked Pham to a vendor account under the username â€œaddy4cheap.â€� Addy4cheap had profiles on Empire Market and Cryptonia Market, among others. As of December 10, 2019, addy4cheap had completed 3,665 transactions on Empire and 140 transactions on Cryptonia. Based on an analysis of addy4cheapâ€™s reviews on Empire Market, investigators believe Pham received approximately $482,572.10 in sales for about 44,872 pills.
+Between August 2019 and December 2019, investigators conducted 20 controlled purchases from Phamâ€™s vendor accounts on Empire and Cryptonia. In total, law enforcement officers received 767 fake Adderall pills from addy4cheap. The pills weighed approximately 268 grams in total.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Feds stocked up on methamphetamine during the investigation.
+
+
+The investigation into addy4cheap, according to an affidavit in support of a criminal complaint and arrest warrant, began in August 2019 after law enforcement officers intercepted a package of fake Adderall pills. Investigators interviewed the intended recipient of the package.
+
+â€œThe individual stated that he had on multiple occasions purchased Adderall through a [darknet market] known as the Empire Market from a vendor using the moniker addy4cheap. He did not think that the pills that hid were pharmaceutical grade as he had a prescription for Adderall and the tablets from addy4cheap were different from those that he had been prescribed. The individual stated that he received the tablets via U.S. Mail and that the retum address on the packages from addy4cheap was in Fairfax, Virginia. The individual provided agents with the tracking number from his most recent purchase from addy4cheap on the Empire Market.â€�
+
+Investigators observed several negative reviews left by addy4cheapâ€™s customers on Empire Market. Some examples of the negative reviews are as follows:
+
+â€œTested positive for meth with simon a/b testâ€�;
+â€œNot Adderall. Pressed pills. Tested positive for methâ€�;
+â€œDishonest vendor. Says its authentic adderall and sends meth and sugar pressed into an â€œAdderallâ€� shape. I Took this to study and ended up not sleeping for two days. It sucked. Do not buyâ€�, and
+â€œI tested the pills, and they contain meth. I was pretty upset since he advertised them as 100% authentic. I messaged him, and he mid the most he could offer me was a 15% dimount. Just beware buyer these are Meth pills.â€�
+
+Law enforcement officers conducted undercover purchases from addy4cheap from late August 2019 through November 27, 2019. During the investigation, law enforcement officers observed Pham and his co-conspirators mailing packages that resembled the packages shipped by addy4cheap. After receiving the pills, analysts tested the pills and confirmed the presence of methamphetamine.
+In September 2019, law enforcement officers at the Ronald Reagan Washington National Airport contacted investigators about Pham. During a search of passengers, a K-9 unit purportedly hit on a piece of Phamâ€™s luggage that contained $30,000 in cash. Law enforcement seized the money.
+On December 9, 2019, feds raided Phamâ€™s house and the residences of Phamâ€™s co-conspirators. The search team found roughly 200 counterfeit Adderall pills in Phamâ€™s house that resembled those sold by addy4cheap. In one co-conspiratorâ€™s residence, â€œinvestigators found over 6,000 peach tablets weighing approximately 2.2 kilograms which resemble those advertised on â€œaddy4cheapâ€� vendor pages and those received by law enforcement through controlled purchases.â€� In the same residence, officers found multiple envelopes, bags, raisin boxes, printers, and other materials consistent with the packaging materials used by addy4cheap" Approximately 400 grams of MDMA tablets, marijuana, vape cartridges, a money-counting machine, and U.S. currency were also found.
+After Phamâ€™s arrest in 2019, a judge signed off on a personal recognizance bond, allowing Pham to avoid pre-trial detention. Pham then fled to Vietnam in an attempt to avoid prosecution. The Vietnamese Ministry of Public Security returned Pham to U.S. authorities on November 16, 2021.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Pham appeared on a â€˜wanted by the FBIâ€™ poster.
+
+
+In April 2022, Pham pleaded guilty to Conspiracy to Distribute Controlled Substances. Phamâ€™s co-conspirators pleaded guilty to charges related to the conspiracy and were sentenced to over 13 years in prison combined. A U.S. District Judge sentenced Pham to 52 months in prison on July 12, 2022.
+
+Man Sentenced for Conspiracy to Distribute Meth on the Darknet | archive.is, archive.org, justice.gov
+complaint pdf
+judgement pdf (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/Darkweb Vendorshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bulgarian-customs-seized-200-darkweb-packages/Mon, 11 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)Bulgarian customs officers intercepted 198 packages of illegal drugs in ten days.
+According to an announcement from Bulgarian customs, customs officers intercepted 120 packages of illegal substances between June 7, 2022, and June 17, 2022. Officers seized Tramadol, Oxycodone, Fentanyl, and Diazepam, among others. The packages contained approximately 120,000 pills and 40 kilograms of Khat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A map of the intended destinations of packages intercepted by police.
+
+
+The seizures were a part of a â€œspecialized operation against drug trafficking via the darknet,â€� according to the announcement. Customs officers from a drug trafficking department of the Territorial Directorate (TD) Sofia Customs worked with the United States Drug Enforcement Administration during the operation.
+
+â€œDuring the operation, the customs officers carried out numerous operational and search activities, as a result of which they intercepted and prevented the dispatch of 198 shipments to various destinations abroad.â€�
+
+Based on the limited information in the announcement, it appears as if law enforcement officers primarily intercepted outgoing packages. Investigators determined that the contents of the packages - small quantities of pills or other substances - were â€œnegotiated through Darknet platforms.â€� Suppliers in Bulgaria then prepared the drugs for shipment and mailed the packages to customers in the â€œUSA, Europe, and Australia.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Law enforcement officers disrupted three drug trafficking networks and dismantled one facility used by drug traffickers to prepare drugs for shipping. The Sofia City Prosecutorâ€™s Office has already initiated four pre-trial proceedings due to the interceptions. Officers have also executed search warrants at homes, offices, and warehouses in Sofia and Lovech.
+Four pre-trial proceedings have already been initiated in the cases, and investigations are ongoing. Numerous searches and seizures have been carried out in homes, offices, and warehouses in Sofia and Lovech.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Customs officers seized lorazepam pills during the operation.
+
+
+Police arrested one person and charged him with smuggling narcotics. Investigations into other suspects are ongoing.
+
+200 Ð¿Ñ€Ð°Ñ‚ÐºÐ¸ Ñ� Ð½Ð°Ñ€ÐºÐ¾Ñ‚Ð¸Ñ†Ð¸, Ð¿Ð»Ð°Ñ�Ð¸Ñ€Ð°Ð½Ð¸ Ñ‡Ñ€ÐµÐ· Darknet, Ð·Ð°Ð´ÑŠÑ€Ð¶Ð°Ñ…Ð° Ð¼Ð¸Ñ‚Ð½Ð¸Ñ‡ÐµÑ�ÐºÐ¸ Ñ�Ð»ÑƒÐ¶Ð¸Ñ‚ÐµÐ»Ð¸ Ð¿Ñ€Ð¸ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ñ� Web Thunder | archive.org, archive.is, customs.bg
+Pictuer quality here is so rough because the pictures are stills from this low-res YouTube video: https://www.youtube.com/watch?v=ofJHkRnqYAU&feature=youtu.be or via invidius: https://inv.riverside.rocks/watch?v=ofJHkRnqYAU (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bulgarian-customs-seized-200-darkweb-packages/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bulgarian-customs-seized-200-darkweb-packages/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bulgarian-customs-seized-200-darkweb-packages/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/Fri, 08 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)Fraudster sentenced to prison for more than six years for buying stolen credit cards on the darkweb and using them to buy jewelry.
+U.S. District Judge Sara Lioi sentenced Hasan Howard, 23, of Cleveland, Ohio, to more than six years in prison for various fraud charges. The judge also ordered Howard to pay $261,319.28 in restitution.
+In March 2022, Howard pleaded guilty to conspiracy to commit access device fraud, access device fraud, and aggravated identity theft.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Hasan Howard aka @Bigghasan on Instagram and Twitter.
+
+
+According to an announcement from the U.S. Attorneyâ€™s Office for the Northern District of Ohio, Howard and his co-defendants, including Robert Nathaniel Andre Thomas, Tyvione Guthery, and Jaelen D. Lattimore, purchased stolen financial information on the darkweb, including credit card numbers and debit card numbers.
+Howard created fraudulent credit cards by embossing cards with the stolen information purchased on the darkweb. Then Howard and his co-conspirators would purchase expensive merchandise, including jewelry and watches. In a criminal complaint, an FBI Special Agent wrote that investigators had learned that Howard had a â€œJokerâ€™s Stashâ€� account.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Is that a Honda Accord?
+
+
+In one example provided by the Attorneyâ€™s Office, Howard, Guthery, and Lattimore purchased a Rolex watch for $19,062 from a jewelry store in Westlake, Ohio. They paid for the watch with a fraudulent credit card. In another example, Howard used a fraudulent credit card to purchase four diamond and gold bracelets from a jewelry store in Canton, Ohio, worth $26,463.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    The FBI obtained search warrants for Howardâ€™s Instagram accouts.
+
+
+The criminal complaint described one interaction with law enforcement and one of Howardâ€™s co-conspirators:
+
+â€œOn or about January 6, 2021, a fraudulent transaction was reported at Sheiban Jewelers, 16938 Pearl Road, Strongsville, Ohio, belonging to victim J.M (real name known to affiant) for a total loss of $14,500. The fraudulent transaction took place on or about December 19, 2020, in which the store received a call from GUTHERY who stated that he would come to the store on the same date to make a purchase of a Rolex Yacht-Master watch.â€�
+
+
+â€œWhen GUTHERY arrived, he presented his driverâ€™s license to the employee and provided a credit card for a layaway amount of $7,000. GUTHERY then left the store but returned later with HOWARD; video surveillance shows both GUTHERY and HOWARD entering the store. When GUTHERY and HOWARD returned to the store, they paid the full amount and received the Rolex watch.â€�
+
+
+â€œSurveillance video also captured a Lexus G350 driven by GUTHERY, which was registered to PARRISH. On January 1, 2021, Strongsville Police Department Patrolman John Murphy spoke to GUTHERY on a phone call; the call was recorded. During the conversation, GUTHERY admitted that he was the one who drove to HOWARD in PARRISHâ€™s car to the jewelry store. GUTHERY identified the other male as his cousin HASAN (HOWARD). GUTHERY stated that HOWARD provided GUTHERY with the credit cards and billing address of the victim to GUTHERY. GUTHERY stated that HOWARD also provided PARRISH with stolen credit card information that PARRISH used at a BMW dealership to repair her vehicle in Willoughby Hills, Ohio.â€�
+
+On May 20, 2021, police arrested Howard and Lattimore after they had purchased more than $20,000 worth of jewelry from jewelers in  Aurora, Ohio. Police found an embossing machine and three Rolex watches in Howardâ€™s possession.
+Howard and his co-conspirators used stolen credit card information to purchase merchandise at 30 stores, causing $261,319.28 in damages.
+
+Cleveland Man Sentenced to Prison for Leading Conspiracy that Purchased Thousands Worth of Jewelry Using Stolen Financial Information | archive.is, archive.org, justice.gov
+complaint pdf (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/indiana-men-charged-for-fentanyl-trafficking/Thu, 07 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)A federal grand jury returned an indictment charging two men for selling counterfeit pills on the darkweb.
+Edited on July 8, 2022, to correct a price listed in a previous version of this article.
+According to an announcement from the U.S. Attorneyâ€™s Office for the Southern District of Indiana, Ethan Parker, 29, of Evansville, used a pill press to manufacture fentanyl-laced counterfeit pills. Parker sold the pressed pills to co-conspirators, including Joshua Harvey, 30, of Evansville. Harvey then resold pills to â€œmid-level distributorsâ€� in their drug trafficking organization, mainly in the Evansville, Indiana, area.
+Parker obtained pound quantities of fentanyl powder from â€œan unknown source of supplyâ€� in Louisville, Kentucky. Harvey also drove Parker to a supplier to â€œacquire pound quantities of fentanyl powder to facilitate the manufacture and distribution of fentanyl-laced counterfeit pills,â€� according to the press release.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Ethan Parker and Joshua Harvey in mugshots provided by Vanderburgh County Sheriff's Office
+
+
+
+â€œDuring the investigation, it is alleged that Parker and Harvey displayed a high degree of technological sophistication, utilizing encrypted messaging applications to purchase, advertise, and sell fentanyl-laced counterfeit pills, as well as utilizing the â€œDark Webâ€� and cryptocurrency to pay for drug transactions.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A bag of pills seized by police | 14news.com
+
+
+Harvey and other co-conspirators would purchase pills and communicate with Parker through encrypted messaging applications and Facebook messages. In one instance, Parker directed Harvey to a â€œchannelâ€� on an encrypted messaging application where Parket sold counterfeit pills. In the channel, Parket advertised 50 pills for $375, 100 pills for $750, and 1,000 pills for $5,000. The indictment does not identify the â€œencryptedâ€� messaging application but based on the description provided, it appears to be referencing Telegram.
+On March 10, 2022, Harvey sent Parker a message through Facebook about aquiring counterfeit pills. Parker directed Harvey to a â€œwebpage on the darkwebâ€� where Parker sold pills.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Police found a pill press during execution of a search warrant.
+
+
+On March 15, 2022, Harvey sent Parker $900 through Cash App; investigators believe the march 15 payment was for Parkerâ€™s counterfeit pills.
+During the investigation, law enforcement officers seized approximately 140 grams of fentanyl-laced counterfeit pills and powder, two pill presses, and various dies and punches utilized to press pills.
+On July 6, 2022, federal law enforcement officers arrested the defendants. Parker faces counts of Conspiracy to Distribute Fentanyl, Distribution of Tableting Machine, and Possession of Tableting Machine. Harvey faces only the Conspiracy to Distribute Fentanyl charge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A warning placed on the door of Parkerâ€™s home.
+
+
+
+Two Evansville Men Indicted for Trafficking Fentanyl and Allegedly Manufacturing Fentanyl-Laced Counterfeit Pills Using a Pill Press | archive.is, justice.gov
+Indictment pdf
+A previous version of this article listed the price point for 50 pills as $350. The correct number advertised by Parker was $375. (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/indiana-men-charged-for-fentanyl-trafficking/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/indiana-men-charged-for-fentanyl-trafficking/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/indiana-men-charged-for-fentanyl-trafficking/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/credit-card-fraudster-sentenced-to-prison/Wed, 06 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)A prolific fraudster who produced fraudulent credit cards using stolen card numbers from the darkweb was sentenced to 108 months in prison.
+United States District Judge Eldon E. Fallon sentenced Maurice Durio, 42, to 108 months in prison. Durio had previously pleaded guilty to a credit card fraud charge.
+According to U.S. Attorney Duane A. Evans, Durio operated â€œa card manufacturing plantâ€� at an office space in an office park in Houston. Durioâ€™s co-defendant, Edward Toliver, also rented office space in the same office park for the same purpose. The duo outfitted the office spaces with equipment used to manufacture fraudulent credit cards.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    U.S. Attorney Duane A. Evans announced the sentence.
+
+
+Durio and Toliver purchased stolen credit card numbers from sources on the darkweb, according to a press release from the U.S. Attorneyâ€™s Office for the Eastern District of Louisiana. Toliver also purchased cards from a source he had met in prison.
+With the assistance of several co-conspirators, Durio and Toliver created templates for credit cards on their computers and
+
+â€œdownloaded credit card templates on laptop computers and transferred the stolen credit card numbers into the templates, which were then used to create tens of thousands of fraudulent access devices. The cards would generally be printed in batches with the same name appearing on numerous cards. The name was typically the real name of a co-conspirator. The cards were embossed with numbers, and corresponding account information was encoded on the strips on the back of the cards.â€�
+
+Durio and Toliver distributed thousands of fraudulent credit cards to people who purchased valuable merchandise or gift cards.
+Investigators learned about the operation after arresting people who had cards produced by Durio in their possession. Law enforcement officers from the Secret Service â€œwere able to tie these card seizures to the plantsâ€� operated by Durio.
+During the execution of a search warrant at the office park in Houston, feds seized access to device-making equipment, embossers, scanners, high-end printers, thousands of fraudulent credit cards, and a laptop computer. Durio had saved 80,000 stolen credit card numbers in files on the computer. On other computers used by Durio, feds found approximately 300,000 additional stolen card numbers.
+
+New Orleans Man Sentenced to Nine Years in Federal Prison for Massive Credit Card Fraud Scheme | archive.is, archive.org, justice.gov (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/credit-card-fraudster-sentenced-to-prison/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/credit-card-fraudster-sentenced-to-prison/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/credit-card-fraudster-sentenced-to-prison/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/welcome-to-video-admin-sentenced-again/Tue, 05 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)The administrator of one of the â€œworldâ€™s largest child pornography websitesâ€� was sentenced to two years in prison for hiding proceeds from the forum.
+Son Jong-woo, the convicted operator of the Welcome To Video forum on the darkweb, was sentenced to five years in prison for concealing about 400 million won ($305,000). The money came from users of Sonâ€™s forum who spent Bitcoin to access child sexual abuse material (CSAM).
+The defendant has already served an 18-month sentence for violating child protection laws. A grand jury in the United States returned an indictment, accusing Son of:
+
+Conspiracy to Advertise Child Pornography;
+Advertising Child Pornography;
+Production of Child Pornography for Importation to the United States;
+Conspiracy to Distribute Child Pornography;
+Distribution of Child Pornography; and
+Money Laundering.
+
+Before Son completed his sentence, his father filed a criminal complaint against him for â€œviolation of the law on criminal proceeds concealment.â€� The move was interpreted as an attempt to prevent Sonâ€™s extradition to the United States.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    The 'Welcome to Videoâ€™ seizure banner uploaded by law enforcement.
+
+
+The Seoul High Court blocked Sonâ€™s extradition because Sonâ€™s cooperation would assist authorities in investigating â€œsexually exploitative content.â€� Authorities then filed new charges against Son, including criminal proceeds concealment and gambling with the concealed proceeds.
+The Korean National Police in South Korea arrested Son on March 5, 2018. Agents from the IRS-CI, HSI, and National Crime Agency in the United Kingdom seized the servers Son had used to host the onion service. The operation resulted in the seizure of eight terabytes of CSAM. A Department of Justice press release revealed that 45% of the 250,000 unique videos seized by police contained new images.
+
+â€œWelcome To Video offered these videos for sale using the cryptocurrency bitcoin. Typically, sites of this kind give users a forum to trade in these depictions. This Darknet website is among the first of its kind to monetize child exploitation videos using bitcoin. In fact, the site itself boasted over one million downloads of child exploitation videos by users. Each user received a unique bitcoin address when the user created an account on the website. An analysis of the server revealed that the website had more than one million bitcoin addresses, signifying that the website had capacity for at least one million users.â€�
+
+
+â€œThe agencies have shared data from the seized server with law enforcement around the world to assist in identifying and prosecuting customers of the site. This has resulted in leads sent to 38 countries and yielded arrests of 337 subjects around the world. The operation has resulted in searches of residences and businesses of approximately 92 individuals in the United States. Notably, the operation is responsible for the rescue of at least 23 minor victims residing in the United States, Spain and the United Kingdom, who were being actively abused by the users of the site.â€�
+
+
+South Korean man jailed over proceeds from child porn site, Yonhap reports | archive.is, archive.org, reuters.com (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/welcome-to-video-admin-sentenced-again/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/welcome-to-video-admin-sentenced-again/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/welcome-to-video-admin-sentenced-again/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/washington-man-sentenced-to-prison-for-selling-meth/Mon, 04 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)A Washington man who sold methamphetamine on the darkweb was sentenced to five years in prison.
+U.S. Attorney Nick Brown announced that Ryan Kane, 34, of Bothell, Washington, had been sentenced to five years in prison. Kane had pleaded guilty to one count of Possession of Methamphetamine with Intent to Distribute in March 2022.
+The investigation that resulted in Kaneâ€™s arrest began in March 2021 after the Australian Border Force (ABF) had seized 39 computer hard drives containing crystal methamphetamine from a UPS package. The â€œseizure weightâ€� was fou kilograms.
+On April 25, 2021, a United States Postal Service (USPS) outbound mail parcel arrived at the SFO International Mail Facility destined for Australia. The package was declared a â€œ3.5IN DESKTOP HARDDRIVE,â€� and a Customs and Border Protention officer referred the package for inspection. Officers x-rayed the package, which revealed inconsistencies between the description and the image, according to the criminal complaint.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Kane shipped methamphetamine to customers inside hard drives.
+
+
+
+â€œIn the image, the inside of the hard drives appeared granular, as if they were full of thousands of small particles. This is in stark contrast to a smooth solid piece of metal or plastic seen from a legitimate hard drive. A physical examination of USPS Package 1 revealed 18 vacuum sealed hard drives. Furthermore, CBPO Salas opened a hard drive and observed a crystalline substance inside. CBPO Coleman tested the suspected substance inside the hard drive and it field-tested positive for methamphetamine. CBPO Salas calculated the gross weight of the hard drives with the methamphetamine to be 8,096 grams.â€�
+
+On April 27, 2021, a similar USPS package arrived at the San Francisco International Mail Facility destined for Australia. The package was declared as a â€œ3.5IN DESKTOP HARDDRIVE.â€� Customs officers refereed the package for inspection. Officers x-rayed the package, noted the same inconsistencies in the first package, and then opened the package.
+
+â€œThe wrapping and feel of the hard drives were inconsistent with whatâ€™s expected of a new drive. Furthermore, CBPO Salas opened a hard drive and a crystalline substance was found inside. CBPO Salas conducted a field test on the substance contained inside the hard drive and determined that the substance was methamphetamine. CBPO Salas determined that the total gross weight of the meth and hard drives was 8,173 grams.â€�
+
+USPS business records revealed that someone using the I.P. address 50.106.18.109 had tracked the first USPS package eight times and the second USPS package three times. The I.P. address was assigned to Ziply Fiber, an Internet Service Provider. Records from Ziply Fiber identify the subscriber for the I.P. address as Ryan Kane at 12618 NE 180th S.T., Apt EE302 Bothell, WA 98011.
+On June 7, 2021, agents executed a search warrant at Kaneâ€™s apartment, vehicle, and person. Agents found 1,844.1 grams of methamphetamine inside a jar in Kaneâ€™s bedroom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Agents found 1,844.1 grams of methamphetamine inside a jar in Kane's room.
+
+
+In the same room as the methamphetamine, agents found 15 hollowed-out hard drives containing more methamphetamine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Kane had a stack of hard drives containing methamphetamine.
+
+
+Agents also found a notebook containing the username of Kaneâ€™s darkweb vendor account, artwork related to the same vendor account, USPS Priority Mail Express Boxes, FedEx Boxes, multiple shipping labels, and a 9mm pistol.
+Kane told agents that he knew about the methamphetamine in his apartment and admitted that he had been selling it. However, Kane also told agents that an outlaw motorcycle gang had extorted him into selling the methamphetamine. â€œThe Defendant refused to provide any names of individuals who had threatened him or supplied the methamphetamine,â€� Special Agent Matt Eidinger wrote in the criminal complaint.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Court documents do not disclose the username of Kaneâ€™s vendor account. They do identify Wallstreet Market as one of the marketplaces Kane had used.
+
+â€œSpecifically, on October 17, 2019, Mr. Kane received an order for five grams of methamphetamine from the Dark Web marketplace Wall Street. Mr. Kane processed and packaged the methamphetamine and shipped the package. The parcel contained approximately five grams of a mixture or substance containing a detectable amount of methamphetamine.â€�
+
+The total gross weight of the methamphetamine was 8,280.4 grams.
+U.S. District Judge James L. Robart said at the sentencing hearing, addressing Kane, â€œThis isnâ€™t about youâ€¦. This is about what you did to the community â€¦sending drugs not just into our community, but the world. What you did is decidedly wrong.â€�
+â€œMr. Kaneâ€™s conviction and todayâ€™s sentence demonstrates how smugglers cannot hide behind the perceived veil of secrecy associated with Dark Web marketplaces,â€� said Special Agent in Charge (SAC) Robert Hammer, who oversees Homeland Security Investigations (HSI) operations in the Pacific Northwest. â€œHSI through its transnational law enforcement footprint will doggedly pursue these cases with our law enforcement partners within the U.S. and abroad.â€�
+
+Bothell, Washington, man sentenced to 5 years in prison for dealing drugs hidden in computer hard drives | archive.is, archive.org, justice.gov
+Indictment pdf (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/washington-man-sentenced-to-prison-for-selling-meth/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/washington-man-sentenced-to-prison-for-selling-meth/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/washington-man-sentenced-to-prison-for-selling-meth/Darkweb Vendorshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/wv-man-sentenced-to-ten-years-in-prison/Fri, 01 Jul 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)A federal judge sentenced a West Virginian to ten years in prison for ordering hundreds of grams of methamphetamine on the darkweb.
+United States District Judge Irene Berger sentenced Joshua Lee Parsons, 42, of Powellton, to ten years in prison, followed by five years of supervised release for buying methamphetamine on the darkweb. Parsons pleaded guilty in March 2022 to one count of possession with intent to distribute 50 grams or more of methamphetamine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Joshua Lee Parsons
+
+
+U.S. Customs and Border Protection (CBP)agents at the John F. Kennedy International Mail Center seized 49 grams of heroin in a package addressed to Parsons in February 2021. On March 1, 2021, CBP agents intercepted another package of drugs addressed to Parsons. It contained 34 grams of MDMA.
+On March 8, 2021, law enforcement officers from Homeland Security Investigations, the United States Postal Inspection Service, the West Virginia State Police, and the West Virginia National Guard Reconnaissance and Aerial Interdiction Detachment executed a search warrant at Parsonâ€™s residence.
+While searching Parsonsâ€™ residence, officers seized 66 grams of methamphetamine in 103 bags, 27 grams of heroin, and quantities of MDA, ketamine, LSD, psilocin, and DMT. They also found a Hi-Point .380 ACP pistol and ammunition under the driverâ€™s seat of Parsonsâ€™ vehicle.
+During questioning, Parsons told officers that he had purchased the methamphetamine and other substances on the darkweb to resell them. He also told officers that he had ordered another package of methamphetamine that had not yet arrived. On March 15, 2021, officers seized the package. Inside it, they found 223 grams of methamphetamine.
+In June 2021, a grand jury returned an indictment accusing Parsons of possession with intent to distribute 50 grams or more of methamphetamine, possession of heroin, and being a felon in possession of a firearm.
+In a sentencing memorandum, Parsonsâ€™ attorney described the previous offenses:
+
+â€œHis offense conduct consisted of breaking into an adult novelty store four different times and first stealing $ 1,745 merchandise, then $ 59,172 in-merchandise, and then twice taking the safe; breaking into a Burger King to steal $ 7,742.23 in merchandise; breaking into a pawn shop to steal three firearms having a combined value of $ 1,049; breaking into a different adult boutique to steal $ 3,300 cash and $5,420 in merchandise; breaking into a Chinese restaurant and stealing $1,103 in property; breaking into the safe of a sports center and stealing $ 2,300 in property.â€�
+
+the first time, and the entire safe the second time, and breaking into a chiropractic practice stealing property valued at $3,835."
+In March 2022, Parsons pleaded guilty to possession with intent to distribute 50 grams or more of methamphetamine. On June 30, 2022, Judge Irene Berger sentenced Parsons to ten years in prison, followed by five years on supervised release.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+indictment, plea, judgement (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/wv-man-sentenced-to-ten-years-in-prison/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/wv-man-sentenced-to-ten-years-in-prison/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/wv-man-sentenced-to-ten-years-in-prison/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/third-eastsidehigh-defendant-pleads-guilty/Tue, 28 Jun 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)The third member of the â€œEastSideHighâ€� darkweb drug trafficking group pleaded guilty to drug manufacturing, distribution, and possession charges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Steven McCall with co-conspirators Binh Thanh Le and Allante Pires
+
+
+Steven McCall, 26, pleaded guilty to conspiracy to manufacture, distribute and possess with intent to distribute MDMA, Ketamine, and Alprazolam.
+Summary
+
+
+McCall and co-conspirators Binh Thanh Le and Allante Pires sold various drugs, including cocaine, MDMA, Ketamine, and Xanax, on the darkweb. The trio sold through a vendor account on Wallstreet Market and Dream Market under the username â€œEastSideHigh.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    The EastSideHigh vendor profile on Wallstreet Market
+
+
+Le, the ringleader, was sentenced to eight years in prison on March 10, 2022, for the charges of conspiracy to manufacture, distribute and possess with intent to distribute MDMA, ketamine, and alprazolam. A judge ordered Le to forfeit more than 59 Bitcoin (currently worth more than $1.2 million), and $114,680 in cash, among other things.
+On June 3, 2022, Pires pleaded guilty to the same charges. His sentencing hearing was scheduled for September 8, 2022.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Some of the products advertised by the vendor on Wallstreet Market
+
+
+During the investigation, law enforcement officers seized more than 19 kilograms of MDMA, almost seven kilograms of ketamine, nearly one kilogram of cocaine, more than 10,000 counterfeit Xanax pills, and over $114,000 in cash. At an office space in Stoughton, police found packages of drugs, [a laptop signed into the EastSideHigh account](/post/ecstasy-and-ketamine-vendor-eastsidehigh-busted-in-massachusetts/ â€˜Ecstasy and Ketamine Vendor â€œEastSideHighâ€� Busted in Massachusetts') on Wallstreet Market, and McCall. McCall was wearing a respirator and latex gloves when police arrested him at the office space.
+Background
+
+
+A background on the case from one of the previous EastsideHigh articles on Darknetlive:
+
+In February 2019, an undercover Homeland Security Investigations (HSI) agent notified Postal Inspector Gina Gentiluomo that EastSideHigh wanted to exchange Bitcoin for cash. The HSI agent communicated with EastSideHigh through a secure messaging application about the exchange. Inspector Gentiluomo then contacted the vendor, posing as the money launderer.
+
+
+Hotel Meeting
+
+
+
+
+In March 2019, Inspector Gentiluomo and another postal inspector (UC) met with Le at a hotel. The parties agreed to exchange $200,000 in Bitcoin in a wired hotel room. After Le had sent the Bitcoin to the address provided by the feds, the second postal inspector pretended to be having problems with his cellphone. He asked Le to open the wallet application on his phone and verify that the transaction had been completed. Le handed his unlocked phone to the postal inspector. After the postal inspector had possession of Leâ€™s phone, postal inspectors and state police entered the room and detained Le.
+
+
+After being advised of his rights per Miranda, Le voluntarily provided law enforcement officers with his password.
+
+
+After detaining Le, other officers approached Piresâ€™ Mercedes, which was still in the hotelâ€™s parking lot. They detained Pires and asked him about the keys on his key ring. Pires identified one as the key to the office space in Stoughton. Other law enforcement officers executed a search warrant at the office space where they encountered McCall wearing a respirator.
+
+
+The Search in Stoughton
+
+
+
+
+Inside the office space, the police found 11 pounds of ketamine, 5,000 grams of ecstasy pills, packaging materials, two digital scales, two heat-sealing devices, a pill press, and $114,700 in cash. They also found a laptop with the EastSideHigh profile on Wallstreet Market on the screen. The police seized 18 kilograms of MDMA and more than $200,000 in Bitcoin by the end of the investigation.
+
+
+Le pleaded guilty to conspiracy to manufacture, distribute and possess with intent to distribute MDMA, Ketamine, and Alprazolam. On March 10, 2022, a judge sentenced Le to eight years in prison and three years of supervised release. The judge ordered Le to forfeit more than 59 Bitcoin, $114,680 in cash, the proceeds from a 2018 BMW M3 sale, a pill press, and a currency counter.
+
+The charge of conspiracy to manufacture, distribute and possess with intent to distribute MDMA, Ketamine, and alprazolam carries a mandatory minimum sentence of three years in prison and a maximum of 20 years in prison.
+
+Brockton Man Pleads Guilty in Sophisticated Drug Trafficking Conspiracy that Operated Using the Dark Web | archive.is, archive.org, justice.gov (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/third-eastsidehigh-defendant-pleads-guilty/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/third-eastsidehigh-defendant-pleads-guilty/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/third-eastsidehigh-defendant-pleads-guilty/Darkweb Vendorshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/omaha-man-sentenced-to-probation-for-buying-oxys-on-darkweb/Mon, 27 Jun 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)A man who admitted purchasing counterfeit oxycodone pills on the darkweb was sentenced to 18 months of probation for possessing firearms as a drug user.
+In an Omaha, Nebraska, court, Chief Judge Robert F. Rossiter, Jr. sentenced 46-year-old Edward Barta to 18 months of probation for one count of possession of firearms by a drug user.
+In late 2020, federal law enforcement officers intercepted a package of apparent oxycodone pills en route to 46-year-old Edward Bartaâ€™s residence. Drug Enforcement Administration (DEA) agents tested two seized pills and learned the active ingredients were fentanyl and fentanyl 4-ANPP.
+On December 20, 2020, DEA agents executed a search warrant at Bartaâ€™s residence in Omaha. During the search, agents found more pills and a pill grinder. They also found a Smith & Wesson M&P 9mm handgun, a Taurus Millennium G2, and a Mossberg 342KA rifle inside a locked safe in Bartaâ€™s house.
+Barta told DEA agents that he had purchased 100 oxycodone pills from a vendor on the darkweb for $800 in Bitcoin. He said he had completed ten orders of between 60 and 80 pills per order.
+The report said Barta told investigators he ordered 100 oxycodone 30 mg pills from a dark web vendor in exchange for $800 and that he had made approximately ten prior orders of about 60 to 80 pills per order. Barta reported to the police that he took three pills daily to manage his chronic neck pain.
+In one court document, Bartaâ€™s attorney provided some background on Bartaâ€™s oxycodone purchases:
+
+â€œMr. Barta suffers from chronic pain due a neck injury. Mr. Barta was under the care of a doctor for the pain, which ultimately led to a dependence on oxycodone. Despite being prescribed Duloxetine, it was not the proper amount for this pain. Mr. Barta sought oxycodone on the dark web for his personal use. He did not order an amount over a personal use amount, and thankfully was not killed when the oxycodone pills were later discovered to be fentanyl [â€¦].â€�
+
+
+â€œMr. Barta finds himself before this Court on charges brought over a year after his law enforcement contact. Even though he was not arrested on December 20, 2020, Mr. Barta used the contact as a wakeup call, and immediately sought treatment. He did not wait for Christmas to be over; instead, he went to treatment and missed spending the holidays with his children. He is under the care of a treating physician who increased the Duloxetine to an amount in which gives Mr. Barta relief from pain. Mr. Barta continues to abstain from opioids.â€�
+
+In February 2021, a federal grand jury returned an indictment accusing Barta of possessing a firearm as a drug user. Although Barta entered a guilty plea, his attorney wrote that Barta did not know he had violated any laws by possessing firearms.
+
+â€œMr. Barta did not know it was unlawful to be in possession of the firearms, and there is no evidence that Mr. Barta ever used the firearms. Mr. Barta had the firearms in locked cases and never discharged them.â€�
+
+Arguing for a base level reduction of eight points, Bartaâ€™s attorney wrote that Bartaâ€™s firearms were â€œsolely possessed for collection purposes.â€� Interesting choices for collectors firearms. I will say that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    At least he is not collecting Hi-Points
+
+
+Chief Judge Robert F. Rossiter, Jr. sentenced Barta to 18 months without special conditions.
+
+Pretty decent outcome for Barta. He failed two drug tests for THC during pretrial release.
+
+Mr. Barta has been extremely successful on pretrial release. He had two (2) positive tests from taking Delta 8. When he failed the urine test, he stopped taking Delta 8, and had negative tests after the Delta 8 was no longer in his system. He completed treatment before these charges were even filed and is maintaining his sobriety. He has shown over a year of adhering to the courtâ€™s orders and success. He realizes his addiction is life threatening and lifelong. He takes his sobriety seriously and would request a term of probation without incarceration.
+
+Is the court simply accepting the attorneyâ€™s statement as factual or can a lab actually differentiate between Delta 8 and Delta 9?
+
+Omaha Man sentenced to probation for possessing firearms as a drug user | archive.is, archive.org, rivercountry.newschannelnebraska.com
+Indictment pdf (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/omaha-man-sentenced-to-probation-for-buying-oxys-on-darkweb/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/omaha-man-sentenced-to-probation-for-buying-oxys-on-darkweb/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/omaha-man-sentenced-to-probation-for-buying-oxys-on-darkweb/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/vpn-services-in-india-required-to-maintain-logs/Mon, 27 Jun 2022 07:13:36 +0000email@darknetlive.com (DarknetLive)VPN Providers with servers in India are required to maintain logs of customer names, I.P. addresses, and usage patterns.
+As of June 27, 2022, data centers, virtual private server (VPS) providers, cloud service providers, and virtual private network (VPN) service providers must comply with new data retention regulations. Service providers are required to maintain logs for five years with the following pieces of information:
+
+Validated names of subscribers/customers hiring the services
+Period of hire, including dates
+I.P.s allotted to / being used by the members
+Email address and I.P. address, and time stamp used at the time of registration / on-boarding
+The purpose for hiring services
+Validated address and contact numbers
+Ownership pattern of the subscribers/customers hiring services
+
+The Indian Computer Emergency Response Team (CERT-In) directive includes similar requirements for virtual asset service providers, virtual asset exchange providers, and custodian wallet providers. Exchanges and custodial wallet providers are required to maintain all Know Your Customer (KYC) information and records of financial transactions for five years.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Arnab Goswami often hosts entertaining debates about topics relevant to India. Lots of yelling.
+
+
+In response to the regulations, some VPN providers have removed their servers in India.
+ExpressVPN:
+
+â€œRest assured, our users will still be able to connect to VPN servers that will give them Indian I.P. addresses and allow them to access the internet as if they were located in India. These â€œvirtualâ€� India servers will instead be physically located in Singapore and the U.K.â€�
+
+
+â€œIn terms of the user experience, there is minimal difference. For anyone wanting to connect to an Indian server, simply select the VPN server location â€œIndia (via Singapore)â€� or â€œIndia (via the U.K.).â€�
+
+
+â€œVirtual server locations are not new to ExpressVPN; in fact, we have been operating our â€œIndia (via the U.K.)â€� server location for several years. With virtual locations, the registered I.P. address matches the country you have chosen to connect to, while the server is physically located in another country. Virtual locations are used, where necessary, to provide faster, more reliable connections.â€�
+
+Mullvad, which is one of the most well-known and trusted VPN providers in the industry, added a section to its FAQ:
+
+There is a law to collect user data in India and other countries. Does this affect Mullvad?
+
+
+â€œMullvad does not collect user data. Mullvad is based in Sweden and none of the Swedish regulations (https://mullvad.net/help/swedish-legislation/) can force VPN providers to secretly collect traffic-related data. We also have no servers, infrastructure or staff in India.â€�
+
+
+CERT-In Directions pdf (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/vpn-services-in-india-required-to-maintain-logs/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/vpn-services-in-india-required-to-maintain-logs/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/vpn-services-in-india-required-to-maintain-logs/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/china-sees-spike-in-online-drug-activity/Mon, 27 Jun 2022 05:13:36 +0000email@darknetlive.com (DarknetLive)Although Chinaâ€™s anti-drug measures have been generally successful, authorities have seen an increase in drug traffickersâ€™ use of the internet and cryptocurrencies.
+
+In 2021, Chinaâ€™s anti-drug departments â€œearnestly implementedâ€� General Secretary Xi Jinpingâ€™s instructions on reducing illicit drug use. The measures have resulted in success by most standards. Although drug crimes and drug abuse have generally decreased, the Chinese government has noted an increase in drug money laundering via cryptocurrencies. In addition, people are increasingly turning to the internet to buy and sell drugs.
+General Figures
+
+
+
+By the end of 2021, there were 1.486 million drug users in China, down 17.5% from 2020;
+After three years of abstinence, 3.403 million people had relapsed, up 13.4% since 2020;
+121,000 people used drugs for the first time, down 21.7% year on year;
+The number of existing drug abusers and newly discovered drug abusers decreased for five consecutive years;
+Among existing drug users, 556,000 abused heroin, 793,000 methamphetamine, 37,000 ketamine and 18,000 marijuana, down 19%, 18.5%, 9% and 10.7% respectively;
+Foreign suppliers account for the majority of drugs seized;
+Police seized 17.3 tons of methamphetamine, ketamine, and other â€œmainstream drugs,â€� of which 15.3 tons came from overseas and two tons from domestic manufacturers, down 21.7% and 48.2%, respectively;
+Police seized 690 kilograms of cocaine from South America in 2021. Cocaine seizures increased by 18.6%;
+People are importing more marijuana from North America. Police seized 308.9 kilograms of marijuana which is an increase, an increase of 4.5 times the amount of marijuana seized in 2020. Most of the seized marijuana was found in mail packages shipped from the United States;
+Police destroyed 123 drug production sites and seized 1.2 tons of drugs at those sites, decreasing 26.4% and 89%, respectively; and
+â€œThe circulation of drug funds has expanded from online bank transfers to cryptocurrency and in-game currency,â€� per the report.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    â€œneither fear hardship nor deathâ€�
+
+
+Postal System
+
+
+According to the report, the decrease in domestically available drugs changed how drug traffickers operated. Traditional methods of drug trafficking decreased while the use of the postal system and waterways increased. People used the internet to buy drugs more frequently than in previous years, although the report did not reveal the size of the increase.
+Internet-Based Drug Trafficking
+
+
+Police arrested 0.8 million people and seized 0.5 tons of drugs in connection with online drug trafficking, accounting for 10.4% and 2% of the national total. Of the 800,000 arrests, authorities secured only 500,000 convictions.
+Cryptocurrencies
+
+
+As the online drug market expands, people are increasingly using cryptocurrencies, game coins, and other online payment methods to pay or receive drug payments.
+According to the reportâ€™s conclusion, Chinaâ€™s anti-drug sector will continue to adapt to the changes in the drug trafficking environment. Targeting internet-based drug trafficking is one of the sectorâ€™s top priorities.
+
+China Drug Crime Report 2021 | archive.org, nncc626.com
+ (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/china-sees-spike-in-online-drug-activity/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/china-sees-spike-in-online-drug-activity/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/china-sees-spike-in-online-drug-activity/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/another-encrochat-drug-dealer-sentenced-to-prison/Sun, 26 Jun 2022 05:13:36 +0000email@darknetlive.com (DarknetLive)An EncroChat-using drug dealer was sentenced to 25 years in prison for selling Class A and Class B drugs.
+During a hearing at Liverpool Crown Court, John Digweed, 33, of Harlech Road, Crosby, was sentenced to prison for 25 years for drug distribution and money laundering.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    John Digweed in his mugshot.
+
+
+A jury convicted Digweed of conspiring to supply Class A drugs, including heroin, cocaine, ecstasy powder, and 2CB, and Class B drugs cannabis, ketamine, and amphetamine. The jury also convicted him of money laundering. During the trial, prosecutors showed the jury evidence of Digweedâ€™s involvement in the supply of 12.5kg of heroin, 30-35kg of cocaine, 80kg of cannabis, 4kg of ketamine, and 3kg of amphetamine.
+Merseyside Police arrested Digweed in March 2021 as a part of Operation Venetic. Operation Venetic was â€œan international operation targeting criminals who used a mobile encryption service, commonly referred to as EncroChat, in an attempt to evade detection when dealing drugs.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A picture of a block of marijuana sent to Digweed on EncroChat
+
+
+After law enforcement agencies had hacked EncroChat, investigators examined messages sent and received by a drug dealer under the username â€œDiorpaw.â€� Investigators said Digweed identified himself in his messages to other EncroChat users.
+In one example provided by police, one of Digweedâ€™s contacts sent him a picture of a block of marijuana labeled â€œJohnny Weed.â€� Digweed responded, â€œHaHaHaHa lad whoâ€™s done that, its only missing dig out the nameâ€� My names Johnny Digweed init.â€� Digweed then sent the image to other EncroChat users. â€œHis messages on the dark web revealed that he supplied drugs across the northwest and managed the supply of crack cocaine and heroin to Devon and Cornwall,â€� police said. Digweed referenced Cornwall, Bristol, Middlesbrough, London, Weston-Super-Mare, and Wales in other messages.
+Superintendent Graeme Robson:
+
+â€œDigweedâ€™s covert messages via EncroChat revealed his clear involvement as a leading figure in drug conspiracies that could have caused immense suffering to families and residents in our community. In one message sent to other handles he brazenly identified himself in messages. The messages he sent also revealed that he operated a sophisticated and organised criminal enterprise.â€�
+
+
+â€œWe know the destruction that drugs cause and Merseyside Police remains relentless in our pursuit of these criminals and to bring down serious and organised criminal groups. I hope this result shows that Merseyside Police, will leave no stone unturned in our pursuit of these people who think they are above the law, and we will continue to target criminals like Digweed by thoroughly examining any evidence, messages and images we find.â€�
+
+
+Drug dealer jailed for 25 years after identifying himself on â€˜Dark Webâ€™ | merseyside.police.uk (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/another-encrochat-drug-dealer-sentenced-to-prison/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/another-encrochat-drug-dealer-sentenced-to-prison/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/another-encrochat-drug-dealer-sentenced-to-prison/EncroChathttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/retarded-firm-publishes-dogecoin-hitpiece/Thu, 23 Jun 2022 11:13:36 +0000email@darknetlive.com (DarknetLive)The blockchain analysis firm Elliptic identified Dogecoin as a cryptocurrency increasingly linked to criminal activity, including darknet market usage.
+Elliptic, which offers blockchain intelligence solutions similar to Chainalysis, published a report identifying an increase in the use of Dogecoin for illicit activity on the internet. The report demonstrates that Dogecoin is rarely used for illegal purposes.
+According to the company, the meme coinâ€™s criminal uses include fraud, scams, ponzi schemes, terrorism financing, malware, transactions on darkweb markets, and the child sexual abuse material (CSAM) industry. Elliptic also identified so-called â€œfar-right extremismâ€� as one form of the â€œillicit use of Doge.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Theft, scams, and ponzi schemes are the most common illicit activities involving Doge.
+
+
+Terrorism Financing
+
+
+The government in Israel seized Dogecoin worth $40,235 from wallets allegedly linked to the Islamic Resistance Movement in July 2021. This is the only example provided by Elliptic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Israel seized money from a Palestinian political party.
+
+
+
+â€œWhile a small sum compared to Bitcoin and Tether, this example demonstrates the awareness, and increasing adoption, of a wide variety of cryptoassets by groups such as Hamas. It also reinforces the importance of blockchain analytics solutions in a compliance toolkit to enable financial institutions and law enforcement agencies to screen for risk beyond just the most popular cryptoassets.â€�
+
+Child Sexual Abuse Material
+
+
+Elliptic monitors child sexual abuse material (CSAM) vendors on the darknet and clearnet. The majority of cryptocurrency payments to CSAM vendors are in Bitcoin. â€œA small and growing number of these vendors accept other crypto assets â€“ including Dogecoin,â€� the report claims. Elliptic explains that there has been $3,000 worth of Doge payments to CSAM vendors to date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A screenshot of a CSAM-flagged address in Elliptic Lens.
+
+
+Darkweb Markets
+
+
+The report includes two examples of darkweb marketplaces that either accept Doge payments or accepted them in the past.
+Just-Kill, a â€œcall & email flood service,â€� allows users to deposit funds using Dogecoin, among other cryptocurrencies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Just Kill
+
+
+The report claims that Doge â€œis accepted â€œon some popular darknet drug markets.â€�
+Archetyp Market is one example of a darkweb drug market that accepts Doge payments. The market â€œpreviously used a coin swap service to allow users to deposit funds in a range of other cryptoassets â€“ including Doge.â€� Archetyp currently only accepts Monero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Archetyp Market no longer allows users to conduct transactions with Dogecoin.
+
+
+Another example of â€œthe importance of blockchain analytics solutionsâ€� is the now-defunct Doge Road Market. Doge Road existed briefly in 2014 before exit scamming.
+Malware
+
+
+The report highlighted two malware campaigns that involved Dogecoin.
+Cliptomaner, identified by Kaspersky in October 2020, hijacks a userâ€™s clipboard to swap cryptocurrency addresses for addresses controlled by the attackers. Cliptomaner hijacks Doge addresses, among other cryptocurrencies, and has received almost $29,000 in Doge.
+In July 2020, Intezer identified the â€œDokiâ€� malware campaign, which used:
+
+â€œa previously undocumented method to contact its operator by abusing the Dogecoin cryptocurrency blockchain in a unique way in order to dynamically generate its C2 domain address. The malware has managed to stay under the radar for over six months despite samples being publicly available in VirusTotal.â€�
+
+â€œFar-Right Extremismâ€�
+
+
+Elliptic laments that when â€œpayments companies such as PayPal, Visa and Mastercardâ€� freeze accounts owned by nominally right-wing people, they â€œturn instead to cryptocurrencies such as Bitcoin.â€� By attempting to raise funds without using mainstream payment platforms, these targets of financial censorship have â€œincreasingly exploited the internet,â€� Elliptic claims.
+According to the report, the basic CivNat news outlet Infowars (â€œleftists are the real racistsâ€�) is an example of an extremist right-wing group embracing cryptocurrency. To date, Infowars has raised â€œover $1,700 in Doge alone.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Infowars accepts donations in the form of several cryptocurrencies.
+
+
+Thefts, Scams, and Ponzi Schemes
+
+
+Elliptic highlighted the hack of the Dogecoin wallet Dogewallet which resulted in the loss of $14,000 in Doge.
+
+â€œAdditional notable examples include the Plus Token ponzi scheme, which resulted in the seizure of over $20 million in Doge by Chinese authorities, and an alleged theft of $119 million of Dogecoin connected to a Turkish ponzi scheme in 2021.â€�
+
+
+The report seems accurate in that Dogecoin use has increased since its launch. I am skeptical that illicit Doge use is worth consideration. When I had a Twitter account, I saw countless scams involving Elon Musk imposters and various cryptocurrencies, including Doge. The total earnings of cryptocurrency scammers on Twitter dwarf the examples of illicit cryptocurrency use provided by Elliptic. For instance, during one weekend in February 2021, scammers earned more than $145,000 in cryptocurrency through fake giveaways on Twitter, including $26,004.94 worth of Doge.
+Dogecoin Gaining Traction for Illicit use | archive.is, archive.org, hub.elliptic.co (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/retarded-firm-publishes-dogecoin-hitpiece/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/retarded-firm-publishes-dogecoin-hitpiece/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/retarded-firm-publishes-dogecoin-hitpiece/Cryptocurrencyhttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/future-doctor-charged-with-credit-card-fraud/Wed, 22 Jun 2022 11:13:36 +0000email@darknetlive.com (DarknetLive)A man who purchased a diamond necklace with a credit card from the darkweb is facing 15 years in prison.
+An affidavit filed by a special agent with Homeland Security Investigations accuses Demonn Chadwick Jenkins II, 27, of fraudulent use of credit card information.
+On June 16, 2022, Jenkins used a Capital One Platinum Mastercard in someone elseâ€™s name to purchase a diamond necklace for $9990 and a Rolex watch for $10,800 at a jewelry store on Main Street in St. Thomas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    The red pins are jewelry stores on Main Street, St. Thomas.
+
+
+The next day, Customs and Border Protection (CBP) Officers at the Cyril E. King Airport searched Jenkinsâ€™ bag and discovered the necklace and watch. According to the affidavit, Jenkins â€œfailed to declare the purchases of the jewelry on his Customs and Border Protection Declaration form.â€� Jenkins had planned to return to Atlanta, Georgia, on June 17, 2022.
+â€œHe was later identified as the purchaser of the jewelry using footage taken from the jewelry storeâ€™s security cameras,â€� according to a press release from the United States Attorneyâ€™s Office for the District of Virgin Islands. Based on that information, Jenkins likely told CBP officers that he had not purchased the jewelry in St. Thomas. If he had the jewelry before arriving on the island and did not alter it while on the island, he would not need to pay the Customs Duties for those purchases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Jenkins filed for bankrupcy in May 2022
+
+
+When questioned by CBP officers, â€œJenkins admitted that he purchased the Mastercard on the Dark Web for approximately $15.â€�
+Assistant U.S. Attorney Adam Sleeper filed a motion to detain Jenkins until his trial because he â€œhas previously been arrested for committing similar crimes.â€�
+On June 21, 2022, U.S. Magistrate Ruth Miller released Jenkins to a third-party custodian.
+If convicted, Jenkins faces 15 years in prison.
+
+GEORGIA MAN CHARGED WITH CREDIT CARD FRAUD | archive.is, archive.org, justice.gov (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/future-doctor-charged-with-credit-card-fraud/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/future-doctor-charged-with-credit-card-fraud/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/future-doctor-charged-with-credit-card-fraud/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/sentences-for-south-wales-drug-gang/Tue, 21 Jun 2022 11:13:36 +0000email@darknetlive.com (DarknetLive)Seven people were sentenced to a total of 54 years in prison for selling drugs and buying firearms on the darkweb.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Naisha Hembury
+
+
+A press release from the Tarian Regional Organised Crime Unit in Southern Wales highlighted the sentencing of members of an organized crime group.
+EncroChat?
+
+
+Investigators had the evidence they needed to dismantle the group after its â€œencrypted drug deal chats were cracked.â€� Although the announcement does not identify the source of the decrypted chats, I suspect they came from EncroChat. Law enforcement agencies in Wales have arrested several so-called â€œorganised crime gangsâ€� operating in Wales, including at least one other case involving illegal firearm deals.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Max Smith
+
+
+
+â€œThe French National Gendarmerie, assisted by law enforcement in the Netherlands, installed malware on EncroChat servers in France. â€œThe malware allowed them to read messages before they were sent and record lock screen passwords,â€� according to a Wikipedia entry on the company. The malware affected more than half the devices in Europe, according to the company. Law enforcement agencies worldwide received access to the data pulled from the hacked EncroChat server.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Ryan Hales
+
+
+Firearms and Silencers
+
+
+During the investigation into the organized crime group, â€œdetectives uncovered chats on the dark web about purchasing and importing firearms and silencers.â€� Some of the defendants possessed firearms and ammunition.
+I suspect the firearms possessed by defendants originated from firearms sellers in the real world; as with murder-for-hire cases, firearm sellers on the darkweb are scammers or feds.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Marc Harris
+
+
+Police seized Â£4,942,800 worth of Class A & B drugs during the investigation, including 70 kilos of Cocaine, 30 kilos of Heroin, 96 kilos of Amphetamine, and 19 kilos of Cannabis.
+Sentencing
+
+
+One defendant faced drug and firearms charges:
+
+Jay Abdul, 39, was sentenced to 19 years and six months for conspiracy to supply Class A & B drugs and possessing a Section 5 prohibited firearm.
+
+The remaining defendants faced charges for conspiracy to supply Class A & B drugs:
+
+Aysha Ali, 36, was sentenced to four years and six months;
+Neesha Ali, 40, was sentenced to three years and nine months;
+Ryan Hales, 28, was sentenced to 11 years and three months;
+Marc Harris, 31, was sentenced to seven years and four months;
+Naisha Hembury, 35, was sentenced to 22 months suspended for 18 months; and
+Max Smith, 25, was sentenced to five years and three months in prison.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Jay Abdul
+
+
+Tarian Detective Inspector Gareth Grant said:
+
+â€œThe safeguarding of our communities will always be our priority. Whilst the seizure of the firearms during this investigation is very disturbing I want to reassure people that guns like this are, thankfully, very unusual here in south Wales. Such was the weight of evidence against the majority of these defendants that he had no option but to enter guilty pleas. This is down to the hard work and dedication of my investigation team. The success of this investigation demonstrates that we will relentlessly pursue those involved in large scale criminality to ensure effective justice is sought against such individuals and they are brought to justice.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Aysha Ali and Neesha Ali
+
+
+
+SEVEN PEOPLE JAILED FOR PART IN DRUG GANG | archive.is, tarianrocu.org.uk (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/sentences-for-south-wales-drug-gang/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/sentences-for-south-wales-drug-gang/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/sentences-for-south-wales-drug-gang/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bavarian-police-raided-another-apartment-in-darkweb-case/Sat, 18 Jun 2022 11:13:36 +0000email@darknetlive.com (DarknetLive)Bavarian police searched more apartments in the Passau district as a part of an ongoing investigation into darkweb drug traffickers in the area.
+On April 17, 2022, Bavarian police searched apartments in Aldersbach and questioned another suspect as a part of a â€œmajor police operation.â€� The actions are related to the arrests of two suspected darkweb vendors in the Deggendorf district in April 2022.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Bavarian police seized marijuana and other drugs during related searches in April 2022.
+
+
+According to the Bavarian State Criminal Police Office, police arrested a 31-year-old man and a 25-year-old man during the searches in April. The 31-year-old allegedly sold marijuana through the darkweb. The 25-year-old allegedly purchased at least ten kilograms of marijuana from a darkweb vendor to resell to a â€œpreviously unknownâ€� customer.
+During the searches of the apartments in Deggendorf, police found 400 opioid pills, marijuana, assorted narcotics, anabolic steroids, thousands of euros, and several mobile phones and tablets.
+Since then, police identified another suspect, a 22-year-old living in Aldersbach.
+A police spokesperson confirmed that the police operation on June 17 was linked to the raids in April but did not provide any further information. (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bavarian-police-raided-another-apartment-in-darkweb-case/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bavarian-police-raided-another-apartment-in-darkweb-case/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/bavarian-police-raided-another-apartment-in-darkweb-case/General Newshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/uk-retard-approves-assange-extradition/Fri, 17 Jun 2022 11:13:36 +0000email@darknetlive.com (DarknetLive)The U.K. Home Secretary approved the extradition of Julian Assange to the United States.
+British Home Secretary Priti Patel approved Julian Assangeâ€™s extradition to the United States. Assange faces 175 years in prison for publishing the material â€œstolenâ€� by Manning in 2010.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Gandalf Assange
+
+
+
+â€œThe U.K. courts have not found that it would be oppressive, unjust or an abuse of process to extradite Mr. Assange,â€� the Home Office said. â€œNor have they found that extradition would be incompatible with his human rights, including his right to a fair trial and to freedom of expression, and that whilst in the U.S. he will be treated appropriately, including in relation to his health.â€�
+
+Of course, avoiding extradition to the United States was never a real option for Assange. He has 14 days to appeal the decision.
+Collateral Murder is among the files published by Assange in 2010.
+
+â€œOn July 12, 2007, a series of air-to-ground attacks were conducted by a team of two U.S. AH-64 Apache helicopters in Al-Amin al-Thaniyah, New Baghdad, during the Iraqi insurgency which followed the Iraq War. On April 5, 2010, the attacks received worldwide coverage and controversy following the release of 39 minutes of gunsight footage by the Internet whistleblower website WikiLeaks. The footage was portrayed as classified, but the individual who leaked it, U.S. Army soldier Chelsea Manning, testified in 2013 that the video was not classified. The video, which WikiLeaks titled Collateral Murder, showed the crew firing on a group of men and killing several of them, then laughing at some of the casualties, all of whom were civilians, including two Reuters journalists. An anonymous U.S. military official confirmed the authenticity of the footage, which provoked global discussion on the legality and morality of the attacks.â€�
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Innocent civilians as well as two Reuters news staff were among those killed in the Collateral Murder video.
+
+
+Assange is not facing charges for the Podesta email dump.
+WikiLeaks wrote:
+
+â€œThis is a dark day for Press freedom and for British democracy. Anyone in this country who cares about freedom of expression should be deeply ashamed that the Home Secretary has approved the extradition of Julian Assange to the United States, the country that plotted his assassination.
+
+
+Julian did nothing wrong. He has committed no crime and is not a criminal. He is a journalist and a publisher, and he is being punished for doing his job.
+
+
+It was in Priti Patelâ€™s power to do the right thing. Instead, she will forever be remembered as an accomplice of the United States in its agenda to turn investigative journalism into a criminal enterprise.
+
+
+Foreign laws now determine the limits of press freedom in this country and the journalism that won the industryâ€™s most prestigious prizes has been deemed an extraditable offence and worthy of a life sentence.
+
+
+The path to Julianâ€™s freedom is long and tortuous. Today is not the end of the fight. It is only the beginning of a new legal battle. We will appeal through the legal system; the next appeal will be before the High Court. We will fight louder and shout harder on the streets, we will organise and we will make Julianâ€™s story known to all.
+
+
+Make no mistake, this has always been a political case. Julian published evidence that the country trying to extradite him committed war crimes and covered them up; tortured and rendered; bribed foreign officials; and corrupted judicial inquiries into US wrongdoing. Their revenge is to try to disappear him into the darkest recesses of their prison system for the rest of his life to deter others from holding governments to account.
+
+
+We will not let that happen. Julianâ€™s freedom is coupled to all our freedoms. We will fight to return Julian to his family and to regain freedom of expression for us allâ€�.
+
+
+It seems as if Assange is an enemy of the political class for spilling their secrets. I do not know how Assangeâ€™s eventual life behind bars fits in with the Umfuld narrative that Assange is a part of the establishment. (via darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion at http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/uk-retard-approves-assange-extradition/)
+    ]]>http://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/uk-retard-approves-assange-extradition/#commentshttp://darkzz65rkqz6gucd7pqr32vb6tsap7444zarmtafo5lqrjrx5gezgad.onion/post/uk-retard-approves-assange-extradition/Darkweb Vendors

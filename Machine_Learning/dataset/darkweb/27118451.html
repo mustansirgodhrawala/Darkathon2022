@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta lang="en"/>
+  <meta content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1, minimum-scale=1" name="viewport"/>
+  <title>
+   TorScrow
+  </title>
+  <link href="style/website.css" rel="stylesheet" type="text/css"/>
+  <link href="style/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <nav>
+   <input id="drop" type="checkbox"/>
+   <div class="logo">
+    <a href="index.php">
+     <span>
+      Tor
+     </span>
+     Scrow
+    </a>
+   </div>
+   <div class="nav-list">
+    <ul>
+     <li>
+      <a href="index.php">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="escrow-step-1.php">
+       Escrow
+      </a>
+     </li>
+     <li>
+      <a href="index.php#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="index.php#ser">
+       Services
+      </a>
+     </li>
+     <li>
+      <a href="index.php#why">
+       Why us
+      </a>
+     </li>
+     <li class="lassy">
+      <span>
+       Help
+       <i class="fa-solid fa-angle-down">
+       </i>
+      </span>
+      <ul class="dropdown">
+       <li>
+        <a href="index.php#fq">
+         Faq
+        </a>
+       </li>
+       <li>
+        <a href="mailto:torscrow@protonmail.com">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="index.php#pp">
+         Privacy policy
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <label class="minicon" for="drop">
+    <div class="icon-burger">
+    </div>
+    <div class="icon-burger">
+    </div>
+    <div class="icon-burger">
+    </div>
+   </label>
+  </nav>
+  <div class="main">
+   <div class="mainitems">
+    <div class="main-item-one" id="escrow">
+     <div class="firsthead">
+      <div class="head">
+       <h2>
+        Never buy or sell on the dark web without using TorScrow
+       </h2>
+       <p>
+        With TorScrow, you can buy and sell anything anonymously on the deep web without the risk of scam or fraud.
+       </p>
+      </div>
+      <div class="headscrow">
+       <form action="escrow-step-1.php" method="POST">
+        <div class="form-item">
+         <div class="whatescrow">
+          <label for="role">
+           I'm
+          </label>
+          <select id="role" name="role" required="">
+           <option name="role" value="buyer">
+            buying
+           </option>
+           <option name="role" value="seller">
+            selling
+           </option>
+          </select>
+         </div>
+         <hr/>
+         <div class="escrowitem">
+          <label for="product">
+          </label>
+          <input id="product" name="product" placeholder="Write what you're buying or selling here!" required="" type="text" value=""/>
+         </div>
+        </div>
+        <div class="form-item">
+         <div class="priceescrow">
+          <label for="amount">
+           for
+          </label>
+          <input id="amount" max="99999999999999" min="0" name="amount" pattern="/[0-9]/" placeholder="Write the amount here!" required="" type="number" value=""/>
+         </div>
+         <hr/>
+         <div class="priceitem">
+          <label for="cur">
+          </label>
+          <select id="cur" name="cur" required="" value="">
+           <option name="cur" value="USD">
+            USD
+           </option>
+           <option name="cur" value="AUD">
+            AUD
+           </option>
+           <option name="cur" value="EUR">
+            EUR
+           </option>
+           <option name="cur" value="GBP">
+            GBP
+           </option>
+           <option name="cur" value="CHF">
+            CHF
+           </option>
+           <option name="cur" value="CAD">
+            CAD
+           </option>
+          </select>
+         </div>
+        </div>
+        <button name="start">
+         Start Escrow
+        </button>
+       </form>
+      </div>
+     </div>
+     <div class="secondhead">
+      <div class="secure">
+       <div class="secureicon">
+        <i class="fa-solid fa-4x fa-user-secret">
+        </i>
+       </div>
+       <div class="service">
+        <h3>
+         Absolute protection for darknet transactions
+        </h3>
+       </div>
+      </div>
+      <div class="escrowsteps">
+       <ul>
+        <li>
+         <i class="fa-solid fa-square-check" id="stephide">
+         </i>
+         Buyer or Seller creates escrow
+        </li>
+        <li>
+         <i class="fa-light fa-square" id="hide2">
+         </i>
+         <i class="fa-solid fa-square-check" id="stephide">
+         </i>
+         Buyer makes deposit
+        </li>
+        <li>
+         <i class="fa-light fa-square" id="hide2">
+         </i>
+         <i class="fa-solid fa-3xsecond fa-cloud-check">
+         </i>
+         <i class="fa-solid fa-square-check" id="stephide">
+         </i>
+         Seller sends the product or service
+        </li>
+        <li>
+         <i class="fa-light fa-square" id="hide2">
+         </i>
+         <i class="fa-solid fa-3xsecond fa-cloud-check">
+         </i>
+         <i class="fa-solid fa-square-check" id="stephide">
+         </i>
+         Buyer inspects and approves the escrow
+        </li>
+        <li>
+         <i class="fa-lights fa-square" id="hide2">
+         </i>
+         <i class="fa-solid fa-3xsecond fa-cloud-check">
+         </i>
+         <i class="fa-solid fa-square-check" id="stephide">
+         </i>
+         TorScrow pays Seller
+        </li>
+       </ul>
+      </div>
+      <div class="methodofpay">
+       <div class="innermethod">
+        <i class="fa-brands fa-3x fa-bitcoin">
+        </i>
+        <p>
+         We accept any and all payments in Bitcoin
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="main-item-two">
+     <div class="boast">
+      <h3>
+       9304+
+      </h3>
+      <p>
+       Escrow processed
+      </p>
+     </div>
+     <div class="boast">
+      <h3>
+       2349+
+      </h3>
+      <p>
+       BTC processed
+      </p>
+     </div>
+     <div class="boast">
+      <h3>
+       3.5%
+      </h3>
+      <p>
+       Commission
+      </p>
+     </div>
+     <div class="boast">
+      <h3>
+       2234+
+      </h3>
+      <p>
+       Happy Customers
+      </p>
+     </div>
+    </div>
+    <div class="main-item-three" id="about">
+     <div class="three-head">
+      <p>
+       Who we are
+      </p>
+      <h2>
+       About Us
+      </h2>
+      <p class="three-head3">
+       Providing secure anonymous transactions is our sole and only mission. The deep web is volatile and you can easily lose your money to scammers or receive the wrong product.
+      </p>
+      <p class="three-head3">
+       We're leading the march towards reliable and trustworthy escrow services on the deep web.
+      </p>
+      <p class="three-head3">
+       With TorScrow and our 3 years of experience, you will make better financial decisions and keep your money away from scammers, cloners and the lot.
+      </p>
+     </div>
+     <div class="whoweare">
+      <div>
+       <img src="photos/image/escrow.png"/>
+      </div>
+     </div>
+    </div>
+    <div class="main-item-four" id="why">
+     <div>
+      <div class="three-head four">
+       <p>
+        We explain
+       </p>
+       <h2>
+        Why Choose Us?
+       </h2>
+       <p class="four-head3">
+        There is no one who loves pain itself, who seeks after it and wants to have it,
+       </p>
+      </div>
+      <div class="whyus">
+       <div class="whyus-sub sub1">
+        <i class="fa-solid fa-2x fa-thumbs-up" id="sub1i">
+        </i>
+        <h3>
+         Professional Services
+        </h3>
+        <p>
+         We're masters at what we do. With over two years experience and 24/7 constant support, you can expect professional, punctual and secure service from us.
+        </p>
+       </div>
+       <div class="whyus-sub sub2">
+        <i class="fa-solid fa-2x fa-temperature-low">
+        </i>
+        <h3>
+         Low Commission
+        </h3>
+        <p>
+         We offer a low commission rate of 3.5% which is divided between the buyer and seller. The buyer pays 1.75% and the seller pays the other 1.75%
+        </p>
+       </div>
+       <div class="whyus-sub sub3">
+        <i class="fa-solid fa-2x fa-headset">
+        </i>
+        <h3>
+         24/7 Support
+        </h3>
+        <p>
+         We're at your beck and call 24 hours a day, 7 days a week. If you have questions, issues or disputes, you can always find someone to talk to.
+        </p>
+       </div>
+       <div class="whyus-sub sub4">
+        <i class="fa-solid fa-2x fa-shield-halved">
+        </i>
+        <h3>
+         Safe and Secure
+        </h3>
+        <p>
+         We're masters at what we do. With over three years experience and 24/7 constant support, you can expect professional, punctual and secure service from us.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="floater">
+     <a href="escrow-step-1.php">
+      <i class="fa-solid fa-2x fa-handshake-simple">
+      </i>
+     </a>
+    </div>
+    <div class="main-item-five">
+     <div>
+      <div class="three-head four">
+       <p>
+        Simple Step
+       </p>
+       <h2>
+        How It Works
+       </h2>
+       <p class="four-head3">
+        Just a few simple steps and you're set
+       </p>
+      </div>
+      <div class="sub5contnent">
+       <div class="five-item">
+        <img src="photos/image/handshake-3.png"/>
+        <p>
+         1. Buyer or Seller creates escrow
+        </p>
+       </div>
+       <div class="five-item">
+        <img src="photos/image/mobile-pay.png"/>
+        <p>
+         2. Buyer makes deposit to esscrow
+        </p>
+       </div>
+       <div class="five-item">
+        <img src="photos/image/courier.png"/>
+        <p>
+         3. Seller sends the product or service
+        </p>
+       </div>
+       <div class="five-item">
+        <img src="photos/image/inspection.png"/>
+        <p>
+         4. Buyer inspects and approves the escrow
+        </p>
+       </div>
+       <div class="five-item">
+        <img src="photos/image/give-money.png"/>
+        <p>
+         5. TorScrow pays Seller
+        </p>
+       </div>
+      </div>
+      <div class="button5">
+       <a href="#escrow">
+        Start Escrow
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="main-item-six" id="ser">
+     <div>
+      <div class="three-head four">
+       <p>
+        Services
+       </p>
+       <h2>
+        Our Services
+       </h2>
+       <p class="four-head3">
+        Safely buy and sell products and services from $100 to $10 million or more
+       </p>
+      </div>
+      <div class="serviceitems">
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-cannabis">
+        </i>
+        <h3>
+         Drugs
+        </h3>
+        <p>
+         You can trade drugs ranging from weed to Cocaine. We collect the barest info for each transaction and no user data is stored.
+        </p>
+       </div>
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-laptop">
+        </i>
+        <h3>
+         Electronics
+        </h3>
+        <p>
+         Torscrow handles the buying and selling of any computer, phones and all manner of electronic equipment both big and small.
+        </p>
+       </div>
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-cart-flatbed">
+        </i>
+        <h3>
+         General Merchandise
+        </h3>
+        <p>
+         From computer hardware to luxury goods, you can safely and easily buy and sell merchandise all over the world with the protection of TorScrow
+        </p>
+       </div>
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-gun">
+        </i>
+        <h3>
+         Weapons
+        </h3>
+        <p>
+         From rounds to pistols to weapons of mass destruction. TorScrow's got you covered. You can buy or sell any weapons anonymously with complete safety.
+        </p>
+       </div>
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-gem">
+        </i>
+        <h3>
+         Jewelry, Stones, and Fashion
+        </h3>
+        <p>
+         Buying and selling expensive jewelry online can be difficult, as it is extremely difficult to spot a scam. TorScow ensures money transfer and product delivery with every sale.
+        </p>
+       </div>
+       <div class="serviceitem">
+        <i class="fa-solid fa-3x fa-flag">
+        </i>
+        <h3>
+         Milestone Transactions
+        </h3>
+        <p>
+         Paying for a good or service and want money released only at certain stages? Use TorScrow to assure that money is released only when you're happy with each step.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="main-item-seven" id="fq">
+     <div>
+      <div class="three-head four">
+       <p>
+        FAQs
+       </p>
+       <h2>
+        Frequently Asked Questions
+       </h2>
+       <p class="four-head3">
+        And Answers
+       </p>
+      </div>
+      <div class="f-a-q">
+       <div class="faqques">
+        <strong>
+         1. What is Escrow? How does Escrow work?
+        </strong>
+        <p>
+         An escrow is a financial arrangement where a third party hold and regulates payment of the funds required for two parties involved in a given transaction.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         2. How long does the escrow process take?
+        </strong>
+        <p>
+         It depends on the delivery time as agreed with the seller. Generally, most escrow purchases can take from 2 days to a week. You can edit or change the timing of delivery.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         3. How does the Escrow secure our funds?
+        </strong>
+        <p>
+         Our payment procesor will generate a unique address for every payment which then will be handled by our backend servers and will be stored seperately and encrypted with Advanced Encryption Standard (AES). The alogrithm trusted as the standard by the U.S Government and numerous organizations. Although it is extremely efficient in 128-bit form, we also use keys of 192 and 256 bits for heavy duty encryption purposes.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         4. If I have any questions about the product, do I contact the Escrow?
+        </strong>
+        <p>
+         No, we are a neutral third-party that protects both the buyer and seller to ensure the tranaction is processed. We have no knoweldge about what is actually been sold. In most casses, we have very limited relationship with either party. If the buyer has any questions, they should contact the seller directly.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         5. Do we provide services for all merchandise?
+        </strong>
+        <p>
+         Yes, we provide support for basically everything except timeshare ownership, real property (real estate) and child pornography.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         6. What forms of payment do we accept?
+        </strong>
+        <p>
+         We currently accept payments only via BTC (Bitcoin) as it is the only secure mode of transaction in the deep web.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         7. What is Bitcoin (BTC)?
+        </strong>
+        <p>
+         Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or single administrator that can be sent from person on person on a bitcoin network. There is no need for intermediaries so payments go through directly in a matter of minutes.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         8. How to raise dispute if I don't receive a products?
+        </strong>
+        <p>
+         If you haven't received your order, you can raise a ticket with us on the ecrow page or email us at torscrow@protonmail.com.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         9. What if the seller is not responding after payment?
+        </strong>
+        <p>
+         You can contact us after 3 working days if seller is not responding to your queries. We will mediate between you and the seller. Under unavoidable circumstancess, if the seller couldn't fufill the order, we would be happy to refund your money.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         10. How much time will it take for my refund to be processed?
+        </strong>
+        <p>
+         As your payment is secured with us and will be released to the seller only upon delivery confirmation from you. The refund will be initiated within 24 hours of raising a ticket for non-fulfillment of order.
+        </p>
+       </div>
+       <div class="faqques">
+        <strong>
+         11. I am a seller, how do I start with the Escrow?
+        </strong>
+        <p>
+         It's the same way for a seller, Simply start an escrow as the seller and send the escrow link to the buyer.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="main-item-eight" id="pp">
+     <div>
+      <div class="three-head four">
+       <p>
+        Our code
+       </p>
+       <h2>
+        Privacy Policy
+       </h2>
+       <p class="four-head3">
+        No logs
+       </p>
+      </div>
+      <div class="policy">
+       <p>
+        We do not store any logs (browsing logs, transaction logs, any logs) whatsoever. So there will never be skeletons from the past springing up on you. We delete all Escrow records after a trade is successsful. Also all our BTC addresses are uniquely generated for each escrow transaction.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div class="footer">
+    <div class="footeritem">
+     <h2>
+      <span class="foothead">
+       Tor
+      </span>
+      Scrow
+     </h2>
+     <p>
+      Serving customers since 2019s, TorScrow is Your 24x7 Partner for deep web purchases. Your financial security is our No. 1 Priority and hence, we work 24x7 on it to ensure you have secure hassle-free transactions.
+     </p>
+    </div>
+    <div class="footeritem">
+     <h3>
+      Useful Links
+     </h3>
+     <a href="index.php">
+      Home
+     </a>
+     <a href="escrow-step-1.php">
+      Escrow
+     </a>
+     <a href="index.php#about">
+      About
+     </a>
+     <a href="index.php#ser">
+      Services
+     </a>
+     <a href="index.php#why">
+      Why choose us
+     </a>
+     <a href="index.php#fq">
+      Faq
+     </a>
+     <a href="index.php#pp">
+      Privacy
+     </a>
+    </div>
+    <div class="footeritem">
+     <h3>
+      Contact
+     </h3>
+     <a href="mailto:torscrow@protonmail.com">
+      torscrow@protonmail.com
+     </a>
+    </div>
+    <div class="footeritem">
+     <h3>
+      Never shop directly on Dark Web
+     </h3>
+     <p>
+      Torscrow is a decentralized escrow service in Dark Web, ask your seller or buyer to use The Escrow, both of you will get benefited.
+     </p>
+    </div>
+   </div>
+   <div class="footend">
+    <p>
+     Copyright © 2022 TorScrow All Right Reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>

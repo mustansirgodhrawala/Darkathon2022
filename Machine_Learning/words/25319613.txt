@@ -1,0 +1,107 @@
+
+
+
+
+
+
+
+                        HomeBoard!
+                        FAQRules
+                        Feedback
+                        Contact / Manual
+
+
+
+                First, check that you're on our REAL url:
+
+                    Our only real URL is: fishwfewhykavbkrzodboz6v2s7ntqtk5rkin2cz5gcemt6uubzocsad.onion. Always check that you're on this domain,
+                    (you only need to check the first 8-10 characters, as it's mathematically impossible to fake anything beyond that), and for authenticity, check if the main logo of the site includes
+                    the first 13 characters, '56dlutemceny6' in it's background. If both seems good, then cheers: you're good to go! Welcome to the site!
+
+
+
+
+                Who are we?
+
+                    We are a small group of hackers with a sophisticated botnet behind us -
+                    this is how we get our accounts. We have our own working
+                    zombie-network, each member of this network is a private PC somewhere
+                    in the world. Our 'worm' is logging keystrokes, logins and passwords on
+                    the hosts, and sending these infos directly to us.
+                    This is all you need to know.
+                    We are a familiar name within the TOR system, even Softpedia and Webroot wrote
+                    articles about us. (See below.)
+                    We changed a little since then, simplified our service for the benefit
+                    of everyone. And yes... we had problems in the past, so we're only
+                    working with Paypal accounts for now, no more credit card stuff.
+
+                    How do I order?
+
+                    It's simple.
+                    First of all, we don't need registrations anymore. (It's a waste of
+                    everyone's time, this is an anonymous network anyway.)
+                    All you have to do is click on "Board" to browse our available
+                    accounts. Please select the account you wanna buy, and click "Buy it"!
+                    The buying procedure will then begin! You'll have to enter your e-mail (preferably a temporary) address: this
+                    will be the address where the account infos will arrive to!
+                    After you enter your e-mail address, our system will calculate the
+                    current bitcoin price of the account (using the API for this),
+                    and will give you a bitcoin address to transfer the funds to.
+                    From this point our Bitcoin-daemon starts watching this address, it
+                    will watch it until the payment arrives. After 3 confirmations, the
+                    BTC-daemon (our custom Lazy API) will consider the payment done, and trigger the system to
+                    send your data to the e-mail address you've given.
+                    To prevent double-selling, if you start buying an account, it's state will
+                    change to "Locked", so nobody else can buy it. If no payment is made within
+                    1 hour, the account will be unlocked again, allowing others to buy it.
+                    If an account has been sold (the transaction is fully completed) it'll disappear
+                    from the public list for good.
+                    If you're satisfied with the system, please tell a few words about your
+                    experience after checkout, and allow us to share it with the others.
+
+                    Are you guys legit?
+                    Well, we guess a simple 'yes' won't satisfy you.
+                    We're no teenagers here, as we stated a few lines above, even Softpedia and Webroot wrote articles about us. (See the Softpedia and/or the Webroot article for example. CLEARNET warning: Click on the links, but if they doesn't work via Tor, copy-paste the link into a clearnet browser.)
+                    In the past few months, we had some 'problems' with authorities... but
+                    now we're BACK!We know our prices are a bit higher than 'usual', but there is a price if you don't want to be scammed.
+
+                    The number of scammers has risen well these days, so here are
+                    a few tips to avoid them:
+
+                    1. Can a guy who can't code a simple php system defeats paypal?
+                    We don't think so, and hopefully you don't think so! Don't trust shady
+                    services and 'websites' that clearly written by someonewho doesn't
+                    know shit about coding and programming. Sites that can be made in 5
+                    minutes with Microsoft Word... gosh!
+
+                    2. Does a scammer invest in building a strong system?
+                    Again, no. A scammer doesn't know anything about complicated systems,
+                    he/she wants one thing only: your money, and fast!
+
+                    So it's time for somebody to step up and 'bring order to chaos' here!
+
+                    What will I get for my money?
+
+                    You will have:
+                    - A working Paypal Account with the desired balance on it
+                    - A matching socks5 proxy server
+                    - BASIC instructions on how to cash it out. (It means we won't send you
+                        a step-by-step tutorial. We'll give you the guidelines and a few good
+                        tips, but it's up to you what you'll do with them. It's not hard to
+                        cash these out, though.)
+
+                    If you have all these accounts, why are you selling it, why not cash
+out yourself?
+
+                    Because cashing them out all at once would raise high suspicion. We had
+                    our problems with the authorities before, and don't wanna make the same
+                    mistake again. If you cash out 4 or 5 accounts a month, it is OK. If
+                    you cash out 100-200, that will raise serious suspicion. It's better
+                    business for us to sell these to individual people, who can really cash
+                    them out.
+
+
+
+                    ---If you have questions not answered here, please do contact us on Torchat.We're constantly updating this FAQ.
+
+        © Fish'n'Pal 2021

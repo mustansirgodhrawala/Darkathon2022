@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- TODO: design:10 add real favicon -->
+  <!-- <link rel="icon" href="/static/img/fav-icon.png" type="image/x-icon" /> -->
+  <title>
+   Babylon
+  </title>
+  <!-- Bootstrap -->
+  <link href="/static/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom global styling -->
+  <link href="/static/v2/css/style.css" rel="stylesheet"/>
+  <style>
+   .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+
+  .iconsize-navbar-top {
+    height: 1rem;
+    width: 1rem;
+  }
+  </style>
+ </head>
+ <!--================Menu Area =================-->
+ <body>
+  <header class="shop_header_area">
+   <div class="carousel_top_header row m0">
+    <div class="container-fluid">
+     <div class="carousel_top_h_inner">
+      <div class="float-md-left">
+       <div class="top_header_left">
+        <!-- TODO: design:10 && backend implement currency selection option and language selection -->
+        <!-- language and currency selction wont work without js right now -->
+        <!-- <div class="selector">
+              <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                <option value='yt' data-image="/static/v2/img/icon/flag-1.png" data-imagecss="flag yt" data-title="English">English</option>
+                <option value='yu' data-image="/static/v2/img/icon/flag-1.png" data-imagecss="flag yu" data-title="Bangladesh">Bangla</option>
+                <option value='yt' data-image="/static/v2/img/icon/flag-1.png" data-imagecss="flag yt" data-title="English">English</option>
+                <option value='yu' data-image="/static/v2/img/icon/flag-1.png" data-imagecss="flag yu" data-title="Bangladesh">Bangla</option>
+              </select>
+            </div>
+            <select class="selectpicker usd_select">
+              <option>USD</option>
+              <option>$</option>
+              <option>$</option>
+            </select> -->
+       </div>
+      </div>
+      <div class="float-md-right">
+       <div class="top_header_middle">
+        <a href="http://babbtreybjtvcqccmrivygoti7avhksrltmhft6ds73r54ep2dpwn5ad.onion/">
+         <img alt="Community Symbol" class="iconsize-navbar-top mt-0" src="/static/icons/users.svg"/>
+         <span>
+          Join our Community
+         </span>
+        </a>
+        <a href="/help/">
+         <img alt="Mail Symbol" class="iconsize-navbar-top mt-0 pl-0" src="/static/icons/mail.svg"/>
+         <span>
+          Contact Support
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="carousel_menu_inner">
+    <div class="container-fluid">
+     <!-- small screens -->
+     <div class="nav-small d-lg-none">
+      <nav class="navbar navbar-light bg-light justify-content-center">
+       <a class="navbar-brand text-center" href="/">
+        <strong class="logo-text">
+         Babylon
+        </strong>
+        <small>
+         alpha
+        </small>
+       </a>
+       <ul class="nav">
+        <li class="nav-item">
+         <a class="nav-link" href="/login/">
+          <strong>
+           Login
+          </strong>
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="/register/">
+          <strong>
+           Register
+          </strong>
+         </a>
+        </li>
+        <li class="nav-item">
+         <div class="dropdown">
+          <a class="nav-link" href="">
+           <strong>
+            Tools
+           </strong>
+          </a>
+          <div class="dropdown-content">
+           <a class="nav-link" href="/tool/pgp">
+            PGP Tool
+           </a>
+           <a class="nav-link" href="/mixer/bitcoin/">
+            BTC Mixer
+           </a>
+           <a class="nav-link" href="/tool/filecleaner">
+            File Cleaner
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="/faq/">
+          <strong>
+           FAQ
+          </strong>
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <!-- big screens -->
+     <div class="nav-big d-none d-lg-block">
+      <nav class="navbar navbar-light bg-light">
+       <a class="navbar-brand" href="/">
+        <strong class="logo-text">
+         Babylon
+        </strong>
+        <small>
+         alpha
+        </small>
+       </a>
+       <ul class="nav">
+        <li class="nav-item">
+         <a class="nav-link" href="/login/">
+          <strong>
+           Login
+          </strong>
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="/register/">
+          <strong>
+           Register
+          </strong>
+         </a>
+        </li>
+        <li class="nav-item">
+         <div class="dropdown">
+          <a class="nav-link" href="">
+           <strong>
+            Tools
+           </strong>
+          </a>
+          <div class="dropdown-content">
+           <a class="nav-link" href="/tool/pgp">
+            PGP Tool
+           </a>
+           <a class="nav-link" href="/mixer/bitcoin/">
+            BTC Mixer
+           </a>
+           <a class="nav-link" href="/tool/filecleaner">
+            File Cleaner
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="/faq/">
+          <strong>
+           FAQ
+          </strong>
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!--================End Menu Area =================-->
+  <!-- START Flash Messages -->
+  <div align="center">
+  </div>
+  <!-- END Flash Messages -->
+  <style media="screen">
+   .product_description {
+    height: 10vh;
+  }
+
+  #id_ships_to {
+    width: 20vw
+  }
+
+  #id_ships_from {
+    width: 20vw
+  }
+  </style>
+  <h4 class="text-center m-3">
+   <strong>
+    Methamphetamine Offers
+   </strong>
+  </h4>
+  <div class="container-fluid">
+   <div class="row">
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/WhatsApp_Image_2021-11-22_at_12.37.53_AM_10.jpeg" alt="USD Counterfeit Undetectable Passes All Test ($5k USD =&gt; $300 USD) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">USD Counterfeit Undetectable Passes All Test ($5k USD =&gt; $300 USD)</h5>
+          <p class="card-text product_description">USD Counterfeit Undetectable Passes All Test, ATM, Slots, Banks etc
+Only last 9months after which can be detected and …</p>
+
+          <p class="card-text">256.41€</p>
+
+          <a href="/product/1142/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/WhatsApp_Image_2021-11-22_at_12.37.53_AM_10.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1142/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1142/">
+        <h4>
+         USD Counterfeit Undetectable Passe…
+        </h4>
+        <h5>
+         256.41€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/methadone_10mg.jpg" alt="buy online methadone has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Buy online methadone</h5>
+          <p class="card-text product_description">Methadone may be habit forming. Take methadone exactly as directed. Do not take a larger dose, take it more often, or t…</p>
+
+          <p class="card-text">10.00€</p>
+
+          <a href="/product/700/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/methadone_10mg.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/700/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/700/">
+        <h4>
+         Buy online methadone
+        </h4>
+        <h5>
+         10.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/lL9YE2x6Ff3uwZcr_B7VEuTE.jpg" alt="28grams CRYSTALL METH for $1300 has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">28grams CRYSTALL METH for $1300</h5>
+          <p class="card-text product_description">IMPORTANT NOTICE&gt;&gt;&gt;&gt;&gt;WE DO 100% REFUND or RE-SHIPMENT FOR ANY UNDELIVERED PACKAGE.&#x27;STEALTH&#x27; SHIPPING WORLDWIDE AND WE P…</p>
+
+          <p class="card-text">1300.00€</p>
+
+          <a href="/product/417/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/lL9YE2x6Ff3uwZcr_B7VEuTE.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/417/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/417/">
+        <h4>
+         28grams CRYSTALL METH for $1300
+        </h4>
+        <h5>
+         1300.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/CLZU2nNes48HPKG5VYnAyHpwc0YaoM9F6R0jMR0z.jpeg" alt="Quaaludes 300mg / Methaqualone has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Quaaludes 300mg / Methaqualone</h5>
+          <p class="card-text product_description">.......... Leave me a message before placing an order.......
+
+Welcome to our online shop where we offer a variety of …</p>
+
+          <p class="card-text">300.00€</p>
+
+          <a href="/product/1640/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/CLZU2nNes48HPKG5VYnAyHpwc0YaoM9F6R0jMR0z.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1640/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1640/">
+        <h4>
+         Quaaludes 300mg / Methaqualone
+        </h4>
+        <h5>
+         300.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/WhatsApp_Image_2021-08-03_at_4.34.22_AM.jpeg" alt="100% Pure FIRE Cartel Super-Lab Crystal Meth France to EU ONLY x1G has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">100% Pure FIRE Cartel Super-Lab Crystal Meth France to EU ONLY x1G</h5>
+          <p class="card-text product_description">100% Pure FIRE Cartel Super-Lab Crystal Meth France to EU ONLY x1G
+
+All orders that come in before 13:00 France local…</p>
+
+          <p class="card-text">89.74€</p>
+
+          <a href="/product/1054/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/WhatsApp_Image_2021-08-03_at_4.34.22_AM.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1054/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1054/">
+        <h4>
+         100% Pure FIRE Cartel Super-Lab Cr…
+        </h4>
+        <h5>
+         89.74€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/2_CF4i5W2.jpeg" alt="Crystal Meth 28 g has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Crystal Meth 28 g</h5>
+          <p class="card-text product_description">All orders are shipped from USA!
+
+-Ice shards with a HIGH Purity
+-Highest Quality available on dark markets!
+Visit …</p>
+
+          <p class="card-text">199.12€</p>
+
+          <a href="/product/266/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/2_CF4i5W2.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/266/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/266/">
+        <h4>
+         Crystal Meth 28 g
+        </h4>
+        <h5>
+         199.12€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/m.png" alt="1g ice (crystals meth) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">1g ice (crystals meth)</h5>
+          <p class="card-text product_description">1G High quality Crystal Meth
+
+US DOMESTIC
+
+tracking number
+
+
+
+
+
+
+
+
+
+
+
+
+
+STAY SAFE</p>
+
+          <p class="card-text">42.37€</p>
+
+          <a href="/product/913/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/m.png"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/913/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/913/">
+        <h4>
+         1g ice (crystals meth)
+        </h4>
+        <h5>
+         42.37€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/881fce75-ff41-45ea-8eeb-3a3fe023256f_mid.jpg" alt="Buy Top Quality Meth (1 ounce = $350) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Buy Top Quality Meth (1 ounce = $350)</h5>
+          <p class="card-text product_description">Buy Top Quality Crystal Meth at good and best prices. ORDER NOW AND GET BONUSES ON REGULAR DEMANDS AND BE OUR PRIORITY …</p>
+
+          <p class="card-text">289.26€</p>
+
+          <a href="/product/860/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/881fce75-ff41-45ea-8eeb-3a3fe023256f_mid.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/860/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/860/">
+        <h4>
+         Buy Top Quality Meth (1 ounce = $3…
+        </h4>
+        <h5>
+         289.26€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/ICE.jpeg" alt="******** 1G High quality Crystal Meth (FREE SHIPPING) ***** has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">******** 1G High quality Crystal Meth (FREE SHIPPING) *****</h5>
+          <p class="card-text product_description">******** 1G High quality Crystal Meth (FREE SHIPPING) *****
+1G High quality Crystal Meth
+US DOMESTIC
+No tracking num…</p>
+
+          <p class="card-text">47.01€</p>
+
+          <a href="/product/701/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/ICE.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/701/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/701/">
+        <h4>
+         ******** 1G High quality Crystal M…
+        </h4>
+        <h5>
+         47.01€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/103drXjd9O2nWsixJ1rHAMSlkjR9LFSeH0WerNL4.jpeg" alt="Good Quality Crystal Meth 1OZ (Methamphetamine) $500 has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Good Quality Crystal Meth 1OZ (Methamphetamine) $500</h5>
+          <p class="card-text product_description">Methamphetamine is a potent central nervous system stimulant that is mainly used as a recreational drug and less common…</p>
+
+          <p class="card-text">500.00€</p>
+
+          <a href="/product/1517/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/103drXjd9O2nWsixJ1rHAMSlkjR9LFSeH0WerNL4.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1517/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1517/">
+        <h4>
+         Good Quality Crystal Meth 1OZ (Met…
+        </h4>
+        <h5>
+         500.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/62867cf4687b41652980980.jpeg" alt="Order for some top notch crystal methamphetamine has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order for some top notch crystal methamphetamine</h5>
+          <p class="card-text product_description">Contact Us via Direct Text, Signal or Whatsapp +1(502) 383-3416
+Wickr………   methnation
+
+Sales of top quality Crystalm…</p>
+
+          <p class="card-text">850.00€</p>
+
+          <a href="/product/1553/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/62867cf4687b41652980980.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1553/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1553/">
+        <h4>
+         Order for some top notch crystal m…
+        </h4>
+        <h5>
+         850.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/b4eecb4b-8396-4a5b-bfac-81e8557c84c8_mid_PL7Qxt2.jpg" alt="Buy Top Quality Meth (1Ounce = $300) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Buy Top Quality Meth (1Ounce = $300)</h5>
+          <p class="card-text product_description">Dear Value Costumers ( WE ACCEPT FULL ESCROW HERE) Costumers satisfaction is our priority.
+
+IMPORTANT NOTICE &gt;&gt;&gt;&gt;&gt; We…</p>
+
+          <p class="card-text">300.00€</p>
+
+          <a href="/product/589/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/b4eecb4b-8396-4a5b-bfac-81e8557c84c8_mid_PL7Qxt2.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/589/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/589/">
+        <h4>
+         Buy Top Quality Meth (1Ounce = $30…
+        </h4>
+        <h5>
+         300.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/7r8h1duRkXCIVs0uZFSs5FVBuOQtXVLzCs99CFsO.jpeg" alt="Order for some top notch crystal methamphetamine has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order for some top notch crystal methamphetamine</h5>
+          <p class="card-text product_description">Contact Us via Direct Text, Signal or Whatsapp +1(502) 383-3416
+Wickr………   methnation
+
+Sales of top quality Crystalm…</p>
+
+          <p class="card-text">250.00€</p>
+
+          <a href="/product/1556/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/7r8h1duRkXCIVs0uZFSs5FVBuOQtXVLzCs99CFsO.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1556/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1556/">
+        <h4>
+         Order for some top notch crystal m…
+        </h4>
+        <h5>
+         250.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/7r8h1duRkXCIVs0uZFSs5FVBuOQtXVLzCs99CFsO_f3Hw1WN.jpeg" alt="Order for some top notch crystal methamphetamine has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order for some top notch crystal methamphetamine</h5>
+          <p class="card-text product_description">Contact Us via Direct Text, Signal or Whatsapp  +1(207) 424-2368
+Wickr………  willkinson1
+
+Sales of top quality Crystal…</p>
+
+          <p class="card-text">247.86€</p>
+
+          <a href="/product/1557/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/7r8h1duRkXCIVs0uZFSs5FVBuOQtXVLzCs99CFsO_f3Hw1WN.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1557/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1557/">
+        <h4>
+         Order for some top notch crystal m…
+        </h4>
+        <h5>
+         247.86€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/07.jpg" alt="Buy Top Quality Crystall Meth (1 POUNDS = $1220) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Buy Top Quality Crystall Meth (1 POUNDS = $1220)</h5>
+          <p class="card-text product_description">Buy Top Quality Crystal Meth (1 POUNDS = $1220) OVERNIGHT DELIVERY Buy our top quality Crystal Methamphetamine at your …</p>
+
+          <p class="card-text">1220.00€</p>
+
+          <a href="/product/343/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/07.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/343/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/343/">
+        <h4>
+         Buy Top Quality Crystall Meth (1 P…
+        </h4>
+        <h5>
+         1220.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/IMG_20201114_194508_432.jpg" alt="CRYSTAL METH has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">CRYSTAL METH</h5>
+          <p class="card-text product_description">Methamphetamine is an illegal drug in the same class as cocaine and other powerful street drugs. It has many nicknames—…</p>
+
+          <p class="card-text">60.00€</p>
+
+          <a href="/product/833/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/IMG_20201114_194508_432.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/833/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/833/">
+        <h4>
+         CRYSTAL METH
+        </h4>
+        <h5>
+         60.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/b4eecb4b-8396-4a5b-bfac-81e8557c84c8_mid_AvEtjjD.jpg" alt="Buy Best Quality Crystal Meth (1ounce = $300) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Buy Best Quality Crystal Meth (1ounce = $300)</h5>
+          <p class="card-text product_description">Buy Top Quality Crystal Meth at good prices. BUY FROM Universal Vendor AND GETS EXTRA BONUS FOR ANY ORDER YOU MAKE WITH…</p>
+
+          <p class="card-text">300.00€</p>
+
+          <a href="/product/588/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/b4eecb4b-8396-4a5b-bfac-81e8557c84c8_mid_AvEtjjD.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/588/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/588/">
+        <h4>
+         Buy Best Quality Crystal Meth (1ou…
+        </h4>
+        <h5>
+         300.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/62b056f2ce1591655723762_hOv6bSd.jpg" alt="Order for some top notch crystal methamphetamine has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order for some top notch crystal methamphetamine</h5>
+          <p class="card-text product_description">Contact Us via Direct Text, Signal or Whatsapp +1(207) 424-2368
+Wickr………  willkinson1
+
+Sales of top quality Crystalm…</p>
+
+          <p class="card-text">247.86€</p>
+
+          <a href="/product/1558/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/62b056f2ce1591655723762_hOv6bSd.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1558/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1558/">
+        <h4>
+         Order for some top notch crystal m…
+        </h4>
+        <h5>
+         247.86€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/62b056f2ce1591655723762.jpg" alt="Order for some top notch crystal methamphetamine has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order for some top notch crystal methamphetamine</h5>
+          <p class="card-text product_description">Contact Us via Direct Text, Signal or Whatsapp +1(502) 383-3416
+Wickr………   methnation
+
+Sales of top quality Crystalm…</p>
+
+          <p class="card-text">250.00€</p>
+
+          <a href="/product/1554/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/62b056f2ce1591655723762.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1554/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1554/">
+        <h4>
+         Order for some top notch crystal m…
+        </h4>
+        <h5>
+         250.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/Optimized-pansiver_Meth_sample.cleaned.cleaned.jpg" alt="QUALITY 1 gram METH pure 90% white cloud rock uncut has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">QUALITY 1 gram METH pure 90% white cloud rock uncut</h5>
+          <p class="card-text product_description">Meth is quality to its finest purity. Truly a divine creation amongst saturation from societal bounds, intriguing your …</p>
+
+          <p class="card-text">120.00€</p>
+
+          <a href="/product/1058/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/Optimized-pansiver_Meth_sample.cleaned.cleaned.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1058/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1058/">
+        <h4>
+         QUALITY 1 gram METH pure 90% white…
+        </h4>
+        <h5>
+         120.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/2b58cf28-ab89-4937-af59-21a4dc7024f3_mid_gTUREdW.jpeg" alt="BUY CRYSTAL METH,XANAX ONLINE has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">BUY CRYSTAL METH,XANAX ONLINE</h5>
+          <p class="card-text product_description">BUY ,CRYSTAL METH,XANAX ONLINE
+
+We are supplier of health supplement Such As stimulant, Opioids,
+Benzodiazepines,
+H…</p>
+
+          <p class="card-text">305.56€</p>
+
+          <a href="/product/80/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/2b58cf28-ab89-4937-af59-21a4dc7024f3_mid_gTUREdW.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/80/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/80/">
+        <h4>
+         BUY CRYSTAL METH,XANAX ONLINE
+        </h4>
+        <h5>
+         305.56€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/lL9YE2x6Ff3uwZcr.jpg" alt="98% pure Crystal Meth 1 pounds has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">98% pure Crystal Meth 1 pounds</h5>
+          <p class="card-text product_description">98% pure Crystal Meth 1 pounds
+CONTACT DIRECTLY AT WICKR
+
+OUR WICKR  ID....bestshoping
+call or text  via +166929521…</p>
+
+          <p class="card-text">1700.00€</p>
+
+          <a href="/product/401/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/lL9YE2x6Ff3uwZcr.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/401/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/401/">
+        <h4>
+         98% pure Crystal Meth 1 pounds
+        </h4>
+        <h5>
+         1700.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/594329798.jpg" alt="Crysta Meth 98% pure has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Crysta Meth 98% pure</h5>
+          <p class="card-text product_description">DUE TO MANY SCAM IN DARK NET NOW WE HAVE DECIDED TO DO FULL ESCROW AND
+WE APPRECIATE ESCROW ORDERS MOST SO WE CAN GET …</p>
+
+          <p class="card-text">250.00€</p>
+
+          <a href="/product/435/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/594329798.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/435/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/435/">
+        <h4>
+         Crysta Meth 98% pure
+        </h4>
+        <h5>
+         250.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/Buy_Methamphetamine_Online_Methamphetamine_For_Sale_UWbnZMk.jpg" alt="1G PURE METHAMPHETAMINE ♠ USA 2 USA ♠ has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">1G PURE METHAMPHETAMINE ♠ USA 2 USA ♠</h5>
+          <p class="card-text product_description">♠ ♠ CRYSTAL METH -1g- METHAMPHETAMINE-- ♠ 1 Gram ICE METH ♠ USA 2 USA ♠
+
+TOPSHELF.... BUY AND SEE
+READ SALE CONDITIO…</p>
+
+          <p class="card-text">59.32€</p>
+
+          <a href="/product/906/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/Buy_Methamphetamine_Online_Methamphetamine_For_Sale_UWbnZMk.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/906/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/906/">
+        <h4>
+         1G PURE METHAMPHETAMINE ♠ USA 2 US…
+        </h4>
+        <h5>
+         59.32€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/WhatsApp_Image_2021-08-03_at_4.34.22_AM_11_qcFmguU.jpeg" alt="Promethazine With Codeine Cough Syrups=&gt;Price Per 16 Oz Pint x1Pint has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Promethazine With Codeine Cough Syrups=&gt;Price Per 16 Oz Pint x1Pint</h5>
+          <p class="card-text product_description">Promethazine With Codeine Cough Syrups
+Act
+wock
+wok
+hi tech
+tussi
+quali
+mvpmg
+tek
+
+FEEDBACKS: u5lyidiw4lpkono…</p>
+
+          <p class="card-text">384.62€</p>
+
+          <a href="/product/1133/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/WhatsApp_Image_2021-08-03_at_4.34.22_AM_11_qcFmguU.jpeg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1133/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1133/">
+        <h4>
+         Promethazine With Codeine Cough Sy…
+        </h4>
+        <h5>
+         384.62€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/bs1_tDC5Fdx.jpg" alt="BUY QUALITY MDPV,METHYLONE,4MEC,JWH SERIES,URB SERIES;MEPHEDRONE,MXE AND OTHERS has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">BUY QUALITY MDPV,METHYLONE,4MEC,JWH SERIES,URB SERIES;MEPHEDRONE,MXE AND OTHERS</h5>
+          <p class="card-text product_description">BUY QUALITY MDPV,METHYLONE,4MEC,JWH SERIES,URB SERIES;MEPHEDRONE,MXE AND OTHERS
+
+Our product is the best you can fine…</p>
+
+          <p class="card-text">105.11€</p>
+
+          <a href="/product/1345/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/bs1_tDC5Fdx.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1345/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1345/">
+        <h4>
+         BUY QUALITY MDPV,METHYLONE,4MEC,JW…
+        </h4>
+        <h5>
+         105.11€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/2524093e-5c06-4b93-bcab-6cbc8b796984.jpg" alt="28 GRAMS OF FURIOUSLY FISTING YOUR GRANDPA METH has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">28 GRAMS OF FURIOUSLY FISTING YOUR GRANDPA METH</h5>
+          <p class="card-text product_description">Lets get back on the right track!
+Username on W!CK R APP  ID: willkinson1
+Whatsapp or text +1(207) 424-2368 OR
+SIGN…</p>
+
+          <p class="card-text">384.62€</p>
+
+          <a href="/product/1428/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/2524093e-5c06-4b93-bcab-6cbc8b796984.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/1428/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/1428/">
+        <h4>
+         28 GRAMS OF FURIOUSLY FISTING YOUR…
+        </h4>
+        <h5>
+         384.62€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/Buy_Methamphetamine_Online_Methamphetamine_For_Sale.jpg" alt="CRYSTAL METH 1GRAM ♠ USA 2 USA ♠ has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">CRYSTAL METH 1GRAM ♠ USA 2 USA ♠</h5>
+          <p class="card-text product_description">♠ ♠ CRYSTAL METH -1g- METHAMPHETAMINE-- ♠ 1 Gram ICE METH ♠ USA 2 USA ♠
+
+TOPSHELF.... BUY AND SEE
+READ SALE CONDITIO…</p>
+
+          <p class="card-text">59.32€</p>
+
+          <a href="/product/898/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/Buy_Methamphetamine_Online_Methamphetamine_For_Sale.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/898/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/898/">
+        <h4>
+         CRYSTAL METH 1GRAM ♠ USA 2 USA ♠
+        </h4>
+        <h5>
+         59.32€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/0001_4qdk958.jpg" alt="Ri.tal.in (Methyl.phenidate) 10 mg has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Ri.tal.in (Methyl.phenidate) 10 mg</h5>
+          <p class="card-text product_description">Rit.alin Online Without Prescription. Rit.alin (methyl.phenidate) is a central nervous system stimulant. It affects che…</p>
+
+          <p class="card-text">159.29€</p>
+
+          <a href="/product/262/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/0001_4qdk958.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/262/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/262/">
+        <h4>
+         Ri.tal.in (Methyl.phenidate) 10 mg
+        </h4>
+        <h5>
+         159.29€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- <div class=" col-4 p-3 d-flex">
+      <div class="card flex-fill">
+        <div class="text-center">
+          <img class="card-img-top home_product_img" src="/media/product_images/34_sK5urSE.jpg" alt="100 Pills Adderall 30mg ($300) has no image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">100 Pills Adderall 30mg ($300)</h5>
+          <p class="card-text product_description">Adderall is a combination medication containing four salts of amphetamine. Adderall is used in the treatment of attenti…</p>
+
+          <p class="card-text">300.00€</p>
+
+          <a href="/product/765/" class="btn btn-primary align-text-bottom">View product</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Product Item -->
+    <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
+     <div class="l_product_item">
+      <div class="l_p_img">
+       <img alt="" class="mx-auto d-block" height="320px" src="/media/product_images/34_sK5urSE.jpg"/>
+      </div>
+      <div class="l_p_text">
+       <ul>
+        <li>
+         <a class="add_cart_btn" href="/product/765/">
+          View Item
+         </a>
+        </li>
+       </ul>
+       <a href="/product/765/">
+        <h4>
+         100 Pills Adderall 30mg ($300)
+        </h4>
+        <h5>
+         300.00€
+        </h5>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="offset-md-4 pl-3">
+    <nav aria-label="Page navigation example">
+     <ul class="pagination">
+      <li class="page-item disabled">
+       <a class="page-link" href="?page=1">
+        <small>
+         Current page 1
+        </small>
+       </a>
+      </li>
+      <li class="page-item">
+       <a aria-label="Next" class="page-link" href="?page=2">
+        <span aria-hidden="true">
+         »
+        </span>
+        <span class="sr-only">
+         Next
+        </span>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <footer class="footer_area">
+   <div class="container-fluid text-center">
+    <div class="border-top">
+     <div class="row mt-3 justify-content-center">
+      <div class="col-12 mb-2 col-lg-2 mb-lg-0">
+       <aside class="f_widget f_about_widget">
+        <!-- TODO: add logo and rm h6 -->
+        <!-- <img src="/static/v2/img/logo.png" alt="Babylon"> -->
+        <h6 class="text-uppercase">
+         Babylon
+        </h6>
+        <p class="pt-2">
+         A free and open market place for
+         <strong>
+          Everyone
+         </strong>
+        </p>
+       </aside>
+      </div>
+      <div class="col-4 col-lg-2">
+       <aside class="f_widget link_widget f_info_widget">
+        <div class="f_w_title pb-2">
+         <h3>
+          Info
+         </h3>
+        </div>
+        <ul>
+         <li>
+          <a href="/faq/">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="/Tos/">
+           TOS
+          </a>
+         </li>
+        </ul>
+       </aside>
+      </div>
+      <div class="col-4 col-lg-2">
+       <aside class="f_widget link_widget f_info_widget">
+        <div class="f_w_title pb-2">
+         <h3>
+          Links
+         </h3>
+        </div>
+        <ul>
+         <li>
+          <a href="/mirrors.txt">
+           Mirrors
+          </a>
+         </li>
+         <li>
+          <a href="http://babbtreybjtvcqccmrivygoti7avhksrltmhft6ds73r54ep2dpwn5ad.onion/">
+           Forum
+          </a>
+         </li>
+        </ul>
+       </aside>
+      </div>
+      <div class="col-4 col-lg-2">
+       <aside class="f_widget link_widget f_info_widget">
+        <div class="f_w_title pb-2">
+         <h3>
+          Contact
+         </h3>
+        </div>
+        <ul>
+         <li>
+          <a href="http://babbtreybjtvcqccmrivygoti7avhksrltmhft6ds73r54ep2dpwn5ad.onion/forumdisplay.php?fid=13">
+           Help Section
+          </a>
+         </li>
+         <li>
+          <a href="/contact_support/">
+           Contact Support
+          </a>
+         </li>
+        </ul>
+       </aside>
+      </div>
+     </div>
+    </div>
+    <div class="footer_copyright mt-2">
+     <h5>
+      2020 Copyright ©Babylon All rights reserved
+     </h5>
+    </div>
+   </div>
+  </footer>
+  <!--================End Footer Area =================-->
+ </body>
+ <!--================Footer Area =================-->
+</html>

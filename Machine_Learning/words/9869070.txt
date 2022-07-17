@@ -1,0 +1,1298 @@
+
+
+
+
+
+
+
+	Welcome to EndlessServer
+
+
+
+
+
+
+
+
+
+
+		Tutorial
+
+		Manual
+
+		Forum
+
+
+
+
+
+		Register
+
+		Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Manual
+
+
+
+
+
+The tribes |
+
+The buildings |
+
+FAQ
+
+
+
+
+
+
+
+    You can choose between three tribes in Travian: Romans, Gauls and Teutons. Each tribe has advantages and disadvantages and their troops are also very different. It is important to choose the tribe that fits you perfectly.
+
+
+
+The Romans
+
+
+
+
+
+Because of its high level of social and technological development the Romans are masters at building and its coordination. Also, their troops are part of the elite in Travian. They are very balanced and useful in attacking and defending.
+
+To guarantee this variety the Roman troops are trained for a very long time and their training is expensive. Their infantry is a living legend, but their defence against enemy cavalry isn't as good as that of the other tribes. The amount of resources a Roman merchant is able to carry is very low.
+
+Because they are weak at the beginning of the game, they are a bad choice for beginners.
+
+
+
+
+
+
+
+
+
+
+
+	    The Roman troops
+
+
+
+
+
+
+
+
+
+	     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    Speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Legionnaire
+
+	40
+
+	35
+
+	50
+
+	120
+
+	100
+
+	150
+
+	30
+
+	6
+
+
+
+
+
+
+
+
+
+
+
+	Praetorian
+
+	30
+
+	65
+
+	35
+
+	100
+
+	130
+
+	160
+
+	70
+
+	5
+
+
+
+
+
+
+
+
+
+
+
+	Imperian
+
+	70
+
+	40
+
+	25
+
+	150
+
+	160
+
+	210
+
+	80
+
+	7
+
+
+
+
+
+
+
+
+
+
+
+	Equites Legati
+
+	0
+
+	20
+
+	10
+
+	140
+
+	160
+
+	20
+
+	40
+
+	16
+
+
+
+
+
+
+
+
+
+
+
+	Equites Imperatoris
+
+	120
+
+	65
+
+	50
+
+	550
+
+	440
+
+	320
+
+	100
+
+	14
+
+
+
+
+
+
+
+
+
+
+
+	Equites Caesaris
+
+	180
+
+	80
+
+	105
+
+	550
+
+	640
+
+	800
+
+	180
+
+	10
+
+
+
+
+
+
+
+
+
+
+
+	Battering Ram
+
+	60
+
+	30
+
+	75
+
+	900
+
+	360
+
+	500
+
+	70
+
+	4
+
+
+
+
+
+
+
+
+
+
+
+	Fire Catapult
+
+	75
+
+	60
+
+	10
+
+	950
+
+	1350
+
+	600
+
+	90
+
+	3
+
+
+
+
+
+
+
+
+
+
+
+	Senator
+
+	50
+
+	40
+
+	30
+
+	30750
+
+	27200
+
+	45000
+
+	37500
+
+	4
+
+
+
+
+
+
+
+
+
+
+
+	Settler
+
+	0
+
+	80
+
+	80
+
+	5800
+
+	5300
+
+	7200
+
+	5500
+
+	5
+
+
+
+
+
+
+
+
+
+The specialties
+
+
+
+
+
+	Can raise or extend a building and resource field simultaneously
+
+The City Wall gives a high defence bonus
+
+Merchants can carry 500 units of resources (speed: 16 fields/hour)
+
+Very powerful infantry, average cavalry
+
+Development is expensive and takes a long time.
+
+
+
+
+
+The Gauls
+
+
+
+
+
+The Gauls are the most peaceful of all three tribes in Travian. Their troops are trained for an excellent defence, but their ability to attack can still compete with the other two tribes. The Gauls are born riders and their horses are famous for their speed. This means that their riders can hit the enemy exactly where they can cause the most damage and swiftly take care of them.
+
+This tribe is very easy to defend, but an aggressive tactic is possible too. This gives you the opportunity to develop into any possible strategic direction (defensive or aggressive, lone wolf or reliable helper, merchant or plunderer, infantry or cavalry, settler or conqueror), but you need a bit of experience and talent.
+
+For beginners and those players who don't know exactly what they want to play, the Gauls are the ideal choice.
+
+
+
+
+
+
+
+
+
+
+
+	    The Gallic Troops
+
+
+
+
+
+
+
+
+
+	     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    Speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Phalanx
+
+	15
+
+	40
+
+	50
+
+	100
+
+	130
+
+	55
+
+	30
+
+	7
+
+
+
+
+
+
+
+
+
+
+
+	Swordsman
+
+	65
+
+	35
+
+	20
+
+	140
+
+	150
+
+	185
+
+	60
+
+	6
+
+
+
+
+
+
+
+
+
+
+
+	Pathfinder
+
+	0
+
+	20
+
+	10
+
+	170
+
+	150
+
+	20
+
+	40
+
+	17
+
+
+
+
+
+
+
+
+
+
+
+	Theutates Thunder
+
+	90
+
+	25
+
+	40
+
+	350
+
+	450
+
+	230
+
+	60
+
+	19
+
+
+
+
+
+
+
+
+
+
+
+	Druidrider
+
+	45
+
+	115
+
+	55
+
+	360
+
+	330
+
+	280
+
+	120
+
+	16
+
+
+
+
+
+
+
+
+
+
+
+	Haeduan
+
+	140
+
+	50
+
+	165
+
+	500
+
+	620
+
+	675
+
+	170
+
+	13
+
+
+
+
+
+
+
+
+
+
+
+	Ram
+
+	50
+
+	30
+
+	105
+
+	950
+
+	555
+
+	330
+
+	75
+
+	4
+
+
+
+
+
+
+
+
+
+
+
+	Trebuchet
+
+	70
+
+	45
+
+	10
+
+	960
+
+	1450
+
+	630
+
+	90
+
+	3
+
+
+
+
+
+
+
+
+
+
+
+	Chieftain
+
+	40
+
+	50
+
+	50
+
+	30750
+
+	45400
+
+	31000
+
+	37500
+
+	5
+
+
+
+
+
+
+
+
+
+
+
+	Settler
+
+	0
+
+	80
+
+	80
+
+	5500
+
+	7000
+
+	5300
+
+	4900
+
+	5
+
+
+
+
+
+
+
+
+
+The specialties
+
+
+
+
+
+	Speed bonus: Fastest troops in the game
+
+The palisade gives an average defence bonus
+
+Merchants can carry 750 units of resources (speed: 24 fields/hour)
+
+Cranny is twice as big
+
+Expensive siege weapons
+
+Cheap settlers
+
+
+
+
+
+The Teutons
+
+
+
+
+
+The Teutons are the most aggressive tribe. Their troops are notorious and feared for their rage and frenzy when they attack. They move around as a plundering horde, not even afraid of death.
+
+
+
+However, they lack the military discipline of the Gauls or Romans which causes them to be weak in speed and defence.
+
+For aggressive and experienced players the Teutons are an excellent choice!
+
+
+
+
+
+
+
+
+
+
+
+	    The Teutonic Troops
+
+
+
+
+
+
+
+
+
+	     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    Speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Clubswinger
+
+	40
+
+	20
+
+	5
+
+	95
+
+	75
+
+	40
+
+	40
+
+	7
+
+
+
+
+
+
+
+
+
+
+
+	Spearman
+
+	10
+
+	35
+
+	60
+
+	145
+
+	70
+
+	85
+
+	40
+
+	7
+
+
+
+
+
+
+
+
+
+
+
+	Axeman
+
+	60
+
+	30
+
+	30
+
+	130
+
+	120
+
+	170
+
+	70
+
+	6
+
+
+
+
+
+
+
+
+
+
+
+	Scout
+
+	0
+
+	10
+
+	5
+
+	160
+
+	100
+
+	50
+
+	50
+
+	9
+
+
+
+
+
+
+
+
+
+
+
+	Paladin
+
+	55
+
+	100
+
+	40
+
+	370
+
+	270
+
+	290
+
+	75
+
+	10
+
+
+
+
+
+
+
+
+
+
+
+	Teutonic Knight
+
+	150
+
+	50
+
+	75
+
+	450
+
+	515
+
+	480
+
+	80
+
+	9
+
+
+
+
+
+
+
+
+
+
+
+	Ram
+
+	65
+
+	30
+
+	80
+
+	1000
+
+	300
+
+	350
+
+	70
+
+	4
+
+
+
+
+
+
+
+
+
+
+
+	Catapult
+
+	50
+
+	60
+
+	10
+
+	900
+
+	1200
+
+	600
+
+	60
+
+	3
+
+
+
+
+
+
+
+
+
+
+
+	Chief
+
+	40
+
+	60
+
+	40
+
+	35500
+
+	26600
+
+	25000
+
+	27200
+
+	4
+
+
+
+
+
+
+
+
+
+
+
+	Settler
+
+	10
+
+	80
+
+	80
+
+	7200
+
+	5500
+
+	5800
+
+	6500
+
+	5
+
+
+
+
+
+
+
+
+
+The specialties
+
+
+
+
+
+	Plunder bonus: enemy crannies only hides 66% of the normal amount in Travian version 2.5 and 3, and 80% of the normal amount in Travian version 3.5.
+
+The earth wall is almost indestructible but only gives a minimal defence bonus
+
+Merchants can carry 1000 units of resources (speed: 12 fields/hour)
+
+Cheap, fast troops which are excellent plunderers
+
+Weak defence
+
+
+
+
+
+
+
+
+
+
+
+
+
+			© 2010 - 2022 EndlessServer All rights reserved
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anleitung

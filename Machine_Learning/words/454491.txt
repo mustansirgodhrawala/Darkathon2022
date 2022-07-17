@@ -1,0 +1,303 @@
+
+
+
+          ×
+        Diese Seite übersetzen?
+English
+Español
+Italiano
+Nederlands
+Türkçe
+Free Software Foundation Europe
+Gehe zu:
+
+Menü
+Inhalt
+Seiteninformation
+
+
+ Spenden
+
+Über Uns
+Aktivitäten
+Mitmachen
+Presse
+
+
+ Login
+ Sprache ändern
+
+
+
+
+
+
+
+
+            ×
+
+  Diese Seite wurde bisher noch nicht übersetzt. Bitte hilf uns, diese
+  und andere Seiten
+  auf fsfe.org zu übersetzen, damit alle unsere Informationen in
+  ihrer Muttersprache lesen können.
+
+
+
+
+
+    Legal Support Activities
+
+
+
+
+
+        As a non-profit, non-governmental organisation, Free Software
+        Foundation Europe works to create general understanding and
+        support for Free Software and Open Standards. The following
+        activities are concrete actions that we take in the areas of
+        public awareness, policy advocacy and legal support.
+
+
+
+
+      Since its foundation in 2001, the FSFE has been working every
+      single day to further Free Software in Europe and beyond. With
+      our concrete activities, based upon the three pillars of our work, we
+      focus on protecting and extending user rights. Some of our
+      actions run for many years, some are aimed at short-term
+      developments, but all are part of our mission: empower users
+      to control technology.
+
+
+
+      Another major part of our work consists of continuous engagement
+      and background work. We are present at dozens of conferences per year,
+      support and maintain an excellent community and
+      provide it with helpful resources. Furthermore, we are a
+      prominent contact point for all questions and enquiries around
+      software freedom, Open Standards, and user rights. We also provide basic education resources on Free Software legal and licensing issues.
+
+
+
+Highlights
+Public Awareness
+Policy Advocacy
+Legal Support
+
+
+
+      Learn more about legal
+      issues in Free Software and our general approach in this
+      area.
+
+
+
+
+
+REUSE Software
+
+The FSFE is running a project to make licensing easy for humans and machines alike. It solves a fundamental issue that Free Software licensing has at the very source: what license is a file licensed under, and who owns the copyright? REUSE provides easy recommendations in three steps that help users, developers and legal professionals.
+
+
+
+
+
+Legal Network
+
+      The Legal Network is a neutral, non-partisan, group of experts in
+      different fields involved in Free Software legal issues.
+      Currently the Legal Network has several hundreds of participants
+      from different legal systems, academic backgrounds and
+      affiliations. The aim of the Legal Network is to promote
+      discussion and foster better knowledge of the legal constructs
+      that back Free Software. The conversations on the Legal Network
+      are intended to be dynamic, thought-provoking and up to speed
+      with the most recent developments. Since 2007, we have been
+      conducting the annual Legal and Licencing Workshop (LLW) which
+      has become the world’s foremost gathering of lawyers,
+      technologists, and thought leaders on Free Software legal and
+      licensing topics in an informal and confidential atmosphere.
+
+
+
+
+
+Licence Questions
+
+      The FSFE’s Licence Questions mailing list is our group of
+      volunteers dedicated to provide help with Free Software licences
+      and compliance. If you need advice on what Free Software licence
+      you should use, or if you want to know more about what rights you
+      have over a piece of Free Software, you can contact us.
+
+
+
+
+
+Next Generation Internet
+
+      The FSFE is a partner organisation of NGI, a coalition of various
+      not-for-profit organisations from across Europe. Funded by the
+      European Commmission, NGI provides grants to individual
+      researchers and developers, as well as teams that wish to work on
+      new ideas and technologies that contribute to the establishment
+      of the Next Generation Internet. The FSFE provides legal support
+      for projects that improve openness, inclusivity, transparency,
+      privacy, cooperation, and protection of data.
+
+
+
+
+
+    More Legal Activities
+
+
+
+
+Fiduciary Programme
+
+    The Fiduciary License Agreement (FLA) allows software projects to assign and consolidate copyrights to a named fiduciary, for the effective management of their copyright status by this fiduciary. This permits developers to focus on making great applications, rather than spending their time dealing with legal administration. While the FSFE no longer accepts new projects under the Fiduciary Programme, we continue to offer customisable versions of the Fiduciary License Agreement (FLA) for your use.
+
+
+
+
+Software Patents in Europe
+
+      We are working towards a world where software does what software
+      users want it to do. For this, software users must be able to
+      participate in the development and distribution of the software.
+      Software patents block this goal by adding legal and financial
+      risks to software development and distribution and by giving the
+      patent holders legal power to completely prohibit software
+      developers from using the patented ideas.
+
+
+
+
+Microsoft vs. EU Antitrust CaseAbgeschlossen
+
+
+      In 2001 the European Union started investigating Microsoft's
+      dominant position in the market for desktop operating systems.
+      The FSFE played two key roles in this case. First, we represented
+      the interests of Free Software developers. Second, we are a
+      public interest organisation who cannot be bought off. Thanks to
+      the excellent work by all involved parties, the case has been won
+      in all rulings up to the European Court of Justice in 2012.
+
+
+
+
+EURA Slovakia caseAbgeschlossen
+
+
+      The Slovak company EURA Slovakia has been facing EUR 5600 in
+      fines because it did not buy and use the Microsoft Windows
+      operating system for submitting electronic tax reports. Slovak
+      tax administration gave EURA only two options: either to buy and
+      use Microsoft Windows or face the fines. The FSFE assisted in
+      this case to advocate for platform-neutral solutions for such
+      procedures instead. Unfortunately, the court decided against Free
+      Software and Open Standards, but we were able to raise awareness
+      about these wrongdoings in Slovakia and beyond.
+
+
+
+
+AVM GPL violationAbgeschlossen
+
+
+      Can a company modify GPL-licensed software on a third-party
+      device? The router manufacturer AVM accused Cybits of copyright
+      infringement and trademark claims because they modify the
+      original router firmware which is largely based on the Linux
+      kernel. Together with gpl-violations.org we successfully
+      convinced the court that the provisions in the GPL license are
+      binding: software under this license can be freely modified and
+      installed even if it is shipped as part of an embedded device's
+      firmware.
+
+
+
+
+MS-OOXMLAbgeschlossen
+
+
+      Since the very beginning of the standardisation process for
+      Microsoft's Office Open XML - OOXML (hereinafter MS-OOXML), the
+      FSFE has expressed serious doubts about whether MS-OOXML could be
+      considered as open, if even as a standard at all. The FSFE first
+      raised the issue in the community and led the movement against
+      the standardisation of MS-OOXML, following closely over the years
+      the relevant developments.
+
+
+
+
+GPLv3Abgeschlossen
+
+
+    Im Jahr 2006 findet die einjährige Beratungsphase zum Entwurf der GNU
+    General Public License Version 3 statt. Diese Lizenz, gewöhnlich "Die
+    GPL" genannt, ist die bei weitem meistgenutzte Lizenz für Freie Software. Die Free Software
+    Foundation Europe unterstützt diesen Prozess indem sie das allgemeine
+    Verständnis über die GPL verbessert, anderen hilft an diesem Prozess
+    teilzunehmen, Informationen veröffentlicht und Konferenzen organisiert.
+
+
+
+
+AGNULA: A GNU/Linux Audio distributionAbgeschlossen
+
+
+      The AGNULA project aimed at the creation of a fully functional, entirely
+      Free Software GNU/Linux distribution for professional audio
+      users. It is a project run by key players in the audio field
+      with funding by the European Commission. The FSFE as a
+      partner of this project is taking care of the legal issues, the
+      long-term aspects and also making sure the Free Software
+      community interests are heard.
+
+
+
+
+
+Teilen und unterstützen
+FediverseOKRedditFlattrHacker NewsE-MailTwitterFacebookSupport!Einige Dienste könnten Freie-Software-unfreundlich sein und die Privatsphäre verletzen. Mehr darüber.
+
+Newsletter abonnieren
+
+English
+Ελληνικά
+Español
+Deutsch
+Français
+Italiano
+Nederlands
+Português
+Română
+Русский
+Svenska
+Shqip
+Zum Anfang gehen
+
+Copyright © 2001-2022 Free Software Foundation Europe.
+
+    Die unveränderte Wiedergabe und Verteilung dieses
+    gesamten Textes in beliebiger Form ist gestattet, sofern
+    dieser Hinweis erhalten bleibt.
+
+JavaScript-Lizenzen
+
+
+Kontaktiere uns
+Jobs
+Impressum / Datenschutzrichtlinie / Transparency Commitment
+
+    Die FSFE hat Schwester-Organisationen in Nordamerika, Indien und Lateinamerika.
+
+
+
+Quellcode
+Hilf unserem Webteam
+Diese Seite übersetzen?

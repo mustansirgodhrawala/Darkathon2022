@@ -1,0 +1,243 @@
+
+
+
+
+Skip to content
+
+
+
+
+
+													The Hidden Wiki 2021 | All deep web urls in one place
+
+
+
+			The Hidden Wiki Official 2021
+News
+Guides
+Deep Web Dictionary
+			Menu
+
+
+
+
+
+
+
+						The Hidden Wiki Official 2021 | Verified Deep Web links
+
+
+The Hidden Wiki verified list and the best Tor (.onion) Search Engines:
+
+
+
+The TOR Project – free and open-source software for enabling anonymous communication and web-browsing.OnionShare – open source tool that lets anonymously share a file of any size.DuckDuckGo – internet anonymous search engine that emphasizes protecting searchers’ privacy and avoiding the filter bubble of personalized search results.Whonix OS – operating system you can run in a virtual machine to maximize your online anonymity.Qubes OS – one of the most secure operating system availiable today.Bitcoin Fog – the legendary bitcoin mixer (tumbler).Bitcoin FogDread – one of the most famous worldwide deepweb forums.BlockStream – open source block explorer providing detailed blockchain data across Bitcoin, Testnet, and Liquid.TheHiddenWiki – the Hidden Wiki 2021 onion link.Dark dot Fail – Anonymous journalist researching Tor: the uncensored internet.DNM Bible – the Darkmarkets bible for buyers.Tor Nyx – command-line monitor for Tor, where you can get detailed real-time info about tor relay, connections, logs etc.Just Paste – darkweb pastebin with own API.Dark Net Pedia – educational portal about Dark Net.H-indexer – deepweb links catalog.Catalyst – find job in darknet, hire freelancer for Bitcoin & Monero.
+
+
+
+
+
+
+
+Forums:
+
+
+
+Dread – one of the most famous worldwide deepweb forums.Xss.is – famous Russian deepweb forum about hacking.Exploit.in – the most famous Russian deepweb hacking forum.ProCrd – famous Russian carding forum.Sky-Fraud – Russian carding forum.Top4 – famous Russian drugs forum.Sat-forum – Russian Simple machines forum.Fuckav – famous Russian deepweb forum.Аноним – Russian deepweb forum.Два.ч – Russian free speach forum.SuprBay – the PirateBay torrent-tracker Forum.Hidden Answers – place where users ask for advice, share stories, and talk about a wide variety of topics. Torum – crypto-driven, multi-functional, self-governing forum.PsyCO – Ukrainian deepweb drugs forum.Darknet – Polish deepweb forum.Helium – deepweb forum.The Hub – deepweb cross-market discussion forum and darknet news center.Darknet Federation – non-profit true free speech forum for darknet illuminates.HM forum – forum about anonimity & security.CryptBB – forum, that focuses on security & anonymity.
+
+
+
+
+
+
+
+Financial services:
+
+
+
+Bitcoin Fog – the legendary Bitcoin mixer (tumbler).Bitcoin FogCrypto Mixer – the best Bitcoin (BTC) mixer (blender).CoinMixer – anonymous Bitcoin Laundry.ChipMixer – innovative Bitcoin tumbler.
+
+
+
+
+
+
+
+Anonymous Email Services:
+
+
+
+Riseup – online communication tools for people and groups working on liberatory social change.ProtonMail – secure open source email based in Switzerland.SecMail – email service that allows you to send and receive mails without violating your privacy.Sigaint – secure email services.Elude – anonymous email service.Ctemplar – anonymous email hosted in Iceland, that do not stockpile your personal data.Mail2Tor – free anonymous e-mail service to protect your privacy.Kozonygi OnionMail – email service built by tramaci and mes3hacklab/MailCity – another email service, but isn’t free.GoTOR Messenger – open-source p2p encrypted messenger.
+
+
+
+
+
+
+
+Domains, VPS and TOR hosting:
+
+
+
+Njalla – privacy-aware domain service and VPS provider, that protects users from ferocious domain predators. The servers of Njalla are located in Sweden.OneHost – cPanel Tor hosting provider. It provides Tor Hidden Services to customers wanting to host their sites via their own onion address.Freedom Hosting Reloaded – anonymous Tor hosting with PHP/MySQL support.Ablative Hosting – provides three different types of hosting solutions: ClearNet hosting with Single Hop onion, Multi Hop onion hosting (fully hidden service) and the QuadHop onion hosting (for the truly paranoid). It is possible to buy onion hosting with Monero (XMR).
+
+
+
+
+
+
+
+VPN services:
+
+
+
+CryptoStorm – virual private network service provider in TOR network for the truly paranoid.MullVad VPN – virtual private network service.
+
+
+
+
+
+
+
+FileShare & Torrents:
+
+
+
+SecureDrop – open source software platform that NGOs and media organizations can install to accept leaked information from whistleblowers safely.OnionShare – open source tool that lets anonymously share a file of any size.The Pirate Bay – Download music, movies, games, software and much more. The Pirate Bay is the galaxy’s most resilient BitTorrent site.Rutor – one of the most famous Russian torrent tracker.Key Base – secure messaging and file-sharing.Snowfl – one of the biggest torrent aggregators.Lufi Espiv Files – free speech file histing software.SongStems – music share service.DeepWebArchive – onion web pages archive.
+
+
+
+
+
+
+
+Political:
+
+
+
+ProPublica – independent, nonprofit newsroom that produces investigative journalism with moral force.SoylentNews – open-source and community-oriented news aggregator where users can submit their stories.British Broadcasting Corporation – BBC news.New York Times – New York Times news.Deutsche Welle – News and current affairs from Germany and around the world.
+
+
+
+
+
+
+
+Social Networks:
+
+
+
+Facebook – is a official mirror that allows access to Facebook through the Tor protocol, using its .onion top-level domain.Galaxy 3 – underground social network, where you can find computer code experts, people searching for adult dates, and other interesting individuals.Sekret – free speech secure social network, where you can share your secrets.
+
+
+
+
+
+
+
+Blogs:
+
+
+
+Dark tech – high life blog about the friends from DarkNet.Gray Scale – Japanese blog about deep web exploring and more.Beneath VT – exploring Virginia Tech’s steam tunnels and beyond.Deep web radio.Encyclopedia dramatica.Dark like my soul.Scientology Archive.All the latest news for tor.Michael Blizek.AYPSELA News.Blog about Stories.Mike Tigas.Sam Whited.An Open Letter to Revolutionaries.Lucky Eddie’s Home.Fravia’s Web Searching Lore.Matt Traudt – expert on privacy and security performing research and development on Tor.Marxists Internet Archive – collection of books and materials about marxism.Cheena – Japanese blogger, web developer and security researcher.Phpizza – blog-reusme of designer & developer.
+
+
+
+
+
+
+
+Russian deepweb links:
+
+
+
+Словесный Богатырь – another russian library, where you can find millions of books.Russian community – market and anonymous talks about security.Hydra Market – Russian dark marketplace, operating since 2015. Connected with forums LegalRC & WayAway.Medusa Market – famous Russian dark marketplace.Hydra Test – all drugs tests from the famous Hydra Marketplace with region filters and more.Mega Darknet Market – Russian dark marketplace, operating since 2016.Matanga – Russian dark marketplace, connected with SpiceForum.Ozon (o3Shop) – Russian dark marketplace.R2D2 – russian anonymous market.RAMP – biggest russian market.Amberoad – russian anonymous market.Флибуста – independent russian wiki library.Russian onion union.
+
+
+
+
+
+
+
+German deepweb links:
+
+
+
+Deutschland im Deep Web – german forum.Das ist Deutschland hier 2.0 – german board.
+
+
+
+
+
+
+
+Non-English deepweb links:
+
+
+
+GTF – greek tor forum.Cipolla 2.0 – Italian Community.Bibliothèque – La bibliothèque et ses cercles infernaux (french darknet book library).PoliceTrack – Ne vous faites plus suivre par la police.Bibliotheca Alexandrina.French deep web community.Japanese deepweb community.Ankkaserver – Finland deepweb blog, fighting for free net.DeepTR Forum – Deep web Türkce forum sitesi.HackTech – Japanese deepweb Reddit analog.I libri di Albin – più di 10.000 ebook in formato EPUB/PDF.הבלוג האפל – Yiddish deep web portal.Legal Cases – multilanguage database of criminal, civil, administrative, arbitrage court cases.NewsArab – news and anti-corruption website where citizens can report about abuse by authority.Dade – 0xdade’s own personal gibson.Le Journal Du Dark Net – the famous French online Deepweb Magazine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Recent Deepweb News
+
+
+					How to protect Bitcoins from cyber-attacks?
+
+
+					Dark dot fail domain has been hijacked by anonymous hackers
+
+
+					Bibliothèque – La bibliothèque et ses cercles infernaux
+
+
+					Darknet Pastebin (paste .onion)
+
+
+					Le Journal Du Dark Net
+
+
+					The HUB became the #2 DeepWeb Forum after Dread
+
+
+					Dread Forum is back after the huge DDOS
+
+
+					DNMAvengers forum is closed by FBI & Europol
+
+
+					Serbia extradited to the United States fraud suspected to Bitcoin scams, worth of 70 million dollars
+
+
+					Dread legit permanent mirror links (2021)
+
+
+
+
+
+
+
+
+
+
+
+			©2021 The Hidden Wiki 2021 | All deep web urls in one place
+
+				 | Theme by SuperbThemes.Com

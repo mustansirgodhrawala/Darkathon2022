@@ -1,16 +1,20 @@
 import asyncio
+import random
+import time
 
 import aiohttp
 from aiohttp_socks import ProxyConnector
 from aiohttp_socks import ProxyType
+from bs4 import BeautifulSoup
 from kafka import KafkaProducer
+from rich import print as rprint
 
 from narco_crawler.config.config import config
 from narco_crawler.config.db import database
 from narco_crawler.engines.random_headers import random_headers
+from narco_crawler.sorter import cv
+from narco_crawler.sorter import model
 from narco_crawler.sorter import sorter_logger as logging
-
-# from bs4 import BeautifulSoup
 
 
 def eliminator(links):
@@ -33,9 +37,9 @@ async def scanner_main(links):
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
         for idx, link in enumerate(links):
-            # if idx % 100 == 0:
-            # time.sleep(10)
-            # logging.info("Taking a rest")
+            if idx % 100 == 0:
+                time.sleep(15)
+                logging.info("Taking a rest")
             task = asyncio.ensure_future(scraper(session, producer, link))
             tasks.append(task)
 
@@ -50,7 +54,21 @@ async def scraper(session, producer, link):
     try:
         async with session.get(link, headers=random_headers(), timeout=300) as response:
             response = await response.read()
-            # soup = BeautifulSoup(response, "html5lib")
+            soup = BeautifulSoup(response, "html5lib")
+            [
+                s.extract()
+                for s in soup(["style", "script", "[document]", "head", "title"])
+            ]
+            visible_text = soup.getText()
+            prediction = model.predict(
+                cv.transform([" ".join(text.replace("\n", "").strip().lower().split())])
+            )
+            # Write Code here to test the soup with the machine learning model
+            if prediction == ["drugs"]:
+                producer.send("drugs", bytes(link, "utf-8"))
+            else:
+                producer.send("notdrugs", bytes(link, "utf-8"))
+            # Write Code here to move the files to the pipelines
             return True
     except asyncio.TimeoutError:
         logging.info("Eliminator timeout")
@@ -71,6 +89,8 @@ def sorter_base():
         for link in result:
             links.append(link[0])
 
-        links = eliminator(links)
-
+        if links:
+            links = eliminator(links)
+        else:
+            rprint(f"\t\t[red]No links for {topic}[/red]")
     return True

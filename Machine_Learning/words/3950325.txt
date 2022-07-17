@@ -1,0 +1,2 @@
+
+Fatal error:  Call to a member function fetch() on boolean in /var/www/user/data/www/site50.com/models/Product.php on line 167

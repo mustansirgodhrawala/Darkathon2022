@@ -1,0 +1,344 @@
+The Diaries of Dr.Gonzo
+
+
+
+
+
+
+
+
+
+
+
+              About
+
+
+              Dark Reading
+
+
+              The Gonzo Diaries
+
+
+              Vendors
+
+
+
+
+
+
+
+
+
+
+  The inmates run this asylum.
+
+/* loldongz :] */
+void typos_init(const char INSULTING_AMOUNTS_BY_VOLUME);
+
+
+'There is an area of the mind that could be called unsane
+beyond sanity, and yet not insane.
+Think of a circle with a fine split in it.
+At one end there's insanity.
+You go around the circle to sanity, and on the other end of the circle,
+close to insanity, but not insanity, is unsanity
+
+
+I’m normally high as fuq when I blog, ‘nuff said? If not I’ll sum it up real short for you in this license:
+
+This site contains:
+
+
+  Writings on mentally disturbed & deranged subjects, often in a mentally deranged state.
+  Reviews on my ventures into the wonderful world of psychoactive substances.
+  Reviews of reliable vendors of alternative substances, Good drugs are a human right, it’s our minds, not their’s.
+  The odd interesting show to consume.
+  Good reads on hacking, history, chemistry, drugs, medicine, misc. madness, etc.
+  General bitching. Cheaper than a shrink and safer than pod casting. (Sorry, Joe:)
+  Maybe some deranged trips down the hacking rabbit hole. How deep does it go, Alice?
+  Harm reduction
+
+
+If you are in anyway not ok with that,GFTO ASAP.  If you are working with law enforcement in any capacity - public or private . spooks included - now notified the content herein  is covered under the GONZO license, copy available upon request, and every single bit of it is  covered under it. Licensenced under public (as in civil, not criminal law, for purposes of suing LEO & co:) and you are subject to a 1000 BTC entry fee to view said *licensed material or leave right after reading this. :)
+.. for your own mental safety…and my physical safety. I  mean, mentally unstable fucks with loaded guns and a license to shoot? Fuck off!. :) Funny how simply owning an firearm increases your chances of death by like 80%. Ironic for an instrument of self protection to be the overwelming part of white, male gunshot fatalities in the US is via suicide. That said, these asylum rules apply wether or not you carry one.
+
+I take absolutely no responsiblity for anyone’s drain bamage, err, brain damage, use or misuse of the content contained herein, or liability for breach of the GONZO license, whatsoever.. All exploration, use of any information  - ór misinformation -  contained herein in is done so at your own perill, regardless of whom you are or represent.
+The GONZO license, in full glorious detail, is available upon request via GPG email, provided in the /about page.
+
+Update
+By popoular demand you can reach the site, using a TOR enabled browser @ https://tinyurl.com/drgonzodiaries . It will redirect here.
+Also added a warning if you have javascript on  - it’s not needed and TOR design makes it potentially extremely dangerous.
+
+Why so serious!? :]
+
+-Dr.Gonzo
+
+
+
+
+
+
+            MESTERKIF - THE MEDICINE MAN - KNALLTILBUDET PÅ KREMHASJ DE SOM IKKE TOK KAN ANGRE SEG IHJEL PÅ! =]
+
+            Nabolaget Crystal Meth S-Ketamine - akar cocaine from outer space - My favorite molecule versions, too. Dextro & Sin =]
+
+            KratomNorge, Red Bali, White Maeng Da, Green Malay, Gold Maeng Da, Red Horn
+
+            Mesterkif's master brain busting brownies ;)
+
+            Nabolaget's weed will fry your circutry ;)
+
+            Nabolagets LSD-25, MDMA tabs & 2CB. The Elements of life.
+
+            Droneswarm harasses US NAVY, inventors of TOR
+
+            e2e encrypted databases
+
+            SPECTRE attacks against Apple M1 and other ARM devices
+
+            Safe cracking
+
+            nabolaget amfetamin vs flora amfetamin
+
+            Ready rock, crack, freebase - what is the difference? nothing.
+
+            hertzbleed, new timing attack against TOR SSL/TLS
+
+            Hash. mesterkief vs flora
+
+            Mrs.Oxana OC80
+
+            Nabolaget CRYSTALINE METHAMPHETAMINE
+
+            The Cocaine BASE-OFF, @mrs.oxana vs @mesterkif vs @nabolaget vs MR."X"
+
+            New TAILS release fixes Tor Browser JS 0day
+
+            Flora,  Special-K, Hash, Cocaine & Benzofury (6-APB)
+
+            Knowing me is banable offense @ dnmsno
+
+            Dr.Gonzo's opium mocca coffee
+
+            The Gonzo Diaries has reached 1 million article views!
+
+            A note about dying & not letting loved ones die alone. JRE 1797 w/ Josh Barnett
+
+            RSA is fragile and thus not ideal for security or GPG, etc.
+
+            US  House Passes Bill to Decriminalize Marijuana, bill sent to the Senate
+
+            Hacking Samsung for fun and profit 2
+
+            Hacking Samsung for fun and profit 1
+
+            NodeBB zeroday
+
+            Stanislav Grof interviews Dr. Albert Hofmann (1984)
+
+            Mercure's Sunday Driver vape carts
+
+            Mercure's THC Wax + Shatter
+
+            Padre's acetone cleansed amphetamine sulfate
+
+            CBD & cannabinoids helps protect against covid19 + OTC working c19 self-defense
+
+            Ketorax, a love letter of sorts, to my favorite opiate.
+
+            Chaos Communication Congress 2021 hacking conf (CIA op. KUDO revealed + NSO + Onion things)
+
+            Why shipments by mail sometimes takes long - answered
+
+            Cellebrite update, police phone decryption capablities
+
+            Scary intro 2 Palantir surveilence, using your facebook data+more.
+
+            Investment tip; GERMANY IS LEGALIZING IN 2 WEEKS!@# :)
+
+            Greengiant'S excellent medicinainal quality products, their buds, my joy. ;)
+
+            Cops abuse civil rights, ransacks 950 ppl @subway station under false pretences.SHameful, as the results
+
+            Hunting NSO Pegasus Commercial Spyware. Dissapointment wear many a face.
+
+            Everyone's favorite serial killer, Dexter is back!
+
+            Padre's MDMA given 2 a couple I know. 1 of them is dying.Wanted 2 let them really connect
+
+            Godishuset sets gold standard 4 benzo sale, posts EC lab analysis
+
+            GrreenGiant, let's just say they were not kidding about their oils thickness!
+
+            007, No time to die (odd time to release;)
+
+            PowerPuff 1mg Ksalol generic Xanax
+
+            Mercure GHB & Lyrica
+
+            PBS NOVA, father of all science showsm,  The Cannabis Question.
+
+            Another, long awaited of issue of every alphabet soup's wet dream is out, Phrack '#70'
+
+            NordiskeApoteket1 Give-away coke
+
+            Nexpress Cupra hashish
+
+            Nexpress al'noor hashish
+
+            Nexpress King Hassan hashish
+
+            Mycodad Powdered Golden Teacher Magic Mushroom
+
+            Nexpress (expired) Subutrex 8mg Buprenorphine tablets
+
+            Nexpress afghan style hash
+
+            Billions is back! Arguably best show of it's kind!
+
+            GreenGiant, definitely not canned corn. Excellent oilz for cooking & vaping!;)
+
+            Powerpuff, N-N,DIMETHYLTRYPTAMINE. Enough said.
+
+            MakkaRonny's Properly finished amphetamine product & hash
+
+            FHE: Making DarkMarkets nearly impossible to bust, investigate or convict.
+
+            New Archer season is out!
+
+            By popular demand I have setup a TOR invite-only jabber/XMPP server
+
+            Protonmail improved, wihtout JS, slow, clunky web. Powerful, yet so clean & easy
+
+            A monk of Hare Krishna gives Dr.Gonzo a gift of harmony
+
+            Skadereduksjonssentralen dry ampethamine sulfate.
+
+            NExpress Kashmir Gold
+
+            PowerPuff's superb vape carts. Brice & reliabe speedy delivery!
+
+            NExpress Cocaine
+
+            The cleaning of NorskNarkotika speed:A horror story.
+
+            cumstain-gaga:troll som ødelegger tråder ved løgn og bitching når jeg beviser dem knuselig hardt feil
+
+            Cocaine chemistry. How to get rid of ALL impurities  through acid-base-acid recrystalization.
+
+            California is decriminalizing DMT, Psilocybin, etc  (fine text = legalization) JRE 1678 w/ Michael Pollan
+
+            NorskNarkotika amphetamine sulfate + proper cleaning procedure
+
+            PowerPuff Cocaine + 30MG IR Adderall
+
+            Narcotraficante's excellent Lima hash
+
+            Notes On Coca
+
+            NorskNarkotika DRY AMPHETAMINE sulfate!
+
+            PowerPuff Trainwreck THC vape cartridge! :)
+
+            NGINX <1.20 off-by-one remote heap exploit
+
+            Mercure coke dissapoints, hash was A++, DMT too, what little there was
+
+            Dr.Gonzo's Cocaspray: Better, safer, stealthier & less wasteful way be 'Coco4cocopuffs'
+
+            What to do  when LEO fucks up your sunday. Drugs, of course.
+
+            El Padre dry amphetamine sulfate
+
+            Diplomis Lyrica
+
+            NarcoTraficante Super Skunk and hash samples
+
+            Dr.Gonzo & The Special-K twins: The girls from Ipanema, Andromeda.
+
+            From zero to amphetamine hero: The Gonzo treatment of brown paste into pure white sulfate powder
+
+            In memoriam: Hacker Dan Kaminsky (42) Has died
+
+            Mercure's N,N-Dimethyltryptamine + Dr.Gonzo's DMT vape guide:)
+
+            Mercure HQ Coke
+
+            Sun is shining, baked, happy times: mercure hash & O.G. Kush vape kit
+
+            The Gonzo Diaries passes 100k unique page loads!
+
+            Mercure vape cartridge
+
+            Mercure: Pablo's long lost personal stash of cocaine.
+
+            Cellebrite Hacking Tools Sold To Bangladesh Police Unit Known For Human Rights Abuses
+
+            TestkitsNorge.no bekymringer
+
+            Tollensoverskuddslager: Punisher xtc + 2cb = oreo punisher = magic madness :)
+
+            Tollensoverskuddslager: tørket hvit amfetamin.
+
+            Snuffing out smoking for good.
+
+            Tollensoverskuddslager white amphetamine paste
+
+            Godishuset's Columbian cocaine
+
+            Det Norske Market: A buffet of security holes
+
+            How LEO cracks Truecrypt & Veracrypt + how to generate secure keys
+
+            Be good or be good at it
+
+            Goodstoff Hash Ksalol Amf
+
+            Diazepam e-chill juice
+
+            Narco Wars.
+
+            Hamilton's Pharmacopeia.
+
+            Trafficked w/ Mariana Van Zeller.
+
+            Dextroamphetamine Hydrochloride. :)
+
+            TollensOverskuddsLager Amphetamine.
+
+            LEO & Co's Cellebrite UFED: Supported Apps decoding list.
+
+            Dear LEO.
+
+            Godishuset's hash: Dry-vaping, juice making & vaping.
+
+            Peppermint Diazelirium.
+
+            Godishuset's Amfetamin.
+
+            (Meth)Amphetamine Thoughts.
+
+            Mercure's Mount Fiji 120ug LSD x 2... x 2.
+
+            Mercure's Golden Teacher, Lemontek style.
+
+            En Gonzoguide til å gjøre TOR litt sikrere mot hacking-teknikker.
+
+            Acetaminophen / Paracetamol lulz.
+
+            Dr.Gonzo's Dirty Dalgona.
+
+            Hunter S. Thompson Audiobooks & miscellaneous.
+
+            Place holder :)
+
+
+
+
+
+
+
+
+
+
+            2022 © The Diaries of Dr.Gonzo

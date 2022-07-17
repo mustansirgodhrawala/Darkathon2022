@@ -1,0 +1,59 @@
+
+
+.
+Blog index–Rolling🥎blog–Permalink
+CompTIA sell study guides (eBooks) that expire
+
+Jake Thoughts — 24 Jul 2021 16:24:57 -0400
+I remember when one bought a book, it stayed in their possession and did not automatically expire. RMS's Right to Read was the first thing I thought of when the email told me that the eBook will expire in a year AFTER buying the Basic Bundle.
+
+No where on the product page (of the bundle, where I bought it) does it say that the eBook expires even in the 'eBook details' tab. Of course, when properly riled up I looked at the eBook's standalone product page it says 'Once redeemed, eBook access will be valid for 12 months.' CompTIA sells paper copies of these books but do not mention that they expire or that they are being rented. They also do not sell the paper copy of the book in the bundles which I would have went for instead. If they are the same BOOK then why does the electronic version expire? Why don't they also sell paper copies of the book with a bundle? ... Obviously I know the answer, I am not naïve. Money.
+
+This is a PSA for those who are unaware and are looking to buy books from cert companies... and I guess other companies that sell eBooks as well. I will assume that this is a standard practice and a rule of thumb is 'companies will expire eAnything (even if they neglect to mention it on the product page) if they think someone will buy it twice.' It's not even like they priced the eBook or the physical book that differently, just ten dollars apart.
+
+
+.
+
+Other thoughtsHarry on 2021-07-28,20:40:28 said:  0 #!/bin/sh
+  1
+  2 stop=$1
+  3 while [ 0 != "$stop" ]
+  4 do
+  5         /bin/xdotool mousemove 2448 6 # click on browser
+  6         /bin/xdotool click 1
+  7         /bin/xdotool key Print
+  8         sleep 1
+  9         /bin/xdotool mousemove 2500 660 # clicks ok
+ 10         /bin/xdotool click 1
+ 11         sleep 1
+ 12
+ 13         /bin/xdotool mousemove 2650 660 # ok save
+ 14         /bin/xdotool click 1
+ 15         sleep 1
+ 16         /bin/xdotool mousemove 2800 235 # actually save
+ 17         /bin/xdotool click 1
+ 18         sleep 1
+ 19         /bin/xdotool mousemove 2448 6 click 1 # click on browser
+ 20         sleep 1
+ 21         /bin/xdotool key Right # turns the page
+ 22         sleep 4 # sometimes it takes a second or 2 for the page to load
+ 23
+ 24         stop=$((stop - 1))
+ 25         printf "%s " "$stop"
+ 26 done
+
+Jake, now you can make a local copy of that 'online only' ;)
+(you certainly will have to make your own adjustments to the numbers heh)
+jake on 2021-07-30,02:31:06 said:Harry, thanks for this but I have resolved this in a different manner
+??? on 2022-02-04,11:25:33 said:introducing, BaaS (Books as a service).
+
+sad.
+Jake on 2022-02-04,17:47:46 said:You're right. It is sad.
+
+Be sure to submit your thoughts! Emoji Ledger (hover mouse over)!
+
+	Nickname (Random or your nickname):
+
+	Comment (Required):
+
+	CAPTCHA (What is my last name?):

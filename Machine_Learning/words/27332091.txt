@@ -1,0 +1,1205 @@
+
+
+
+
+
+
+
+                    Digital Certificate of Vaccination
+                    With a medical certificate of vaccination, you can use the app to very simple proof of vaccination with absolute legal certainty. Since the legal proof is in line with EU guidelines, complies with data protection requirements and works with the FHIR standard.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                HOW IT WORKS?
+
+
+
+
+
+                        The EU Digital COVID Certificate contains a QR code with a digital signature to protect it against falsification.
+
+
+
+
+
+                        When the certificate is checked, the QR code is scanned and the signature verified.
+
+
+
+
+
+                        Each issuing body (e.g. a hospital, a test centre, a health authority) has its own digital signature key. All of these are stored in a secure database in each country.
+
+
+
+
+
+
+
+                        The European Commission has built a gateway through which all certificate signatures can be verified across the EU. The personal data of the certificate holder does not pass through the gateway, as this is not necessary to verify the digital signature.
+
+
+
+
+
+                        Our partners working in health authority and add information about your «vaccination» to the database.
+
+
+
+
+
+
+
+            Your vaccine record card will tell you:
+
+
+
+
+                    Which type of vaccine you received (Pfizer, Moderna, or Johnson & Johnson)
+
+
+
+                     When you got your first dose
+
+
+
+                    When to go back for your second dose (if needed)
+
+
+
+                    Your vaccine provider’s name or clinic site
+
+
+
+
+
+
+
+
+
+
+                        Vaccination Passport France (QR code in app «TousAntiCovid Verif»)
+
+                            €232
+
+                            OLD PRICE: €290
+
+                            Buy now
+
+
+
+
+
+
+                        ImpfPassDE (Covid 19 Vaccination Passport from Germany)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Johnson and Johnson vaccine Record in VAMS (USA)
+
+                            $312
+
+                            OLD PRICE: $390
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for UK (NHS App)
+
+                            £232
+
+                            OLD PRICE: £290
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination certificate (Der Grüne Pass)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Switzerland (Swiss Covid app)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Greece (Covid Free Gr)
+
+                            €232
+
+                            OLD PRICE: €290
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Belgium (Registered in the CovidSafeBE app)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Certificate for Spain (Travel Safe)
+
+                            €256
+
+                            OLD PRICE: €320
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Certificate for Netherlands (Dutch GGD system)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Finland
+
+                            €304
+
+                            OLD PRICE: €380
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Ireland (EU DCC)
+
+                            €256
+
+                            OLD PRICE: €320
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Canada (app Vaxicode Verif)
+
+                            $320
+
+                            OLD PRICE: $400
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Australia (Express Plus Medicare mobile app)
+
+                            $288
+
+                            OLD PRICE: $360
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Italy
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Portugal
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Latvia (covid19sertifikats.lv)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Estonia (Kriis.ee)
+
+                            €280
+
+                            OLD PRICE: €350
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Slovenia (application ZVEM)
+
+                            €232
+
+                            OLD PRICE: €290
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Russia (Integrated into Gosuslugi.ru)
+
+                            $240
+
+                            OLD PRICE: $300
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Morocco (download from liqahcorona.ma)
+
+                            $320
+
+                            OLD PRICE: $400
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Brazil (add info to SUS)
+
+                            $232
+
+                            OLD PRICE: $290
+
+                            Buy now
+
+
+
+
+
+
+                        Vaccination Passport for Other Country
+
+                            by request
+
+                            OLD PRICE: -
+
+                            covid19cert@protonmail.com
+
+
+
+
+
+
+
+
+            We will write that you vaccinated 2 times the Pfizer/BioNTech vaccine. We add information to the government database and site www.ameli.fr and app TousAntiCovid Verif.
+
+
+
+
+
+                support: covid19cert@protonmail.com
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send
+
+
+
+
+
+
+
+
+
+
+
+                        E-mail:
+
+
+
+                        Name:
+
+
+
+                        Address:
+
+
+
+                        Date of birth:
+
+
+
+                        Social security number (if available):
+
+
+
+                        Comments
+
+
+                    Send

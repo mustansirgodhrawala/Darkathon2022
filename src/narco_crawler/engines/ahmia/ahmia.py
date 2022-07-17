@@ -36,7 +36,7 @@ async def scraper(session, keyword, producer, topic):
     try:
         logging.info(f"Ahmia engine for {keyword} called")
         async with session.get(
-            ahmia_url, headers=random_headers(), timeout=120
+            ahmia_url, headers=random_headers(), timeout=300
         ) as response:
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")

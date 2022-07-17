@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UsA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>
+   SHREDD - Prices
+  </title>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <link href="../../static/main.css" rel="stylesheet"/>
+  <link href="../../static/icon.css" rel="stylesheet"/>
+  <style>
+   html,
+            body {
+                background-color: #121314;
+                color: white;
+                margin: 0px;
+                z-index: -1;
+            }
+
+            body {
+                height: 100vh;
+                width: 100vw;
+            }
+            #body {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: white;
+            }
+            #dsh-button {
+                position: absolute;
+                padding-top: 10px;
+                padding-left: 10px;
+                z-index: 1;
+            }
+            .card{
+                margin-top: 0.5rem;
+                text-align: center;
+                background-color: #202224;
+                border: hidden;
+                height: 45vh;
+            }
+            .columns{
+                justify-content: center;
+            }
+            #breadcrumb {
+                padding-top: 1.2rem;
+            }
+            @media (max-width: 800px) {
+                .columns{
+                    flex-direction: column;
+                }
+                .card{
+                    width: 81vw;
+                    margin-inline: 10px;
+                    height: 50vh;
+                }
+            }
+  </style>
+ </head>
+ <body>
+  <p id="dsh-button">
+   <a href="/dashboard">
+    <button class="btn btn-action btn-primary s-circle">
+     <i class="icon icon-apps">
+     </i>
+    </button>
+   </a>
+   Dashboard
+  </p>
+  <div class="container" id="body">
+   <div class="hero">
+    <div class="hero-body">
+     <h1 class="text-uppercase">
+      -Prices-
+     </h1>
+     <h3>
+      Shredd prices
+     </h3>
+     <div class="container">
+      <div class="columns">
+       <div class="column col-3">
+        <div class="card">
+         <div class="card-header">
+          <br/>
+          <div class="card-title h5">
+           More space
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="hero">
+           <div class="hero-body">
+            [+] Up to 1gb of encrypted space
+            <br/>
+            ($10 monthly)
+           </div>
+          </div>
+          <button class="btn btn-primary">
+           <a class="text-light" href="/contact">
+            Contact us to buy
+           </a>
+          </button>
+         </div>
+        </div>
+       </div>
+       <div class="column col-3">
+        <div class="card">
+         <div class="card-header">
+          <br/>
+          <div class="card-title h5">
+           Side-bars ads
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="hero">
+           <div class="hero-body">
+            [-] No markets/scams
+            <br/>
+            ($15 monthly | $35 4 months)
+           </div>
+          </div>
+          <button class="btn btn-primary">
+           <a class="text-light" href="/contact">
+            Contact us to buy
+           </a>
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="container text-center">
+     <div id="breadcrumb">
+      <ul class="breadcrumb">
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/">
+         Home
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/contact">
+         Contact
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/privacy">
+         Privacy
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/donate">
+         Donate
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/tos">
+         ToS
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/static/pgp.txt">
+         PGP
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a class="text-primary" href="/about">
+         About
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

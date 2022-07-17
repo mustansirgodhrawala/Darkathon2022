@@ -1,0 +1,49 @@
+ResearchResearch AreasImpactNotable PapersPublicationsFundamental & AppliedRequest for ProposalsProjectsResearchResearchResearch AreasImpactNotable PapersPublicationsFundamental & AppliedRequest for ProposalsProjectsPublicationsPeopleEventsToolsFrameworks & ToolsLibraries & ModelsSystem CardsToolsToolsFrameworks & ToolsLibraries & ModelsSystem CardsDatasetsBlogJoin UsJobsAI Residency ProgramRAISE ProgramJoin UsJoin UsJobsAI Residency ProgramRAISE ProgramResearchResearch AreasImpactNotable PapersPublicationsFundamental & AppliedRequest for ProposalsProjectsResearchResearchResearch AreasImpactNotable PapersPublicationsFundamental & AppliedRequest for ProposalsProjectsPublicationsPeopleEventsToolsFrameworks & ToolsLibraries & ModelsSystem CardsToolsToolsFrameworks & ToolsLibraries & ModelsSystem CardsDatasetsBlogJoin UsJobsAI Residency ProgramRAISE ProgramJoin UsJoin UsJobsAI Residency ProgramRAISE ProgramINTEGRITYCORE MACHINE LEARNINGBulletTrain: Accelerating Robust Neural Network Training via Boundary Example MiningDecember 06, 2021AbstractNeural network robustness has become a central topic in machine learning in recent years. Most training algorithms that improve the model’s robustness to adversarial and common corruptions also introduce a large computational overhead, requiring as many as ten times the number of forward and backward passes in order to converge. To combat this inefficiency, we propose BulletTrain — a boundary example mining technique to drastically reduce the computational cost of robust training. Our key observation is that only a small fraction of examples are beneficial for improving robustness. BulletTrain dynamically predicts these important examples and optimizes robust training algorithms to focus on the important examples. We apply our technique to several existing robust training algorithms and achieve a 2.2× speed-up for TRADES and MART on CIFAR-10 and a 1.7× speed-up for AugMix on CIFAR-10-C and CIFAR-100-C without any reduction in clean and robust accuracy.Download the PaperAUTHORSWritten byWeizhe HuaYichi ZhangChuan GuoZhiru ZhangEdward SuhPublisherNeurIPSResearch TopicsIntegrityCore Machine LearningRelated PublicationsDecember 06, 2021COMPUTER VISIONCORE MACHINE LEARNINGDebugging the Internals of Convolutional NetworksBilal Alsallakh, Narine Kokhlikyan, Vivek Miglani, Shubham Muttepawar, Edward Wang (AI Infra), Sara Zhang, David Adkins, Orion Reblitz-RichardsonDecember 06, 2021Read the PaperDecember 06, 2021CORE MACHINE LEARNINGRevisiting Graph Neural Networks for Link PredictionYinglong XiaDecember 06, 2021Read the PaperDecember 06, 2021THEORYCORE MACHINE LEARNINGLearning on Random Balls is Sufficient for Estimating (Some) Graph ParametersTakanori Maehara, Hoang NTDecember 06, 2021Read the PaperNovember 12, 2021THEORYREINFORCEMENT LEARNINGBandits with Knapsacks beyond the Worst-Case AnalysisKarthik Abinav Sankararaman, Aleksandrs SlivkinsNovember 12, 2021Read the PaperSee All PapersLatest NewsRESEARCHGreater creative control for AI image generation July 14, 2022RESEARCH200 languages within a single AI model: A breakthrough in high-quality machine translation July 06, 2022RESEARCH Introducing Sphere: Meta AI’s web-scale corpus for better knowledge-intensive NLP July 04, 2022Help Us Pioneer The Future of AIWe share our open source frameworks, tools, libraries, and models for everything from research exploration to large-scale production deployment.Join our TeamTools
+            Frameworks & Tools
+          DatasetsResearch
+            Research Areas
+
+            Notable Papers
+
+            Publications
+
+            Fundamental & Applied
+
+            Request for Proposals
+
+            Projects
+          Blog
+            Read Blog
+          People
+            People Profiles
+          Join Us
+            Jobs
+
+            AI Residency Program
+
+            RAISE Program
+          EventsToolsTools
+            Frameworks & Tools
+          DatasetsResearchResearch
+            Research Areas
+
+            Notable Papers
+
+            Publications
+
+            Fundamental & Applied
+
+            Request for Proposals
+
+            Projects
+          BlogBlog
+            Read Blog
+          PeoplePeople
+            People Profiles
+          Join UsJoin Us
+            Jobs
+
+            AI Residency Program
+
+            RAISE Program
+          EventsPrivacy PolicyTermsCookies Meta © 2022

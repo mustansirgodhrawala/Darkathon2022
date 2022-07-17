@@ -1,0 +1,293 @@
+
+
+
+
+
+      Riseup Home
+
+
+
+
+            Home
+            Donate!
+
+          Red Accounts
+
+            Account
+            Support
+            Email
+            Chat
+            VPN
+
+          Black Accounts
+
+            Account
+            VPN
+
+          Other Services
+
+            Lists
+            Pad
+            Share
+            Groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Home
+
+
+            Email
+
+
+            Lists
+
+
+            VPN
+
+
+            Security
+
+
+            About Us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Email Settings
+
+
+      Email Clients
+
+
+      Thunderbird
+
+
+      K-9 Mail
+
+
+      Evolution
+
+
+      Apple Mail
+
+
+      iOS Mail
+
+
+      Outlook
+
+
+      Sylpheed
+
+
+      Claws
+
+
+      Mutt
+
+
+      Delta Chat
+
+
+      Email Servers
+
+
+      Webmail
+
+
+      Email Scams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    中文
+    Español
+    English
+    Português
+    Pyccĸий
+    Deutsch
+    Français
+    Italiano
+    Polski
+    Ελληνικά
+    Català
+    Hindi
+
+
+
+  Support Riseup!
+
+
+
+
+
+
+Thunderbird
+
+
+
+
+
+    What is Thunderbird?
+
+
+    Setup Thunderbird
+
+
+        Start the Account Wizard
+
+
+        Step 1
+
+
+        Step 2
+
+
+        Step 3
+
+
+        You’re Done!
+
+
+
+
+    What is next?
+
+
+        Enhance your email security
+
+
+        Add some extensions
+
+
+        Use hidden options to speed up Thunderbird
+
+
+        Consider automatically deleting old email
+
+
+
+
+
+What is Thunderbird?
+
+Thunderbird is the mail client recommended by riseup.net. It is Free Software and is available for Linux, Windows, and Mac OS X. You can download Thunderbird from the thunderbird website. As Free Software, Thunderbird is part of the digital commons, a kind of common treasury for all. Outlook, on the other hand, is Microsoft’s tool for world domination.
+Thunderbird has many features, including: IMAP and POP support, multiple accounts, quick search, spell as you type, advanced spam controls, RSS, virtual folder views, message filtering, addressbook, and support for OpenPGP encryption.
+Setup Thunderbird
+Start the Account Wizard
+The first time you run Thunderbird, the account wizard will walk you through setting up an account. If the wizard does not open, you can do this:
+1. Choose the menu item Edit > Account Settings…
+
+2. Click the Add Account… button.
+
+Step 1
+You will see a prompt. Enter in your name, email address and password.
+
+Click Continue.
+Step 2
+Thunderbird will pull the settings from riseup’s servers.
+
+Now you need to decide if you want to use IMAP or POP.
+
+	IMAP: It will by default pick IMAP, so if you want IMAP you can simply click Continue.
+	POP: To switch to POP, click edit. Then click the dropdown menu that says IMAP and change it to POP. Now click Re-Test Configuration. It should show you using POP. If so, click Continue.
+
+
+Step 3
+If this does not work, you may have entered your username or password wrong. Click Start Over and try again. Otherwise…
+You’re Done!
+It should automatically check your mail now and every few minutes after. Have fun using Thunderbird!
+What is next?
+Enhance your email security
+
+	Encrypt your mail! For enhanced message security use Encrypted Email.
+	There are many vulnerabilities with how secure connections work. If you need high security, you should always connect to Riseup services using the Riseup VPN. This will prevent a long list of potential attacks against your communication.
+	To enhance connection security you can use Tor to connect to Riseup’s .onion services for IMAP and SMTP. Look for the onion address for mail.riseup.net and smtp.riseup.net addresses and use those instead. Note: * SMTP port 465 is often blocked by exit nodes, but port 587 is less frequently blocked. If you have a problem sending mail, try port 587 or configure your client to use Riseup’s email hidden service in place of the regular mail.riseup.net domain. This is better than sending traffic through a Tor exit as it is MITM resistant, but it will generate certificate errors on the client side.
+
+Add some extensions
+We suggest these extensions for Thunderbird:
+
+	Enigmail: get started in no time encrypting and decrypting emails and verifying that emails you receive are from the people who you expect them to be.
+	Display Quota: This extension will display the current status of your IMAP quota in thunderbird’s statusbar and will warn you when you reach a configurable limit.
+	TorBirdy: This extension configures Thunderbird to make connections over the Tor anonymity network.
+
+Use hidden options to speed up Thunderbird
+Per default every time you open a mail or change the status Thunderbird connects to the mail server. For slow connections or when Riseup’s servers are busy this can be pain.
+Luckily there is a fix: Thunderbird has some hidden options, that a does a complete sync when connecting the server. This will speed up your workflow and makes your day better.
+To set this, go to the menu Edit > Preferences > Advanced > General > Config Editor
+
+	set mail.imap.use_status_for_biff to false
+	set mail.server.default.autosync_offline_stores to true
+
+Consider automatically deleting old email
+Do you really need to keep all that email? You can configure thunderbird to automatically delete your old email. To do this, navigate to Account Settings —> Local Folders —> Disk space. You can set thunderbird to delete messages once they get to be X days old.
+
+
+
+
+
+
+
+
+
+
+
+
+            This site is run by Riseup, your friendly autonomous tech collective since 1999
+
+
+
+
+                Donate!
+
+
+                System Status
+
+
+                About Us
+
+
+                Privacy Policy
+
+
+
+
+            Please edit this site

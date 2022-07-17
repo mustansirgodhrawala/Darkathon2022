@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+  <meta content="max-age=0" http-equiv="cache-control"/>
+  <meta content="no-cache" http-equiv="cache-control"/>
+  <meta content="0" http-equiv="expires"/>
+  <meta content="Tue, 01 Jan 1980 1:00:00 GMT" http-equiv="expires"/>
+  <meta content="no-cache" http-equiv="pragma"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   ByteChan
+  </title>
+  <link href="favicon.ico" rel="shortcut icon"/>
+  <link href="css/global.css" rel="stylesheet" type="text/css"/>
+  <link href="css/futaba.css" id="mainStylesheet" rel="stylesheet" title="Futaba" type="text/css"/>
+  <link href="css/burichan.css" rel="alternate stylesheet" title="Burichan" type="text/css"/>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/tinyib.js">
+  </script>
+ </head>
+ <body>
+  <div class="adminbar">
+   [
+   <a "="" href="imgboard.php?manage" style="text-decoration: underline;">
+    Manage
+   </a>
+   ]
+   <select id="switchStylesheet">
+    <option value="">
+     Style
+    </option>
+    <option value="futaba">
+     Futaba
+    </option>
+    <option value="burichan">
+     Burichan
+    </option>
+   </select>
+  </div>
+  <div class="logo">
+   ByteChan
+  </div>
+  <hr width="90%"/>
+  <div class="postarea">
+   <form action="imgboard.php" enctype="multipart/form-data" id="postform" method="post" name="postform">
+    <input name="parent" type="hidden" value="0"/>
+    <table class="postform">
+     <tbody>
+      <tr>
+       <td class="postblock">
+        Name
+       </td>
+       <td>
+        <input accesskey="n" maxlength="75" name="name" size="28" type="text"/>
+       </td>
+      </tr>
+      <tr>
+       <td class="postblock">
+        Subject
+       </td>
+       <td>
+        <input accesskey="s" autocomplete="off" maxlength="75" name="subject" size="40" type="text"/>
+        <input accesskey="z" type="submit" value="Submit"/>
+       </td>
+      </tr>
+      <tr>
+       <td class="postblock">
+        Message
+       </td>
+       <td>
+        <textarea accesskey="m" cols="48" id="message" maxlength="8000" name="message" rows="4"></textarea>
+       </td>
+      </tr>
+      <tr>
+       <td class="postblock">
+        CAPTCHA
+       </td>
+       <td>
+        <input accesskey="c" autocomplete="off" id="captcha" name="captcha" size="6" type="text"/>
+        (enter the text below)
+        <br/>
+        <img alt="CAPTCHA" height="55" id="captchaimage" onclick="javascript:reloadCAPTCHA()" src="inc/captcha.php" style="margin-top: 5px;cursor: pointer;" width="175"/>
+       </td>
+      </tr>
+      <tr>
+       <td class="postblock">
+        Password
+       </td>
+       <td>
+        <input accesskey="p" id="newpostpassword" name="password" size="8" type="password"/>
+        (for post and file deletion)
+       </td>
+      </tr>
+      <tr>
+       <td class="rules" colspan="2">
+        <ul>
+         <li>
+          Images greater than 250x250 will be thumbnailed.
+         </li>
+         <li>
+          Currently 1 unique user posts.
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </form>
+  </div>
+  <hr/>
+  <script type="text/javascript">
+   var enablebacklinks = true;
+  </script>
+  <form action="imgboard.php?delete" id="delform" method="post">
+   <input name="board" type="hidden" value="b"/>
+   <div id="posts">
+    <div class="op" id="post62">
+     <span class="filesize">
+      File:
+      <a href="src/1654849517583.jpg" onclick="return expandFile(event, '62');" target="_blank">
+       1654849517583.jpg
+      </a>
+      –(49.78KB, 1080x838, shemale-ijes1121-VT7bTx.jpg)
+     </span>
+     <br/>
+     <div id="thumbfile62">
+      <a href="src/1654849517583.jpg" onclick="return expandFile(event, '62');" target="_blank">
+       <img alt="62" class="thumb" height="194" id="thumbnail62" src="thumb/1654849517583s.jpg" width="250"/>
+      </a>
+     </div>
+     <div id="expand62" style="display: none;">
+      %3Ca%20href%3D%22src%2F1654849517583.jpg%22%20onclick%3D%22return%20expandFile%28event%2C%20%2762%27%29%3B%22%3E%3Cimg%20src%3D%22src%2F1654849517583.jpg%22%20width%3D%221080%22%20style%3D%22max-width%3A%2085vw%3Bheight%3A%20auto%3B%22%3E%3C%2Fa%3E
+     </div>
+     <div class="thumb" id="file62" style="display: none;">
+     </div>
+     <a id="62">
+     </a>
+     <label>
+      <input name="delete[]" type="checkbox" value="62"/>
+      <span class="filetitle">
+       open wide
+      </span>
+      <span class="postername">
+       tsmandy
+      </span>
+      22/06/10(Fri)08:25:17
+     </label>
+     <span class="reflink">
+      <a href="imgboard.php?report=62" title="Report">
+       R
+      </a>
+      <a href="res/62.html#62">
+       No.
+      </a>
+      <a href="res/62.html#q62">
+       62
+      </a>
+     </span>
+     [
+     <a href="res/62.html">
+      Reply
+     </a>
+     ]
+     <small>
+      <span class="backlinks" id="backlinks62">
+      </span>
+     </small>
+     <div class="message">
+      would you do me?
+      <br/>
+     </div>
+    </div>
+    <table>
+     <tbody>
+      <tr>
+       <td class="doubledash">
+        ¨
+       </td>
+       <td class="reply" id="post99">
+        <a id="99">
+        </a>
+        <label>
+         <input name="delete[]" type="checkbox" value="99"/>
+         <span class="filetitle">
+          YeSSSSSSSSS
+         </span>
+         <span class="postername">
+          meeeeee
+         </span>
+         22/06/15(Wed)09:50:56
+        </label>
+        <span class="reflink">
+         <a href="imgboard.php?report=99" title="Report">
+          R
+         </a>
+         <a href="res/62.html#99">
+          No.
+         </a>
+         <a href="res/62.html#q99">
+          99
+         </a>
+        </span>
+        <small>
+         <span class="backlinks" id="backlinks99">
+         </span>
+        </small>
+        <div class="message">
+         QUALITY COUNTERFEIT MONEY
+         <br/>
+         <br/>
+         EUROS:
+         <br/>
+         <a href="http://7yvukkjcl3xxqvittpxw367uvk75nely5p2rogely2h25zdznq7xkjad.onion" target="_blank">
+          http://7yvukkjcl3xxqvittpxw367uvk75nely5p2rogely2h25zdznq7xkjad.onion
+         </a>
+         <br/>
+         <br/>
+         US DOLLARS:
+         <br/>
+         <a href="http://zgnradbtk3bhlheqkvcmzigx5vzzcx6f5jlvbbabesmqtt6hzqptk6qd.onion" target="_blank">
+          http://zgnradbtk3bhlheqkvcmzigx5vzzcx6f5jlvbbabesmqtt6hzqptk6qd.onion
+         </a>
+         <br/>
+         <br/>
+         UK POUNDS:
+         <br/>
+         <a href="http://2kxtkcwqggo5tmoj4weq2dtdhdrsmtkv3ozf5hoerabm457cgkghpeyd.onion" target="_blank">
+          http://2kxtkcwqggo5tmoj4weq2dtdhdrsmtkv3ozf5hoerabm457cgkghpeyd.onion
+         </a>
+         <br/>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <table>
+     <tbody>
+      <tr>
+       <td class="doubledash">
+        ¨
+       </td>
+       <td class="reply" id="post150">
+        <a id="150">
+        </a>
+        <label>
+         <input name="delete[]" type="checkbox" value="150"/>
+         <span class="filetitle">
+          eMail Address Account Hacking
+         </span>
+         <span class="postername">
+          hacks
+         </span>
+         22/06/21(Tue)09:09:19
+        </label>
+        <span class="reflink">
+         <a href="imgboard.php?report=150" title="Report">
+          R
+         </a>
+         <a href="res/62.html#150">
+          No.
+         </a>
+         <a href="res/62.html#q150">
+          150
+         </a>
+        </span>
+        <small>
+         <span class="backlinks" id="backlinks150">
+         </span>
+        </small>
+        <div class="message">
+         <br/>
+         We can get any password from any email address!
+         <br/>
+         <a href="http://uno2adwapnfha2x7jtgurmdmvmw6uxrflrpwxlmpdbbvhjay7mf7idyd.onion" target="_blank">
+          http://uno2adwapnfha2x7jtgurmdmvmw6uxrflrpwxlmpdbbvhjay7mf7idyd.onion
+         </a>
+         <br/>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <hr/>
+    <div class="op" id="post145">
+     <a id="145">
+     </a>
+     <label>
+      <input name="delete[]" type="checkbox" value="145"/>
+      <span class="filetitle">
+       NOT FOR THE FAINT HEARTED The Real Red Room  Monthly LIVE sessions 4 Hour S
+      </span>
+      <span class="postername">
+       room
+      </span>
+      22/06/20(Mon)12:59:06
+     </label>
+     <span class="reflink">
+      <a href="imgboard.php?report=145" title="Report">
+       R
+      </a>
+      <a href="res/145.html#145">
+       No.
+      </a>
+      <a href="res/145.html#q145">
+       145
+      </a>
+     </span>
+     [
+     <a href="res/145.html">
+      Reply
+     </a>
+     ]
+     <small>
+      <span class="backlinks" id="backlinks145">
+      </span>
+     </small>
+     <div class="message">
+      NOT FOR THE FAINT HEARTED
+      <br/>
+      The Real Red Room
+      <br/>
+      Monthly LIVE sessions
+      <br/>
+      4 Hour Session duration!
+      <br/>
+      LIMITED tickets!
+      <br/>
+      Last event video available!
+      <br/>
+      <a href="http://utzbyczvhgdtfq5uxwryv2dzwwevn3m3uvsfcnu5jdi3xpsyr7vcr5yd.onion" target="_blank">
+       http://utzbyczvhgdtfq5uxwryv2dzwwevn3m3uvsfcnu5jdi3xpsyr7vcr5yd.onion
+      </a>
+      <br/>
+     </div>
+    </div>
+    <table>
+     <tbody>
+      <tr>
+       <td class="doubledash">
+        ¨
+       </td>
+       <td class="reply" id="post147">
+        <a id="147">
+        </a>
+        <label>
+         <input name="delete[]" type="checkbox" value="147"/>
+         <span class="filetitle">
+          awesome
+         </span>
+         <span class="postername">
+          murderer121
+         </span>
+         22/06/21(Tue)08:38:54
+        </label>
+        <span class="reflink">
+         <a href="imgboard.php?report=147" title="Report">
+          R
+         </a>
+         <a href="res/145.html#147">
+          No.
+         </a>
+         <a href="res/145.html#q147">
+          147
+         </a>
+        </span>
+        <small>
+         <span class="backlinks" id="backlinks147">
+         </span>
+        </small>
+        <div class="message">
+         cant wait for the 1st of July!!!
+         <br/>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <hr/>
+    <div class="op" id="post146">
+     <a id="146">
+     </a>
+     <label>
+      <input name="delete[]" type="checkbox" value="146"/>
+      <span class="filetitle">
+       Covid19 cards available: Telegram:@validdocumentpro  Buy Passports, Drivers
+      </span>
+      <span class="postername">
+       karen
+      </span>
+      22/06/21(Tue)03:55:28
+     </label>
+     <span class="reflink">
+      <a href="imgboard.php?report=146" title="Report">
+       R
+      </a>
+      <a href="res/146.html#146">
+       No.
+      </a>
+      <a href="res/146.html#q146">
+       146
+      </a>
+     </span>
+     [
+     <a href="res/146.html">
+      Reply
+     </a>
+     ]
+     <small>
+      <span class="backlinks" id="backlinks146">
+      </span>
+     </small>
+     <div class="message">
+      Covid19 cards available: Telegram:@validdocumentpro
+      <br/>
+      Buy Passports, Drivers Licenses, ID Cards,+Residency,COVID-19 VAX CARD ,VISA for all Countries Wickr : validdocumentpr
+      <br/>
+      Buy CDC Vaccination cards  email: buy-covid-19-vaccination-card-online/ Buy covid 19 Vaccination cards online
+      <br/>
+      We produce and offer the CDC Covid vaccine cards to those who need the cards to meet up with their daily activities.
+      <br/>
+      With our cards you can do the following:
+      <br/>
+      ● travel and work
+      <br/>
+      Our cards are:
+      <br/>
+      ● registered
+      <br/>
+      ● checked and
+      <br/>
+      ● Verified in the CDC System. Protect yourself and love ones from the poisonous Vaccines
+      <br/>
+      We provide the following:
+      <br/>
+      <br/>
+      1) EU Digital Covid Certificate
+      <br/>
+      2) NHS covid pass (UK covid-19 card)
+      <br/>
+      3) CDC covid-19 vaccination record card for USA ??
+      <br/>
+      <span class="omittedposts">
+       Post truncated. Click Reply to view.
+      </span>
+      <br/>
+     </div>
+    </div>
+    <hr/>
+    <div class="op" id="post144">
+     <a id="144">
+     </a>
+     <label>
+      <input name="delete[]" type="checkbox" value="144"/>
+      <span class="filetitle">
+       Is she being unfaithful?
+      </span>
+      <span class="postername">
+       spy
+      </span>
+      22/06/20(Mon)12:42:07
+     </label>
+     <span class="reflink">
+      <a href="imgboard.php?report=144" title="Report">
+       R
+      </a>
+      <a href="res/144.html#144">
+       No.
+      </a>
+      <a href="res/144.html#q144">
+       144
+      </a>
+     </span>
+     [
+     <a href="res/144.html">
+      Reply
+     </a>
+     ]
+     <small>
+      <span class="backlinks" id="backlinks144">
+      </span>
+     </small>
+     <div class="message">
+      GIRLFRIEND PHONE HACKING
+      <br/>
+      <br/>
+      Wanna spy on your girlfriend?
+      <br/>
+      Is she being unfaithful?
+      <br/>
+      We can help you!
+      <br/>
+      VISIT:
+      <a href="http://uno2adwapnfha2x7jtgurmdmvmw6uxrflrpwxlmpdbbvhjay7mf7idyd.onion" target="_blank">
+       http://uno2adwapnfha2x7jtgurmdmvmw6uxrflrpwxlmpdbbvhjay7mf7idyd.onion
+      </a>
+      <br/>
+     </div>
+    </div>
+    <hr/>
+    <div class="op" id="post143">
+     <a id="143">
+     </a>
+     <label>
+      <input name="delete[]" type="checkbox" value="143"/>
+      <span class="filetitle">
+       Fixed Footie Games
+      </span>
+      <span class="postername">
+       Hooligan
+      </span>
+      22/06/20(Mon)11:33:45
+     </label>
+     <span class="reflink">
+      <a href="imgboard.php?report=143" title="Report">
+       R
+      </a>
+      <a href="res/143.html#143">
+       No.
+      </a>
+      <a href="res/143.html#q143">
+       143
+      </a>
+     </span>
+     [
+     <a href="res/143.html">
+      Reply
+     </a>
+     ]
+     <small>
+      <span class="backlinks" id="backlinks143">
+      </span>
+     </small>
+     <div class="message">
+      Fixed Footie Games
+      <br/>
+      We have information of fixed british and spanish football matches every week.
+      <br/>
+      <a href="http://apgnytv3vkbqdue5hkczfs3lttcd7mpw42e6c7z2cx2j23glkzptqoid.onion" target="_blank">
+       http://apgnytv3vkbqdue5hkczfs3lttcd7mpw42e6c7z2cx2j23glkzptqoid.onion
+      </a>
+      <br/>
+     </div>
+    </div>
+   </div>
+   <hr/>
+   <table class="userdelete">
+    <tbody>
+     <tr>
+      <td>
+       Delete Post
+       <input id="deletepostpassword" name="password" placeholder="Password" size="8" type="password"/>
+       <input name="deletepost" type="submit" value="Delete"/>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </form>
+  <table border="1" style="display: inline-block;">
+   <tbody>
+    <tr>
+     <td>
+      <form action="2.html" method="get">
+       <input type="submit" value="Previous"/>
+      </form>
+     </td>
+     <td>
+      [
+      <a href="index.html">
+       0
+      </a>
+      ] [
+      <a href="1.html">
+       1
+      </a>
+      ] [
+      <a href="2.html">
+       2
+      </a>
+      ] [3]
+     </td>
+     <td>
+      Next
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <br/>
+  <div class="footer">
+  </div>
+ </body>
+</html>

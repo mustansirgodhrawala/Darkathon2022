@@ -1,0 +1,137 @@
+
+
+
+
+
+
+
+
+        Ctrl.blog
+        Onion Edition
+
+
+        Skip to main content
+
+
+
+         Daniel Aleksandersen
+
+
+
+
+
+          Latest
+
+
+          Newsletter
+
+
+          Topics
+
+
+          Patrons
+
+
+          About
+
+
+
+
+
+
+
+
+
+
+
+
+
+        How to set per-creator/channel playback speed on YouTube
+
+
+
+
+            Daniel Aleksandersen
+
+          2022-07-01
+          2 minute read
+
+
+
+            Tweet
+
+
+            Save
+
+
+
+
+        You can find hundreds of browser extensions that let you fine-tune the playback speed for all YouTube videos. I’m happy with the default speed of 1× for most videos (and music). However, I want to speed up some channels without having to tweak the speed dial every time. Enter Samuel Li’s Speed Controller extension.
+        I tend to fine-tune the playback speed to somewhere between 1,05× and 1,35×. By default, YouTube only lets you increase the playback speed by increments of 0,25×. This design decision has led to the creation of hundreds of extensions for fine-tuning and setting speeds other than the defaults.
+        I tend to set the same speeds for videos from the same creators. For example, some podcasts talk fast, and others drag on forever. They can be just as interesting, but the slower ones are a bigger time commitment.
+        This got me thinking: Surely, there must be an extension that lets me set the default playback speed per-channel instead of the entire YouTube website? I decided to install every YouTube speed-setting extension in the Firefox Add-Ons catalog. Unfortunately, none of them offered the functionality I wanted.
+        However, the creator of one extension had included an open invitation to email them with feature suggestions. I sent an email to Samuel Li, and days later he’d implemented the functionality I wanted.
+        The Samuel Li’s Speed Controller (SLSC) extension now lets you set a global default playback speed for all of YouTube and per channel. I’ve left the global default at 1,0× and set custom higher speeds for some of my favorite podcasts and other channels.
+        SLSC also works when watching videos from playlists. I mention this because I also discovered that many extensions don’t work at all in playlists or only work for the first video. SLSC will automatically change the speed to match your defaults for the current video’s channel.
+
+
+
+        The extension is exclusively available for Firefox on Mozilla Add-Ons. However, it’s open-source and it only uses cross-browser compatible Application Programming Interfaces (API). It should run fine in any Chromium (e.g., Google Chrome) and WebKit (e.g., Safari) web browsers.
+
+
+
+          Buy Me A Coffee
+          Post a comment
+
+
+
+            Browser Extensions
+
+
+            YouTube
+
+
+            Web Video
+
+
+
+
+
+
+
+
+
+
+          Get the weekly Ctrl blog newsletter
+
+              Email:  Follow
+
+
+
+
+
+
+
+          About
+
+
+          Privacy Policy
+
+
+          Colophon
+
+
+          Licensing
+
+
+
+
+
+        The image “YouTube Speed Controller” is based on Gauge icon (Ballicons2)” by © 2020 Samuel Li and Pixelbuddha which is used under a CC BY 3.0 Unported License. The image “YouTube Speed Controller” (attribution link) by © 2022 Daniel Aleksandersen is licensed under a CC BY 4.0 License.
+
+
+        Ctrl blog by © 2022 Daniel Aleksandersen.
+
+
+
+      Hosting by Hetzner and Linode. CDN by Bunny.

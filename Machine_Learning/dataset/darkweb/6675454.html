@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" name="viewport"/>
+  <title>
+   Darknetlive
+  </title>
+  <meta content="Darknet Market News, Links, and Other Information About Crypto Markets, Privacy, Harm Reduction, and Cryptocurrency" name="description"/>
+  <meta content="" name="author"/>
+  <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABfmlDQ1BpY2MAACiRfZE9SMNQFIVPW6UilYJ2EHEIWAXBgqiIo1ahCBVCrdCqg8lL/6BJQ5Li4ii4Fhz8Waw6uDjr6uAqCII/IE6OToouUuJ9SaFFjBce7+O8ew7v3Qf462Wmmh3jgKpZRioRFzLZVSH4Ch/C6MUohiRm6nOimIRnfd1TN9VdjGd59/1ZPUrOZIBPIJ5lumERbxBPb1o6533iCCtKCvE58ZhBFyR+5Lrs8hvngsN+nhkx0ql54gixUGhjuY1Z0VCJp4ijiqpRvj/jssJ5i7NarrLmPfkLQzltZZnrtAaRwCKWIEKAjCpKKMNCjHaNFBMpOo97+Accv0gumVwlMHIsoAIVkuMH/4PfszXzkxNuUigOdL7Y9scwENwFGjXb/j627cYJEHgGrrSWv1IHZj5Jr7W06BEQ3gYurluavAdc7gD9T7pkSI4UoOXP54H3M/qmLNB3C3SvuXNrnuP0AUjTrJI3wMEhMFKg7HWPd3e1z+3fnub8fgB80XKrKj7LgAAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACuFBMVEUAAAD////+/v7+/v///v/////////////////////////////////////////////////////+/v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v7////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////b2OXFwNbIxNjKxdnJxdnIw9jJxNnMyNvRzd7c2ebv7fT9/f6vqMZtYZhFNXsyIG4yIW41I3BNPoFfUo5iVZBeUI1QQoNENHtPQIJ8cKK7ts/z8vb//v/8/P2ZkbcpF2goFmfi3+rz8vfx7/Xk4uzCvNN5bqAzIW4uHGtoW5TV0eErGWknFWZ7b6H7+/y2sMw/LncmFGZMPIDOytyvqMd9cqOqo8MwHm1WR4fl4uz08/dlWJIpF2eQhrCxqsiro8MsGmlLPIDn5e61r8ssGmrY1OM7KnQqGGjBvNPu7PNQQYMpFmeimr2AdaX39/pgU4+RiLGDeaf5+fsoFWeNg66EeaiPha/29fhcT4yZkLfp5/BKOn+zrMnQzd43JnHX0+O1rsqhmbz39vmwqcdbTYu6tM4tG2qBdqb4+Pp8caL+/v+gl7szIm92ap7t7PL49/qYj7ZDM3rAu9Pe2+i0rsppXJUuHWtCMnmYkLbx8PWnn8FiVJBBMXkxIG4+LnZdT4xaTYtkV5Gck7nd2ufGwdbMx9vPy93Z1eTo5u/5+PsJgeWqAAAAXXRSTlMAAAAAAAQqbq7a8/3y2KppJgMEOZng/PvdkzMbjOvngxc4xf69MEXb1DvTLxzEuRUDfgE66uMuiivf1iD4XZzK5fHkyJj691gn3NIdAoQ05t4pdbywESjLMbqxi9e5VH/eAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB+QBFAA4FkBRE+YAAAI5SURBVDjLY2CAAkZWNnYOTi5ubh5ePn4BQUYGVMAoJCwiKhYLBeISklIoSpgYpWVkY1GAnLwCIyNCXlFJORYNcKuowlQwM6qpx2IBGpoQFUyMwuqxcfEJiYlJySmpqWnpGZlQFVraYBWMOrqxsVnZObl5+QWFRcUlpWXlFZUQFXr6QAUsBjJAZlV1TW1dYX1lQ2NTc0trW3sHWIGyoREjA6OxCZiT1dnVDdHX09vXP2EimGlqxshgIAIRntTZNRnmvClTu6ZNB7PMGRksLGNhJsAVzJhZN2s2mGVlzcAuDhGcg6Qgdu68WfMXgBg2tgwcULGFi5AULF6ydOoyMMuOgRObguUrVtauArPsGbgQClbDFaxZW1e3DsxyYOBGKFgPV7Bh5saNm8AsR2QFm1EUbIEqcMSmYOu2urrtYJYTAy82BTt21i7aBWY5M/BhU7B7T+2SvWCWCwO/K0RsH7KC/Us3th8AMdzcGTw8IWIHOxEKMg5tzD0MZnl5M/hIwiMLpqB6+5Hao8fATF9gdPv5wxQcPwFmHTh5aunpM2BmQCBQgZE8MMFWnz1XW3v+wvLG5RcvXb5y9dp1sLxYECjNMSoEx8beuHkrN+/2nWl3762Yf//BQ2iqDAkFp0lGVY3Y9EcpiYmJKQmPnzx99hzmVvswSLJmZNTUisUCwiNgGYORUTuSG11aLMoDkbUYGfUNnVDlLYNCGZFzJ6OPWXSMDUzWTcs3zAgjf/tY29qF+zs6Ojm7uOsgpAHRLloKVsF7BgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wMS0yMFQwMDo1NjoyMiswMTowMB4N21kAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDEtMjBUMDA6NTY6MjIrMDE6MDBvUGPlAAAAG3RFWHRpY2M6Y29weXJpZ2h0AFB1YmxpYyBEb21haW62kTFbAAAAInRFWHRpY2M6ZGVzY3JpcHRpb24AR0lNUCBidWlsdC1pbiBzUkdCTGdBEwAAABV0RVh0aWNjOm1hbnVmYWN0dXJlcgBHSU1QTJ6QygAAAA50RVh0aWNjOm1vZGVsAHNSR0JbYElDAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/icon.svg" rel="icon"/>
+  <link href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/" rel="canonical"/>
+  <link href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/index.xml" rel="alternate" title="Darknetlive" type="application/rss+xml"/>
+  <link href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/index.xml" rel="feed" title="Darknetlive" type="application/rss+xml"/>
+  <style>
+   :root{--a0:hsla(0,0%,100%,0.93);--a1:#444;--a2:rgba(0,0,0,0.88);--a3:#1f1f1f;--a4:#444;--a5:#000;--a6:hsla(0,0%,94.9%,0.11);--a7:#f2f2f2;--a8:#dcd8d8;--a9:#f2f2f2;--aa:#b3b3b3;--ab:#b7b7b7;--ac:#303f9f;--ad:#878787;--ae:rgba(26,29,49,0.39);--af:#535154;--ag:#f0f0f0;--ah:#555;--ai:2px solid #2f0d77;--aj:rgba(86,86,86,0.88);--trim-color:#b22222;--ak:hsl(0deg 0% 93%);--al:hsla(0,0%,97%,0.93);--am:#000;font:17px/1.6 arial;color:var(--a1);background:var(--a0);--an:linear-gradient(60deg,#fcfcfc 34%,#fff 84%);--ao:1rem;--ap:106.25%;--aq:1.764705882rem;--ar:1.25;--as:#24292e;--at:#fff;--au:#005cc5;--av:#fbebea;--aw:#edb0ab;--ax:#f7f7f7;--ay:#eee;--az:#ddd;--a10:#069;--a11:#c30;--a12:#f60;--a13:#999;--a14:#366;--a15:#555;--a16:#309;--a17:#033;--a18:hsla(0,0%,71%,0.5215686274509804)}@media (prefers-color-scheme:dark){:root{--a0:#16161a;--a1:#b7b7b7!important;--ab:#fff;--a2:hsla(0,0%,99.2%,0.84);--a3:#eff7ff;--a4:#e4e4e4;--a5:#8ab4ff;--a6:#353434;--a7:#353434;--a19:#cfd8dc;--a8:#525252;--a9:#4c4c4c;--aa:#404040;--ai:2px solid hsla(261,8%,49%,0.93);--ac:#8ab4ff;--ad:#272727;--ae:rgba(168,171,191,0.48);--af:rgba(71,76,93,0.38);--ag:hsla(0,0%,94.1%,0.24);--ah:#cfd8dc;--aj:#a9a9a9;--al:#2c2c2c;--ak:hsl(0deg 0% 20%);--am:hsla(0,0%,99.2%,0.84);--a1a:linear-gradient(60deg,#323232 34%,#252525 84%);--as:#fafbfc;--at:#24292e;--au:#9ecbff;--av:#6d3733;--aw:#522926;--ax:#1b1f22;--ay:#2d3339;--az:#434c56;--a10:#9ecbff;--a11:#f97583;--a12:#ffab70;--a13:#6a737d;--a14:#28a745;--a15:#959da5;--a16:#fafbfc;--a17:#00b1b1;--a18:rgba(51,51,51,0.5215686274509804)}}@media screen and (min-width:960px){html{margin-left:calc(100vw - 100%);margin-right:0}}body{grid-template-columns:[full-start] minmax(1px,1fr) [a-start] minmax(1px,900px) [a-end] minmax(1px,1fr) [full-end];margin:0 8px;display:grid}body>*{display:grid;grid-area:a;grid-auto-columns:1fr;word-break:break-word}main{grid-row:auto}.a1b{display:block;font-size:2em;-webkit-margin-before:.67em;margin-block-start:.67em;-webkit-margin-after:.67em;margin-block-end:.67em;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;text-decoration:none}a#title:hover{text-decoration:underline;-webkit-box-shadow:none;text-decoration-thickness:1px;box-shadow:none}a.a1c:hover,a:hover{text-decoration:underline;color:var(--a3)}a{color:var(--ac)}.a1b,h1,h1>a,h2,h2>a{color:var(--a2)}h1,h1>a,h2{text-decoration:none}h1,h2,h3,h4{font-weight:500}.n__p{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0}.n__d{list-style:none}.a1d{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-padding-start:0;padding-inline-start:0}.a1e{padding:calc(var(--aq)/2) 0;box-shadow:0 1px 0 0 var(--ay)}.a1f{font-weight:700;text-decoration:none;color:var(--a1)}.a1f:hover{color:var(--au)}.a1g{margin:0;font-size:calc(var(--ao)/var(--ar))}.s__a{-webkit-user-select:all;-moz-user-select:all;-ms-user-select:all;user-select:all}.u__s{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media (max-width:600px){.a1h{-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0}h2.a1i{-webkit-margin-before:1em;margin-block-start:1em}section+nav>ul>li{font-size:1.2em;display:flex;max-width:100%;justify-content:space-evenly}}.a1c{text-decoration:none;color:var(--a1)}#a1j ul a:hover,a.am{text-decoration:none;color:var(--a3);box-shadow:inset 0 -1px 0 0 var(--a3)}#a1j{grid-row-start:1;grid-row-end:1;border-bottom:1px solid;height:auto;z-index:3;text-rendering:geometricprecision;background:var(--a0)}#a1j ul a:hover{-webkit-box-shadow:inset 0 -1px 0 0 var(--a3)}.a1k.a1l.a1m{grid-auto-flow:column;grid-auto-columns:auto 1fr auto;justify-items:left;display:inline-grid}.a1b{margin:0}.a1d.n__d.a1n.a1o{display:grid;grid-auto-flow:column}.a1p{background-color:var(--a0);width:100%;max-width:900px;z-index:2}.a1p nav{margin:0;padding:0;list-style:none;overflow:hidden;background-color:var(--a0)}.a1p .a1n{clear:both;max-height:0;transition:max-height .2s ease-out}.a1p .a1q{cursor:pointer;display:inline-block;float:right;padding:0 7px;align-self:center;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;grid-row:1;justify-self:right}.a1p .a1q .a1r{background:var(--a2);display:block;height:2px;position:relative;transition:background .2s ease-out;width:18px}.a1p .a1q .a1r:after,.a1p .a1q .a1r:before{background:var(--a2);content:"";display:block;height:100%;position:absolute;transition:all .2s ease-out;width:100%}@media (max-width:629px){.a1n{grid-row:2;grid-column:1/3;grid-gap:.41em;padding:0 4px;line-height:31px;font-size:18px}nav.a1n>span{display:block}body>header{position:-webkit-sticky;position:sticky;width:100%}.a1p .a1s:checked~.a1n{width:100%;overflow-y:hidden;justify-self:right;-moz-text-align-last:right;text-align-last:right}}.a1p .a1q .a1r:before{top:5px}.a1p .a1q .a1r:after{top:-5px}.a1p .a1s{display:none}.a1p .a1s:checked~.a1n{max-height:240px;width:100%;padding:0 7px}.a1p .a1s:checked~.a1q .a1r{background:0 0}.a1p .a1s:checked~.a1q .a1r:before{transform:rotate(-45deg)}.a1p .a1s:checked~.a1q .a1r:after{transform:rotate(45deg)}.a1p .a1s:checked~.a1q:not(.steps) .a1r:after,.a1p .a1s:checked~.a1q:not(.steps) .a1r:before{top:0}*,:after,:before{box-sizing:border-box}header{align-items:baseline}@media (min-width:700px){.a1p .a1n{justify-self:end;align-self:center;display:inline-grid;grid-auto-flow:column;grid-gap:1em;justify-content:right;max-height:none;font-size:1.061em}.a1p .a1q{display:none}nav.a1n{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}.a1p span a{display:inline}}footer>nav{justify-self:end}.a1t>a{padding:4px 8px}footer{grid-row:auto;border-top:1px solid;overflow-wrap:break-word;padding:1em}.a1u .a1v:after,.a1u span,.a1t{display:inline-block}section+nav>ul{display:flex;justify-content:center}.a1w,article>header,footer,section+nav{align-self:center}#a1x{background:var(--a18);align-content:end;display:grid;grid-template-columns:repeat(auto-fill,minmax(100%,1fr));grid-auto-flow:dense}.a1w *{color:var(--a1);text-decoration:none;vertical-align:bottom;font-variant:all-petite-caps}nav.a1u{background:var(--a18);padding:.21em}.a1u{grid-row:auto}.a1u a{text-decoration:none;align-items:center;display:flex}@media (max-width:621px){.a1u>ol>li:last-of-type:after{content:"This Page"}.a1u>ol>li:last-of-type>*{display:none}}@media (min-width:63.9385em){.a1u{padding:0}}.a1u ol{list-style:none;margin:0;padding:0}.a1u li{display:inline-flex;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.a1u :not(:last-of-type):after{content:"/";font-weight:600;margin:0 6px}::-webkit-scrollbar{width:7px;height:7px}::-webkit-scrollbar-button{width:0;height:0}::-webkit-scrollbar-thumb{background:var(--a8);border:0 #fff}::-webkit-scrollbar-thumb:hover{background:var(--a9)}::-webkit-scrollbar-thumb:active{background:var(--aa)}::-webkit-scrollbar-track{background:var(--ad);border:0 dashed #fff}::-webkit-scrollbar-corner{background:0 0}article.a25.a26.h-entry:active{-webkit-filter:saturate(.8905);filter:saturate(.8905)}.a26.a27{display:grid}section.a26.a27{grid-row-start:2;grid-row-end:2;display:grid}section+nav.a1o.a28.a29{grid-row-start:3;grid-row-end:3}.a25.a26.h-entry{display:grid;grid-auto-flow:column;grid-column-gap:.3em;position:relative}.e-content>a{position:relative;z-index:1}article>header>h2>a{position:static;text-decoration:none}article>header>h2>a:before{content:"";left:0;top:0;position:absolute;right:0;overflow:hidden;bottom:0}a.a1i:hover:before{-webkit-filter:opacity(.012345);filter:opacity(.012345);background:#ffebcd}h2.a1i{font-size:1.37em;-webkit-margin-before:.1em;margin-block-start:.1em;-webkit-margin-after:0;margin-block-end:0;line-height:1.37em}@media (max-width:600px){.a25.a26.h-entry>header>h2{font-size:1.19em}}@media (max-width:799px){.a1c{color:var(--a1);text-decoration:none}article.a25.a26.h-entry:after{content:" ";border-bottom:1px solid;display:flex;color:inherit;width:100%;position:relative}article.a25.a26.h-entry:active{-webkit-filter:grayscale(.35);filter:grayscale(.35)}.a1i{-webkit-margin-before:1em;margin-block-start:1em}.a2a{-webkit-margin-before:0;margin-block-start:0;font-size:1.37em;-webkit-margin-after:0;margin-block-end:0;line-height:1.37em}.a2b.e-content{display:none}img.a26.a2c{max-width:48vw;max-height:29vw;-o-object-fit:cover;object-fit:cover;color:var(--a1);display:block}}section+nav>ul>li{font-size:1.2em;display:flex;justify-content:space-evenly}.a26.a27{grid-auto-columns:1fr}@media (min-width:601px){section+nav>ul>li{max-width:33vw;list-style:none}}@media (min-width:800px){article.a25.a26.h-entry:after{display:none}p.n__p{-webkit-margin-after:.3em;margin-block-end:.3em}.a25.a26.h-entry{grid-auto-columns:minmax(300px,auto);grid-column:1/4;position:relative}.a2b.e-content{grid-row:2/2;border-bottom:1px solid}img.a26.a2c{-o-object-fit:cover;object-fit:cover;display:block;max-width:300px}}.a2d{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}.e-content{display:inline}.a2e{padding:1vw}@media (max-width:250px){ul#a2f{display:grid;grid-template-columns:1fr 1fr}section+nav>ul>li{font-size:10px}}li.a2g.am{font-weight:600}@media (max-width:400px){.a25.a26.h-entry>header>h2{font-size:1em;line-height:.99em}article>header{align-self:end}body>nav>ul>li:nth-child(8),li.a2g.a2h{display:none}footer{font-size:.9em}}div>img{max-width:100%}.a2i>img,.a26.a2c{background:var(--a1a);text-align:-webkit-center;color:var(--a1);font-weight:700;grid-row:1/3;grid-column:1/1}.a26.a27.a29 h2,h2.a2a.p-name{-webkit-margin-before:0;margin-block-start:0}h2.a2a.p-name{font-size:1.19em;-webkit-margin-after:0;margin-block-end:0}a.a1i:hover{text-decoration:none;box-shadow:inset 0 -1px 0 0 var(--a2);color:var(--a3);transition:.2ms}
+  </style>
+  <style>
+   ::-webkit-scrollbar{width:7px;height:7px}::-webkit-scrollbar-button{width:0;height:0}::-webkit-scrollbar-thumb{background:var(--a8);border:0 #fff}::-webkit-scrollbar-thumb:hover{background:var(--a9)}::-webkit-scrollbar-thumb:active{background:var(--aa)}::-webkit-scrollbar-track{background:var(--ad);border:0 dashed #fff}::-webkit-scrollbar-corner{background:0 0}
+  </style>
+ </head>
+ <body class="a1y a2j">
+  <header id="a1j">
+   <div class="a1k a1l a1m a1p">
+    <h1 class="a1b">
+     <a href="/" rel="home" title="Home - Darknetlive">
+      Darknetlive
+     </a>
+    </h1>
+    <input aria-hidden="true" class="a1s" id="a1s" type="checkbox"/>
+    <label class="a1q" for="a1s">
+     <span class="a1r">
+     </span>
+    </label>
+    <nav class="a1n" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="menu">
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c am" href="/" id="home" itemprop="url" title="Home">
+       Home
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/arrested-darknet-vendors/" id="arrests" itemprop="url" title="Arrested Darknet Vendors">
+       Arrests
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/markets/" id="markets" itemprop="url" title="Darknet Market List">
+       Markets
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/crypto/" id="crypto" itemprop="url" title="Cryptocurrency resources">
+       Crypto
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/forums/" id="forums" itemprop="url" title="Darkweb Forums">
+       Forums
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/onions/" id="onions" itemprop="url" title="Massive List of Onion Service Links">
+       Onions
+      </a>
+     </span>
+     <span itemprop="name" role="menuitem">
+      <a class="u__s a1c" href="/shops/" id="shops" itemprop="url" title="Vendor Shops">
+       Shops
+      </a>
+     </span>
+    </nav>
+   </div>
+  </header>
+  <section class="a26 a27 a29 h-feed">
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/images/header-700.jpg 400w"/>
+     <img alt="A picture of Italian Man Allegedly Hired a Hitman on the Darkweb" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/italian-man-cited-for-hiring-hitman-on-the-darkweb/" title="Italian Man Allegedly Hired a Hitman on the Darkweb">
+       Italian Man Allegedly Hired a Hitman on the Darkweb
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      According to Italian law enforcement, a man from the Province of Treviso attempted to hire a hitman on the darkweb to kill his romantic rival.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/chainalysis-report-about-mixer-use-increasing/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/chainalysis-report-about-mixer-use-increasing/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/chainalysis-report-about-mixer-use-increasing/images/header-700.jpg 400w"/>
+     <img alt="A picture of Chainalysis: Cryptocurrency Mixer Use at an All-Time High" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/chainalysis-report-about-mixer-use-increasing/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/chainalysis-report-about-mixer-use-increasing/" title="Chainalysis: Cryptocurrency Mixer Use at an All-Time High">
+       Chainalysis: Cryptocurrency Mixer Use at an All-Time High
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      Cryptocurrency mixer use has reached an all-time high in 2022, according to a report from the blockchain analysis firm Chainalysis.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/images/header-700.jpg 400w"/>
+     <img alt="A picture of Adderall Vendor “addy4cheap” Sentenced to 52 Months in Prison" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/virginia-man-sentenced-for-selling-meth-on-darkweb/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/virginia-man-sentenced-for-selling-meth-on-darkweb/" title="Adderall Vendor “addy4cheap” Sentenced to 52 Months in Prison">
+       Adderall Vendor “addy4cheap” Sentenced to 52 Months in Prison
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      A drug dealer who sold counterfeit Adderall pills on the darkweb under the username “addy4cheap” was sentenced to 52 months in prison.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/bulgarian-customs-seized-200-darkweb-packages/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/bulgarian-customs-seized-200-darkweb-packages/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/bulgarian-customs-seized-200-darkweb-packages/images/header-700.jpg 400w"/>
+     <img alt="A picture of Bulgarian Customs Seized 200 Packages of Drugs in Ten Days" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/bulgarian-customs-seized-200-darkweb-packages/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/bulgarian-customs-seized-200-darkweb-packages/" title="Bulgarian Customs Seized 200 Packages of Drugs in Ten Days">
+       Bulgarian Customs Seized 200 Packages of Drugs in Ten Days
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      Bulgarian customs officers intercepted 198 packages of illegal drugs in ten days. The packages contained almost 120,000 pills and 40 kilograms of Khat, among other drugs.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/images/header-700.jpg 400w"/>
+     <img alt="A picture of Ohio Man Sentenced for Buying Jewelry with Stolen Credit Cards" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/ohio-man-sentenced-for-buying-jewelry-with-stolen-cards/" title="Ohio Man Sentenced for Buying Jewelry with Stolen Credit Cards">
+       Ohio Man Sentenced for Buying Jewelry with Stolen Credit Cards
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      A fraudster was sentenced to prison for more than six years for buying stolen credit cards on the darkweb and using them to buy jewelry.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/indiana-men-charged-for-fentanyl-trafficking/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/indiana-men-charged-for-fentanyl-trafficking/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/indiana-men-charged-for-fentanyl-trafficking/images/header-700.jpg 400w"/>
+     <img alt="A picture of Two Charged for Selling Counterfeit Oxycodone Pills" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/indiana-men-charged-for-fentanyl-trafficking/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/indiana-men-charged-for-fentanyl-trafficking/" title="Two Charged for Selling Counterfeit Oxycodone Pills">
+       Two Charged for Selling Counterfeit Oxycodone Pills
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      A federal grand jury returned an indictment charging two men for selling counterfeit pills on the darkweb and through encrypted messaging applications.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/credit-card-fraudster-sentenced-to-prison/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/credit-card-fraudster-sentenced-to-prison/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/credit-card-fraudster-sentenced-to-prison/images/header-700.jpg 400w"/>
+     <img alt="A picture of Fraudulent Credit Card Maker Sentenced to 108 Months in Prison" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/credit-card-fraudster-sentenced-to-prison/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/credit-card-fraudster-sentenced-to-prison/" title="Fraudulent Credit Card Maker Sentenced to 108 Months in Prison">
+       Fraudulent Credit Card Maker Sentenced to 108 Months in Prison
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      A prolific fraudster who produced fake credit cards using stolen card numbers from the darkweb was sentenced to 108 months in prison.
+     </p>
+    </div>
+   </article>
+   <article class="a25 a26 h-entry">
+    <picture class="a26 a2c">
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/welcome-to-video-admin-sentenced-again/avif/header-700.avif 400w" type="image/avif"/>
+     <source media="(min-width: 300px)" sizes="300px" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/welcome-to-video-admin-sentenced-again/webp/header-700.webp 400w" type="image/webp"/>
+     <source media="(min-width: 300px)" sizes="15.63vw" srcset="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/welcome-to-video-admin-sentenced-again/images/header-700.jpg 400w"/>
+     <img alt="A picture of ‘Welcome To Video’ Admin Sentenced to Prison for Two Years" class="a26 a2c" decoding="async" height="170" loading="lazy" src="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/post/welcome-to-video-admin-sentenced-again/images/header-700.jpg" width="300"/>
+    </picture>
+    <header>
+     <h2 class="a2a p-name">
+      <a class="a1i" href="/post/welcome-to-video-admin-sentenced-again/" title="‘Welcome To Video’ Admin Sentenced to Prison for Two Years">
+       ‘Welcome To Video’ Admin Sentenced to Prison for Two Years
+      </a>
+     </h2>
+    </header>
+    <div class="a2b e-content">
+     <p class="n__p p-summary">
+      The administrator of one of the ‘world's largest child pornography websites’ was sentenced to two years in prison for hiding proceeds from the forum.
+     </p>
+    </div>
+   </article>
+  </section>
+  <nav class="a1o a28 a29">
+   <ul class="a2k a1o a24 n__d a1d">
+    <li class="a2g am">
+     <span class="a2e" href="/">
+      1
+     </span>
+    </li>
+    <li class="a2g -page-numb-post-">
+     <a class="a2e" href="/page/2/">
+      2
+     </a>
+    </li>
+    <li class="a2g -page-numb-post-">
+     <a class="a2e" href="/page/3/">
+      3
+     </a>
+    </li>
+    <li class="a2g a2h">
+     <span class="a2e">
+      ...
+     </span>
+    </li>
+    <li class="a2g">
+     <a class="a2e" href="/page/5/" rel="last">
+      »
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <footer class="a1x" id="a1x">
+   <div class="a1w">
+    <span>
+     <a href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/about/">
+      DarknetLive
+     </a>
+    </span>
+   </div>
+   <nav itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+    <span class="a1t">
+     <a href="/pgp.txt" id="pgp" itemprop="url" title="pgp">
+      <span itemprop="name">
+       pgp
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/mirrors.txt" id="mirrors" itemprop="url" title="mirrors">
+      <span itemprop="name">
+       mirrors
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/donate.txt" id="pls-donate" itemprop="url" title="pls donate">
+      <span itemprop="name">
+       pls donate
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/canary.txt" id="canary" itemprop="url" title="canary">
+      <span itemprop="name">
+       canary
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/dnm-bible/" id="bible" itemprop="url" title="bible">
+      <span itemprop="name">
+       bible
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/index.xml" id="rss" itemprop="url" title="rss">
+      <span itemprop="name">
+       rss
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/feed.atom" id="atom" itemprop="url" title="atom">
+      <span itemprop="name">
+       atom
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="/index.json" id="json" itemprop="url" title="json">
+      <span itemprop="name">
+       json
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="http://dv3pmqy5uw26jv5tsu6n457aswf4wmumez5kjjowuuev5rl33rsq.b32.i2p/" id="i2p" itemprop="url" title="i2p">
+      <span itemprop="name">
+       i2p
+      </span>
+     </a>
+    </span>
+    <span class="a1t">
+     <a href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/" id="tor" itemprop="url" title="tor">
+      <span itemprop="name">
+       tor
+      </span>
+     </a>
+    </span>
+   </nav>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,76 @@
+
+
+
+
+
+
+Home > Tails > CLI > Install > Terminal
+
+
+
+Setting up a Monero CLI wallet on Tails (terminal method)
+This guide sets the wallet up with a remote node. To learn more about what a remote node is and why it is used instead of a local node, see the help page on nodes.
+The estimated space requirements for the complete installation are less than 200 MB.
+The installation should take 5 - 15 minutes to complete depending on the speed of your Tor connection and your familiarity with Tails, Monero and Linux.
+If you experience any issues with this guide please contact me. I'll help you set everything up properly.
+This guide was written for Monero CLI v0.17.2.3.
+Enabling Tails persistence
+NOTE: If you already have persistence enabled you can skip to the next section.
+Tails is amnesic. By default it doesn't remember the files that you downloaded after you restart your computer. We enable persistence so that we can keep our wallet files and configuration after a reboot. Your persistent storage is stored encrypted and is protected by a password. Every time you boot tails you will have to enter this password to unlock your persistent storage. After you unlock your persistent storage Tails creates a special folder located at (/home/amnesia/Persistent). Every file we put in that folder will be stored in the persistent storage.
+1 Configure a persistent volume
+ - Applications -> System Tools -> Configure persistent volume
+
+
+ - Enter a strong password and click Create. On the next screen click Save.
+2 Restart Tails
+ - Don't forget to unlock your persistent storage after the reboot.
+Downloading Monero CLI
+1 Open the terminal
+ - Applications -> Favorites -> Terminal
+
+2 Copy and paste the following in its entirety in the terminal and hit enter. (video [GIF | 4 MB])
+MONERO_HASH=8069012ad5e7b35f79e35e6ca71c2424efc54b61f6f93238b182981ba83f2311 \
+&& MONERO_FILE=monero-linux-x64-v0.17.2.3.tar.bz2 \
+&& cd ~/Persistent && wget -O $MONERO_FILE https://downloads.getmonero.org/cli/$MONERO_FILE \
+&& echo "${MONERO_HASH} ${MONERO_FILE}" | sha256sum -c \
+&& tar -xvf $MONERO_FILE && cd monero-x86_64-linux-gnu-v0.17.2.3 \
+&& echo "torsocks ./monero-wallet-cli --daemon-address rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089" > startwallet.sh \
+&& printf "#\041/bin/sh\nx-terminal-emulator -e ./startwallet.sh" > startwallet.AppImage && chmod +x startwallet.AppImage \
+&& chmod +x startwallet.sh && ./startwallet.sh
+
+ - Don't use ctrl+v to paste, use right click -> Paste
+ - This will take 1-5 minutes depending on your download speed
+ - If anything goes wrong use the manual method
+ - Wait for 'Wallet file name' to appear then continue to the next step.
+Creating a new wallet
+1 Type a name for your wallet (e.g. monero, remember this) and hit enter
+2 Confirm the creation of a new wallet
+ - Type Y and hit enter
+
+3 Enter a password and confirm the password
+4 Select the desired language for your 25 word seed.
+ - For English press 1 followed by enter.
+ - If it gets stuck here for longer than 30 seconds after hitting enter -> the node is down. How to resolve.
+5  Write down your 25 word seed and optionally the current block height (You can find this here: moneroblocks.info)
+ - If you fail to do this and something happens to your Tails install or persistent volume your Monero are gone forever.
+ - You can use this seed to recover the wallet
+ - The wallet creation height can be used to restore the wallet from seed faster
+6 Don't enable background mining
+ - Type N and hit enter
+Following this, you might see this error message:
+
+Whenever this happens, simply exit the wallet with the exit command as shown and restart the wallet with by closing the window and doubleclicking on startWallet.AppImage. If this keeps happening consult the troubleshooting section on how to change your remote node.
+7 The wallet will now refresh, this can take a couple minutes.
+ - If you experience any connectivity issues, please consult the troubleshooting section on changing the remote node
+Congratulations, your CLI wallet is now set-up.
+
+The next time you boot Tails
+1 Open the file browser and navigate to your wallet
+ - ~/Persistent/monero-x86_64-linux-gnu-v0.17.2.3
+2 Double click startwallet.AppImage.
+3 Enter your wallet name and password.
+4 Allow the wallet to refresh
+
+Next: Instructions on how to use the CLI.
+
+        Changelog  Contact  Remote Nodes  Scripts  Exchanges  Wallets  HelpLast updated: 2021-09-03
