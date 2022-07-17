@@ -85,7 +85,7 @@ async def scrape(session, keyword, producer, topic):
                     it += 1
                     if it >= max_nb_page or len(ret) == 0:
                         continue_processing = False
-    except asyncio.exceptions.TimeoutError:
+    except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
         logging.warning(f"Haystak Timeout on {keyword}, handled.")
     except Exception as e:
         logging.critical("Haystak engine timeout")

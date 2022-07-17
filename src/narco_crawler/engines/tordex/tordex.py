@@ -77,7 +77,7 @@ async def scrape(session, keyword, producer, topic):
                         # if ".onion" in link:
                         total.append(link)
                         producer.send(topic, bytes(link, "utf-8"))
-    except asyncio.exceptions.TimeoutError:
+    except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
         logging.warning(f"Tordex Timeout on {keyword}, handled.")
     except Exception as e:
         logging.critical("Tordex engine timeout")

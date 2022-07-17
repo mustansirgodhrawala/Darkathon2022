@@ -211,36 +211,46 @@ def main(argv: Optional[Sequence[str]] = None):
         else:
             rprint("\t\t[green]Successfully ran ingress.[/green]")
 
-    rprint("\n\t[white]Validator[/white]")
-    logging.info("Starting validator, for dormant and drug relevant links.")
-    from narco_crawler.validator.main import validator_base
+        rprint("\n\t[white]Validator[/white]")
+        logging.info("Starting validator, for dormant and drug relevant links.")
+        from narco_crawler.validator.main import validator_base
 
-    if validator_base():
-        rprint("\t\t[green]Validator finished, run successful[/green]")
-        logging.info("Finished validator base run.")
-    else:
-        rprint("\t\t[red]Validator failed, check logs/validator.log for more details[/red]")
-        logging.warning("Finished validator base run, unsuccessful")
-
-    if args.spider:
-        rprint("[white]\n\tSpider[/white]")
-        logging.info("Spider started")
-
-        from narco_crawler.spider.main import spider
-
-        rprint("[green]\t\tSpidering all links[/green]")
-        if not spider():
-            try:
-                rprint(
-                    "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"
-                )
-            except KeyboardInterrupt:
-                rprint("Spider manually interrupted, terminating.")
-                logging.warning(
-                    "Spider manually terminated, taking down infrastructure."
-                )
+        if validator_base():
+            rprint("\t\t[green]Validator finished, run successful[/green]")
+            logging.info("Finished validator base run.")
         else:
-            rprint("\t\t[green]Successfully ran Spider.[/green]")
+            rprint("\t\t[red]Validator failed, check logs/validator.log for more details[/red]")
+            logging.warning("Finished validator base run, unsuccessful")
+
+        if args.spider:
+            rprint("[white]\n\tSpider[/white]")
+            logging.info("Spider started")
+
+            from narco_crawler.spider.main import spider
+
+            rprint("[green]\t\tSpidering all links[/green]")
+            if not spider():
+                try:
+                    rprint(
+                        "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"
+                    )
+                except KeyboardInterrupt:
+                    rprint("Spider manually interrupted, terminating.")
+                    logging.warning(
+                        "Spider manually terminated, taking down infrastructure."
+                    )
+            else:
+                rprint("\t\t[green]Successfully ran Spider.[/green]")
+
+    rprint("\n\t[white]Reporter[/white]")
+    logging.info("Reporter called")
+    from narco_crawler.reporter.main import reporter_main
+    if reporter_main():
+        rprint("[green]\t\tReported results, shutting down now.")
+        logging.info("Reporter finished")
+    else:
+        rprint("[red]\t\tFailed to run reporter, this is not good[/red]")
+        logging.critical("Reporter failed, view logs/reporter.log for more details.")
 
     # Taking down backend infra
     rprint("\n\t[white]De-Initialization[/white]")

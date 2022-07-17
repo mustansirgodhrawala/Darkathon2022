@@ -48,9 +48,9 @@ async def scraper(session, keyword, producer, topic):
                     producer.send(topic, bytes(link, "utf-8"))
                     results += 1
 
-            return results
-    except asyncio.TimeoutError:
+    except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
         logging.warning(f"Ahmia engine has timed out on keyword: {keyword}.")
     except Exception as e:
         logging.critical("Unknown exception in ahmia engine.")
         logging.exception(e, exc_info=True)
+    return results

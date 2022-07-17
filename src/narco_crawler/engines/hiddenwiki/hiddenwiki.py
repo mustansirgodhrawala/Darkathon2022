@@ -52,7 +52,7 @@ async def scrape(session, producer):
                 producer.send("markets", bytes(str(link["href"]), "utf-8"))
                 total += 1
 
-    except asyncio.exceptions.TimeoutError:
+    except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
         logging.warning("HiddenWiki Timeout handled.")
     except Exception as e:
         logging.critical("HiddenWiki engine timeout")

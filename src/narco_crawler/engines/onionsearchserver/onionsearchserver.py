@@ -66,7 +66,7 @@ async def scrape(session, keyword, producer, topic):
                 result += 1
                 producer.send(topic, bytes(link, "utf-8"))
 
-    except asyncio.exceptions.TimeoutError:
+    except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
         logging.warning(f"OnionSearchServer crawler timeout on {keyword}, handled.")
     except Exception as e:
         logging.critical("OnionSearchServer crawler error")

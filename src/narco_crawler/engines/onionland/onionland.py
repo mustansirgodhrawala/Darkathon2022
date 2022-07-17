@@ -104,7 +104,7 @@ async def scrape(session, keyword, producer, topic):
                         if total == 0:
                             break
 
-                except asyncio.exceptions.TimeoutError:
+                except (asyncio.TimeoutError,aiohttp.client_exceptions.ServerDisconnectedError):
                     logging.warning(f"Onionland Timeout on {keyword}, handled.")
                 except Exception as e:
                     logging.critical("Onionland engine timeout")

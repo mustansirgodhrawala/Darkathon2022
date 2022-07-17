@@ -71,24 +71,21 @@ def run_crawler():
     logging.info("Crawler run starting.")
 
     topics = list(config["keys"].keys())
+    with multiprocessing.Pool(processes=maxcores()) as p:
+        start = time.perf_counter()
 
-    p = multiprocessing.Pool(maxcores())
-    start = time.perf_counter()
+        for topic in topics:
+            p.apply_async(ahmia, args=(topic, config["keys"][topic]))
+            p.apply_async(tordex, args=(topic, config["keys"][topic]))
+            p.apply_async(onionland, args=(topic, config["keys"][topic]))
+            p.apply_async(onionsearchengine, args=(topic, config["keys"][topic]))
+            p.apply_async(haystak, args=(topic, config["keys"][topic]))
+            p.apply_async(tor66, args=(topic, config["keys"][topic]))
+            p.apply_async(onionsearchserver, args=(topic, config["keys"][topic]))
 
-    for topic in topics:
-        p.apply_async(ahmia, args=(topic, config["keys"][topic]))
-        p.apply_async(tordex, args=(topic, config["keys"][topic]))
-        p.apply_async(onionland, args=(topic, config["keys"][topic]))
-        p.apply_async(onionsearchengine, args=(topic, config["keys"][topic]))
-        p.apply_async(haystak, args=(topic, config["keys"][topic]))
-        p.apply_async(tor66, args=(topic, config["keys"][topic]))
-        p.apply_async(onionsearchserver, args=(topic, config["keys"][topic]))
-
-    p.apply_async(hiddenwiki)
-
-    p.close()
-    p.join()
-
+        p.apply_async(hiddenwiki)
+        p.close()
+        p.join()
     rprint(f"\t\t[green]Time taken: { time.perf_counter() - start }[/green]")
     logging.info(f"Time taken: { time.perf_counter() - start }")
     logging.info("Crawler finished.")
