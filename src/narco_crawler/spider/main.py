@@ -57,9 +57,9 @@ def notdrugs_spider():
         else:
             pass
 
-    # Spidering Links
-    print(f"\t\tFound {len(links)} amount of drugs link.")
-    links_spidered = asyncio.run(spider_main(links, 1,"spidered_drugs"))
+# Spidering Links
+    print(f"\t\tFound {len(links)} amount of notdrugs link.")
+    links_spidered = asyncio.run(spider_main(links, 1,"spidered_notdrugs"))
 
 
 def spider():
