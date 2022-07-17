@@ -1,5 +1,6 @@
 {
-	"keys":{"meth":["buy meth","buy cocaine"]},
+	"keys":{"meth":["buy meth","meth india"],"cocaine":["buy cocaine","cocaine india"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"},
-	"truncate":"False"
+	"truncate":"True",
+	"max_process_count":"10"
 }

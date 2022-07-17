@@ -211,16 +211,16 @@ def main(argv: Optional[Sequence[str]] = None):
         else:
             rprint("\t\t[green]Successfully ran ingress.[/green]")
 
-    rprint("\n\t[white]Sorting[/white]")
-    logging.info("Starting sorter, for dormant and drug relevant links.")
-    from narco_crawler.sorter.main import sorter_base
+    rprint("\n\t[white]Validator[/white]")
+    logging.info("Starting validator, for dormant and drug relevant links.")
+    from narco_crawler.validator.main import validator_base
 
-    if sorter_base():
-        rprint("\t\t[green]Sorter finished, run successful[/green]")
-        logging.info("Finished sorter base run.")
+    if validator_base():
+        rprint("\t\t[green]Validator finished, run successful[/green]")
+        logging.info("Finished validator base run.")
     else:
-        rprint("\t\t[red]Sorter failed, check logs/sorter.log for more details[/red]")
-        logging.warning("Finished sorter base run, unsuccessful")
+        rprint("\t\t[red]Validator failed, check logs/validator.log for more details[/red]")
+        logging.warning("Finished validator base run, unsuccessful")
 
     if args.spider:
         rprint("[white]\n\tSpider[/white]")
@@ -229,7 +229,7 @@ def main(argv: Optional[Sequence[str]] = None):
         from narco_crawler.spider.main import spider
 
         rprint("[green]\t\tSpidering all links[/green]")
-        if not spider(["meth_ingress"]):
+        if not spider():
             try:
                 rprint(
                     "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"

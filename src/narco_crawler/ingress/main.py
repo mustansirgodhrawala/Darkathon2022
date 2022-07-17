@@ -103,3 +103,14 @@ def ingress_main():
     for process in processes:
         process.join()
     return True
+
+def ingress_spider():
+    rprint("\t\t[green]Ingressing Spider Links[/green]")
+    p1 = multiprocessing.Process(target=topic_ingressor, args=("spidered_drugs",))
+    p1.start()
+    p2 = multiprocessing.Process(target=topic_ingressor, args=("spidered_notdrugs",))
+    p2.start()
+    rprint("\t\t[green]Waiting for ingress to complete.[/green]")
+    p1.join()
+    p2.join()
+    rprint("\t\t[green]Ingress is complete.[/green]")

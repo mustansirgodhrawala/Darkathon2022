@@ -48,7 +48,7 @@ except Exception as e:
 
 def maxcores():
     try:
-        max = config["max_process_count"][0]
+        max = config["max_process_count"]
         if max:
             logging.info(f"Returning max count as { max }")
             return int(max)

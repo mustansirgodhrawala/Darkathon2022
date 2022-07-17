@@ -54,7 +54,7 @@ async def scrape(session, keyword, producer, topic):
         async with session.get(
             onionsearchserver.format(keyword=keyword),
             headers=random_headers(),
-            timeout=180,
+            timeout=300,
         ) as response:
             logging.info(f"OnionSearchServer engine for {keyword} called")
             response = await response.read()

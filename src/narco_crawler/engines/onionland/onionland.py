@@ -53,7 +53,7 @@ async def scrape(session, keyword, producer, topic):
         async with session.get(
             onionland_url.format(page=1, keyword=keyword),
             headers=random_headers(),
-            timeout=180,
+            timeout=300,
         ) as response:
             logging.info(f"Onionland engine for {keyword} called")
             response = await response.read()

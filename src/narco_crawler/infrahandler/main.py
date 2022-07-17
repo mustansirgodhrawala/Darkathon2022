@@ -28,6 +28,8 @@ def add_schema(config):
     mycursor = database.cursor()
     topics = list(config["keys"].keys())
     topics.append("markets")
+    topics.append("spidered_notdrugs")
+    topics.append("spidered_drugs")
     for topic in topics:
         try:
             mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")
@@ -111,6 +113,8 @@ def create_topics_kafka(topics):
     topics.append("markets")
     topics.append("drugs")
     topics.append("notdrugs")
+    topics.append("spidered_drugs")
+    topics.append("spidered_notdrugs")
     logging.info("Creating kafka topics")
     try:
         admin_client = KafkaAdminClient(

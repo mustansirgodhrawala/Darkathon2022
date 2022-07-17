@@ -44,7 +44,7 @@ async def scrape(session, keyword, producer, topic):
         async with session.get(
             tordex_url.format(page=1, keyword=keyword),
             headers=random_headers(),
-            timeout=180,
+            timeout=300,
         ) as response:
             logging.info(f"Tordex engine for {keyword} called")
             response = await response.read()

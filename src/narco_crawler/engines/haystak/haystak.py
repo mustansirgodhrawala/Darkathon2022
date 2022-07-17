@@ -51,7 +51,7 @@ async def scrape(session, keyword, producer, topic):
         async with session.get(
             haystak_url.format(page=0, keyword=keyword),
             headers=random_headers(),
-            timeout=180,
+            timeout=300,
         ) as response:
             logging.info(f"Haystak engine for {keyword} called")
             response = await response.read()
@@ -74,7 +74,7 @@ async def scrape(session, keyword, producer, topic):
                 ret = []
                 offset = int(it * offset_coeff)
                 async with session.get(
-                    haystak_url.format(keyword=keyword, page=offset), timeout=60
+                    haystak_url.format(keyword=keyword, page=offset), timeout=300
                 ) as response:
                     response = await response.read()
                     soup = BeautifulSoup(response, "html5lib")

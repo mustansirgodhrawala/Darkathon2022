@@ -1,7 +1,6 @@
 import asyncio
 import random
 import time
-
 import aiohttp
 from aiohttp_socks import ProxyConnector
 from aiohttp_socks import ProxyType
@@ -12,9 +11,10 @@ from rich import print as rprint
 from narco_crawler.config.config import config
 from narco_crawler.config.db import database
 from narco_crawler.engines.random_headers import random_headers
-from narco_crawler.sorter import cv
-from narco_crawler.sorter import model
-from narco_crawler.sorter import sorter_logger as logging
+from narco_crawler.validator import cv
+from narco_crawler.validator import model
+from narco_crawler.validator import validator_logger as logging
+import shutup; shutup.please()
 
 
 def eliminator(links):
@@ -32,7 +32,7 @@ async def scanner_main(links):
     connector = ProxyConnector(
         proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
     )
-    logging.info(f"Starting sorter with crawler for {len(links)}.")
+    logging.info(f"Starting Validator with crawler for {len(links)}.")
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
@@ -45,19 +45,19 @@ async def scanner_main(links):
 
         results = await asyncio.gather(*tasks)
 
-        logging.info("Returning Eliminator crawler.")
+        logging.info("Returning Validator crawler.")
 
         return results
 
 
 async def scraper(session, producer, link):
     try:
-        async with session.get(link, headers=random_headers(), timeout=300) as response:
+        async with session.get(link, headers=random_headers(), timeout=30) as response:
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")
             [
                 s.extract()
-                for s in soup(["style", "script", "[document]", "head", "title"])
+                for s in soup(["style", "script", "[document]"])
             ]
             visible_text = soup.getText()
             prediction = model.predict(
@@ -68,15 +68,16 @@ async def scraper(session, producer, link):
                 producer.send("drugs", bytes(link, "utf-8"))
             else:
                 producer.send("notdrugs", bytes(link, "utf-8"))
+                
             # Write Code here to move the files to the pipelines
             return True
     except asyncio.TimeoutError:
-        logging.info("Eliminator timeout")
+        logging.info("Validator timeout")
     except Exception as e:
-        logging.warning(f"Eliminator warning: {e}")
+        logging.warning(f"Validator warning: {e}")
 
 
-def sorter_base():
+def validator_base():
     # This function is used to remove and delete all links that are dormant or useless
 
     # Get all links from database

@@ -35,7 +35,7 @@ async def scrape(session, producer):
         async with session.get(
             tor_address,
             headers=random_headers(),
-            timeout=180,
+            timeout=300,
         ) as response:
             response = await response.read()
             logging.info("HiddenWiki engine called")
