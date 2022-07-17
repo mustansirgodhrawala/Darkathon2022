@@ -95,3 +95,82 @@ def validator_base():
         else:
             rprint(f"\t\t[red]No links for {topic}[/red]")
     return True
+
+def validator_primary():
+    consumer = KafkaConsumer(
+        bootstrap_servers=["localhost:9092"],
+        auto_offset_reset="earliest",
+        max_poll_records=100000000,
+    )
+
+    consumer.subscribe(["spidered_drugs"])
+    for _ in range(20):
+        msg = consumer.poll(1)
+        if not msg == {}:
+            for messages in msg[list(msg.keys())[0]]:
+                link = messages.value.decode("UTF-8")
+                links.append(link)
+        else:
+            pass
+    consumer2 = KafkaConsumer(
+        bootstrap_servers=["localhost:9092"],
+        auto_offset_reset="earliest",
+        max_poll_records=100000000,
+    )
+    consumer2.subscribe(["spidered_notdrugs"])
+    for _ in range(20):
+        msg = consumer2.poll(1)
+        if not msg == {}:
+            for messages in msg[list(msg.keys())[0]]:
+                link = messages.value.decode("UTF-8")
+                links.append(link)
+        else:
+            pass
+
+    asyncio
+
+async def scanner_primary(links):
+    connector = ProxyConnector(
+        proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
+    )
+    logging.info(f"Starting Validator with crawler for {len(links)}.")
+    async with aiohttp.ClientSession(connector=connector) as session:
+        tasks = []
+        producer = KafkaProducer(bootstrap_servers="localhost:9092")
+        for idx, link in enumerate(links):
+            if idx % 100 == 0:
+                time.sleep(15)
+                logging.info("Taking a rest")
+            task = asyncio.ensure_future(scraper_primary(session, producer, link))
+            tasks.append(task)
+
+        results = await asyncio.gather(*tasks)
+
+        logging.info("Returning Validator crawler.")
+
+        return results
+
+
+async def scraper_primary(session, producer, link):
+    try:
+        async with session.get(link, headers=random_headers(), timeout=30) as response:
+            response = await response.read()
+            soup = BeautifulSoup(response, "html5lib")
+            [
+                s.extract()
+                for s in soup(["style", "script", "[document]"])
+            ]
+            visible_text = soup.getText()
+            prediction = model.predict(
+                cv.transform([" ".join(visible_text.replace("\n", "").strip().lower().split())])
+            )
+            # Write Code here to test the soup with the machine learning model
+            if prediction == ["drugs"]:
+                producer.send("final_drugs", bytes(link, "utf-8"))
+                
+            # Write Code here to move the files to the pipelines
+            return True
+    except asyncio.TimeoutError:
+        logging.info("Validator timeout")
+    except Exception as e:
+        logging.warning(f"Validator warning: {e}")

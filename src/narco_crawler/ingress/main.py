@@ -91,17 +91,10 @@ def ingress_main():
 
     # Topic Ingressor
     for topic in list(config["keys"].keys()):
-        p = multiprocessing.Process(target=topic_ingressor, args=(topic,))
-        p.start()
-        processes.append(p)
+        topic_ingressor(topic)
 
     # Markets Ingressor
-    p = multiprocessing.Process(target=market_ingress)
-    p.start()
-    processes.append(p)
-
-    for process in processes:
-        process.join()
+    market_ingress()
     return True
 
 def ingress_spider():
