@@ -61,7 +61,7 @@ async def scraper(session, producer, link):
             ]
             visible_text = soup.getText()
             prediction = model.predict(
-                cv.transform([" ".join(text.replace("\n", "").strip().lower().split())])
+                cv.transform([" ".join(visible_text.replace("\n", "").strip().lower().split())])
             )
             # Write Code here to test the soup with the machine learning model
             if prediction == ["drugs"]:

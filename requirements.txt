@@ -1,0 +1,10 @@
+aiohttp==3.8.1
+aiohttp_socks==0.7.1
+alive_progress==2.4.1
+beautifulsoup4==4.11.1
+docker_py==1.10.6
+mysql_connector_repackaged==0.3.1
+requests==2.25.1
+rich==12.5.1
+setuptools==59.6.0
+w3lib==1.22.0
