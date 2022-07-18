@@ -110,9 +110,9 @@ def ingress_spider():
 
 def final_ingress():
     rprint("\t\t[green]Ingressing sorter links[/green]")
-    p1 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_positive","drug_india_sites"))
+    p1 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_positive","drug_india_sites",))
     p1.start()
-    p2 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_negative","drug_sites"))
+    p2 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_negative","drug_sites",))
     p2.start()
     rprint("\t\t[green]Waiting for ingress to complete.[/green]")
     p1.join()

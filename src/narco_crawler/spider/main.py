@@ -85,7 +85,7 @@ async def spider_main(results,depth,pipeline):
         )
         async with aiohttp.ClientSession(connector=connector) as session:
             tasks = []
-            pre = links
+            pre = results
             logging.info(f"Depth of {i} and links are: {len(results)}")
             for link in results:
                 task = asyncio.ensure_future(get_all_links(session, producer, link,pipeline))

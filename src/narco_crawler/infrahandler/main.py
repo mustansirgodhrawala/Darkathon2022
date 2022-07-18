@@ -27,17 +27,20 @@ def add_schema(config):
 
     mycursor = database.cursor()
     topics = list(config["keys"].keys())
-    topics.append("markets")
-    topics.append("spidered_notdrugs")
-    topics.append("spidered_drugs")
-    topics.append("drug_sites")
-    topics.append("drug_india_sites")
+    ntopics = []
     for topic in topics:
+        item = topic + "_ingress"
+        ntopics.append(item)
+
+    for i in config["extras_backend"]:
+        ntopics.append(i)
+
+    for topic in ntopics:
         try:
-            mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")
+            mycursor.execute(f"CREATE TABLE {topic} (links varchar(1000))")
         except mysql.connector.Error as e:
             if e.errno == 1050 and config["truncate"] == "True":
-                mycursor.execute(f"TRUNCATE TABLE {topic}_ingress")
+                mycursor.execute(f"TRUNCATE TABLE {topic}")
                 logging.info("Just needed to truncate, table already existed.")
                 logging.warning(
                     "This means application was halted during execution and infra was not de-initialized."
@@ -65,9 +68,16 @@ def delete_schema(config):
     logging.info("Deleted database schema.")
     mycursor = database.cursor()
     topics = list(config["keys"].keys())
+    ntopics = []
     for topic in topics:
+        item = topic + "_ingress"
+        ntopics.append(item)
+
+    for i in config["extras_backend"]:
+        ntopics.append(i)
+    for topic in ntopics:
         try:
-            mycursor.execute(f"DROP TABLE {topic}_ingress")
+            mycursor.execute(f"DROP TABLE {topic}")
         except mysql.connector.Error as e:
             if e.errno == 1051:
                 logging.critical(
@@ -117,6 +127,7 @@ def create_topics_kafka(topics):
     topics.append("notdrugs")
     topics.append("spidered_drugs")
     topics.append("spidered_notdrugs")
+    topics.append("final_drugs")
     logging.info("Creating kafka topics")
     try:
         admin_client = KafkaAdminClient(

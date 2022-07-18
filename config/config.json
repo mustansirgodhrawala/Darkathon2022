@@ -1,8 +1,9 @@
 {
-	"keys":{"opium":["opium buy"],"cannabis":["buy cannabis"],"cocaine":["buy cocaine"],"heroine":["buy heroine"]},
+	"keys":{"opium":["opium buy"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"},
 	"truncate":"True",
 	"max_process_count":"5",
 	"emails":["me@mustansirg.in"],
-	"trigger_words":["india","indian","worldwide","shipping","global"]
+	"trigger_words":["india","indian","worldwide","shipping","global"],
+	"extras_backend":["markets","spidered_notdrugs","spidered_drugs","drug_sites","drug_india_sites"]
 }

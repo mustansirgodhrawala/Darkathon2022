@@ -6,6 +6,7 @@ from aiohttp_socks import ProxyConnector
 from aiohttp_socks import ProxyType
 from bs4 import BeautifulSoup
 from kafka import KafkaProducer
+from kafka import KafkaConsumer
 from rich import print as rprint
 
 from narco_crawler.config.config import config
@@ -102,6 +103,8 @@ def validator_primary():
         auto_offset_reset="earliest",
         max_poll_records=100000000,
     )
+
+    links = []
 
     consumer.subscribe(["spidered_drugs"])
     for _ in range(20):

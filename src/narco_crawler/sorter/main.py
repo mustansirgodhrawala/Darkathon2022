@@ -84,7 +84,7 @@ async def scraper_primary(session, producer, link, words):
 				if word in test:
 					hits += 1
 			   
-			if hits >= 2:
+			if hits >= 1:
 				producer.send("sorter_positive",bytes(link,'utf-8'))
 			else:
 				producer.send("sorter_negative",bytes(link, 'utf-8'))
@@ -110,7 +110,7 @@ def read_messages():
 		auto_offset_reset="earliest",
 		max_poll_records=100000000,
 	)
-	consumer.subscribe(["meth"])
+	consumer.subscribe(["final_drugs"])
 
 	for _ in range(20):
 		msg = consumer.poll(1)
