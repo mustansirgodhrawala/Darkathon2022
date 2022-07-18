@@ -28,8 +28,6 @@ def arg_conf(args):
 
     # Wait if wrong input supplied.
     rprint("\n\t[white]Confirm Arguments[/white]")
-    if args.inspect:
-        rprint("\t\t[yellow]Input: inspect existing links in the db.[/yellow]")
     if args.build:
         rprint("\t\t[yellow]Input: build images at runtime.[/yellow]")
     if args.crawl:
@@ -37,6 +35,14 @@ def arg_conf(args):
     if args.skip_down:
         rprint(
             "\t\t[yellow]Input: Cancel infrastructure takedown, not recommended.[/yellow]"
+        )
+    if args.skip_tests:
+        rprint(
+            "\t\t[yellow]Input: Skip infra testing.[/yellow]"
+        )
+    if args.spider:
+        rprint(
+            "\t\t[yellow]Input: Spider website[/yellow]"
         )
 
     rprint(
