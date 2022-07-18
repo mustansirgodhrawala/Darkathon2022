@@ -31,7 +31,6 @@ def add_schema(config):
     for topic in topics:
         item = topic + "_ingress"
         ntopics.append(item)
-
     for i in config["extras_backend"]:
         ntopics.append(i)
 

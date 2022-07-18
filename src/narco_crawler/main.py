@@ -228,27 +228,26 @@ def main(argv: Optional[Sequence[str]] = None):
             rprint("\t\t[red]Validator failed, check logs/validator.log for more details[/red]")
             logging.warning("Finished validator base run, unsuccessful")
 
-        if args.spider:
-            rprint("[white]\n\tSpider[/white]")
-            logging.info("Spider started")
+        rprint("[white]\n\tSpider[/white]")
+        logging.info("Spider started")
 
-            from narco_crawler.spider.main import spider
+        from narco_crawler.spider.main import spider
 
-            rprint("[green]\t\tSpidering all links[/green]")
-            if not spider():
-                try:
-                    rprint(
-                        "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"
-                    )
-                except KeyboardInterrupt:
-                    rprint("Spider manually interrupted, terminating.")
-                    logging.warning(
-                        "Spider manually terminated, taking down infrastructure."
-                    )
-            else:
-                rprint("\t\t[green]Successfully ran Spider.[/green]")
+        rprint("[green]\t\tSpidering all links[/green]")
+        if not spider():
+            try:
+                rprint(
+                    "\t\t[red]Failed to successfully spider all links, inspect 'spider.log' for detailed info.[/red]"
+                )
+            except KeyboardInterrupt:
+                rprint("Spider manually interrupted, terminating.")
+                logging.warning(
+                    "Spider manually terminated, taking down infrastructure."
+                )
+        else:
+            rprint("\t\t[green]Successfully ran Spider.[/green]")
 
-        rprint("[green]\n\tValidator Secondary Run[/green]")
+        rprint("[white]\n\tValidator Secondary Run[/white]")
         logging.info("Validator Secondary Run")
         from narco_crawler.validator.main import validator_primary
         if validator_primary():

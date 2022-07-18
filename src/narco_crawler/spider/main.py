@@ -36,7 +36,7 @@ def drugs_spider():
 
     # Spidering Links
     print(f"\t\tFound {len(links)} amount of drugs link.")
-    links_spidered = asyncio.run(spider_main(links, 3,"spidered_drugs"))
+    links_spidered = asyncio.run(spider_main(links, 1,"spidered_drugs"))
 
 
 def notdrugs_spider():

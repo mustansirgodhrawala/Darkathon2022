@@ -78,11 +78,13 @@ async def scraper_primary(session, producer, link, words):
 			]
 			hits = 0
 			visible_text = soup.getText()
-			test = [visible_text.replace("\n", "").strip().lower().split()]
+			test = " ".join(visible_text.replace("\n", "").strip().lower().split())
 
 			for word in words:
 				if word in test:
 					hits += 1
+				else:
+					continue
 			   
 			if hits >= 1:
 				producer.send("sorter_positive",bytes(link,'utf-8'))

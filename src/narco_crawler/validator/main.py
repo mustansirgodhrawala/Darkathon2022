@@ -37,9 +37,6 @@ async def scanner_main(links):
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
         for idx, link in enumerate(links):
-            if idx % 100 == 0:
-                time.sleep(15)
-                logging.info("Taking a rest")
             task = asyncio.ensure_future(scraper(session, producer, link))
             tasks.append(task)
 
@@ -52,7 +49,7 @@ async def scanner_main(links):
 
 async def scraper(session, producer, link):
     try:
-        async with session.get(link, headers=random_headers(), timeout=30) as response:
+        async with session.get(link, headers=random_headers(), timeout=300,allow_redirects=True) as response:
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")
             [
@@ -141,9 +138,6 @@ async def scanner_primary(links):
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
         for idx, link in enumerate(links):
-            if idx % 100 == 0:
-                time.sleep(15)
-                logging.info("Taking a rest")
             task = asyncio.ensure_future(scraper_primary(session, producer, link))
             tasks.append(task)
 
@@ -156,7 +150,7 @@ async def scanner_primary(links):
 
 async def scraper_primary(session, producer, link):
     try:
-        async with session.get(link, headers=random_headers(), timeout=30) as response:
+        async with session.get(link, headers=random_headers(), timeout=300,allow_redirects=True) as response:
             response = await response.read()
             soup = BeautifulSoup(response, "html5lib")
             [
@@ -170,8 +164,6 @@ async def scraper_primary(session, producer, link):
             # Write Code here to test the soup with the machine learning model
             if prediction == ["drugs"]:
                 producer.send("final_drugs", bytes(link, "utf-8"))
-                
-            # Write Code here to move the files to the pipelines
             return True
     except asyncio.TimeoutError:
         logging.info("Validator timeout")
