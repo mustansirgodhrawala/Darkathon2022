@@ -69,7 +69,7 @@ def spider():
     p2.start()
     p1.join()
     p2.join()
-    ingress_spider()
+    # ingress_spider()
     return True
 
 
@@ -94,9 +94,9 @@ async def spider_main(results,depth,pipeline):
             results = await asyncio.gather(*tasks)
             
             final_deliver = list(itertools.chain.from_iterable(results))
-            for i in pre:
-                if i in final_deliver:
-                    final_deliver.remove(i)
+            for j in pre:
+                if j in final_deliver:
+                    final_deliver.remove(j)
             results = final_deliver
             logging.info(f"Returning Spider crawler for depth {i}, category is {pipeline}")
 

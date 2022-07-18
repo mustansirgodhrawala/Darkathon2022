@@ -129,7 +129,7 @@ def validator_primary():
                 links.append(link)
         else:
             pass
-
+    rprint("\t\t[green]Validator found a total of len(links), after spidering, now analyzing these links.[/green]")
     asyncio.run(scanner_primary(links))
 
 async def scanner_primary(links):
