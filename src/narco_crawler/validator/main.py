@@ -24,7 +24,7 @@ def eliminator(topic, links):
     for (link, stat) in zip(links, res):
         if stat:
             finals.append(link)
-    rprint(f"[green]{ res.count(True) } links are valid in topic, {topic}[/green]")
+    rprint(f"\t\t[green]{ res.count(True) } links are valid in topic, {topic}[/green]")
     return finals
 
 
@@ -128,8 +128,8 @@ def validator_primary():
                 links.append(link)
         else:
             pass
-    rprint("\t\t[green]Validator found a total of len(links), after spidering, now analyzing these links.[/green]")
-    logging.info("Validator found a total of len(links), after spidering, now analyzing these links.")
+    rprint(f"\t\t[green]Validator found a total of {len(links)}, after spidering, now analyzing these links.[/green]")
+    logging.info(f"Validator found a total of {len(links)}, after spidering, now analyzing these links.")
     asyncio.run(scanner_primary(links))
 
 async def scanner_primary(links):

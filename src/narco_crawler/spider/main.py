@@ -64,7 +64,6 @@ def notdrugs_spider():
 
 def spider():
     p1 = multiprocessing.Process(target=drugs_spider)
-    p2 = multiprocessing.Process(target=notdrugs_spider)
     p1.start()
     p2.start()
     p1.join()
@@ -79,6 +78,7 @@ async def spider_main(results,depth,pipeline):
         producer.send(pipeline,bytes(i,"utf-8"))
     final_deliver = []
     for i in range(1,depth+1):
+    p2 = multiprocessing.Process(target=notdrugs_spider)
         logging.info(f"Spider crawler for depth {i}, category is {pipeline}")
         connector = ProxyConnector(
             proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
