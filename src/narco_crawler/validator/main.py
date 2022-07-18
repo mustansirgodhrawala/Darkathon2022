@@ -91,7 +91,7 @@ def validator_base():
             links.append(link[0])
 
         if links:
-            links = eliminator(links,topic)
+            links = eliminator(topic, links)
         else:
             rprint(f"\t\t[red]No links for {topic}[/red]")
     return True
@@ -129,6 +129,7 @@ def validator_primary():
         else:
             pass
     rprint("\t\t[green]Validator found a total of len(links), after spidering, now analyzing these links.[/green]")
+    logging.info("Validator found a total of len(links), after spidering, now analyzing these links.")
     asyncio.run(scanner_primary(links))
 
 async def scanner_primary(links):
