@@ -24,7 +24,7 @@ def eliminator(topic, links):
     for (link, stat) in zip(links, res):
         if stat:
             finals.append(link)
-    rprint(f"\t\t[green]{ res.count(True) } links are valid in topic, {topic}[/green]")
+    rprint(f"[green]\t\t[{ res.count(True) } links are valid in topic, {topic}[/green]")
     return finals
 
 
