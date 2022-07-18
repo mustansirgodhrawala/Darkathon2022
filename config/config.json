@@ -1,5 +1,5 @@
 {
-	"keys":{"opium":["opium buy"]},
+	"keys":{"opium":["opium buy"],"cannabis":["buy cannabis"],"heroine":["buy heroine"], "cocaine":["buy cocaine"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"},
 	"truncate":"True",
 	"max_process_count":"20",
