@@ -36,7 +36,7 @@ def drugs_spider():
 
     # Spidering Links
     print(f"\t\tFound {len(links)} amount of drugs link.")
-    links_spidered = asyncio.run(spider_main(links, 1,"spidered_drugs"))
+    links_spidered = asyncio.run(spider_main(links, 3,"spidered_drugs"))
 
 
 def notdrugs_spider():
@@ -85,18 +85,23 @@ async def spider_main(results,depth,pipeline):
         )
         async with aiohttp.ClientSession(connector=connector) as session:
             tasks = []
+            pre = links
             logging.info(f"Depth of {i} and links are: {len(results)}")
             for link in results:
                 task = asyncio.ensure_future(get_all_links(session, producer, link,pipeline))
                 tasks.append(task)
 
             results = await asyncio.gather(*tasks)
+            
             final_deliver = list(itertools.chain.from_iterable(results))
+            for i in pre:
+                if i in final_deliver:
+                    final_deliver.remove(i)
             results = final_deliver
             logging.info(f"Returning Spider crawler for depth {i}, category is {pipeline}")
 
-    logging.info(f"Returning Spider crawler and the links are in total {len(results)}")
-    rprint(f"[green]\t\tReturning Spider crawler and the links are in total {len(results)}[/green]")
+    logging.info(f"Returning Spider crawler and the links are in total {len(results)} for category {pipeline}")
+    rprint(f"[green]\t\tReturning Spider crawler and the links are in total {len(results)} for category {pipeline}[/green]")
     return True
 
 async def get_all_links(session, producer, link, pipeline):
