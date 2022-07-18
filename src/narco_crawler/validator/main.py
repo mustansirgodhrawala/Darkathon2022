@@ -18,14 +18,13 @@ from narco_crawler.validator import validator_logger as logging
 import shutup; shutup.please()
 
 
-def eliminator(links):
+def eliminator(topic, links):
     res = asyncio.run(scanner_main(links))
     finals = []
     for (link, stat) in zip(links, res):
         if stat:
             finals.append(link)
-    print(len(finals))
-    print(res.count(True))
+    rprint(f"[green]{ res.count(True) } links are valid in topic, {topic}[/green]")
     return finals
 
 
@@ -92,7 +91,7 @@ def validator_base():
             links.append(link[0])
 
         if links:
-            links = eliminator(links)
+            links = eliminator(links,topic)
         else:
             rprint(f"\t\t[red]No links for {topic}[/red]")
     return True
