@@ -76,12 +76,12 @@ def run_crawler():
 
         for topic in topics:
             p.apply_async(ahmia, args=(topic, config["keys"][topic]))
-            p.apply_async(tordex, args=(topic, config["keys"][topic]))
-            p.apply_async(onionland, args=(topic, config["keys"][topic]))
-            p.apply_async(onionsearchengine, args=(topic, config["keys"][topic]))
-            p.apply_async(haystak, args=(topic, config["keys"][topic]))
-            p.apply_async(tor66, args=(topic, config["keys"][topic]))
-            p.apply_async(onionsearchserver, args=(topic, config["keys"][topic]))
+            # p.apply_async(tordex, args=(topic, config["keys"][topic]))
+            # p.apply_async(onionland, args=(topic, config["keys"][topic]))
+            # p.apply_async(onionsearchengine, args=(topic, config["keys"][topic]))
+            # p.apply_async(haystak, args=(topic, config["keys"][topic]))
+            # p.apply_async(tor66, args=(topic, config["keys"][topic]))
+            # p.apply_async(onionsearchserver, args=(topic, config["keys"][topic]))
 
         p.apply_async(hiddenwiki)
         p.close()

@@ -1,7 +1,8 @@
 {
-	"keys":{"meth":["buy meth"],"weed":["buy weed"],"oxycodone":["buy oxycodone"],"cocaine":["buy cocaine"]},
+	"keys":{"meth":["buy meth"]},
 	"database":{"db":"narco_crawler","host":"127.0.0.1","user":"narco_crawler","pass":"password"},
 	"truncate":"True",
 	"max_process_count":"5",
-	"emails":["me@mustansirg.in"]
+	"emails":["me@mustansirg.in"],
+	"trigger_words":["india","indian","worldwide","shipping"]
 }

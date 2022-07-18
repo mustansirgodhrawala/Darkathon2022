@@ -30,6 +30,8 @@ def add_schema(config):
     topics.append("markets")
     topics.append("spidered_notdrugs")
     topics.append("spidered_drugs")
+    topics.append("drug_sites")
+    topics.append("drug_india_sites")
     for topic in topics:
         try:
             mycursor.execute(f"CREATE TABLE {topic}_ingress (links varchar(1000))")

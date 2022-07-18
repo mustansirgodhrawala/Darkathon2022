@@ -127,13 +127,13 @@ def validator_primary():
         else:
             pass
 
-    asyncio
+    asyncio.run(scanner_primary(links))
 
 async def scanner_primary(links):
     connector = ProxyConnector(
         proxy_type=ProxyType.SOCKS5, host="localhost", port=9050, rdns=True
     )
-    logging.info(f"Starting Validator with crawler for {len(links)}.")
+    logging.info(f"Starting Validator Second Run with crawler for {len(links)}.")
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = []
         producer = KafkaProducer(bootstrap_servers="localhost:9092")
@@ -146,7 +146,7 @@ async def scanner_primary(links):
 
         results = await asyncio.gather(*tasks)
 
-        logging.info("Returning Validator crawler.")
+        logging.info("Returning Validator Second Run.")
 
         return results
 

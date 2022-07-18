@@ -107,3 +107,54 @@ def ingress_spider():
     p1.join()
     p2.join()
     rprint("\t\t[green]Ingress is complete.[/green]")
+
+def final_ingress():
+    rprint("\t\t[green]Ingressing sorter links[/green]")
+    p1 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_positive","drug_india_sites"))
+    p1.start()
+    p2 = multiprocessing.Process(target=sorter_ingressor, args=("sorter_negative","drug_sites"))
+    p2.start()
+    rprint("\t\t[green]Waiting for ingress to complete.[/green]")
+    p1.join()
+    p2.join()
+    rprint("\t\t[green]Ingress is complete[/green]")
+
+
+def sorter_ingressor(topic, dbname):
+    links = []
+    consumer = KafkaConsumer(
+        bootstrap_servers=["localhost:9092"],
+        auto_offset_reset="earliest",
+        max_poll_records=100000000,
+    )
+    consumer.subscribe([topic])
+
+    for _ in range(20):
+        msg = consumer.poll(1)
+        if not msg == {}:
+            for messages in msg[list(msg.keys())[0]]:
+                link = messages.value.decode("UTF-8")
+                links.append(link)
+        else:
+            pass
+
+    links = remove_duplicates(topic, links)
+    logging.info(f"Processing called {topic}")
+    cursor = database.cursor()
+    # print(links)
+    for link in links:
+        try:
+            sql = f"INSERT INTO {dbname}(links) VALUES (%s)"
+            cursor.execute(sql, (link,))
+        except Exception as e:
+            rprint(
+                f"\t\t[red]Problem with sorter ingress on {link} and type is {type(link)}[/red]"
+            )
+            logging.critical(e)
+        # cursor.execute(f'INSERT INTO {topic}_ingress(links) VALUES ("{link}")')
+    database.commit()
+    if len(links) > 0:
+        rprint(f"[green]\t\tIngress finished for {topic}, with { len(links) }[/green]")
+    else:
+        logging.warning(f"Processor was given zero links for {topic}")
+    logging.info(f"Processor finished for {topic}, added { len(links) }.")
