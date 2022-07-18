@@ -46,7 +46,7 @@ except Exception as e:
     exit()
 
 
-def maxcores():
+def maxproc():
     try:
         max = config["max_process_count"]
         if max:

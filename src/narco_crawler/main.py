@@ -1,6 +1,6 @@
 # Logging Application Start
 from narco_crawler import logging
-from narco_crawler.config.config import maxcores
+from narco_crawler.config.config import maxproc
 
 logging.info("NarcoCrawler started")
 
@@ -145,7 +145,7 @@ def main(argv: Optional[Sequence[str]] = None):
 
     if args.info:
         rprint(f"[green]\tProcess Number: { os.getpid() }[/green]")
-        rprint(f"[green]\tMaximum Cores: { maxcores() }[/green]")
+        rprint(f"[green]\tMaximum Parallel Process: { maxproc() }[/green]")
         os.system(f"echo { os.getpid() } | xclip -sel clip")
 
     if args.version:

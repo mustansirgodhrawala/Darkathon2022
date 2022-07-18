@@ -5,7 +5,7 @@ import time
 from rich import print as rprint
 
 from narco_crawler.config.config import config
-from narco_crawler.config.config import maxcores
+from narco_crawler.config.config import maxproc
 from narco_crawler.crawler import crawler_logger as logging
 from narco_crawler.engines.ahmia.ahmia import ahmia_main
 from narco_crawler.engines.haystak.haystak import haystak_main
@@ -71,7 +71,7 @@ def run_crawler():
     logging.info("Crawler run starting.")
 
     topics = list(config["keys"].keys())
-    with multiprocessing.Pool(processes=maxcores()) as p:
+    with multiprocessing.Pool(processes=maxproc()) as p:
         start = time.perf_counter()
 
         for topic in topics:
