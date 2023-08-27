@@ -24,8 +24,8 @@ def report_drugs():
 
 def send_email(links,email):
 	today = date.today()
-	api_key = "134edf65a45492ee7907da25952a9002"
-	api_secret = "e02f408a447b89100bde82649ae0ee07"
+	api_key = "apikey"
+	api_secret = "apisecret"
 	mailjet = Client(auth=(api_key, api_secret))
 	data = {
 		'FromEmail': 'reporting@mustansirg.in',
